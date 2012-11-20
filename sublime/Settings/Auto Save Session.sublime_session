@@ -922,10 +922,18 @@
 			"buffers":
 			[
 				{
-					"file": "/Users/sethe/dotfiles/README.md",
+					"file": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/functions.php",
 					"settings":
 					{
-						"buffer_size": 473,
+						"buffer_size": 2375,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/Users/sethe/dotfiles/sublime/Packages/User/Preferences.sublime-settings",
+					"settings":
+					{
+						"buffer_size": 566,
 						"line_ending": "Unix"
 					}
 				}
@@ -933,16 +941,24 @@
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 47.0,
+				"height": 287.0,
 				"selected_items":
 				[
 					[
-						"install",
-						"Package Control: Install Package"
-					],
-					[
 						":w",
 						":w - Save"
+					],
+					[
+						"space",
+						"Indentation: Convert to Spaces"
+					],
+					[
+						"git",
+						"Git: Quick Commit"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
 					],
 					[
 						"wordwrap",
@@ -1110,9 +1126,9 @@
 			},
 			"file_history":
 			[
+				"/Users/sethe/dotfiles/README.md",
 				"/Users/sethe/dotfiles/Re",
 				"/Users/sethe/dotfiles/bin/install.sh",
-				"/Users/sethe/dotfiles/README.md",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/functions.php",
 				"/Users/sethe/dotfiles/sublime/Packages/Theme - Default/Default.sublime-theme",
 				"/Users/sethe/dotfiles/sublime/Packages/Color Scheme - Default/Blackboard.tmTheme",
@@ -1258,6 +1274,7 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"#",
 					"100",
 					"200, 200, 200",
 					"25",
@@ -1384,8 +1401,7 @@
 					" ",
 					"cynergisuite",
 					"'",
-					"subscribe",
-					"do_something"
+					"subscribe"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -1424,28 +1440,73 @@
 			"groups":
 			[
 				{
-					"selected": 0,
+					"selected": 1,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/Users/sethe/dotfiles/README.md",
+							"file": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/functions.php",
 							"settings":
 							{
-								"buffer_size": 473,
+								"buffer_size": 2375,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										160,
-										160
+										1024,
+										1024
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/Markdown/Markdown.tmLanguage"
+									"syntax": "Packages/PHP/PHP.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/Users/sethe/dotfiles/sublime/Packages/User/Preferences.sublime-settings",
+							"settings":
+							{
+								"buffer_size": 566,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										239,
+										239
+									],
+									[
+										284,
+										284
+									],
+									[
+										369,
+										369
+									],
+									[
+										452,
+										452
+									],
+									[
+										509,
+										509
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JavaScript/JSON.tmLanguage",
+									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -1502,6 +1563,10 @@
 				"height": 0.0,
 				"selected_items":
 				[
+					[
+						"func",
+						"functions.php"
+					],
 					[
 						"functions",
 						"functions.php"
@@ -1593,10 +1658,6 @@
 					[
 						"univer",
 						"page-university-home.php"
-					],
-					[
-						"func",
-						"functions.php"
 					],
 					[
 						"footer.php",

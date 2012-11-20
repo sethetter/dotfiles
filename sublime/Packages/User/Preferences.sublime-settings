@@ -1,7 +1,11 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Blackboard.tmTheme",
-	"font_size": 14.0,
-	"ignored_packages":
-	[
-	]
+    "color_scheme": "Packages/Color Scheme - Default/Blackboard.tmTheme",
+    "font_size": 14.0,
+    "ignored_packages": [],
+    "bold_folder_labels": true, // makes the sidebar a little easier to understand
+    "caret_style": "phase", // looks cool :p
+    "highlight_line": true, // adds a subtle highlight to the current line
+    "translate_tabs_to_spaces": true, // in general this is good practice
+    "trim_trailing_white_space_on_save": true, // trims trailing whitespace
+    "scroll_past_end": true // I don't like to work at the very bottom of my screen
 }
