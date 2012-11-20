@@ -922,10 +922,10 @@
 			"buffers":
 			[
 				{
-					"file": "/Users/sethe/dotfiles/bin/install.sh",
+					"file": "/Users/sethe/dotfiles/README.md",
 					"settings":
 					{
-						"buffer_size": 734,
+						"buffer_size": 454,
 						"line_ending": "Unix"
 					}
 				}
@@ -1110,6 +1110,8 @@
 			},
 			"file_history":
 			[
+				"/Users/sethe/dotfiles/Re",
+				"/Users/sethe/dotfiles/bin/install.sh",
 				"/Users/sethe/dotfiles/README.md",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/functions.php",
 				"/Users/sethe/dotfiles/sublime/Packages/Theme - Default/Default.sublime-theme",
@@ -1128,7 +1130,6 @@
 				"/Users/sethe/projects/cynergi_wp_live/wp-config.php",
 				"/Users/sethe/projects/cynergi_wp_live/db.sql",
 				"/Users/sethe/projects/cynergi_wp_live/wp-settings.php",
-				"/Users/sethe/dotfiles/bin/install.sh",
 				"/Users/sethe/projects/raphael_test/js/app.js",
 				"/Users/sethe/projects/raphael_test/index.html",
 				"/Users/sethe/projects/raphael_test/lib/raphael.js",
@@ -1236,8 +1237,7 @@
 				"/Users/sethe/projects/OnlinePayments/application/language/english/users_acctsummary_lang.php",
 				"/Users/sethe/projects/OnlinePayments/application/language/english/admin_usermgmt_lang.php",
 				"/Users/sethe/projects/OnlinePayments/application/language/english/admin_mktg_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/users_profile_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/views/users_autopayenroll.php"
+				"/Users/sethe/projects/OnlinePayments/application/language/english/users_profile_lang.php"
 			],
 			"find":
 			{
@@ -1429,23 +1429,23 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/Users/sethe/dotfiles/bin/install.sh",
+							"file": "/Users/sethe/dotfiles/README.md",
 							"settings":
 							{
-								"buffer_size": 734,
+								"buffer_size": 454,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										734,
-										734
+										160,
+										160
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+									"syntax": "Packages/Markdown/Markdown.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
