@@ -1,0 +1,22 @@
+{
+	"auto_upgrade_last_run": 1353443754,
+	"installed_packages":
+	[
+		"Alignment",
+		"ColorPick",
+		"ColorPicker",
+		"Gist",
+		"Git",
+		"LESS",
+		"Nettuts+ Fetch",
+		"Package Control",
+		"PHP Syntax Checker",
+		"Phpcs",
+		"Prefixr",
+		"Resize Active Group",
+		"Sass",
+		"SCSS",
+		"SublimeBlockCursor",
+		"Theme - Soda"
+	]
+}

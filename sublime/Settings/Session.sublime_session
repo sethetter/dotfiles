@@ -1,0 +1,1797 @@
+{
+	"folder_history":
+	[
+		"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi",
+		"/Users/sethe/projects/OnlinePayments",
+		"/Users/sethe/projects/cynergi_wp_live",
+		"/Users/sethe/projects/cynergi_wp",
+		"/Users/sethe/projects/raphael_test",
+		"/Users/sethe/dotfiles/devtools-theme",
+		"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi",
+		"/Users/sethe/projects/express_test",
+		"/Users/sethe/projects/jquery_stuff",
+		"/Users/sethe/projects/html5_training",
+		"/Users/sethe/projects/js_templates",
+		"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi",
+		"/Users/sethe/projects/cynergi-wp",
+		"/Users/sethe/projects/maze"
+	],
+	"last_window_id": 76,
+	"settings":
+	{
+		"new_window_height": 1002.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"cli",
+						"clickHandler"
+					],
+					[
+						"class",
+						"classTwoP"
+					],
+					[
+						"ready",
+						"readyStateCheckInterval"
+					],
+					[
+						"univers",
+						"university_hidden"
+					],
+					[
+						"side",
+						"side-module"
+					],
+					[
+						"side-right",
+						"side-right"
+					]
+				]
+			},
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 47.0,
+				"selected_items":
+				[
+					[
+						"wordwrap",
+						"Word Wrap: Toggle"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						":w",
+						":w - Save"
+					],
+					[
+						"ssscss",
+						"Set Syntax: SCSS"
+					],
+					[
+						"lowerc ",
+						"Convert Case: Lower Case"
+					],
+					[
+						"fetch",
+						"Fetch: File"
+					],
+					[
+						"sshtml",
+						"Set Syntax: HTML"
+					],
+					[
+						"ssless",
+						"Set Syntax: LESS"
+					],
+					[
+						"git change ",
+						"Git: Change Branch"
+					],
+					[
+						"git change branch",
+						"Git: Change Branch"
+					],
+					[
+						":s",
+						":w - Save"
+					],
+					[
+						"lowercase",
+						"Convert Case: Lower Case"
+					],
+					[
+						":",
+						":w - Save"
+					],
+					[
+						"prefere",
+						"Preferences: Settings - Default"
+					],
+					[
+						"preferences",
+						"Preferences: Settings - Default"
+					],
+					[
+						":W",
+						":w - Save"
+					],
+					[
+						"preferecen",
+						"Preferences: Settings - Default"
+					],
+					[
+						"reind",
+						"Indentation: Reindent Lines"
+					],
+					[
+						"pref",
+						"Preferences: Settings - Default"
+					],
+					[
+						":q",
+						"Set Syntax: SQL"
+					],
+					[
+						":bd",
+						"Preferences: Key Bindings - Default"
+					],
+					[
+						"git commit",
+						"Git: Quick Commit"
+					],
+					[
+						"git status",
+						"Git: Status"
+					],
+					[
+						"git add .",
+						"Git: Add..."
+					],
+					[
+						"isntall",
+						"Git: Reset (unstage) All"
+					],
+					[
+						"color",
+						"Color Picker: Insert Color"
+					],
+					[
+						"preferece",
+						"Preferences: Package Control Settings – Default"
+					],
+					[
+						"install ",
+						"Package Control: Install Package"
+					],
+					[
+						"ssphp",
+						"Set Syntax: PHP"
+					],
+					[
+						"phpcs",
+						"PHP Code Sniffer: Sniff this file"
+					],
+					[
+						"install packge",
+						"Package Control: Install Package"
+					],
+					[
+						"php ",
+						"Set Syntax: PHP"
+					],
+					[
+						"install pack",
+						"Package Control: Install Package"
+					],
+					[
+						"conver",
+						"Indentation: Convert to Spaces"
+					],
+					[
+						"packages",
+						"Preferences: Browse Packages"
+					],
+					[
+						"prefer",
+						"Preferences: Settings - Default"
+					],
+					[
+						"bash",
+						"Set Syntax: Shell Script (Bash)"
+					],
+					[
+						"preference",
+						"Preferences: Settings - Default"
+					]
+				],
+				"width": 593.0
+			},
+			"console":
+			{
+				"height": 125.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/Users/sethe/projects/cynergi_wp_live/wp-config.php",
+				"/Users/sethe/projects/cynergi_wp_live/db.sql",
+				"/Users/sethe/projects/cynergi_wp_live/wp-settings.php",
+				"/Users/sethe/dotfiles/bin/install.sh",
+				"/Users/sethe/projects/raphael_test/js/app.js",
+				"/Users/sethe/projects/raphael_test/index.html",
+				"/Users/sethe/projects/raphael_test/lib/raphael.js",
+				"/Users/sethe/dotfiles/.bash_profile",
+				"/Users/sethe/.bash_profile",
+				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/styles/main.scss",
+				"/Users/sethe/projects/cynergi_wp/.gitignore",
+				"/Users/sethe/dotfiles/devtools-theme/Custom.css",
+				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/bin/less-compile",
+				"/Users/sethe/dotfiles/devtools-theme/bin/install.sh",
+				"/Users/sethe/Downloads/chrome-devtools-dark-theme/bin/install.sh",
+				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/styles/main.scss.less",
+				"/Users/sethe/projects/express_test/server.js",
+				"/Users/sethe/projects/jquery_stuff/style.css",
+				"/Users/sethe/projects/jquery_stuff/index.html",
+				"/Users/sethe/projects/jquery_stuff/jquery.js",
+				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/styles/main.less",
+				"/Users/sethe/projects/js_templates/index.html",
+				"/Users/sethe/dotfiles/vimrc",
+				"/Users/sethe/projects/html5_training/assets/js/CPLibrary.js",
+				"/Users/sethe/projects/html5_training/Cynergi_Overview_Captivate_noswf/index.html",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/styles/main.less",
+				"/Users/sethe/__dotbackup/.bash_profile",
+				"/Users/sethe/dotfiles/bash_profile",
+				"/Users/sethe/.bashrc",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/functions.php",
+				"/Users/sethe/__dotbackup/.vimrc",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/styles/main.css",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/footer.php",
+				"/Users/sethe/.irssi/config",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/js/fancybox/jquery.fancybox-1.3.4.css",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/single-university.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-university-home.php",
+				"/Users/sethe/Desktop/index.html",
+				"/Users/sethe/Desktop/jquery.js",
+				"/Users/sethe/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/header.php",
+				"/Users/sethe/projects/cynergi-wp/.gitignore",
+				"/Volumes/C/Windows/System32/drivers/etc/hosts",
+				"/Users/sethe/projects/__cynergi-wp/wp-config.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/styles/main-new.css",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/search.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/university-no.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/members/index.php",
+				"/Users/sethe/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/js/jquery-validation/localization/messages_no.js",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/styles/font-awesome.css",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page.php",
+				"/Users/sethe/projects/cynergi-wp/wp-includes/theme-compat/header.php",
+				"/Users/sethe/projects/cynergi-old/css/main.css",
+				"/Users/sethe/projects/cynergi-old/includes/footer.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/header-buddypress.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/footer-buddypress.php",
+				"/Users/sethe/projects/cynergi-wp/wp-includes/theme-compat/footer.php",
+				"/Users/sethe/projects/cynergi-wp/wp-includes/functions.php",
+				"/Users/sethe/projects/cynergi-wp/_previous/css/main.css",
+				"/Users/sethe/projects/cynergi-wp/subl",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/groups/groups-loop.php",
+				"/Users/sethe/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+				"/Users/sethe/projects/maze/index.html",
+				"/Users/sethe/projects/maze/maze.js",
+				"/Users/sethe/Library/Application Support/Sublime Text 2/Packages/User/Gist.sublime-settings",
+				"/Users/sethe/Library/Application Support/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+				"/Users/sethe/projects/bower-test/components/backbone/component.json",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-university.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/single.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-contact.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-getting-started.html",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/single-training.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-contact.html",
+				"/Users/sethe/projects/cynergi-wp/README.md",
+				"/Users/sethe/projects/cynergi-wp/_revised/includes/footer.php",
+				"/Users/sethe/projects/cynergi-wp/_revised/learn.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/js/jquery-validation/localization/messages_eu.js",
+				"/Users/sethe/projects/cynergi-wp/_revised/includes/header.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/index.php",
+				"/Users/sethe/projects/cynergi-wp/contactform.html",
+				"/Users/sethe/projects/cynergi-wp/wp-content/plugins/cf7sf.php",
+				"/Users/sethe/projects/cynergi-wp/_previous/contact.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/plugins/hello.php",
+				"/Users/sethe/projects/cynergi-wp/_revised/contact.php",
+				"/Users/sethe/projects/cynergi-wp/_revised/how-it-works.php",
+				"/Users/sethe/projects/cynergi-wp/_revised/faq.php",
+				"/Users/sethe/projects/cynergi-wp/_revised/devStory.php",
+				"/Users/sethe/projects/cynergi-wp/_previous/why-cynergi.php",
+				"/Users/sethe/projects/cynergi-wp/_revised/about.php",
+				"/Users/sethe/projects/cynergi-wp/_revised/support.php",
+				"/Users/sethe/projects/cynergi-wp/_revised/index.php",
+				"/Users/sethe/projects/cynergi-wp/_previous/index.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/htadmin_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/htadmin_merchantinfo.php",
+				"/Users/sethe/projects/OnlinePayments/application/controllers/ht_admin.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/htadmin_merchantcreate.php",
+				"/Users/sethe/projects/OnlinePayments/application/controllers/users.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/account_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/controllers/account.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/ht_admin_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/users_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/admin_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/controllers/admin.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/admin_users.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/admin_marketing.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/admin_login.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/admin_edituser.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/users_acctsummary_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/admin_usermgmt_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/admin_mktg_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/users_profile_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/users_autopayenroll.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/users_agr_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/users_pmtmthds_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/users_mkpmt_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/users_autopay_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/account_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/core/HT_Controller.php",
+				"/Users/sethe/projects/OnlinePayments/system/core/Loader.php",
+				"/Users/sethe/projects/OnlinePayments/application/config/database.php",
+				"/Users/sethe/projects/OnlinePayments/application/config/constants.php",
+				"/Users/sethe/projects/OnlinePayments/application/config/config.php",
+				"/Users/sethe/projects/OnlinePayments/.htaccess",
+				"/Applications/MAMP/conf/apache/httpd.conf",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/main_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/users_agreements.php",
+				"/Users/sethe/projects/OnlinePayments/application/config/autoload.php"
+			],
+			"find":
+			{
+				"height": 35.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+					""
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					" -s",
+					"Chrome",
+					".gradient",
+					"transition",
+					"@",
+					"h1",
+					"assets",
+					"html_training",
+					"href=\"",
+					"src='assets",
+					"border-radius: 10px;",
+					"clear",
+					"222222",
+					"submit",
+					"focus",
+					"input",
+					"0.5s",
+					"30",
+					"search",
+					"h2",
+					"input",
+					"5b5b5b",
+					"91,91,91,255",
+					"endColorstr='#7d7d7d'",
+					"rgba(125,125,125,255) 50%, ",
+					"                    color-stop(0.5, rgba(125,125,125,255)),",
+					"$link",
+					".kws_input_fields ",
+					"http://localhost:8888",
+					"none",
+					"bloginfo",
+					"<?php bloginfo('template_directory'); ?>",
+					"Searching",
+					"/wp-content/themes/cynergi",
+					"rgba()",
+					"91,91,91,255",
+					"160,160,160,255",
+					"localhost",
+					"account-links",
+					"\n            ",
+					".modal-wrap",
+					".contact-form",
+					".contact-form ",
+					"h2",
+					"account-links",
+					"social-media",
+					" ",
+					"ignored_pacak",
+					"cc-submit",
+					"<?php bloginfo('template_directory'); ?>",
+					"all",
+					"item",
+					"php",
+					"444",
+					"5px 5px",
+					"999999",
+					"aaaaaa",
+					"*/\n",
+					"0.2s",
+					"form_item_header",
+					"updates",
+					"id",
+					"id=\"",
+					"testimonials",
+					"footer-full",
+					"#footer",
+					"#",
+					"#sideNav",
+					"#adBar",
+					"clear",
+					" id",
+					"#copyBlock",
+					"\n#",
+					"#body-sub",
+					"#body-home",
+					"#splash",
+					".splash",
+					"#content",
+					"#mainNav",
+					"div",
+					"#header",
+					"\n#",
+					"#sideBar2",
+					"#sideBar",
+					"id=\"answer\"",
+					"id=\"question\"",
+					"wrapper",
+					"content-main",
+					"#signupForm",
+					"#body-form",
+					"sethe@hightouchinc.com",
+					"sethe@hightouchinc.co",
+					"m",
+					"sethe@hightouchinc.com",
+					"sethetter@gmail.com",
+					"sethetter",
+					"sethetter@gmail.com",
+					"\";",
+					"$WPCF7_ContactForm",
+					" ",
+					"cynergisuite",
+					"'",
+					"subscribe",
+					"do_something",
+					"                ************************************\n",
+					"banner",
+					"Home Phone",
+					"HO Cust ID",
+					"admin_password",
+					"admin_edituser",
+					"Site Administrator",
+					"$this->lang->load",
+					"$tstpmt",
+					"lang->load",
+					"$this->lang->load",
+					"lang",
+					"db",
+					"function"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"$",
+					"Another link",
+					"/html5_training/assets",
+					"html5_training",
+					"href=\"/html5_training/",
+					"src='/html_training/assets",
+					" ",
+					"/wp-content/themes/cynergi",
+					"<!",
+					", ",
+					"/wp-content/themes/cynergi"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 34.0
+			},
+			"input":
+			{
+				"height": 31.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.git":
+			{
+				"height": 100.0
+			},
+			"replace":
+			{
+				"height": 64.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+					[
+						"wp-settings",
+						"wp-settings.php"
+					],
+					[
+						"raph",
+						"lib/raphael.js"
+					],
+					[
+						"rap",
+						"lib/raphael.js"
+					],
+					[
+						"app",
+						"js/app.js"
+					],
+					[
+						"ind",
+						"index.html"
+					],
+					[
+						"main.scss",
+						"styles/main.scss"
+					],
+					[
+						"less",
+						"styles/main.less"
+					],
+					[
+						"ser",
+						"server.js"
+					],
+					[
+						"style",
+						"style.css"
+					],
+					[
+						"sty",
+						"style.css"
+					],
+					[
+						"functions",
+						"functions.php"
+					],
+					[
+						"styles/main.less",
+						"styles/main.less"
+					],
+					[
+						"",
+						"functions.php"
+					],
+					[
+						"main",
+						"styles/main.css"
+					],
+					[
+						"function",
+						"functions.php"
+					],
+					[
+						"fancys",
+						"js/fancybox/jquery.fancybox-1.3.4.css"
+					],
+					[
+						"single",
+						"single-university.php"
+					],
+					[
+						"uni",
+						"page-university-home.php"
+					],
+					[
+						"footer",
+						"footer.php"
+					],
+					[
+						"univer",
+						"page-university-home.php"
+					],
+					[
+						"header",
+						"header.php"
+					],
+					[
+						"func",
+						"functions.php"
+					],
+					[
+						"footer.php",
+						"footer.php"
+					],
+					[
+						"mainnew",
+						"styles/main-new.css"
+					],
+					[
+						"search",
+						"search.php"
+					],
+					[
+						"un",
+						"page-university-home.php"
+					],
+					[
+						"single-univer",
+						"single-university.php"
+					],
+					[
+						"main-new",
+						"wp-content/themes/cynergi/styles/main-new.css"
+					],
+					[
+						"page",
+						"wp-content/themes/cynergi/page.php"
+					],
+					[
+						"font-awesome",
+						"wp-content/themes/cynergi/styles/font-awesome.css"
+					],
+					[
+						"font",
+						"wp-content/themes/cynergi/styles/font-awesome.css"
+					],
+					[
+						"universi",
+						"wp-content/themes/cynergi/page-university-home.php"
+					],
+					[
+						"mainew",
+						"wp-content/themes/cynergi/styles/main-new.css"
+					],
+					[
+						"unvi",
+						"wp-content/themes/cynergi/page-university-home.php"
+					],
+					[
+						"singleun",
+						"wp-content/themes/cynergi/single-university.php"
+					],
+					[
+						"foo",
+						"footer.php"
+					],
+					[
+						"unv",
+						"single-university.php"
+					],
+					[
+						"mainn",
+						"styles/main-new.css"
+					],
+					[
+						"main-c",
+						"styles/main-new.css"
+					],
+					[
+						"groups",
+						"groups/groups-loop.php"
+					],
+					[
+						"head",
+						"header.php"
+					],
+					[
+						"maz",
+						"maze.js"
+					],
+					[
+						"in",
+						"index.html"
+					],
+					[
+						"contact",
+						"page-contact.php"
+					],
+					[
+						"univ",
+						"page-university.php"
+					],
+					[
+						"funct",
+						"functions.php"
+					],
+					[
+						"mains",
+						"styles/main.css"
+					],
+					[
+						"main.css",
+						"wp-content/themes/cynergi/styles/main.css"
+					],
+					[
+						"rea",
+						"README.md"
+					],
+					[
+						"reader",
+						"_revised/includes/header.php"
+					],
+					[
+						"gitin",
+						".gitignore"
+					],
+					[
+						"how",
+						"_revised/how-it-works.php"
+					],
+					[
+						"dev",
+						"_revised/devStory.php"
+					],
+					[
+						"faq",
+						"_revised/faq.php"
+					],
+					[
+						"whycy",
+						"_previous/why-cynergi.php"
+					],
+					[
+						"about",
+						"_revised/about.php"
+					],
+					[
+						"support",
+						"_revised/support.php"
+					],
+					[
+						"lang",
+						"application/language/english/users_lang.php"
+					],
+					[
+						"htadminlang",
+						"application/language/english/ht_admin_lang.php"
+					],
+					[
+						"adminlang",
+						"application/language/english/admin_lang.php"
+					],
+					[
+						"userslang",
+						"application/language/english/users_lang.php"
+					],
+					[
+						"usersacct",
+						"application/language/english/users_acctsummary_lang.php"
+					],
+					[
+						"admin_usermgmt",
+						"application/language/english/admin_usermgmt_lang.php"
+					],
+					[
+						"users_profile_lang",
+						"application/language/english/users_profile_lang.php"
+					],
+					[
+						"admin",
+						"application/controllers/admin.php"
+					],
+					[
+						"usersautopaylng",
+						"application/language/english/users_autopay_lang.php"
+					],
+					[
+						"usersagrlang",
+						"application/language/english/users_agr_lang.php"
+					],
+					[
+						"usersmkpmtlang",
+						"application/language/english/users_mkpmt_lang.php"
+					],
+					[
+						"userspmtlang",
+						"application/language/english/users_pmtmthds_lang.php"
+					],
+					[
+						"usersagr",
+						"application/language/english/users_agr_lang.php"
+					],
+					[
+						"accountlang",
+						"application/language/english/account_lang.php"
+					],
+					[
+						"langusers",
+						"application/language/english/users_lang.php"
+					],
+					[
+						"users",
+						"application/controllers/users.php"
+					],
+					[
+						"htacc",
+						".htaccess"
+					],
+					[
+						"database",
+						"application/config/database.php"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"selected_items":
+				[
+				],
+				"width": 380.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 208.0,
+			"status_bar_visible": true
+		},
+		"new_window_width": 1280.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"cli",
+						"clickHandler"
+					],
+					[
+						"class",
+						"classTwoP"
+					],
+					[
+						"ready",
+						"readyStateCheckInterval"
+					],
+					[
+						"univers",
+						"university_hidden"
+					],
+					[
+						"side",
+						"side-module"
+					],
+					[
+						"side-right",
+						"side-right"
+					]
+				]
+			},
+			"buffers":
+			[
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 287.0,
+				"selected_items":
+				[
+					[
+						":w",
+						":w - Save"
+					],
+					[
+						"wordwrap",
+						"Word Wrap: Toggle"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"ssscss",
+						"Set Syntax: SCSS"
+					],
+					[
+						"lowerc ",
+						"Convert Case: Lower Case"
+					],
+					[
+						"fetch",
+						"Fetch: File"
+					],
+					[
+						"sshtml",
+						"Set Syntax: HTML"
+					],
+					[
+						"ssless",
+						"Set Syntax: LESS"
+					],
+					[
+						"git change ",
+						"Git: Change Branch"
+					],
+					[
+						"git change branch",
+						"Git: Change Branch"
+					],
+					[
+						":s",
+						":w - Save"
+					],
+					[
+						"lowercase",
+						"Convert Case: Lower Case"
+					],
+					[
+						":",
+						":w - Save"
+					],
+					[
+						"prefere",
+						"Preferences: Settings - Default"
+					],
+					[
+						"preferences",
+						"Preferences: Settings - Default"
+					],
+					[
+						":W",
+						":w - Save"
+					],
+					[
+						"preferecen",
+						"Preferences: Settings - Default"
+					],
+					[
+						"reind",
+						"Indentation: Reindent Lines"
+					],
+					[
+						"pref",
+						"Preferences: Settings - Default"
+					],
+					[
+						":q",
+						"Set Syntax: SQL"
+					],
+					[
+						":bd",
+						"Preferences: Key Bindings - Default"
+					],
+					[
+						"git commit",
+						"Git: Quick Commit"
+					],
+					[
+						"git status",
+						"Git: Status"
+					],
+					[
+						"git add .",
+						"Git: Add..."
+					],
+					[
+						"isntall",
+						"Git: Reset (unstage) All"
+					],
+					[
+						"color",
+						"Color Picker: Insert Color"
+					],
+					[
+						"preferece",
+						"Preferences: Package Control Settings – Default"
+					],
+					[
+						"install ",
+						"Package Control: Install Package"
+					],
+					[
+						"ssphp",
+						"Set Syntax: PHP"
+					],
+					[
+						"phpcs",
+						"PHP Code Sniffer: Sniff this file"
+					],
+					[
+						"install packge",
+						"Package Control: Install Package"
+					],
+					[
+						"php ",
+						"Set Syntax: PHP"
+					],
+					[
+						"install pack",
+						"Package Control: Install Package"
+					],
+					[
+						"conver",
+						"Indentation: Convert to Spaces"
+					],
+					[
+						"packages",
+						"Preferences: Browse Packages"
+					],
+					[
+						"prefer",
+						"Preferences: Settings - Default"
+					],
+					[
+						"bash",
+						"Set Syntax: Shell Script (Bash)"
+					],
+					[
+						"preference",
+						"Preferences: Settings - Default"
+					]
+				],
+				"width": 593.0
+			},
+			"console":
+			{
+				"height": 125.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.scss",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/page-university-home.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/search.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/single-university.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/university-no.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/footer.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/functions.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/university-header.php",
+				"/Users/sethe/projects/cynergi-old/contact.php",
+				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/footer.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/header.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-config.php",
+				"/Users/sethe/projects/cynergi_wp_live/db.sql",
+				"/Users/sethe/projects/cynergi_wp_live/wp-settings.php",
+				"/Users/sethe/dotfiles/bin/install.sh",
+				"/Users/sethe/projects/raphael_test/js/app.js",
+				"/Users/sethe/projects/raphael_test/index.html",
+				"/Users/sethe/projects/raphael_test/lib/raphael.js",
+				"/Users/sethe/dotfiles/.bash_profile",
+				"/Users/sethe/.bash_profile",
+				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/styles/main.scss",
+				"/Users/sethe/projects/cynergi_wp/.gitignore",
+				"/Users/sethe/dotfiles/devtools-theme/Custom.css",
+				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/bin/less-compile",
+				"/Users/sethe/dotfiles/devtools-theme/bin/install.sh",
+				"/Users/sethe/Downloads/chrome-devtools-dark-theme/bin/install.sh",
+				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/styles/main.scss.less",
+				"/Users/sethe/projects/express_test/server.js",
+				"/Users/sethe/projects/jquery_stuff/style.css",
+				"/Users/sethe/projects/jquery_stuff/index.html",
+				"/Users/sethe/projects/jquery_stuff/jquery.js",
+				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/styles/main.less",
+				"/Users/sethe/projects/js_templates/index.html",
+				"/Users/sethe/dotfiles/vimrc",
+				"/Users/sethe/projects/html5_training/assets/js/CPLibrary.js",
+				"/Users/sethe/projects/html5_training/Cynergi_Overview_Captivate_noswf/index.html",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/styles/main.less",
+				"/Users/sethe/__dotbackup/.bash_profile",
+				"/Users/sethe/dotfiles/bash_profile",
+				"/Users/sethe/.bashrc",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/functions.php",
+				"/Users/sethe/__dotbackup/.vimrc",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/styles/main.css",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/footer.php",
+				"/Users/sethe/.irssi/config",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/js/fancybox/jquery.fancybox-1.3.4.css",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/single-university.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-university-home.php",
+				"/Users/sethe/Desktop/index.html",
+				"/Users/sethe/Desktop/jquery.js",
+				"/Users/sethe/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/header.php",
+				"/Users/sethe/projects/cynergi-wp/.gitignore",
+				"/Volumes/C/Windows/System32/drivers/etc/hosts",
+				"/Users/sethe/projects/__cynergi-wp/wp-config.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/styles/main-new.css",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/search.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/university-no.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/members/index.php",
+				"/Users/sethe/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/js/jquery-validation/localization/messages_no.js",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/styles/font-awesome.css",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page.php",
+				"/Users/sethe/projects/cynergi-wp/wp-includes/theme-compat/header.php",
+				"/Users/sethe/projects/cynergi-old/css/main.css",
+				"/Users/sethe/projects/cynergi-old/includes/footer.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/header-buddypress.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/footer-buddypress.php",
+				"/Users/sethe/projects/cynergi-wp/wp-includes/theme-compat/footer.php",
+				"/Users/sethe/projects/cynergi-wp/wp-includes/functions.php",
+				"/Users/sethe/projects/cynergi-wp/_previous/css/main.css",
+				"/Users/sethe/projects/cynergi-wp/subl",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/groups/groups-loop.php",
+				"/Users/sethe/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+				"/Users/sethe/projects/maze/index.html",
+				"/Users/sethe/projects/maze/maze.js",
+				"/Users/sethe/Library/Application Support/Sublime Text 2/Packages/User/Gist.sublime-settings",
+				"/Users/sethe/Library/Application Support/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+				"/Users/sethe/projects/bower-test/components/backbone/component.json",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-university.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/single.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-contact.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-getting-started.html",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/single-training.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-contact.html",
+				"/Users/sethe/projects/cynergi-wp/README.md",
+				"/Users/sethe/projects/cynergi-wp/_revised/includes/footer.php",
+				"/Users/sethe/projects/cynergi-wp/_revised/learn.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/js/jquery-validation/localization/messages_eu.js",
+				"/Users/sethe/projects/cynergi-wp/_revised/includes/header.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/index.php",
+				"/Users/sethe/projects/cynergi-wp/contactform.html",
+				"/Users/sethe/projects/cynergi-wp/wp-content/plugins/cf7sf.php",
+				"/Users/sethe/projects/cynergi-wp/_previous/contact.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/plugins/hello.php",
+				"/Users/sethe/projects/cynergi-wp/_revised/contact.php",
+				"/Users/sethe/projects/cynergi-wp/_revised/how-it-works.php",
+				"/Users/sethe/projects/cynergi-wp/_revised/faq.php",
+				"/Users/sethe/projects/cynergi-wp/_revised/devStory.php",
+				"/Users/sethe/projects/cynergi-wp/_previous/why-cynergi.php",
+				"/Users/sethe/projects/cynergi-wp/_revised/about.php",
+				"/Users/sethe/projects/cynergi-wp/_revised/support.php",
+				"/Users/sethe/projects/cynergi-wp/_revised/index.php",
+				"/Users/sethe/projects/cynergi-wp/_previous/index.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/htadmin_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/htadmin_merchantinfo.php",
+				"/Users/sethe/projects/OnlinePayments/application/controllers/ht_admin.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/htadmin_merchantcreate.php",
+				"/Users/sethe/projects/OnlinePayments/application/controllers/users.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/account_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/controllers/account.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/ht_admin_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/users_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/admin_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/controllers/admin.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/admin_users.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/admin_marketing.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/admin_login.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/admin_edituser.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/users_acctsummary_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/admin_usermgmt_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/admin_mktg_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/users_profile_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/users_autopayenroll.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/users_agr_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/users_pmtmthds_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/users_mkpmt_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/users_autopay_lang.php"
+			],
+			"find":
+			{
+				"height": 35.0
+			},
+			"find_in_files":
+			{
+				"height": 93.0,
+				"where_history":
+				[
+					"",
+					"footer.php",
+					""
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"<input type=\"text\" name=\"s\" placeholder=\"Search the University\">",
+					"<input type=\"text\" name=\"s\">",
+					"home_url",
+					"/wp-content/themes/cynergi",
+					"/wp/wp-content/themes/cynergi",
+					"site_url(\"/\")",
+					"/wp/wp-content/themes/cynergi",
+					"\"/",
+					"/",
+					"/wp-content",
+					" -s",
+					"Chrome",
+					".gradient",
+					"transition",
+					"@",
+					"h1",
+					"assets",
+					"html_training",
+					"href=\"",
+					"src='assets",
+					"border-radius: 10px;",
+					"clear",
+					"222222",
+					"submit",
+					"focus",
+					"input",
+					"0.5s",
+					"30",
+					"search",
+					"h2",
+					"input",
+					"5b5b5b",
+					"91,91,91,255",
+					"endColorstr='#7d7d7d'",
+					"rgba(125,125,125,255) 50%, ",
+					"                    color-stop(0.5, rgba(125,125,125,255)),",
+					"$link",
+					".kws_input_fields ",
+					"http://localhost:8888",
+					"none",
+					"bloginfo",
+					"<?php bloginfo('template_directory'); ?>",
+					"Searching",
+					"/wp-content/themes/cynergi",
+					"rgba()",
+					"91,91,91,255",
+					"160,160,160,255",
+					"localhost",
+					"account-links",
+					"\n            ",
+					".modal-wrap",
+					".contact-form",
+					".contact-form ",
+					"h2",
+					"account-links",
+					"social-media",
+					" ",
+					"ignored_pacak",
+					"cc-submit",
+					"<?php bloginfo('template_directory'); ?>",
+					"all",
+					"item",
+					"php",
+					"444",
+					"5px 5px",
+					"999999",
+					"aaaaaa",
+					"*/\n",
+					"0.2s",
+					"form_item_header",
+					"updates",
+					"id",
+					"id=\"",
+					"testimonials",
+					"footer-full",
+					"#footer",
+					"#",
+					"#sideNav",
+					"#adBar",
+					"clear",
+					" id",
+					"#copyBlock",
+					"\n#",
+					"#body-sub",
+					"#body-home",
+					"#splash",
+					".splash",
+					"#content",
+					"#mainNav",
+					"div",
+					"#header",
+					"\n#",
+					"#sideBar2",
+					"#sideBar",
+					"id=\"answer\"",
+					"id=\"question\"",
+					"wrapper",
+					"content-main",
+					"#signupForm",
+					"#body-form",
+					"sethe@hightouchinc.com",
+					"sethe@hightouchinc.co",
+					"m",
+					"sethe@hightouchinc.com",
+					"sethetter@gmail.com",
+					"sethetter",
+					"sethetter@gmail.com",
+					"\";",
+					"$WPCF7_ContactForm",
+					" ",
+					"cynergisuite",
+					"'",
+					"subscribe",
+					"do_something",
+					"                ************************************\n",
+					"banner",
+					"Home Phone",
+					"HO Cust ID",
+					"admin_password",
+					"admin_edituser",
+					"Site Administrator",
+					"$this->lang->load",
+					"$tstpmt",
+					"lang->load",
+					"$this->lang->load",
+					"lang",
+					"db",
+					"function"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"<input type=\"text\" name=\"s\" placeholder=\"Search Training\">",
+					"<input type=\"text\" name=\"s\" placeholder=\"Search the University\">",
+					"<?php bloginfo(\"template_directory\") ?>",
+					"/wp/wp-content",
+					"$",
+					"Another link",
+					"/html5_training/assets",
+					"html5_training",
+					"href=\"/html5_training/",
+					"src='/html_training/assets",
+					" ",
+					"/wp-content/themes/cynergi",
+					"<!",
+					", ",
+					"/wp-content/themes/cynergi"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi"
+				}
+			],
+			"groups":
+			[
+				{
+					"sheets":
+					[
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 34.0
+			},
+			"input":
+			{
+				"height": 31.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.git":
+			{
+				"height": 100.0
+			},
+			"position": "1280 -224 1280 1024 1280 -224 1280 1024 ",
+			"replace":
+			{
+				"height": 64.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+					[
+						"uni",
+						"university-no.php"
+					],
+					[
+						"functions",
+						"functions.php"
+					],
+					[
+						"footer",
+						"footer.php"
+					],
+					[
+						"main",
+						"styles/main.scss"
+					],
+					[
+						"search",
+						"search.php"
+					],
+					[
+						"main.scss",
+						"styles/main.scss"
+					],
+					[
+						"header",
+						"header.php"
+					],
+					[
+						"wp-settings",
+						"wp-settings.php"
+					],
+					[
+						"raph",
+						"lib/raphael.js"
+					],
+					[
+						"rap",
+						"lib/raphael.js"
+					],
+					[
+						"app",
+						"js/app.js"
+					],
+					[
+						"ind",
+						"index.html"
+					],
+					[
+						"less",
+						"styles/main.less"
+					],
+					[
+						"ser",
+						"server.js"
+					],
+					[
+						"style",
+						"style.css"
+					],
+					[
+						"sty",
+						"style.css"
+					],
+					[
+						"styles/main.less",
+						"styles/main.less"
+					],
+					[
+						"",
+						"functions.php"
+					],
+					[
+						"function",
+						"functions.php"
+					],
+					[
+						"fancys",
+						"js/fancybox/jquery.fancybox-1.3.4.css"
+					],
+					[
+						"single",
+						"single-university.php"
+					],
+					[
+						"univer",
+						"page-university-home.php"
+					],
+					[
+						"func",
+						"functions.php"
+					],
+					[
+						"footer.php",
+						"footer.php"
+					],
+					[
+						"mainnew",
+						"styles/main-new.css"
+					],
+					[
+						"un",
+						"page-university-home.php"
+					],
+					[
+						"single-univer",
+						"single-university.php"
+					],
+					[
+						"main-new",
+						"wp-content/themes/cynergi/styles/main-new.css"
+					],
+					[
+						"page",
+						"wp-content/themes/cynergi/page.php"
+					],
+					[
+						"font-awesome",
+						"wp-content/themes/cynergi/styles/font-awesome.css"
+					],
+					[
+						"font",
+						"wp-content/themes/cynergi/styles/font-awesome.css"
+					],
+					[
+						"universi",
+						"wp-content/themes/cynergi/page-university-home.php"
+					],
+					[
+						"mainew",
+						"wp-content/themes/cynergi/styles/main-new.css"
+					],
+					[
+						"unvi",
+						"wp-content/themes/cynergi/page-university-home.php"
+					],
+					[
+						"singleun",
+						"wp-content/themes/cynergi/single-university.php"
+					],
+					[
+						"foo",
+						"footer.php"
+					],
+					[
+						"unv",
+						"single-university.php"
+					],
+					[
+						"mainn",
+						"styles/main-new.css"
+					],
+					[
+						"main-c",
+						"styles/main-new.css"
+					],
+					[
+						"groups",
+						"groups/groups-loop.php"
+					],
+					[
+						"head",
+						"header.php"
+					],
+					[
+						"maz",
+						"maze.js"
+					],
+					[
+						"in",
+						"index.html"
+					],
+					[
+						"contact",
+						"page-contact.php"
+					],
+					[
+						"univ",
+						"page-university.php"
+					],
+					[
+						"funct",
+						"functions.php"
+					],
+					[
+						"mains",
+						"styles/main.css"
+					],
+					[
+						"main.css",
+						"wp-content/themes/cynergi/styles/main.css"
+					],
+					[
+						"rea",
+						"README.md"
+					],
+					[
+						"reader",
+						"_revised/includes/header.php"
+					],
+					[
+						"gitin",
+						".gitignore"
+					],
+					[
+						"how",
+						"_revised/how-it-works.php"
+					],
+					[
+						"dev",
+						"_revised/devStory.php"
+					],
+					[
+						"faq",
+						"_revised/faq.php"
+					],
+					[
+						"whycy",
+						"_previous/why-cynergi.php"
+					],
+					[
+						"about",
+						"_revised/about.php"
+					],
+					[
+						"support",
+						"_revised/support.php"
+					],
+					[
+						"lang",
+						"application/language/english/users_lang.php"
+					],
+					[
+						"htadminlang",
+						"application/language/english/ht_admin_lang.php"
+					],
+					[
+						"adminlang",
+						"application/language/english/admin_lang.php"
+					],
+					[
+						"userslang",
+						"application/language/english/users_lang.php"
+					],
+					[
+						"usersacct",
+						"application/language/english/users_acctsummary_lang.php"
+					],
+					[
+						"admin_usermgmt",
+						"application/language/english/admin_usermgmt_lang.php"
+					],
+					[
+						"users_profile_lang",
+						"application/language/english/users_profile_lang.php"
+					],
+					[
+						"admin",
+						"application/controllers/admin.php"
+					],
+					[
+						"usersautopaylng",
+						"application/language/english/users_autopay_lang.php"
+					],
+					[
+						"usersagrlang",
+						"application/language/english/users_agr_lang.php"
+					],
+					[
+						"usersmkpmtlang",
+						"application/language/english/users_mkpmt_lang.php"
+					],
+					[
+						"userspmtlang",
+						"application/language/english/users_pmtmthds_lang.php"
+					],
+					[
+						"usersagr",
+						"application/language/english/users_agr_lang.php"
+					],
+					[
+						"accountlang",
+						"application/language/english/account_lang.php"
+					],
+					[
+						"langusers",
+						"application/language/english/users_lang.php"
+					],
+					[
+						"users",
+						"application/controllers/users.php"
+					],
+					[
+						"htacc",
+						".htaccess"
+					],
+					[
+						"database",
+						"application/config/database.php"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"selected_items":
+				[
+				],
+				"width": 380.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 208.0,
+			"status_bar_visible": true,
+			"window_id": 76,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}
