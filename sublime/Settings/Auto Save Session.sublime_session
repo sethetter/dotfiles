@@ -933,7 +933,7 @@
 					"file": "/Users/sethe/dotfiles/sublime/Packages/User/Preferences.sublime-settings",
 					"settings":
 					{
-						"buffer_size": 566,
+						"buffer_size": 592,
 						"line_ending": "Unix"
 					}
 				}
@@ -941,9 +941,13 @@
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 287.0,
+				"height": 392.0,
 				"selected_items":
 				[
+					[
+						"settings",
+						"Preferences: Settings - Default"
+					],
 					[
 						":w",
 						":w - Save"
@@ -1126,6 +1130,8 @@
 			},
 			"file_history":
 			[
+				"/Users/sethe/dotfiles/sublime/Packages/Default/Preferences.sublime-settings",
+				"/Users/sethe/dotfiles/sublime/Packages/User/Preferences.sublime-settings",
 				"/Users/sethe/dotfiles/README.md",
 				"/Users/sethe/dotfiles/Re",
 				"/Users/sethe/dotfiles/bin/install.sh",
@@ -1251,9 +1257,7 @@
 				"/Users/sethe/projects/OnlinePayments/application/views/admin_login.php",
 				"/Users/sethe/projects/OnlinePayments/application/views/admin_edituser.php",
 				"/Users/sethe/projects/OnlinePayments/application/language/english/users_acctsummary_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/admin_usermgmt_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/admin_mktg_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/users_profile_lang.php"
+				"/Users/sethe/projects/OnlinePayments/application/language/english/admin_usermgmt_lang.php"
 			],
 			"find":
 			{
@@ -1455,8 +1459,8 @@
 								"selection":
 								[
 									[
-										1024,
-										1024
+										1046,
+										1046
 									]
 								],
 								"settings":
@@ -1476,37 +1480,20 @@
 							"file": "/Users/sethe/dotfiles/sublime/Packages/User/Preferences.sublime-settings",
 							"settings":
 							{
-								"buffer_size": 566,
+								"buffer_size": 592,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										239,
-										239
-									],
-									[
-										284,
-										284
-									],
-									[
-										369,
-										369
-									],
-									[
-										452,
-										452
-									],
-									[
-										509,
-										509
+										122,
+										117
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/JavaScript/JSON.tmLanguage",
-									"translate_tabs_to_spaces": true
+									"syntax": "Packages/JavaScript/JSON.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,

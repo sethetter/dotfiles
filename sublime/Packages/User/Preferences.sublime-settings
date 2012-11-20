@@ -1,6 +1,7 @@
 {
     "color_scheme": "Packages/Color Scheme - Default/Blackboard.tmTheme",
     "font_size": 14.0,
+    "font_face": "Menlo",
     "ignored_packages": [],
     "bold_folder_labels": true, // makes the sidebar a little easier to understand
     "caret_style": "phase", // looks cool :p
