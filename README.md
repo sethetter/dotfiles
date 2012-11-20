@@ -7,6 +7,7 @@ Includes configuration files for:
 - iTerm
 - Sublime Text 2
 - Irssi
+- Chrome Dev Tools
 - bash_profile
 
 Install
