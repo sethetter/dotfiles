@@ -921,16 +921,44 @@
 			},
 			"buffers":
 			[
+				{
+					"file": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.less",
+					"settings":
+					{
+						"buffer_size": 13920,
+						"line_ending": "Unix"
+					}
+				}
 			],
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 287.0,
+				"height": 87.0,
 				"selected_items":
 				[
 					[
+						"ssless",
+						"Set Syntax: LESS"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"settings",
+						"Preferences: Settings - Default"
+					],
+					[
 						":w",
 						":w - Save"
+					],
+					[
+						"space",
+						"Indentation: Convert to Spaces"
+					],
+					[
+						"git",
+						"Git: Quick Commit"
 					],
 					[
 						"wordwrap",
@@ -939,10 +967,6 @@
 					[
 						"remove",
 						"Package Control: Remove Package"
-					],
-					[
-						"install",
-						"Package Control: Install Package"
 					],
 					[
 						"ssscss",
@@ -959,10 +983,6 @@
 					[
 						"sshtml",
 						"Set Syntax: HTML"
-					],
-					[
-						"ssless",
-						"Set Syntax: LESS"
 					],
 					[
 						"git change ",
@@ -1103,12 +1123,20 @@
 			"file_history":
 			[
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.scss",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/functions.php",
+				"/Users/sethe/dotfiles/sublime/Packages/User/Preferences.sublime-settings",
+				"/Users/sethe/dotfiles/sublime/Packages/Default/Preferences.sublime-settings",
+				"/Users/sethe/dotfiles/README.md",
+				"/Users/sethe/dotfiles/Re",
+				"/Users/sethe/dotfiles/bin/install.sh",
+				"/Users/sethe/dotfiles/sublime/Packages/Theme - Default/Default.sublime-theme",
+				"/Users/sethe/dotfiles/sublime/Packages/Color Scheme - Default/Blackboard.tmTheme",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/js/jquery-validation/lib/jquery.js",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/single-university.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/page-university-home.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/search.php",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/single-university.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/university-no.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/footer.php",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/functions.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/university-header.php",
 				"/Users/sethe/projects/cynergi-old/contact.php",
 				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/footer.php",
@@ -1116,7 +1144,6 @@
 				"/Users/sethe/projects/cynergi_wp_live/wp-config.php",
 				"/Users/sethe/projects/cynergi_wp_live/db.sql",
 				"/Users/sethe/projects/cynergi_wp_live/wp-settings.php",
-				"/Users/sethe/dotfiles/bin/install.sh",
 				"/Users/sethe/projects/raphael_test/js/app.js",
 				"/Users/sethe/projects/raphael_test/index.html",
 				"/Users/sethe/projects/raphael_test/lib/raphael.js",
@@ -1222,14 +1249,7 @@
 				"/Users/sethe/projects/OnlinePayments/application/views/admin_login.php",
 				"/Users/sethe/projects/OnlinePayments/application/views/admin_edituser.php",
 				"/Users/sethe/projects/OnlinePayments/application/language/english/users_acctsummary_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/admin_usermgmt_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/admin_mktg_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/users_profile_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/views/users_autopayenroll.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/users_agr_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/users_pmtmthds_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/users_mkpmt_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/users_autopay_lang.php"
+				"/Users/sethe/projects/OnlinePayments/application/language/english/admin_usermgmt_lang.php"
 			],
 			"find":
 			{
@@ -1250,6 +1270,26 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"$",
+					"graidnet",
+					"$blue",
+					"@include ",
+					"$green",
+					"#",
+					"100",
+					"200, 200, 200",
+					"25",
+					"10",
+					"0",
+					"80",
+					"220",
+					"190",
+					"255",
+					"100",
+					"15",
+					"20",
+					"130, 130, 130",
+					"{\n        \"class\": \"sidebar_container\",\n        \"layer0.tint\": [80, 80, 80],\n        \"layer0.opacity\": 1.0,\n        \"layer0.draw_center\": false,\n        \"layer0.inner_margin\": [0, 0, 1, 0],\n        \"content_margin\": [0, 0, 1, 0]\n    },\n\n    {\n        \"class\": \"sidebar_tree\",\n        \"row_padding\": [8, 3],\n        \"indent\": 12,\n        \"indent_offset\": 17,\n        \"layer0.tint\": [214, 221, 230],\n        \"layer0.opacity\": 1.0,\n        \"dark_content\": false\n    },\n\n    {\n        \"class\": \"sidebar_heading\",\n        \"color\": [96, 110, 128],\n        \"font.bold\": true,\n        \"shadow_color\": [255, 255, 255],\n        \"shadow_offset\": [0, 1]\n    {\n        \"class\": \"sidebar_heading\",\n        \"parents\":\n        [\n            { \"class\": \"tree_row\", \"attributes\": [\"selected\"] }\n        ],\n        \"shadow_color\": [0, 0, 0] \n    },   \n\n\n    {\n        \"class\": \"sidebar_label\",\n        \"color\": [0, 0, 0]\n    }",
 					"<input type=\"text\" name=\"s\" placeholder=\"Search the University\">",
 					"<input type=\"text\" name=\"s\">",
 					"home_url",
@@ -1357,27 +1397,7 @@
 					"sethetter@gmail.com",
 					"sethetter",
 					"sethetter@gmail.com",
-					"\";",
-					"$WPCF7_ContactForm",
-					" ",
-					"cynergisuite",
-					"'",
-					"subscribe",
-					"do_something",
-					"                ************************************\n",
-					"banner",
-					"Home Phone",
-					"HO Cust ID",
-					"admin_password",
-					"admin_edituser",
-					"Site Administrator",
-					"$this->lang->load",
-					"$tstpmt",
-					"lang->load",
-					"$this->lang->load",
-					"lang",
-					"db",
-					"function"
+					"\";"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -1385,6 +1405,9 @@
 				"regex": false,
 				"replace_history":
 				[
+					"@blue",
+					".",
+					"@green",
 					"<input type=\"text\" name=\"s\" placeholder=\"Search Training\">",
 					"<input type=\"text\" name=\"s\" placeholder=\"Search the University\">",
 					"<?php bloginfo(\"template_directory\") ?>",
@@ -1416,8 +1439,105 @@
 			"groups":
 			[
 				{
+					"selected": 0,
 					"sheets":
 					[
+						{
+							"buffer": 0,
+							"file": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.less",
+							"settings":
+							{
+								"buffer_size": 13920,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										528,
+										528
+									],
+									[
+										550,
+										550
+									],
+									[
+										613,
+										613
+									],
+									[
+										629,
+										629
+									],
+									[
+										748,
+										748
+									],
+									[
+										776,
+										776
+									],
+									[
+										835,
+										835
+									],
+									[
+										851,
+										851
+									],
+									[
+										912,
+										912
+									],
+									[
+										928,
+										928
+									],
+									[
+										1024,
+										1024
+									],
+									[
+										1051,
+										1051
+									],
+									[
+										1079,
+										1079
+									],
+									[
+										1124,
+										1124
+									],
+									[
+										1161,
+										1161
+									],
+									[
+										1198,
+										1198
+									],
+									[
+										1235,
+										1235
+									],
+									[
+										1272,
+										1272
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/LESS/LESS.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
 					]
 				}
 			],
@@ -1468,12 +1588,28 @@
 				"selected_items":
 				[
 					[
-						"uni",
-						"university-no.php"
+						"mainless",
+						"styles/main.less"
+					],
+					[
+						"main.scss",
+						"styles/main.scss"
+					],
+					[
+						"func",
+						"functions.php"
 					],
 					[
 						"functions",
 						"functions.php"
+					],
+					[
+						"js",
+						"js/jquery-validation/lib/jquery.js"
+					],
+					[
+						"uni",
+						"university-no.php"
 					],
 					[
 						"footer",
@@ -1486,10 +1622,6 @@
 					[
 						"search",
 						"search.php"
-					],
-					[
-						"main.scss",
-						"styles/main.scss"
 					],
 					[
 						"header",
@@ -1554,10 +1686,6 @@
 					[
 						"univer",
 						"page-university-home.php"
-					],
-					[
-						"func",
-						"functions.php"
 					],
 					[
 						"footer.php",
