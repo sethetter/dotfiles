@@ -961,10 +961,34 @@
 			"buffers":
 			[
 				{
-					"file": "/Users/sethe/dotfiles/irssi/config",
+					"file": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/header.php",
 					"settings":
 					{
-						"buffer_size": 7582,
+						"buffer_size": 3456,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/footer.php",
+					"settings":
+					{
+						"buffer_size": 8099,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.less",
+					"settings":
+					{
+						"buffer_size": 14608,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/Users/sethe/dotfiles/README.md",
+					"settings":
+					{
+						"buffer_size": 644,
 						"line_ending": "Unix"
 					}
 				}
@@ -1161,6 +1185,7 @@
 			},
 			"file_history":
 			[
+				"/Users/sethe/dotfiles/irssi/config",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/university-no.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/page-university-home.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/functions.php",
@@ -1287,8 +1312,7 @@
 				"/Users/sethe/projects/OnlinePayments/application/views/admin_users.php",
 				"/Users/sethe/projects/OnlinePayments/application/views/admin_marketing.php",
 				"/Users/sethe/projects/OnlinePayments/application/views/admin_login.php",
-				"/Users/sethe/projects/OnlinePayments/application/views/admin_edituser.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/users_acctsummary_lang.php"
+				"/Users/sethe/projects/OnlinePayments/application/views/admin_edituser.php"
 			],
 			"find":
 			{
@@ -1309,6 +1333,9 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"@green",
+					"header",
+					"account",
 					"$",
 					"graidnet",
 					"$blue",
@@ -1433,10 +1460,7 @@
 					"sethe@hightouchinc.co",
 					"m",
 					"sethe@hightouchinc.com",
-					"sethetter@gmail.com",
-					"sethetter",
-					"sethetter@gmail.com",
-					"\";"
+					"sethetter@gmail.com"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -1478,33 +1502,115 @@
 			"groups":
 			[
 				{
-					"selected": 0,
+					"selected": 3,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/Users/sethe/dotfiles/irssi/config",
+							"file": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/header.php",
 							"settings":
 							{
-								"buffer_size": 7582,
+								"buffer_size": 3456,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										7450,
-										7450
+										2541,
+										2541
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"syntax": "Packages/PHP/PHP.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/footer.php",
+							"settings":
+							{
+								"buffer_size": 8099,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1088,
+										1382
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/PHP/PHP.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.less",
+							"settings":
+							{
+								"buffer_size": 14608,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1684,
+										1684
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/LESS/LESS.tmLanguage",
 									"tab_size": 2,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 4201.0,
+								"translation.y": 487.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/Users/sethe/dotfiles/README.md",
+							"settings":
+							{
+								"buffer_size": 644,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										565,
+										565
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Markdown/Markdown.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -1559,6 +1665,18 @@
 				"selected_items":
 				[
 					[
+						"main.less",
+						"styles/main.less"
+					],
+					[
+						"footer",
+						"footer.php"
+					],
+					[
+						"header",
+						"header.php"
+					],
+					[
 						"home",
 						"page-university-home.php"
 					],
@@ -1577,10 +1695,6 @@
 					[
 						"function",
 						"functions.php"
-					],
-					[
-						"footer",
-						"footer.php"
 					],
 					[
 						"mainless",
@@ -1609,10 +1723,6 @@
 					[
 						"search",
 						"search.php"
-					],
-					[
-						"header",
-						"header.php"
 					],
 					[
 						"wp-settings",
