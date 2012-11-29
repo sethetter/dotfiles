@@ -1,6 +1,7 @@
 {
 	"folder_history":
 	[
+		"/Users/sethetter/Dropbox/personal/teach-app",
 		"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi",
 		"/Users/sethe/projects/OnlinePayments",
 		"/Users/sethe/projects/cynergi_wp_live",
@@ -16,10 +17,10 @@
 		"/Users/sethe/projects/cynergi-wp",
 		"/Users/sethe/projects/maze"
 	],
-	"last_window_id": 77,
+	"last_window_id": 79,
 	"settings":
 	{
-		"new_window_height": 1002.0,
+		"new_window_height": 752.0,
 		"new_window_settings":
 		{
 			"auto_complete":
@@ -55,9 +56,29 @@
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 87.0,
+				"height": 167.0,
 				"selected_items":
 				[
+					[
+						"spaces",
+						"Indentation: Convert to Spaces"
+					],
+					[
+						"tabs",
+						"Indentation: Convert to Tabs"
+					],
+					[
+						"sshtml",
+						"Set Syntax: HTML"
+					],
+					[
+						"gist",
+						"Gist: Create Private Gist"
+					],
+					[
+						":w",
+						":w - Save"
+					],
 					[
 						"ssless",
 						"Set Syntax: LESS"
@@ -69,10 +90,6 @@
 					[
 						"settings",
 						"Preferences: Settings - Default"
-					],
-					[
-						":w",
-						":w - Save"
 					],
 					[
 						"space",
@@ -101,10 +118,6 @@
 					[
 						"fetch",
 						"Fetch: File"
-					],
-					[
-						"sshtml",
-						"Set Syntax: HTML"
 					],
 					[
 						"git change ",
@@ -244,26 +257,38 @@
 			},
 			"file_history":
 			[
+				"/Users/sethetter/Dropbox/personal/teach-app/test/spec/teacher/views/class-list-view-spec.js",
+				"/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher/templates/class/class-list.jst",
+				"/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher/collections/classes.js",
+				"/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher/models/class.js",
+				"/Users/sethetter/Dropbox/personal/teach-app/test/spec/teacher-spec.js",
+				"/Users/sethetter/Dropbox/personal/teach-app/test/spec/teacher/models/class-spec.js",
+				"/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher/views/class/class-list-view.js",
+				"/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher/views/class/class-view.js",
+				"/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher-main.js",
+				"/Users/sethetter/Dropbox/personal/teach-app/test/teacher-spec.html",
+				"/Users/sethetter/Dropbox/personal/teach-app/node_modules/grunt-jasmine/node_modules/grunt/node_modules/connect/node_modules/formidable/test/legacy/simple/test-querystring-parser.js",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.less",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.scss",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/footer.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/header.php",
+				"/Users/sethe/dotfiles/README.md",
+				"/Users/sethe/dotfiles/irssi/config",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/university-no.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/page-university-home.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/functions.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.scss",
 				"/Users/sethe/dotfiles/sublime/Packages/User/Preferences.sublime-settings",
 				"/Users/sethe/dotfiles/sublime/Packages/Default/Preferences.sublime-settings",
-				"/Users/sethe/dotfiles/README.md",
 				"/Users/sethe/dotfiles/Re",
 				"/Users/sethe/dotfiles/bin/install.sh",
 				"/Users/sethe/dotfiles/sublime/Packages/Theme - Default/Default.sublime-theme",
 				"/Users/sethe/dotfiles/sublime/Packages/Color Scheme - Default/Blackboard.tmTheme",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/js/jquery-validation/lib/jquery.js",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/single-university.php",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/page-university-home.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/search.php",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/university-no.php",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/footer.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/university-header.php",
 				"/Users/sethe/projects/cynergi-old/contact.php",
 				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/footer.php",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/header.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-config.php",
 				"/Users/sethe/projects/cynergi_wp_live/db.sql",
 				"/Users/sethe/projects/cynergi_wp_live/wp-settings.php",
@@ -359,19 +384,7 @@
 				"/Users/sethe/projects/OnlinePayments/application/language/english/htadmin_lang.php",
 				"/Users/sethe/projects/OnlinePayments/application/views/htadmin_merchantinfo.php",
 				"/Users/sethe/projects/OnlinePayments/application/controllers/ht_admin.php",
-				"/Users/sethe/projects/OnlinePayments/application/views/htadmin_merchantcreate.php",
-				"/Users/sethe/projects/OnlinePayments/application/controllers/users.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/account_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/controllers/account.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/ht_admin_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/users_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/admin_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/controllers/admin.php",
-				"/Users/sethe/projects/OnlinePayments/application/views/admin_users.php",
-				"/Users/sethe/projects/OnlinePayments/application/views/admin_marketing.php",
-				"/Users/sethe/projects/OnlinePayments/application/views/admin_login.php",
-				"/Users/sethe/projects/OnlinePayments/application/views/admin_edituser.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/users_acctsummary_lang.php"
+				"/Users/sethe/projects/OnlinePayments/application/views/htadmin_merchantcreate.php"
 			],
 			"find":
 			{
@@ -392,6 +405,15 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"components",
+					"../../",
+					"../",
+					":",
+					"\":",
+					":",
+					"@green",
+					"header",
+					"account",
 					"$",
 					"graidnet",
 					"$blue",
@@ -510,16 +532,7 @@
 					"id=\"question\"",
 					"wrapper",
 					"content-main",
-					"#signupForm",
-					"#body-form",
-					"sethe@hightouchinc.com",
-					"sethe@hightouchinc.co",
-					"m",
-					"sethe@hightouchinc.com",
-					"sethetter@gmail.com",
-					"sethetter",
-					"sethetter@gmail.com",
-					"\";"
+					"#signupForm"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -598,6 +611,62 @@
 				"selected_items":
 				[
 					[
+						"grunt",
+						"grunt.js"
+					],
+					[
+						"classlistjst",
+						"app/js/teacher/templates/class/class-list.jst"
+					],
+					[
+						"classes",
+						"app/js/teacher/collections/classes.js"
+					],
+					[
+						"class.js",
+						"app/js/teacher/models/class.js"
+					],
+					[
+						"class-spec",
+						"test/spec/teacher/models/class-spec.js"
+					],
+					[
+						"teacherspec",
+						"test/spec/teacher-spec.js"
+					],
+					[
+						"main.less",
+						"styles/main.less"
+					],
+					[
+						"footer",
+						"footer.php"
+					],
+					[
+						"header",
+						"header.php"
+					],
+					[
+						"home",
+						"page-university-home.php"
+					],
+					[
+						"functions",
+						"functions.php"
+					],
+					[
+						"less",
+						"styles/main.less"
+					],
+					[
+						"unversityno",
+						"university-no.php"
+					],
+					[
+						"function",
+						"functions.php"
+					],
+					[
 						"mainless",
 						"styles/main.less"
 					],
@@ -610,10 +679,6 @@
 						"functions.php"
 					],
 					[
-						"functions",
-						"functions.php"
-					],
-					[
 						"js",
 						"js/jquery-validation/lib/jquery.js"
 					],
@@ -622,20 +687,12 @@
 						"university-no.php"
 					],
 					[
-						"footer",
-						"footer.php"
-					],
-					[
 						"main",
 						"styles/main.scss"
 					],
 					[
 						"search",
 						"search.php"
-					],
-					[
-						"header",
-						"header.php"
 					],
 					[
 						"wp-settings",
@@ -658,10 +715,6 @@
 						"index.html"
 					],
 					[
-						"less",
-						"styles/main.less"
-					],
-					[
 						"ser",
 						"server.js"
 					],
@@ -679,10 +732,6 @@
 					],
 					[
 						"",
-						"functions.php"
-					],
-					[
-						"function",
 						"functions.php"
 					],
 					[
@@ -918,7 +967,7 @@
 			},
 			"show_minimap": true,
 			"show_open_files": false,
-			"show_tabs": true,
+			"show_tabs": false,
 			"side_bar_visible": true,
 			"side_bar_width": 208.0,
 			"status_bar_visible": true
@@ -961,34 +1010,34 @@
 			"buffers":
 			[
 				{
-					"file": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/header.php",
+					"file": "/Users/sethetter/Dropbox/personal/teach-app/test/spec/teacher/views/class-list-view-spec.js",
 					"settings":
 					{
-						"buffer_size": 3456,
+						"buffer_size": 3486,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/footer.php",
+					"file": "/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher/views/class/class-list-view.js",
 					"settings":
 					{
-						"buffer_size": 8099,
+						"buffer_size": 2476,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.less",
+					"file": "/Users/sethetter/Dropbox/personal/teach-app/test/spec/teacher/routers/app-router-spec.js",
 					"settings":
 					{
-						"buffer_size": 14608,
+						"buffer_size": 351,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/Users/sethe/dotfiles/README.md",
+					"file": "/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher/app.js",
 					"settings":
 					{
-						"buffer_size": 644,
+						"buffer_size": 667,
 						"line_ending": "Unix"
 					}
 				}
@@ -996,20 +1045,36 @@
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 347.0,
+				"height": 67.0,
 				"selected_items":
 				[
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"sshtml",
+						"Set Syntax: HTML"
+					],
 					[
 						":w",
 						":w - Save"
 					],
 					[
-						"ssless",
-						"Set Syntax: LESS"
+						"tabs",
+						"View: Toggle Tabs"
 					],
 					[
-						"install",
-						"Package Control: Install Package"
+						"spaces",
+						"Indentation: Convert to Spaces"
+					],
+					[
+						"gist",
+						"Gist: Create Private Gist"
+					],
+					[
+						"ssless",
+						"Set Syntax: LESS"
 					],
 					[
 						"settings",
@@ -1042,10 +1107,6 @@
 					[
 						"fetch",
 						"Fetch: File"
-					],
-					[
-						"sshtml",
-						"Set Syntax: HTML"
 					],
 					[
 						"git change ",
@@ -1185,16 +1246,35 @@
 			},
 			"file_history":
 			[
+				"/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher/views/class/class-view.js",
+				"/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher/templates/class/class.jst",
+				"/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher/collections/classes.js",
+				"/Users/sethetter/Dropbox/personal/teach-app/test/spec/teacher/collections/classes-spec.js",
+				"/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher/templates/class/class-list.jst",
+				"/Users/sethetter/Dropbox/personal/teach-app/app/css/main.css",
+				"/Users/sethetter/Dropbox/personal/teach-app/test/spec/teacher/models/class-spec.js",
+				"/Users/sethetter/Dropbox/personal/teach-app/test/teacher-spec.html",
+				"/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher/templates/app.jst",
+				"/Users/sethetter/Dropbox/personal/teach-app/grunt.js",
+				"/Users/sethetter/Dropbox/personal/teach-app/.gitignore",
+				"/Users/sethetter/Dropbox/personal/teach-app/_SpecRunner.html",
+				"/Users/sethetter/Dropbox/personal/teach-app/test/spec/teacher/views/class-list-view-spec.js",
+				"/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher/models/class.js",
+				"/Users/sethetter/Dropbox/personal/teach-app/test/spec/teacher-spec.js",
+				"/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher/views/class/class-list-view.js",
+				"/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher-main.js",
+				"/Users/sethetter/Dropbox/personal/teach-app/node_modules/grunt-jasmine/node_modules/grunt/node_modules/connect/node_modules/formidable/test/legacy/simple/test-querystring-parser.js",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.less",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/footer.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/header.php",
+				"/Users/sethe/dotfiles/README.md",
 				"/Users/sethe/dotfiles/irssi/config",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/university-no.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/page-university-home.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/functions.php",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.less",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/footer.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.scss",
 				"/Users/sethe/dotfiles/sublime/Packages/User/Preferences.sublime-settings",
 				"/Users/sethe/dotfiles/sublime/Packages/Default/Preferences.sublime-settings",
-				"/Users/sethe/dotfiles/README.md",
 				"/Users/sethe/dotfiles/Re",
 				"/Users/sethe/dotfiles/bin/install.sh",
 				"/Users/sethe/dotfiles/sublime/Packages/Theme - Default/Default.sublime-theme",
@@ -1205,7 +1285,6 @@
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/university-header.php",
 				"/Users/sethe/projects/cynergi-old/contact.php",
 				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/footer.php",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/header.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-config.php",
 				"/Users/sethe/projects/cynergi_wp_live/db.sql",
 				"/Users/sethe/projects/cynergi_wp_live/wp-settings.php",
@@ -1294,25 +1373,7 @@
 				"/Users/sethe/projects/cynergi-wp/_revised/faq.php",
 				"/Users/sethe/projects/cynergi-wp/_revised/devStory.php",
 				"/Users/sethe/projects/cynergi-wp/_previous/why-cynergi.php",
-				"/Users/sethe/projects/cynergi-wp/_revised/about.php",
-				"/Users/sethe/projects/cynergi-wp/_revised/support.php",
-				"/Users/sethe/projects/cynergi-wp/_revised/index.php",
-				"/Users/sethe/projects/cynergi-wp/_previous/index.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/htadmin_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/views/htadmin_merchantinfo.php",
-				"/Users/sethe/projects/OnlinePayments/application/controllers/ht_admin.php",
-				"/Users/sethe/projects/OnlinePayments/application/views/htadmin_merchantcreate.php",
-				"/Users/sethe/projects/OnlinePayments/application/controllers/users.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/account_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/controllers/account.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/ht_admin_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/users_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/admin_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/controllers/admin.php",
-				"/Users/sethe/projects/OnlinePayments/application/views/admin_users.php",
-				"/Users/sethe/projects/OnlinePayments/application/views/admin_marketing.php",
-				"/Users/sethe/projects/OnlinePayments/application/views/admin_login.php",
-				"/Users/sethe/projects/OnlinePayments/application/views/admin_edituser.php"
+				"/Users/sethe/projects/cynergi-wp/_revised/about.php"
 			],
 			"find":
 			{
@@ -1320,7 +1381,7 @@
 			},
 			"find_in_files":
 			{
-				"height": 0.0,
+				"height": 93.0,
 				"where_history":
 				[
 					"",
@@ -1333,6 +1394,22 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"Backbone.LocalStorage",
+					"errors",
+					"beforeEach",
+					"describe",
+					"describe(\" -- ",
+					"s.ClassListView.collection.reset();",
+					"this.ClassListView.collection.reset();",
+					"this.Classes",
+					"describe(\"",
+					"Classes",
+					"components",
+					"../../",
+					"../",
+					":",
+					"\":",
+					":",
 					"@green",
 					"header",
 					"account",
@@ -1444,23 +1521,7 @@
 					"#splash",
 					".splash",
 					"#content",
-					"#mainNav",
-					"div",
-					"#header",
-					"\n#",
-					"#sideBar2",
-					"#sideBar",
-					"id=\"answer\"",
-					"id=\"question\"",
-					"wrapper",
-					"content-main",
-					"#signupForm",
-					"#body-form",
-					"sethe@hightouchinc.com",
-					"sethe@hightouchinc.co",
-					"m",
-					"sethe@hightouchinc.com",
-					"sethetter@gmail.com"
+					"#mainNav"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -1468,6 +1529,8 @@
 				"regex": false,
 				"replace_history":
 				[
+					"describe(\"",
+					"describe(\" -- ",
 					"@blue",
 					".",
 					"@green",
@@ -1496,34 +1559,34 @@
 			"folders":
 			[
 				{
-					"path": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi"
+					"path": "/Users/sethetter/Dropbox/personal/teach-app"
 				}
 			],
 			"groups":
 			[
 				{
-					"selected": 3,
+					"selected": 2,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/header.php",
+							"file": "/Users/sethetter/Dropbox/personal/teach-app/test/spec/teacher/views/class-list-view-spec.js",
 							"settings":
 							{
-								"buffer_size": 3456,
+								"buffer_size": 3486,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										2541,
-										2541
+										172,
+										172
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/PHP/PHP.tmLanguage",
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 									"tab_size": 4,
 									"translate_tabs_to_spaces": true
 								},
@@ -1535,25 +1598,51 @@
 						},
 						{
 							"buffer": 1,
-							"file": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/footer.php",
+							"file": "/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher/views/class/class-list-view.js",
 							"settings":
 							{
-								"buffer_size": 8099,
+								"buffer_size": 2476,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1088,
-										1382
+										2347,
+										2347
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/PHP/PHP.tmLanguage",
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 									"tab_size": 4,
 									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 715.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/Users/sethetter/Dropbox/personal/teach-app/test/spec/teacher/routers/app-router-spec.js",
+							"settings":
+							{
+								"buffer_size": 351,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										339,
+										339
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -1562,52 +1651,26 @@
 							"type": "text"
 						},
 						{
-							"buffer": 2,
-							"file": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.less",
-							"settings":
-							{
-								"buffer_size": 14608,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1684,
-										1684
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/LESS/LESS.tmLanguage",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 487.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
 							"buffer": 3,
-							"file": "/Users/sethe/dotfiles/README.md",
+							"file": "/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher/app.js",
 							"settings":
 							{
-								"buffer_size": 644,
+								"buffer_size": 667,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										565,
-										565
+										0,
+										0
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/Markdown/Markdown.tmLanguage"
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -1653,7 +1716,7 @@
 			{
 				"height": 100.0
 			},
-			"position": "1280 -224 1280 1024 1280 -224 1280 1024 ",
+			"position": "0 4 1280 774 0 0 1280 778 ",
 			"replace":
 			{
 				"height": 64.0
@@ -1664,6 +1727,78 @@
 				"height": 0.0,
 				"selected_items":
 				[
+					[
+						"classes-spec",
+						"test/spec/teacher/collections/classes-spec.js"
+					],
+					[
+						"classes",
+						"app/js/teacher/collections/classes.js"
+					],
+					[
+						"classesspec",
+						"test/spec/teacher/collections/classes-spec.js"
+					],
+					[
+						"classlistjst",
+						"app/js/teacher/templates/class/class-list.jst"
+					],
+					[
+						"classspec",
+						"test/spec/teacher/models/class-spec.js"
+					],
+					[
+						"class-spec",
+						"test/spec/teacher/models/class-spec.js"
+					],
+					[
+						"class-spec.js",
+						"test/spec/teacher/models/class-spec.js"
+					],
+					[
+						"specclass",
+						"test/spec/teacher/collections/classes-spec.js"
+					],
+					[
+						"appjst",
+						"app/js/teacher/templates/app.jst"
+					],
+					[
+						"classlisjst",
+						"app/js/teacher/templates/class/class-list.jst"
+					],
+					[
+						"class-list-view",
+						"app/js/teacher/views/class/class-list-view.js"
+					],
+					[
+						"class-list-view-spec",
+						"test/spec/teacher/views/class-list-view-spec.js"
+					],
+					[
+						"testteacherspechtml",
+						"test/teacher-spec.html"
+					],
+					[
+						"giti",
+						".gitignore"
+					],
+					[
+						"spec",
+						"_SpecRunner.html"
+					],
+					[
+						"grunt",
+						"grunt.js"
+					],
+					[
+						"class.js",
+						"app/js/teacher/models/class.js"
+					],
+					[
+						"teacherspec",
+						"test/spec/teacher-spec.js"
+					],
 					[
 						"main.less",
 						"styles/main.less"
@@ -2001,7 +2136,7 @@
 			"side_bar_visible": true,
 			"side_bar_width": 208.0,
 			"status_bar_visible": true,
-			"window_id": 77,
+			"window_id": 78,
 			"workspace_name": ""
 		}
 	],
