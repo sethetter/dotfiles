@@ -1,8 +1,10 @@
 {
 	"folder_history":
 	[
-		"/Users/sethetter/Dropbox/personal/teach-app",
+		"/Users/sethe/projects/ctct-forms",
 		"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi",
+		"/Volumes/MAC OS X/Users/sethe/projects/cynergi_wp_live/cynergisuite.com",
+		"/Users/sethe/projects/teach-app",
 		"/Users/sethe/projects/OnlinePayments",
 		"/Users/sethe/projects/cynergi_wp_live",
 		"/Users/sethe/projects/cynergi_wp",
@@ -17,16 +19,52 @@
 		"/Users/sethe/projects/cynergi-wp",
 		"/Users/sethe/projects/maze"
 	],
-	"last_window_id": 78,
+	"last_window_id": 103,
 	"settings":
 	{
-		"new_window_height": 752.0,
+		"new_window_height": 1002.0,
 		"new_window_settings":
 		{
 			"auto_complete":
 			{
 				"selected_items":
 				[
+					[
+						"cona",
+						"contactListId"
+					],
+					[
+						"contact",
+						"contactListId"
+					],
+					[
+						"template",
+						"template_dir"
+					],
+					[
+						"error",
+						"errorsCallback"
+					],
+					[
+						"temp",
+						"template_directory"
+					],
+					[
+						"templ",
+						"template_dir"
+					],
+					[
+						"regi",
+						"register-form"
+					],
+					[
+						"Class",
+						"ClassListView"
+					],
+					[
+						"dupl",
+						"duplicateId"
+					],
 					[
 						"cli",
 						"clickHandler"
@@ -56,20 +94,68 @@
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 347.0,
+				"height": 87.0,
 				"selected_items":
 				[
+					[
+						"wrap",
+						"Word Wrap: Toggle"
+					],
+					[
+						"ssphp",
+						"Set Syntax: PHP"
+					],
 					[
 						":w",
 						":w - Save"
 					],
 					[
-						"ssless",
-						"Set Syntax: LESS"
+						"remove",
+						"Package Control: Remove Package"
 					],
 					[
 						"install",
 						"Package Control: Install Package"
+					],
+					[
+						"ssjs",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"fetch",
+						"Fetch: File"
+					],
+					[
+						"clear",
+						"Bookmarks: Clear All"
+					],
+					[
+						"next",
+						"Bookmarks: Select Next"
+					],
+					[
+						"bookmark",
+						"Bookmarks: Toggle"
+					],
+					[
+						"upper",
+						"Convert Case: Upper Case"
+					],
+					[
+						":",
+						":w - Save"
+					],
+					[
+						"tabs",
+						"Indentation: Convert to Tabs"
+					],
+					[
+						"sshtml",
+						"Set Syntax: HTML"
+					],
+					[
+						"ssless",
+						"Set Syntax: LESS"
 					],
 					[
 						"settings",
@@ -88,24 +174,12 @@
 						"Word Wrap: Toggle"
 					],
 					[
-						"remove",
-						"Package Control: Remove Package"
-					],
-					[
 						"ssscss",
 						"Set Syntax: SCSS"
 					],
 					[
 						"lowerc ",
 						"Convert Case: Lower Case"
-					],
-					[
-						"fetch",
-						"Fetch: File"
-					],
-					[
-						"sshtml",
-						"Set Syntax: HTML"
 					],
 					[
 						"git change ",
@@ -122,10 +196,6 @@
 					[
 						"lowercase",
 						"Convert Case: Lower Case"
-					],
-					[
-						":",
-						":w - Save"
 					],
 					[
 						"prefere",
@@ -188,10 +258,6 @@
 						"Package Control: Install Package"
 					],
 					[
-						"ssphp",
-						"Set Syntax: PHP"
-					],
-					[
 						"phpcs",
 						"PHP Code Sniffer: Sniff this file"
 					],
@@ -245,14 +311,52 @@
 			},
 			"file_history":
 			[
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.less",
+				"/Users/sethe/projects/cynergi_wp_live/.htaccess",
+				"/Volumes/MAC OS X/Users/sethe/projects/cynergi_wp_live/error_log",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/footer.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/header.php",
+				"/Volumes/MAC OS X/Users/sethe/projects/cynergi_wp_live/error_log.1",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/cc-form.php",
+				"/Volumes/MAC OS X/Users/sethe/projects/cynergi_wp_live/.htaccess",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/functions.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/search.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/js/main.js",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.less",
+				"/tmp/subl stdin LvEEU1.txt",
+				"/Users/sethe/Library/Caches/Cleanup At Startup/Transmit/2F0DBA71-34EE-42A4-8609-389B776A7FEC/error_log",
+				"/Users/sethe/projects/cynergi_wp_live/error_log",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/plugins/constant-contact-api/form.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/plugins/constant-contact-api/form",
+				"/Users/sethe/projects/cynergi_wp_live/error_log.1",
+				"/Volumes/MAC OS X/Users/sethe/projects/cynergi_wp_live/cynergisuite.com/cynergisuite.com",
+				"/Users/.htaccess",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/single-university.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/page-university-home.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/js/jquery-1.8.3.min.js",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/university-header.php",
+				"/Users/sethe/projects/teach-app/README.md",
+				"/Users/sethe/projects/teach-app/grunt.js",
+				"/Users/sethe/projects/teach-app/NOTES.ft",
+				"/Users/sethe/projects/teach-app/app/js/teacher/templates/class/class-list.jst",
+				"/Users/sethe/projects/teach-app/test/spec/teacher-spec.js",
+				"/Users/sethe/projects/teach-app/app/js/teacher/views/class/class-list-view.js",
+				"/Users/sethe/projects/teach-app/app/js/teacher/views/app-view.js",
+				"/Users/sethe/projects/teach-app/test/spec/teacher/views/class-list-view-spec.js",
+				"/Users/sethe/projects/teach-app/test/teacher-spec.html",
+				"/Users/sethe/projects/teach-app/app/teacher/index.html",
+				"/Users/sethe/projects/teach-app/components/jasmine-jquery/README.markdown",
+				"/Users/sethe/projects/teach-app/app/js/teacher/collections/classes.js",
+				"/Users/sethe/projects/teach-app/test/spec/teacher/collections/classes-spec.js",
+				"/Users/sethe/projects/teach-app/app/js/teacher-main.js",
+				"/Users/sethe/projects/teach-app/node_modules/grunt-jasmine/node_modules/grunt/node_modules/colors/ReadMe.md",
+				"/Users/sethe/projects/teach-app/app/js/teacher/templates/app.jst",
+				"/Users/sethe/projects/teach-app/test/spec/teacher/models/class-spec.js",
+				"/Users/sethe/projects/teach-app/app/js/teacher/models/class.js",
+				"/Users/sethe/projects/teach-app/app/js/teacher/views/class/class-view.js",
+				"/Users/sethe/dotfiles/devtools/Custom.css",
 				"/Users/sethe/dotfiles/README.md",
 				"/Users/sethe/dotfiles/irssi/config",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/university-no.php",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/page-university-home.php",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/functions.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.scss",
 				"/Users/sethe/dotfiles/sublime/Packages/User/Preferences.sublime-settings",
 				"/Users/sethe/dotfiles/sublime/Packages/Default/Preferences.sublime-settings",
@@ -261,9 +365,6 @@
 				"/Users/sethe/dotfiles/sublime/Packages/Theme - Default/Default.sublime-theme",
 				"/Users/sethe/dotfiles/sublime/Packages/Color Scheme - Default/Blackboard.tmTheme",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/js/jquery-validation/lib/jquery.js",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/single-university.php",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/search.php",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/university-header.php",
 				"/Users/sethe/projects/cynergi-old/contact.php",
 				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/footer.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-config.php",
@@ -337,42 +438,7 @@
 				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/single.php",
 				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-contact.php",
 				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-getting-started.html",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/single-training.php",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-contact.html",
-				"/Users/sethe/projects/cynergi-wp/README.md",
-				"/Users/sethe/projects/cynergi-wp/_revised/includes/footer.php",
-				"/Users/sethe/projects/cynergi-wp/_revised/learn.php",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/js/jquery-validation/localization/messages_eu.js",
-				"/Users/sethe/projects/cynergi-wp/_revised/includes/header.php",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/index.php",
-				"/Users/sethe/projects/cynergi-wp/contactform.html",
-				"/Users/sethe/projects/cynergi-wp/wp-content/plugins/cf7sf.php",
-				"/Users/sethe/projects/cynergi-wp/_previous/contact.php",
-				"/Users/sethe/projects/cynergi-wp/wp-content/plugins/hello.php",
-				"/Users/sethe/projects/cynergi-wp/_revised/contact.php",
-				"/Users/sethe/projects/cynergi-wp/_revised/how-it-works.php",
-				"/Users/sethe/projects/cynergi-wp/_revised/faq.php",
-				"/Users/sethe/projects/cynergi-wp/_revised/devStory.php",
-				"/Users/sethe/projects/cynergi-wp/_previous/why-cynergi.php",
-				"/Users/sethe/projects/cynergi-wp/_revised/about.php",
-				"/Users/sethe/projects/cynergi-wp/_revised/support.php",
-				"/Users/sethe/projects/cynergi-wp/_revised/index.php",
-				"/Users/sethe/projects/cynergi-wp/_previous/index.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/htadmin_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/views/htadmin_merchantinfo.php",
-				"/Users/sethe/projects/OnlinePayments/application/controllers/ht_admin.php",
-				"/Users/sethe/projects/OnlinePayments/application/views/htadmin_merchantcreate.php",
-				"/Users/sethe/projects/OnlinePayments/application/controllers/users.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/account_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/controllers/account.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/ht_admin_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/users_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/admin_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/controllers/admin.php",
-				"/Users/sethe/projects/OnlinePayments/application/views/admin_users.php",
-				"/Users/sethe/projects/OnlinePayments/application/views/admin_marketing.php",
-				"/Users/sethe/projects/OnlinePayments/application/views/admin_login.php",
-				"/Users/sethe/projects/OnlinePayments/application/views/admin_edituser.php"
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/single-training.php"
 			],
 			"find":
 			{
@@ -380,9 +446,12 @@
 			},
 			"find_in_files":
 			{
-				"height": 0.0,
+				"height": 93.0,
 				"where_history":
 				[
+					"",
+					"178,204",
+					":178,204",
 					"",
 					"footer.php",
 					""
@@ -393,6 +462,90 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"company_name",
+					"last_name",
+					"first_name",
+					"user_email",
+					"register",
+					"<!--",
+					"bloginfo(\"template_directory\")",
+					"post",
+					"template_directory\")",
+					"url(",
+					"script",
+					"mod_security",
+					"char",
+					"        <?",
+					"mod_security",
+					"&nbsp;",
+					" |\n",
+					" | ",
+					"Training",
+					"training",
+					"theta",
+					"validat",
+					"validate",
+					"modal",
+					"modalCOntrol",
+					"register_form_fields",
+					"register_form_fil",
+					"jquery",
+					"validator",
+					"errorS",
+					"errors",
+					"errorS",
+					"errors",
+					"errorS",
+					"errors",
+					"errorS",
+					"errors",
+					"registerform",
+					"console.logi",
+					"form",
+					"'",
+					"register",
+					"last_name",
+					"company_name",
+					"last_name",
+					"company_name",
+					"last_name",
+					"Last Name",
+					"first name",
+					"last name",
+					".text",
+					"text",
+					"$(\"#register-form label\")",
+					"html",
+					"(function()",
+					"do_action'",
+					"placeholder",
+					"company_name",
+					"initiali",
+					"tabindex",
+					"first_name",
+					"First",
+					"first_name",
+					"company_name",
+					"user_email",
+					"register-link",
+					"first_name",
+					"user_login",
+					"-image",
+					".gradient",
+					"1000",
+					"            setTimeout(function() {\n                flag = true;\n            }, 1000);\n\n            waitsFor(function() {\n                return flag;\n  ",
+					"../",
+					".min",
+					" data-dismiss=\"modal\"",
+					"Classes",
+					"classCollection",
+					"attributes.id",
+					"define",
+					"components",
+					" :",
+					":",
+					"          :",
+					"lib",
 					"@green",
 					"header",
 					"account",
@@ -436,91 +589,7 @@
 					"html_training",
 					"href=\"",
 					"src='assets",
-					"border-radius: 10px;",
-					"clear",
-					"222222",
-					"submit",
-					"focus",
-					"input",
-					"0.5s",
-					"30",
-					"search",
-					"h2",
-					"input",
-					"5b5b5b",
-					"91,91,91,255",
-					"endColorstr='#7d7d7d'",
-					"rgba(125,125,125,255) 50%, ",
-					"                    color-stop(0.5, rgba(125,125,125,255)),",
-					"$link",
-					".kws_input_fields ",
-					"http://localhost:8888",
-					"none",
-					"bloginfo",
-					"<?php bloginfo('template_directory'); ?>",
-					"Searching",
-					"/wp-content/themes/cynergi",
-					"rgba()",
-					"91,91,91,255",
-					"160,160,160,255",
-					"localhost",
-					"account-links",
-					"\n            ",
-					".modal-wrap",
-					".contact-form",
-					".contact-form ",
-					"h2",
-					"account-links",
-					"social-media",
-					" ",
-					"ignored_pacak",
-					"cc-submit",
-					"<?php bloginfo('template_directory'); ?>",
-					"all",
-					"item",
-					"php",
-					"444",
-					"5px 5px",
-					"999999",
-					"aaaaaa",
-					"*/\n",
-					"0.2s",
-					"form_item_header",
-					"updates",
-					"id",
-					"id=\"",
-					"testimonials",
-					"footer-full",
-					"#footer",
-					"#",
-					"#sideNav",
-					"#adBar",
-					"clear",
-					" id",
-					"#copyBlock",
-					"\n#",
-					"#body-sub",
-					"#body-home",
-					"#splash",
-					".splash",
-					"#content",
-					"#mainNav",
-					"div",
-					"#header",
-					"\n#",
-					"#sideBar2",
-					"#sideBar",
-					"id=\"answer\"",
-					"id=\"question\"",
-					"wrapper",
-					"content-main",
-					"#signupForm",
-					"#body-form",
-					"sethe@hightouchinc.com",
-					"sethe@hightouchinc.co",
-					"m",
-					"sethe@hightouchinc.com",
-					"sethetter@gmail.com"
+					"border-radius: 10px;"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -528,6 +597,7 @@
 				"regex": false,
 				"replace_history":
 				[
+					"echo get_template_directory_uri()",
 					"@blue",
 					".",
 					"@green",
@@ -584,6 +654,10 @@
 				]
 			},
 			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 112.0
+			},
 			"output.git":
 			{
 				"height": 100.0
@@ -599,10 +673,6 @@
 				"selected_items":
 				[
 					[
-						"main.less",
-						"styles/main.less"
-					],
-					[
 						"footer",
 						"footer.php"
 					],
@@ -611,12 +681,104 @@
 						"header.php"
 					],
 					[
-						"home",
-						"page-university-home.php"
+						"main.less",
+						"styles/main.less"
 					],
 					[
 						"functions",
 						"functions.php"
+					],
+					[
+						"ccform",
+						"cc-form.php"
+					],
+					[
+						"unver",
+						"page-university-home.php"
+					],
+					[
+						"single",
+						"single-university.php"
+					],
+					[
+						"un",
+						"university-header.php"
+					],
+					[
+						"grunt",
+						"grunt.js"
+					],
+					[
+						"readme",
+						"README.md"
+					],
+					[
+						"notes",
+						"NOTES.ft"
+					],
+					[
+						"appview",
+						"app/js/teacher/views/app-view.js"
+					],
+					[
+						"teacherspechtml",
+						"test/teacher-spec.html"
+					],
+					[
+						"teacherindex",
+						"app/teacher/index.html"
+					],
+					[
+						"jasminejqueryreadme",
+						"components/jasmine-jquery/README.markdown"
+					],
+					[
+						"class-listjst",
+						"app/js/teacher/templates/class/class-list.jst"
+					],
+					[
+						"classes-spec",
+						"test/spec/teacher/collections/classes-spec.js"
+					],
+					[
+						"app.jst",
+						"app/js/teacher/templates/app.jst"
+					],
+					[
+						"teachermain",
+						"app/js/teacher-main.js"
+					],
+					[
+						"classes",
+						"app/js/teacher/collections/classes.js"
+					],
+					[
+						"teacher-",
+						"test/teacher-spec.html"
+					],
+					[
+						"classlistview",
+						"app/js/teacher/views/class/class-list-view.js"
+					],
+					[
+						"class.js",
+						"app/js/teacher/models/class.js"
+					],
+					[
+						"class",
+						"app/js/teacher/collections/classes.js"
+					],
+					[
+						"clases",
+						"app/js/teacher/collections/classes.js"
+					],
+					[
+						"class-spec",
+						"test/spec/teacher/models/class-spec.js"
+					],
+					[
+						"home",
+						"page-university-home.php"
 					],
 					[
 						"less",
@@ -703,10 +865,6 @@
 						"js/fancybox/jquery.fancybox-1.3.4.css"
 					],
 					[
-						"single",
-						"single-university.php"
-					],
-					[
 						"univer",
 						"page-university-home.php"
 					],
@@ -717,10 +875,6 @@
 					[
 						"mainnew",
 						"styles/main-new.css"
-					],
-					[
-						"un",
-						"page-university-home.php"
 					],
 					[
 						"single-univer",
@@ -946,6 +1100,46 @@
 				"selected_items":
 				[
 					[
+						"htm",
+						"htmlentities"
+					],
+					[
+						"cona",
+						"contactListId"
+					],
+					[
+						"contact",
+						"contactListId"
+					],
+					[
+						"template",
+						"template_dir"
+					],
+					[
+						"error",
+						"errorsCallback"
+					],
+					[
+						"temp",
+						"template_directory"
+					],
+					[
+						"templ",
+						"template_dir"
+					],
+					[
+						"regi",
+						"register-form"
+					],
+					[
+						"Class",
+						"ClassListView"
+					],
+					[
+						"dupl",
+						"duplicateId"
+					],
+					[
 						"cli",
 						"clickHandler"
 					],
@@ -974,10 +1168,26 @@
 			"buffers":
 			[
 				{
-					"file": "/Users/sethetter/Dropbox/personal/teach-app/grunt.js",
+					"file": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/footer.php",
 					"settings":
 					{
-						"buffer_size": 1733,
+						"buffer_size": 7126,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/js/main.js",
+					"settings":
+					{
+						"buffer_size": 5429,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/cc-form.php",
+					"settings":
+					{
+						"buffer_size": 2676,
 						"line_ending": "Unix"
 					}
 				}
@@ -985,12 +1195,60 @@
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 167.0,
+				"height": 147.0,
 				"selected_items":
 				[
 					[
-						"spaces",
-						"Indentation: Convert to Spaces"
+						"ssxml",
+						"Set Syntax: XML"
+					],
+					[
+						"wrap",
+						"Word Wrap: Toggle"
+					],
+					[
+						":w",
+						":w - Save"
+					],
+					[
+						"ssphp",
+						"Set Syntax: PHP"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"ssjs",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"fetch",
+						"Fetch: File"
+					],
+					[
+						"clear",
+						"Bookmarks: Clear All"
+					],
+					[
+						"next",
+						"Bookmarks: Select Next"
+					],
+					[
+						"bookmark",
+						"Bookmarks: Toggle"
+					],
+					[
+						"upper",
+						"Convert Case: Upper Case"
+					],
+					[
+						":",
+						":w - Save"
 					],
 					[
 						"tabs",
@@ -1001,20 +1259,8 @@
 						"Set Syntax: HTML"
 					],
 					[
-						"gist",
-						"Gist: Create Private Gist"
-					],
-					[
-						":w",
-						":w - Save"
-					],
-					[
 						"ssless",
 						"Set Syntax: LESS"
-					],
-					[
-						"install",
-						"Package Control: Install Package"
 					],
 					[
 						"settings",
@@ -1033,20 +1279,12 @@
 						"Word Wrap: Toggle"
 					],
 					[
-						"remove",
-						"Package Control: Remove Package"
-					],
-					[
 						"ssscss",
 						"Set Syntax: SCSS"
 					],
 					[
 						"lowerc ",
 						"Convert Case: Lower Case"
-					],
-					[
-						"fetch",
-						"Fetch: File"
 					],
 					[
 						"git change ",
@@ -1063,10 +1301,6 @@
 					[
 						"lowercase",
 						"Convert Case: Lower Case"
-					],
-					[
-						":",
-						":w - Save"
 					],
 					[
 						"prefere",
@@ -1129,10 +1363,6 @@
 						"Package Control: Install Package"
 					],
 					[
-						"ssphp",
-						"Set Syntax: PHP"
-					],
-					[
 						"phpcs",
 						"PHP Code Sniffer: Sniff this file"
 					],
@@ -1186,26 +1416,53 @@
 			},
 			"file_history":
 			[
-				"/Users/sethetter/Dropbox/personal/teach-app/grunt.js",
-				"/Users/sethetter/Dropbox/personal/teach-app/test/spec/teacher/views/class-list-view-spec.js",
-				"/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher/templates/class/class-list.jst",
-				"/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher/collections/classes.js",
-				"/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher/models/class.js",
-				"/Users/sethetter/Dropbox/personal/teach-app/test/spec/teacher-spec.js",
-				"/Users/sethetter/Dropbox/personal/teach-app/test/spec/teacher/models/class-spec.js",
-				"/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher/views/class/class-list-view.js",
-				"/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher/views/class/class-view.js",
-				"/Users/sethetter/Dropbox/personal/teach-app/app/js/teacher-main.js",
-				"/Users/sethetter/Dropbox/personal/teach-app/test/teacher-spec.html",
-				"/Users/sethetter/Dropbox/personal/teach-app/node_modules/grunt-jasmine/node_modules/grunt/node_modules/connect/node_modules/formidable/test/legacy/simple/test-querystring-parser.js",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.less",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/cc-form.php",
+				"/Users/sethe/projects/test.xml",
+				"/Users/sethe/projects/cynergi_wp_live/.htaccess",
+				"/Volumes/MAC OS X/Users/sethe/projects/cynergi_wp_live/error_log",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/footer.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/header.php",
+				"/Volumes/MAC OS X/Users/sethe/projects/cynergi_wp_live/error_log.1",
+				"/Volumes/MAC OS X/Users/sethe/projects/cynergi_wp_live/.htaccess",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/functions.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/search.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/js/main.js",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.less",
+				"/tmp/subl stdin LvEEU1.txt",
+				"/Users/sethe/Library/Caches/Cleanup At Startup/Transmit/2F0DBA71-34EE-42A4-8609-389B776A7FEC/error_log",
+				"/Users/sethe/projects/cynergi_wp_live/error_log",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/plugins/constant-contact-api/form.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/plugins/constant-contact-api/form",
+				"/Users/sethe/projects/cynergi_wp_live/error_log.1",
+				"/Volumes/MAC OS X/Users/sethe/projects/cynergi_wp_live/cynergisuite.com/cynergisuite.com",
+				"/Users/.htaccess",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/single-university.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/page-university-home.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/js/jquery-1.8.3.min.js",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/university-header.php",
+				"/Users/sethe/projects/teach-app/README.md",
+				"/Users/sethe/projects/teach-app/grunt.js",
+				"/Users/sethe/projects/teach-app/NOTES.ft",
+				"/Users/sethe/projects/teach-app/app/js/teacher/templates/class/class-list.jst",
+				"/Users/sethe/projects/teach-app/test/spec/teacher-spec.js",
+				"/Users/sethe/projects/teach-app/app/js/teacher/views/class/class-list-view.js",
+				"/Users/sethe/projects/teach-app/app/js/teacher/views/app-view.js",
+				"/Users/sethe/projects/teach-app/test/spec/teacher/views/class-list-view-spec.js",
+				"/Users/sethe/projects/teach-app/test/teacher-spec.html",
+				"/Users/sethe/projects/teach-app/app/teacher/index.html",
+				"/Users/sethe/projects/teach-app/components/jasmine-jquery/README.markdown",
+				"/Users/sethe/projects/teach-app/app/js/teacher/collections/classes.js",
+				"/Users/sethe/projects/teach-app/test/spec/teacher/collections/classes-spec.js",
+				"/Users/sethe/projects/teach-app/app/js/teacher-main.js",
+				"/Users/sethe/projects/teach-app/node_modules/grunt-jasmine/node_modules/grunt/node_modules/colors/ReadMe.md",
+				"/Users/sethe/projects/teach-app/app/js/teacher/templates/app.jst",
+				"/Users/sethe/projects/teach-app/test/spec/teacher/models/class-spec.js",
+				"/Users/sethe/projects/teach-app/app/js/teacher/models/class.js",
+				"/Users/sethe/projects/teach-app/app/js/teacher/views/class/class-view.js",
+				"/Users/sethe/dotfiles/devtools/Custom.css",
 				"/Users/sethe/dotfiles/README.md",
 				"/Users/sethe/dotfiles/irssi/config",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/university-no.php",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/page-university-home.php",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/functions.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.scss",
 				"/Users/sethe/dotfiles/sublime/Packages/User/Preferences.sublime-settings",
 				"/Users/sethe/dotfiles/sublime/Packages/Default/Preferences.sublime-settings",
@@ -1214,9 +1471,6 @@
 				"/Users/sethe/dotfiles/sublime/Packages/Theme - Default/Default.sublime-theme",
 				"/Users/sethe/dotfiles/sublime/Packages/Color Scheme - Default/Blackboard.tmTheme",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/js/jquery-validation/lib/jquery.js",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/single-university.php",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/search.php",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/university-header.php",
 				"/Users/sethe/projects/cynergi-old/contact.php",
 				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/footer.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-config.php",
@@ -1289,31 +1543,7 @@
 				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-university.php",
 				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/single.php",
 				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-contact.php",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-getting-started.html",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/single-training.php",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-contact.html",
-				"/Users/sethe/projects/cynergi-wp/README.md",
-				"/Users/sethe/projects/cynergi-wp/_revised/includes/footer.php",
-				"/Users/sethe/projects/cynergi-wp/_revised/learn.php",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/js/jquery-validation/localization/messages_eu.js",
-				"/Users/sethe/projects/cynergi-wp/_revised/includes/header.php",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/index.php",
-				"/Users/sethe/projects/cynergi-wp/contactform.html",
-				"/Users/sethe/projects/cynergi-wp/wp-content/plugins/cf7sf.php",
-				"/Users/sethe/projects/cynergi-wp/_previous/contact.php",
-				"/Users/sethe/projects/cynergi-wp/wp-content/plugins/hello.php",
-				"/Users/sethe/projects/cynergi-wp/_revised/contact.php",
-				"/Users/sethe/projects/cynergi-wp/_revised/how-it-works.php",
-				"/Users/sethe/projects/cynergi-wp/_revised/faq.php",
-				"/Users/sethe/projects/cynergi-wp/_revised/devStory.php",
-				"/Users/sethe/projects/cynergi-wp/_previous/why-cynergi.php",
-				"/Users/sethe/projects/cynergi-wp/_revised/about.php",
-				"/Users/sethe/projects/cynergi-wp/_revised/support.php",
-				"/Users/sethe/projects/cynergi-wp/_revised/index.php",
-				"/Users/sethe/projects/cynergi-wp/_previous/index.php",
-				"/Users/sethe/projects/OnlinePayments/application/language/english/htadmin_lang.php",
-				"/Users/sethe/projects/OnlinePayments/application/views/htadmin_merchantinfo.php",
-				"/Users/sethe/projects/OnlinePayments/application/controllers/ht_admin.php"
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-getting-started.html"
 			],
 			"find":
 			{
@@ -1325,6 +1555,9 @@
 				"where_history":
 				[
 					"",
+					"178,204",
+					":178,204",
+					"",
 					"footer.php",
 					""
 				]
@@ -1334,12 +1567,93 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"components",
-					"../../",
+					"data",
+					"><",
+					"test",
+					"company_name",
+					"last_name",
+					"first_name",
+					"user_email",
+					"register",
+					"<!--",
+					"bloginfo(\"template_directory\")",
+					"post",
+					"template_directory\")",
+					"url(",
+					"script",
+					"mod_security",
+					"char",
+					"        <?",
+					"mod_security",
+					"&nbsp;",
+					" |\n",
+					" | ",
+					"Training",
+					"training",
+					"theta",
+					"validat",
+					"validate",
+					"modal",
+					"modalCOntrol",
+					"register_form_fields",
+					"register_form_fil",
+					"jquery",
+					"validator",
+					"errorS",
+					"errors",
+					"errorS",
+					"errors",
+					"errorS",
+					"errors",
+					"errorS",
+					"errors",
+					"registerform",
+					"console.logi",
+					"form",
+					"'",
+					"register",
+					"last_name",
+					"company_name",
+					"last_name",
+					"company_name",
+					"last_name",
+					"Last Name",
+					"first name",
+					"last name",
+					".text",
+					"text",
+					"$(\"#register-form label\")",
+					"html",
+					"(function()",
+					"do_action'",
+					"placeholder",
+					"company_name",
+					"initiali",
+					"tabindex",
+					"first_name",
+					"First",
+					"first_name",
+					"company_name",
+					"user_email",
+					"register-link",
+					"first_name",
+					"user_login",
+					"-image",
+					".gradient",
+					"1000",
+					"            setTimeout(function() {\n                flag = true;\n            }, 1000);\n\n            waitsFor(function() {\n                return flag;\n  ",
 					"../",
+					".min",
+					" data-dismiss=\"modal\"",
+					"Classes",
+					"classCollection",
+					"attributes.id",
+					"define",
+					"components",
+					" :",
 					":",
-					"\":",
-					":",
+					"          :",
+					"lib",
 					"@green",
 					"header",
 					"account",
@@ -1380,88 +1694,7 @@
 					"@",
 					"h1",
 					"assets",
-					"html_training",
-					"href=\"",
-					"src='assets",
-					"border-radius: 10px;",
-					"clear",
-					"222222",
-					"submit",
-					"focus",
-					"input",
-					"0.5s",
-					"30",
-					"search",
-					"h2",
-					"input",
-					"5b5b5b",
-					"91,91,91,255",
-					"endColorstr='#7d7d7d'",
-					"rgba(125,125,125,255) 50%, ",
-					"                    color-stop(0.5, rgba(125,125,125,255)),",
-					"$link",
-					".kws_input_fields ",
-					"http://localhost:8888",
-					"none",
-					"bloginfo",
-					"<?php bloginfo('template_directory'); ?>",
-					"Searching",
-					"/wp-content/themes/cynergi",
-					"rgba()",
-					"91,91,91,255",
-					"160,160,160,255",
-					"localhost",
-					"account-links",
-					"\n            ",
-					".modal-wrap",
-					".contact-form",
-					".contact-form ",
-					"h2",
-					"account-links",
-					"social-media",
-					" ",
-					"ignored_pacak",
-					"cc-submit",
-					"<?php bloginfo('template_directory'); ?>",
-					"all",
-					"item",
-					"php",
-					"444",
-					"5px 5px",
-					"999999",
-					"aaaaaa",
-					"*/\n",
-					"0.2s",
-					"form_item_header",
-					"updates",
-					"id",
-					"id=\"",
-					"testimonials",
-					"footer-full",
-					"#footer",
-					"#",
-					"#sideNav",
-					"#adBar",
-					"clear",
-					" id",
-					"#copyBlock",
-					"\n#",
-					"#body-sub",
-					"#body-home",
-					"#splash",
-					".splash",
-					"#content",
-					"#mainNav",
-					"div",
-					"#header",
-					"\n#",
-					"#sideBar2",
-					"#sideBar",
-					"id=\"answer\"",
-					"id=\"question\"",
-					"wrapper",
-					"content-main",
-					"#signupForm"
+					"html_training"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -1469,6 +1702,7 @@
 				"regex": false,
 				"replace_history":
 				[
+					"echo get_template_directory_uri()",
 					"@blue",
 					".",
 					"@green",
@@ -1497,7 +1731,7 @@
 			"folders":
 			[
 				{
-					"path": "/Users/sethetter/Dropbox/personal/teach-app"
+					"path": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi"
 				}
 			],
 			"groups":
@@ -1508,28 +1742,346 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/Users/sethetter/Dropbox/personal/teach-app/grunt.js",
+							"file": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/footer.php",
 							"settings":
 							{
-								"buffer_size": 1733,
+								"buffer_size": 7126,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										0,
-										0
+										3506,
+										3506
 									]
 								],
 								"settings":
 								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/PHP/PHP.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 791.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/js/main.js",
+							"settings":
+							{
+								"buffer_size": 5429,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										4352,
+										4352
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
 									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 									"tab_size": 4,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 1978.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/cc-form.php",
+							"settings":
+							{
+								"buffer_size": 2676,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1554,
+										1554
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/PHP/PHP.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 424.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -1568,11 +2120,15 @@
 				]
 			},
 			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 112.0
+			},
 			"output.git":
 			{
 				"height": 100.0
 			},
-			"position": "0 4 1280 774 0 0 1280 778 ",
+			"position": "1280 -224 1280 1024 1280 -224 1280 1024 ",
 			"replace":
 			{
 				"height": 64.0
@@ -1584,32 +2140,12 @@
 				"selected_items":
 				[
 					[
-						"grunt",
-						"grunt.js"
+						"ccform",
+						"cc-form.php"
 					],
 					[
-						"classlistjst",
-						"app/js/teacher/templates/class/class-list.jst"
-					],
-					[
-						"classes",
-						"app/js/teacher/collections/classes.js"
-					],
-					[
-						"class.js",
-						"app/js/teacher/models/class.js"
-					],
-					[
-						"class-spec",
-						"test/spec/teacher/models/class-spec.js"
-					],
-					[
-						"teacherspec",
-						"test/spec/teacher-spec.js"
-					],
-					[
-						"main.less",
-						"styles/main.less"
+						"main",
+						"js/main.js"
 					],
 					[
 						"footer",
@@ -1620,12 +2156,100 @@
 						"header.php"
 					],
 					[
-						"home",
-						"page-university-home.php"
+						"main.less",
+						"styles/main.less"
 					],
 					[
 						"functions",
 						"functions.php"
+					],
+					[
+						"unver",
+						"page-university-home.php"
+					],
+					[
+						"single",
+						"single-university.php"
+					],
+					[
+						"un",
+						"university-header.php"
+					],
+					[
+						"grunt",
+						"grunt.js"
+					],
+					[
+						"readme",
+						"README.md"
+					],
+					[
+						"notes",
+						"NOTES.ft"
+					],
+					[
+						"appview",
+						"app/js/teacher/views/app-view.js"
+					],
+					[
+						"teacherspechtml",
+						"test/teacher-spec.html"
+					],
+					[
+						"teacherindex",
+						"app/teacher/index.html"
+					],
+					[
+						"jasminejqueryreadme",
+						"components/jasmine-jquery/README.markdown"
+					],
+					[
+						"class-listjst",
+						"app/js/teacher/templates/class/class-list.jst"
+					],
+					[
+						"classes-spec",
+						"test/spec/teacher/collections/classes-spec.js"
+					],
+					[
+						"app.jst",
+						"app/js/teacher/templates/app.jst"
+					],
+					[
+						"teachermain",
+						"app/js/teacher-main.js"
+					],
+					[
+						"classes",
+						"app/js/teacher/collections/classes.js"
+					],
+					[
+						"teacher-",
+						"test/teacher-spec.html"
+					],
+					[
+						"classlistview",
+						"app/js/teacher/views/class/class-list-view.js"
+					],
+					[
+						"class.js",
+						"app/js/teacher/models/class.js"
+					],
+					[
+						"class",
+						"app/js/teacher/collections/classes.js"
+					],
+					[
+						"clases",
+						"app/js/teacher/collections/classes.js"
+					],
+					[
+						"class-spec",
+						"test/spec/teacher/models/class-spec.js"
+					],
+					[
+						"home",
+						"page-university-home.php"
 					],
 					[
 						"less",
@@ -1658,10 +2282,6 @@
 					[
 						"uni",
 						"university-no.php"
-					],
-					[
-						"main",
-						"styles/main.scss"
 					],
 					[
 						"search",
@@ -1712,10 +2332,6 @@
 						"js/fancybox/jquery.fancybox-1.3.4.css"
 					],
 					[
-						"single",
-						"single-university.php"
-					],
-					[
 						"univer",
 						"page-university-home.php"
 					],
@@ -1726,10 +2342,6 @@
 					[
 						"mainnew",
 						"styles/main-new.css"
-					],
-					[
-						"un",
-						"page-university-home.php"
 					],
 					[
 						"single-univer",
@@ -1940,11 +2552,1345 @@
 			},
 			"show_minimap": true,
 			"show_open_files": false,
-			"show_tabs": false,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 208.0,
+			"status_bar_visible": true,
+			"window_id": 96,
+			"workspace_name": ""
+		},
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"cona",
+						"contactListId"
+					],
+					[
+						"contact",
+						"contactListId"
+					],
+					[
+						"template",
+						"template_dir"
+					],
+					[
+						"error",
+						"errorsCallback"
+					],
+					[
+						"temp",
+						"template_directory"
+					],
+					[
+						"templ",
+						"template_dir"
+					],
+					[
+						"regi",
+						"register-form"
+					],
+					[
+						"Class",
+						"ClassListView"
+					],
+					[
+						"dupl",
+						"duplicateId"
+					],
+					[
+						"cli",
+						"clickHandler"
+					],
+					[
+						"class",
+						"classTwoP"
+					],
+					[
+						"ready",
+						"readyStateCheckInterval"
+					],
+					[
+						"univers",
+						"university_hidden"
+					],
+					[
+						"side",
+						"side-module"
+					],
+					[
+						"side-right",
+						"side-right"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/Users/sethe/projects/ctct-forms/add_contact.php",
+					"settings":
+					{
+						"buffer_size": 15044,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/Users/sethe/projects/ctct-forms/cc_class.php",
+					"settings":
+					{
+						"buffer_size": 51440,
+						"line_ending": "Windows"
+					}
+				}
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 87.0,
+				"selected_items":
+				[
+					[
+						"wrap",
+						"Word Wrap: Toggle"
+					],
+					[
+						"ssphp",
+						"Set Syntax: PHP"
+					],
+					[
+						":w",
+						":w - Save"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"ssjs",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"fetch",
+						"Fetch: File"
+					],
+					[
+						"clear",
+						"Bookmarks: Clear All"
+					],
+					[
+						"next",
+						"Bookmarks: Select Next"
+					],
+					[
+						"bookmark",
+						"Bookmarks: Toggle"
+					],
+					[
+						"upper",
+						"Convert Case: Upper Case"
+					],
+					[
+						":",
+						":w - Save"
+					],
+					[
+						"tabs",
+						"Indentation: Convert to Tabs"
+					],
+					[
+						"sshtml",
+						"Set Syntax: HTML"
+					],
+					[
+						"ssless",
+						"Set Syntax: LESS"
+					],
+					[
+						"settings",
+						"Preferences: Settings - Default"
+					],
+					[
+						"space",
+						"Indentation: Convert to Spaces"
+					],
+					[
+						"git",
+						"Git: Quick Commit"
+					],
+					[
+						"wordwrap",
+						"Word Wrap: Toggle"
+					],
+					[
+						"ssscss",
+						"Set Syntax: SCSS"
+					],
+					[
+						"lowerc ",
+						"Convert Case: Lower Case"
+					],
+					[
+						"git change ",
+						"Git: Change Branch"
+					],
+					[
+						"git change branch",
+						"Git: Change Branch"
+					],
+					[
+						":s",
+						":w - Save"
+					],
+					[
+						"lowercase",
+						"Convert Case: Lower Case"
+					],
+					[
+						"prefere",
+						"Preferences: Settings - Default"
+					],
+					[
+						"preferences",
+						"Preferences: Settings - Default"
+					],
+					[
+						":W",
+						":w - Save"
+					],
+					[
+						"preferecen",
+						"Preferences: Settings - Default"
+					],
+					[
+						"reind",
+						"Indentation: Reindent Lines"
+					],
+					[
+						"pref",
+						"Preferences: Settings - Default"
+					],
+					[
+						":q",
+						"Set Syntax: SQL"
+					],
+					[
+						":bd",
+						"Preferences: Key Bindings - Default"
+					],
+					[
+						"git commit",
+						"Git: Quick Commit"
+					],
+					[
+						"git status",
+						"Git: Status"
+					],
+					[
+						"git add .",
+						"Git: Add..."
+					],
+					[
+						"isntall",
+						"Git: Reset (unstage) All"
+					],
+					[
+						"color",
+						"Color Picker: Insert Color"
+					],
+					[
+						"preferece",
+						"Preferences: Package Control Settings – Default"
+					],
+					[
+						"install ",
+						"Package Control: Install Package"
+					],
+					[
+						"phpcs",
+						"PHP Code Sniffer: Sniff this file"
+					],
+					[
+						"install packge",
+						"Package Control: Install Package"
+					],
+					[
+						"php ",
+						"Set Syntax: PHP"
+					],
+					[
+						"install pack",
+						"Package Control: Install Package"
+					],
+					[
+						"conver",
+						"Indentation: Convert to Spaces"
+					],
+					[
+						"packages",
+						"Preferences: Browse Packages"
+					],
+					[
+						"prefer",
+						"Preferences: Settings - Default"
+					],
+					[
+						"bash",
+						"Set Syntax: Shell Script (Bash)"
+					],
+					[
+						"preference",
+						"Preferences: Settings - Default"
+					]
+				],
+				"width": 593.0
+			},
+			"console":
+			{
+				"height": 125.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/Users/sethe/projects/cynergi_wp_live/.htaccess",
+				"/Volumes/MAC OS X/Users/sethe/projects/cynergi_wp_live/error_log",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/footer.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/header.php",
+				"/Volumes/MAC OS X/Users/sethe/projects/cynergi_wp_live/error_log.1",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/cc-form.php",
+				"/Volumes/MAC OS X/Users/sethe/projects/cynergi_wp_live/.htaccess",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/functions.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/search.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/js/main.js",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.less",
+				"/tmp/subl stdin LvEEU1.txt",
+				"/Users/sethe/Library/Caches/Cleanup At Startup/Transmit/2F0DBA71-34EE-42A4-8609-389B776A7FEC/error_log",
+				"/Users/sethe/projects/cynergi_wp_live/error_log",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/plugins/constant-contact-api/form.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/plugins/constant-contact-api/form",
+				"/Users/sethe/projects/cynergi_wp_live/error_log.1",
+				"/Volumes/MAC OS X/Users/sethe/projects/cynergi_wp_live/cynergisuite.com/cynergisuite.com",
+				"/Users/.htaccess",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/single-university.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/page-university-home.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/js/jquery-1.8.3.min.js",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/university-header.php",
+				"/Users/sethe/projects/teach-app/README.md",
+				"/Users/sethe/projects/teach-app/grunt.js",
+				"/Users/sethe/projects/teach-app/NOTES.ft",
+				"/Users/sethe/projects/teach-app/app/js/teacher/templates/class/class-list.jst",
+				"/Users/sethe/projects/teach-app/test/spec/teacher-spec.js",
+				"/Users/sethe/projects/teach-app/app/js/teacher/views/class/class-list-view.js",
+				"/Users/sethe/projects/teach-app/app/js/teacher/views/app-view.js",
+				"/Users/sethe/projects/teach-app/test/spec/teacher/views/class-list-view-spec.js",
+				"/Users/sethe/projects/teach-app/test/teacher-spec.html",
+				"/Users/sethe/projects/teach-app/app/teacher/index.html",
+				"/Users/sethe/projects/teach-app/components/jasmine-jquery/README.markdown",
+				"/Users/sethe/projects/teach-app/app/js/teacher/collections/classes.js",
+				"/Users/sethe/projects/teach-app/test/spec/teacher/collections/classes-spec.js",
+				"/Users/sethe/projects/teach-app/app/js/teacher-main.js",
+				"/Users/sethe/projects/teach-app/node_modules/grunt-jasmine/node_modules/grunt/node_modules/colors/ReadMe.md",
+				"/Users/sethe/projects/teach-app/app/js/teacher/templates/app.jst",
+				"/Users/sethe/projects/teach-app/test/spec/teacher/models/class-spec.js",
+				"/Users/sethe/projects/teach-app/app/js/teacher/models/class.js",
+				"/Users/sethe/projects/teach-app/app/js/teacher/views/class/class-view.js",
+				"/Users/sethe/dotfiles/devtools/Custom.css",
+				"/Users/sethe/dotfiles/README.md",
+				"/Users/sethe/dotfiles/irssi/config",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/university-no.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.scss",
+				"/Users/sethe/dotfiles/sublime/Packages/User/Preferences.sublime-settings",
+				"/Users/sethe/dotfiles/sublime/Packages/Default/Preferences.sublime-settings",
+				"/Users/sethe/dotfiles/Re",
+				"/Users/sethe/dotfiles/bin/install.sh",
+				"/Users/sethe/dotfiles/sublime/Packages/Theme - Default/Default.sublime-theme",
+				"/Users/sethe/dotfiles/sublime/Packages/Color Scheme - Default/Blackboard.tmTheme",
+				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/js/jquery-validation/lib/jquery.js",
+				"/Users/sethe/projects/cynergi-old/contact.php",
+				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/footer.php",
+				"/Users/sethe/projects/cynergi_wp_live/wp-config.php",
+				"/Users/sethe/projects/cynergi_wp_live/db.sql",
+				"/Users/sethe/projects/cynergi_wp_live/wp-settings.php",
+				"/Users/sethe/projects/raphael_test/js/app.js",
+				"/Users/sethe/projects/raphael_test/index.html",
+				"/Users/sethe/projects/raphael_test/lib/raphael.js",
+				"/Users/sethe/dotfiles/.bash_profile",
+				"/Users/sethe/.bash_profile",
+				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/styles/main.scss",
+				"/Users/sethe/projects/cynergi_wp/.gitignore",
+				"/Users/sethe/dotfiles/devtools-theme/Custom.css",
+				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/bin/less-compile",
+				"/Users/sethe/dotfiles/devtools-theme/bin/install.sh",
+				"/Users/sethe/Downloads/chrome-devtools-dark-theme/bin/install.sh",
+				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/styles/main.scss.less",
+				"/Users/sethe/projects/express_test/server.js",
+				"/Users/sethe/projects/jquery_stuff/style.css",
+				"/Users/sethe/projects/jquery_stuff/index.html",
+				"/Users/sethe/projects/jquery_stuff/jquery.js",
+				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/styles/main.less",
+				"/Users/sethe/projects/js_templates/index.html",
+				"/Users/sethe/dotfiles/vimrc",
+				"/Users/sethe/projects/html5_training/assets/js/CPLibrary.js",
+				"/Users/sethe/projects/html5_training/Cynergi_Overview_Captivate_noswf/index.html",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/styles/main.less",
+				"/Users/sethe/__dotbackup/.bash_profile",
+				"/Users/sethe/dotfiles/bash_profile",
+				"/Users/sethe/.bashrc",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/functions.php",
+				"/Users/sethe/__dotbackup/.vimrc",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/styles/main.css",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/footer.php",
+				"/Users/sethe/.irssi/config",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/js/fancybox/jquery.fancybox-1.3.4.css",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/single-university.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-university-home.php",
+				"/Users/sethe/Desktop/index.html",
+				"/Users/sethe/Desktop/jquery.js",
+				"/Users/sethe/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/header.php",
+				"/Users/sethe/projects/cynergi-wp/.gitignore",
+				"/Volumes/C/Windows/System32/drivers/etc/hosts",
+				"/Users/sethe/projects/__cynergi-wp/wp-config.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/styles/main-new.css",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/search.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/university-no.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/members/index.php",
+				"/Users/sethe/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/js/jquery-validation/localization/messages_no.js",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/styles/font-awesome.css",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page.php",
+				"/Users/sethe/projects/cynergi-wp/wp-includes/theme-compat/header.php",
+				"/Users/sethe/projects/cynergi-old/css/main.css",
+				"/Users/sethe/projects/cynergi-old/includes/footer.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/header-buddypress.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/footer-buddypress.php",
+				"/Users/sethe/projects/cynergi-wp/wp-includes/theme-compat/footer.php",
+				"/Users/sethe/projects/cynergi-wp/wp-includes/functions.php",
+				"/Users/sethe/projects/cynergi-wp/_previous/css/main.css",
+				"/Users/sethe/projects/cynergi-wp/subl",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/groups/groups-loop.php",
+				"/Users/sethe/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+				"/Users/sethe/projects/maze/index.html",
+				"/Users/sethe/projects/maze/maze.js",
+				"/Users/sethe/Library/Application Support/Sublime Text 2/Packages/User/Gist.sublime-settings",
+				"/Users/sethe/Library/Application Support/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+				"/Users/sethe/projects/bower-test/components/backbone/component.json",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-university.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/single.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-contact.php",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-getting-started.html",
+				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/single-training.php"
+			],
+			"find":
+			{
+				"height": 35.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+					"",
+					"178,204",
+					":178,204",
+					"",
+					"footer.php",
+					""
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"apiPath",
+					"doServerCall",
+					"reguestLogin",
+					"apikey",
+					"doSErvercall",
+					"createCOntactXML",
+					"addSubscriber",
+					"doServerCall",
+					"parameter",
+					"paramatern",
+					"company_name",
+					"last_name",
+					"first_name",
+					"user_email",
+					"register",
+					"<!--",
+					"bloginfo(\"template_directory\")",
+					"post",
+					"template_directory\")",
+					"url(",
+					"script",
+					"mod_security",
+					"char",
+					"        <?",
+					"mod_security",
+					"&nbsp;",
+					" |\n",
+					" | ",
+					"Training",
+					"training",
+					"theta",
+					"validat",
+					"validate",
+					"modal",
+					"modalCOntrol",
+					"register_form_fields",
+					"register_form_fil",
+					"jquery",
+					"validator",
+					"errorS",
+					"errors",
+					"errorS",
+					"errors",
+					"errorS",
+					"errors",
+					"errorS",
+					"errors",
+					"registerform",
+					"console.logi",
+					"form",
+					"'",
+					"register",
+					"last_name",
+					"company_name",
+					"last_name",
+					"company_name",
+					"last_name",
+					"Last Name",
+					"first name",
+					"last name",
+					".text",
+					"text",
+					"$(\"#register-form label\")",
+					"html",
+					"(function()",
+					"do_action'",
+					"placeholder",
+					"company_name",
+					"initiali",
+					"tabindex",
+					"first_name",
+					"First",
+					"first_name",
+					"company_name",
+					"user_email",
+					"register-link",
+					"first_name",
+					"user_login",
+					"-image",
+					".gradient",
+					"1000",
+					"            setTimeout(function() {\n                flag = true;\n            }, 1000);\n\n            waitsFor(function() {\n                return flag;\n  ",
+					"../",
+					".min",
+					" data-dismiss=\"modal\"",
+					"Classes",
+					"classCollection",
+					"attributes.id",
+					"define",
+					"components",
+					" :",
+					":",
+					"          :",
+					"lib",
+					"@green",
+					"header",
+					"account",
+					"$",
+					"graidnet",
+					"$blue",
+					"@include ",
+					"$green",
+					"#",
+					"100",
+					"200, 200, 200",
+					"25",
+					"10",
+					"0",
+					"80",
+					"220",
+					"190",
+					"255",
+					"100",
+					"15",
+					"20",
+					"130, 130, 130",
+					"{\n        \"class\": \"sidebar_container\",\n        \"layer0.tint\": [80, 80, 80],\n        \"layer0.opacity\": 1.0,\n        \"layer0.draw_center\": false,\n        \"layer0.inner_margin\": [0, 0, 1, 0],\n        \"content_margin\": [0, 0, 1, 0]\n    },\n\n    {\n        \"class\": \"sidebar_tree\",\n        \"row_padding\": [8, 3],\n        \"indent\": 12,\n        \"indent_offset\": 17,\n        \"layer0.tint\": [214, 221, 230],\n        \"layer0.opacity\": 1.0,\n        \"dark_content\": false\n    },\n\n    {\n        \"class\": \"sidebar_heading\",\n        \"color\": [96, 110, 128],\n        \"font.bold\": true,\n        \"shadow_color\": [255, 255, 255],\n        \"shadow_offset\": [0, 1]\n    {\n        \"class\": \"sidebar_heading\",\n        \"parents\":\n        [\n            { \"class\": \"tree_row\", \"attributes\": [\"selected\"] }\n        ],\n        \"shadow_color\": [0, 0, 0] \n    },   \n\n\n    {\n        \"class\": \"sidebar_label\",\n        \"color\": [0, 0, 0]\n    }",
+					"<input type=\"text\" name=\"s\" placeholder=\"Search the University\">",
+					"<input type=\"text\" name=\"s\">",
+					"home_url",
+					"/wp-content/themes/cynergi",
+					"/wp/wp-content/themes/cynergi",
+					"site_url(\"/\")",
+					"/wp/wp-content/themes/cynergi",
+					"\"/",
+					"/",
+					"/wp-content",
+					" -s"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"echo get_template_directory_uri()",
+					"@blue",
+					".",
+					"@green",
+					"<input type=\"text\" name=\"s\" placeholder=\"Search Training\">",
+					"<input type=\"text\" name=\"s\" placeholder=\"Search the University\">",
+					"<?php bloginfo(\"template_directory\") ?>",
+					"/wp/wp-content",
+					"$",
+					"Another link",
+					"/html5_training/assets",
+					"html5_training",
+					"href=\"/html5_training/",
+					"src='/html_training/assets",
+					" ",
+					"/wp-content/themes/cynergi",
+					"<!",
+					", ",
+					"/wp-content/themes/cynergi"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "/Users/sethe/projects/ctct-forms"
+				}
+			],
+			"groups":
+			[
+				{
+					"selected": 1,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/Users/sethe/projects/ctct-forms/add_contact.php",
+							"settings":
+							{
+								"buffer_size": 15044,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										2508,
+										2508
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/PHP/PHP.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 1191.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/Users/sethe/projects/ctct-forms/cc_class.php",
+							"settings":
+							{
+								"buffer_size": 51440,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										16952,
+										16952
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/PHP/PHP.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 6596.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 34.0
+			},
+			"input":
+			{
+				"height": 31.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 112.0
+			},
+			"output.git":
+			{
+				"height": 100.0
+			},
+			"position": "1280 -224 1280 1024 1280 -224 1280 1024 ",
+			"replace":
+			{
+				"height": 64.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+					[
+						"footer",
+						"footer.php"
+					],
+					[
+						"header",
+						"header.php"
+					],
+					[
+						"main.less",
+						"styles/main.less"
+					],
+					[
+						"functions",
+						"functions.php"
+					],
+					[
+						"ccform",
+						"cc-form.php"
+					],
+					[
+						"unver",
+						"page-university-home.php"
+					],
+					[
+						"single",
+						"single-university.php"
+					],
+					[
+						"un",
+						"university-header.php"
+					],
+					[
+						"grunt",
+						"grunt.js"
+					],
+					[
+						"readme",
+						"README.md"
+					],
+					[
+						"notes",
+						"NOTES.ft"
+					],
+					[
+						"appview",
+						"app/js/teacher/views/app-view.js"
+					],
+					[
+						"teacherspechtml",
+						"test/teacher-spec.html"
+					],
+					[
+						"teacherindex",
+						"app/teacher/index.html"
+					],
+					[
+						"jasminejqueryreadme",
+						"components/jasmine-jquery/README.markdown"
+					],
+					[
+						"class-listjst",
+						"app/js/teacher/templates/class/class-list.jst"
+					],
+					[
+						"classes-spec",
+						"test/spec/teacher/collections/classes-spec.js"
+					],
+					[
+						"app.jst",
+						"app/js/teacher/templates/app.jst"
+					],
+					[
+						"teachermain",
+						"app/js/teacher-main.js"
+					],
+					[
+						"classes",
+						"app/js/teacher/collections/classes.js"
+					],
+					[
+						"teacher-",
+						"test/teacher-spec.html"
+					],
+					[
+						"classlistview",
+						"app/js/teacher/views/class/class-list-view.js"
+					],
+					[
+						"class.js",
+						"app/js/teacher/models/class.js"
+					],
+					[
+						"class",
+						"app/js/teacher/collections/classes.js"
+					],
+					[
+						"clases",
+						"app/js/teacher/collections/classes.js"
+					],
+					[
+						"class-spec",
+						"test/spec/teacher/models/class-spec.js"
+					],
+					[
+						"home",
+						"page-university-home.php"
+					],
+					[
+						"less",
+						"styles/main.less"
+					],
+					[
+						"unversityno",
+						"university-no.php"
+					],
+					[
+						"function",
+						"functions.php"
+					],
+					[
+						"mainless",
+						"styles/main.less"
+					],
+					[
+						"main.scss",
+						"styles/main.scss"
+					],
+					[
+						"func",
+						"functions.php"
+					],
+					[
+						"js",
+						"js/jquery-validation/lib/jquery.js"
+					],
+					[
+						"uni",
+						"university-no.php"
+					],
+					[
+						"main",
+						"styles/main.scss"
+					],
+					[
+						"search",
+						"search.php"
+					],
+					[
+						"wp-settings",
+						"wp-settings.php"
+					],
+					[
+						"raph",
+						"lib/raphael.js"
+					],
+					[
+						"rap",
+						"lib/raphael.js"
+					],
+					[
+						"app",
+						"js/app.js"
+					],
+					[
+						"ind",
+						"index.html"
+					],
+					[
+						"ser",
+						"server.js"
+					],
+					[
+						"style",
+						"style.css"
+					],
+					[
+						"sty",
+						"style.css"
+					],
+					[
+						"styles/main.less",
+						"styles/main.less"
+					],
+					[
+						"",
+						"functions.php"
+					],
+					[
+						"fancys",
+						"js/fancybox/jquery.fancybox-1.3.4.css"
+					],
+					[
+						"univer",
+						"page-university-home.php"
+					],
+					[
+						"footer.php",
+						"footer.php"
+					],
+					[
+						"mainnew",
+						"styles/main-new.css"
+					],
+					[
+						"single-univer",
+						"single-university.php"
+					],
+					[
+						"main-new",
+						"wp-content/themes/cynergi/styles/main-new.css"
+					],
+					[
+						"page",
+						"wp-content/themes/cynergi/page.php"
+					],
+					[
+						"font-awesome",
+						"wp-content/themes/cynergi/styles/font-awesome.css"
+					],
+					[
+						"font",
+						"wp-content/themes/cynergi/styles/font-awesome.css"
+					],
+					[
+						"universi",
+						"wp-content/themes/cynergi/page-university-home.php"
+					],
+					[
+						"mainew",
+						"wp-content/themes/cynergi/styles/main-new.css"
+					],
+					[
+						"unvi",
+						"wp-content/themes/cynergi/page-university-home.php"
+					],
+					[
+						"singleun",
+						"wp-content/themes/cynergi/single-university.php"
+					],
+					[
+						"foo",
+						"footer.php"
+					],
+					[
+						"unv",
+						"single-university.php"
+					],
+					[
+						"mainn",
+						"styles/main-new.css"
+					],
+					[
+						"main-c",
+						"styles/main-new.css"
+					],
+					[
+						"groups",
+						"groups/groups-loop.php"
+					],
+					[
+						"head",
+						"header.php"
+					],
+					[
+						"maz",
+						"maze.js"
+					],
+					[
+						"in",
+						"index.html"
+					],
+					[
+						"contact",
+						"page-contact.php"
+					],
+					[
+						"univ",
+						"page-university.php"
+					],
+					[
+						"funct",
+						"functions.php"
+					],
+					[
+						"mains",
+						"styles/main.css"
+					],
+					[
+						"main.css",
+						"wp-content/themes/cynergi/styles/main.css"
+					],
+					[
+						"rea",
+						"README.md"
+					],
+					[
+						"reader",
+						"_revised/includes/header.php"
+					],
+					[
+						"gitin",
+						".gitignore"
+					],
+					[
+						"how",
+						"_revised/how-it-works.php"
+					],
+					[
+						"dev",
+						"_revised/devStory.php"
+					],
+					[
+						"faq",
+						"_revised/faq.php"
+					],
+					[
+						"whycy",
+						"_previous/why-cynergi.php"
+					],
+					[
+						"about",
+						"_revised/about.php"
+					],
+					[
+						"support",
+						"_revised/support.php"
+					],
+					[
+						"lang",
+						"application/language/english/users_lang.php"
+					],
+					[
+						"htadminlang",
+						"application/language/english/ht_admin_lang.php"
+					],
+					[
+						"adminlang",
+						"application/language/english/admin_lang.php"
+					],
+					[
+						"userslang",
+						"application/language/english/users_lang.php"
+					],
+					[
+						"usersacct",
+						"application/language/english/users_acctsummary_lang.php"
+					],
+					[
+						"admin_usermgmt",
+						"application/language/english/admin_usermgmt_lang.php"
+					],
+					[
+						"users_profile_lang",
+						"application/language/english/users_profile_lang.php"
+					],
+					[
+						"admin",
+						"application/controllers/admin.php"
+					],
+					[
+						"usersautopaylng",
+						"application/language/english/users_autopay_lang.php"
+					],
+					[
+						"usersagrlang",
+						"application/language/english/users_agr_lang.php"
+					],
+					[
+						"usersmkpmtlang",
+						"application/language/english/users_mkpmt_lang.php"
+					],
+					[
+						"userspmtlang",
+						"application/language/english/users_pmtmthds_lang.php"
+					],
+					[
+						"usersagr",
+						"application/language/english/users_agr_lang.php"
+					],
+					[
+						"accountlang",
+						"application/language/english/account_lang.php"
+					],
+					[
+						"langusers",
+						"application/language/english/users_lang.php"
+					],
+					[
+						"users",
+						"application/controllers/users.php"
+					],
+					[
+						"htacc",
+						".htaccess"
+					],
+					[
+						"database",
+						"application/config/database.php"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"selected_items":
+				[
+				],
+				"width": 380.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
 			"side_bar_visible": true,
 			"side_bar_width": 208.0,
 			"status_bar_visible": true,
-			"window_id": 78,
+			"window_id": 103,
 			"workspace_name": ""
 		}
 	],
