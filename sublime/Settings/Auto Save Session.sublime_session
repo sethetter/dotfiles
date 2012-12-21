@@ -1427,10 +1427,10 @@
 					}
 				},
 				{
-					"file": "/Users/sethe/dotfiles/.gitignore",
+					"file": "/Users/sethe/dotfiles/README.md",
 					"settings":
 					{
-						"buffer_size": 55,
+						"buffer_size": 684,
 						"line_ending": "Unix"
 					}
 				}
@@ -2129,18 +2129,18 @@
 						},
 						{
 							"buffer": 1,
-							"file": "/Users/sethe/dotfiles/.gitignore",
+							"file": "/Users/sethe/dotfiles/README.md",
 							"settings":
 							{
-								"buffer_size": 55,
+								"buffer_size": 684,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										55,
-										55
+										178,
+										178
 									]
 								],
 								"settings":
@@ -2233,7 +2233,7 @@
 										"Ruby on Rails": "ruby"
 									},
 									"sublimelinter_wrap_find": true,
-									"syntax": "Packages/Text/Plain text.tmLanguage"
+									"syntax": "Packages/Markdown/Markdown.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,

@@ -19,5 +19,5 @@ Part of the ```.bash_profile``` is to print git information to the command promp
 
 Todos
 -----
-
 - Create uninstall task to replace symlinks with created backups
+- Update bin/install.sh to work properly
