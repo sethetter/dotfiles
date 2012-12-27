@@ -1,17 +1,23 @@
 {
 	"folder_history":
 	[
+		"/Users/sethe/projects/aq_rto",
+		"/Users/sethe/projects/OnlinePayments",
+		"/Users/sethe/projects/XML2PDF",
+		"/Users/sethe/projects/yeoman_test",
+		"/Users/sethe/projects/mocha_tests",
+		"/usr/local/Cellar/mysql",
+		"/etc",
+		"/Users/sethe/projects/express_test",
+		"/Users/sethe/projects/teach-app",
 		"/Users/sethe/projects/cynergi_wp_live",
 		"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi",
-		"/Users/sethe/projects/OnlinePayments",
 		"/Users/sethe/projects/ctct-forms",
 		"/Volumes/MAC OS X/Users/sethe/projects/cynergi_wp_live/cynergisuite.com",
-		"/Users/sethe/projects/teach-app",
 		"/Users/sethe/projects/cynergi_wp",
 		"/Users/sethe/projects/raphael_test",
 		"/Users/sethe/dotfiles/devtools-theme",
 		"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi",
-		"/Users/sethe/projects/express_test",
 		"/Users/sethe/projects/jquery_stuff",
 		"/Users/sethe/projects/html5_training",
 		"/Users/sethe/projects/js_templates",
@@ -19,16 +25,44 @@
 		"/Users/sethe/projects/cynergi-wp",
 		"/Users/sethe/projects/maze"
 	],
-	"last_window_id": 115,
+	"last_window_id": 144,
 	"settings":
 	{
-		"new_window_height": 1002.0,
+		"new_window_height": 960.0,
 		"new_window_settings":
 		{
 			"auto_complete":
 			{
 				"selected_items":
 				[
+					[
+						"user_reg",
+						"user_registrations"
+					],
+					[
+						"daily_s",
+						"daily_success_data_string"
+					],
+					[
+						"recent",
+						"recent_days"
+					],
+					[
+						"top",
+						"top_ten_stores_data_string"
+					],
+					[
+						"by_day",
+						"by_day_success_data_string"
+					],
+					[
+						"by",
+						"by_hour_declined_data_string"
+					],
+					[
+						"by_hour",
+						"by_hour_success_data_string"
+					],
 					[
 						"user_registation",
 						"user_registrations_data_string"
@@ -40,10 +74,6 @@
 					[
 						"plots",
 						"plotShadow"
-					],
-					[
-						"recent",
-						"recent_hours"
 					],
 					[
 						"categ",
@@ -122,9 +152,25 @@
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 392.0,
+				"height": 87.0,
 				"selected_items":
 				[
+					[
+						"lint dis",
+						"SublimeLinter: Disable Linting"
+					],
+					[
+						"ssjs",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"wrap",
+						"Word Wrap: Toggle"
+					],
+					[
+						"lint",
+						"SublimeLinter: Disable Linting"
+					],
 					[
 						":w",
 						":w - Save"
@@ -134,12 +180,36 @@
 						"Set Syntax: PHP"
 					],
 					[
-						"disable lint",
-						"SublimeLinter: Disable Linting"
+						"spaces",
+						"Indentation: Convert to Spaces"
 					],
 					[
-						"ssjs",
+						"tabs",
+						"Indentation: Convert to Tabs"
+					],
+					[
+						"reindent",
+						"Indentation: Reindent Lines"
+					],
+					[
+						"javascript",
 						"Set Syntax: JavaScript"
+					],
+					[
+						"js",
+						"Set Syntax: JSON"
+					],
+					[
+						"json",
+						"Set Syntax: JSON"
+					],
+					[
+						":q",
+						"Set Syntax: SQL"
+					],
+					[
+						"disable lint",
+						"SublimeLinter: Disable Linting"
 					],
 					[
 						"install",
@@ -148,10 +218,6 @@
 					[
 						"ssxml",
 						"Set Syntax: XML"
-					],
-					[
-						"wrap",
-						"Word Wrap: Toggle"
 					],
 					[
 						"remove",
@@ -180,10 +246,6 @@
 					[
 						":",
 						":w - Save"
-					],
-					[
-						"tabs",
-						"Indentation: Convert to Tabs"
 					],
 					[
 						"sshtml",
@@ -256,10 +318,6 @@
 					[
 						"pref",
 						"Preferences: Settings - Default"
-					],
-					[
-						":q",
-						"Set Syntax: SQL"
 					],
 					[
 						":bd",
@@ -347,18 +405,100 @@
 			},
 			"file_history":
 			[
-				"/Users/sethe/projects/OnlinePayments/application/models/reports_model.php",
-				"/Users/sethe/projects/OnlinePayments/application/controllers/reports.php",
-				"/Users/sethe/projects/OnlinePayments/application/views/reports/dashboard.php",
+				"/Users/sethe/projects/aq_rto/css/styles.css",
+				"/Users/sethe/projects/aq_rto/application/views/ca_create.php",
+				"/Users/sethe/projects/aq_rto/scripts/company_mgmt.js",
+				"/Users/sethe/projects/aq_rto/application/views/ca_edit.php",
+				"/Users/sethe/projects/aq_rto/application/controllers/tools_manage.php",
+				"/Users/sethe/projects/aq_rto/application/views/ca_main.php",
+				"/Users/sethe/projects/aq_rto/images/sprite.png",
+				"/Users/sethe/projects/aq_rto/application/views/_header.php",
+				"/Users/sethe/projects/aq_rto/application/models/manage_model.php",
+				"/Users/sethe/projects/aq_rto/application/controllers/index.html",
+				"/Users/sethe/projects/aq_rto/application/views/co_main.php",
+				"/Users/sethe/projects/OnlinePayments/assets/js/olp.js",
+				"/Users/sethe/dotfiles/README.md",
+				"/Users/sethe/dotfiles/.gitignore",
+				"/Users/sethe/projects/OnlinePayments/assets/css/main.css",
+				"/Users/sethe/projects/OnlinePayments/assets/css/bootstrap.css",
+				"/Users/sethe/projects/OnlinePayments/assets/css/bootstrap-responsive.css",
+				"/Users/sethe/projects/OnlinePayments/application/views/users_login.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/users_forgotpw.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/users_create.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/users_firstlogin.php",
+				"/Users/sethe/projects/OnlinePayments/application/controllers/users.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/users_autopayenroll.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/users_agrdetails.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/users_agreements.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/_footer.php",
+				"/Users/sethe/projects/OnlinePayments/application/controllers/account.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/sidebar_payment.php",
+				"/Users/sethe/projects/OnlinePayments/application/libraries/nusoap/class.xmlschema.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/sidebar_menu.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/index.html",
+				"/Users/sethe/projects/OnlinePayments/application/views/htadmin_pmtgtwyretrieve.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/htadmin_pmtgtwyacctinfo.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/htadmin_merchantretrieve.php",
+				"/Users/sethe/projects/OnlinePayments/application/controllers/ht_admin.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/htadmin_merchantinfo.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/htadmin_merchantcreate.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/admin_users.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/htadmin_maintenance.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/highcharts.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/admin_troubleshoot.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/admin_marketing.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/admin_login.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/admin_edituser.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/_login_header.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/_header.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/_header_plain.php",
+				"/Users/sethe/projects/OnlinePayments/application/core/HT_Controller.php",
+				"/Users/sethe/projects/OnlinePayments/application/.htaccess",
 				"/Users/sethe/projects/OnlinePayments/application/views/reports/dashboard_highchart.php",
+				"/Users/sethe/projects/OnlinePayments/application/models/reports_model.php",
+				"/Users/sethe/projects/OnlinePayments/application/views/reports/dashboard.php",
+				"/Users/sethe/projects/OnlinePayments/application/controllers/reports.php",
+				"/Users/sethe/projects/aq_rto/application/helpers/login_helper.php",
+				"/Users/sethe/projects/XML2PDF/libraries/tcpdf/tcpdf.php",
+				"/Users/sethe/projects/XML2PDF/libraries/tcpdf/config/lang/eng.php",
+				"/Users/sethe/projects/XML2PDF/belotero_balance.php",
+				"/Users/sethe/projects/XML2PDF/xeomin.php",
+				"/Users/sethe/projects/XML2PDF/consultingv2.php",
+				"/Users/sethe/projects/XML2PDF/get_email.php",
+				"/Users/sethe/projects/XML2PDF/belotero_email",
+				"/Users/sethe/projects/XML2PDF/inservice_certificate.php",
+				"/Users/sethe/projects/XML2PDF/certificate_production3.php",
+				"/Users/sethe/projects/XML2PDF/libraries/tcpdf/config/tcpdf_config.php",
+				"/Users/sethe/projects/XML2PDF/xm_email",
+				"/Users/sethe/projects/XML2PDF/xm_email_result",
+				"/Users/sethe/projects/XML2PDF/Xeomin_3_20120119.pdf",
+				"/Users/sethe/dotfiles/sublime/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+				"/Users/sethe/projects/aq_rto/application/models/aqcore_model.php",
+				"/Users/sethe/projects/aq_rto/application/config/database.php",
+				"/Users/sethe/projects/yeoman_test/Gruntfile.js",
+				"/Users/sethe/projects/mocha_tests/app/index.html",
+				"/Users/sethe/projects/mocha_tests/app/js/app.js",
+				"/Users/sethe/projects/mocha_tests/app/js/main.js",
+				"/Users/sethe/projects/mocha_tests/package.json",
+				"/Users/sethe/projects/mocha_tests/component.json",
+				"/Users/sethe/projects/mocha_tests/component",
+				"/Users/sethe/dotfiles/sublime/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+				"/Users/sethe/projects/express_test/package.json",
+				"/Users/sethe/projects/express_test/server.js",
+				"/usr/local/etc/my.cnf",
+				"/tmp/mysql.sock",
+				"/usr/local/var/log/mongodb/mongo.log",
+				"/Users/sethe/projects/OnlinePayments/application/config/database.php",
+				"/Users/sethe/projects/OnlinePayments/application/config/constants.php",
+				"/Users/sethe/projects/OnlinePayments/.gitignore",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/main_lang.php",
+				"/Users/sethe/projects/OnlinePayments/application/language/english/admin_lang.php",
+				"/Users/sethe/projects/teach-app/test/spec/teacher/views/class-view-spec.js",
 				"/Users/sethe/projects/phpsh/README.md",
 				"/Users/sethe/projects/phpsh/setup.py",
-				"/Users/sethe/projects/OnlinePayments/application/views/_header.php",
 				"/Users/sethe/dotfiles/sublime/Packages/User/Preferences.sublime-settings",
-				"/Users/sethe/projects/OnlinePayments/application/config/database.php",
 				"/Users/sethe/projects/OnlinePayments/system/helpers/url_helper.php",
 				"/Users/sethe/projects/OnlinePayments/application/models/admin_model.php",
-				"/Users/sethe/projects/OnlinePayments/application/config/constants.php",
 				"/Users/sethe/projects/OnlinePayments/system/core/Loader.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/header.php",
 				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/cc-form.php",
@@ -392,89 +532,7 @@
 				"/Users/sethe/projects/teach-app/app/js/teacher/views/class/class-list-view.js",
 				"/Users/sethe/projects/teach-app/app/js/teacher/views/app-view.js",
 				"/Users/sethe/projects/teach-app/test/spec/teacher/views/class-list-view-spec.js",
-				"/Users/sethe/projects/teach-app/test/teacher-spec.html",
-				"/Users/sethe/projects/teach-app/app/teacher/index.html",
-				"/Users/sethe/projects/teach-app/components/jasmine-jquery/README.markdown",
-				"/Users/sethe/projects/teach-app/app/js/teacher/collections/classes.js",
-				"/Users/sethe/projects/teach-app/test/spec/teacher/collections/classes-spec.js",
-				"/Users/sethe/projects/teach-app/app/js/teacher-main.js",
-				"/Users/sethe/projects/teach-app/node_modules/grunt-jasmine/node_modules/grunt/node_modules/colors/ReadMe.md",
-				"/Users/sethe/projects/teach-app/app/js/teacher/templates/app.jst",
-				"/Users/sethe/projects/teach-app/test/spec/teacher/models/class-spec.js",
-				"/Users/sethe/projects/teach-app/app/js/teacher/models/class.js",
-				"/Users/sethe/projects/teach-app/app/js/teacher/views/class/class-view.js",
-				"/Users/sethe/dotfiles/devtools/Custom.css",
-				"/Users/sethe/dotfiles/README.md",
-				"/Users/sethe/dotfiles/irssi/config",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/university-no.php",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/styles/main.scss",
-				"/Users/sethe/dotfiles/sublime/Packages/Default/Preferences.sublime-settings",
-				"/Users/sethe/dotfiles/Re",
-				"/Users/sethe/dotfiles/bin/install.sh",
-				"/Users/sethe/dotfiles/sublime/Packages/Theme - Default/Default.sublime-theme",
-				"/Users/sethe/dotfiles/sublime/Packages/Color Scheme - Default/Blackboard.tmTheme",
-				"/Users/sethe/projects/cynergi_wp_live/wp-content/themes/cynergi/js/jquery-validation/lib/jquery.js",
-				"/Users/sethe/projects/cynergi-old/contact.php",
-				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/footer.php",
-				"/Users/sethe/projects/cynergi_wp_live/wp-config.php",
-				"/Users/sethe/projects/cynergi_wp_live/db.sql",
-				"/Users/sethe/projects/cynergi_wp_live/wp-settings.php",
-				"/Users/sethe/projects/raphael_test/js/app.js",
-				"/Users/sethe/projects/raphael_test/index.html",
-				"/Users/sethe/projects/raphael_test/lib/raphael.js",
-				"/Users/sethe/dotfiles/.bash_profile",
-				"/Users/sethe/.bash_profile",
-				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/styles/main.scss",
-				"/Users/sethe/projects/cynergi_wp/.gitignore",
-				"/Users/sethe/dotfiles/devtools-theme/Custom.css",
-				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/bin/less-compile",
-				"/Users/sethe/dotfiles/devtools-theme/bin/install.sh",
-				"/Users/sethe/Downloads/chrome-devtools-dark-theme/bin/install.sh",
-				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/styles/main.scss.less",
-				"/Users/sethe/projects/express_test/server.js",
-				"/Users/sethe/projects/jquery_stuff/style.css",
-				"/Users/sethe/projects/jquery_stuff/index.html",
-				"/Users/sethe/projects/jquery_stuff/jquery.js",
-				"/Users/sethe/projects/cynergi_wp/wp-content/themes/cynergi/styles/main.less",
-				"/Users/sethe/projects/js_templates/index.html",
-				"/Users/sethe/dotfiles/vimrc",
-				"/Users/sethe/projects/html5_training/assets/js/CPLibrary.js",
-				"/Users/sethe/projects/html5_training/Cynergi_Overview_Captivate_noswf/index.html",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/styles/main.less",
-				"/Users/sethe/__dotbackup/.bash_profile",
-				"/Users/sethe/dotfiles/bash_profile",
-				"/Users/sethe/.bashrc",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/functions.php",
-				"/Users/sethe/__dotbackup/.vimrc",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/styles/main.css",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/footer.php",
-				"/Users/sethe/.irssi/config",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/js/fancybox/jquery.fancybox-1.3.4.css",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/single-university.php",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page-university-home.php",
-				"/Users/sethe/Desktop/index.html",
-				"/Users/sethe/Desktop/jquery.js",
-				"/Users/sethe/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/header.php",
-				"/Users/sethe/projects/cynergi-wp/.gitignore",
-				"/Volumes/C/Windows/System32/drivers/etc/hosts",
-				"/Users/sethe/projects/__cynergi-wp/wp-config.php",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/styles/main-new.css",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/search.php",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/university-no.php",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/members/index.php",
-				"/Users/sethe/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/js/jquery-validation/localization/messages_no.js",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/styles/font-awesome.css",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/page.php",
-				"/Users/sethe/projects/cynergi-wp/wp-includes/theme-compat/header.php",
-				"/Users/sethe/projects/cynergi-old/css/main.css",
-				"/Users/sethe/projects/cynergi-old/includes/footer.php",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/header-buddypress.php",
-				"/Users/sethe/projects/cynergi-wp/wp-content/themes/cynergi/footer-buddypress.php",
-				"/Users/sethe/projects/cynergi-wp/wp-includes/theme-compat/footer.php",
-				"/Users/sethe/projects/cynergi-wp/wp-includes/functions.php",
-				"/Users/sethe/projects/cynergi-wp/_previous/css/main.css"
+				"/Users/sethe/projects/teach-app/test/teacher-spec.html"
 			],
 			"find":
 			{
@@ -482,7 +540,7 @@
 			},
 			"find_in_files":
 			{
-				"height": 93.0,
+				"height": 0.0,
 				"where_history":
 				[
 					"",
@@ -495,137 +553,137 @@
 			},
 			"find_state":
 			{
-				"case_sensitive": false,
+				"case_sensitive": true,
 				"find_history":
 				[
-					"\">",
-					"padding-bottom: 15px;",
-					"statuses",
-					"recent_hours",
-					"statuses",
-					"hourly",
-					"$hour",
-					"row",
-					"dl",
-					"h2",
-					"<",
-					"105",
-					"span3",
-					"\"",
-					" '",
-					"statuses",
-					"Hour",
-					"hour",
-					"recent_hours",
-					"payment statuses",
-					"width: 100%; ",
-					"data_string",
-					"title",
-					"statustotals",
-					"40",
-					"50",
-					"style=\"",
-					"$css_array",
-					"a_css",
-					"$date",
-					"area",
-					"]",
-					"hourly_data_string",
-					"recent_dates",
-					"date",
-					"date_string",
-					"date",
-					"Date",
-					"date",
-					"data_string",
-					"dai",
-					"$date",
-					"unsuccessful_amount",
-					"$category_string",
-					"$categories",
-					"$date",
-					"[$date",
-					"\"",
-					"date('Y-m-d', strtotime($arec['created_dttm']))",
-					"database",
-					"cc-form",
-					"2012",
-					"cc-form",
-					"submit",
+					"#edit_campaign",
+					"ToolTables_campaigns_table_0",
+					" <?php echo ($campaign['sunday'] == 1 ? 'checked' : ''); ?>>",
+					" ",
+					"exec",
+					"sprite2",
+					"450",
+					"value",
+					"hide",
+					"\n}",
+					" :",
+					" = ",
+					"=",
+					"var ",
 					"data",
-					"><",
-					"test",
-					"company_name",
-					"last_name",
-					"first_name",
-					"user_email",
-					"register",
-					"<!--",
-					"bloginfo(\"template_directory\")",
-					"post",
-					"template_directory\")",
-					"url(",
-					"script",
-					"mod_security",
-					"char",
-					"        <?",
-					"mod_security",
-					"&nbsp;",
-					" |\n",
-					" | ",
-					"Training",
-					"training",
-					"theta",
-					"validat",
-					"validate",
-					"modal",
-					"modalCOntrol",
-					"register_form_fields",
-					"register_form_fil",
-					"jquery",
-					"validator",
-					"errorS",
-					"errors",
-					"errorS",
-					"errors",
-					"errorS",
-					"errors",
-					"errorS",
-					"errors",
-					"registerform",
-					"console.logi",
-					"form",
-					"'",
-					"register",
-					"last_name",
-					"company_name",
-					"last_name",
-					"company_name",
-					"last_name",
-					"Last Name",
-					"first name",
-					"last name",
-					".text",
-					"text",
-					"$(\"#register-form label\")",
-					"html",
-					"(function()",
-					"do_action'",
-					"placeholder",
-					"company_name",
-					"initiali",
-					"tabindex",
-					"first_name",
-					"First",
-					"first_name",
-					"company_name",
-					"user_email",
-					"register-link",
-					"first_name",
-					"user_login",
-					"-image",
-					".gradient",
-					"1000"
+					"start_time",
+					"saturday",
+					"\n		",
+					"friday",
+					"thursday",
+					"wednesday",
+					"wedneday",
+					"tuesday",
+					"monday",
+					"sunday",
+					"<?php echo ($camps['active'] == 1 ? 'X' : ''); ?>      </td>",
+					"Luis",
+					"F68E14",
+					"style=",
+					" style=\"display:none;\" class=\"label label-important\"></span><br />",
+					"style=",
+					"users_firstlogin",
+					"user_firstlogin",
+					"style=\"margin-bottom:4px;\" ",
+					"style=",
+					".controls",
+					"style=",
+					"users_create",
+					"style=",
+					"pmtmthd",
+					"style=",
+					"style=\"margin-bottom:4px;\"",
+					"style=",
+					"users_agreements",
+					"style=",
+					"style=\"width:15px;\"",
+					"style=",
+					"span",
+					"paycall",
+					"clear",
+					"users_agrdetails",
+					"style=\"margin-top:10px;\"",
+					"tyle=\"margin-top:10px;\"",
+					"style=\"width: 0%;\"",
+					"style=",
+					"style=\"font-size:0.85em;\"",
+					"small",
+					"style=\"text-align:center;\"",
+					"style=",
+					"th",
+					"style=",
+					" style=\"padding-top:6px;\"",
+					"htadmin_merchantinfo",
+					"style=",
+					"style=\"width:390px;\"",
+					" style=\"margin-top:0;\"",
+					"style=\"margin-top:0;\">",
+					" style=\"width:390px;\"",
+					"htadmin_merchantcreate",
+					"style=",
+					" style=\"text-align:center;\">",
+					"style=",
+					"admin_users",
+					"style=",
+					" style=\"display:none;\">",
+					"style=",
+					"tright",
+					"text-align: center;",
+					"center",
+					"style=",
+					"hide",
+					" style=\"margin-bottom:4px;\"",
+					"style=",
+					"admin_edituser",
+					" ",
+					"style=",
+					"css_array",
+					"css",
+					"style=",
+					"registration",
+					"Registration",
+					"hourly_display",
+					"DateTime",
+					"$recent_days",
+					"((",
+					")+86400",
+					"print_r",
+					"end($recent_days)",
+					"$recent_days",
+					"array_pop(",
+					"array_keys(",
+					"$day",
+					"success",
+					"successful_amount",
+					"top_stores",
+					"10",
+					"ful",
+					"success",
+					"Sun",
+					"by_hour",
+					":00",
+					"daily_declined_data_string",
+					"daily_success_data_string",
+					"successful_amount",
+					"$peak",
+					"$peak_hours",
+					"242526",
+					"p",
+					"h3",
+					"d><i",
+					"<input",
+					"<label",
+					".header",
+					"        <h4>Edit: <?php echo $campaign['camp_name'] . \"(\" . $campaign['camp_id'] . \")\"; ?></h4>\n",
+					"h3",
+					"checked=",
+					"<?php //",
+					"<?php "
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -633,6 +691,7 @@
 				"regex": false,
 				"replace_history":
 				[
+					"<?php ",
 					"echo get_template_directory_uri()",
 					"@blue",
 					".",
@@ -709,20 +768,284 @@
 				"selected_items":
 				[
 					[
-						"dashboard",
-						"application/views/reports/dashboard.php"
+						"ca_main.php",
+						"application/views/ca_main.php"
 					],
 					[
-						"reports",
-						"application/controllers/reports.php"
+						"header",
+						"application/views/_header.php"
+					],
+					[
+						".css",
+						"css/styles.css"
+					],
+					[
+						"ca_main",
+						"application/views/ca_main.php"
+					],
+					[
+						"manage",
+						"application/models/manage_model.php"
+					],
+					[
+						"company",
+						"scripts/company_mgmt.js"
+					],
+					[
+						"manage_model",
+						"application/models/manage_model.php"
+					],
+					[
+						"co_main.php",
+						"application/views/co_main.php"
+					],
+					[
+						"tools_manage.hp",
+						"application/controllers/tools_manage.php"
+					],
+					[
+						"olp.js",
+						"assets/js/olp.js"
+					],
+					[
+						"bootstrap-respons",
+						"assets/css/bootstrap-responsive.css"
+					],
+					[
+						"users.php",
+						"application/controllers/users.php"
+					],
+					[
+						"bootstrap",
+						"assets/css/bootstrap.css"
+					],
+					[
+						"controllers/users",
+						"application/controllers/users.php"
+					],
+					[
+						"users_",
+						"application/views/users_agrdetails.php"
+					],
+					[
+						"users_agreements",
+						"application/views/users_agreements.php"
+					],
+					[
+						"footer",
+						"application/views/_footer.php"
+					],
+					[
+						"controllers/account",
+						"application/controllers/account.php"
+					],
+					[
+						"bootstrapre",
+						"assets/css/bootstrap-responsive.css"
+					],
+					[
+						"controllers/ht_admin",
+						"application/controllers/ht_admin.php"
+					],
+					[
+						"controller",
+						"application/core/HT_Controller.php"
+					],
+					[
+						"main.css",
+						"assets/css/main.css"
+					],
+					[
+						"dashboard",
+						"application/views/reports/dashboard_highchart.php"
 					],
 					[
 						"reportsmodel",
 						"application/models/reports_model.php"
 					],
 					[
+						"views/reports/da",
+						"application/views/reports/dashboard_highchart.php"
+					],
+					[
+						"reports",
+						"application/controllers/reports.php"
+					],
+					[
+						"model",
+						"application/models/reports_model.php"
+					],
+					[
+						"dashi",
+						"application/views/reports/dashboard_highchart.php"
+					],
+					[
+						"dash",
+						"application/views/reports/dashboard.php"
+					],
+					[
+						"tools_manage",
+						"application/controllers/tools_manage.php"
+					],
+					[
+						"styles.css",
+						"css/styles.css"
+					],
+					[
+						"ca_edit",
+						"application/views/ca_edit.php"
+					],
+					[
+						"caedit",
+						"application/views/ca_edit.php"
+					],
+					[
+						"managemodel",
+						"application/models/manage_model.php"
+					],
+					[
+						"camain",
+						"application/views/ca_main.php"
+					],
+					[
+						"company_mgmt.js",
+						"scripts/company_mgmt.js"
+					],
+					[
+						"login_helper",
+						"application/helpers/login_helper.php"
+					],
+					[
+						"co_main",
+						"application/views/co_main.php"
+					],
+					[
+						"toolsmanage",
+						"application/controllers/tools_manage.php"
+					],
+					[
+						"eng.php",
+						"libraries/tcpdf/config/lang/eng.php"
+					],
+					[
+						"belo",
+						"belotero_balance.php"
+					],
+					[
+						"tcpdf.php",
+						"libraries/tcpdf/tcpdf.php"
+					],
+					[
+						"xeomin",
+						"xeomin.php"
+					],
+					[
+						"bel",
+						"belotero_balance.php"
+					],
+					[
+						"tpdf",
+						"libraries/tcpdf/tcpdf.php"
+					],
+					[
+						"get",
+						"get_email.php"
+					],
+					[
+						"get_email",
+						"get_email.php"
+					],
+					[
+						"xeom",
+						"xeomin.php"
+					],
+					[
+						"tcpdf",
+						"libraries/tcpdf/tcpdf.php"
+					],
+					[
+						"inservice",
+						"inservice_certificate.php"
+					],
+					[
+						"xm_email",
+						"xm_email"
+					],
+					[
+						"xm_email_res",
+						"xm_email_result"
+					],
+					[
+						"getemail",
+						"get_email.php"
+					],
+					[
+						"xm_email_result",
+						"xm_email_result"
+					],
+					[
+						"application/controllers/",
+						"application/controllers/tools_manage.php"
+					],
+					[
+						"database",
+						"application/config/database.php"
+					],
+					[
+						"",
+						"Gruntfile.js"
+					],
+					[
+						"app.js",
+						"app/js/app.js"
+					],
+					[
+						"main.js",
+						"app/js/main.js"
+					],
+					[
+						"index",
+						"app/index.html"
+					],
+					[
+						"pack",
+						"package.json"
+					],
+					[
+						"compoto",
+						"component.json"
+					],
+					[
+						"package",
+						"package.json"
+					],
+					[
+						"constants",
+						"application/config/constants.php"
+					],
+					[
+						"dashba",
+						"application/views/reports/dashboard.php"
+					],
+					[
 						"constant",
 						"application/config/constants.php"
+					],
+					[
+						"giti",
+						".gitignore"
+					],
+					[
+						"databas",
+						"application/config/database.php"
+					],
+					[
+						"highchart",
+						"application/views/reports/dashboard_highchart.php"
+					],
+					[
+						"dashboarhight",
+						"application/views/reports/dashboard_highchart.php"
 					],
 					[
 						"urlhelper",
@@ -741,20 +1064,12 @@
 						"styles/main.less"
 					],
 					[
-						"header",
-						"header.php"
-					],
-					[
 						"ccform",
 						"cc-form.php"
 					],
 					[
 						"main",
 						"js/main.js"
-					],
-					[
-						"footer",
-						"footer.php"
 					],
 					[
 						"functions",
@@ -921,10 +1236,6 @@
 						"styles/main.less"
 					],
 					[
-						"",
-						"functions.php"
-					],
-					[
 						"fancys",
 						"js/fancybox/jquery.fancybox-1.3.4.css"
 					],
@@ -967,174 +1278,6 @@
 					[
 						"mainew",
 						"wp-content/themes/cynergi/styles/main-new.css"
-					],
-					[
-						"unvi",
-						"wp-content/themes/cynergi/page-university-home.php"
-					],
-					[
-						"singleun",
-						"wp-content/themes/cynergi/single-university.php"
-					],
-					[
-						"foo",
-						"footer.php"
-					],
-					[
-						"unv",
-						"single-university.php"
-					],
-					[
-						"mainn",
-						"styles/main-new.css"
-					],
-					[
-						"main-c",
-						"styles/main-new.css"
-					],
-					[
-						"groups",
-						"groups/groups-loop.php"
-					],
-					[
-						"head",
-						"header.php"
-					],
-					[
-						"maz",
-						"maze.js"
-					],
-					[
-						"in",
-						"index.html"
-					],
-					[
-						"contact",
-						"page-contact.php"
-					],
-					[
-						"univ",
-						"page-university.php"
-					],
-					[
-						"funct",
-						"functions.php"
-					],
-					[
-						"mains",
-						"styles/main.css"
-					],
-					[
-						"main.css",
-						"wp-content/themes/cynergi/styles/main.css"
-					],
-					[
-						"rea",
-						"README.md"
-					],
-					[
-						"reader",
-						"_revised/includes/header.php"
-					],
-					[
-						"gitin",
-						".gitignore"
-					],
-					[
-						"how",
-						"_revised/how-it-works.php"
-					],
-					[
-						"dev",
-						"_revised/devStory.php"
-					],
-					[
-						"faq",
-						"_revised/faq.php"
-					],
-					[
-						"whycy",
-						"_previous/why-cynergi.php"
-					],
-					[
-						"about",
-						"_revised/about.php"
-					],
-					[
-						"support",
-						"_revised/support.php"
-					],
-					[
-						"lang",
-						"application/language/english/users_lang.php"
-					],
-					[
-						"htadminlang",
-						"application/language/english/ht_admin_lang.php"
-					],
-					[
-						"adminlang",
-						"application/language/english/admin_lang.php"
-					],
-					[
-						"userslang",
-						"application/language/english/users_lang.php"
-					],
-					[
-						"usersacct",
-						"application/language/english/users_acctsummary_lang.php"
-					],
-					[
-						"admin_usermgmt",
-						"application/language/english/admin_usermgmt_lang.php"
-					],
-					[
-						"users_profile_lang",
-						"application/language/english/users_profile_lang.php"
-					],
-					[
-						"admin",
-						"application/controllers/admin.php"
-					],
-					[
-						"usersautopaylng",
-						"application/language/english/users_autopay_lang.php"
-					],
-					[
-						"usersagrlang",
-						"application/language/english/users_agr_lang.php"
-					],
-					[
-						"usersmkpmtlang",
-						"application/language/english/users_mkpmt_lang.php"
-					],
-					[
-						"userspmtlang",
-						"application/language/english/users_pmtmthds_lang.php"
-					],
-					[
-						"usersagr",
-						"application/language/english/users_agr_lang.php"
-					],
-					[
-						"accountlang",
-						"application/language/english/account_lang.php"
-					],
-					[
-						"langusers",
-						"application/language/english/users_lang.php"
-					],
-					[
-						"users",
-						"application/controllers/users.php"
-					],
-					[
-						"htacc",
-						".htaccess"
-					],
-					[
-						"database",
-						"application/config/database.php"
 					]
 				],
 				"width": 0.0
@@ -1147,14 +1290,14 @@
 				],
 				"width": 380.0
 			},
-			"show_minimap": true,
+			"show_minimap": false,
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": false,
-			"side_bar_width": 208.0,
+			"side_bar_width": 278.0,
 			"status_bar_visible": true
 		},
-		"new_window_width": 1280.0
+		"new_window_width": 1121.0
 	},
 	"windows":
 	[
