@@ -3,6 +3,7 @@
 	"installed_packages":
 	[
 		"Alignment",
+		"BracketHighlighter",
 		"ColorPick",
 		"ColorPicker",
 		"Gist",
