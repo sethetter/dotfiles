@@ -1,2 +1,4 @@
 sublime/Settings/Session.sublime_session
 sublime/Backup
+*.swp
+**/*.swp

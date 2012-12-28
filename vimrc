@@ -47,7 +47,7 @@ endfunc
 command TabletOn :call TabletModeOn()<CR>
 command TabletOff :call TabletModeOff()<CR>
 
-command NT NERDTree
+command NT NERDTreeToggle
 function MoveToPrevTab()
 	"there is only one window
 	if tabpagenr('$') == 1 && winnr('$') == 1
@@ -104,3 +104,6 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+"Map ,t to :tabnew
+nnoremap ,t <Esc>:tabnew<CR>
+nnoremap ,n <Esc>:NT<CR>
