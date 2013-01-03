@@ -4,4 +4,6 @@ sublime/Backup
 **/*.swp
 **/*.cache
 *.cache
-sublime/Settings/Session.sublime_session
+sublime/Settings/Session*
+.DS_Store
+**/.DS_Store
