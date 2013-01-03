@@ -1,6 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/sethe/projects/aq_rto'
-let g:netrw_dirhist_2='/Users/sethetter/Dropbox/personal/dotfiles'
-let g:netrw_dirhist_3='/Users/sethetter'
-let g:netrw_dirhist_4='/Users/sethetter/Dropbox/personal/dotfiles'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/Users/sethetter/Dropbox/personal/dotfiles/vim/bundle'

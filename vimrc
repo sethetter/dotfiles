@@ -1,4 +1,8 @@
-call pathogen#infect()
+set nocp
+call pathogen#infect('vim/bundle')
+syntax on
+filetype plugin indent on
+call pathogen#infect('vim/bundle')
 set t_Co=256
 set noai
 set vb
@@ -9,10 +13,8 @@ set shiftwidth=4
 set ruler
 set number
 set hlsearch
-filetype indent on
 colorscheme delek
 "colorscheme default
-syntax on
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 highlight DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=white
 highlight DiffChange term=reverse cterm=bold ctermbg=cyan ctermfg=black
