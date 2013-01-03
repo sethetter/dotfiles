@@ -7,3 +7,4 @@ sublime/Backup
 sublime/Settings/Session*
 .DS_Store
 **/.DS_Store
+vim/.netrwhist
