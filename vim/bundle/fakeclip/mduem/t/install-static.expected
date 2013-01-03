@@ -1,0 +1,3 @@
+t/,install-static
+t/,install-static/Makefile
+t/,install-static/README
