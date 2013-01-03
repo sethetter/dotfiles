@@ -9,3 +9,4 @@ sublime/Settings/Session*
 **/.DS_Store
 vim/.netrwhist
 vim/**/.netrwhist
+vim/bundle/**/.netrwhist
