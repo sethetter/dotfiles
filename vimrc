@@ -29,7 +29,7 @@ set laststatus=2
 
 " Sparkup Settings
 let g:sparkup = 'bundle/sparkup/ftplugin/html/sparkup.py'
-let g:sparkupExecuteMapping = '<C-e>'
+let g:sparkupExecuteMapping = '<C-d>'
 
 " Omnicomplete settings
 set omnifunc=csscomplete#CompleteCSS
