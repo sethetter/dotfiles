@@ -10,3 +10,4 @@ sublime/Settings/Session*
 vim/.netrwhist
 vim/**/.netrwhist
 vim/bundle/**/.netrwhist
+vim/bundle/checksyntax_vim/.netrwhist
