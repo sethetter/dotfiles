@@ -34,6 +34,10 @@ let g:sparkupExecuteMapping = '<C-d>'
 " Omnicomplete settings
 set omnifunc=csscomplete#CompleteCSS
 
+" FuzzyFinder settings
+nmap <C-o> :FufCoverageFile<CR>
+map <C-p> g:fuf_keyOpenTabpage<CR>
+
 " These functions are because I sometimes remote in from a tablet without 'esc'
 " In that case, I call this function, then use 'jk' to esc
 function TabletModeOn()
