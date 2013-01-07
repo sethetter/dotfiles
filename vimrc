@@ -37,6 +37,10 @@ set omnifunc=csscomplete#CompleteCSS
 " FuzzyFinder settings
 nmap <C-o> :FufCoverageFile<CR>
 map <C-p> g:fuf_keyOpenTabpage<CR>
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': [],
+    \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
+    \ }
 
 " These functions are because I sometimes remote in from a tablet without 'esc'
 " In that case, I call this function, then use 'jk' to esc
