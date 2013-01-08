@@ -29,14 +29,13 @@ set laststatus=2
 
 " Sparkup Settings
 let g:sparkup = 'bundle/sparkup/ftplugin/html/sparkup.py'
-let g:sparkupExecuteMapping = '<C-d>'
+let g:sparkupExecuteMapping = ',e'
 
 " Omnicomplete settings
 set omnifunc=csscomplete#CompleteCSS
 
-" FuzzyFinder settings
-nmap <C-o> :FufCoverageFile<CR>
-map <C-p> g:fuf_keyOpenTabpage<CR>
+" CtrlP settings
+" Opens CtrlP selection in new tab
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': [],
     \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
