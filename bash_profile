@@ -65,7 +65,7 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 alias la="ls -GlaF"
 alias pyserve='python -m SimpleHTTPServer 8000'
 
-alis gwd="pwd | pbcopy"
+alias gwd="pwd | pbcopy"
 
 alias gitpush="git push -u origin master"
 
