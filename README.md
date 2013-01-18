@@ -17,6 +17,8 @@ Run ```bin/install.sh``` to create backups of existing files and replace with sy
 
 Part of the ```.bash_profile``` is to print git information to the command prompt. For this to work you will need to install [vcprompt](https://github.com/djl/vcprompt).
 
+The vim powerline plugin requires a patched font to display certain special symbols. For some available patched fonts, visit the [powerline-fonts repo](https://github.com/Lokaltog/powerline-fonts).
+
 Todos
 -----
 - Create uninstall task to replace symlinks with created backups
