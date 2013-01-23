@@ -4,9 +4,6 @@
 [submodule "nerdcommenter"]
     path = vim/bundle/nerdcommenter
     url = git://github.com/scrooloose/nerdcommenter.git
-[submodule "sparkup"]
-    path = vim/bundle/sparkup
-    url = git://github.com/rstacruz/sparkup.git
 [submodule "vim-less"]
     path = vim/bundle/vim-less
     url = git://github.com/groenewege/vim-less.git
