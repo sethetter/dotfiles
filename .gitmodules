@@ -7,3 +7,6 @@
 [submodule "vim-less"]
     path = vim/bundle/vim-less
     url = git://github.com/groenewege/vim-less.git
+[submodule "vim-seek"]
+    path = vim/bundle/vim-seek
+    url = git://github.com/goldfeld/vim-seek.git

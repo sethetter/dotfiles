@@ -1,7 +1,7 @@
 set nocp
 call pathogen#infect('~/.vim/bundle')
 syntax on
-filetype indent on
+filetype plugin indent on
 call pathogen#infect('~/.vim/bundle')
 set t_Co=256
 set noai
