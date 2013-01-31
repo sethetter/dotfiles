@@ -12,7 +12,7 @@ set tabstop=4
 set shiftwidth=4
 set ruler
 set number
-"set hlsearch
+set nohlsearch
 colorscheme delek
 "colorscheme default
 "colorscheme developer
