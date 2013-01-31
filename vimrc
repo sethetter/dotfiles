@@ -13,10 +13,10 @@ set shiftwidth=4
 set ruler
 set number
 "set hlsearch
-"colorscheme delek
+colorscheme delek
 "colorscheme default
 "colorscheme developer
-colorscheme void
+"colorscheme void
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 highlight DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=white
 highlight DiffChange term=reverse cterm=bold ctermbg=cyan ctermfg=black
