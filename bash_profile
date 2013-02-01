@@ -68,6 +68,7 @@ alias pyserve='python -m SimpleHTTPServer 8000'
 alias gwd="pwd | pbcopy"
 
 alias gitpush="git push -u origin master"
+alias glog="git log --format='%Cgreen%h%Creset %C(cyan)%an%Creset - %s' --graph"
 
 # View HTTP traffic
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
