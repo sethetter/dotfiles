@@ -109,7 +109,7 @@ ca pasteoff filetype indent on
 
 "Combine Tabs w/ Horizontal Split
 nnoremap <C-m> :call MoveToNextTab()<CR>
-nnoremap <C-n> :call MoveToPrevTab()<CR>
+nnoremap <C-b> :call MoveToPrevTab()<CR>
 "Remap C-h,j,k,l for Movement Between Panes
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
