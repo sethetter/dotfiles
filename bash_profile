@@ -43,7 +43,7 @@ txtrst='\e[0m'    # Text Reset
 export PATH=~/bin:$PATH
 
 export EC2_HOME=~/.ec2
-export PATH=$PATH:$EC2_HOME/bin:$HOME/.rvm/scripts
+export PATH=$PATH:$EC2_HOME/bin:$HOME/.rvm/scripts:/usr/local/mongodb/bin
 export EC2_PRIVATE_KEY=pk-XWJIYYP7RFIZ35TBG7DN2W3AQYAAS5GU.pem
 export EC2_CERT=cert-XWJIYYP7RFIZ35TBG7DN2W3AQYAAS5GU.pem
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
