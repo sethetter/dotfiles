@@ -96,6 +96,8 @@ alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 alias ws="ftp -i sethetter.com@sethetter.com:/domains/sethetter.com/html/wp-content/themes/sethetter/"
 alias cynergiftp="ftp -i hymangse@web6.myhsphere.cc"
 
+# Quit applications
+function quit() { osascript -e "tell app \"$1\" to quit"; }
 
 #disable mouse acceleration
 alias disablemouseaccel="defaults write .GlobalPreferences com.apple.mouse.scaling -1 && defaults write .GlobalPreferences com.apple.trackpad.scaling -1"
