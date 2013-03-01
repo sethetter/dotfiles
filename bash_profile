@@ -3,7 +3,7 @@
 #}
 
 print_before_the_prompt () {  
-      printf "\n$txtred%s $txtwht@ $txtpur%s: $bldgrn%s $txtpur%s\n$txtrst" "$USER" "$HOSTNAME" "$PWD"  
+      printf "\n$txtred%s$txtwht@$txtpur%s: $bldgrn%s $txtpur%s\n$txtrst" "$USER" "$HOSTNAME" "$PWD"  
 }
 
 # alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
