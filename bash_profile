@@ -8,7 +8,7 @@ print_before_the_prompt () {
 
 # alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 
-export PATH=/usr/bin:$PATH
+export PATH=/usr/bin:$PATH:/Users/sethe/stuff/adt-bundle-mac/sdk/platform-tools:/Users/sethe/stuff/adt-bundle-mac/sdk/tools
 EVENT_NOKQUEUE=1
 txtblk='\e[0;30m' # Black - Regular  
 txtred='\e[0;31m' # Red  
