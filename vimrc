@@ -38,10 +38,10 @@ set omnifunc=csscomplete#CompleteCSS
 
 " CtrlP settings
 " Opens CtrlP selection in new tab
-let g:ctrlp_prompt_mappings = {
-    \ 'AcceptSelection("e")': [],
-    \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
-    \ }
+"let g:ctrlp_prompt_mappings = {
+    "\ 'AcceptSelection("e")': [],
+    "\ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
+    "\ }
 
 " These functions are because I sometimes remote in from a tablet without 'esc'
 " In that case, I call this function, then use 'jk' to esc
@@ -102,10 +102,6 @@ function MoveToNextTab()
 	"opening current buffer in new window
 	exe "b".l:cur_buf
 endfunc
-
-"Paste mode, for pasting from system clipboard
-ca pasteon filetype indent off
-ca pasteoff filetype indent on
 
 "Combine Tabs w/ Horizontal Split
 nnoremap <C-m> :call MoveToNextTab()<CR>
