@@ -43,6 +43,8 @@ set omnifunc=csscomplete#CompleteCSS
     "\ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
     "\ }
 
+ca formatjson %!python -m json.tool
+
 " These functions are because I sometimes remote in from a tablet without 'esc'
 " In that case, I call this function, then use 'jk' to esc
 function TabletModeOn()
