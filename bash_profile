@@ -66,7 +66,7 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Command Aliases
 ##################
 
-alias la="ls -GlaF"
+alias la="ls -laF"
 alias pyserve='python -m SimpleHTTPServer 8000'
 
 alias gwd="pwd | pbcopy"
