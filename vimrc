@@ -13,6 +13,7 @@ set shiftwidth=4
 set ruler
 set number
 set hlsearch
+DoMatchParen
 colorscheme delek
 "colorscheme default
 "colorscheme developer
