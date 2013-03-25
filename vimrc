@@ -7,7 +7,7 @@ set t_Co=256
 set noai
 set vb
 set binary noeol
-set expandtab
+set noexpandtab
 set tabstop=4
 set shiftwidth=4
 set ruler
