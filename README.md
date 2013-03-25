@@ -4,8 +4,8 @@ dotfiles
 These are my personal dotfiles for my development environment on Mac OS.
 
 Includes configuration files for:
+- Vim
 - iTerm
-- Sublime Text 2
 - Irssi
 - Chrome Dev Tools
 - bash_profile
