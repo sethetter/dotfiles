@@ -28,9 +28,6 @@ autocmd BufNewFile,BufRead *.scss set ft=scss.css
 " Set Leader to ,
 let mapleader = ","
 
-" EasyMotion
-let g:EasyMotion_leader_key = '<Leader>'
-
 " Powerline Settings
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
