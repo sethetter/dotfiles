@@ -39,6 +39,9 @@ let g:sparkupExecuteMapping = ',e'
 " Omnicomplete settings
 set omnifunc=csscomplete#CompleteCSS
 
+" vim-seek; disable 's' as substitute
+let g:seek_subst_disable = 1
+
 " CtrlP settings
 " Opens CtrlP selection in new tab
 "let g:ctrlp_prompt_mappings = {
