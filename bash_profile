@@ -66,6 +66,8 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Command Aliases
 ##################
 
+alias tmux="tmux -2"
+
 alias la="ls -laF"
 alias pyserve='python -m SimpleHTTPServer 8000'
 
