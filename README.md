@@ -19,6 +19,16 @@ Part of the ```.bash_profile``` is to print git information to the command promp
 
 The vim powerline plugin requires a patched font to display certain special symbols. For some available patched fonts, visit the [powerline-fonts repo](https://github.com/Lokaltog/powerline-fonts).
 
+The powerline utitlity is used in both vim and tmux. To install the universal package that works with both of them run the following commands. (OS X only)
+
+```brew install python```
+```pip install --user git+git://github.com/Lokaltog/powerline```
+```brew install macvim --env-std --override-system-vim```
+
+To install tmux (assumes hombrew is present):
+
+```brew link pkg-config && brew install tmux```
+
 Todos
 -----
 - Create uninstall task to replace symlinks with created backups

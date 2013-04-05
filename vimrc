@@ -29,6 +29,7 @@ autocmd BufNewFile,BufRead *.scss set ft=scss.css
 let mapleader = ","
 
 " Powerline Settings
+set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
 
