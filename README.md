@@ -9,6 +9,7 @@ Includes configuration files for:
 - Irssi
 - Chrome Dev Tools
 - bash_profile
+- tmux
 
 Install
 -------
@@ -21,13 +22,17 @@ The vim powerline plugin requires a patched font to display certain special symb
 
 The powerline utitlity is used in both vim and tmux. To install the universal package that works with both of them run the following commands. (OS X only)
 
-```brew install python```
-```pip install --user git+git://github.com/Lokaltog/powerline```
-```brew install macvim --env-std --override-system-vim```
+	brew install python
+	pip install --user git+git://github.com/Lokaltog/powerline
+	brew install macvim --env-std --override-system-vim
 
 To install tmux (assumes hombrew is present):
 
-```brew link pkg-config && brew install tmux```
+	brew link pkg-config && brew install tmux
+
+Tagbar for vim assumes that ctags is installed. Get that here:
+
+	http://ctags.sourceforge.net/
 
 Currently I am using the "thayer2" iTerm color scheme.
 
