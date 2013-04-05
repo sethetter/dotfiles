@@ -65,6 +65,8 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 alias tmux="tmux -2"
 
+alias chatirc="irssi -c im.bitlbee.org"
+
 alias la="ls -laF"
 alias pyserve='python -m SimpleHTTPServer 8000'
 
