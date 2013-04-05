@@ -13,3 +13,6 @@
 [submodule "MatchTag"]
 	path = vim/bundle/MatchTag
 	url = git://github.com/gregsexton/MatchTag.git
+[submodule "tagbar"]
+    path = vim/bundle/tagbar
+    url = git://github.com/majutsushi/tagbar.git

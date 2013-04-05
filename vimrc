@@ -123,3 +123,4 @@ nnoremap <C-l> <C-w>l
 "Map ,t to :tabnew
 nnoremap ,t <Esc>:tabnew<CR>
 nnoremap ,n <Esc>:NT<CR>
+nnoremap ,T <Esc>:TagbarToggle<CR>

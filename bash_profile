@@ -1,15 +1,11 @@
-#print_before_the_prompt () {  
-      #printf "\n$txtred%s: $bldgrn%s $txtpur%s\n$txtrst" "$USER" "$PWD" "$(vcprompt -f '[%n:%b%m%u] ')"  
-#}
-
 print_before_the_prompt () {  
       printf "\n$txtblu%s$txtwht@$bldgrn%s: $txtwht%s $txtpur%s\n$txtrst" "$USER" "$HOSTNAME" "$PWD"  
 }
 
-# alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+export PATH=/usr/local/bin:/usr/bin:$PATH:/Users/sethe/stuff/adt-bundle-mac/sdk/platform-tools:/Users/sethe/stuff/adt-bundle-mac/sdk/tools
 
-export PATH=/usr/bin:$PATH:/Users/sethe/stuff/adt-bundle-mac/sdk/platform-tools:/Users/sethe/stuff/adt-bundle-mac/sdk/tools
 EVENT_NOKQUEUE=1
+
 txtblk='\e[0;30m' # Black - Regular  
 txtred='\e[0;31m' # Red  
 txtgrn='\e[0;32m' # Green  
@@ -47,9 +43,10 @@ txtrst='\e[0m'    # Text Reset
 export PATH=~/bin:$PATH
 
 export EC2_HOME=~/.ec2
-export PATH=$PATH:$EC2_HOME/bin:$HOME/.rvm/scripts:/usr/local/mongodb/bin
 export EC2_PRIVATE_KEY=pk-XWJIYYP7RFIZ35TBG7DN2W3AQYAAS5GU.pem
 export EC2_CERT=cert-XWJIYYP7RFIZ35TBG7DN2W3AQYAAS5GU.pem
+export PATH=$PATH:$EC2_HOME/bin:$HOME/.rvm/scripts:/usr/local/mongodb/bin
+
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
 
 PROMPT_COMMAND=print_before_the_prompt
@@ -107,18 +104,3 @@ function quit() { osascript -e "tell app \"$1\" to quit"; }
 
 #disable mouse acceleration
 alias disablemouseaccel="defaults write .GlobalPreferences com.apple.mouse.scaling -1 && defaults write .GlobalPreferences com.apple.trackpad.scaling -1"
-
-# Fast download of commonly used JS libraries, be sure to send output into a file
-alias getjquery="curl http://code.jquery.com/jquery-1.8.2.min.js"
-alias getjqueryui="curl http://jqueryui.com/resources/download/jquery-ui-1.9.1.custom.zip"
-alias getunderscore="curl http://underscorejs.org/underscore-min.js"
-alias getbackbone="curl http://backbonejs.org/backbone-min.js"
-
-##################
-# Custom Functions
-##################
-
-#open a file in photoshop
-function photoshop() {
-  open -a "Adobe Photoshop CS6" $1;
-} 
