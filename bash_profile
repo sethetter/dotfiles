@@ -2,7 +2,7 @@ print_before_the_prompt () {
       printf "\n$txtblu%s$txtwht@$bldgrn%s: $txtwht%s $txtpur%s\n$txtrst" "$USER" "$HOSTNAME" "$PWD"  
 }
 
-export PATH=/usr/local/bin:/usr/bin:$PATH:/Users/sethe/stuff/adt-bundle-mac/sdk/platform-tools:/Users/sethe/stuff/adt-bundle-mac/sdk/tools
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:$PATH:/Users/sethe/stuff/adt-bundle-mac/sdk/platform-tools:/Users/sethe/stuff/adt-bundle-mac/sdk/tools
 
 EVENT_NOKQUEUE=1
 
@@ -65,7 +65,7 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 alias tmux="tmux -2"
 
-alias chatirc="irssi -c im.bitlbee.org"
+alias chatirc="irssi -c localhost"
 
 alias la="ls -laF"
 alias pyserve='python -m SimpleHTTPServer 8000'
