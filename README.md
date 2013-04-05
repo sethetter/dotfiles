@@ -29,6 +29,8 @@ To install tmux (assumes hombrew is present):
 
 ```brew link pkg-config && brew install tmux```
 
+Currently I am using the "thayer2" iTerm color scheme.
+
 Todos
 -----
 - Create uninstall task to replace symlinks with created backups
