@@ -65,7 +65,7 @@ chatnets = {
     max_msgs = "3";
     max_whois = "30";
   };
-  OFTC = {
+  OFTC = { 
     type = "IRC";
     max_kicks = "1";
     max_msgs = "3";
@@ -293,7 +293,7 @@ ignores = (
       "##php",
       "#git",
       "#html5",
-      "#codeigniter",
+      "#codeigniter"
     );
     network = "FreeNode";
   },
@@ -301,6 +301,7 @@ ignores = (
     level = "MODES";
     channels = ( "&amp;bitlbee" );
     network = "BitlBee";
-  }
+  },
+  { level = "MODES"; channels = ( "&bitlbee" ); }
 );
 
