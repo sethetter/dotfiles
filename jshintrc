@@ -1,5 +1,8 @@
 {
     "node" : true,
     "browser" : true,
-    "laxbreak" : true
+    "laxbreak" : true,
+	"globals" : {
+		"$" : true
+	}
 }
