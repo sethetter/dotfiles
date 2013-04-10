@@ -10,6 +10,7 @@ Includes configuration files for:
 - Chrome Dev Tools
 - bash_profile
 - tmux
+- Powerline
 
 Install
 -------

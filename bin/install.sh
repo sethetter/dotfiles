@@ -29,3 +29,8 @@ ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 #------------------------------------------------------------
 `mv ~/.tmux.conf ~/._tmux.confbackup`
 `ln -s ${ABSPATH}/tmux.conf ~/.tmux.conf`
+
+# Powerline Files
+#------------------------------------------------------------
+`mv /usr/local/powerline /usr/local/powerline_backup`
+`cp -r ${ABSPATH}/powerline /usr/local/`
