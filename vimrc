@@ -7,9 +7,9 @@ set t_Co=256
 set noai
 set vb
 set binary noeol
-set noexpandtab
-set tabstop=4
-set shiftwidth=4
+set expandtab
+set tabstop=2
+set shiftwidth=2
 set ruler
 set number
 set hlsearch
