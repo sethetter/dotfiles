@@ -1,10 +1,9 @@
-" Other color schemes I like: delek, default, jellybeans, developer, void
-color molokai
-set nocp
 call pathogen#infect('~/.vim/bundle')
+
+" Other color schemes I like: delek, default, jellybeans, developer, void
+set nocp
 syntax on
 filetype plugin indent on
-call pathogen#infect('~/.vim/bundle')
 set t_Co=256
 set noai
 set vb
