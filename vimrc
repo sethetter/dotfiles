@@ -1,3 +1,5 @@
+" Other color schemes I like: delek, default, jellybeans, developer, void
+color molokai
 set nocp
 call pathogen#infect('~/.vim/bundle')
 syntax on
@@ -13,10 +15,6 @@ set shiftwidth=2
 set ruler
 set number
 set hlsearch
-colorscheme delek
-"colorscheme default
-"colorscheme developer
-"colorscheme void
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 highlight DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=white
 highlight DiffChange term=reverse cterm=bold ctermbg=cyan ctermfg=black
