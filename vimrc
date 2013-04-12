@@ -1,6 +1,7 @@
 call pathogen#infect('~/.vim/bundle')
 
 " Other color schemes I like: delek, default, jellybeans, developer, void
+color molokai
 set nocp
 syntax on
 filetype plugin indent on

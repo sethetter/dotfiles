@@ -1,24 +1,24 @@
+[submodule "vim-colorschemes"]
+  path = vim/bundle/vim-colorschemes
+  url = git://github.com/flazz/vim-colorschemes.git
 [submodule "nerdtree"]
-    path = vim/bundle/nerdtree
-    url = git://github.com/scrooloose/nerdtree.git
+  path = vim/bundle/nerdtree
+  url = git://github.com/scrooloose/nerdtree.git
 [submodule "nerdcommenter"]
-    path = vim/bundle/nerdcommenter
-    url = git://github.com/scrooloose/nerdcommenter.git
+  path = vim/bundle/nerdcommenter
+  url = git://github.com/scrooloose/nerdcommenter.git
 [submodule "vim-less"]
-    path = vim/bundle/vim-less
-    url = git://github.com/groenewege/vim-less.git
+  path = vim/bundle/vim-less
+  url = git://github.com/groenewege/vim-less.git
+[submodule "vim-jade"]
+  path = vim/bundle/vim-jade
+  url = git://github.com/digitaltoad/vim-jade.git
 [submodule "vim-seek"]
-    path = vim/bundle/vim-seek
-    url = git://github.com/goldfeld/vim-seek.git
+  path = vim/bundle/vim-seek
+  url = git://github.com/goldfeld/vim-seek.git
 [submodule "MatchTag"]
 	path = vim/bundle/MatchTag
 	url = git://github.com/gregsexton/MatchTag.git
-[submodule "tagbar"]
-    path = vim/bundle/tagbar
-    url = git://github.com/majutsushi/tagbar.git
 [submodule "syntastic"]
-    path = vim/bundle/syntastic
-    url = git://github.com/scrooloose/syntastic.git
-[submodule "vim-colorschemes"]
-    path = vim/bundle/vim-colorschemes
-    url = git://github.com/flazz/vim-colorschemes.git
+  path = vim/bundle/syntastic
+  url = git://github.com/scrooloose/syntastic.git
