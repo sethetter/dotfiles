@@ -4,6 +4,8 @@ print_before_the_prompt () {
 
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:$PATH:/Users/sethe/stuff/adt-bundle-mac/sdk/platform-tools:/Users/sethe/stuff/adt-bundle-mac/sdk/tools
 
+export EDITOR='vim'
+
 EVENT_NOKQUEUE=1
 
 txtblk='\e[0;30m' # Black - Regular  
