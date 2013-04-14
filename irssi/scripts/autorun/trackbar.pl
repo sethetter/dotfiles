@@ -1,1 +1,0 @@
-/Users/sethe/dotfiles/irssi/scripts/trackbar.pl

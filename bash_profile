@@ -1,5 +1,5 @@
 print_before_the_prompt () {  
-      printf "\n$txtblu%s$txtwht@$bldgrn%s: $txtwht%s $txtpur%s\n$txtrst" "$USER" "$HOSTNAME" "$PWD"  
+      printf "\n$txtblu%s$txtwht@$bldgrn%s: $txtwht%s $txtpur%s\n$txtrst" "$USER" "$HOSTNAME" "$PWD" "$(vcprompt -f '[%n:%b%m%u] ')" 
 }
 
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:$PATH:/Users/sethe/stuff/adt-bundle-mac/sdk/platform-tools:/Users/sethe/stuff/adt-bundle-mac/sdk/tools
