@@ -1,13 +1,11 @@
-sublime/Settings/Session.sublime_session
-sublime/Backup
 *.swp
 **/*.swp
 **/*.cache
 *.cache
-sublime/Settings/Session*
 .DS_Store
 **/.DS_Store
 vim/.netrwhist
 vim/**/.netrwhist
 vim/bundle/**/.netrwhist
 vim/bundle/checksyntax_vim/.netrwhist
+irssi/away.log
