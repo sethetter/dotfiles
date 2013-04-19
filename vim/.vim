@@ -1,1 +1,0 @@
-/Users/sethetter/dropbox/personal/dotfiles/vim
