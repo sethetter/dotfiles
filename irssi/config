@@ -168,7 +168,6 @@ statusbar = {
     topicbarend = "{topicsbend}";
 
     # treated "normally", you could change the time/user name to whatever
-    time = "{sb $Z}";
     user = "{sb {sbnickmode $cumode}$N{sbmode $usermode}{sbaway $A}}";
 
     # treated specially .. window is printed with non-empty windows,
@@ -207,7 +206,6 @@ statusbar = {
       # list of items in statusbar in the display order
       items = {
         barstart = { priority = "100"; };
-        time = { };
         user = { };
         window = { };
         window_empty = { };
