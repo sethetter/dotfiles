@@ -124,6 +124,7 @@ formats = {
     own_msg_private_query = "{ownprivmsgnick {ownprivnick $[-10]2}}$1";
     msg_private_query = "{privmsgnick $[-10]0}$2";
     msg_private = "{privmsg $0 $1}$2";
+    timestamp = "{timestamp %%H:%%M";
   };
   "fe-common/irc" = {
     chanmode_change = "{hilight      (mode)} %W|%n {nick $2}: {mode $1} on {channelhilight $0}";

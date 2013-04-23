@@ -207,7 +207,6 @@ statusbar = {
       # list of items in statusbar in the display order
       items = {
         barstart = { priority = "100"; };
-        time = { };
         user = { };
         window = { };
         window_empty = { };
@@ -269,6 +268,7 @@ settings = {
     real_name = "Seth Etter";
     user_name = "sethetter";
     nick = "sethetter";
+    timestamp_format = "~";
   };
   "fe-text" = { actlist_sort = "refnum"; term_force_colors = "yes"; };
   "fe-common/core" = { theme = "ion_mod"; };
