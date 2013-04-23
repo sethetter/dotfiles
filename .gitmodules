@@ -22,6 +22,3 @@
 [submodule "syntastic"]
   path = vim/bundle/syntastic
   url = git://github.com/scrooloose/syntastic.git
-[submodule "indentLine"]
-  path = vim/bundle/indentLine
-  url = git://github.com/Yggdroot/indentLine.git

@@ -35,6 +35,9 @@ set laststatus=2
 let g:sparkup = 'bundle/sparkup/ftplugin/html/sparkup.py'
 let g:sparkupExecuteMapping = ',e'
 
+" Indent Line Color
+let g:indentLine_color_term = 239
+
 " Omnicomplete settings
 set omnifunc=csscomplete#CompleteCSS
 
