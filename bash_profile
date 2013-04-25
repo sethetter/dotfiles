@@ -5,6 +5,8 @@ print_before_the_prompt () {
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:$PATH:/Users/sethe/stuff/adt-bundle-mac/sdk/platform-tools:/Users/sethe/stuff/adt-bundle-mac/sdk/tools
 
 export EDITOR='vim'
+export SHELL='bash'
+export TERM='xterm-256color'
 
 EVENT_NOKQUEUE=1
 
@@ -108,3 +110,5 @@ function quit() { osascript -e "tell app \"$1\" to quit"; }
 
 #disable mouse acceleration
 alias disablemouseaccel="defaults write .GlobalPreferences com.apple.mouse.scaling -1 && defaults write .GlobalPreferences com.apple.trackpad.scaling -1"
+
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
