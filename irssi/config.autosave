@@ -168,7 +168,7 @@ statusbar = {
     topicbarend = "{topicsbend}";
 
     # treated "normally", you could change the time/user name to whatever
-    time = "{sb $Z}";
+    time = "{sb $Z }";
     user = "{sb {sbnickmode $cumode}$N{sbmode $usermode}{sbaway $A}}";
 
     # treated specially .. window is printed with non-empty windows,
@@ -268,7 +268,7 @@ settings = {
     real_name = "Seth Etter";
     user_name = "sethetter";
     nick = "sethetter";
-    timestamp_format = "~";
+    timestamp_format = "{%%H:%%M }";
   };
   "fe-text" = { actlist_sort = "refnum"; term_force_colors = "yes"; };
   "fe-common/core" = { theme = "ion_mod"; };
