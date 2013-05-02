@@ -11,6 +11,7 @@ Includes configuration files for:
 - bash_profile
 - tmux
 - Powerline
+- git
 
 Install
 -------

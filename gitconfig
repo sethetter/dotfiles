@@ -1,0 +1,9 @@
+[user]
+	name = Seth Etter
+	email = sethetter@gmail.com
+[merge]
+	tool = vimdiff
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false

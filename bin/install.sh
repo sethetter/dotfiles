@@ -10,27 +10,34 @@ ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 
 # Bash Profile
 #-----------------------------------------------------------
-`mv ~/.bash_profile ~/._bash_profilebackup`
+`mv ~/.bash_profile ~/._bash_profile.backup`
 `ln -s ${ABSPATH}/bash_profile ~/.bash_profile`
 
 # Irssi
 #------------------------------------------------------------
-`mv ~/.irssi ~/._irssibackup`
+`mv ~/.irssi ~/._irssi.backup`
 `ln -s ${ABSPATH}/irssi ~/.irssi`
 
 # Vim
 #------------------------------------------------------------
-`mv ~/.vim ~/._vimbackup`
+`mv ~/.vim ~/._vim.backup`
 `ln -s ${ABSPATH}/vim ~/.vim`
-`mv ~/.vimrc ~/._vimrcbackup`
+`mv ~/.vimrc ~/._vimrc.backup`
 `ln -s ${ABSPATH}/vimrc ~/.vimrc`
 
 # Tmux Config
 #------------------------------------------------------------
-`mv ~/.tmux.conf ~/._tmux.confbackup`
+`mv ~/.tmux.conf ~/._tmux.conf.backup`
 `ln -s ${ABSPATH}/tmux.conf ~/.tmux.conf`
 
 # Powerline Files
 #------------------------------------------------------------
-`mv /usr/local/powerline /usr/local/powerline_backup`
+`mv /usr/local/powerline /usr/local/_powerline.backup`
 `cp -r ${ABSPATH}/powerline /usr/local/`
+
+# Git Files
+#------------------------------------------------------------
+`mv ~/.gitconfig ~/._gitconfig.backup`
+`ln -s ${ABSPATH}/gitconfig ~/.gitconfig`
+`mv ~/.gitignore_global ~/._gitignore_global.backup`
+`ln -s ${ABSPATH}/gitignore_global ~/.gitignore_global`
