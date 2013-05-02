@@ -71,6 +71,7 @@ alias tmux="tmux -2"
 
 alias chatirc="irssi -c localhost"
 
+alias ll="ls -laF"
 alias la="ls -laF"
 alias pyserve='python -m SimpleHTTPServer 8000'
 
