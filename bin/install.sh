@@ -39,5 +39,5 @@ ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 #------------------------------------------------------------
 `mv ~/.gitconfig ~/._gitconfig.backup`
 `ln -s ${ABSPATH}/gitconfig ~/.gitconfig`
-`mv ~/.gitignore_global ~/._gitignore_global.backup`
-`ln -s ${ABSPATH}/gitignore_global ~/.gitignore_global`
+`mv ~/.gitignore ~/._gitignore.backup`
+`ln -s ${ABSPATH}/gitignore ~/.gitignore`

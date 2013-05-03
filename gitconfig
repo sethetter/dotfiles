@@ -1,6 +1,8 @@
 [user]
 	name = Seth Etter
 	email = sethetter@gmail.com
+[core]
+	excludesfile = ~/.gitignore
 [merge]
 	tool = vimdiff
 [diff]
