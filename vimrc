@@ -22,6 +22,7 @@ highlight DiffText term=reverse cterm=bold ctermbg=gray ctermfg=black
 highlight DiffDelete term=reverse cterm=bold ctermbg=red ctermfg=black
 au BufRead *.html set filetype=htmlm4
 autocmd BufNewFile,BufRead *.scss set ft=scss.css
+au BufRead,BufNewFile *.md set filetype=markdown
 
 " Set Leader to ,
 let mapleader = ","

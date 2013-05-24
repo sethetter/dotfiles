@@ -1,7 +1,8 @@
 {
-    "node" : true,
-    "browser" : true,
-    "laxbreak" : true,
+  "node" : true,
+  "browser" : true,
+  "laxbreak" : true,
+  "laxcomma" : true,
 	"globals" : {
 		"$" : true
 	}
