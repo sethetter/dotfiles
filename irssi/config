@@ -271,6 +271,10 @@ settings = {
   };
   "fe-text" = { actlist_sort = "refnum"; term_force_colors = "yes"; };
   "fe-common/core" = { theme = "ion_mod"; };
+  "perl/core/scripts" = { 
+    nicklist_height = "100";
+    nicklist_width = "50";
+  };
 };
 
 ignores = (
