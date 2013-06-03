@@ -1,6 +1,3 @@
-[submodule "tabular"]
-  path = vim/bundle/tabular
-  url = git://github.com/godlygeek/tabular.git
 [submodule "vim-colorschemes"]
   path = vim/bundle/vim-colorschemes
   url = git://github.com/flazz/vim-colorschemes.git
@@ -19,12 +16,12 @@
 [submodule "vim-seek"]
   path = vim/bundle/vim-seek
   url = git://github.com/goldfeld/vim-seek.git
-[submodule "MatchTag"]
-	path = vim/bundle/MatchTag
-	url = git://github.com/gregsexton/MatchTag.git
 [submodule "syntastic"]
   path = vim/bundle/syntastic
   url = git://github.com/scrooloose/syntastic.git
 [submodule "vim-surround"]
   path = vim/bundle/vim-surround
   url = git://github.com/tpope/vim-surround.git
+[submodule "vim/bundle/tabular"]
+	path = vim/bundle/tabular
+	url = git://github.com/godlygeek/tabular.git
