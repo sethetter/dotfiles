@@ -1,3 +1,6 @@
+[submodule "tabular"]
+  path = vim/bundle/tabular
+  url = git://github.com/godlygeek/tabular.git
 [submodule "vim-colorschemes"]
   path = vim/bundle/vim-colorschemes
   url = git://github.com/flazz/vim-colorschemes.git
