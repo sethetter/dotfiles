@@ -6,7 +6,7 @@ export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:$PATH:/Users/sethe/stuff/adt
 
 export EDITOR='vim'
 export SHELL='bash'
-export TERM='xterm-256color'
+#export TERM='xterm-256color'
 
 EVENT_NOKQUEUE=1
 
