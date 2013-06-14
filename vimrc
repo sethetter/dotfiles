@@ -32,6 +32,9 @@ set rtp+=/usr/local/powerline/bindings/vim
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
 
+" NeoComplCache
+let g:neocomplcache_enable_at_startup = 1
+
 " Sparkup Settings
 let g:sparkup = 'bundle/sparkup/ftplugin/html/sparkup.py'
 let g:sparkupExecuteMapping = ',e'
