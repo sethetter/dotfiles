@@ -10,4 +10,4 @@
 [difftool]
 	prompt = false
 [color]
-  ui = true
+  ui = auto

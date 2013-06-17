@@ -126,3 +126,4 @@ nnoremap <C-l> <C-w>l
 nnoremap ,t <Esc>:tabnew<CR>
 nnoremap ,n <Esc>:NT<CR>
 nnoremap ,T <Esc>:TagbarToggle<CR>
+nmap <C-r> :CtrlPBufTagAll<CR>
