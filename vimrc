@@ -13,7 +13,7 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set ruler
-set number
+set relativenumber
 set hlsearch
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 highlight DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=white
@@ -126,4 +126,4 @@ nnoremap <C-l> <C-w>l
 nnoremap ,t <Esc>:tabnew<CR>
 nnoremap ,n <Esc>:NT<CR>
 nnoremap ,T <Esc>:TagbarToggle<CR>
-nmap <C-r> :CtrlPBufTagAll<CR>
+nmap <C-s> :CtrlPBufTagAll<CR>
