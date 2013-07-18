@@ -293,7 +293,10 @@ ignores = (
       "##php",
       "#git",
       "#html5",
-      "#codeigniter"
+      "#codeigniter",
+      "#angularjs"
+      "#yeoman",
+      "#grunt"
     );
     network = "FreeNode";
   },

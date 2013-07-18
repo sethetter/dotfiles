@@ -49,7 +49,7 @@ export PATH=~/bin:$PATH
 export EC2_HOME=~/.ec2
 export EC2_PRIVATE_KEY=pk-XWJIYYP7RFIZ35TBG7DN2W3AQYAAS5GU.pem
 export EC2_CERT=cert-XWJIYYP7RFIZ35TBG7DN2W3AQYAAS5GU.pem
-export PATH=$PATH:$EC2_HOME/bin:$HOME/.rvm/scripts:/usr/local/mongodb/bin
+export PATH=$PATH:$EC2_HOME/bin:/usr/local/mongodb/bin
 
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
 
@@ -60,8 +60,9 @@ PS1='-> '
 # MacPorts Installer addition on 2011-08-01_at_12:14:45: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+eval "$(rbenv init -)"
 
 ##################
 # Command Aliases
