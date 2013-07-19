@@ -15,6 +15,8 @@ set shiftwidth=2
 set ruler
 set relativenumber
 set hlsearch
+" Set modifiable so NERDTree can create new nodes and stuff
+set modifiable
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 highlight DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=white
 highlight DiffChange term=reverse cterm=bold ctermbg=cyan ctermfg=black
