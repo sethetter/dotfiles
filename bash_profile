@@ -113,3 +113,5 @@ function quit() { osascript -e "tell app \"$1\" to quit"; }
 alias disablemouseaccel="defaults write .GlobalPreferences com.apple.mouse.scaling -1 && defaults write .GlobalPreferences com.apple.trackpad.scaling -1"
 
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+
+[[ -s /root/.nvm/nvm.sh ]] && . /root/.nvm/nvm.sh # This loads NVM
