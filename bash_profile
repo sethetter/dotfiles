@@ -1,4 +1,4 @@
-. /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+. /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
 
 #print_before_the_prompt () {  
 #      printf "\n$txtblu%s$txtwht@$bldgrn%s: $txtwht%s $txtpur%s\n$txtrst" "$USER" "$HOSTNAME" "$PWD" "$(vcprompt -f '[%n:%b%m%u] ')" 
