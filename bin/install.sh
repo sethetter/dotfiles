@@ -32,8 +32,10 @@ ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 
 # Powerline Files
 #------------------------------------------------------------
-`mv /usr/local/powerline /usr/local/_powerline.backup`
-`cp -r ${ABSPATH}/powerline /usr/local/`
+#`mv /usr/local/powerline /usr/local/_powerline.backup`
+#`cp -r ${ABSPATH}/powerline /usr/local/`
+`mkdir ~/.config/`
+`ln -s ${ABSPATH}/powerline_config ~/.config/powerline`
 
 # Git Files
 #------------------------------------------------------------
