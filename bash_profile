@@ -1,6 +1,8 @@
-print_before_the_prompt () {  
-      printf "\n$txtblu%s$txtwht@$bldgrn%s: $txtwht%s $txtpur%s\n$txtrst" "$USER" "$HOSTNAME" "$PWD" "$(vcprompt -f '[%n:%b%m%u] ')" 
-}
+. /usr/local/powerline/bindings/bash/powerline.sh
+
+#print_before_the_prompt () {  
+#      printf "\n$txtblu%s$txtwht@$bldgrn%s: $txtwht%s $txtpur%s\n$txtrst" "$USER" "$HOSTNAME" "$PWD" "$(vcprompt -f '[%n:%b%m%u] ')" 
+#}
 
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:$PATH:/Users/sethe/stuff/adt-bundle-mac/sdk/platform-tools:/Users/sethe/stuff/adt-bundle-mac/sdk/tools
 
@@ -53,9 +55,9 @@ export PATH=$PATH:$EC2_HOME/bin:/usr/local/mongodb/bin
 
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
 
-PROMPT_COMMAND=print_before_the_prompt
+#PROMPT_COMMAND=print_before_the_prompt
 
-PS1='-> '
+#PS1='-> '
 
 # MacPorts Installer addition on 2011-08-01_at_12:14:45: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
