@@ -30,7 +30,7 @@ au BufRead,BufNewFile *.md set filetype=markdown
 let mapleader = ","
 
 " Powerline Settings
-set rtp+=/usr/local/powerline/bindings/vim
+set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
 
