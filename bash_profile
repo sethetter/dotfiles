@@ -1,10 +1,10 @@
-. /usr/local/powerline/bindings/bash/powerline.sh
+. /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
 
 #print_before_the_prompt () {  
 #      printf "\n$txtblu%s$txtwht@$bldgrn%s: $txtwht%s $txtpur%s\n$txtrst" "$USER" "$HOSTNAME" "$PWD" "$(vcprompt -f '[%n:%b%m%u] ')" 
 #}
 
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:$PATH:/Users/sethe/stuff/adt-bundle-mac/sdk/platform-tools:/Users/sethe/stuff/adt-bundle-mac/sdk/tools
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:$PATH:/Users/sethe/stuff/adt-bundle-mac/sdk/platform-tools:/Users/sethe/stuff/adt-bundle-mac/sdk/tools:/usr/local/lib/python2.7/site-packages:/usr/local/share/python
 
 export EDITOR='vim'
 export SHELL='bash'
