@@ -46,3 +46,6 @@
 [submodule "vim/bundle/lh-vim-lib"]
 	path = vim/bundle/lh-vim-lib
 	url = https://github.com/vim-scripts/lh-vim-lib.git
+[submodule "vim/bundle/webapi-vim"]
+	path = vim/bundle/webapi-vim
+	url = https://github.com/mattn/webapi-vim
