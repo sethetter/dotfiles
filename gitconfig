@@ -11,3 +11,5 @@
 	prompt = false
 [color]
   ui = auto
+[github]
+	user = sethetter
