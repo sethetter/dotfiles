@@ -50,6 +50,9 @@ alias tmux='tmux -2'
 
 [[ -s /root/.nvm/nvm.sh ]] && . /root/.nvm/nvm.sh # This loads NVM
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # Customize to your needs...
-export PATH=$PATH:/home/seth/.nvm/v0.10.15/bin:/home/seth/.rvm/gems/ruby-2.0.0-p247/bin:/home/seth/.rvm/gems/ruby-2.0.0-p247@global/bin:/home/seth/.rvm/rubies/ruby-2.0.0-p247/bin:/home/seth/.rvm/bin:/opt/local/bin:/opt/local/sbin:/home/seth/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/Users/sethe/stuff/adt-bundle-mac/sdk/platform-tools:/Users/sethe/stuff/adt-bundle-mac/sdk/tools:/usr/local/lib/python2.7/site-packages:/usr/local/share/python:/home/seth/.ec2/bin:/usr/local/mongodb/bin
+export PATH=$PATH:/home/seth/.nvm/v0.10.15/bin:/opt/local/bin:/opt/local/sbin::/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/lib/python2.7/site-packages:/usr/local/share/python:/usr/local/mongodb/bin
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
