@@ -124,6 +124,13 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+"Fugitive shortcuts
+nnoremap ,gs <Esc>:Gstatus<CR>
+nnoremap ,gd <Esc>:Gdiff<CR>
+nnoremap ,gc <Esc>:Gcommitt<CR>
+nnoremap ,gb <Esc>:Gblame<CR>
+nnoremap ,gl <Esc>:Glog<CR>
+nnoremap ,gp <Esc>:Git push<CR>
 "Map ,t to :tabnew
 nnoremap ,t <Esc>:tabnew<CR>
 nnoremap ,n <Esc>:NT<CR>
