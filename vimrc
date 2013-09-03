@@ -127,7 +127,7 @@ nnoremap <C-l> <C-w>l
 "Fugitive shortcuts
 nnoremap ,gs <Esc>:Gstatus<CR>
 nnoremap ,gd <Esc>:Gdiff<CR>
-nnoremap ,gc <Esc>:Gcommitt<CR>
+nnoremap ,gc <Esc>:Gcommit<CR>
 nnoremap ,gb <Esc>:Gblame<CR>
 nnoremap ,gl <Esc>:Glog<CR>
 nnoremap ,gp <Esc>:Git push<CR>
