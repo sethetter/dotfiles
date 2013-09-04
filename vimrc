@@ -136,3 +136,9 @@ nnoremap ,t <Esc>:tabnew<CR>
 nnoremap ,n <Esc>:NT<CR>
 nnoremap ,T <Esc>:TagbarToggle<CR>
 nmap <C-s> :CtrlPBufTagAll<CR>
+
+
+"Load local vimrc
+if filereadable(glob("./.vimrc.local")) 
+  source ./.vimrc.local
+endif

@@ -3,4 +3,4 @@
 *.swo
 *~
 .vagrant
-_vimrc_local.vim
+.vimrc.local
