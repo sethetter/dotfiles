@@ -12,6 +12,7 @@ Includes configuration files for:
 - tmux
 - Powerline
 - git
+- zsh (with oh-my-zsh)
 
 Install
 -------

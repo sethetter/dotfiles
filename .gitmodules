@@ -46,3 +46,15 @@
 [submodule "vim/bundle/lh-vim-lib"]
 	path = vim/bundle/lh-vim-lib
 	url = https://github.com/vim-scripts/lh-vim-lib.git
+[submodule "vim/bundle/webapi-vim"]
+	path = vim/bundle/webapi-vim
+	url = https://github.com/mattn/webapi-vim
+[submodule "vim/bundle/numbers.vim"]
+	path = vim/bundle/numbers.vim
+	url = https://github.com/myusuf3/numbers.vim.git
+[submodule "vim/bundle/html5.vim"]
+	path = vim/bundle/html5.vim
+	url = https://github.com/othree/html5.vim.git
+[submodule "vim/bundle/tasklist"]
+	path = vim/bundle/tasklist
+	url = https://github.com/vim-scripts/TaskList.vim.git

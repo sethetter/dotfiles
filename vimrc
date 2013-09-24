@@ -29,9 +29,6 @@ au BufRead,BufNewFile *.md set filetype=markdown
 " Set Leader to ,
 let mapleader = ","
 
-" Powerline Settings
-set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
-let g:Powerline_symbols = 'fancy'
 set laststatus=2
 
 " NeoComplCache
@@ -124,8 +121,21 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+"Fugitive shortcuts
+nnoremap ,gs <Esc>:Gstatus<CR>
+nnoremap ,gd <Esc>:Gdiff<CR>
+nnoremap ,gc <Esc>:Gcommit<CR>
+nnoremap ,gb <Esc>:Gblame<CR>
+nnoremap ,gl <Esc>:Glog<CR>
+nnoremap ,gp <Esc>:Git push<CR>
 "Map ,t to :tabnew
 nnoremap ,t <Esc>:tabnew<CR>
 nnoremap ,n <Esc>:NT<CR>
 nnoremap ,T <Esc>:TagbarToggle<CR>
 nmap <C-s> :CtrlPBufTagAll<CR>
+
+
+"Load local vimrc
+if filereadable(glob("./.vimrc.local")) 
+  source ./.vimrc.local
+endif

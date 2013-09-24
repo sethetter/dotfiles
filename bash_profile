@@ -1,4 +1,4 @@
-. /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+. /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
 
 #print_before_the_prompt () {  
 #      printf "\n$txtblu%s$txtwht@$bldgrn%s: $txtwht%s $txtpur%s\n$txtrst" "$USER" "$HOSTNAME" "$PWD" "$(vcprompt -f '[%n:%b%m%u] ')" 
@@ -62,8 +62,8 @@ export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
 # MacPorts Installer addition on 2011-08-01_at_12:14:45: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
-eval "$(rbenv init -)"
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+#eval "$(rbenv init -)"
+#if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 ##################
 # Command Aliases
@@ -115,5 +115,5 @@ function quit() { osascript -e "tell app \"$1\" to quit"; }
 alias disablemouseaccel="defaults write .GlobalPreferences com.apple.mouse.scaling -1 && defaults write .GlobalPreferences com.apple.trackpad.scaling -1"
 
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
-
-[[ -s /root/.nvm/nvm.sh ]] && . /root/.nvm/nvm.sh # This loads NVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+[[ -s /home/seth/.nvm/nvm.sh ]] && . /home/seth/.nvm/nvm.sh # This loads NVM
