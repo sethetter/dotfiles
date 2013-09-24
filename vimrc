@@ -44,6 +44,18 @@ set omnifunc=csscomplete#CompleteCSS
 " vim-seek; disable 's' as substitute
 let g:seek_subst_disable = 1
 
+" put useful info in status bar
+set statusline=%F%m%r%h%w\ %{fugitive#statusline()}\ [%l,%c]\ [%L,%p%%]
+
+" set dark background and color scheme
+set background=dark
+
+" highlight the status bar when in insert mode
+if version >= 700
+  au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
+  au InsertLeave * hi StatusLine ctermbg=240 ctermfg=12
+endif
+
 " CtrlP settings
 " Opens CtrlP selection in new tab
 "let g:ctrlp_prompt_mappings = {
