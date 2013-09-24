@@ -1,5 +1,3 @@
-. /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
-
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -52,8 +50,11 @@ bindkey -v
 alias tmux='tmux -2'
 
 [[ -s /root/.nvm/nvm.sh ]] && . /root/.nvm/nvm.sh # This loads NVM
-[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-# Customize to your needs...
-export PATH=$PATH:/home/seth/.nvm/v0.10.15/bin:/opt/local/bin:/opt/local/sbin::/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/lib/python2.7/site-packages:/usr/local/share/python:/usr/local/mongodb/bin:/.rvm/bin
+# Always work in a tmux session if tmux is installed
+if which tmux 2>&1 >/dev/null; then
+  if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
+    tmux attach -t hack || tmux new -s hack; exit
+  fi
+fi
