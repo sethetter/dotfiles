@@ -60,11 +60,11 @@ endif
 ca formatjson %!python -m json.tool
 
 function MoveToPrevTab()
-	"there is only one window
+	" there is only one window
 	if tabpagenr('$') == 1 && winnr('$') == 1
 		return
 	endif
-	"preparing new window
+	" preparing new window
 	let l:tab_nr = tabpagenr('$')
 	let l:cur_buf = bufnr('%')
 	if tabpagenr() != 1
@@ -77,16 +77,16 @@ function MoveToPrevTab()
 		close!
 		exe "0tabnew"
 	endif
-	"opening current buffer in new window
+	" opening current buffer in new window
 	exe "b".l:cur_buf
 endfunc
 
 function MoveToNextTab()
-	"there is only one window
+	" there is only one window
 	if tabpagenr('$') == 1 && winnr('$') == 1
 		return
 	endif
-	"preparing new window
+	" preparing new window
 	let l:tab_nr = tabpagenr('$')
 	let l:cur_buf = bufnr('%')
 	if tabpagenr() < tab_nr
@@ -99,29 +99,29 @@ function MoveToNextTab()
 		close!
 		tabnew
 	endif
-	"opening current buffer in new window
+	" opening current buffer in new window
 	exe "b".l:cur_buf
 endfunc
 
-"Combine Tabs w/ Horizontal Split
+" Combine Tabs w/ Horizontal Split
 nnoremap <C-m> :call MoveToNextTab()<CR>
 nnoremap <C-b> :call MoveToPrevTab()<CR>
-"Remap C-h,j,k,l for Movement Between Panes
+" Remap C-h,j,k,l for Movement Between Panes
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-"Fugitive shortcuts
-nnoremap ,gs <Esc>:Gstatus<CR>
-nnoremap ,gd <Esc>:Gdiff<CR>
-nnoremap ,gc <Esc>:Gcommit<CR>
-nnoremap ,gb <Esc>:Gblame<CR>
-nnoremap ,gl <Esc>:Glog<CR>
-nnoremap ,gp <Esc>:Git push<CR>
-"Map ,t to :tabnew
-nnoremap ,t <Esc>:tabnew<CR>
-nnoremap ,n <Esc>:NT<CR>
-nnoremap ,T <Esc>:TagbarToggle<CR>
+" Fugitive shortcuts
+nnoremap <leader>gs <Esc>:Gstatus<CR>
+nnoremap <leader>gd <Esc>:Gdiff<CR>
+nnoremap <leader>gc <Esc>:Gcommit<CR>
+nnoremap <leader>gb <Esc>:Gblame<CR>
+nnoremap <leader>gl <Esc>:Glog<CR>
+nnoremap <leader>gp <Esc>:Git push<CR>
+" Other Shortcuts
+nnoremap <leader>t <Esc>:tabnew<CR>
+nnoremap <leader>n <Esc>:NERDTreeToggle<CR>
+nnoremap <leader>T <Esc>:TagbarToggle<CR>
 nmap <C-s> :CtrlPBufTagAll<CR>
 
 "Load local vimrc
