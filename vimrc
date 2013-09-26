@@ -4,9 +4,9 @@ let mapleader = ","
 
 color molokai
 
-set nocp                      " non-vi compatible features
 syntax on                     " syntax highlighting
 filetype plugin indent on     " filetype specific indentation
+set nocp                      " non-vi compatible features
 set t_Co=256                  " 256 colors
 set noai                      " no auto indenting
 set vb                        " use visual bell instead of a beep
@@ -17,6 +17,10 @@ set ruler                     " show cursor position info
 set hlsearch                  " highlight search terms
 set modifiable                " set modifiable so NERDTree can modify files
 set laststatus=2
+
+" swap files
+set directory=~/.vim/.cache/swap
+set noswapfile
 
 autocmd BufNewFile,BufRead *.scss set ft=scss.css     " highlight scss as css
 autocmd BufRead,BufNewFile *.md set filetype=markdown " recognize .md as markdown
@@ -59,58 +63,12 @@ endif
 
 ca formatjson %!python -m json.tool
 
-function MoveToPrevTab()
-	" there is only one window
-	if tabpagenr('$') == 1 && winnr('$') == 1
-		return
-	endif
-	" preparing new window
-	let l:tab_nr = tabpagenr('$')
-	let l:cur_buf = bufnr('%')
-	if tabpagenr() != 1
-		close!
-		if l:tab_nr == tabpagenr('$')
-			tabprev
-		endif
-		sp
-	else
-		close!
-		exe "0tabnew"
-	endif
-	" opening current buffer in new window
-	exe "b".l:cur_buf
-endfunc
-
-function MoveToNextTab()
-	" there is only one window
-	if tabpagenr('$') == 1 && winnr('$') == 1
-		return
-	endif
-	" preparing new window
-	let l:tab_nr = tabpagenr('$')
-	let l:cur_buf = bufnr('%')
-	if tabpagenr() < tab_nr
-		close!
-		if l:tab_nr == tabpagenr('$')
-			tabnext
-		endif
-		sp
-	else
-		close!
-		tabnew
-	endif
-	" opening current buffer in new window
-	exe "b".l:cur_buf
-endfunc
-
-" Combine Tabs w/ Horizontal Split
-nnoremap <C-m> :call MoveToNextTab()<CR>
-nnoremap <C-b> :call MoveToPrevTab()<CR>
 " Remap C-h,j,k,l for Movement Between Panes
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
 " Fugitive shortcuts
 nnoremap <leader>gs <Esc>:Gstatus<CR>
 nnoremap <leader>gd <Esc>:Gdiff<CR>
@@ -118,8 +76,36 @@ nnoremap <leader>gc <Esc>:Gcommit<CR>
 nnoremap <leader>gb <Esc>:Gblame<CR>
 nnoremap <leader>gl <Esc>:Glog<CR>
 nnoremap <leader>gp <Esc>:Git push<CR>
+
+" Unite settings
+let g:unite_data_directory='~/.vim/cache/unite'
+let g:unite_prompt='» '
+let g:unite_source_history_yank_enable = 1
+let g:unite_winheight = 10
+let g:unite_split_rule = 'botright'
+let g:unite_enable_start_insert = 1
+call unite#filters#sorter_default#use(['sorter_rank'])
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
+nnoremap <leader>y :<C-u>Unite -buffer-name=yank    history/yank<cr>
+nnoremap <leader>b :<C-u>Unite -buffer-name=buffer  buffer<cr>
+nnoremap <leader>r :<C-u>Unite -start-insert file_rec/async:!<CR>
+nnoremap <leader>e :<C-u>UniteWithBufferDir -buffer-name=files -prompt=%\  buffer file_mru bookmark file<CR>
+if executable('ag')
+  set grepprg=ag\ --nogroup\ --column\ --smart-case\ --nocolor\ --follow
+  set grepformat=%f:%l:%c:%m
+  let g:unite_source_grep_command='ag'
+  let g:unite_source_grep_default_opts='--nocolor --nogroup --hidden'
+  let g:unite_source_grep_recursive_opt=''
+elseif executable('ack')
+  set grepprg=ack\ --nogroup\ --column\ --smart-case\ --nocolor\ --follow\ $*
+  set grepformat=%f:%l:%c:%m
+  let g:unite_source_grep_command='ack'
+  let g:unite_source_grep_default_opts='--no-heading --no-color -a'
+  let g:unite_source_grep_recursive_opt=''
+endif
+
 " Other Shortcuts
-nnoremap <leader>t <Esc>:tabnew<CR>
+nnoremap <C-t> <Esc>:tabnew<CR>
 nnoremap <leader>n <Esc>:NERDTreeToggle<CR>
 nnoremap <leader>T <Esc>:TagbarToggle<CR>
 nmap <C-s> :CtrlPBufTagAll<CR>
