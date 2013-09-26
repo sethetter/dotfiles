@@ -1,35 +1,25 @@
 call pathogen#infect('~/.vim/bundle')
 
-" Other color schemes I like: delek, default, jellybeans, developer, void
-color molokai
-set nocp
-syntax on
-filetype plugin indent on
-set t_Co=256
-set noai
-set vb
-set binary noeol
-set expandtab
-set tabstop=2
-set shiftwidth=2
-set ruler
-set relativenumber
-set hlsearch
-" Set modifiable so NERDTree can create new nodes and stuff
-set modifiable
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-highlight DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=white
-highlight DiffChange term=reverse cterm=bold ctermbg=cyan ctermfg=black
-highlight DiffText term=reverse cterm=bold ctermbg=gray ctermfg=black
-highlight DiffDelete term=reverse cterm=bold ctermbg=red ctermfg=black
-au BufRead *.html set filetype=htmlm4
-autocmd BufNewFile,BufRead *.scss set ft=scss.css
-au BufRead,BufNewFile *.md set filetype=markdown
-
-" Set Leader to ,
 let mapleader = ","
 
+color molokai
+
+set nocp                      " non-vi compatible features
+syntax on                     " syntax highlighting
+filetype plugin indent on     " filetype specific indentation
+set t_Co=256                  " 256 colors
+set noai                      " no auto indenting
+set vb                        " use visual bell instead of a beep
+set expandtab                 " spaces instead of tabs
+set tabstop=2                 " tabs are two spaces wide
+set shiftwidth=2              " indent by two spaces
+set ruler                     " show cursor position info
+set hlsearch                  " highlight search terms
+set modifiable                " set modifiable so NERDTree can modify files
 set laststatus=2
+
+autocmd BufNewFile,BufRead *.scss set ft=scss.css     " highlight scss as css
+autocmd BufRead,BufNewFile *.md set filetype=markdown " recognize .md as markdown
 
 " NeoComplCache
 let g:neocomplcache_enable_at_startup = 1
@@ -37,9 +27,6 @@ let g:neocomplcache_enable_at_startup = 1
 " Sparkup Settings
 let g:sparkup = 'bundle/sparkup/ftplugin/html/sparkup.py'
 let g:sparkupExecuteMapping = ',e'
-
-" Omnicomplete settings
-set omnifunc=csscomplete#CompleteCSS
 
 " vim-seek; disable 's' as substitute
 let g:seek_subst_disable = 1
@@ -49,17 +36,21 @@ set statusline=%F%m%r%h%w\ %{fugitive#statusline()}\ [%l,%c]\ [%L,%p%%]
 
 " set up some custom colors
 highlight clear SignColumn
-highlight CursorLineNr ctermbg=236 ctermfg=240
+highlight DiffAdd      term=reverse cterm=bold ctermbg=green ctermfg=white
+highlight DiffChange   term=reverse cterm=bold ctermbg=cyan ctermfg=black
+highlight DiffText     term=reverse cterm=bold ctermbg=gray ctermfg=black
+highlight DiffDelete   term=reverse cterm=bold ctermbg=red ctermfg=black
+highlight CursorLineNr ctermbg=236  ctermfg=240
 highlight CursorLine   ctermbg=236
-highlight StatusLineNC ctermbg=238 ctermfg=0
-highlight StatusLine   ctermbg=250 ctermfg=235
-highlight IncSearch    ctermbg=0   ctermfg=3
-highlight Search       ctermbg=0   ctermfg=9
-highlight Visual       ctermbg=3   ctermfg=0
-highlight Pmenu        ctermbg=240 ctermfg=12
-highlight PmenuSel     ctermbg=0   ctermfg=3
-highlight SpellBad     ctermbg=0   ctermfg=1
-
+highlight StatusLineNC ctermbg=238  ctermfg=0
+highlight StatusLine   ctermbg=250  ctermfg=235
+highlight IncSearch    ctermbg=0    ctermfg=3
+highlight Search       ctermbg=0    ctermfg=9
+highlight Visual       ctermbg=3    ctermfg=0
+highlight Pmenu        ctermbg=240  ctermfg=12
+highlight PmenuSel     ctermbg=0    ctermfg=3
+highlight SpellBad     ctermbg=0    ctermfg=1
+ 
 " highlight the status bar when in insert mode
 if version >= 700
   au InsertEnter * hi StatusLine ctermbg=2 ctermfg=235
@@ -68,22 +59,6 @@ endif
 
 ca formatjson %!python -m json.tool
 
-" These functions are because I sometimes remote in from a tablet without 'esc'
-" In that case, I call this function, then use 'jk' to esc
-function TabletModeOn()
-	inoremap jk <esc>
-	cnoremap jk <c-c>
-	vnoremap v <esc>
-endfunc
-function TabletModeOff()
-	inoremap jk jk
-	cnoremap jk jk
-	vnoremap v v
-endfunc
-command TabletOn :call TabletModeOn()<CR>
-command TabletOff :call TabletModeOff()<CR>
-
-command NT NERDTreeToggle
 function MoveToPrevTab()
 	"there is only one window
 	if tabpagenr('$') == 1 && winnr('$') == 1
@@ -148,7 +123,6 @@ nnoremap ,t <Esc>:tabnew<CR>
 nnoremap ,n <Esc>:NT<CR>
 nnoremap ,T <Esc>:TagbarToggle<CR>
 nmap <C-s> :CtrlPBufTagAll<CR>
-
 
 "Load local vimrc
 if filereadable(glob("./.vimrc.local")) 
