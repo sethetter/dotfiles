@@ -67,3 +67,9 @@
 [submodule "vim/bundle/vimproc"]
 	path = vim/bundle/vimproc
 	url = https://github.com/Shougo/vimproc.vim.git
+[submodule "vim/bundle/vim-jst"]
+	path = vim/bundle/vim-jst
+	url = https://github.com/briancollins/vim-jst.git
+[submodule "vim/bundle/vim-javascript"]
+	path = vim/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript

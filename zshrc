@@ -49,5 +49,5 @@ bindkey -v
 
 alias tmux='tmux -2'
 
-[[ -s /root/.nvm/nvm.sh ]] && . /root/.nvm/nvm.sh # This loads NVM
+[[ -s /home/seth/.nvm/nvm.sh ]] && . /home/seth/.nvm/nvm.sh # This loads NVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
