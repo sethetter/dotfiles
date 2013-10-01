@@ -1,8 +1,0 @@
-t/,install-filter
-t/,install-filter/t
-t/,install-filter/t/,install-filter.asis
-t/,install-filter/t/,install-filter.filtered
-asis 0
-asis executable 0
-filtered 1
-filtered executable 0

@@ -1,9 +1,0 @@
-BEFORE {
-t/,clean-generated
-t/,clean-generated/generated-file
-t/,clean-generated/static-file
-}
-AFTER {
-t/,clean-generated
-t/,clean-generated/static-file
-}

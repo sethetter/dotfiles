@@ -1,5 +1,0 @@
-t/,install-generated
-t/,install-generated/Makefile
-t/,install-generated/README
-t/,install-generated/t
-t/,install-generated/t/,install-generated.foo

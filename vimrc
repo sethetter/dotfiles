@@ -1,4 +1,43 @@
-call pathogen#infect('~/.vim/bundle')
+if has('vim_starting')
+  set nocompatible               " Be iMproved
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+call neobundle#rc(expand('~/.vim/bundle/'))
+
+" Let NeoBundle manage NeoBundle
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+NeoBundle 'Shougo/vimproc'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'kana/vim-fakeclip'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'vim-scripts/genutils'
+NeoBundle 'mattn/gist-vim'
+NeoBundle 'othree/html5.vim'
+NeoBundle 'othree/javascript-libraries-syntax'
+NeoBundle 'ns9tks/vim-l9'
+NeoBundle 'intuited/lh-vim-lib'
+NeoBundle 'vim-scripts/listmaps.vim'
+NeoBundle 'gregsexton/MatchTag'
+NeoBundle 'terryma/vim-multiple-cursors'
+NeoBundle 'Shougo/neocomplcache.vim'
+NeoBundle 'scrooloose/nerdcommenter'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'myusuf3/numbers.vim'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'godlygeek/tabular'
+NeoBundle 'majutsushi/tagbar'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'briancollins/vim-jst'
+NeoBundle 'groenewege/vim-less'
+NeoBundle 'goldfeld/vim-seek'
+NeoBundle 'rstacruz/sparkup'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'mattn/webapi-vim'
 
 let mapleader = ","
 
@@ -6,7 +45,6 @@ color molokai
 
 syntax on                     " syntax highlighting
 filetype plugin indent on     " filetype specific indentation
-set nocp                      " non-vi compatible features
 set t_Co=256                  " 256 colors
 set noai                      " no auto indenting
 set vb                        " use visual bell instead of a beep
@@ -36,7 +74,7 @@ let g:sparkupExecuteMapping = ',e'
 let g:seek_subst_disable = 1
 
 " put useful info in status bar
-set statusline=%F%m%r%h%w\ %{fugitive#statusline()}\ [%l,%c]\ [%L,%p%%]
+set statusline=%f%m%r%h%w\ %{fugitive#statusline()}\ [%l,%c]\ [%L,%p%%]
 
 " set up some custom colors
 highlight clear SignColumn
