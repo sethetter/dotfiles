@@ -14,14 +14,17 @@ Includes configuration files for:
 Install
 -------
 
-Run ```bin/install.sh``` to create backups of existing files and replace with symlinks to the files in this repository. No uninstall exists at the moment (I'll get to it eventually).
+I use [NeoBundle](https://github.com/Shougo/neobundle.vim) for vim bundles. This needs to be installed first with the following command.
+
+    git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
 Tagbar for vim assumes that ctags is installed. Get that here: [ctags - http://ctags.sourceforge.net/](http://ctags.sourceforge.net/)
 
 Currently I am using the "thayer2" iTerm color scheme.
 
+I have an install script, but it needs updating. Don't use it :)
+
 Todos
 -----
 - Create uninstall task to replace symlinks with created backups
 - Update bin/install.sh to work properly
-- Switch vim modules to use NeoBundle

@@ -9,15 +9,16 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 NeoBundle 'Shougo/vimproc'
+NeoBundle 'L9'
 NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'mattn/webapi-vim'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'kana/vim-fakeclip'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'vim-scripts/genutils'
 NeoBundle 'mattn/gist-vim'
 NeoBundle 'othree/html5.vim'
-NeoBundle 'othree/javascript-libraries-syntax'
-NeoBundle 'ns9tks/vim-l9'
+NeoBundle 'othree/javascript-libraries-syntax.vim'
 NeoBundle 'intuited/lh-vim-lib'
 NeoBundle 'vim-scripts/listmaps.vim'
 NeoBundle 'gregsexton/MatchTag'
@@ -37,7 +38,6 @@ NeoBundle 'groenewege/vim-less'
 NeoBundle 'goldfeld/vim-seek'
 NeoBundle 'rstacruz/sparkup'
 NeoBundle 'tpope/vim-surround'
-NeoBundle 'mattn/webapi-vim'
 
 let mapleader = ","
 
@@ -152,3 +152,5 @@ nmap <C-s> :CtrlPBufTagAll<CR>
 if filereadable(glob("./.vimrc.local")) 
   source ./.vimrc.local
 endif
+
+NeoBundleCheck
