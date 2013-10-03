@@ -51,3 +51,5 @@ alias tmux='tmux -2'
 
 [[ -s /home/seth/.nvm/nvm.sh ]] && . /home/seth/.nvm/nvm.sh # This loads NVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
