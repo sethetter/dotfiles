@@ -136,6 +136,7 @@ if executable('ag')
   let g:unite_source_grep_default_opts='--nocolor --nogroup --hidden'
   let g:unite_source_grep_recursive_opt=''
 elseif executable('ack')
+if executable('ack')
   set grepprg=ack\ --nogroup\ --column\ --smart-case\ --nocolor\ --follow\ $*
   set grepformat=%f:%l:%c:%m
   let g:unite_source_grep_command='ack'
