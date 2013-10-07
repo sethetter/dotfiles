@@ -10,6 +10,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'L9'
+NeoBundle 'bling/vim-airline'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'mattn/webapi-vim'
 NeoBundle 'Lokaltog/vim-easymotion'
@@ -41,7 +42,9 @@ NeoBundle 'tpope/vim-surround'
 
 let mapleader = ","
 
+" set main theme and airline theme
 color molokai
+let g:airline_theme='molokai'
 
 syntax on                     " syntax highlighting
 filetype plugin indent on     " filetype specific indentation
@@ -74,30 +77,31 @@ let g:sparkupExecuteMapping = ',e'
 let g:seek_subst_disable = 1
 
 " put useful info in status bar
-set statusline=%f%m%r%h%w\ %{fugitive#statusline()}\ [%l,%c]\ [%L,%p%%]
+"set statusline=%f%m%r%h%w\ %{fugitive#statusline()}\ [%l,%c]\ [%L,%p%%]
+let g:airline_powerline_fonts = 1
 
 " set up some custom colors
-highlight clear SignColumn
-highlight DiffAdd      term=reverse cterm=bold ctermbg=green ctermfg=white
-highlight DiffChange   term=reverse cterm=bold ctermbg=cyan ctermfg=black
-highlight DiffText     term=reverse cterm=bold ctermbg=gray ctermfg=black
-highlight DiffDelete   term=reverse cterm=bold ctermbg=red ctermfg=black
-highlight CursorLineNr ctermbg=236  ctermfg=240
-highlight CursorLine   ctermbg=236
-highlight StatusLineNC ctermbg=238  ctermfg=0
-highlight StatusLine   ctermbg=250  ctermfg=235
-highlight IncSearch    ctermbg=0    ctermfg=3
-highlight Search       ctermbg=0    ctermfg=9
-highlight Visual       ctermbg=3    ctermfg=0
-highlight Pmenu        ctermbg=240  ctermfg=12
-highlight PmenuSel     ctermbg=0    ctermfg=3
-highlight SpellBad     ctermbg=0    ctermfg=1
- 
+"highlight clear signcolumn
+"highlight diffadd      term=reverse cterm=bold ctermbg=green ctermfg=white
+"highlight diffchange   term=reverse cterm=bold ctermbg=cyan ctermfg=black
+"highlight difftext     term=reverse cterm=bold ctermbg=gray ctermfg=black
+"highlight diffdelete   term=reverse cterm=bold ctermbg=red ctermfg=black
+"highlight cursorlinenr ctermbg=236  ctermfg=240
+"highlight cursorline   ctermbg=236
+"highlight statuslinenc ctermbg=238  ctermfg=0
+"highlight statusline   ctermbg=250  ctermfg=235
+"highlight incsearch    ctermbg=0    ctermfg=3
+"highlight search       ctermbg=0    ctermfg=9
+"highlight visual       ctermbg=3    ctermfg=0
+"highlight pmenu        ctermbg=240  ctermfg=12
+"highlight pmenusel     ctermbg=0    ctermfg=3
+"highlight spellbad     ctermbg=0    ctermfg=1
+
 " highlight the status bar when in insert mode
-if version >= 700
-  au InsertEnter * hi StatusLine ctermbg=2 ctermfg=235
-  au InsertLeave * hi StatusLine ctermfg=235 ctermbg=250
-endif
+"if version >= 700
+"  au insertenter * hi statusline ctermbg=2 ctermfg=235
+"  au insertleave * hi statusline ctermfg=235 ctermbg=250
+"endif
 
 ca formatjson %!python -m json.tool
 
@@ -150,7 +154,7 @@ nnoremap <leader>T <Esc>:TagbarToggle<CR>
 nmap <C-s> :CtrlPBufTagAll<CR>
 
 "Load local vimrc
-if filereadable(glob("./.vimrc.local")) 
+if filereadable(glob("./.vimrc.local"))
   source ./.vimrc.local
 endif
 
