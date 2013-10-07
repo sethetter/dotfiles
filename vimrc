@@ -44,7 +44,7 @@ let mapleader = ","
 
 " set main theme and airline theme
 color molokai
-let g:airline_theme='molokai'
+let g:airline_theme='powerlineish'
 
 syntax on                     " syntax highlighting
 filetype plugin indent on     " filetype specific indentation
