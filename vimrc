@@ -29,11 +29,16 @@ NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'myusuf3/numbers.vim'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'michalliu/jsruntime.vim'
+NeoBundle 'michalliu/jsoncodecs.vim'
+NeoBundle 'maksimr/vim-jsbeautify'
+NeoBundle 'einars/js-beautify'
 NeoBundle 'briancollins/vim-jst'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'goldfeld/vim-seek'
@@ -81,27 +86,15 @@ let g:seek_subst_disable = 1
 let g:airline_powerline_fonts = 1
 
 " set up some custom colors
-"highlight clear signcolumn
-"highlight diffadd      term=reverse cterm=bold ctermbg=green ctermfg=white
-"highlight diffchange   term=reverse cterm=bold ctermbg=cyan ctermfg=black
-"highlight difftext     term=reverse cterm=bold ctermbg=gray ctermfg=black
-"highlight diffdelete   term=reverse cterm=bold ctermbg=red ctermfg=black
-"highlight cursorlinenr ctermbg=236  ctermfg=240
-"highlight cursorline   ctermbg=236
-"highlight statuslinenc ctermbg=238  ctermfg=0
-"highlight statusline   ctermbg=250  ctermfg=235
-"highlight incsearch    ctermbg=0    ctermfg=3
-"highlight search       ctermbg=0    ctermfg=9
-"highlight visual       ctermbg=3    ctermfg=0
-"highlight pmenu        ctermbg=240  ctermfg=12
-"highlight pmenusel     ctermbg=0    ctermfg=3
-"highlight spellbad     ctermbg=0    ctermfg=1
-
-" highlight the status bar when in insert mode
-"if version >= 700
-"  au insertenter * hi statusline ctermbg=2 ctermfg=235
-"  au insertleave * hi statusline ctermfg=235 ctermbg=250
-"endif
+highlight diffchange   term=reverse cterm=bold ctermbg=cyan ctermfg=black
+highlight difftext     term=reverse cterm=bold ctermbg=gray ctermfg=black
+highlight diffdelete   term=reverse cterm=bold ctermbg=red ctermfg=black
+highlight incsearch    ctermbg=0    ctermfg=3
+highlight search       ctermbg=0    ctermfg=9
+highlight visual       ctermbg=3    ctermfg=0
+highlight pmenu        ctermbg=240  ctermfg=12
+highlight pmenusel     ctermbg=0    ctermfg=3
+highlight spellbad     ctermbg=0    ctermfg=1
 
 ca formatjson %!python -m json.tool
 
@@ -151,7 +144,8 @@ endif
 nnoremap <C-t> <Esc>:tabnew<CR>
 nnoremap <leader>n <Esc>:NERDTreeToggle<CR>
 nnoremap <leader>T <Esc>:TagbarToggle<CR>
-nmap <C-s> :CtrlPBufTagAll<CR>
+nnoremap <leader>fa <Esc>:call Beautifier()<CR>
+nnoremap <C-s> :CtrlPBufTagAll<CR>
 
 "Load local vimrc
 if filereadable(glob("./.vimrc.local"))

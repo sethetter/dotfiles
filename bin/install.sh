@@ -10,8 +10,6 @@ ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 
 # Bash Profile
 #-----------------------------------------------------------
-`mv ~/.bash_profile ~/._bash_profile.backup`
-`ln -s ${ABSPATH}/bash_profile ~/.bash_profile`
 
 # Irssi
 #------------------------------------------------------------
@@ -20,8 +18,6 @@ ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 
 # Vim
 #------------------------------------------------------------
-`mv ~/.vim ~/._vim.backup`
-`ln -s ${ABSPATH}/vim ~/.vim`
 `mv ~/.vimrc ~/._vimrc.backup`
 `ln -s ${ABSPATH}/vimrc ~/.vimrc`
 
@@ -30,12 +26,23 @@ ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 `mv ~/.tmux.conf ~/._tmux.conf.backup`
 `ln -s ${ABSPATH}/tmux.conf ~/.tmux.conf`
 
-# Powerline Files
+# Zsh Files
 #------------------------------------------------------------
-#`mv /usr/local/powerline /usr/local/_powerline.backup`
-#`cp -r ${ABSPATH}/powerline /usr/local/`
-`mkdir ~/.config/`
-`ln -s ${ABSPATH}/powerline_config ~/.config/powerline`
+`mv ~/.zshrc ~/._zshrc.backup`
+`ln -s ${ABSPATH}/zshrc ~/.zshrc`
+`mv ~/.oh-my-zsh ~/._oh-my-zsh.backup`
+`ln -s ${ABSPATH}/oh-my-zsh ~/.oh-my-zsh`
+
+# Editor Config
+#------------------------------------------------------------
+`mv ~/.editorconfig ~/._editorconfig.backup`
+`ln -s ${ABSPATH}/editorconfig ~/.editorconfig`
+
+# JSHint
+#------------------------------------------------------------
+`mv ~/.jshintrc ~/._jshintrc.backup`
+`ln -s ${ABSPATH}/jshintrc ~/.jshintrc`
+
 
 # Git Files
 #------------------------------------------------------------

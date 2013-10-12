@@ -6,6 +6,7 @@ These are my personal dotfiles for my development environment on Mac OS.
 Includes configuration files for:
 - iTerm
 - zsh (with oh-my-zsh)
+- editorconfig (with js-beautify options)
 - tmux
 - vim
 - git
@@ -27,4 +28,3 @@ I have an install script, but it needs updating. Don't use it :)
 Todos
 -----
 - Create uninstall task to replace symlinks with created backups
-- Update bin/install.sh to work properly
