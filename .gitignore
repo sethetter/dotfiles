@@ -4,10 +4,6 @@
 *.cache
 .DS_Store
 **/.DS_Store
-vim/.netrwhist
-vim/**/.netrwhist
-vim/bundle/**/.netrwhist
-vim/bundle/checksyntax_vim/.netrwhist
 irssi/away.log
 npm-debug.log
 irssi/config
