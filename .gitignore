@@ -10,3 +10,4 @@ vim/bundle/**/.netrwhist
 vim/bundle/checksyntax_vim/.netrwhist
 irssi/away.log
 npm-debug.log
+irssi/config
