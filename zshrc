@@ -45,6 +45,7 @@ plugins=(git rails ruby)
 source $ZSH/oh-my-zsh.sh
 
 export TERM='xterm-256color'
+export EDITOR='vim'
 bindkey -v
 
 alias tmux='tmux -2'
