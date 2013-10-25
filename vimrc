@@ -48,7 +48,7 @@ NeoBundle 'tpope/vim-surround'
 let mapleader = ","
 
 " set main theme and airline theme
-color molokai
+color monokai
 let g:airline_theme='powerlineish'
 
 syntax on                     " syntax highlighting
@@ -83,7 +83,7 @@ let g:seek_subst_disable = 1
 
 " put useful info in status bar
 "set statusline=%f%m%r%h%w\ %{fugitive#statusline()}\ [%l,%c]\ [%L,%p%%]
-let g:airline_powerline_fonts = 1
+"let g:airline_powerline_fonts = 1
 
 " set up some custom colors
 highlight diffchange   term=reverse cterm=bold ctermbg=cyan ctermfg=black
@@ -111,6 +111,7 @@ nnoremap <leader>gc <Esc>:Gcommit<CR>
 nnoremap <leader>gb <Esc>:Gblame<CR>
 nnoremap <leader>gl <Esc>:Glog<CR>
 nnoremap <leader>gp <Esc>:Git push<CR>
+nnoremap <leader>gu <Esc>:Git pull<CR>
 
 " Unite settings
 let g:unite_data_directory='~/.vim/cache/unite'
