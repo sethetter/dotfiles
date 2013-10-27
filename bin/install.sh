@@ -30,6 +30,8 @@ ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 #------------------------------------------------------------
 `mv ~/.zshrc ~/._zshrc.backup`
 `ln -s ${ABSPATH}/zshrc ~/.zshrc`
+`mv ~/.zprofile ~/._zprofile.backup`
+`ln -s ${ABSPATH}/zprofile ~/.zprofile`
 `mv ~/.oh-my-zsh ~/._oh-my-zsh.backup`
 `ln -s ${ABSPATH}/oh-my-zsh ~/.oh-my-zsh`
 
