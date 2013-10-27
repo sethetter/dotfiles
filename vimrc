@@ -54,7 +54,7 @@ let g:airline_theme='powerlineish'
 syntax on                     " syntax highlighting
 filetype plugin indent on     " filetype specific indentation
 set t_Co=256                  " 256 colors
-set noai                      " no auto indenting
+set ai                        " auto indenting
 set vb                        " use visual bell instead of a beep
 set expandtab                 " spaces instead of tabs
 set tabstop=2                 " tabs are two spaces wide
