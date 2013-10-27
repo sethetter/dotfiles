@@ -48,7 +48,7 @@ NeoBundle 'tpope/vim-surround'
 let mapleader = ","
 
 " set main theme and airline theme
-color monokai
+color Monokai
 let g:airline_theme='powerlineish'
 
 syntax on                     " syntax highlighting
