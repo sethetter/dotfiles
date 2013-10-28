@@ -125,7 +125,7 @@ call unite#filters#matcher_default#use(['matcher_fuzzy'])
 nnoremap <leader>y :<C-u>Unite -buffer-name=yank    history/yank<cr>
 nnoremap <leader>b :<C-u>Unite -buffer-name=buffer  buffer<cr>
 nnoremap <leader>r :<C-u>Unite -start-insert file_rec/async:!<CR>
-nnoremap <leader>e :<C-u>UniteWithBufferDir -buffer-name=files -prompt=%\  buffer file_mru bookmark file<CR>
+"nnoremap <leader>e :<C-u>UniteWithBufferDir -buffer-name=files -prompt=%\  buffer file_mru bookmark file<CR>
 nnoremap <leader>/ :<C-u>Unite -no-quit -buffer-name=search grep:.<cr>
 if executable('ag')
   set grepprg=ag\ --nogroup\ --column\ --smart-case\ --nocolor\ --follow
