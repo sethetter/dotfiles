@@ -268,10 +268,14 @@ settings = {
     real_name = "Seth Etter";
     user_name = "sethetter";
     nick = "sethetter";
-    timestamp_format = "{%%H:%%M }";
   };
   "fe-text" = { actlist_sort = "refnum"; term_force_colors = "yes"; };
-  "fe-common/core" = { theme = "ion_mod"; };
+  "fe-common/core" = { theme = "xchat"; };
+  "perl/core/scripts" = {
+    nicklist_height = "77";
+    nicklist_width = "27";
+    irssinotifier_api_token = "9e46e6ad-b98f-47c9-9982-44e72664a55b";
+  };
 };
 
 ignores = (
@@ -293,7 +297,10 @@ ignores = (
       "##php",
       "#git",
       "#html5",
-      "#codeigniter"
+      "#codeigniter",
+      "#angularjs",
+      "#yeoman",
+      "#grunt"
     );
     network = "FreeNode";
   },
@@ -305,3 +312,4 @@ ignores = (
   { level = "MODES"; channels = ( "&bitlbee" ); }
 );
 
+logs = { };
