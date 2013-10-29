@@ -270,7 +270,7 @@ settings = {
     nick = "sethetter";
   };
   "fe-text" = { actlist_sort = "refnum"; term_force_colors = "yes"; };
-  "fe-common/core" = { theme = "xchat"; };
+  "fe-common/core" = { theme = "kurja"; };
   "perl/core/scripts" = {
     nicklist_height = "77";
     nicklist_width = "27";
