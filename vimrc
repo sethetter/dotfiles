@@ -42,7 +42,7 @@ NeoBundle 'einars/js-beautify'
 NeoBundle 'briancollins/vim-jst'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'goldfeld/vim-seek'
-NeoBundle 'rstacruz/sparkup'
+NeoBundle 'tristen/vim-sparkup'
 NeoBundle 'tpope/vim-surround'
 
 let mapleader = ","
@@ -75,18 +75,13 @@ autocmd BufRead,BufNewFile *.md set filetype=markdown " recognize .md as markdow
 let g:neocomplcache_enable_at_startup = 1
 
 " Sparkup Settings
-let g:sparkup = 'bundle/sparkup/ftplugin/html/sparkup.py'
-let g:sparkupExecuteMapping = ',e'
+let g:sparkupMappingInsertModeOnly = 1
 
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'passive_filetypes': ['html'] }
 
 " vim-seek; disable 's' as substitute
 let g:seek_subst_disable = 1
-
-" put useful info in status bar
-"set statusline=%f%m%r%h%w\ %{fugitive#statusline()}\ [%l,%c]\ [%L,%p%%]
-"let g:airline_powerline_fonts = 1
 
 " set up some custom colors
 highlight diffchange   term=reverse cterm=bold ctermbg=cyan ctermfg=black
