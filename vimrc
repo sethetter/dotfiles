@@ -78,6 +78,9 @@ let g:neocomplcache_enable_at_startup = 1
 let g:sparkup = 'bundle/sparkup/ftplugin/html/sparkup.py'
 let g:sparkupExecuteMapping = ',e'
 
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'passive_filetypes': ['html'] }
+
 " vim-seek; disable 's' as substitute
 let g:seek_subst_disable = 1
 
