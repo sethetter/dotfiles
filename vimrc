@@ -44,6 +44,8 @@ NeoBundle 'groenewege/vim-less'
 NeoBundle 'goldfeld/vim-seek'
 NeoBundle 'tristen/vim-sparkup'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'xolox/vim-easytags'
+NeoBundle 'xolox/vim-misc'
 
 let mapleader = ","
 
