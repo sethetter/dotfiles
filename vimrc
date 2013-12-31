@@ -98,7 +98,8 @@ highlight spellbad     ctermbg=0    ctermfg=1
 
 ca formatjson %!python -m json.tool
 
-nnoremap : ;
+map ; :
+noremap ;; :
 
 " Remap C-h,j,k,l for Movement Between Panes
 nnoremap <C-h> <C-w>h
