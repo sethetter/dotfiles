@@ -143,6 +143,13 @@ elseif executable('ack')
   let g:unite_source_grep_default_opts='--no-heading --no-color -a'
   let g:unite_source_grep_recursive_opt=''
 endif
+autocmd FileType unite call s:unite_settings()
+function! s:unite_settings()
+	imap <buffer> <C-j> <Plug>(unite_select_next_line)
+	imap <buffer> <C-k> <Plug>(unite_select_previous_line)
+	imap <buffer> <esc> <Plug>(unite_exit)
+	nmap <buffer> <esc> <Plug>(unite_exit)
+endfunction
 
 " Other Shortcuts
 nnoremap <C-t> <Esc>:tabnew<CR>
