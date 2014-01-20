@@ -46,6 +46,10 @@ NeoBundle 'tristen/vim-sparkup'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'xolox/vim-easytags'
 NeoBundle 'xolox/vim-misc'
+NeoBundle 'garbas/vim-snipmate'
+NeoBundle 'MarcWeber/vim-addon-mw-utils'
+NeoBundle 'tomtom/tlib_vim'
+NeoBundle 'honza/vim-snippets'
 
 let mapleader = ","
 
