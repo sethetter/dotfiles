@@ -70,6 +70,8 @@ set ruler                     " show cursor position info
 set hlsearch                  " highlight search terms
 set modifiable                " set modifiable so NERDTree can modify files
 set laststatus=2
+set softtabstop=2             " how far to backspace over tabs
+set backspace=indent,eol,start
 
 " swap files
 set directory=~/.vim/.cache/swap
