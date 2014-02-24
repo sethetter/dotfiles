@@ -48,6 +48,7 @@ NeoBundle 'garbas/vim-snipmate'
 NeoBundle 'MarcWeber/vim-addon-mw-utils'
 NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'honza/vim-snippets'
+NeoBundle 'firat/vim-bufexplorer'
 
 let mapleader = ","
 
