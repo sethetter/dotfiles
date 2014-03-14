@@ -8,10 +8,8 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-NeoBundle 'Shougo/vimproc'
 NeoBundle 'L9'
 NeoBundle 'bling/vim-airline'
-NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'mattn/webapi-vim'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'kana/vim-fakeclip'
@@ -48,7 +46,14 @@ NeoBundle 'garbas/vim-snipmate'
 NeoBundle 'MarcWeber/vim-addon-mw-utils'
 NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'honza/vim-snippets'
-NeoBundle 'firat/vim-bufexplorer'
+NeoBundle 'Shougo/vimproc.vim', {
+      \ 'build' : {
+      \     'windows' : 'make -f make_mingw32.mak',
+      \     'cygwin' : 'make -f make_cygwin.mak',
+      \     'mac' : 'make -f make_mac.mak',
+      \     'unix' : 'make -f make_unix.mak',
+      \    },
+      \ }
 
 let mapleader = ","
 
@@ -121,20 +126,20 @@ nnoremap <leader>gl <Esc>:Glog<CR>
 nnoremap <leader>gp <Esc>:Git push<CR>
 nnoremap <leader>gu <Esc>:Git pull<CR>
 
-" Unite settings
-let g:unite_data_directory='~/.vim/cache/unite'
+" Unite
 let g:unite_prompt='» '
+let g:unite_data_directory='~/.vim/cache/unite'
 let g:unite_source_history_yank_enable = 1
-let g:unite_winheight = 10
-let g:unite_split_rule = 'botright'
-let g:unite_enable_start_insert = 1
-call unite#filters#sorter_default#use(['sorter_rank'])
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
-nnoremap <leader>y :<C-u>Unite -buffer-name=yank    history/yank<cr>
-nnoremap <leader>b :<C-u>Unite -buffer-name=buffer  buffer<cr>
-nnoremap <leader>r :<C-u>Unite -start-insert file_rec/async:!<CR>
-"nnoremap <leader>e :<C-u>UniteWithBufferDir -buffer-name=files -prompt=%\  buffer file_mru bookmark file<CR>
-nnoremap <leader>/ :<C-u>Unite -no-quit -buffer-name=search grep:.<cr>
+
+nnoremap <leader>t :<C-u>Unite -no-split -buffer-name=files   -start-insert file_rec/async:!<cr>
+nnoremap <leader>f :<C-u>Unite -no-split -buffer-name=files   -start-insert file<cr>
+nnoremap <leader>r :<C-u>Unite -no-split -buffer-name=mru     -start-insert file_mru<cr>
+nnoremap <leader>o :<C-u>Unite -no-split -buffer-name=outline -start-insert outline<cr>
+nnoremap <leader>y :<C-u>Unite -no-split -buffer-name=yank    history/yank<cr>
+nnoremap <leader>e :<C-u>Unite -no-split -buffer-name=buffer  buffer<cr>
+nnoremap <leader>/ :<C-u>Unite -no-split -buffer-name=grep    -start-insert grep:.<cr>
+
 if executable('ag')
   set grepprg=ag\ --nogroup\ --column\ --smart-case\ --nocolor\ --follow
   set grepformat=%f:%l:%c:%m
@@ -160,8 +165,6 @@ endfunction
 nnoremap <C-t> <Esc>:tabnew<CR>
 nnoremap <leader>n <Esc>:NERDTreeToggle<CR>
 nnoremap <leader>T <Esc>:TagbarToggle<CR>
-nnoremap <leader>fa <Esc>:call Beautifier()<CR>
-nnoremap <C-s> :CtrlPBufTagAll<CR>
 
 "Load local vimrc
 if filereadable(glob("./.vimrc.local"))
