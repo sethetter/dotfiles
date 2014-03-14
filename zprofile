@@ -5,6 +5,8 @@ export EDITOR=vim
 bindkey -v
 
 alias tmux='tmux -2'
+alias gitlog='git log --oneline'
+alias se-dev='ssh seth@se-dev'
 
 PATH=$HOME/.rvm/bin:/usr/local/bin:$PATH # Add RVM to PATH for scripting
 
