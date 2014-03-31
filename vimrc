@@ -8,17 +8,14 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-NeoBundle 'Shougo/vimproc'
 NeoBundle 'L9'
 NeoBundle 'bling/vim-airline'
-NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'mattn/webapi-vim'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'kana/vim-fakeclip'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'vim-scripts/genutils'
 NeoBundle 'mattn/gist-vim'
-NeoBundle 'othree/html5.vim'
 NeoBundle 'othree/javascript-libraries-syntax.vim'
 NeoBundle 'intuited/lh-vim-lib'
 NeoBundle 'vim-scripts/listmaps.vim'
@@ -35,6 +32,7 @@ NeoBundle 'majutsushi/tagbar'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'slim-template/vim-slim'
 NeoBundle 'michalliu/jsruntime.vim'
 NeoBundle 'michalliu/jsoncodecs.vim'
 NeoBundle 'maksimr/vim-jsbeautify'
@@ -43,7 +41,21 @@ NeoBundle 'briancollins/vim-jst'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'goldfeld/vim-seek'
 NeoBundle 'tristen/vim-sparkup'
+NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'xolox/vim-misc'
+NeoBundle 'garbas/vim-snipmate'
+NeoBundle 'MarcWeber/vim-addon-mw-utils'
+NeoBundle 'tomtom/tlib_vim'
+NeoBundle 'honza/vim-snippets'
+NeoBundle 'Shougo/vimproc.vim', {
+      \ 'build' : {
+      \     'windows' : 'make -f make_mingw32.mak',
+      \     'cygwin' : 'make -f make_cygwin.mak',
+      \     'mac' : 'make -f make_mac.mak',
+      \     'unix' : 'make -f make_unix.mak',
+      \    },
+      \ }
 
 let mapleader = ","
 
@@ -63,6 +75,8 @@ set ruler                     " show cursor position info
 set hlsearch                  " highlight search terms
 set modifiable                " set modifiable so NERDTree can modify files
 set laststatus=2
+set softtabstop=2             " how far to backspace over tabs
+set backspace=indent,eol,start
 
 " swap files
 set directory=~/.vim/.cache/swap
@@ -76,6 +90,9 @@ let g:neocomplcache_enable_at_startup = 1
 
 " Sparkup Settings
 let g:sparkupMappingInsertModeOnly = 1
+
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'passive_filetypes': ['html'] }
 
 " vim-seek; disable 's' as substitute
 let g:seek_subst_disable = 1
@@ -93,6 +110,9 @@ highlight spellbad     ctermbg=0    ctermfg=1
 
 ca formatjson %!python -m json.tool
 
+map ; :
+noremap ;; :
+
 " Remap C-h,j,k,l for Movement Between Panes
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
@@ -108,20 +128,19 @@ nnoremap <leader>gl <Esc>:Glog<CR>
 nnoremap <leader>gp <Esc>:Git push<CR>
 nnoremap <leader>gu <Esc>:Git pull<CR>
 
-" Unite settings
-let g:unite_data_directory='~/.vim/cache/unite'
+" Unite
 let g:unite_prompt='» '
+let g:unite_data_directory='~/.vim/cache/unite'
 let g:unite_source_history_yank_enable = 1
-let g:unite_winheight = 10
-let g:unite_split_rule = 'botright'
-let g:unite_enable_start_insert = 1
-call unite#filters#sorter_default#use(['sorter_rank'])
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
-nnoremap <leader>y :<C-u>Unite -buffer-name=yank    history/yank<cr>
-nnoremap <leader>b :<C-u>Unite -buffer-name=buffer  buffer<cr>
-nnoremap <leader>r :<C-u>Unite -start-insert file_rec/async:!<CR>
-"nnoremap <leader>e :<C-u>UniteWithBufferDir -buffer-name=files -prompt=%\  buffer file_mru bookmark file<CR>
-nnoremap <leader>/ :<C-u>Unite -no-quit -buffer-name=search grep:.<cr>
+
+nnoremap <leader>t :<C-u>Unite -no-split -buffer-name=files   -start-insert file_rec/async:!<cr>
+nnoremap <leader>f :<C-u>Unite -no-split -buffer-name=files   -start-insert file<cr>
+nnoremap <leader>r :<C-u>Unite -no-split -buffer-name=mru     -start-insert file_mru<cr>
+nnoremap <leader>y :<C-u>Unite -no-split -buffer-name=yank    history/yank<cr>
+nnoremap <leader>e :<C-u>Unite -no-split -buffer-name=buffer  buffer<cr>
+nnoremap <leader>/ :<C-u>Unite -no-split -buffer-name=grep    -start-insert grep:.<cr>
+
 if executable('ag')
   set grepprg=ag\ --nogroup\ --column\ --smart-case\ --nocolor\ --follow
   set grepformat=%f:%l:%c:%m
@@ -135,13 +154,18 @@ elseif executable('ack')
   let g:unite_source_grep_default_opts='--no-heading --no-color -a'
   let g:unite_source_grep_recursive_opt=''
 endif
+autocmd FileType unite call s:unite_settings()
+function! s:unite_settings()
+	imap <buffer> <C-j> <Plug>(unite_select_next_line)
+	imap <buffer> <C-k> <Plug>(unite_select_previous_line)
+	"imap <buffer> <esc> <Plug>(unite_exit)
+	nmap <buffer> <esc> <Plug>(unite_exit)
+endfunction
 
 " Other Shortcuts
 nnoremap <C-t> <Esc>:tabnew<CR>
 nnoremap <leader>n <Esc>:NERDTreeToggle<CR>
 nnoremap <leader>T <Esc>:TagbarToggle<CR>
-nnoremap <leader>fa <Esc>:call Beautifier()<CR>
-nnoremap <C-s> :CtrlPBufTagAll<CR>
 
 "Load local vimrc
 if filereadable(glob("./.vimrc.local"))

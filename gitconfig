@@ -1,6 +1,8 @@
 [user]
 	name = Seth Etter
 	email = sethetter@gmail.com
+[github]
+  username = sethetter
 [core]
 	excludesfile = ~/.gitignore
 [merge]

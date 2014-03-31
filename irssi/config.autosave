@@ -1,36 +1,20 @@
 servers = (
   {
-    address = "chat.freenode.net";
+    address = "morgan.freenode.net";
     chatnet = "IRCnet";
     port = "6667";
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "yes";
   },
-  { address = "eu.irc6.net"; chatnet = "IRCnet"; port = "6667"; },
-  { address = "open.ircnet.net"; chatnet = "IRCnet"; port = "6667"; },
-  { address = "irc.efnet.org"; chatnet = "EFNet"; port = "6667"; },
-  { 
-    address = "irc.undernet.org";
-    chatnet = "Undernet";
-    port = "6667";
-  },
-  { address = "irc.dal.net"; chatnet = "DALnet"; port = "6667"; },
-  { 
-    address = "irc.quakenet.org";
-    chatnet = "QuakeNet";
-    port = "6667";
-  },
-  { address = "irc.oftc.net"; chatnet = "OFTC"; port = "6667"; },
   {
-    address = "irc.gamesurge.net";
-    chatnet = "GameSurge";
+    address = "chat.freenode.net";
+    chatnet = "IRCnet";
     port = "6667";
-  },
-  { address = "irc.webchat.org"; chatnet = "WebChat"; port = "6667"; },
-  { address = "irc.rizon.net"; chatnet = "Rizon"; port = "6667"; },
-  { address = "irc.link-net.org"; chatnet = "LinkNet"; port = "6667"; },
-  { address = "silc.silcnet.org"; chatnet = "SILC"; port = "706"; }
+    use_ssl = "no";
+    ssl_verify = "no";
+    autoconnect = "yes";
+  }
 );
 
 chatnets = {
@@ -270,11 +254,12 @@ settings = {
     nick = "sethetter";
   };
   "fe-text" = { actlist_sort = "refnum"; term_force_colors = "yes"; };
-  "fe-common/core" = { theme = "kurja"; };
+  "fe-common/core" = { theme = "ion_mod"; };
   "perl/core/scripts" = {
     nicklist_height = "77";
     nicklist_width = "27";
     irssinotifier_api_token = "9e46e6ad-b98f-47c9-9982-44e72664a55b";
+    irssinotifier_encryption_password = "password";
   };
 };
 
@@ -313,3 +298,4 @@ ignores = (
 );
 
 logs = { };
+hilights = ( { text = "sethetter"; nick = "yes"; word = "yes"; } );

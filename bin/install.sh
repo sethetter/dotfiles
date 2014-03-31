@@ -28,8 +28,6 @@ ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 
 # Zsh Files
 #------------------------------------------------------------
-`mv ~/.zshrc ~/._zshrc.backup`
-`ln -s ${ABSPATH}/zshrc ~/.zshrc`
 `mv ~/.zprofile ~/._zprofile.backup`
 `ln -s ${ABSPATH}/zprofile ~/.zprofile`
 `mv ~/.oh-my-zsh ~/._oh-my-zsh.backup`
