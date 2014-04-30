@@ -142,24 +142,23 @@ nnoremap <leader>y :<C-u>Unite -no-split -buffer-name=yank    history/yank<cr>
 nnoremap <leader>e :<C-u>Unite -no-split -buffer-name=buffer  -start-insert buffer<cr>
 nnoremap <leader>/ :<C-u>Unite -no-split -buffer-name=grep    -start-insert grep:.<cr>
 
-if executable('ag')
-  set grepprg=ag\ --nogroup\ --column\ --smart-case\ --nocolor\ --follow
-  set grepformat=%f:%l:%c:%m
-  let g:unite_source_grep_command='ag'
-  let g:unite_source_grep_default_opts='--nocolor --nogroup --hidden'
-  let g:unite_source_grep_recursive_opt=''
-elseif executable('ack')
-  set grepprg=ack\ --nogroup\ --column\ --smart-case\ --nocolor\ --follow\ $*
-  set grepformat=%f:%l:%c:%m
-  let g:unite_source_grep_command='ack'
-  let g:unite_source_grep_default_opts='--no-heading --no-color -a'
-  let g:unite_source_grep_recursive_opt=''
-endif
+set wildignore+=.git*
+set wildignore+=*node_modules*
+set wildignore+=*bower_components*
+set wildignore+=*.sass-cache*
+
+" Tell Unite to ignore certain folders for file_rec search
+call unite#custom_source('file_rec,file_rec/async,file_mru,file,buffer,grep',
+      \ 'ignore_pattern',
+      \ escape(
+      \     substitute(join(split(&wildignore, ","), '\|'), '**/\?', "", "g"),
+      \     '.'))
+
 autocmd FileType unite call s:unite_settings()
 function! s:unite_settings()
 	imap <buffer> <C-j> <Plug>(unite_select_next_line)
 	imap <buffer> <C-k> <Plug>(unite_select_previous_line)
-	"imap <buffer> <esc> <Plug>(unite_exit)
+  imap <buffer> <esc> <Plug>(unite_exit)
 	nmap <buffer> <esc> <Plug>(unite_exit)
 endfunction
 
