@@ -15,3 +15,5 @@
   ui = auto
 [github]
 	user = sethetter
+[push]
+	default = simple
