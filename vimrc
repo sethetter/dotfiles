@@ -146,6 +146,8 @@ set wildignore+=.git*
 set wildignore+=*node_modules*
 set wildignore+=*bower_components*
 set wildignore+=*.bower-cache*
+set wildignore+=*.bower-registry*
+set wildignore+=*.vagrant*
 set wildignore+=*.sass-cache*
 
 " Tell Unite to ignore certain folders for file_rec search
