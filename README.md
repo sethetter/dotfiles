@@ -25,6 +25,8 @@ Currently I am using the "thayer2" iTerm color scheme.
 
 I have an install script, but it needs updating. Don't use it :)
 
+Also, install [doctorjs](https://github.com/mozilla/doctorjs)
+
 Todos
 -----
 - Create uninstall task to replace symlinks with created backups

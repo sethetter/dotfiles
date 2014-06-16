@@ -28,7 +28,7 @@ NeoBundle 'myusuf3/numbers.vim'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'godlygeek/tabular'
-NeoBundle 'majutsushi/tagbar'
+NeoBundle 'int3/vim-taglist-plus'
 NeoBundle 'xolox/vim-easytags'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'flazz/vim-colorschemes'
@@ -168,7 +168,7 @@ endfunction
 " Other Shortcuts
 nnoremap <C-t> <Esc>:tabnew<CR>
 nnoremap <leader>n <Esc>:NERDTreeToggle<CR>
-nnoremap <leader>T <Esc>:TagbarToggle<CR>
+nnoremap <leader>T <Esc>:TlistToggle<CR>
 
 "Load local vimrc
 if filereadable(glob("./.vimrc.local"))
