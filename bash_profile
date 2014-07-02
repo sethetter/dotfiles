@@ -108,6 +108,10 @@ alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 alias ws="ftp -i sethetter.com@sethetter.com:/domains/sethetter.com/html/wp-content/themes/sethetter/"
 alias cynergiftp="ftp -i hymangse@web6.myhsphere.cc"
 
+#balanced-comp
+alias foreman-start-dev="bundle exec foreman start -f Procfile.dev"
+alias foreman-start="bundle exec foreman start -f Procfile"
+
 # Quit applications
 function quit() { osascript -e "tell app \"$1\" to quit"; }
 
