@@ -56,6 +56,10 @@ bindkey '^h' backward-delete-char
 bindkey '^w' backward-kill-word
 bindkey '^r' history-incremental-search-backward
 
+#balanced-comp
+alias foreman-start-dev="bundle exec foreman start -f Procfile.dev"
+alias foreman-start="bundle exec foreman start -f Procfile"
+
 function zle-line-init zle-keymap-select {
     VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
     RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} $EPS1"
