@@ -94,6 +94,7 @@ let g:neocomplcache_enable_at_startup = 1
 
 " Sparkup Settings
 let g:sparkupMappingInsertModeOnly = 1
+let g:sparkupDoubleQuote = 1
 
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'passive_filetypes': ['html'] }
