@@ -96,6 +96,11 @@ let g:sparkupDoubleQuote = 1
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'passive_filetypes': ['html'] }
 
+" Taglist
+let Tlist_Use_Right_Window = 1
+let Tlist_WinWidth = 50
+let Tlist_Inc_Winwidth = 0
+
 " vim-seek; disable 's' as substitute
 let g:seek_subst_disable = 1
 
