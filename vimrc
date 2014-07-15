@@ -138,6 +138,7 @@ let g:unite_prompt='» '
 let g:unite_data_directory='~/.vim/cache/unite'
 let g:unite_source_history_yank_enable = 1
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
+call unite#filters#sorter_default#use(['sorter_rank'])
 
 nnoremap <leader>t :<C-u>Unite -no-split -buffer-name=files   -start-insert file_rec/async<cr>
 nnoremap <leader>f :<C-u>Unite -no-split -buffer-name=files   -start-insert file<cr>
@@ -153,13 +154,10 @@ set wildignore+=*.bower-cache*
 set wildignore+=*.bower-registry*
 set wildignore+=*.vagrant*
 set wildignore+=*.sass-cache*
+set wildignore+=*tmp*
 
 " Tell Unite to ignore certain folders for file_rec search
-call unite#custom_source('file_rec,file_rec/async,file_mru,file,buffer,grep',
-      \ 'ignore_pattern',
-      \ escape(
-      \     substitute(join(split(&wildignore, ","), '\|'), '**/\?', "", "g"),
-      \     '.'))
+call unite#custom_source('file,file/new,buffer,file_rec,file_rec/async', 'ignore_pattern', escape(substitute(join(split(&wildignore, ","), '\|'), '**/\?', "", "g"), '.'))
 
 autocmd FileType unite call s:unite_settings()
 function! s:unite_settings()
