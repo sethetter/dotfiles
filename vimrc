@@ -89,9 +89,6 @@ set noswapfile
 autocmd BufNewFile,BufRead *.scss set ft=scss.css     " highlight scss as css
 autocmd BufRead,BufNewFile *.md set filetype=markdown " recognize .md as markdown
 
-" NeoComplCache
-let g:neocomplcache_enable_at_startup = 1
-
 " Sparkup Settings
 let g:sparkupMappingInsertModeOnly = 1
 let g:sparkupDoubleQuote = 1
