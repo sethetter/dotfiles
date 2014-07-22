@@ -37,6 +37,7 @@ NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'michalliu/jsruntime.vim'
+NeoBundle 'tpope/vim-cucumber'
 NeoBundle 'michalliu/jsoncodecs.vim'
 NeoBundle 'maksimr/vim-jsbeautify'
 NeoBundle 'einars/js-beautify'
@@ -52,6 +53,7 @@ NeoBundle 'MarcWeber/vim-addon-mw-utils'
 NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'mustache/vim-mustache-handlebars'
+NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'Shougo/vimproc.vim', {
       \ 'build' : {
       \     'windows' : 'make -f make_mingw32.mak',
@@ -64,8 +66,9 @@ NeoBundle 'Shougo/vimproc.vim', {
 let mapleader = ","
 
 " set main theme and airline theme
-color Monokai
-let g:airline_theme='powerlineish'
+set background=light
+colorscheme solarized
+let g:airline_theme='solarized'
 
 syntax on                     " syntax highlighting
 filetype plugin indent on     " filetype specific indentation
