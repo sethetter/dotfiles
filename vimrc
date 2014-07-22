@@ -66,7 +66,7 @@ NeoBundle 'Shougo/vimproc.vim', {
 let mapleader = ","
 
 " set main theme and airline theme
-set background=light
+set background=dark
 colorscheme solarized
 let g:airline_theme='solarized'
 
