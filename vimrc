@@ -173,10 +173,10 @@ call unite#custom_source('file,file/new,buffer,file_rec', 'ignore_pattern', esca
 
 autocmd FileType unite call s:unite_settings()
 function! s:unite_settings()
-	imap <buffer> <C-j> <Plug>(unite_select_next_line)
-	imap <buffer> <C-k> <Plug>(unite_select_previous_line)
+  imap <buffer> <C-j> <Plug>(unite_select_next_line)
+  imap <buffer> <C-k> <Plug>(unite_select_previous_line)
   imap <buffer> <esc> <Plug>(unite_exit)
-	nmap <buffer> <esc> <Plug>(unite_exit)
+  nmap <buffer> <esc> <Plug>(unite_exit)
 endfunction
 
 " Other Shortcuts
