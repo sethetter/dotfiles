@@ -97,7 +97,7 @@ let g:sparkupMappingInsertModeOnly = 1
 let g:sparkupDoubleQuote = 1
 
 let g:syntastic_mode_map = { 'mode': 'active',
-                           \ 'passive_filetypes': ['html', 'cucumber', 'feature'] }
+                           \ 'passive_filetypes': ['html', 'cucumber', 'feature', 'scss', 'sass'] }
 
 " Taglist
 let Tlist_Use_Right_Window = 1
