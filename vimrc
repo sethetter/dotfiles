@@ -53,7 +53,6 @@ NeoBundle 'MarcWeber/vim-addon-mw-utils'
 NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'mustache/vim-mustache-handlebars'
-NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'Shougo/vimproc.vim', {
       \ 'build' : {
       \     'windows' : 'make -f make_mingw32.mak',
@@ -65,12 +64,14 @@ NeoBundle 'Shougo/vimproc.vim', {
 
 let mapleader = ","
 
+syntax on                     " syntax highlighting
+
 " set main theme and airline theme
 set background=dark
 colorscheme solarized
+hi Normal ctermbg=NONE
 let g:airline_theme='solarized'
 
-syntax on                     " syntax highlighting
 filetype plugin indent on     " filetype specific indentation
 set t_Co=256                  " 256 colors
 set ai                        " auto indenting
@@ -84,6 +85,7 @@ set modifiable                " set modifiable so NERDTree can modify files
 set laststatus=2
 set softtabstop=2             " how far to backspace over tabs
 set backspace=indent,eol,start
+set number
 
 " swap files
 set directory=~/.vim/.cache/swap
