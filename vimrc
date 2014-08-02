@@ -53,6 +53,7 @@ NeoBundle 'MarcWeber/vim-addon-mw-utils'
 NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'mustache/vim-mustache-handlebars'
+NeoBundle 'mhinz/vim-signify'
 NeoBundle 'Shougo/vimproc.vim', {
       \ 'build' : {
       \     'windows' : 'make -f make_mingw32.mak',
