@@ -11,17 +11,11 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'L9'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'mattn/webapi-vim'
-NeoBundle 'tpope/vim-rails'
 NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'kana/vim-fakeclip'
 NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'tpope/vim-repeat'
-NeoBundle 'tpope/vim-abolish'
 NeoBundle 'vim-scripts/genutils'
 NeoBundle 'mattn/gist-vim'
-NeoBundle 'othree/javascript-libraries-syntax.vim'
 NeoBundle 'intuited/lh-vim-lib'
-NeoBundle 'vim-scripts/listmaps.vim'
 NeoBundle 'gregsexton/MatchTag'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'scrooloose/nerdcommenter'
@@ -31,16 +25,10 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'int3/vim-taglist-plus'
-NeoBundle 'xolox/vim-easytags'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'slim-template/vim-slim'
 NeoBundle 'michalliu/jsruntime.vim'
-NeoBundle 'tpope/vim-cucumber'
-NeoBundle 'michalliu/jsoncodecs.vim'
-NeoBundle 'maksimr/vim-jsbeautify'
-NeoBundle 'einars/js-beautify'
 NeoBundle 'briancollins/vim-jst'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'goldfeld/vim-seek'
@@ -48,10 +36,7 @@ NeoBundle 'tristen/vim-sparkup'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'xolox/vim-misc'
-NeoBundle 'garbas/vim-snipmate'
-NeoBundle 'MarcWeber/vim-addon-mw-utils'
 NeoBundle 'tomtom/tlib_vim'
-NeoBundle 'honza/vim-snippets'
 NeoBundle 'mustache/vim-mustache-handlebars'
 NeoBundle 'mhinz/vim-signify'
 NeoBundle 'Shougo/vimproc.vim', {
@@ -90,7 +75,7 @@ set number
 
 " swap files
 set directory=~/.vim/.cache/swap
-set noswapfile
+"set noswapfile
 
 autocmd BufNewFile,BufRead *.scss set ft=scss.css     " highlight scss as css
 autocmd BufRead,BufNewFile *.md set filetype=markdown " recognize .md as markdown
@@ -111,17 +96,16 @@ let Tlist_Inc_Winwidth = 0
 let g:seek_subst_disable = 1
 
 " set up some custom colors
-highlight diffchange   term=reverse cterm=bold ctermbg=cyan ctermfg=black
-highlight difftext     term=reverse cterm=bold ctermbg=gray ctermfg=black
-highlight diffdelete   term=reverse cterm=bold ctermbg=red ctermfg=black
-highlight incsearch    ctermbg=0    ctermfg=3
-highlight search       ctermbg=0    ctermfg=9
-highlight visual       ctermbg=3    ctermfg=0
-highlight pmenu        ctermbg=240  ctermfg=12
-highlight pmenusel     ctermbg=0    ctermfg=3
-highlight spellbad     ctermbg=0    ctermfg=1
+"highlight diffchange   term=reverse cterm=bold ctermbg=cyan ctermfg=black
+"highlight difftext     term=reverse cterm=bold ctermbg=gray ctermfg=black
+"highlight diffdelete   term=reverse cterm=bold ctermbg=red ctermfg=black
+"highlight incsearch    ctermbg=0    ctermfg=3
+"highlight search       ctermbg=0    ctermfg=9
+"highlight visual       ctermbg=3    ctermfg=0
+"highlight pmenu        ctermbg=240  ctermfg=12
+"highlight pmenusel     ctermbg=0    ctermfg=3
+"highlight spellbad     ctermbg=0    ctermfg=1
 
-ca formatjson %!python -m json.tool
 
 map ; :
 noremap ;; :
