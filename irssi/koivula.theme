@@ -1,6 +1,6 @@
 # For irssi 0.7.98 by Koivula@ircnet
 
-replaces = {};
+replaces = { };
 
 abstracts = {
   ##

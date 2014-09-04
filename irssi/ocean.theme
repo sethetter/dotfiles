@@ -1,6 +1,6 @@
 # For irssi 0.7.98 by tjamtjam
 
-replaces = {};
+replaces = { };
 
 abstracts = {
   ##
@@ -178,8 +178,8 @@ abstracts = {
   # DCC chat, others
   dccmsg = "*%c=$1-%n* ";
   dccquerynick = "$0-";
-  dccaction = " (*dcc*) $0- %|"; 
-}; 
+  dccaction = " (*dcc*) $0- %|";
+};
 formats = {
   "fe-common/core" = {
     join = "%BJoins%n[{channel $2}] %c->%n{channick_hilight $0} {chanhost_hilight $1}";

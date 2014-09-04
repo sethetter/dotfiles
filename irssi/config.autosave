@@ -1,7 +1,7 @@
 servers = (
   {
     address = "morgan.freenode.net";
-    chatnet = "IRCnet";
+    chatnet = "freenode";
     port = "6667";
     use_ssl = "no";
     ssl_verify = "no";
@@ -9,7 +9,7 @@ servers = (
   },
   {
     address = "chat.freenode.net";
-    chatnet = "IRCnet";
+    chatnet = "freenode2";
     port = "6667";
     use_ssl = "no";
     ssl_verify = "no";
@@ -80,6 +80,8 @@ chatnets = {
     max_whois = "30";
   };
   SILC = { type = "SILC"; };
+  freenode = { type = "IRC"; };
+  freenode2 = { type = "IRC"; };
 };
 
 channels = (
@@ -261,6 +263,7 @@ settings = {
     irssinotifier_api_token = "9e46e6ad-b98f-47c9-9982-44e72664a55b";
     irssinotifier_encryption_password = "password";
   };
+  proxy = { irssiproxy_ports = "freenode=6688"; };
 };
 
 ignores = (
@@ -297,5 +300,13 @@ ignores = (
   { level = "MODES"; channels = ( "&bitlbee" ); }
 );
 
-logs = { };
+logs = {
+  "~/.irclogs/freenode/devict/devict-%Y-%m-%d" = {
+    auto_open = "yes";
+    level = "ALL";
+    items = (
+      { type = "target"; name = "#devict"; server = "freenode"; }
+    );
+  };
+};
 hilights = ( { text = "sethetter"; nick = "yes"; word = "yes"; } );
