@@ -73,6 +73,7 @@ set laststatus=2
 set softtabstop=2             " how far to backspace over tabs
 set backspace=indent,eol,start
 set number
+set nowrap
 
 " swap files
 set directory=~/.vim/.cache/swap
