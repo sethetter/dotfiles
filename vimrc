@@ -112,6 +112,9 @@ let g:seek_subst_disable = 1
 map ; :
 noremap ;; :
 
+" Search for highlighted text with //
+vnorem // y/<c-r>"<cr>
+
 " Remap C-h,j,k,l for Movement Between Panes
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
