@@ -44,7 +44,8 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export ANDROID_HOME=$HOME/opt/local/adt-bundle-mac-x86_64-20140702/sdk
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$HOME/.rvm/bin
 # Vim Mode
 
 bindkey -v
