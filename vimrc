@@ -82,6 +82,9 @@ set directory=~/.vim/.cache/swap
 autocmd BufNewFile,BufRead *.scss set ft=scss.css     " highlight scss as css
 autocmd BufRead,BufNewFile *.md set filetype=markdown " recognize .md as markdown
 
+" Use old regex engine, new one is slow apparently
+set re=1
+
 " Sparkup Settings
 let g:sparkupMappingInsertModeOnly = 1
 let g:sparkupDoubleQuote = 1
@@ -115,6 +118,9 @@ noremap ;; :
 " Search for highlighted text with //
 vnorem // y/<c-r>"<cr>
 
+" Stole this from keelerm84, w00t
+nmap <leader>bd :bp\|bd#<CR>
+
 " Remap C-h,j,k,l for Movement Between Panes
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
@@ -136,7 +142,7 @@ let g:unite_data_directory='~/.vim/cache/unite'
 let g:unite_source_history_yank_enable = 1
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 call unite#filters#sorter_default#use(['sorter_rank'])
-let g:unite_source_file_rec_max_cache_files = 100000
+let g:unite_source_file_rec_max_cache_files = 0
 
 let g:unite_source_grep_command = 'ag'
 let g:unite_source_grep_default_opts =
@@ -144,9 +150,9 @@ let g:unite_source_grep_default_opts =
       \  '''.hg'' --ignore ''.svn'' --ignore ''.git'' --ignore ''.bzr'''
 let g:unite_source_grep_recursive_opt = ''
 
-nnoremap <leader>t :<C-u>Unite -no-split -buffer-name=files   -start-insert file_rec/async<cr>
+"nnoremap <leader>t :<C-u>Unite -no-split -buffer-name=files   -start-insert file_rec/async<cr>
 "nnoremap <leader>t :<C-u>Unite -no-split -buffer-name=files   -start-insert file_rec/async:!<cr>
-"nnoremap <leader>t :<C-u>Unite -no-split -buffer-name=files   -start-insert file_rec:!<cr>
+nnoremap <leader>t :<C-u>Unite -no-split -buffer-name=files   -start-insert file_rec:!<cr>
 nnoremap <leader>f :<C-u>Unite -no-split -buffer-name=files   -start-insert file<cr>
 nnoremap <leader>y :<C-u>Unite -no-split -buffer-name=yank    history/yank<cr>
 nnoremap <leader>e :<C-u>Unite -no-split -buffer-name=buffer  -start-insert buffer<cr>
