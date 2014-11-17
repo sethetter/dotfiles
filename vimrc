@@ -17,15 +17,12 @@ NeoBundle 'vim-scripts/genutils'
 NeoBundle 'mattn/gist-vim'
 NeoBundle 'intuited/lh-vim-lib'
 NeoBundle 'gregsexton/MatchTag'
-NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'jistr/vim-nerdtree-tabs'
 NeoBundle 'myusuf3/numbers.vim'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'editorconfig/editorconfig-vim'
-NeoBundle 'godlygeek/tabular'
-NeoBundle 'int3/vim-taglist-plus'
-NeoBundle 'ngmy/vim-rubocop'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'pangloss/vim-javascript'
@@ -180,7 +177,7 @@ endfunction
 
 " Other Shortcuts
 nnoremap <C-t> <Esc>:tabnew<CR>
-nnoremap <leader>n <Esc>:NERDTreeToggle<CR>
+nnoremap <leader>n <Esc>:NERDTreeTabsToggle<CR>
 nnoremap <leader>T <Esc>:TlistToggle<CR>
 
 "Load local vimrc
