@@ -48,6 +48,8 @@ source $ZSH/oh-my-zsh.sh
 
 export ANDROID_HOME=$HOME/opt/local/adt-bundle-mac-x86_64-20140702/sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$HOME/.rvm/bin
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
 # Vim Mode
 
 bindkey -v
@@ -72,5 +74,3 @@ function zle-line-init zle-keymap-select {
 zle -N zle-line-init
 zle -N zle-keymap-select
 export KEYTIMEOUT=1
-
-source ~/.profile
