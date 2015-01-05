@@ -131,7 +131,7 @@ nnoremap <leader>gd <Esc>:Gdiff<CR>
 nnoremap <leader>gc <Esc>:Gcommit<CR>
 nnoremap <leader>gb <Esc>:Gblame<CR>
 nnoremap <leader>gl <Esc>:Glog<CR>
-nnoremap <leader>gg <Esc>:Gbrowse<CR>
+nnoremap <leader>go <Esc>:Gbrowse<CR>
 nnoremap <leader>gp <Esc>:Git push<CR>
 nnoremap <leader>gu <Esc>:Git pull<CR>
 
