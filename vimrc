@@ -38,6 +38,7 @@ NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'mustache/vim-mustache-handlebars'
 NeoBundle 'mhinz/vim-signify'
 NeoBundle 'jsx/jsx.vim'
+NeoBundle 'chrisbra/NrrwRgn'
 NeoBundle 'Shougo/vimproc.vim', {
       \ 'build' : {
       \     'windows' : 'make -f make_mingw32.mak',
@@ -78,6 +79,7 @@ set directory=~/.vim/.cache/swap
 "set noswapfile
 
 autocmd BufNewFile,BufRead *.scss set ft=scss.css     " highlight scss as css
+autocmd BufNewFile,BufRead *.json set ft=json         " prevents loading json as JS and validating
 autocmd BufRead,BufNewFile *.md set filetype=markdown " recognize .md as markdown
 
 " Use old regex engine, new one is slow apparently
