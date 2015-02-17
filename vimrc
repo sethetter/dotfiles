@@ -87,7 +87,7 @@ autocmd BufRead,BufNewFile *.md set filetype=markdown " recognize .md as markdow
 set re=1
 
 " Highlight columns different color past 80
-let &colorcolumn=join(range(81,999),",")
+" let &colorcolumn=join(range(81,999),",")
 
 " Sparkup Settings
 let g:sparkupMappingInsertModeOnly = 1
