@@ -39,6 +39,7 @@ NeoBundle 'mustache/vim-mustache-handlebars'
 NeoBundle 'mhinz/vim-signify'
 NeoBundle 'jsx/jsx.vim'
 NeoBundle 'chrisbra/NrrwRgn'
+NeoBundle 'vimwiki/vimwiki'
 NeoBundle 'Shougo/vimproc.vim', {
       \ 'build' : {
       \     'windows' : 'make -f make_mingw32.mak',
@@ -190,5 +191,8 @@ nnoremap <C-tab>   :tabnext<CR>
 if filereadable(glob("./.vimrc.local"))
   source ./.vimrc.local
 endif
+
+" Set vimwiki directory
+let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki/', 'path_html': '~/Dropbox/vimwiki_html/', 'auto_export': '1'}]
 
 NeoBundleCheck
