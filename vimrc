@@ -86,6 +86,9 @@ autocmd BufRead,BufNewFile *.md set filetype=markdown " recognize .md as markdow
 " Use old regex engine, new one is slow apparently
 set re=1
 
+" Highlight columns different color past 80
+let &colorcolumn=join(range(81,999),",")
+
 " Sparkup Settings
 let g:sparkupMappingInsertModeOnly = 1
 let g:sparkupDoubleQuote = 1
