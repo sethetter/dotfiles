@@ -49,6 +49,7 @@ source $ZSH/oh-my-zsh.sh
 export ANDROID_HOME=$HOME/opt/local/adt-bundle-mac-x86_64-20140702/sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$HOME/.rvm/bin
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+[[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh" # This loads NVM
 
 # Vim Mode
 

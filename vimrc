@@ -157,8 +157,8 @@ let g:unite_source_grep_default_opts =
 let g:unite_source_grep_recursive_opt = ''
 
 "nnoremap <leader>t :<C-u>Unite -no-split -buffer-name=files   -start-insert file_rec/async<cr>
-"nnoremap <leader>t :<C-u>Unite -no-split -buffer-name=files   -start-insert file_rec/async:!<cr>
-nnoremap <leader>t :<C-u>Unite -no-split -buffer-name=files   -start-insert file_rec:!<cr>
+nnoremap <leader>t :<C-u>Unite -no-split -buffer-name=files   -start-insert file_rec/async:!<cr>
+"nnoremap <leader>t :<C-u>Unite -no-split -buffer-name=files   -start-insert file_rec:!<cr>
 nnoremap <leader>f :<C-u>Unite -no-split -buffer-name=files   -start-insert file<cr>
 nnoremap <leader>y :<C-u>Unite -no-split -buffer-name=yank    history/yank<cr>
 nnoremap <leader>e :<C-u>Unite -no-split -buffer-name=buffer  -start-insert buffer<cr>
@@ -174,7 +174,7 @@ set wildignore+=*.sass-cache*
 set wildignore+=*tmp*
 
 " Tell Unite to ignore certain folders for file_rec search
-call unite#custom_source('file,file/new,buffer,file_rec', 'ignore_pattern', escape(substitute(join(split(&wildignore, ","), '\|'), '**/\?', "", "g"), '.'))
+call unite#custom_source('file,file/new,buffer,file_rec,file_rec/async', 'ignore_pattern', escape(substitute(join(split(&wildignore, ","), '\|'), '**/\?', "", "g"), '.'))
 
 autocmd FileType unite call s:unite_settings()
 function! s:unite_settings()
