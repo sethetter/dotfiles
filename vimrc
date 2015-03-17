@@ -18,8 +18,6 @@ NeoBundle 'mattn/gist-vim'
 NeoBundle 'intuited/lh-vim-lib'
 NeoBundle 'gregsexton/MatchTag'
 NeoBundle 'scrooloose/nerdcommenter'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'jistr/vim-nerdtree-tabs'
 NeoBundle 'myusuf3/numbers.vim'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'editorconfig/editorconfig-vim'
@@ -37,8 +35,6 @@ NeoBundle 'xolox/vim-misc'
 NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'mustache/vim-mustache-handlebars'
 NeoBundle 'mhinz/vim-signify'
-NeoBundle 'jsx/jsx.vim'
-NeoBundle 'chrisbra/NrrwRgn'
 NeoBundle 'vimwiki/vimwiki'
 NeoBundle 'Shougo/vimproc.vim', {
       \ 'build' : {
@@ -117,9 +113,6 @@ let g:seek_subst_disable = 1
 "highlight spellbad     ctermbg=0    ctermfg=1
 
 
-map ; :
-noremap ;; :
-
 " Search for highlighted text with //
 vnorem // y/<c-r>"<cr>
 
@@ -186,7 +179,7 @@ endfunction
 
 " Other Shortcuts
 nnoremap <C-t> <Esc>:tabnew<CR>
-nnoremap <leader>n <Esc>:NERDTreeTabsToggle<CR>
+"nnoremap <leader>n <Esc>:NERDTreeTabsToggle<CR>
 nnoremap <leader>T <Esc>:TlistToggle<CR>
 nnoremap <C-S-tab> :tabprevious<CR>
 nnoremap <C-tab>   :tabnext<CR>
