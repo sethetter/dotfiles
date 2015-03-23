@@ -181,7 +181,7 @@ endfunction
 
 " Other Shortcuts
 nnoremap <C-t> <Esc>:tabnew<CR>
-nnoremap <leader>n <Esc>:NERDTreeTabsToggle<CR>
+nnoremap <leader>n <Esc>:NERDTreeToggle<CR>
 nnoremap <leader>T <Esc>:TlistToggle<CR>
 nnoremap <C-S-tab> :tabprevious<CR>
 nnoremap <C-tab>   :tabnext<CR>
