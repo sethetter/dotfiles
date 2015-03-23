@@ -18,6 +18,7 @@ NeoBundle 'mattn/gist-vim'
 NeoBundle 'intuited/lh-vim-lib'
 NeoBundle 'gregsexton/MatchTag'
 NeoBundle 'scrooloose/nerdcommenter'
+NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'myusuf3/numbers.vim'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'editorconfig/editorconfig-vim'
@@ -36,6 +37,7 @@ NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'mustache/vim-mustache-handlebars'
 NeoBundle 'mhinz/vim-signify'
 NeoBundle 'vimwiki/vimwiki'
+NeoBundle 'fatih/vim-go'
 NeoBundle 'Shougo/vimproc.vim', {
       \ 'build' : {
       \     'windows' : 'make -f make_mingw32.mak',
@@ -179,7 +181,7 @@ endfunction
 
 " Other Shortcuts
 nnoremap <C-t> <Esc>:tabnew<CR>
-"nnoremap <leader>n <Esc>:NERDTreeTabsToggle<CR>
+nnoremap <leader>n <Esc>:NERDTreeTabsToggle<CR>
 nnoremap <leader>T <Esc>:TlistToggle<CR>
 nnoremap <C-S-tab> :tabprevious<CR>
 nnoremap <C-tab>   :tabnext<CR>
