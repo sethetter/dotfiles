@@ -38,6 +38,7 @@ NeoBundle 'mustache/vim-mustache-handlebars'
 NeoBundle 'mhinz/vim-signify'
 NeoBundle 'vimwiki/vimwiki'
 NeoBundle 'fatih/vim-go'
+NeoBundle 'mxw/vim-jsx'
 NeoBundle 'Shougo/vimproc.vim', {
       \ 'build' : {
       \     'windows' : 'make -f make_mingw32.mak',
