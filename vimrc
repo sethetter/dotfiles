@@ -24,7 +24,7 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'michalliu/jsruntime.vim'
 NeoBundle 'briancollins/vim-jst'
@@ -52,12 +52,12 @@ NeoBundle 'Shougo/vimproc.vim', {
 
 let mapleader = ","
 
-syntax on                     " syntax highlighting
+syntax enable                     " syntax highlighting
 
 " set main theme and airline theme
-set background=dark
+set background=light
 colorscheme solarized
-hi Normal ctermbg=NONE
+"hi Normal ctermbg=NONE
 let g:airline_theme='solarized'
 
 filetype plugin indent on     " filetype specific indentation
