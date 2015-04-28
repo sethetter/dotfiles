@@ -57,7 +57,6 @@ syntax enable                     " syntax highlighting
 " set main theme and airline theme
 set background=light
 colorscheme solarized
-"hi Normal ctermbg=NONE
 let g:airline_theme='solarized'
 
 filetype plugin indent on     " filetype specific indentation
@@ -88,9 +87,6 @@ autocmd BufRead,BufNewFile *.md set filetype=markdown " recognize .md as markdow
 " Use old regex engine, new one is slow apparently
 set re=1
 
-" Highlight columns different color past 80
-" let &colorcolumn=join(range(81,999),",")
-
 " Sparkup Settings
 let g:sparkupMappingInsertModeOnly = 1
 let g:sparkupDoubleQuote = 1
@@ -98,25 +94,10 @@ let g:sparkupDoubleQuote = 1
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'passive_filetypes': ['html', 'cucumber', 'feature', 'scss', 'sass'] }
 
-" Taglist
-let Tlist_Use_Right_Window = 1
-let Tlist_WinWidth = 50
-let Tlist_Inc_Winwidth = 0
+let g:syntastic_javascript_checkers = ['standard']
 
 " vim-seek; disable 's' as substitute
 let g:seek_subst_disable = 1
-
-" set up some custom colors
-"highlight diffchange   term=reverse cterm=bold ctermbg=cyan ctermfg=black
-"highlight difftext     term=reverse cterm=bold ctermbg=gray ctermfg=black
-"highlight diffdelete   term=reverse cterm=bold ctermbg=red ctermfg=black
-"highlight incsearch    ctermbg=0    ctermfg=3
-"highlight search       ctermbg=0    ctermfg=9
-"highlight visual       ctermbg=3    ctermfg=0
-"highlight pmenu        ctermbg=240  ctermfg=12
-"highlight pmenusel     ctermbg=0    ctermfg=3
-"highlight spellbad     ctermbg=0    ctermfg=1
-
 
 " Search for highlighted text with //
 vnorem // y/<c-r>"<cr>

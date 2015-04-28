@@ -65,6 +65,7 @@ bindkey '^r' history-incremental-search-backward
 #balanced-comp
 alias foreman-start-dev="bundle exec foreman start -f Procfile.dev"
 alias foreman-start="bundle exec foreman start -f Procfile"
+alias dokku-bc='ssh -t root@dokku-bc dokku'
 
 function zle-line-init zle-keymap-select {
     VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
