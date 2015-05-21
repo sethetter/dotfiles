@@ -48,8 +48,6 @@ source $ZSH/oh-my-zsh.sh
 
 export ANDROID_HOME=$HOME/opt/local/adt-bundle-mac-x86_64-20140702/sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$HOME/.rvm/bin
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-[[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh" # This loads NVM
 
 # Vim Mode
 
@@ -65,7 +63,7 @@ bindkey '^r' history-incremental-search-backward
 #balanced-comp
 alias foreman-start-dev="bundle exec foreman start -f Procfile.dev"
 alias foreman-start="bundle exec foreman start -f Procfile"
-alias dokku-bc='ssh -t root@dokku-bc dokku'
+alias dokku-bc='ssh -t root@dokku-test dokku'
 
 function zle-line-init zle-keymap-select {
     VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
@@ -77,3 +75,6 @@ zle -N zle-line-init
 zle -N zle-keymap-select
 export KEYTIMEOUT=1
 eval `boot2docker shellinit 2>/dev/null`
+
+[[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh" # This loads NVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

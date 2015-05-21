@@ -55,9 +55,19 @@ let mapleader = ","
 syntax enable                     " syntax highlighting
 
 " set main theme and airline theme
+let theme = $THEME
+
 set background=light
+
+if theme == 'dark'
+  set background=dark
+endif
+
+
 colorscheme solarized
 let g:airline_theme='solarized'
+
+hi Normal ctermbg=NONE
 
 filetype plugin indent on     " filetype specific indentation
 set t_Co=256                  " 256 colors

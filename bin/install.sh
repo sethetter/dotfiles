@@ -26,6 +26,12 @@ ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 `mv ~/.tmux.conf ~/._tmux.conf.backup`
 `ln -s ${ABSPATH}/tmux.conf ~/.tmux.conf`
 
+`mv ~/.tmux.light.conf ~/._tmux.light.conf.backup`
+`ln -s ${ABSPATH}/tmux.light.conf ~/.tmux.light.conf`
+
+`mv ~/.tmux.dark.conf ~/._tmux.dark.conf.backup`
+`ln -s ${ABSPATH}/tmux.dark.conf ~/.tmux.dark.conf`
+
 # Zsh Files
 #------------------------------------------------------------
 `mv ~/.zprofile ~/._zprofile.backup`
