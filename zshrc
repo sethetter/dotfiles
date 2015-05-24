@@ -7,7 +7,9 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="bira"
 #ZSH_THEME="nebirhos"
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
+#ZSH_THEME="avit"
+ZSH_THEME="seth"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -42,7 +44,7 @@ DISABLE_AUTO_TITLE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git rails ruby rvm)
 
 source $ZSH/oh-my-zsh.sh
 
