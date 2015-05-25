@@ -37,6 +37,7 @@ NeoBundle 'xolox/vim-misc'
 NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'mustache/vim-mustache-handlebars'
 NeoBundle 'mhinz/vim-signify'
+NeoBundle 'vim-scripts/taglist.vim'
 NeoBundle 'vimwiki/vimwiki'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'aquach/vim-http-client'
@@ -130,6 +131,10 @@ nnoremap <leader>gl <Esc>:Glog<CR>
 nnoremap <leader>go <Esc>:Gbrowse<CR>
 nnoremap <leader>gp <Esc>:Git push<CR>
 nnoremap <leader>gu <Esc>:Git pull<CR>
+
+" Taglist
+let g:Tlist_GainFocus_On_ToggleOpen = 1
+let g:Tlist_Use_Right_Window = 1
 
 " Unite
 let g:unite_prompt='» '

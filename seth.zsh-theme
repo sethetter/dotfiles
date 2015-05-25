@@ -58,7 +58,7 @@ function _vi_status() {
 
 function _ruby_version() {
   if {echo $fpath | grep -q "plugins/rvm"}; then
-    echo "%{$fg[grey]%}$(rvm_prompt_info)%{$reset_color%}"
+    echo "%{$fg[light-grey]%}$(rvm_prompt_info)%{$reset_color%}"
   fi
 }
 
