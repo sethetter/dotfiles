@@ -27,8 +27,10 @@
 ## ------------------------------------------------------------------
 # AVIT ZSH Theme
 
+local _nvm_node="(node-$(node -v))"
+
 PROMPT='
-$(_user_host)${_current_dir} $(git_prompt_info) $(_ruby_version)
+$(_user_host)${_current_dir} $(git_prompt_info) $(_ruby_version) ${_nvm_node}
 ➜ '
 
 PROMPT2='%{$fg[grey]%}◀%{$reset_color%} '
