@@ -59,10 +59,10 @@ syntax enable                     " syntax highlighting
 " set main theme and airline theme
 let theme = $THEME
 
-set background=light
+set background=dark
 
-if theme == 'dark'
-  set background=dark
+if theme == 'light'
+  set background=light
 endif
 
 
