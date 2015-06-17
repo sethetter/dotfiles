@@ -27,10 +27,8 @@
 ## ------------------------------------------------------------------
 # AVIT ZSH Theme
 
-local _nvm_node="(node-$(node -v))"
-
 PROMPT='
-$(_user_host)${_current_dir} $(git_prompt_info) $(_ruby_version) ${_nvm_node}
+$(_user_host)${_current_dir} $(git_prompt_info) $(_ruby_version) $(_nvm_node)
 ➜ '
 
 PROMPT2='%{$fg[grey]%}◀%{$reset_color%} '
@@ -62,6 +60,10 @@ function _ruby_version() {
   if {echo $fpath | grep -q "plugins/rvm"}; then
     echo "%{$fg[light-grey]%}$(rvm_prompt_info)%{$reset_color%}"
   fi
+}
+
+function _nvm_node {
+  echo "(node-$(node -v))"
 }
 
 # Determine the time since last commit. If branch is clean,
