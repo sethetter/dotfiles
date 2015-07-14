@@ -44,12 +44,17 @@ DISABLE_AUTO_TITLE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rails ruby rvm)
+plugins=(git rails ruby rvm go)
 
 source $ZSH/oh-my-zsh.sh
 
+export GOPATH=$HOME/go
 export ANDROID_HOME=$HOME/opt/local/adt-bundle-mac-x86_64-20140702/sdk
-export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$HOME/.rvm/bin
+
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$HOME/.rvm/bin
+export PATH=$PATH:$GOPATH
 
 # Vim Mode
 
