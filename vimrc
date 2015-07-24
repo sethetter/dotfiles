@@ -43,6 +43,7 @@ NeoBundle 'vimwiki/vimwiki'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'aquach/vim-http-client'
 NeoBundle 'mxw/vim-jsx'
+NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'Shougo/vimproc.vim', {
       \ 'build' : {
       \     'windows' : 'make -f make_mingw32.mak',
