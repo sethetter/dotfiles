@@ -193,6 +193,6 @@ if filereadable(glob("./.vimrc.local"))
 endif
 
 " Set vimwiki directory
-let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki/', 'path_html': '~/Dropbox/vimwiki_html/', 'auto_export': '1'}]
+let g:vimwiki_list = [{'path': '~/Google\ Drive/vimwiki/', 'path_html': '~/Google\ Drive/vimwiki_html/', 'auto_export': '1'}]
 
 NeoBundleCheck
