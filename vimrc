@@ -19,6 +19,7 @@ NeoBundle 'intuited/lh-vim-lib'
 NeoBundle 'gregsexton/MatchTag'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'jistr/vim-nerdtree-tabs'
 NeoBundle 'myusuf3/numbers.vim'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'editorconfig/editorconfig-vim'
@@ -44,6 +45,8 @@ NeoBundle 'fatih/vim-go'
 NeoBundle 'aquach/vim-http-client'
 NeoBundle 'mxw/vim-jsx'
 NeoBundle 'elixir-lang/vim-elixir'
+NeoBundle 'mattreduce/vim-mix'
+NeoBundle 'diepm/vim-rest-console'
 NeoBundle 'Shougo/vimproc.vim', {
       \ 'build' : {
       \     'windows' : 'make -f make_mingw32.mak',
@@ -182,7 +185,7 @@ endfunction
 
 " Other Shortcuts
 nnoremap <C-t> <Esc>:tabnew<CR>
-nnoremap <leader>n <Esc>:NERDTreeToggle<CR>
+nnoremap <leader>n <Esc>:NERDTreeTabsToggle<CR>
 nnoremap <leader>T <Esc>:TlistToggle<CR>
 nnoremap <C-S-tab> :tabprevious<CR>
 nnoremap <C-tab>   :tabnext<CR>
@@ -194,5 +197,8 @@ endif
 
 " Set vimwiki directory
 let g:vimwiki_list = [{'path': '~/Google\ Drive/vimwiki/', 'path_html': '~/Google\ Drive/vimwiki_html/', 'auto_export': '1'}]
+
+" Macros!
+imap <C-l> file_put_contents('<esc>"dpA', ."\n\n", FILE_APPEND);<esc>bb9hi
 
 NeoBundleCheck
