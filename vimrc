@@ -8,45 +8,14 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+" Utility
 NeoBundle 'L9'
-NeoBundle 'bling/vim-airline'
 NeoBundle 'mattn/webapi-vim'
-NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'vim-scripts/genutils'
-NeoBundle 'mattn/gist-vim'
 NeoBundle 'intuited/lh-vim-lib'
-NeoBundle 'gregsexton/MatchTag'
-NeoBundle 'scrooloose/nerdcommenter'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'jistr/vim-nerdtree-tabs'
-NeoBundle 'myusuf3/numbers.vim'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'editorconfig/editorconfig-vim'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'michalliu/jsruntime.vim'
-NeoBundle 'briancollins/vim-jst'
-NeoBundle 'groenewege/vim-less'
-NeoBundle 'goldfeld/vim-seek'
-NeoBundle 'tristen/vim-sparkup'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'tpope/vim-surround'
+NeoBundle 'vim-scripts/genutils'
 NeoBundle 'xolox/vim-misc'
 NeoBundle 'tomtom/tlib_vim'
-NeoBundle 'mustache/vim-mustache-handlebars'
-NeoBundle 'mhinz/vim-signify'
-NeoBundle 'vim-scripts/taglist.vim'
-NeoBundle 'vimwiki/vimwiki'
-NeoBundle 'fatih/vim-go'
-NeoBundle 'aquach/vim-http-client'
-NeoBundle 'mxw/vim-jsx'
-NeoBundle 'elixir-lang/vim-elixir'
-NeoBundle 'mattreduce/vim-mix'
-NeoBundle 'diepm/vim-rest-console'
+NeoBundle 'michalliu/jsruntime.vim'
 NeoBundle 'Shougo/vimproc.vim', {
       \ 'build' : {
       \     'windows' : 'make -f make_mingw32.mak',
@@ -55,6 +24,42 @@ NeoBundle 'Shougo/vimproc.vim', {
       \     'unix' : 'make -f make_unix.mak',
       \    },
       \ }
+
+" Syntax / editing
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'editorconfig/editorconfig-vim'
+NeoBundle 'gregsexton/MatchTag'
+
+" Movement / editing
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'goldfeld/vim-seek'
+NeoBundle 'tpope/vim-surround'
+
+" Git / Github
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'mhinz/vim-signify'
+NeoBundle 'mattn/gist-vim'
+
+" Interface addons
+NeoBundle 'bling/vim-airline'
+NeoBundle 'myusuf3/numbers.vim'
+NeoBundle 'scrooloose/nerdcommenter'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'jistr/vim-nerdtree-tabs'
+NeoBundle 'vim-scripts/taglist.vim'
+
+" Languages
+NeoBundle 'tristen/vim-sparkup'
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'briancollins/vim-jst'
+NeoBundle 'groenewege/vim-less'
+
+" Misc
+NeoBundle 'aquach/vim-http-client'
+NeoBundle 'diepm/vim-rest-console'
 
 let mapleader = ","
 
@@ -94,8 +99,9 @@ set textwidth=80
 
 " swap files
 set directory=~/.vim/.cache/swap
-"set noswapfile
+set nobackup
 
+" File extension handling
 autocmd BufNewFile,BufRead *.scss set ft=scss.css     " highlight scss as css
 autocmd BufNewFile,BufRead *.json set ft=json         " prevents loading json as JS and validating
 autocmd BufRead,BufNewFile *.md set filetype=markdown " recognize .md as markdown
@@ -201,9 +207,6 @@ nnoremap <C-tab>   :tabnext<CR>
 if filereadable(glob("./.vimrc.local"))
   source ./.vimrc.local
 endif
-
-" Set vimwiki directory
-let g:vimwiki_list = [{'path': '~/Google\ Drive/vimwiki/', 'path_html': '~/Google\ Drive/vimwiki_html/', 'auto_export': '0'}]
 
 " Macros!
 imap <C-l> file_put_contents('<esc>"dpA', ."\n\n", FILE_APPEND);<esc>bb9hi
