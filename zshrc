@@ -5,10 +5,6 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="bira"
-#ZSH_THEME="nebirhos"
-#ZSH_THEME="robbyrussell"
-#ZSH_THEME="avit"
 ZSH_THEME="seth"
 
 # Example aliases
@@ -44,52 +40,28 @@ DISABLE_AUTO_TITLE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rails ruby rvm go)
+plugins=(vi-mode)
+
+export TERM='xterm-256color'
+export EDITOR=vim
+
+alias tmux='tmux -2'
+alias gitlog='git log --oneline'
+alias se-dev='ssh seth@se-dev'
 
 source $ZSH/oh-my-zsh.sh
 
-export GOPATH=$HOME/go
-#export ANDROID_HOME=/Volumes/Haroldjack/adt-bundle-mac-x86_64-20140702/sdk
-#export PATH=$PATH:$ANDROID_HOME/tools
-#export PATH=$PATH:$ANDROID_HOME/platform-tools
+export GO_PATH=$HOME/go
+export RBENV_PATH=$HOME/.rbenv/bin
+export COMPOSER_PATH=$HOME/.composer/vendor/bin
 
-export PATH=$PATH:$HOME/.rvm/bin
-export PATH=$PATH:$GOPATH
+export PATH=$PATH:$RBENV_PATH
+export PATH=$PATH:$GO_PATH
+export PATH=$PATH:$COMPOSER_PATH
 
-# Vim Mode
+# copy last commit sha
+alias last-commit="git log --oneline -n 1 | cut -c 1-7"
+alias copy-last-commit="git log --oneline -n 1 | cut -c 1-7 | pbcopy"
 
-bindkey -v
-
-bindkey '^P' up-history
-bindkey '^N' down-history
-bindkey '^?' backward-delete-char
-bindkey '^h' backward-delete-char
-bindkey '^w' backward-kill-word
-bindkey '^r' history-incremental-search-backward
-
-#balanced-comp
-alias foreman-start-dev="bundle exec foreman start -f Procfile.dev"
-alias foreman-start="bundle exec foreman start -f Procfile"
-alias dokku-bc='ssh -t root@dokku-test dokku'
-
-function zle-line-init zle-keymap-select {
-    VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
-    RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} $EPS1"
-    zle reset-prompt
-}
-
-zle -N zle-line-init
-zle -N zle-keymap-select
-export KEYTIMEOUT=1
-eval `boot2docker shellinit 2>/dev/null`
-
-[[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh" # This loads NVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-# Add GHC 7.8.4 to the PATH, via http://ghcformacosx.github.io/
-export GHC_DOT_APP="/Applications/ghc-7.8.4.app"
-if [ -d "$GHC_DOT_APP" ]; then
-  export PATH="${HOME}/.cabal/bin:${GHC_DOT_APP}/Contents/bin:${PATH}"
-fi
-
-export PATH="${PATH}:~/.composer/vendor/bin"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi # This load rbenv
+[[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh" # This loads nvm

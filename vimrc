@@ -141,6 +141,22 @@ nnoremap <leader>gu <Esc>:Git pull<CR>
 let g:Tlist_GainFocus_On_ToggleOpen = 1
 let g:Tlist_Use_Right_Window = 1
 
+" Ignores!
+set wildignore+=.git*
+set wildignore+=*node_modules*
+set wildignore+=*bower_components*
+set wildignore+=*.bower-cache*
+set wildignore+=*.bower-registry*
+set wildignore+=*.vagrant*
+set wildignore+=*vendor*
+set wildignore+=*.sass-cache*
+set wildignore+=*tmp*
+
+" Project specific ignores
+" -- Madison
+set wildignore+=public/build
+
+" Tell Unite to ignore certain folders for file_rec search
 " Unite
 let g:unite_prompt='» '
 let g:unite_data_directory='~/.vim/cache/unite'
@@ -152,7 +168,8 @@ let g:unite_source_file_rec_max_cache_files = 0
 let g:unite_source_grep_command = 'ag'
 let g:unite_source_grep_default_opts =
       \ '--line-numbers --nocolor --nogroup --hidden --ignore ' .
-      \  '''.hg'' --ignore ''.svn'' --ignore ''.git'' --ignore ''.bzr'''
+      \ substitute(join(split(&wildignore, ","), ' --ignore '), " \*", "", "g")
+
 let g:unite_source_grep_recursive_opt = ''
 
 "nnoremap <leader>t :<C-u>Unite -no-split -buffer-name=files   -start-insert file_rec/async<cr>
@@ -163,17 +180,7 @@ nnoremap <leader>y :<C-u>Unite -no-split -buffer-name=yank    history/yank<cr>
 nnoremap <leader>e :<C-u>Unite -no-split -buffer-name=buffer  -start-insert buffer<cr>
 nnoremap <leader>/ :<C-u>Unite -no-split -buffer-name=grep    -start-insert grep:.<cr>
 
-set wildignore+=.git*
-set wildignore+=*node_modules*
-set wildignore+=*bower_components*
-set wildignore+=*.bower-cache*
-set wildignore+=*.bower-registry*
-set wildignore+=*.vagrant*
-set wildignore+=*.sass-cache*
-set wildignore+=*tmp*
-
-" Tell Unite to ignore certain folders for file_rec search
-call unite#custom_source('file,file/new,buffer,file_rec,file_rec/async', 'ignore_pattern', escape(substitute(join(split(&wildignore, ","), '\|'), '**/\?', "", "g"), '.'))
+call unite#custom_source('grep,file,file/new,buffer,file_rec,file_rec/async', 'ignore_pattern', escape(substitute(join(split(&wildignore, ","), '\|'), '**/\?', "", "g"), '.'))
 
 autocmd FileType unite call s:unite_settings()
 function! s:unite_settings()
@@ -196,7 +203,7 @@ if filereadable(glob("./.vimrc.local"))
 endif
 
 " Set vimwiki directory
-let g:vimwiki_list = [{'path': '~/Google\ Drive/vimwiki/', 'path_html': '~/Google\ Drive/vimwiki_html/', 'auto_export': '1'}]
+let g:vimwiki_list = [{'path': '~/Google\ Drive/vimwiki/', 'path_html': '~/Google\ Drive/vimwiki_html/', 'auto_export': '0'}]
 
 " Macros!
 imap <C-l> file_put_contents('<esc>"dpA', ."\n\n", FILE_APPEND);<esc>bb9hi
