@@ -16,3 +16,5 @@
 	user = sethetter
 [push]
 	default = simple
+[ghi]
+	token = !security find-internet-password -a sethetter -s github.com -l 'ghi token' -w
