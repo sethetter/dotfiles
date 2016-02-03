@@ -62,7 +62,7 @@ export PATH=$PATH:$COMPOSER_PATH
 # copy last commit sha
 alias last-commit="git log --oneline -n 1 | cut -c 1-7"
 alias copy-last-commit="git log --oneline -n 1 | cut -c 1-7 | pbcopy"
-alias watch-git-status="watch -n1 -c git -c color.ui=always status"
+alias gswatch="watch -n1 -c git -c color.ui=always status"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi # This load rbenv
 [[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh" # This loads nvm

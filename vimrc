@@ -56,6 +56,7 @@ NeoBundle 'tristen/vim-sparkup'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'briancollins/vim-jst'
 NeoBundle 'groenewege/vim-less'
+NeoBundle 'digitaltoad/vim-jade'
 
 " Misc
 NeoBundle 'aquach/vim-http-client'
