@@ -51,18 +51,20 @@ alias se-dev='ssh seth@se-dev'
 
 source $ZSH/oh-my-zsh.sh
 
-export GO_PATH=$HOME/go
+export GOPATH=$HOME/go
 export RBENV_PATH=$HOME/.rbenv/bin
 export COMPOSER_PATH=$HOME/.composer/vendor/bin
 
 export PATH=$PATH:$RBENV_PATH
-export PATH=$PATH:$GO_PATH
+export PATH=$PATH:$GOPATH
 export PATH=$PATH:$COMPOSER_PATH
 
 # copy last commit sha
 alias last-commit="git log --oneline -n 1 | cut -c 1-7"
 alias copy-last-commit="git log --oneline -n 1 | cut -c 1-7 | pbcopy"
 alias gswatch="watch -n1 -c git -c color.ui=always status"
+alias json-fmt="node -e \"console.log(JSON.stringify(JSON.parse(process.argv[1]), null, 4));\""
+alias ow-dokku="ssh dokku@dokku.openwichita.com"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi # This load rbenv
 [[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh" # This loads nvm

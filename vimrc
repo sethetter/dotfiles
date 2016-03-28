@@ -57,6 +57,10 @@ NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'briancollins/vim-jst'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 'leafgarland/typescript-vim'
+NeoBundle 'kylef/apiblueprint.vim'
+NeoBundle 'fatih/vim-go'
+NeoBundle 'StanAngeloff/php.vim'
 
 " Misc
 NeoBundle 'aquach/vim-http-client'
@@ -203,6 +207,9 @@ nnoremap <leader>n <Esc>:NERDTreeToggle<CR>
 nnoremap <leader>T <Esc>:TlistToggle<CR>
 nnoremap <C-S-tab> :tabprevious<CR>
 nnoremap <C-tab>   :tabnext<CR>
+
+" Go stuff
+let g:go_fmt_command = "goimports"
 
 "Load local vimrc
 if filereadable(glob("./.vimrc.local"))
