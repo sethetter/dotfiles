@@ -6,3 +6,4 @@
 .vagrant
 .vimrc.local
 SETH_NOTES.md
+.phpcomplete_extended

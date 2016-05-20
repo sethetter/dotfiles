@@ -122,6 +122,7 @@ let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'passive_filetypes': ['html', 'cucumber', 'feature', 'scss', 'sass'] }
 
 let g:syntastic_javascript_checkers = ['standard']
+let g:syntastic_php_phpcs_args='--tab-width=4'
 
 " vim-seek; disable 's' as substitute
 let g:seek_subst_disable = 1
