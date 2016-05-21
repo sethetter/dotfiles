@@ -69,3 +69,5 @@ alias ow-dokku="ssh dokku@dokku.openwichita.com"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi # This load rbenv
 [[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh" # This loads nvm
 [ -f /Users/sethetter/.travis/travis.sh ] && source /Users/sethetter/.travis/travis.sh # added by travis gem
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

@@ -3,7 +3,8 @@ if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+set runtimepath^=/home/sethetter/.vim/bundle/neobundle.vim/
+call neobundle#begin(expand('/home/sethetter/.vim/bundle'))
 
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
@@ -45,11 +46,12 @@ NeoBundle 'mattn/gist-vim'
 
 " Interface addons
 NeoBundle 'bling/vim-airline'
+NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'myusuf3/numbers.vim'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/nerdtree'
 "NeoBundle 'jistr/vim-nerdtree-tabs'
-NeoBundle 'vim-scripts/taglist.vim'
+"NeoBundle 'vim-scripts/taglist.vim'
 
 " Languages
 NeoBundle 'tristen/vim-sparkup'
@@ -65,6 +67,8 @@ NeoBundle 'StanAngeloff/php.vim'
 " Misc
 NeoBundle 'aquach/vim-http-client'
 NeoBundle 'diepm/vim-rest-console'
+
+call neobundle#end()
 
 let mapleader = ","
 
