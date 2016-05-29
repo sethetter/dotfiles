@@ -13,8 +13,8 @@ ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 
 # Irssi
 #------------------------------------------------------------
-`mv ~/.irssi ~/._irssi.backup`
-`ln -s ${ABSPATH}/irssi ~/.irssi`
+#`mv ~/.irssi ~/._irssi.backup`
+#`ln -s ${ABSPATH}/irssi ~/.irssi`
 
 # Vim
 #------------------------------------------------------------
@@ -26,16 +26,16 @@ ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 `mv ~/.tmux.conf ~/._tmux.conf.backup`
 `ln -s ${ABSPATH}/tmux.conf ~/.tmux.conf`
 
-`mv ~/.tmux.light.conf ~/._tmux.light.conf.backup`
-`ln -s ${ABSPATH}/tmux.light.conf ~/.tmux.light.conf`
+#`mv ~/.tmux.light.conf ~/._tmux.light.conf.backup`
+#`ln -s ${ABSPATH}/tmux.light.conf ~/.tmux.light.conf`
 
-`mv ~/.tmux.dark.conf ~/._tmux.dark.conf.backup`
-`ln -s ${ABSPATH}/tmux.dark.conf ~/.tmux.dark.conf`
+#`mv ~/.tmux.dark.conf ~/._tmux.dark.conf.backup`
+#`ln -s ${ABSPATH}/tmux.dark.conf ~/.tmux.dark.conf`
 
 # Zsh Files
 #------------------------------------------------------------
-`mv ~/.zprofile ~/._zprofile.backup`
-`ln -s ${ABSPATH}/zprofile ~/.zprofile`
+#`mv ~/.zprofile ~/._zprofile.backup`
+#`ln -s ${ABSPATH}/zprofile ~/.zprofile`
 `mv ~/.oh-my-zsh ~/._oh-my-zsh.backup`
 `ln -s ${ABSPATH}/oh-my-zsh ~/.oh-my-zsh`
 
@@ -56,3 +56,8 @@ ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 `ln -s ${ABSPATH}/gitconfig ~/.gitconfig`
 `mv ~/.gitignore ~/._gitignore.backup`
 `ln -s ${ABSPATH}/gitignore ~/.gitignore`
+
+# Dir Colors
+#------------------------------------------------------------
+`mv ~/.dircolors ~/.dircolors.backup`
+`ln -s ${ABSPATH}/dircolors ~/.dircolors`
