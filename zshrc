@@ -55,11 +55,12 @@ source $ZSH/oh-my-zsh.sh
 export GOPATH=$HOME/go
 export RBENV_PATH=$HOME/.rbenv/bin
 export COMPOSER_PATH=$HOME/.composer/vendor/bin
-export RVM_PATH=$HOME/.rvm/bin
+#export RVM_PATH=$HOME/.rvm/bin
 
 export PATH=$PATH:$GOPATH
 export PATH=$PATH:$COMPOSER_PATH
-export PATH=$PATH:$RVM_PATH
+export PATH=$PATH:$RBENV_PATH
+#export PATH=$PATH:$RVM_PATH
 
 # copy last commit sha
 alias last-commit="git log --oneline -n 1 | cut -c 1-7"
@@ -68,8 +69,8 @@ alias gswatch="watch -n1 -c git -c color.ui=always status"
 alias json-fmt="node -e \"console.log(JSON.stringify(JSON.parse(process.argv[1]), null, 4));\""
 alias ow-dokku="ssh dokku@dokku.openwichita.com"
 
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh" # This loads nvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 [ -f /Users/sethetter/.travis/travis.sh ] && source /Users/sethetter/.travis/travis.sh # added by travis gem
 
 eval `dircolors ~/.dircolors`
