@@ -21,6 +21,9 @@ ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 `mv ~/.vimrc ~/._vimrc.backup`
 `ln -s ${ABSPATH}/vimrc ~/.vimrc`
 
+# Install NeoBundle for vim
+`curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh`
+
 # Tmux Config
 #------------------------------------------------------------
 `mv ~/.tmux.conf ~/._tmux.conf.backup`
