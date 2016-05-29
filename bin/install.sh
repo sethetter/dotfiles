@@ -37,10 +37,12 @@ ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 
 # Zsh Files
 #------------------------------------------------------------
-#`mv ~/.zprofile ~/._zprofile.backup`
-#`ln -s ${ABSPATH}/zprofile ~/.zprofile`
+`mv ~/.zrc ~/._zrc.backup`
+`ln -s ${ABSPATH}/zrc ~/.zrc`
 `mv ~/.oh-my-zsh ~/._oh-my-zsh.backup`
 `ln -s ${ABSPATH}/oh-my-zsh ~/.oh-my-zsh`
+`ln -s ${ABSPATH}/seth.zsh-theme ${ABSPATH}/oh-my-zsh/seth.zsh-theme`
+
 
 # Editor Config
 #------------------------------------------------------------
