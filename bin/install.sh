@@ -41,7 +41,7 @@ ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 `ln -s ${ABSPATH}/zrc ~/.zrc`
 `mv ~/.oh-my-zsh ~/._oh-my-zsh.backup`
 `ln -s ${ABSPATH}/oh-my-zsh ~/.oh-my-zsh`
-`ln -s ${ABSPATH}/seth.zsh-theme ${ABSPATH}/oh-my-zsh/seth.zsh-theme`
+`ln -s ${ABSPATH}/seth.zsh-theme ${ABSPATH}/oh-my-zsh/themes/seth.zsh-theme`
 
 
 # Editor Config
