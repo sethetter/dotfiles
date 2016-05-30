@@ -54,12 +54,14 @@ source $ZSH/oh-my-zsh.sh
 
 export GOPATH=$HOME/go
 export RBENV_PATH=$HOME/.rbenv/bin
+export RBENV_SHIMS_PATH=$HOME/.rbenv/shims
 export COMPOSER_PATH=$HOME/.composer/vendor/bin
 #export RVM_PATH=$HOME/.rvm/bin
 
 export PATH=$PATH:$GOPATH
 export PATH=$PATH:$COMPOSER_PATH
 export PATH=$PATH:$RBENV_PATH
+export PATH=$PATH:$RBENV_SHIMS_PATH
 #export PATH=$PATH:$RVM_PATH
 
 # copy last commit sha
