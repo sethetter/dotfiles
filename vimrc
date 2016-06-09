@@ -54,6 +54,7 @@ NeoBundle 'scrooloose/nerdtree'
 "NeoBundle 'vim-scripts/taglist.vim'
 
 " Languages
+NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'tristen/vim-sparkup'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'briancollins/vim-jst'
