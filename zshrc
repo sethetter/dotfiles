@@ -53,16 +53,22 @@ alias se-dev='ssh seth@se-dev'
 
 source $ZSH/oh-my-zsh.sh
 
+export LOCALE_ARCHIVE="$HOME/.nix-profile/lib/locale/locale-archive"
+
 export GOPATH=$HOME/go
 export RBENV_PATH=$HOME/.rbenv/bin
 export RBENV_SHIMS_PATH=$HOME/.rbenv/shims
 export COMPOSER_PATH=$HOME/.composer/vendor/bin
+export ARCANIST_PATH=$HOME/.arcanist/arcanist/bin
+export HEROKUPATH=/usr/local/heroku/bin
 #export RVM_PATH=$HOME/.rvm/bin
 
 export PATH=$PATH:$GOPATH
 export PATH=$PATH:$COMPOSER_PATH
 export PATH=$PATH:$RBENV_PATH
 export PATH=$PATH:$RBENV_SHIMS_PATH
+export PATH=$PATH:$HEROKU_PATH
+export PATH=$PATH:$ARCANIST_PATH
 #export PATH=$PATH:$RVM_PATH
 
 # copy last commit sha
@@ -71,9 +77,14 @@ alias copy-last-commit="git log --oneline -n 1 | cut -c 1-7 | pbcopy"
 alias gswatch="watch -n1 -c git -c color.ui=always status"
 alias json-fmt="node -e \"console.log(JSON.stringify(JSON.parse(process.argv[1]), null, 4));\""
 alias ow-dokku="ssh dokku@dokku.openwichita.com"
+alias o="xdg-open"
 
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh" # This loads nvm
 [ -f /Users/sethetter/.travis/travis.sh ] && source /Users/sethetter/.travis/travis.sh # added by travis gem
+eval "$(rbenv init -)"
 
 eval `dircolors ~/.dircolors`
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+if [ -e /home/sethetter/.nix-profile/etc/profile.d/nix.sh ]; then . /home/sethetter/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

@@ -50,10 +50,12 @@ NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'myusuf3/numbers.vim'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/nerdtree'
-"NeoBundle 'jistr/vim-nerdtree-tabs'
+NeoBundle 'jistr/vim-nerdtree-tabs'
 "NeoBundle 'vim-scripts/taglist.vim'
 
 " Languages
+NeoBundle 'LnL7/vim-nix'
+NeoBundle 'ElmCast/elm-vim'
 NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'slashmili/alchemist.vim'
 NeoBundle 'tristen/vim-sparkup'
@@ -69,6 +71,7 @@ NeoBundle 'StanAngeloff/php.vim'
 " Misc
 NeoBundle 'aquach/vim-http-client'
 NeoBundle 'diepm/vim-rest-console'
+NeoBundle 'wakatime/vim-wakatime'
 
 call neobundle#end()
 
@@ -129,6 +132,13 @@ let g:syntastic_mode_map = { 'mode': 'active',
 
 let g:syntastic_javascript_checkers = ['standard']
 let g:syntastic_php_phpcs_args='--tab-width=4'
+
+" Set Alchemist bindings
+let g:alchemist_tag_stack_map = '<M-t>'
+let g:alchemist#elixir_erlang_src = "/usr/local/share/src"
+
+" Elm
+let g:elm_format_autosave = 1
 
 " vim-seek; disable 's' as substitute
 let g:seek_subst_disable = 1
@@ -210,7 +220,7 @@ endfunction
 
 " Other Shortcuts
 nnoremap <C-t> <Esc>:tabnew<CR>
-nnoremap <leader>n <Esc>:NERDTreeToggle<CR>
+nnoremap <leader>n <Esc>:NERDTreeTabsToggle<CR>
 nnoremap <leader>T <Esc>:TlistToggle<CR>
 nnoremap <C-S-tab> :tabprevious<CR>
 nnoremap <C-tab>   :tabnext<CR>
