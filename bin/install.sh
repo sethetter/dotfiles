@@ -66,3 +66,13 @@ ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 #------------------------------------------------------------
 `mv ~/.dircolors ~/.dircolors.backup`
 `ln -s ${ABSPATH}/dircolors ~/.dircolors`
+
+# .editorconfig
+#------------------------------------------------------------
+`mv ~/.editorconfig ~/.editorconfig.backup`
+`ln -s ${ABSPATH}/editorconfig ~/.editorconfig`
+
+# .editorconfig
+#------------------------------------------------------------
+`mv ~/.ctags ~/.ctags.backup`
+`ln -s ${ABSPATH}/ctags ~/.ctags`

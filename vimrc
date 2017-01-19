@@ -28,6 +28,7 @@ NeoBundle 'Shougo/vimproc.vim', {
 
 " Syntax / editing
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'davidklsn/vim-sialoquent'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'gregsexton/MatchTag'
@@ -35,6 +36,7 @@ NeoBundle 'gregsexton/MatchTag'
 " Movement / editing
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/neoyank.vim'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'goldfeld/vim-seek'
 NeoBundle 'tpope/vim-surround'
@@ -51,13 +53,14 @@ NeoBundle 'myusuf3/numbers.vim'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'jistr/vim-nerdtree-tabs'
-"NeoBundle 'vim-scripts/taglist.vim'
+NeoBundle 'ludovicchabant/vim-gutentags'
 
 " Languages
+NeoBundle 'sheerun/vim-polyglot'
+NeoBundle 'eagletmt/ghcmod-vim'
 NeoBundle 'LnL7/vim-nix'
 NeoBundle 'ElmCast/elm-vim'
 NeoBundle 'elixir-lang/vim-elixir'
-NeoBundle 'slashmili/alchemist.vim'
 NeoBundle 'tristen/vim-sparkup'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'briancollins/vim-jst'
@@ -82,15 +85,15 @@ syntax enable                     " syntax highlighting
 " set main theme and airline theme
 let theme = $THEME
 
-set background=light
+set background=dark
 
-if theme == 'light'
-  set background=light
+if theme == 'dark'
+  set background=dark
 endif
 
 
-colorscheme solarized
-let g:airline_theme='solarized'
+colorscheme sialoquent
+let g:airline_theme='bubblegum'
 
 hi Normal ctermbg=NONE
 
@@ -112,7 +115,7 @@ set nowrap
 set textwidth=80
 
 " swap files
-set directory=~/.vim/.cache/swap
+set directory^=~/.vim/.cache/swap//
 set nobackup
 
 " File extension handling
@@ -132,13 +135,21 @@ let g:syntastic_mode_map = { 'mode': 'active',
 
 let g:syntastic_javascript_checkers = ['standard']
 let g:syntastic_php_phpcs_args='--tab-width=4'
+let g:syntastic_always_populate_loc_list = 1 " recommended for elm-vim
+let g:syntastic_auto_loc_list = 1 " recommended for elm-vim
+
+" Gutentags
+let g:gutentags_cache_dir = '~/.vim/.cache/tags'
 
 " Set Alchemist bindings
 let g:alchemist_tag_stack_map = '<M-t>'
 let g:alchemist#elixir_erlang_src = "/usr/local/share/src"
+let g:alchemist_tag_disable = 1
 
 " Elm
 let g:elm_format_autosave = 1
+let g:elm_setup_keybindings = 1
+let g:elm_syntastic_show_warnings = 1
 
 " vim-seek; disable 's' as substitute
 let g:seek_subst_disable = 1

@@ -60,9 +60,12 @@ export RBENV_PATH=$HOME/.rbenv/bin
 export RBENV_SHIMS_PATH=$HOME/.rbenv/shims
 export COMPOSER_PATH=$HOME/.composer/vendor/bin
 export ARCANIST_PATH=$HOME/.arcanist/arcanist/bin
-export HEROKUPATH=/usr/local/heroku/bin
-#export RVM_PATH=$HOME/.rvm/bin
+export HEROKU_PATH=/usr/local/heroku/bin
+export LOCAL_BIN=$HOME/.local/bin
+export STACK_BIN=$HOME/.stack/snapshots/x86_64-linux/lts-7.9/8.0.1/bin:$HOME/.stack/programs/x86_64-linux/ghc-8.0.1/bin
 
+export PATH=$PATH:$STACK_BIN
+export PATH=$PATH:$LOCAL_BIN
 export PATH=$PATH:$GOPATH
 export PATH=$PATH:$COMPOSER_PATH
 export PATH=$PATH:$RBENV_PATH
@@ -76,8 +79,19 @@ alias last-commit="git log --oneline -n 1 | cut -c 1-7"
 alias copy-last-commit="git log --oneline -n 1 | cut -c 1-7 | pbcopy"
 alias gswatch="watch -n1 -c git -c color.ui=always status"
 alias json-fmt="node -e \"console.log(JSON.stringify(JSON.parse(process.argv[1]), null, 4));\""
-alias ow-dokku="ssh dokku@dokku.openwichita.com"
 alias o="xdg-open"
+alias notes="cd ~/notes && vim ."
+alias doing="vim ~/notes/DOING.md"
+alias journal="note journal journal"
+
+function note() {
+  if [ ! -z $2 ]; then
+    mkdir -p ~/notes/$2
+    vim ~/notes/$2/$(date +%y%m%d)-$1.md
+  else
+    vim ~/notes/$(date +%y%m%d)-$1.md
+  fi
+}
 
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh" # This loads nvm
