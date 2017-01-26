@@ -56,8 +56,6 @@ source $ZSH/oh-my-zsh.sh
 export LOCALE_ARCHIVE="$HOME/.nix-profile/lib/locale/locale-archive"
 
 export GOPATH=$HOME/go
-export RBENV_PATH=$HOME/.rbenv/bin
-export RBENV_SHIMS_PATH=$HOME/.rbenv/shims
 export COMPOSER_PATH=$HOME/.composer/vendor/bin
 export ARCANIST_PATH=$HOME/.arcanist/arcanist/bin
 export HEROKU_PATH=/usr/local/heroku/bin
@@ -68,8 +66,6 @@ export PATH=$PATH:$STACK_BIN
 export PATH=$PATH:$LOCAL_BIN
 export PATH=$PATH:$GOPATH
 export PATH=$PATH:$COMPOSER_PATH
-export PATH=$PATH:$RBENV_PATH
-export PATH=$PATH:$RBENV_SHIMS_PATH
 export PATH=$PATH:$HEROKU_PATH
 export PATH=$PATH:$ARCANIST_PATH
 #export PATH=$PATH:$RVM_PATH
@@ -93,10 +89,7 @@ function note() {
   fi
 }
 
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-[[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh" # This loads nvm
 [ -f /Users/sethetter/.travis/travis.sh ] && source /Users/sethetter/.travis/travis.sh # added by travis gem
-eval "$(rbenv init -)"
 
 eval `dircolors ~/.dircolors`
 . $HOME/.asdf/asdf.sh
