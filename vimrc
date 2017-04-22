@@ -3,8 +3,8 @@ if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-set runtimepath^=/home/sethetter/.vim/bundle/neobundle.vim/
-call neobundle#begin(expand('/home/sethetter/.vim/bundle'))
+set runtimepath^=~/.vim/bundle/neobundle.vim/
+call neobundle#begin(expand('~/.vim/bundle'))
 
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
