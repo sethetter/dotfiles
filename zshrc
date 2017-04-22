@@ -73,12 +73,25 @@ export PATH=$PATH:$ARCANIST_PATH
 # copy last commit sha
 alias last-commit="git log --oneline -n 1 | cut -c 1-7"
 alias copy-last-commit="git log --oneline -n 1 | cut -c 1-7 | pbcopy"
-alias gswatch="watch -n1 -c git -c color.ui=always status"
-alias json-fmt="node -e \"console.log(JSON.stringify(JSON.parse(process.argv[1]), null, 4));\""
+alias json-fmt="node -e \"console.log(JSON.stringify(JSON.parse(require('fs').readFileSync(process.argv[1]).toString('utf8')), null, 4));\""
+#alias json-fmt="node -e \"console.log(JSON.stringify(JSON.parse(process.argv[1]), null, 4));\""
 alias o="xdg-open"
 alias notes="cd ~/notes && vim ."
 alias doing="vim ~/notes/DOING.md"
+alias scratch="vim ~/notes/SCRATCH.md"
 alias journal="note journal journal"
+
+# git aliases
+alias gpull="git pull"
+alias gpush="git push"
+alias gs="git status"
+alias gswatch="watch -n1 -c git -c color.ui=always status"
+alias gc="git commit"
+alias gd="git diff"
+alias gco="git checkout"
+alias gb="git branch"
+alias gl="git log"
+alias glo="git log --oneline"
 
 function note() {
   if [ ! -z $2 ]; then

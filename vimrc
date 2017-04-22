@@ -58,18 +58,19 @@ NeoBundle 'ludovicchabant/vim-gutentags'
 " Languages
 NeoBundle 'sheerun/vim-polyglot'
 NeoBundle 'eagletmt/ghcmod-vim'
-NeoBundle 'LnL7/vim-nix'
 NeoBundle 'ElmCast/elm-vim'
 NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'tristen/vim-sparkup'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'briancollins/vim-jst'
 NeoBundle 'groenewege/vim-less'
-NeoBundle 'digitaltoad/vim-jade'
-NeoBundle 'leafgarland/typescript-vim'
-NeoBundle 'kylef/apiblueprint.vim'
 NeoBundle 'fatih/vim-go'
+NeoBundle 'shawncplus/phpcomplete.vim'
 NeoBundle 'StanAngeloff/php.vim'
+NeoBundle 'digitaltoad/vim-pug'
+NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 'posva/vim-vue'
+NeoBundle 'flowtype/vim-flow'
 
 " Misc
 NeoBundle 'aquach/vim-http-client'
@@ -112,7 +113,7 @@ set softtabstop=2             " how far to backspace over tabs
 set backspace=indent,eol,start
 set number
 set nowrap
-set textwidth=80
+set textwidth=0
 
 " swap files
 set directory^=~/.vim/.cache/swap//
@@ -122,6 +123,7 @@ set nobackup
 autocmd BufNewFile,BufRead *.scss set ft=scss.css     " highlight scss as css
 autocmd BufNewFile,BufRead *.json set ft=json         " prevents loading json as JS and validating
 autocmd BufRead,BufNewFile *.md set filetype=markdown " recognize .md as markdown
+autocmd BufRead,BufNewFile *.md set textwidth=80 " enforce 80 character width on markdown files
 
 " Use old regex engine, new one is slow apparently
 set re=1
