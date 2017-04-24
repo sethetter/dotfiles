@@ -8,17 +8,12 @@
 
 ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 
-# Bash Profile
-#-----------------------------------------------------------
-
-# Irssi
-#------------------------------------------------------------
-#`mv ~/.irssi ~/._irssi.backup`
-#`ln -s ${ABSPATH}/irssi ~/.irssi`
+`git submodule init`
+`git submodule update`
 
 # Vim
 #------------------------------------------------------------
-`mv ~/.vimrc ~/._vimrc.backup`
+`if [ ! -f ~/.vimrc ]; then mv ~/.vimrc ~/._vimrc.backup; fi`
 `ln -s ${ABSPATH}/vimrc ~/.vimrc`
 
 # Install NeoBundle for vim
@@ -26,53 +21,47 @@ ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 
 # Tmux Config
 #------------------------------------------------------------
-`mv ~/.tmux.conf ~/._tmux.conf.backup`
+`if [ ! -f ~/.tmux.conf ]; then mv ~/.tmux.conf ~/._tmux.conf.backup; fi`
 `ln -s ${ABSPATH}/tmux.conf ~/.tmux.conf`
-
-#`mv ~/.tmux.light.conf ~/._tmux.light.conf.backup`
-#`ln -s ${ABSPATH}/tmux.light.conf ~/.tmux.light.conf`
-
-#`mv ~/.tmux.dark.conf ~/._tmux.dark.conf.backup`
-#`ln -s ${ABSPATH}/tmux.dark.conf ~/.tmux.dark.conf`
 
 # Zsh Files
 #------------------------------------------------------------
-`mv ~/.zrc ~/._zrc.backup`
-`ln -s ${ABSPATH}/zrc ~/.zrc`
-`mv ~/.oh-my-zsh ~/._oh-my-zsh.backup`
+`if [ ! -f ~/.zshrc ]; then mv ~/.zshrc ~/._zshrc.backup; fi`
+`ln -s ${ABSPATH}/zshrc ~/.zshrc`
+`if [ ! -f ~/.oh-my-zsh ]; then mv ~/.oh-my-zsh ~/._oh-my-zsh.backup; fi`
 `ln -s ${ABSPATH}/oh-my-zsh ~/.oh-my-zsh`
 `ln -s ${ABSPATH}/seth.zsh-theme ${ABSPATH}/oh-my-zsh/themes/seth.zsh-theme`
 
 
 # Editor Config
 #------------------------------------------------------------
-`mv ~/.editorconfig ~/._editorconfig.backup`
+`if [ ! -f ~/.editorconfig ]; then mv ~/.editorconfig ~/._editorconfig.backup; fi`
 `ln -s ${ABSPATH}/editorconfig ~/.editorconfig`
 
 # JSHint
 #------------------------------------------------------------
-`mv ~/.jshintrc ~/._jshintrc.backup`
+`if [ ! -f ~/.jshintrc ]; then mv ~/.jshintrc ~/._jshintrc.backup; fi`
 `ln -s ${ABSPATH}/jshintrc ~/.jshintrc`
 
 
 # Git Files
 #------------------------------------------------------------
-`mv ~/.gitconfig ~/._gitconfig.backup`
+`if [ ! -f ~/.gitconfig ]; then mv ~/.gitconfig ~/._gitconfig.backup; fi`
 `ln -s ${ABSPATH}/gitconfig ~/.gitconfig`
-`mv ~/.gitignore ~/._gitignore.backup`
+`if [ ! -f ~/.gitignore ]; then mv ~/.gitignore ~/._gitignore.backup; fi`
 `ln -s ${ABSPATH}/gitignore ~/.gitignore`
 
 # Dir Colors
 #------------------------------------------------------------
-`mv ~/.dircolors ~/.dircolors.backup`
+`if [ ! -f ~/.dircolors ]; then mv ~/.dircolors ~/.dircolors.backup; fi`
 `ln -s ${ABSPATH}/dircolors ~/.dircolors`
 
 # .editorconfig
 #------------------------------------------------------------
-`mv ~/.editorconfig ~/.editorconfig.backup`
+`if [ ! -f ~/.editorconfig ]; then mv ~/.editorconfig ~/.editorconfig.backup; fi`
 `ln -s ${ABSPATH}/editorconfig ~/.editorconfig`
 
 # .editorconfig
 #------------------------------------------------------------
-`mv ~/.ctags ~/.ctags.backup`
+`if [ ! -f ~/.ctags ]; then mv ~/.ctags ~/.ctags.backup; fi`
 `ln -s ${ABSPATH}/ctags ~/.ctags`
