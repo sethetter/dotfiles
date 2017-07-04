@@ -245,6 +245,14 @@ if filereadable(glob("./.vimrc.local"))
   source ./.vimrc.local
 endif
 
+" NerdCommenter
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
 " Macros!
 imap <C-l> file_put_contents('<esc>"dpA', ."\n\n", FILE_APPEND);<esc>bb9hi
 

@@ -94,11 +94,13 @@ alias gl="git log"
 alias glo="git log --oneline"
 
 function note() {
+  NAME="note" && [[ ! -z $1 ]] && NAME=$1
+
   if [ ! -z $2 ]; then
     mkdir -p ~/notes/$2
-    vim ~/notes/$2/$(date +%y%m%d)-$1.md
+    vim ~/notes/$2/$(date +%y%m%d)-$NAME.md
   else
-    vim ~/notes/$(date +%y%m%d)-$1.md
+    vim ~/notes/$(date +%y%m%d)-$NAME.md
   fi
 }
 
@@ -108,3 +110,10 @@ eval `dircolors ~/.dircolors`
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 if [ -e /home/sethetter/.nix-profile/etc/profile.d/nix.sh ]; then . /home/sethetter/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /home/sethetter/.asdf/installs/nodejs/8.1.2/.npm/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /home/sethetter/.asdf/installs/nodejs/8.1.2/.npm/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /home/sethetter/.asdf/installs/nodejs/8.1.2/.npm/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /home/sethetter/.asdf/installs/nodejs/8.1.2/.npm/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
