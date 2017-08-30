@@ -61,6 +61,7 @@ NeoBundle 'ElmCast/elm-vim'
 NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'tristen/vim-sparkup'
 NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'ternjs/tern_for_vim'
 NeoBundle 'briancollins/vim-jst'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'fatih/vim-go'
@@ -68,7 +69,6 @@ NeoBundle 'shawncplus/phpcomplete.vim'
 NeoBundle 'StanAngeloff/php.vim'
 NeoBundle 'digitaltoad/vim-pug'
 NeoBundle 'digitaltoad/vim-jade'
-NeoBundle 'posva/vim-vue'
 NeoBundle 'flowtype/vim-flow'
 
 " Misc
@@ -78,7 +78,7 @@ NeoBundle 'wakatime/vim-wakatime'
 
 call neobundle#end()
 
-let mapleader = ","
+let mapleader = " "
 
 syntax enable                     " syntax highlighting
 

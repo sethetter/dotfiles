@@ -42,10 +42,11 @@ DISABLE_AUTO_TITLE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(vi-mode)
 
-export TERM='xterm-256color'
-export EDITOR=vim
+alias emacs='emacsclient -t -a="" -c'
 
-if [ -e /usr/bin/vimx ]; then alias vim='vimx'; fi
+export TERM='xterm-256color'
+export EDITOR='emacsclient -t -a="" -c'
+
 alias tmux='TERMINFO=/usr/share/terminfo/x/xterm-16color TERM=xterm-16color tmux -2'
 alias mux='tmuxinator'
 alias gitlog='git log --oneline'
@@ -61,6 +62,7 @@ export ARCANIST_PATH=$HOME/.arcanist/arcanist/bin
 export HEROKU_PATH=/usr/local/heroku/bin
 export LOCAL_BIN=$HOME/.local/bin
 export STACK_BIN=$HOME/.stack/snapshots/x86_64-linux/lts-7.9/8.0.1/bin:$HOME/.stack/programs/x86_64-linux/ghc-8.0.1/bin
+export ANDROID_HOME=/opt/android-studio
 
 export PATH=$PATH:$STACK_BIN
 export PATH=$PATH:$LOCAL_BIN
@@ -87,6 +89,7 @@ alias gpush="git push"
 alias gs="git status"
 alias gswatch="watch -n1 -c git -c color.ui=always status"
 alias gc="git commit"
+alias gca="git commit --amend"
 alias gd="git diff"
 alias gco="git checkout"
 alias gb="git branch"
