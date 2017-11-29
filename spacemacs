@@ -158,8 +158,8 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '("Source Code Pro"
-                               :size 13
+   dotspacemacs-default-font '("Meslo LG L DZ"
+                               :size 10
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -326,7 +326,30 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
+  (setq indent-tabs-mode nil)
+  (setq tab-width 2)
+
+  ;; typescript
   (setq tide-tsserver-executable "node_modules/typescript/bin/tsserver")
+  (setq typescript-indent-level 2)
+
+  ;; js2-mode
+  (setq js2-basic-offset 2)
+  (setq js-indent-level 2)
+  (setq js2-strict-missing-semi-warning nil)
+  (setq js2-missing-semi-one-line-override t)
+
+  ;; web-mode
+  (setq css-indent-offset 2)
+  (setq web-mode-markup-indent-offset 4)
+  (setq web-mode-css-indent-offset 2)
+  (setq web-mode-code-indent-offset 2)
+  (setq web-mode-attr-indent-offset 2)
+
+  (with-eval-after-load 'web-mode
+    (add-to-list 'web-mode-indentation-params '("lineup-args" . nil))
+    (add-to-list 'web-mode-indentation-params '("lineup-concats" . nil))
+    (add-to-list 'web-mode-indentation-params '("lineup-calls" . nil)))
   )
 
 (defun dotspacemacs/user-config ()
@@ -336,37 +359,12 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
-
   (set-terminal-parameter nil 'background-mode 'light)
   (set-frame-parameter nil 'background-mode 'light)
   (spacemacs/load-theme 'solarized)
 
-  (setq-default indent-tabs-mode nil)
-  (setq-default tab-width 2)
-
   (xclip-mode 1)
   (turn-on-xclip)
-  (setq js2-strict-missing-semi-warning nil)
-  (setq js2-missing-semi-one-line-override t)
-  (setq-default
-   indent-tabs-mode nil
-   tab-width 2
-   ;; typescript
-   typescript-indent-level 2
-   ;; js2-mode
-   js2-basic-offset 2
-   js-indent-level 2
-   ;; web-mode
-   css-indent-offset 2
-   web-mode-markup-indent-offset 4
-   web-mode-css-indent-offset 2
-   web-mode-code-indent-offset 2
-   web-mode-attr-indent-offset 2)
-
-  (with-eval-after-load 'web-mode
-    (add-to-list 'web-mode-indentation-params '("lineup-args" . nil))
-    (add-to-list 'web-mode-indentation-params '("lineup-concats" . nil))
-    (add-to-list 'web-mode-indentation-params '("lineup-calls" . nil)))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
@@ -381,7 +379,6 @@ you should place your code here."
  '(cua-normal-cursor-color "#839496")
  '(cua-overwrite-cursor-color "#b58900")
  '(cua-read-only-cursor-color "#859900")
- '(custom-enabled-themes (quote (sanityinc-solarized-light)))
  '(custom-safe-themes
    (quote
     ("a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "0e0c37ee89f0213ce31205e9ae8bce1f93c9bcd81b1bcda0233061bb02c357a8" "4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" "2a739405edf418b8581dcd176aaf695d319f99e3488224a3c495cb0f9fd814e3" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "b300379af88fdc3acda2bca448bf970a4c6ce6cc0b5099bce3a5d9f070dbdb8c" "4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" default)))
