@@ -81,6 +81,7 @@ alias o="xdg-open"
 alias notes="cd ~/notes && emacs ."
 alias tasks="emacs ~/org/tasks.md"
 alias scratch="emacs ~/org/scratch.org"
+alias journal="emacs ~/org/journal.org"
 
 # git aliases
 alias gpull="git pull"
@@ -94,6 +95,17 @@ alias gco="git checkout"
 alias gb="git branch"
 alias gl="git log"
 alias glo="git log --oneline"
+
+function note() {
+  NAME="note" && [[ ! -z $1 ]] && NAME=$1
+
+  if [ ! -z $2 ]; then
+    mkdir -p ~/notes/$2
+    emacs ~/org/notes/$2/$(date +%y%m%d)-$NAME.org
+  else
+    emacs ~/org/notes/$(date +%y%m%d)-$NAME.org
+  fi
+}
 
 [ -f /Users/sethetter/.travis/travis.sh ] && source /Users/sethetter/.travis/travis.sh # added by travis gem
 
