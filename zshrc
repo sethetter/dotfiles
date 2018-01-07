@@ -77,12 +77,10 @@ export PATH=$PATH:$PYENV_ROOT/bin
 alias last-commit="git log --oneline -n 1 | cut -c 1-7"
 alias copy-last-commit="git log --oneline -n 1 | cut -c 1-7 | pbcopy"
 alias json-fmt="node -e \"console.log(JSON.stringify(JSON.parse(require('fs').readFileSync(process.argv[1]).toString('utf8')), null, 4));\""
-#alias json-fmt="node -e \"console.log(JSON.stringify(JSON.parse(process.argv[1]), null, 4));\""
 alias o="xdg-open"
 alias notes="cd ~/notes && emacs ."
-alias doing="emacs ~/notes/DOING.md"
-alias scratch="emacs ~/notes/SCRATCH.md"
-alias journal="note journal journal"
+alias tasks="emacs ~/org/tasks.md"
+alias scratch="emacs ~/org/scratch.org"
 
 # git aliases
 alias gpull="git pull"
@@ -97,25 +95,12 @@ alias gb="git branch"
 alias gl="git log"
 alias glo="git log --oneline"
 
-function note() {
-  NAME="note" && [[ ! -z $1 ]] && NAME=$1
-
-  if [ ! -z $2 ]; then
-    mkdir -p ~/notes/$2
-    emacs ~/notes/$2/$(date +%y%m%d)-$NAME.md
-  else
-    emacs ~/notes/$(date +%y%m%d)-$NAME.md
-  fi
-}
-
 [ -f /Users/sethetter/.travis/travis.sh ] && source /Users/sethetter/.travis/travis.sh # added by travis gem
 
 eval `dircolors ~/.dircolors`
 # . $HOME/.asdf/asdf.sh
 # . $HOME/.asdf/completions/asdf.bash
 if [ -e /home/sethetter/.nix-profile/etc/profile.d/nix.sh ]; then . /home/sethetter/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
