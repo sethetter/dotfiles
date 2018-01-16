@@ -14,6 +14,5 @@
 [github]
 	username = sethetter
 	user = sethetter
-	oauth-token = 5ec45912691bf5a170bd5bc139134f5cf48dbeec
 [push]
 	default = simple
