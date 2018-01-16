@@ -27,17 +27,15 @@ export COMPOSER_PATH=$HOME/.composer/vendor/bin
 export ARCANIST_PATH=$HOME/.arcanist/arcanist/bin
 export HEROKU_PATH=/usr/local/heroku/bin
 export LOCAL_BIN=$HOME/.local/bin
-export STACK_BIN=$HOME/.stack/snapshots/x86_64-linux/lts-7.9/8.0.1/bin:$HOME/.stack/programs/x86_64-linux/ghc-8.0.1/bin
 export ANDROID_HOME=/opt/android-studio
 export PYENV_ROOT="$HOME/.pyenv"
 
-export PATH=$PATH:$STACK_BIN
-export PATH=$PATH:$LOCAL_BIN
-export PATH=$PATH:$GOPATH
-export PATH=$PATH:$COMPOSER_PATH
-export PATH=$PATH:$HEROKU_PATH
-export PATH=$PATH:$ARCANIST_PATH
-export PATH=$PATH:$PYENV_ROOT/bin
+export PATH=$LOCAL_BIN:$PATH
+export PATH=$GOPATH:$PATH
+export PATH=$COMPOSER_PATH:$PATH
+export PATH=$HEROKU_PATH:$PATH
+export PATH=$ARCANIST_PATH:$PATH
+export PATH=$PYENV_ROOT/bin:$PATH
 
 # copy last commit sha
 alias last-commit="git log --oneline -n 1 | cut -c 1-7"
