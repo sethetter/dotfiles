@@ -4,9 +4,9 @@
 [core]
 	excludesfile = ~/.gitignore
 [merge]
-	tool = vimdiff
+	tool = ediff
 [diff]
-	tool = vimdiff
+	tool = ediff
 [difftool]
 	prompt = false
 [color]
@@ -14,7 +14,6 @@
 [github]
 	username = sethetter
 	user = sethetter
+	oauth-token = 5ec45912691bf5a170bd5bc139134f5cf48dbeec
 [push]
 	default = simple
-[ghi]
-	token = !security find-internet-password -a sethetter -s github.com -l 'ghi token' -w

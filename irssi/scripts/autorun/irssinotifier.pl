@@ -1,1 +1,0 @@
-/home/seth/dotfiles/irssi/scripts/irssinotifier.pl
