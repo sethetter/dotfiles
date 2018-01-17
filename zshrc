@@ -43,7 +43,7 @@ alias copy-last-commit="git log --oneline -n 1 | cut -c 1-7 | pbcopy"
 alias json-fmt="node -e \"console.log(JSON.stringify(JSON.parse(require('fs').readFileSync(process.argv[1]).toString('utf8')), null, 4));\""
 alias o="xdg-open"
 alias notes="cd ~/notes && emacs ."
-alias scratch="emacs ~/notes/scratch.org"
+alias scratch="emacs ~/notes/scratch.md"
 alias journal="note journal journal"
 
 # git aliases
