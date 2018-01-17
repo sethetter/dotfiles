@@ -70,6 +70,13 @@ function note() {
   fi
 }
 
+function tm() {
+  ROOTDIR=`pwd` && [[ ! -z $1 ]] && ROOTDIR=$1
+  cd $ROOTDIR
+  NAME=${PWD##*/}
+  tmux new-session -A -s $NAME
+}
+
 [ -f /Users/sethetter/.travis/travis.sh ] && source /Users/sethetter/.travis/travis.sh # added by travis gem
 
 eval `dircolors ~/.dircolors`
