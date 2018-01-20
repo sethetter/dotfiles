@@ -31,7 +31,7 @@ export ANDROID_HOME=/opt/android-studio
 export PYENV_ROOT="$HOME/.pyenv"
 
 export PATH=$LOCAL_BIN:$PATH
-export PATH=$GOPATH:$PATH
+export PATH=$GOPATH/bin:$PATH
 export PATH=$COMPOSER_PATH:$PATH
 export PATH=$HEROKU_PATH:$PATH
 export PATH=$ARCANIST_PATH:$PATH
