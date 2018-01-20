@@ -22,7 +22,7 @@ source $ZSH/oh-my-zsh.sh
 
 export LOCALE_ARCHIVE="$HOME/.nix-profile/lib/locale/locale-archive"
 
-export GOPATH=$HOME/go
+export GOPATH=$HOME/code/go
 export COMPOSER_PATH=$HOME/.composer/vendor/bin
 export ARCANIST_PATH=$HOME/.arcanist/arcanist/bin
 export HEROKU_PATH=/usr/local/heroku/bin
@@ -44,6 +44,7 @@ alias json-fmt="node -e \"console.log(JSON.stringify(JSON.parse(require('fs').re
 alias o="xdg-open"
 alias notes="cd ~/notes && emacs ."
 alias scratch="emacs ~/notes/scratch.md"
+alias doing="emacs ~/notes/doing.md"
 alias journal="note journal journal"
 
 # git aliases
