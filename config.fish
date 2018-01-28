@@ -44,7 +44,10 @@ function note
 end
 
 function tm
-  set ROOTDIR `pwd`; and eval [[ ! -z $1 ]]; and set ROOTDIR $1
-  cd $ROOTDIR
+  set rootdir (pwd)
+  if test "$argv[1]"
+    set rootdir $argv[1]
+  end
+  cd $rootdir
   tmux new-session -A -s (basename $PWD)
 end
