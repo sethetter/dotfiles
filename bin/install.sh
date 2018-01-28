@@ -24,13 +24,12 @@ ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 `if [ ! -f ~/.tmux.conf ]; then mv ~/.tmux.conf ~/._tmux.conf.backup; fi`
 `ln -s ${ABSPATH}/tmux.conf ~/.tmux.conf`
 
-# Zsh Files
+# Shell Files
 #------------------------------------------------------------
-`if [ ! -f ~/.zshrc ]; then mv ~/.zshrc ~/._zshrc.backup; fi`
-`ln -s ${ABSPATH}/zshrc ~/.zshrc`
-`if [ ! -f ~/.oh-my-zsh ]; then mv ~/.oh-my-zsh ~/._oh-my-zsh.backup; fi`
-`ln -s ${ABSPATH}/oh-my-zsh ~/.oh-my-zsh`
-`ln -s ${ABSPATH}/seth.zsh-theme ${ABSPATH}/oh-my-zsh/themes/seth.zsh-theme`
+`if [ ! -f ~/.bashrc ]; then mv ~/.bashrc ~/._bashrc.backup; fi`
+`ln -s ${ABSPATH}/bashrc ~/.bashrc`
+`if [ ! -f ~/.config/fish/config.fish ]; then mv ~/.config/fish/config.fish ~/.config/fish/_config.fish.backup; fi`
+`ln -s ${ABSPATH}/config.fish ~/.config/fish/config.fish`
 
 
 # Editor Config

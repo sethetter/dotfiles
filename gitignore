@@ -1,11 +1,7 @@
-.DS_Store
-**/.DS_Store
 *.swp
 *.swo
 *~
 .vagrant
-.vimrc.local
 NOTES.sethetter.md
 TODO.sethetter.md
-.phpcomplete_extended
 .#*
