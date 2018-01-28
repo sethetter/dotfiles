@@ -1,11 +1,11 @@
 set -g fish_key_bindings fish_vi_key_bindings
 
-function emacs; emacsclient -t -a="" -c; end
-function tmux; env TERMINFO=/usr/share/terminfo/x/xterm-16color TERM=xterm-16color tmux -2 $argv; end
-function mux; tmuxinator; end
+function emacs; emacsclient -t -a="" -c $argv[1..-1]; end
+function tmux; env TERMINFO=/usr/share/terminfo/x/xterm-16color TERM=xterm-16color tmux -2 $argv[1..-1]; end
+function mux; tmuxinator $argv[1..-1]; end
 function last-commit; git log --oneline -n 1 | cut -c 1-7; end
 function copy-last-commit; git log --oneline -n 1 | cut -c 1-7 | pbcopy; end
-function o; xdg-open; end
+function o; xdg-open $argv[1..-1]; end
 function notes; cd ~/notes; and emacs .; end
 function scratch; emacs ~/notes/scratch.md; end
 function doing; emacs ~/notes/doing.md; end
@@ -29,18 +29,22 @@ function gl; git log; end
 function glo; git log --oneline; end
 
 function note
-  set NAME note; and [[ ! -z $1 ]]; and set NAME $1
+  set name "note"
 
-  if [ ! -z $2 ]
-    mkdir -p ~/notes/$2
-    emacs ~/notes/$2/(date +%y%m%d)-$NAME.md
+  if test "$argv[1]"
+    set name $argv[1]
+  end
+
+  if test "$argv[2]"
+    mkdir -p ~/notes/$argv[2]
+    and emacs ~/notes/$argv[2]/(date +%y%m%d)-$name.md
   else
-    emacs ~/notes/(date +%y%m%d)-$NAME.md
+    emacs ~/notes/(date +%y%m%d)-$name.md
   end
 end
 
 function tm
-  set ROOTDIR `pwd`; and [[ ! -z $1 ]]; and set ROOTDIR $1
+  set ROOTDIR `pwd`; and eval [[ ! -z $1 ]]; and set ROOTDIR $1
   cd $ROOTDIR
   tmux new-session -A -s (basename $PWD)
 end
