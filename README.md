@@ -1,32 +1,10 @@
-dotfiles
-========
+# dotfiles
 
-These are my personal dotfiles for my development environment on Mac OS.
+Just my personal configuration for some of my tools :)
 
-Includes configuration files for:
-- iTerm
-- zsh (with oh-my-zsh)
-- editorconfig (with js-beautify options)
-- tmux
-- vim
+- bash/fish
 - git
-- irssi
+- spacemacs
+- tmux
 
-Install
--------
-
-I use [NeoBundle](https://github.com/Shougo/neobundle.vim) for vim bundles. This needs to be installed first with the following command.
-
-    git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-
-Tagbar for vim assumes that ctags is installed. Get that here: [ctags - http://ctags.sourceforge.net/](http://ctags.sourceforge.net/)
-
-Currently I am using the "thayer2" iTerm color scheme.
-
-I have an install script, but it needs updating. Don't use it :)
-
-Also, install [doctorjs](https://github.com/mozilla/doctorjs)
-
-Todos
------
-- Create uninstall task to replace symlinks with created backups
+There is also a couple scripts to install and set things up for a Fedora machine.
