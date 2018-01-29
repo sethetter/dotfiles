@@ -4,8 +4,8 @@ sudo dnf install -y \
      emacs \
      tmux
 
-# Install fisher
-curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+# Install oh-my-fish
+curl -L https://get.oh-my.fish | fish
 
 # Install spacemacs
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
