@@ -1,4 +1,5 @@
 set -g fish_key_bindings fish_vi_key_bindings
+set fish_greeting ""
 
 function emacs; emacsclient -t -a="" -c $argv[1..-1]; end
 function tmux; env TERMINFO=/usr/share/terminfo/x/xterm-16color TERM=xterm-16color tmux -2 $argv[1..-1]; end
