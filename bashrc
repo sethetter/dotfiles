@@ -27,4 +27,3 @@ export NVM_DIR="$HOME/.nvm"
 
 # This should always be last
 if [ "`tty`" != "not a tty" ]; then exec fish; fi
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash

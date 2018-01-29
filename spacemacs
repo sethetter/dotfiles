@@ -31,7 +31,7 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(shell-scripts
-     go
+     (go :variables go-tab-width 4)
      typescript
      javascript
      haskell
