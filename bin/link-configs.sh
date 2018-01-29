@@ -23,12 +23,12 @@ ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 `if [ ! -f ~/.bashrc ]; then mv ~/.bashrc ~/._bashrc.backup; fi`
 `ln -s ${ABSPATH}/bashrc ~/.bashrc`
 
-# Link fish config
+# Link fish and oh-my-fish config
 #------------------------------------------------------------
 `if [ ! -f ~/.config/fish/config.fish ]; then mv ~/.config/fish/config.fish ~/.config/fish/_config.fish.backup; fi`
 `ln -s ${ABSPATH}/config.fish ~/.config/fish/config.fish`
-`if [ ! -f ~/.config/fish/fishfile ]; then mv ~/.config/fish/fishfile ~/.config/fish/_fishfile.backup; fi`
-`ln -s ${ABSPATH}/fishfile ~/.config/fish/fishfile`
+`if [ ! -f ~/.config/omf ]; then mv ~/.config/omf ~/.config/_omf.backup; fi`
+`ln -s ${ABSPATH}/omf ~/.config/omf`
 
 # Git Files
 #------------------------------------------------------------
