@@ -21,13 +21,13 @@ function gpull; git pull; end
 function gpush; git push; end
 function gs; git status; end
 function gswatch; watch -n1 -c git -c color.ui=always status; end
-function gc; git commit; end
-function gca; git commit --amend; end
-function gd; git diff; end
-function gco; git checkout; end
-function gb; git branch; end
-function gl; git log; end
-function glo; git log --oneline; end
+function gc; git commit $argv[1..-1]; end
+function gca; git commit --amend $argv[1..-1]; end
+function gd; git diff $argv[1..-1]; end
+function gco; git checkout $argv[1..-1]; end
+function gb; git branch $argv[1..-1]; end
+function gl; git log $argv[1..-1]; end
+function glo; git log --oneline $argv[1..-1]; end
 
 function note
   set name "note"
