@@ -85,7 +85,7 @@ let g:airline_theme='solarized'
 
 " Plugin stuff
 call denite#custom#var('file_rec', 'command',
-	      \ ['git', 'ls-files', '-co', '--exclude-standard'])
+        \ ['git', 'ls-files', '-co', '--exclude-standard'])
 
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_ignore_case = 1
@@ -129,14 +129,26 @@ nnoremap <C-p> :Denite file_rec<CR>
 nnoremap <leader>sc :noh<CR>
 nnoremap <leader>sp :Denite grep<CR>
 
+" s{char}{char} to move to {char}{char}
+nmap <Leader>jf <Plug>(easymotion-overwin-f2)
+map  <Leader>jw <Plug>(easymotion-bd-w)
+nmap <Leader>jw <Plug>(easymotion-overwin-w)
+
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gd :Gdiff<CR>
 
 nnoremap <leader>wd :q<CR>
+nnoremap <leader>w/ :vsp<CR>
+nnoremap <leader>w? :sp<CR>
 nnoremap <leader>wh <C-w>h
 nnoremap <leader>wj <C-w>j
 nnoremap <leader>wk <C-w>k
 nnoremap <leader>wl <C-w>l
+
+nnoremap <leader>eo :lop<CR>
+nnoremap <leader>ec :lcl<CR>
+nnoremap <leader>en :lne<CR>
+nnoremap <leader>ep :lpr<CR>
 
 nnoremap <leader>bd :bd<CR>
 nnoremap <leader>bn :bn<CR>
