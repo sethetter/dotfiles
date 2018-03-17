@@ -1,15 +1,14 @@
 set -g fish_key_bindings fish_vi_key_bindings
 set fish_greeting ""
 
-function emacs; emacsclient -t -a="" -c $argv[1..-1]; end
-function tmux; env TERMINFO=/usr/share/terminfo/x/xterm-16color TERM=xterm-16color tmux -2 $argv[1..-1]; end
+function tmux; env TERM=konsole-256color tmux -2 $argv[1..-1]; end 
 function mux; tmuxinator $argv[1..-1]; end
 function last-commit; git log --oneline -n 1 | cut -c 1-7; end
 function copy-last-commit; git log --oneline -n 1 | cut -c 1-7 | pbcopy; end
 function o; xdg-open $argv[1..-1]; end
-function notes; cd ~/notes; and emacs .; end
-function scratch; emacs ~/notes/scratch.md; end
-function doing; emacs ~/notes/doing.md; end
+function notes; cd ~/notes; and nvim .; end
+function scratch; nvim ~/notes/scratch.md; end
+function doing; nvim ~/notes/doing.md; end
 function journal; note journal journal; end
 
 function json-fmt
@@ -38,9 +37,9 @@ function note
 
   if test "$argv[2]"
     mkdir -p ~/notes/$argv[2]
-    and emacs ~/notes/$argv[2]/(date +%y%m%d)-$name.md
+    and nvim ~/notes/$argv[2]/(date +%y%m%d)-$name.md
   else
-    emacs ~/notes/(date +%y%m%d)-$name.md
+    nvim ~/notes/(date +%y%m%d)-$name.md
   end
 end
 

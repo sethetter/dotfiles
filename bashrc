@@ -20,8 +20,9 @@ export PATH=$HEROKU_PATH:$PATH
 export PATH=$ARCANIST_PATH:$PATH
 export PATH=$PYENV_ROOT/bin:$PATH
 
-export TERM='xterm-256color'
-export EDITOR='emacsclient -t -a="" -c'
+export NVIM_TUI_ENABLE_TRUE_COLOR=1
+export TERM='konsole-256color'
+export EDITOR='nvim'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -38,3 +39,4 @@ if [ "`tty`" != "not a tty" ]; then exec fish; fi
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [ -f /home/sethetter/code/articleone/services/api/node_modules/tabtab/.completions/sls.bash ] && . /home/sethetter/code/articleone/services/api/node_modules/tabtab/.completions/sls.bash
+
