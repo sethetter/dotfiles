@@ -17,6 +17,7 @@ if dein#load_state('/home/sethetter/.cache/dein')
   call dein#add('Shougo/vimproc.vim', {'build': 'make'})
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('Shougo/denite.nvim')
+  call dein#add('w0rp/ale')
   call dein#add('arakashic/chromatica.nvim')
   call dein#add('junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' })
 
@@ -27,17 +28,27 @@ if dein#load_state('/home/sethetter/.cache/dein')
   call dein#add('myusuf3/numbers.vim')
 
   call dein#add('junegunn/vim-easy-align')
-  call dein#add('justinmk/vim-sneak')
+  call dein#add('easymotion/vim-easymotion')
 
   call dein#add('scrooloose/nerdtree')
   call dein#add('tpope/vim-fugitive')
+  call dein#add('airblade/vim-gitgutter')
   call dein#add('scrooloose/nerdcommenter')
 
+  " JavaScript
   call dein#add('carlitux/deoplete-ternjs')
   call dein#add('ternjs/tern_for_vim')
-  call dein#add('fatih/vim-go')
-  call dein#add('mhartington/nvim-typescript')
   call dein#add('Quramy/tsuquyomi')
+  call dein#add('othree/yajs.vim')
+  call dein#add('othree/javascript-libraries-syntax.vim')
+  call dein#add('othree/es.next.syntax.vim')
+  call dein#add('mxw/vim-jsx')
+
+  " Go
+  call dein#add('fatih/vim-go')
+
+  " TypeScript
+  call dein#add('mhartington/nvim-typescript')
   call dein#add('HerringtonDarkholme/yats.vim')
   call dein#add('mhartington/deoplete-typescript')
 
@@ -90,6 +101,8 @@ let g:chromatica#enable_at_startup = 1
 
 let g:NERDTreeWinPos = 'right'
 
+let g:ale_completion_enabled = 1
+
 let g:deoplete#sources#tss#javascript_support = 1
 
 let g:tsuquyomi_javascript_support = 1
@@ -101,19 +114,37 @@ let g:tern_request_timeout = 6000
 let g:tern#command = ["tern"]
 let g:tern#arguments = ["--persistent"]
 
+let g:nvim_typescript#javsacript_support=1
+
 autocmd BufRead,BufNewFile *.md set textwidth=80
 
 " Keybindings
-nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap <leader>fs :w<CR>
+
+nnoremap <leader>pt :NERDTreeToggle<CR>
+nnoremap <leader>pb :Denite buffer<CR>
+nnoremap <leader>pf :Denite file_rec<CR>
 nnoremap <C-p> :Denite file_rec<CR>
-nnoremap <leader>w :w<CR>
+
+nnoremap <leader>sc :noh<CR>
+nnoremap <leader>sp :Denite grep<CR>
 
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gd :Gdiff<CR>
 
+nnoremap <leader>wd :q<CR>
 nnoremap <leader>wh <C-w>h
 nnoremap <leader>wj <C-w>j
 nnoremap <leader>wk <C-w>k
 nnoremap <leader>wl <C-w>l
 
-let g:nvim_typescript#javsacript_support=1
+nnoremap <leader>bd :bd<CR>
+nnoremap <leader>bn :bn<CR>
+nnoremap <leader>bp :bp<CR>
+
+call denite#custom#map('insert', '<C-j>', '<denite:move_to_next_line>', 'noremap')
+call denite#custom#map('insert', '<C-k>', '<denite:move_to_previous_line>', 'noremap')
+
+" Startup
+packloadall
+silent! helptags ALL

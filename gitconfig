@@ -6,7 +6,7 @@
 [merge]
 	tool = ediff
 [diff]
-	tool = ediff
+	tool = vimdiff
 [difftool]
 	prompt = false
 [color]
