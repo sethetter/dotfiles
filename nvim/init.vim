@@ -1,4 +1,5 @@
-"dein Scripts-----------------------------
+" dein Scripts
+" ----------------------------------------
 if &compatible
   set nocompatible               " Be iMproved
 endif
@@ -43,6 +44,7 @@ if dein#load_state('/home/sethetter/.cache/dein')
   call dein#add('othree/javascript-libraries-syntax.vim')
   call dein#add('othree/es.next.syntax.vim')
   call dein#add('mxw/vim-jsx')
+  call dein#add('jparise/vim-graphql')
 
   " Go
   call dein#add('fatih/vim-go')
@@ -65,7 +67,57 @@ if dein#check_install()
   call dein#install()
 endif
 
-"End dein Scripts-------------------------
+" Keybindings
+" -----------------------------------
+
+" Files
+nnoremap <leader>fs :w<CR>
+
+" Project Navigation
+nnoremap <leader>pt :NERDTreeToggle<CR>
+nnoremap <leader>pb :Denite buffer<CR>
+nnoremap <leader>pf :Denite file_rec<CR>
+nnoremap <C-p> :Denite file_rec<CR>
+
+" Search
+nnoremap <leader>sc :noh<CR>
+nnoremap <leader>sp :Denite grep<CR>
+
+" Movement
+map  <Leader>jw <Plug>(easymotion-bd-w)
+nmap <Leader>jw <Plug>(easymotion-overwin-w)
+
+" Git
+nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gd :Gdiff<CR>
+
+" Buffers
+nnoremap <leader>bd :bd<CR>
+nnoremap <leader>bn :bn<CR>
+nnoremap <leader>bp :bp<CR>
+
+" Windows
+nnoremap <leader>wd :q<CR>
+nnoremap <leader>w/ :vsp<CR>
+nnoremap <leader>w? :sp<CR>
+nnoremap <leader>wh <C-w>h
+nnoremap <leader>wj <C-w>j
+nnoremap <leader>wk <C-w>k
+nnoremap <leader>wl <C-w>l
+
+" Errors
+nnoremap <leader>eo :lop<CR>
+nnoremap <leader>ec :lcl<CR>
+nnoremap <leader>en :lne<CR>
+nnoremap <leader>ep :lpr<CR>
+
+" Dein pane movement
+call denite#custom#map('insert', '<C-j>', '<denite:move_to_next_line>', 'noremap')
+call denite#custom#map('insert', '<C-k>', '<denite:move_to_previous_line>', 'noremap')
+
+
+" Configuration
+" ----------------------------------------
 
 let mapleader=" "
 
@@ -87,6 +139,7 @@ let g:airline_theme='solarized'
 call denite#custom#var('file_rec', 'command',
         \ ['git', 'ls-files', '-co', '--exclude-standard'])
 
+" Deoplete
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_ignore_case = 1
 let g:deoplete#enable_smart_case = 1
@@ -95,68 +148,37 @@ let g:deoplete#enable_refresh_always = 1
 let g:deoplete#max_abbr_width = 0
 let g:deoplete#max_menu_width = 0
 let g:deoplete#omni#input_patterns = get(g:,'deoplete#omni#input_patterns',{})
+let g:deoplete#sources#tss#javascript_support = 1
 
+" Chromatica
 let g:chromatica#libclang_path = '/usr/lib64/llvm'
 let g:chromatica#enable_at_startup = 1
 
+" NERDTree
 let g:NERDTreeWinPos = 'right'
 
+" Ale
 let g:ale_completion_enabled = 1
+let g:airline#extensions#ale#enabled = 1
 
-let g:deoplete#sources#tss#javascript_support = 1
-
+" Tsuquyomi
 let g:tsuquyomi_javascript_support = 1
 let g:tsuquyomi_auto_open = 1
 let g:tsuquyomi_disable_quickfix = 1
 
+" Tern
 let g:tern_request_timeout = 1
 let g:tern_request_timeout = 6000
 let g:tern#command = ["tern"]
 let g:tern#arguments = ["--persistent"]
 
+" Typescript
 let g:nvim_typescript#javsacript_support=1
 
+" Markdown
 autocmd BufRead,BufNewFile *.md set textwidth=80
 
-" Keybindings
-nnoremap <leader>fs :w<CR>
-
-nnoremap <leader>pt :NERDTreeToggle<CR>
-nnoremap <leader>pb :Denite buffer<CR>
-nnoremap <leader>pf :Denite file_rec<CR>
-nnoremap <C-p> :Denite file_rec<CR>
-
-nnoremap <leader>sc :noh<CR>
-nnoremap <leader>sp :Denite grep<CR>
-
-" s{char}{char} to move to {char}{char}
-nmap <Leader>jf <Plug>(easymotion-overwin-f2)
-map  <Leader>jw <Plug>(easymotion-bd-w)
-nmap <Leader>jw <Plug>(easymotion-overwin-w)
-
-nnoremap <leader>gs :Gstatus<CR>
-nnoremap <leader>gd :Gdiff<CR>
-
-nnoremap <leader>wd :q<CR>
-nnoremap <leader>w/ :vsp<CR>
-nnoremap <leader>w? :sp<CR>
-nnoremap <leader>wh <C-w>h
-nnoremap <leader>wj <C-w>j
-nnoremap <leader>wk <C-w>k
-nnoremap <leader>wl <C-w>l
-
-nnoremap <leader>eo :lop<CR>
-nnoremap <leader>ec :lcl<CR>
-nnoremap <leader>en :lne<CR>
-nnoremap <leader>ep :lpr<CR>
-
-nnoremap <leader>bd :bd<CR>
-nnoremap <leader>bn :bn<CR>
-nnoremap <leader>bp :bp<CR>
-
-call denite#custom#map('insert', '<C-j>', '<denite:move_to_next_line>', 'noremap')
-call denite#custom#map('insert', '<C-k>', '<denite:move_to_previous_line>', 'noremap')
-
 " Startup
+" -------------------------------------
 packloadall
 silent! helptags ALL

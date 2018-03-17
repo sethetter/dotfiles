@@ -4,10 +4,10 @@ endif
 
 if getline(1) =~ '^#!.*\<node\>'
   setfiletype javascript
-elsif getline(1) =~ '^#!.*\<ruby\>'
+elseif getline(1) =~ '^#!.*\<ruby\>'
   setfiletype ruby
-elsif getline(1) =~ '^#!.*\<python\>'
+elseif getline(1) =~ '^#!.*\<python\>'
   setfiletype python
-elsif getline(1) =~ '^#!.*\<bash\>'
+elseif getline(1) =~ '^#!.*\<bash\>'
   setfiletype bash
 endif
