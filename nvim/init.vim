@@ -1,4 +1,4 @@
-" dein Scripts
+" Plugins
 " ----------------------------------------
 if &compatible
   set nocompatible               " Be iMproved
@@ -32,6 +32,7 @@ if dein#load_state('/home/sethetter/.cache/dein')
   call dein#add('easymotion/vim-easymotion')
 
   call dein#add('scrooloose/nerdtree')
+  call dein#add('Xuyuanp/nerdtree-git-plugin')
   call dein#add('tpope/vim-fugitive')
   call dein#add('airblade/vim-gitgutter')
   call dein#add('scrooloose/nerdcommenter')
@@ -67,56 +68,7 @@ if dein#check_install()
   call dein#install()
 endif
 
-" Keybindings
-" -----------------------------------
-
-" Files
-nnoremap <leader>fs :w<CR>
-
-" Project Navigation
-nnoremap <leader>pt :NERDTreeToggle<CR>
-nnoremap <leader>pb :Denite buffer<CR>
-nnoremap <leader>pf :Denite file_rec<CR>
-nnoremap <C-p> :Denite file_rec<CR>
-
-" Search
-nnoremap <leader>sc :noh<CR>
-nnoremap <leader>sp :Denite grep<CR>
-
-" Movement
-map  <Leader>jw <Plug>(easymotion-bd-w)
-nmap <Leader>jw <Plug>(easymotion-overwin-w)
-
-" Git
-nnoremap <leader>gs :Gstatus<CR>
-nnoremap <leader>gd :Gdiff<CR>
-
-" Buffers
-nnoremap <leader>bd :bd<CR>
-nnoremap <leader>bn :bn<CR>
-nnoremap <leader>bp :bp<CR>
-
-" Windows
-nnoremap <leader>wd :q<CR>
-nnoremap <leader>w/ :vsp<CR>
-nnoremap <leader>w? :sp<CR>
-nnoremap <leader>wh <C-w>h
-nnoremap <leader>wj <C-w>j
-nnoremap <leader>wk <C-w>k
-nnoremap <leader>wl <C-w>l
-
-" Errors
-nnoremap <leader>eo :lop<CR>
-nnoremap <leader>ec :lcl<CR>
-nnoremap <leader>en :lne<CR>
-nnoremap <leader>ep :lpr<CR>
-
-" Dein pane movement
-call denite#custom#map('insert', '<C-j>', '<denite:move_to_next_line>', 'noremap')
-call denite#custom#map('insert', '<C-k>', '<denite:move_to_previous_line>', 'noremap')
-
-
-" Configuration
+" Base Config
 " ----------------------------------------
 
 let mapleader=" "
@@ -135,11 +87,18 @@ set background=dark
 colorscheme NeoSolarized
 let g:airline_theme='solarized'
 
-" Plugin stuff
-call denite#custom#var('file_rec', 'command',
-        \ ['git', 'ls-files', '-co', '--exclude-standard'])
 
-" Deoplete
+" Plugin Config
+" ---------------------------------------
+call denite#custom#var('grep', 'command', ['ag'])
+call denite#custom#var('file_rec', 'command', ['git', 'ls-files', '-co', '--exclude-standard'])
+call denite#custom#var('grep', 'default_opts', ['-i', '--vimgrep'])
+call denite#custom#var('grep', 'recursive_opts', [])
+call denite#custom#var('grep', 'pattern_opt', [])
+call denite#custom#var('grep', 'separator', ['--'])
+call denite#custom#var('grep', 'final_opts', [])
+
+" deoplete
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_ignore_case = 1
 let g:deoplete#enable_smart_case = 1
@@ -156,27 +115,97 @@ let g:chromatica#enable_at_startup = 1
 
 " NERDTree
 let g:NERDTreeWinPos = 'right'
+let NERDTreeAutoDeleteBuffer = 1
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
 
-" Ale
+" NERDCommenter
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+
+" ale
 let g:ale_completion_enabled = 1
 let g:airline#extensions#ale#enabled = 1
+let g:ale_lint_on_text_changed = 0
+let g:ale_lint_on_save = 1
 
-" Tsuquyomi
+" tsuquyomi
 let g:tsuquyomi_javascript_support = 1
 let g:tsuquyomi_auto_open = 1
 let g:tsuquyomi_disable_quickfix = 1
 
-" Tern
+" tern
 let g:tern_request_timeout = 1
 let g:tern_request_timeout = 6000
 let g:tern#command = ["tern"]
 let g:tern#arguments = ["--persistent"]
 
-" Typescript
+" typescript
 let g:nvim_typescript#javsacript_support=1
 
-" Markdown
+" markdown
 autocmd BufRead,BufNewFile *.md set textwidth=80
+
+
+" Keybindings
+" -----------------------------------
+
+" Files
+nnoremap <leader>fs :w<CR>
+
+" Project Navigation
+nnoremap <leader>pt :NERDTreeToggle<CR>
+nnoremap <silent> <leader>pF :NERDTreeFind<CR>
+nnoremap <leader>pb :Denite buffer<CR>
+nnoremap <leader>pf :Denite file_rec<CR>
+nnoremap <C-p> :Denite file_rec<CR>
+nnoremap <leader>Gd :ALEGoToDefinition<CR>
+
+" Search
+nnoremap <leader>sc :noh<CR>
+nnoremap <leader>sp :Denite grep<CR>
+nnoremap <leader>sP :DeniteCursorWord grep:.<CR>
+
+" Movement
+map  <Leader>jw <Plug>(easymotion-bd-w)
+nmap <Leader>jw <Plug>(easymotion-overwin-w)
+
+" Git
+nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gd :Gdiff<CR>
+
+" Buffers
+nnoremap <leader>bd :bp\|bd #<CR>
+nnoremap <leader>bn :bn<CR>
+nnoremap <leader>bp :bp<CR>
+
+" Notes
+nnoremap <leader>np :e NOTES.sethetter.md<CR>
+nnoremap <leader>ns :e ~/notes/scratch.md<CR>
+nnoremap <leader>nd :e ~/notes/doing.md<CR>
+nnoremap <leader>nl :e ~/notes/log.md<CR>
+
+" Windows
+nnoremap <leader>wd :q<CR>
+nnoremap <leader>w/ :vsp<CR>
+nnoremap <leader>w? :sp<CR>
+nnoremap <leader>wh <C-w>h
+nnoremap <leader>wj <C-w>j
+nnoremap <leader>wk <C-w>k
+nnoremap <leader>wl <C-w>l
+
+" Errors
+nnoremap <leader>eo :lop<CR>
+nnoremap <leader>ec :lcl<CR>
+nnoremap <leader>en :lne<CR>
+nnoremap <leader>ep :lpr<CR>
+nnoremap <leader>ee :ALEEnableBuffer<CR>
+nnoremap <leader>et :ALEToggleBuffer<CR>
+
+" Dein pane movement
+call denite#custom#map('insert', '<C-j>', '<denite:move_to_next_line>', 'noremap')
+call denite#custom#map('insert', '<C-k>', '<denite:move_to_previous_line>', 'noremap')
+
 
 " Startup
 " -------------------------------------
