@@ -23,7 +23,6 @@ if dein#load_state('/home/sethetter/.cache/dein')
   call dein#add('junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' })
 
   call dein#add('icymind/NeoSolarized')
-  call dein#add('ap/vim-buftabline')
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
   call dein#add('myusuf3/numbers.vim')
@@ -77,10 +76,10 @@ filetype plugin indent on
 syntax on
 
 set relativenumber
-
 set shiftwidth=2
 set tabstop=2
 set expandtab
+set hidden
 
 " Colors
 set background=dark
@@ -97,6 +96,12 @@ call denite#custom#var('grep', 'recursive_opts', [])
 call denite#custom#var('grep', 'pattern_opt', [])
 call denite#custom#var('grep', 'separator', ['--'])
 call denite#custom#var('grep', 'final_opts', [])
+
+" airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_splits = 0
+let g:airline#extensions#tabline#switch_buffers_and_tabs = 1
+let g:airline#extensions#tabline#show_buffers = 1
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
@@ -201,6 +206,8 @@ nnoremap <leader>en :lne<CR>
 nnoremap <leader>ep :lpr<CR>
 nnoremap <leader>ee :ALEEnableBuffer<CR>
 nnoremap <leader>et :ALEToggleBuffer<CR>
+nnoremap <leader>eE :ALEEnable<CR>
+nnoremap <leader>eT :ALEToggle<CR>
 
 " Dein pane movement
 call denite#custom#map('insert', '<C-j>', '<denite:move_to_next_line>', 'noremap')
