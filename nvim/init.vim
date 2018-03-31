@@ -54,6 +54,11 @@ if dein#load_state('/home/sethetter/.cache/dein')
   call dein#add('HerringtonDarkholme/yats.vim')
   call dein#add('mhartington/deoplete-typescript')
 
+  " Haskell
+  call dein#add('neovimhaskell/haskell-vim')
+  call dein#add('eagletmt/ghcmod-vim')
+  call dein#add('eagletmt/neco-ghc')
+
   " Required:
   call dein#end()
   call dein#save_state()
@@ -89,6 +94,8 @@ let g:airline_theme='solarized'
 
 " Plugin Config
 " ---------------------------------------
+
+"  denite
 call denite#custom#var('grep', 'command', ['ag'])
 call denite#custom#var('file_rec', 'command', ['git', 'ls-files', '-co', '--exclude-standard'])
 call denite#custom#var('grep', 'default_opts', ['-i', '--vimgrep'])
@@ -96,6 +103,11 @@ call denite#custom#var('grep', 'recursive_opts', [])
 call denite#custom#var('grep', 'pattern_opt', [])
 call denite#custom#var('grep', 'separator', ['--'])
 call denite#custom#var('grep', 'final_opts', [])
+
+" ale
+let g:ale_fixers = {}
+let g:ale_fixers['javascript'] = ['prettier']
+let g:ale_fixers['typescript'] = ['prettier']
 
 " airline
 let g:airline#extensions#tabline#enabled = 1
@@ -163,6 +175,7 @@ nnoremap <leader>pt :NERDTreeToggle<CR>
 nnoremap <silent> <leader>pF :NERDTreeFind<CR>
 nnoremap <leader>pb :Denite buffer<CR>
 nnoremap <leader>pf :Denite file_rec<CR>
+nnoremap <leader>pn :e NOTES.sethetter.md<CR>
 nnoremap <C-p> :Denite file_rec<CR>
 nnoremap <leader>Gd :ALEGoToDefinition<CR>
 
@@ -183,6 +196,7 @@ nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>bd :bp\|bd #<CR>
 nnoremap <leader>bn :bn<CR>
 nnoremap <leader>bp :bp<CR>
+nnoremap <leader>bf :ALEFix<CR>
 
 " Notes
 nnoremap <leader>np :e NOTES.sethetter.md<CR>
@@ -212,7 +226,8 @@ nnoremap <leader>eT :ALEToggle<CR>
 " Dein pane movement
 call denite#custom#map('insert', '<C-j>', '<denite:move_to_next_line>', 'noremap')
 call denite#custom#map('insert', '<C-k>', '<denite:move_to_previous_line>', 'noremap')
-
+call denite#custom#map('insert', '<C-?>', '<denite:do_action:splitswitch>', 'noremap')
+call denite#custom#map('insert', '<C-/>', '<denite:do_action:vsplitswitch>', 'noremap')
 
 " Startup
 " -------------------------------------
