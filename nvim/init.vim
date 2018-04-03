@@ -36,6 +36,10 @@ if dein#load_state('/home/sethetter/.cache/dein')
   call dein#add('airblade/vim-gitgutter')
   call dein#add('scrooloose/nerdcommenter')
 
+  " Tmux
+  call dein#add('tmux-plugins/vim-tmux')
+  call dein#add('tmux-plugins/vim-tmux-focus-events')
+
   " JavaScript
   call dein#add('carlitux/deoplete-ternjs')
   call dein#add('ternjs/tern_for_vim')
@@ -172,6 +176,7 @@ nnoremap <leader>fs :w<CR>
 
 " Project Navigation
 nnoremap <leader>pt :NERDTreeToggle<CR>
+nnoremap <leader>pT :e .<CR>
 nnoremap <silent> <leader>pF :NERDTreeFind<CR>
 nnoremap <leader>pb :Denite buffer<CR>
 nnoremap <leader>pf :Denite file_rec<CR>
