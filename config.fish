@@ -15,19 +15,6 @@ function json-fmt
   node -e "console.log(JSON.stringify(JSON.parse(require('fs').readFileSync(process.argv[1]).toString('utf8')), null, 4));"
 end
 
-# git aliases
-function gpull; git pull; end
-function gpush; git push; end
-function gs; git status; end
-function gswatch; watch -n1 -c git -c color.ui=always status; end
-function gc; git commit $argv[1..-1]; end
-function gca; git commit --amend $argv[1..-1]; end
-function gd; git diff $argv[1..-1]; end
-function gco; git checkout $argv[1..-1]; end
-function gb; git branch $argv[1..-1]; end
-function gl; git log $argv[1..-1]; end
-function glo; git log --oneline $argv[1..-1]; end
-
 function note
   set name "note"
 
