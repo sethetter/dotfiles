@@ -50,6 +50,9 @@ if dein#load_state('/home/sethetter/.cache/dein')
   call dein#add('mxw/vim-jsx')
   call dein#add('jparise/vim-graphql')
 
+  " HTML
+  call dein#add('mattn/emmet-vim')
+
   " Go
   call dein#add('fatih/vim-go')
 
@@ -167,6 +170,14 @@ let g:nvim_typescript#javsacript_support=1
 " markdown
 autocmd BufRead,BufNewFile *.md set textwidth=80
 
+" emmet
+let g:user_emmet_leader_key='<C-E>'
+let g:user_emmet_mode='i'
+
+" go
+autocmd FileType go nnoremap <leader>Gd :GoDef<CR>
+autocmd FileType go nnoremap <leader>GD :GoDoc<CR>
+
 
 " Keybindings
 " -----------------------------------
@@ -196,6 +207,7 @@ nmap <Leader>jw <Plug>(easymotion-overwin-w)
 " Git
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gd :Gdiff<CR>
+nnoremap <leader>gp :Gpush<CR>
 
 " Buffers
 nnoremap <leader>bd :bp\|bd #<CR>

@@ -21,7 +21,7 @@ export PATH=$ARCANIST_PATH:$PATH
 export PATH=$PYENV_ROOT/bin:$PATH
 
 export NVIM_TUI_ENABLE_TRUE_COLOR=1
-export TERM='konsole-256color'
+export TERM='xterm-256color'
 export EDITOR='nvim'
 
 export NVM_DIR="$HOME/.nvm"
