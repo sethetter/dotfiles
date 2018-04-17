@@ -138,7 +138,6 @@ let g:chromatica#libclang_path = '/usr/lib64/llvm'
 let g:chromatica#enable_at_startup = 1
 
 " NERDTree
-let g:NERDTreeWinPos = 'right'
 let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
