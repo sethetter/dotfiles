@@ -22,7 +22,7 @@ export PATH=$PYENV_ROOT/bin:$PATH
 
 export NVIM_TUI_ENABLE_TRUE_COLOR=1
 export TERM='xterm-256color'
-export EDITOR='nvim'
+export EDITOR='code --wait'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

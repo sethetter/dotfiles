@@ -6,9 +6,9 @@ function mux; tmuxinator $argv[1..-1]; end
 function last-commit; git log --oneline -n 1 | cut -c 1-7; end
 function copy-last-commit; git log --oneline -n 1 | cut -c 1-7 | pbcopy; end
 function o; xdg-open $argv[1..-1]; end
-function notes; cd ~/notes; and nvim .; end
-function scratch; nvim ~/notes/scratch.md; end
-function doing; nvim ~/notes/doing.md; end
+function notes; code ~/notes; end
+function scratch; code ~/notes/scratch.md; end
+function doing; code ~/notes/doing.md; end
 function journal; note journal journal; end
 
 function json-fmt
@@ -24,9 +24,9 @@ function note
 
   if test "$argv[2]"
     mkdir -p ~/notes/$argv[2]
-    and nvim ~/notes/$argv[2]/(date +%y%m%d)-$name.md
+    and code ~/notes/$argv[2]/(date +%y%m%d)-$name.md
   else
-    nvim ~/notes/(date +%y%m%d)-$name.md
+    code ~/notes/(date +%y%m%d)-$name.md
   end
 end
 
