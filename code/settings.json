@@ -1,0 +1,52 @@
+{
+    "workbench.colorTheme": "Solarized Dark",
+
+    "editor.fontSize": 12,
+    "editor.tabSize": 2,
+    "editor.cursorStyle": "block",
+    "editor.lightbulb.enabled": false,
+    "editor.lineNumbers": "relative",
+    "editor.multiCursorModifier": "alt",
+    "editor.renderIndentGuides": true,
+
+    "explorer.autoReveal": false,
+
+    "terminal.integrated.fontSize": 12,
+
+    "vim.easymotion": true,
+    "vim.leader": " ",
+    "vim.enableNeovim": false,
+    "vim.useCtrlKeys": true,
+
+    "window.zoomLevel": 0,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.hovers.enabled": false,
+    "gitlens.resultsExplorer.files.layout": "list",
+    "gitlens.explorers.avatars": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.gitExplorer.files.layout": "auto",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+
+    "typescript.tsserver.log": "verbose",
+
+    "workbench.activityBar.visible": false,
+
+    "[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": false
+    },
+
+    "extensions.ignoreRecommendations": true,
+
+    "terminal.external.linuxExec": "hyper"
+}
