@@ -24,19 +24,5 @@ export NVIM_TUI_ENABLE_TRUE_COLOR=1
 export TERM='xterm-256color'
 export EDITOR='code --wait'
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
 # This should always be last
 if [ "`tty`" != "not a tty" ]; then exec fish; fi
-
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[ -f /home/sethetter/code/articleone/services/api/node_modules/tabtab/.completions/serverless.bash ] && . /home/sethetter/code/articleone/services/api/node_modules/tabtab/.completions/serverless.bash
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[ -f /home/sethetter/code/articleone/services/api/node_modules/tabtab/.completions/sls.bash ] && . /home/sethetter/code/articleone/services/api/node_modules/tabtab/.completions/sls.bash
-
