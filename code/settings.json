@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Solarized Light",
+    "workbench.colorTheme": "Solarized Dark",
 
     "editor.fontSize": 12,
     "editor.tabSize": 2,
@@ -25,7 +25,7 @@
     "gitlens.explorers.avatars": false,
     "gitlens.currentLine.enabled": false,
     "gitlens.hovers.currentLine.over": "line",
-    "gitlens.gitExplorer.files.layout": "auto",
+    "gitlens.gitExplorer.files.layout": "list",
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
