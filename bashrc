@@ -4,7 +4,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 export GOPATH=$HOME/code/go
-export GOBIN_PATH=/usr/local/go/bin
+export GOBIN_PATH=/usr/local/opt/go/libexec/bin
 export COMPOSER_PATH=$HOME/.composer/vendor/bin
 export ARCANIST_PATH=$HOME/.arcanist/arcanist/bin
 export HEROKU_PATH=/usr/local/heroku/bin
@@ -26,3 +26,4 @@ export EDITOR='code --wait'
 
 # This should always be last
 if [ "`tty`" != "not a tty" ]; then exec fish; fi
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

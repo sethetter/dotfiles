@@ -1,5 +1,7 @@
 {
-    "workbench.colorTheme": "Solarized Dark",
+    "workbench.colorTheme": "Solarized Light",
+
+    "workbench.editor.enablePreview": false,
 
     "editor.fontSize": 12,
     "editor.tabSize": 2,

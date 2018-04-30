@@ -3,5 +3,35 @@
   {
     "key": "cmd+9",
     "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "bookmarks.jumpToPrevious",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+cmd+j",
+    "command": "-bookmarks.jumpToPrevious",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "bookmarks.jumpToNext",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+cmd+l",
+    "command": "-bookmarks.jumpToNext",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+b",
+    "command": "bookmarks.toggle",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+cmd+k",
+    "command": "-bookmarks.toggle",
+    "when": "editorTextFocus"
   }
 ]
