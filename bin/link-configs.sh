@@ -8,10 +8,10 @@
 
 ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 
-# Link spacemacs config
+# Link neovim config
 #------------------------------------------------------------
-`if [ ! -f ~/.spacemacs ]; then mv ~/.spacemacs ~/._spacemacs.backup; fi`
-`ln -s ${ABSPATH}/spacemacs ~/.spacemacs`
+`if [ ! -f ~/.config/nvim ]; then mv ~/.config/nvim ~/.config/_nvim.backup; fi`
+`ln -s ${ABSPATH}/nvim ~/.config/nvim`
 
 # Link tmux config
 #------------------------------------------------------------

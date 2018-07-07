@@ -4,7 +4,6 @@ if [ -f /etc/bashrc ]; then
 fi
 
 export GOPATH=$HOME/code/go
-export GOBIN_PATH=/usr/local/opt/go/libexec/bin
 export COMPOSER_PATH=$HOME/.composer/vendor/bin
 export ARCANIST_PATH=$HOME/.arcanist/arcanist/bin
 export HEROKU_PATH=/usr/local/heroku/bin
@@ -13,7 +12,6 @@ export ANDROID_HOME=/opt/android-studio
 export PYENV_ROOT="$HOME/.pyenv"
 
 export PATH=$LOCAL_BIN:$PATH
-export PATH=$PATH:$GOBIN_PATH
 export PATH=$GOPATH/bin:$PATH
 export PATH=$COMPOSER_PATH:$PATH
 export PATH=$HEROKU_PATH:$PATH

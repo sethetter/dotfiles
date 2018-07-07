@@ -4,16 +4,22 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
-" Required:
-set runtimepath+=/home/sethetter/.cache/dein/repos/github.com/Shougo/dein.vim
+let g:python2_host_prog = '/usr/local/bin/python'
+let g:python3_host_prog = '/usr/local/bin/python3'
 
 " Required:
-if dein#load_state('/home/sethetter/.cache/dein')
-  call dein#begin('/home/sethetter/.cache/dein')
+set runtimepath+=/Users/sethetter/.cache/dein/repos/github.com/Shougo/dein.vim
+
+" Required:
+if dein#load_state('/Users/sethetter/.cache/dein')
+  call dein#begin('/Users/sethetter/.cache/dein')
 
   " Let dein manage dein
   " Required:
-  call dein#add('/home/sethetter/.cache/dein/repos/github.com/Shougo/dein.vim')
+  call dein#add('/Users/sethetter/.cache/dein/repos/github.com/Shougo/dein.vim')
+
+  call dein#add('roxma/vim-hug-neovim-rpc')
+  call dein#add('roxma/nvim-yarp')
 
   call dein#add('Shougo/vimproc.vim', {'build': 'make'})
   call dein#add('Shougo/deoplete.nvim')
@@ -62,9 +68,9 @@ if dein#load_state('/home/sethetter/.cache/dein')
   call dein#add('mhartington/deoplete-typescript')
 
   " Haskell
-  call dein#add('neovimhaskell/haskell-vim')
-  call dein#add('eagletmt/ghcmod-vim')
-  call dein#add('eagletmt/neco-ghc')
+  "call dein#add('neovimhaskell/haskell-vim')
+  "call dein#add('eagletmt/ghcmod-vim')
+  "call dein#add('eagletmt/neco-ghc')
 
   " Required:
   call dein#end()
@@ -153,9 +159,9 @@ let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_save = 1
 
 " tsuquyomi
-let g:tsuquyomi_javascript_support = 1
-let g:tsuquyomi_auto_open = 1
-let g:tsuquyomi_disable_quickfix = 1
+" let g:tsuquyomi_javascript_support = 1
+" let g:tsuquyomi_auto_open = 1
+" let g:tsuquyomi_disable_quickfix = 1
 
 " tern
 let g:tern_request_timeout = 1

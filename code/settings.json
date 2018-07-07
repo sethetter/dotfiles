@@ -1,9 +1,10 @@
 {
-    "workbench.colorTheme": "Solarized Light",
+    "workbench.colorTheme": "Solarized Dark",
 
-    "workbench.editor.enablePreview": false,
-
-    "editor.fontSize": 12,
+    "editor.parameterHints": false,
+    // "editor.hover": false,
+    "editor.fontSize": 13,
+    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
     "editor.tabSize": 2,
     "editor.cursorStyle": "block",
     "editor.lightbulb.enabled": false,
@@ -11,9 +12,11 @@
     "editor.multiCursorModifier": "alt",
     "editor.renderIndentGuides": true,
 
+    "files.insertFinalNewline": true,
+
     "explorer.autoReveal": false,
 
-    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.fontSize": 13,
 
     "vim.easymotion": true,
     "vim.leader": " ",
@@ -22,6 +25,7 @@
 
     "window.zoomLevel": 0,
     "gitlens.codeLens.enabled": false,
+    "gitlens.historyExplorer.location": "explorer",
     "gitlens.hovers.enabled": false,
     "gitlens.resultsExplorer.files.layout": "list",
     "gitlens.explorers.avatars": false,
@@ -47,8 +51,13 @@
         "editor.wordWrap": "on",
         "editor.quickSuggestions": false
     },
+    "[go]": {
+        "editor.tabSize": 4
+    },
 
     "extensions.ignoreRecommendations": true,
 
-    "terminal.external.linuxExec": "hyper"
+    "terminal.external.linuxExec": "hyper",
+    "gitlens.historyExplorer.enabled": true,
+    "search.location": "panel"
 }
