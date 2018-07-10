@@ -122,9 +122,7 @@ let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_save = 1
 
 " lightline
-let g:lightline = {
-  \ 'colorscheme': 'solarized',
-  \ }
+let g:lightline = { 'colorscheme': 'solarized' }
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
