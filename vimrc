@@ -4,6 +4,7 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
+" Python settings
 let g:python2_host_prog = '/usr/local/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
@@ -18,11 +19,13 @@ if dein#load_state('~/.cache/dein')
   " Required:
   call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
 
+  call dein#add('roxma/vim-hug-neovim-rpc')
+  call dein#add('roxma/nvim-yarp')
+
   call dein#add('Shougo/vimproc.vim', {'build': 'make'})
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('Shougo/denite.nvim')
   call dein#add('w0rp/ale')
-  "call dein#add('arakashic/chromatica.nvim')
   call dein#add('sheerun/vim-polyglot')
   call dein#add('editorconfig/editorconfig-vim')
   call dein#add('junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' })

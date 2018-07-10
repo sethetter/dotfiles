@@ -18,9 +18,6 @@ if dein#load_state('/Users/sethetter/.cache/dein')
   " Required:
   call dein#add('/Users/sethetter/.cache/dein/repos/github.com/Shougo/dein.vim')
 
-  call dein#add('roxma/vim-hug-neovim-rpc')
-  call dein#add('roxma/nvim-yarp')
-
   call dein#add('Shougo/vimproc.vim', {'build': 'make'})
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('Shougo/denite.nvim')
