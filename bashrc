@@ -10,17 +10,20 @@ export HEROKU_PATH=/usr/local/heroku/bin
 export LOCAL_BIN=$HOME/.local/bin
 export ANDROID_HOME=/opt/android-studio
 export PYENV_ROOT="$HOME/.pyenv"
+export RVM_BIN=$HOME/.rvm/bin
 
-export PATH=$LOCAL_BIN:$PATH
-export PATH=$GOPATH/bin:$PATH
 export PATH=$COMPOSER_PATH:$PATH
 export PATH=$HEROKU_PATH:$PATH
 export PATH=$ARCANIST_PATH:$PATH
 export PATH=$PYENV_ROOT/bin:$PATH
+export PATH=$GOPATH/bin:$PATH
+export PATH=$LOCAL_BIN:$PATH
+export PATH=$RVM_BIN:$PATH
 
 export NVIM_TUI_ENABLE_TRUE_COLOR=1
 export TERM='xterm-256color'
-export EDITOR='code --wait'
+# export EDITOR='code --wait'
+export EDITOR='vim'
 
 # This should always be last
 if [ "`tty`" != "not a tty" ]; then exec fish; fi

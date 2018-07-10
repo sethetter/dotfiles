@@ -21,18 +21,19 @@ if dein#load_state('~/.cache/dein')
 
   call dein#add('roxma/vim-hug-neovim-rpc')
   call dein#add('roxma/nvim-yarp')
-
   call dein#add('Shougo/vimproc.vim', {'build': 'make'})
+
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('Shougo/denite.nvim')
   call dein#add('w0rp/ale')
-  call dein#add('sheerun/vim-polyglot')
-  call dein#add('editorconfig/editorconfig-vim')
   call dein#add('junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' })
 
+  call dein#add('sheerun/vim-polyglot')
+  call dein#add('editorconfig/editorconfig-vim')
+
   call dein#add('icymind/NeoSolarized')
-  call dein#add('vim-airline/vim-airline')
-  call dein#add('vim-airline/vim-airline-themes')
+  call dein#add('itchyny/lightline.vim')
+  call dein#add('ap/vim-buftabline')
   call dein#add('myusuf3/numbers.vim')
 
   call dein#add('scrooloose/nerdtree')
@@ -91,11 +92,12 @@ set shiftwidth=2
 set tabstop=2
 set expandtab
 set hidden
+set laststatus=2
+set noshowmode
 
 " Colors
 set background=dark
 colorscheme NeoSolarized
-let g:airline_theme='solarized'
 
 
 " Plugin Config
@@ -114,12 +116,15 @@ call denite#custom#var('grep', 'final_opts', [])
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier']
 let g:ale_fixers['typescript'] = ['prettier']
+let g:ale_cache_executable_check_failures = 1
+let g:ale_completion_enabled = 1
+let g:ale_lint_on_text_changed = 0
+let g:ale_lint_on_save = 1
 
-" airline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#show_splits = 0
-let g:airline#extensions#tabline#switch_buffers_and_tabs = 1
-let g:airline#extensions#tabline#show_buffers = 1
+" lightline
+let g:lightline = {
+  \ 'colorscheme': 'solarized',
+  \ }
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
@@ -145,22 +150,10 @@ let NERDTreeDirArrows = 1
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
 
-" ale
-let g:ale_completion_enabled = 1
-let g:airline#extensions#ale#enabled = 1
-let g:ale_lint_on_text_changed = 0
-let g:ale_lint_on_save = 1
-
 " tsuquyomi
-" let g:tsuquyomi_javascript_support = 1
-" let g:tsuquyomi_auto_open = 1
-" let g:tsuquyomi_disable_quickfix = 1
-
-" tern
-let g:tern_request_timeout = 1
-let g:tern_request_timeout = 6000
-let g:tern#command = ["tern"]
-let g:tern#arguments = ["--persistent"]
+let g:tsuquyomi_javascript_support = 1
+let g:tsuquyomi_auto_open = 1
+let g:tsuquyomi_disable_quickfix = 1
 
 " typescript
 let g:nvim_typescript#javsacript_support=1
