@@ -10,6 +10,7 @@ function notes; code ~/notes; end
 function scratch; code -n ~/notes/scratch.md; end
 function doing; code -n ~/notes/doing.md; end
 function journal; note journal journal; end
+function dc; docker-compose $argv[1..-1]; end
 
 # Takes a file path and prints a formatted version of that JSON file
 function json-fmt

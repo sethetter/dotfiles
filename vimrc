@@ -54,6 +54,7 @@ if dein#load_state('~/.cache/dein')
 
   " JavaScript
   call dein#add('pangloss/vim-javascript')
+  call dein#add('flowtype/vim-flow')
 
   " HTML
   call dein#add('mattn/emmet-vim')
@@ -159,7 +160,7 @@ let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
 
 " tsuquyomi
-let g:tsuquyomi_javascript_support = 1
+let g:tsuquyomi_javascript_support = 0
 let g:tsuquyomi_auto_open = 1
 let g:tsuquyomi_disable_quickfix = 1
 
