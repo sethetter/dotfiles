@@ -22,9 +22,9 @@ export PATH=$RVM_BIN:$PATH
 
 export NVIM_TUI_ENABLE_TRUE_COLOR=1
 export TERM='xterm-256color'
-# export EDITOR='code --wait'
 export EDITOR='vim'
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # This should always be last
 if [ "`tty`" != "not a tty" ]; then exec fish; fi
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

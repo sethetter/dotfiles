@@ -1,13 +1,14 @@
-" Plugins
-" ----------------------------------------
+" Python settings
+if has('python3')
+  silent! python3 1
+endif
+
 if &compatible
   set nocompatible               " Be iMproved
 endif
 
-" Python settings
-let g:python2_host_prog = '/usr/local/bin/python'
-let g:python3_host_prog = '/usr/local/bin/python3'
-
+" Plugins
+" ----------------------------------------
 " Required:
 set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
@@ -32,7 +33,10 @@ if dein#load_state('~/.cache/dein')
   call dein#add('editorconfig/editorconfig-vim')
 
   call dein#add('icymind/NeoSolarized')
-  call dein#add('itchyny/lightline.vim')
+  call dein#add('vim-airline/vim-airline')
+  call dein#add('vim-airline/vim-airline-themes')
+
+  " call dein#add('itchyny/lightline.vim')
   call dein#add('ap/vim-buftabline')
   call dein#add('myusuf3/numbers.vim')
 
@@ -94,10 +98,12 @@ set expandtab
 set hidden
 set laststatus=2
 set noshowmode
+set t_Co=256
 
 " Colors
 set background=dark
 colorscheme NeoSolarized
+let g:airline_theme='solarized'
 
 
 " Plugin Config
@@ -121,8 +127,12 @@ let g:ale_completion_enabled = 1
 let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_save = 1
 
-" lightline
-let g:lightline = { 'colorscheme': 'solarized' }
+" airline
+let g:airline_highlighting_cache = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_splits = 0
+let g:airline#extensions#tabline#switch_buffers_and_tabs = 1
+let g:airline#extensions#tabline#show_buffers = 1
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
