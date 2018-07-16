@@ -45,6 +45,6 @@ end
 function unpackhw
   set hwdir ~/code/adhoc/homework_answers/submissions/$argv[1]/
   mkdir $hwdir
-  unzip ~/Downloads/$sub -d $hwdir
+  unzip ~/Downloads/$argv[1] -d $hwdir
   rm ~/Downloads/$argv[1].zip
 end

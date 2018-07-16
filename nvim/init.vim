@@ -18,6 +18,7 @@ if dein#load_state('/Users/sethetter/.cache/dein')
   " Required:
   call dein#add('/Users/sethetter/.cache/dein/repos/github.com/Shougo/dein.vim')
 
+  call dein#add('autozimu/LanguageClient-neovim', {'rev': 'next', 'build': 'bash install.sh'})
   call dein#add('Shougo/vimproc.vim', {'build': 'make'})
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('Shougo/denite.nvim')
@@ -28,10 +29,9 @@ if dein#load_state('/Users/sethetter/.cache/dein')
   call dein#add('icymind/NeoSolarized')
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
-  call dein#add('myusuf3/numbers.vim')
 
-  call dein#add('junegunn/vim-easy-align')
-  call dein#add('easymotion/vim-easymotion')
+  call dein#add('myusuf3/numbers.vim')
+  call dein#add('ap/vim-buftabline')
 
   call dein#add('scrooloose/nerdtree')
   call dein#add('Xuyuanp/nerdtree-git-plugin')
@@ -46,12 +46,8 @@ if dein#load_state('/Users/sethetter/.cache/dein')
   " JavaScript
   call dein#add('carlitux/deoplete-ternjs')
   call dein#add('ternjs/tern_for_vim')
-  call dein#add('Quramy/tsuquyomi')
-  call dein#add('othree/yajs.vim')
-  call dein#add('othree/javascript-libraries-syntax.vim')
-  call dein#add('othree/es.next.syntax.vim')
   call dein#add('mxw/vim-jsx')
-  call dein#add('jparise/vim-graphql')
+  call dein#add('pangloss/vim-javascript')
 
   " HTML
   call dein#add('mattn/emmet-vim')
@@ -60,14 +56,14 @@ if dein#load_state('/Users/sethetter/.cache/dein')
   call dein#add('fatih/vim-go')
 
   " TypeScript
-  call dein#add('mhartington/nvim-typescript')
+  call dein#add('leafgarland/typescript-vim')
   call dein#add('HerringtonDarkholme/yats.vim')
-  call dein#add('mhartington/deoplete-typescript')
+  call dein#add('mhartington/nvim-typescript', {'build': './install.sh'})
 
   " Haskell
-  "call dein#add('neovimhaskell/haskell-vim')
-  "call dein#add('eagletmt/ghcmod-vim')
-  "call dein#add('eagletmt/neco-ghc')
+  call dein#add('neovimhaskell/haskell-vim')
+  call dein#add('eagletmt/ghcmod-vim')
+  call dein#add('eagletmt/neco-ghc')
 
   " Required:
   call dein#end()
@@ -95,6 +91,9 @@ set shiftwidth=2
 set tabstop=2
 set expandtab
 set hidden
+set laststatus=2
+set noshowmode
+set t_Co=256
 
 " Colors
 set background=dark
@@ -118,8 +117,12 @@ call denite#custom#var('grep', 'final_opts', [])
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier']
 let g:ale_fixers['typescript'] = ['prettier']
+let g:ale_linters = {}
+let g:ale_linters['javascript'] = ['flow']
+let g:ale_linters['typescript'] = ['tslint', 'tsc']
 
 " airline
+let g:airline_highlighting_cache = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_splits = 0
 let g:airline#extensions#tabline#switch_buffers_and_tabs = 1
@@ -134,10 +137,9 @@ let g:deoplete#enable_refresh_always = 1
 let g:deoplete#max_abbr_width = 0
 let g:deoplete#max_menu_width = 0
 let g:deoplete#omni#input_patterns = get(g:,'deoplete#omni#input_patterns',{})
-let g:deoplete#sources#tss#javascript_support = 1
 
 " Chromatica
-let g:chromatica#libclang_path = '/usr/lib64/llvm'
+let g:chromatica#libclang_path = '/usr/local/opt/llvm/lib'
 let g:chromatica#enable_at_startup = 1
 
 " NERDTree
@@ -155,19 +157,11 @@ let g:airline#extensions#ale#enabled = 1
 let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_save = 1
 
-" tsuquyomi
-" let g:tsuquyomi_javascript_support = 1
-" let g:tsuquyomi_auto_open = 1
-" let g:tsuquyomi_disable_quickfix = 1
-
 " tern
 let g:tern_request_timeout = 1
 let g:tern_request_timeout = 6000
 let g:tern#command = ["tern"]
 let g:tern#arguments = ["--persistent"]
-
-" typescript
-let g:nvim_typescript#javsacript_support=1
 
 " markdown
 autocmd BufRead,BufNewFile *.md set textwidth=80
