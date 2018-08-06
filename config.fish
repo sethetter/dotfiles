@@ -6,9 +6,9 @@ function mux; tmuxinator $argv[1..-1]; end
 function last-commit; git log --oneline -n 1 | cut -c 1-7; end
 function copy-last-commit; git log --oneline -n 1 | cut -c 1-7 | pbcopy; end
 function o; xdg-open $argv[1..-1]; end
-function notes; code ~/notes; end
-function scratch; code -n ~/notes/scratch.md; end
-function doing; code -n ~/notes/doing.md; end
+function notes; nvim ~/notes; end
+function scratch; nvim ~/notes/scratch.md; end
+function doing; nvim ~/notes/doing.md; end
 function journal; note journal journal; end
 function dc; docker-compose $argv[1..-1]; end
 
@@ -26,9 +26,9 @@ function note
 
   if test "$argv[2]"
     mkdir -p ~/notes/$argv[2]
-    and code -n ~/notes/$argv[2]/(date +%y%m%d)-$name.md
+    and nvim ~/notes/$argv[2]/(date +%y%m%d)-$name.md
   else
-    code -n ~/notes/(date +%y%m%d)-$name.md
+    nvim ~/notes/(date +%y%m%d)-$name.md
   end
 end
 
@@ -48,3 +48,7 @@ function unpackhw
   unzip ~/Downloads/$argv[1] -d $hwdir
   rm ~/Downloads/$argv[1].zip
 end
+
+# Start pyenv
+status --is-interactive; and . (pyenv init -|psub)
+status --is-interactive; and . (pyenv virtualenv-init -|psub)

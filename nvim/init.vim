@@ -18,7 +18,6 @@ if dein#load_state('/Users/sethetter/.cache/dein')
   " Required:
   call dein#add('/Users/sethetter/.cache/dein/repos/github.com/Shougo/dein.vim')
 
-  call dein#add('autozimu/LanguageClient-neovim', {'rev': 'next', 'build': 'bash install.sh'})
   call dein#add('Shougo/vimproc.vim', {'build': 'make'})
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('Shougo/denite.nvim')
@@ -45,6 +44,7 @@ if dein#load_state('/Users/sethetter/.cache/dein')
 
   " JavaScript
   call dein#add('carlitux/deoplete-ternjs')
+  call dein#add('steelsojka/deoplete-flow')
   call dein#add('ternjs/tern_for_vim')
   call dein#add('mxw/vim-jsx')
   call dein#add('pangloss/vim-javascript')
@@ -56,7 +56,7 @@ if dein#load_state('/Users/sethetter/.cache/dein')
   call dein#add('fatih/vim-go')
 
   " TypeScript
-  call dein#add('leafgarland/typescript-vim')
+  "call dein#add('leafgarland/typescript-vim')
   call dein#add('HerringtonDarkholme/yats.vim')
   call dein#add('mhartington/nvim-typescript', {'build': './install.sh'})
 
@@ -114,12 +114,7 @@ call denite#custom#var('grep', 'separator', ['--'])
 call denite#custom#var('grep', 'final_opts', [])
 
 " ale
-let g:ale_fixers = {}
-let g:ale_fixers['javascript'] = ['prettier']
-let g:ale_fixers['typescript'] = ['prettier']
-let g:ale_linters = {}
-let g:ale_linters['javascript'] = ['flow']
-let g:ale_linters['typescript'] = ['tslint', 'tsc']
+let g:ale_use_global_executables = 1
 
 " airline
 let g:airline_highlighting_cache = 1
@@ -173,6 +168,8 @@ let g:user_emmet_mode='i'
 " go
 autocmd FileType go nnoremap <leader>Gd :GoDef<CR>
 autocmd FileType go nnoremap <leader>GD :GoDoc<CR>
+autocmd FileType go set shiftwidth=4
+autocmd FileType go set tabstop=4
 
 
 " Keybindings

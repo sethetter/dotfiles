@@ -99,5 +99,13 @@
   {
     "key": "ctrl+cmd+j",
     "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "cmd+k o",
+    "command": "outline.focus"
+  },
+  {
+    "key": "cmd+k g",
+    "command": "workbench.view.extension.gitlens"
   }
 ]

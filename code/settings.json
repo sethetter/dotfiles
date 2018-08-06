@@ -12,8 +12,6 @@
     "editor.multiCursorModifier": "alt",
     "editor.renderIndentGuides": true,
 
-    "files.insertFinalNewline": true,
-
     "explorer.autoReveal": false,
 
     "terminal.integrated.fontSize": 13,
@@ -25,6 +23,9 @@
 
     "window.zoomLevel": 0,
     "gitlens.codeLens.enabled": false,
+    "gitlens.historyExplorer.enabled": true,
+    "gitlens.gitExplorer.location": "gitlens",
+    "gitlens.gitExplorer.view": "repository",
     "gitlens.historyExplorer.location": "explorer",
     "gitlens.hovers.enabled": false,
     "gitlens.resultsExplorer.files.layout": "list",
@@ -57,7 +58,13 @@
 
     "extensions.ignoreRecommendations": true,
 
-    "terminal.external.linuxExec": "hyper",
-    "gitlens.historyExplorer.enabled": true,
-    "search.location": "panel"
+    "search.location": "panel",
+    "window.newWindowDimensions": "maximized",
+    "gitlens.settings.mode": "advanced",
+    "workbench.sideBar.location": "left",
+
+    "go.enableCodeLens": {
+        "references": false,
+        "runtest": false
+    }
 }
