@@ -14,7 +14,7 @@ function dc; docker-compose $argv[1..-1]; end
 
 # Takes a file path and prints a formatted version of that JSON file
 function json-fmt
-  node -e "console.log(JSON.stringify(JSON.parse(require('fs').readFileSync(process.argv[1]).toString('utf8')), null, 4));"
+  node -e "console.log(JSON.stringify(JSON.parse(require('fs').readFileSync(process.argv[0]).toString('utf8')), null, 4));"
 end
 
 function note

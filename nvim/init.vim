@@ -35,6 +35,7 @@ if dein#load_state('/Users/sethetter/.cache/dein')
   call dein#add('scrooloose/nerdtree')
   call dein#add('Xuyuanp/nerdtree-git-plugin')
   call dein#add('tpope/vim-fugitive')
+  call dein#add('tpope/vim-rhubarb')
   call dein#add('airblade/vim-gitgutter')
   call dein#add('scrooloose/nerdcommenter')
 
@@ -93,13 +94,14 @@ set expandtab
 set hidden
 set laststatus=2
 set noshowmode
+set nowrap
 set t_Co=256
+set updatetime=100 " speeds up realtime updates, mostly gutter stuff
 
 " Colors
 set background=dark
 colorscheme NeoSolarized
 let g:airline_theme='solarized'
-
 
 " Plugin Config
 " ---------------------------------------
@@ -112,6 +114,9 @@ call denite#custom#var('grep', 'recursive_opts', [])
 call denite#custom#var('grep', 'pattern_opt', [])
 call denite#custom#var('grep', 'separator', ['--'])
 call denite#custom#var('grep', 'final_opts', [])
+
+" git
+let g:github_enterprise_urls = ['https://github.cms.gov']
 
 " ale
 let g:ale_use_global_executables = 1
@@ -160,6 +165,7 @@ let g:tern#arguments = ["--persistent"]
 
 " markdown
 autocmd BufRead,BufNewFile *.md set textwidth=80
+autocmd BufRead,BufNewFile *.md set wrap
 
 " emmet
 let g:user_emmet_leader_key='<C-E>'
@@ -200,7 +206,10 @@ nmap <Leader>jw <Plug>(easymotion-overwin-w)
 " Git
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gd :Gdiff<CR>
+nnoremap <leader>gh :GitGutterLineHighlightsToggle<CR>
 nnoremap <leader>gp :Gpush<CR>
+nnoremap <leader>gl :Gpull<CR>
+nnoremap <leader>go :Gbrowse<CR>
 
 " Buffers
 nnoremap <leader>bd :bp\|bd #<CR>
