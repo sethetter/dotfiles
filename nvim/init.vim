@@ -31,6 +31,7 @@ if dein#load_state('~/.cache/dein')
 
   call dein#add('myusuf3/numbers.vim')
   call dein#add('ap/vim-buftabline')
+  call dein#add('Yggdroot/indentLine')
 
   call dein#add('scrooloose/nerdtree')
   call dein#add('Xuyuanp/nerdtree-git-plugin')
@@ -96,7 +97,7 @@ set laststatus=2
 set noshowmode
 set nowrap
 set t_Co=256
-set updatetime=100 " speeds up realtime updates, mostly gutter stuff
+set updatetime=250 " speeds up realtime updates, mostly gutter stuff
 
 " Colors
 set background=dark
@@ -163,6 +164,9 @@ let g:tern_request_timeout = 6000
 let g:tern#command = ["tern"]
 let g:tern#arguments = ["--persistent"]
 
+" IndentLine
+let g:indentLine_enabled = 0
+
 " markdown
 autocmd BufRead,BufNewFile *.md set textwidth=80
 autocmd BufRead,BufNewFile *.md set wrap
@@ -183,6 +187,7 @@ autocmd FileType go set tabstop=4
 
 " Files
 nnoremap <leader>fs :w<CR>
+nnoremap <leader>lt :IndentLinesToggle<CR>
 
 " Project Navigation
 nnoremap <leader>pt :NERDTreeToggle<CR>
