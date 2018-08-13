@@ -103,6 +103,8 @@ set updatetime=250 " speeds up realtime updates, mostly gutter stuff
 set background=dark
 colorscheme NeoSolarized
 let g:airline_theme='solarized'
+" Custom highlight, because that orange is toooo much
+hi Search cterm=NONE ctermfg=white ctermbg=darkgreen
 
 " Plugin Config
 " ---------------------------------------

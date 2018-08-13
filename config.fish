@@ -11,6 +11,7 @@ function scratch; nvim ~/notes/scratch.md; end
 function doing; nvim ~/notes/doing.md; end
 function journal; note journal journal; end
 function dc; docker-compose $argv[1..-1]; end
+function lg; lazygit; end
 
 # Takes a file path and prints a formatted version of that JSON file
 function json-fmt
