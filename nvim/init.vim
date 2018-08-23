@@ -32,6 +32,7 @@ if dein#load_state('~/.cache/dein')
   call dein#add('myusuf3/numbers.vim')
   call dein#add('ap/vim-buftabline')
   call dein#add('Yggdroot/indentLine')
+  call dein#add('MattesGroeger/vim-bookmarks')
 
   call dein#add('scrooloose/nerdtree')
   call dein#add('Xuyuanp/nerdtree-git-plugin')
@@ -198,7 +199,7 @@ nnoremap <silent> <leader>pF :NERDTreeFind<CR>
 nnoremap <leader>pb :Denite buffer<CR>
 nnoremap <leader>pf :Denite file_rec<CR>
 nnoremap <leader>pn :e NOTES.sethetter.md<CR>
-nnoremap <C-p> :Denite file_rec<CR>
+nnoremap <leader>ps :e SCRATCH.sethetter.md<CR>
 nnoremap <leader>Gd :ALEGoToDefinition<CR>
 
 " Search
