@@ -30,8 +30,8 @@ if dein#load_state('~/.cache/dein')
   call dein#add('vim-airline/vim-airline-themes')
 
   call dein#add('myusuf3/numbers.vim')
-  call dein#add('ap/vim-buftabline')
   call dein#add('Yggdroot/indentLine')
+  call dein#add('junegunn/vim-easy-align')
   call dein#add('MattesGroeger/vim-bookmarks')
 
   call dein#add('scrooloose/nerdtree')
@@ -127,10 +127,6 @@ let g:ale_use_global_executables = 1
 
 " airline
 let g:airline_highlighting_cache = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#show_splits = 0
-let g:airline#extensions#tabline#switch_buffers_and_tabs = 1
-let g:airline#extensions#tabline#show_buffers = 1
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
@@ -179,11 +175,13 @@ let g:user_emmet_leader_key='<C-E>'
 let g:user_emmet_mode='i'
 
 " go
+autocmd FileType go nnoremap <leader>fD :Denite decls<CR>
 autocmd FileType go nnoremap <leader>Gd :GoDef<CR>
 autocmd FileType go nnoremap <leader>GD :GoDoc<CR>
+autocmd FileType go nnoremap <leader>GI :GoImplements<CR>
 autocmd FileType go set shiftwidth=4
 autocmd FileType go set tabstop=4
-
+let g:go_fmt_command = "goimports"
 
 " Keybindings
 " -----------------------------------
@@ -191,6 +189,10 @@ autocmd FileType go set tabstop=4
 " Files
 nnoremap <leader>fs :w<CR>
 nnoremap <leader>lt :IndentLinesToggle<CR>
+
+" Editing
+xmap <leader>ta <Plug>(EasyAlign)
+nmap <leader>ta <Plug>(EasyAlign)
 
 " Project Navigation
 nnoremap <leader>pt :NERDTreeToggle<CR>
