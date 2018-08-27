@@ -166,6 +166,11 @@ let g:tern#arguments = ["--persistent"]
 " IndentLine
 let g:indentLine_enabled = 0
 
+" vim-bookmarks
+let g:bookmark_save_per_working_dir = 1
+let g:bookmark_auto_save = 1
+let g:bookmark_no_default_key_mappings = 1
+
 " markdown
 autocmd BufRead,BufNewFile *.md set textwidth=80
 autocmd BufRead,BufNewFile *.md set wrap
@@ -200,8 +205,8 @@ nnoremap <leader>pT :e .<CR>
 nnoremap <silent> <leader>pF :NERDTreeFind<CR>
 nnoremap <leader>pb :Denite buffer<CR>
 nnoremap <leader>pf :Denite file_rec<CR>
-nnoremap <leader>pn :e NOTES.sethetter.md<CR>
-nnoremap <leader>ps :e SCRATCH.sethetter.md<CR>
+nnoremap <leader>pn :e _NOTES.sethetter/notes.md<CR>
+nnoremap <leader>ps :e _NOTES.sethetter/scratch.md<CR>
 nnoremap <leader>Gd :ALEGoToDefinition<CR>
 
 " Search
@@ -251,6 +256,18 @@ nnoremap <leader>ee :ALEEnableBuffer<CR>
 nnoremap <leader>et :ALEToggleBuffer<CR>
 nnoremap <leader>eE :ALEEnable<CR>
 nnoremap <leader>eT :ALEToggle<CR>
+
+" Bookmarks
+nmap <leader>mm <Plug>BookmarkToggle
+nmap <leader>mi <Plug>BookmarkAnnotate
+nmap <leader>ma <Plug>BookmarkShowAll
+nmap <leader>mn <Plug>BookmarkNext
+nmap <leader>mp <Plug>BookmarkPrev
+nmap <leader>mc <Plug>BookmarkClear
+nmap <leader>mx <Plug>BookmarkClearAll
+nmap <leader>mk <Plug>BookmarkMoveUp
+nmap <leader>mj <Plug>BookmarkMoveDown
+nmap <leader>mg <Plug>BookmarkMoveToLine
 
 " Dein pane movement
 call denite#custom#map('insert', '<C-j>', '<denite:move_to_next_line>', 'noremap')

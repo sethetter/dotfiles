@@ -7,6 +7,7 @@ function last-commit; git log --oneline -n 1 | cut -c 1-7; end
 function copy-last-commit; git log --oneline -n 1 | cut -c 1-7 | pbcopy; end
 function o; xdg-open $argv[1..-1]; end
 function notes; nvim ~/notes; end
+function lnote; mkdir -p _NOTES.sethetter; and echo "# $argv[1]" > _NOTES.sethetter/$argv[1].md; end
 function scratch; nvim ~/notes/scratch.md; end
 function doing; nvim ~/notes/doing.md; end
 function journal; note journal journal; end
