@@ -59,9 +59,9 @@ if dein#load_state('~/.cache/dein')
   call dein#add('fatih/vim-go')
 
   " TypeScript
-  "call dein#add('leafgarland/typescript-vim')
+  " call dein#add('leafgarland/typescript-vim')
   call dein#add('HerringtonDarkholme/yats.vim')
-  call dein#add('mhartington/nvim-typescript', {'build': './install.sh'})
+  " call dein#add('mhartington/nvim-typescript', {'build': './install.sh'})
 
   " Haskell
   call dein#add('neovimhaskell/haskell-vim')
@@ -97,6 +97,7 @@ set hidden
 set laststatus=2
 set noshowmode
 set nowrap
+set formatoptions-=t
 set t_Co=256
 set updatetime=250 " speeds up realtime updates, mostly gutter stuff
 
@@ -105,7 +106,7 @@ set background=dark
 colorscheme NeoSolarized
 let g:airline_theme='solarized'
 " Custom highlight, because that orange is toooo much
-hi Search cterm=NONE ctermfg=white ctermbg=darkgreen
+hi Search cterm=NONE ctermfg=white ctermbg=black
 
 " Plugin Config
 " ---------------------------------------
@@ -123,10 +124,13 @@ call denite#custom#var('grep', 'final_opts', [])
 let g:github_enterprise_urls = ['https://github.cms.gov']
 
 " ale
-let g:ale_use_global_executables = 1
+let g:ale_use_global_executables = 0
+let g:ale_completion_enabled = 1
+let g:ale_lint_on_text_changed = 'never'
 
 " airline
 let g:airline_highlighting_cache = 1
+let g:airline#extensions#tabline#enabled = 1
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
@@ -146,6 +150,7 @@ let g:chromatica#enable_at_startup = 1
 let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
+let NERDTreeWinSize = 35
 
 " NERDCommenter
 let g:NERDSpaceDelims = 1
@@ -179,6 +184,19 @@ autocmd BufRead,BufNewFile *.md set wrap
 let g:user_emmet_leader_key='<C-E>'
 let g:user_emmet_mode='i'
 
+" javascript
+let g:javascript_plugin_flow = 1
+" let g:nvim_typescript#javascript_support = 0
+let g:ale_linters = {
+      \'javascript.jsx': ['flow-language-server', 'eslint'],
+      \'javascript': ['flow-language-server', 'eslint'],
+      \'typescript': ['tsserver', 'tslint']
+      \}
+let g:ale_fixers = {
+      \'javascript': ['prettier', 'importjs', 'eslint'],
+      \'typescript': ['tslint'],
+      \}
+
 " go
 autocmd FileType go nnoremap <leader>fD :Denite decls<CR>
 autocmd FileType go nnoremap <leader>Gd :GoDef<CR>
@@ -193,7 +211,8 @@ let g:go_fmt_command = "goimports"
 
 " Files
 nnoremap <leader>fs :w<CR>
-nnoremap <leader>lt :IndentLinesToggle<CR>
+nnoremap <leader>ff :NERDTreeFind<CR>
+vnoremap <leader>it :IndentLinesToggle<CR>
 
 " Editing
 xmap <leader>ta <Plug>(EasyAlign)
@@ -207,6 +226,7 @@ nnoremap <leader>pb :Denite buffer<CR>
 nnoremap <leader>pf :Denite file_rec<CR>
 nnoremap <leader>pn :e _NOTES.sethetter/notes.md<CR>
 nnoremap <leader>ps :e _NOTES.sethetter/scratch.md<CR>
+nnoremap <leader>pr :ALEFindReferences<CR>
 nnoremap <leader>Gd :ALEGoToDefinition<CR>
 
 " Search
