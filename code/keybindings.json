@@ -107,5 +107,13 @@
   {
     "key": "cmd+k g",
     "command": "workbench.view.extension.gitlens"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditor"
   }
 ]

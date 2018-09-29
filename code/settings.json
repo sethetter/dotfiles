@@ -66,5 +66,8 @@
     "go.enableCodeLens": {
         "references": false,
         "runtest": false
-    }
+    },
+    "workbench.editor.showTabs": true,
+    "flow.pathToFlow": "./node_modules/.bin/flow",
+    "flowide.pathToFlow": "flow"
 }
