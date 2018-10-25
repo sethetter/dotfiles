@@ -1,15 +1,15 @@
 set -g fish_key_bindings fish_vi_key_bindings
 set fish_greeting ""
 
-function tmux; env TERM=xterm-256color tmux -2 $argv[1..-1]; end 
+function tmux; env TERM=xterm-256color tmux -2 $argv[1..-1]; end
 function mux; tmuxinator $argv[1..-1]; end
 function last-commit; git log --oneline -n 1 | cut -c 1-7; end
 function copy-last-commit; git log --oneline -n 1 | cut -c 1-7 | pbcopy; end
 function o; xdg-open $argv[1..-1]; end
-function notes; nvim ~/notes; end
-function lnote; mkdir -p _NOTES.sethetter; and echo "# $argv[1]" > _NOTES.sethetter/$argv[1].md; end
-function scratch; nvim ~/notes/scratch.md; end
-function doing; nvim ~/notes/doing.md; end
+function notes; vim ~/notes; end
+function lnote; mkdir -p _NOTES.sethetter; and echo "# $argv[1]" > _NOTES.sethetter/$argv[1].md; and vim _NOTES.sethetter/$argv[1].md; end
+function scratch; vim ~/notes/scratch.md; end
+function doing; vim ~/notes/doing.md; end
 function journal; note journal journal; end
 function dc; docker-compose $argv[1..-1]; end
 function lg; lazygit; end
@@ -28,9 +28,9 @@ function note
 
   if test "$argv[2]"
     mkdir -p ~/notes/$argv[2]
-    and nvim ~/notes/$argv[2]/(date +%y%m%d)-$name.md
+    and vim ~/notes/$argv[2]/(date +%y%m%d)-$name.md
   else
-    nvim ~/notes/(date +%y%m%d)-$name.md
+    vim ~/notes/(date +%y%m%d)-$name.md
   end
 end
 
@@ -49,6 +49,14 @@ function unpackhw
   mkdir $hwdir
   unzip ~/Downloads/$argv[1] -d $hwdir
   rm ~/Downloads/$argv[1].zip
+end
+
+function glv
+  set target HEAD
+  if test "$argv[1]"
+    set target $argv[1]
+  end
+  git log --graph --pretty=format:'%h - %d %s (%cr) <%an>' $target | vim -R -c 'set filetype=git nowrap' -
 end
 
 # Start pyenv

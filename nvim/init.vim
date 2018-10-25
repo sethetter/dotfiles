@@ -25,7 +25,7 @@ if dein#load_state('~/.cache/dein')
   call dein#add('arakashic/chromatica.nvim')
   call dein#add('junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' })
 
-  call dein#add('icymind/NeoSolarized')
+  call dein#add('altercation/vim-colors-solarized')
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
 
@@ -35,7 +35,6 @@ if dein#load_state('~/.cache/dein')
   call dein#add('MattesGroeger/vim-bookmarks')
 
   call dein#add('scrooloose/nerdtree')
-  call dein#add('Xuyuanp/nerdtree-git-plugin')
   call dein#add('tpope/vim-fugitive')
   call dein#add('tpope/vim-rhubarb')
   call dein#add('airblade/vim-gitgutter')
@@ -46,22 +45,19 @@ if dein#load_state('~/.cache/dein')
   call dein#add('tmux-plugins/vim-tmux-focus-events')
 
   " JavaScript
+  call dein#add('pangloss/vim-javascript')
   call dein#add('carlitux/deoplete-ternjs')
   call dein#add('steelsojka/deoplete-flow')
   call dein#add('ternjs/tern_for_vim')
   call dein#add('mxw/vim-jsx')
-  call dein#add('pangloss/vim-javascript')
 
-  " HTML
-  call dein#add('mattn/emmet-vim')
+  " TypeScript
+  call dein#add('leafgarland/typescript-vim')
+  call dein#add('HerringtonDarkholme/yats.vim')
+  " call dein#add('mhartington/nvim-typescript', {'build': './install.sh'})
 
   " Go
   call dein#add('fatih/vim-go')
-
-  " TypeScript
-  " call dein#add('leafgarland/typescript-vim')
-  call dein#add('HerringtonDarkholme/yats.vim')
-  " call dein#add('mhartington/nvim-typescript', {'build': './install.sh'})
 
   " Haskell
   call dein#add('neovimhaskell/haskell-vim')
@@ -86,9 +82,6 @@ endif
 
 let mapleader=" "
 
-filetype plugin indent on
-syntax on
-
 set relativenumber
 set shiftwidth=2
 set tabstop=2
@@ -103,10 +96,13 @@ set updatetime=250 " speeds up realtime updates, mostly gutter stuff
 
 " Colors
 set background=dark
-colorscheme NeoSolarized
+colorscheme solarized
 let g:airline_theme='solarized'
 " Custom highlight, because that orange is toooo much
 hi Search cterm=NONE ctermfg=white ctermbg=black
+" Disable highlighting denite panes, it gets weird
+hi default link deniteMatchedChar None
+hi default link deniteMatchedRange None
 
 " Plugin Config
 " ---------------------------------------
@@ -186,7 +182,7 @@ let g:user_emmet_mode='i'
 
 " javascript
 let g:javascript_plugin_flow = 1
-" let g:nvim_typescript#javascript_support = 0
+let g:nvim_typescript#javascript_support = 0
 let g:ale_linters = {
       \'javascript.jsx': ['flow-language-server', 'eslint'],
       \'javascript': ['flow-language-server', 'eslint'],
@@ -230,13 +226,16 @@ nnoremap <leader>pr :ALEFindReferences<CR>
 nnoremap <leader>Gd :ALEGoToDefinition<CR>
 
 " Search
-nnoremap <leader>sc :noh<CR>
+nnoremap <leader>sc :let @/=""<CR>
 nnoremap <leader>sp :Denite grep<CR>
 nnoremap <leader>sP :DeniteCursorWord grep:.<CR>
+nnoremap <leader>sf "zyiw:exe ":let @/=@z"<CR>
 
 " Movement
 map  <Leader>jw <Plug>(easymotion-bd-w)
 nmap <Leader>jw <Plug>(easymotion-overwin-w)
+map <C-L> 20zl " Scroll 20 characters to the right
+map <C-H> 20zh " Scroll 20 characters to the left
 
 " Git
 nnoremap <leader>gs :Gstatus<CR>

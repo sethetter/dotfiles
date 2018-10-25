@@ -3,6 +3,7 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
+export GOROOT=/usr/local/go
 export GOPATH=$HOME/code/go
 export COMPOSER_PATH=$HOME/.composer/vendor/bin
 export ARCANIST_PATH=$HOME/.arcanist/arcanist/bin

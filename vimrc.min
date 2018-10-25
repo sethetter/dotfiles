@@ -1,0 +1,17 @@
+if &compatible
+  set nocompatible
+endif
+
+filetype plugin indent on
+syntax on
+
+"set termguicolors
+set relativenumber
+set shiftwidth=2
+set tabstop=2
+set expandtab
+set hidden
+set nowrap
+
+autocmd BufRead,BufNewFile *.md set textwidth=80
+autocmd BufRead,BufNewFile *.md set wrap

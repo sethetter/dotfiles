@@ -1,73 +1,68 @@
 {
-    "workbench.colorTheme": "Solarized Dark",
-
-    "editor.parameterHints": false,
-    // "editor.hover": false,
-    "editor.fontSize": 13,
-    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
-    "editor.tabSize": 2,
-    "editor.cursorStyle": "block",
-    "editor.lightbulb.enabled": false,
-    "editor.lineNumbers": "relative",
-    "editor.multiCursorModifier": "alt",
-    "editor.renderIndentGuides": true,
-
-    "explorer.autoReveal": false,
-
-    "terminal.integrated.fontSize": 13,
-
-    "vim.easymotion": true,
-    "vim.leader": " ",
-    "vim.enableNeovim": false,
-    "vim.useCtrlKeys": true,
-
-    "window.zoomLevel": 0,
-    "gitlens.codeLens.enabled": false,
-    "gitlens.historyExplorer.enabled": true,
-    "gitlens.gitExplorer.location": "gitlens",
-    "gitlens.gitExplorer.view": "repository",
-    "gitlens.historyExplorer.location": "explorer",
-    "gitlens.hovers.enabled": false,
-    "gitlens.resultsExplorer.files.layout": "list",
-    "gitlens.explorers.avatars": false,
-    "gitlens.currentLine.enabled": false,
-    "gitlens.hovers.currentLine.over": "line",
-    "gitlens.gitExplorer.files.layout": "list",
-    "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": false,
-        "suppressShowKeyBindingsNotice": true
-    },
-
-    "typescript.tsserver.log": "verbose",
-
-    "workbench.activityBar.visible": false,
-
-    "[markdown]": {
-        "editor.wordWrap": "on",
-        "editor.quickSuggestions": false
-    },
-    "[go]": {
-        "editor.tabSize": 4
-    },
-
-    "extensions.ignoreRecommendations": true,
-
-    "search.location": "panel",
-    "window.newWindowDimensions": "maximized",
-    "gitlens.settings.mode": "advanced",
-    "workbench.sideBar.location": "left",
-
-    "go.enableCodeLens": {
-        "references": false,
-        "runtest": false
-    },
-    "workbench.editor.showTabs": true,
-    "flow.pathToFlow": "./node_modules/.bin/flow",
-    "flowide.pathToFlow": "flow"
+  "workbench.colorTheme": "Solarized Dark",
+  "editor.fontSize": 13,
+  "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.tabSize": 2,
+  "editor.cursorStyle": "block",
+  "editor.lightbulb.enabled": false,
+  "editor.lineNumbers": "relative",
+  "editor.multiCursorModifier": "alt",
+  "editor.renderIndentGuides": true,
+  "explorer.autoReveal": false,
+  "terminal.integrated.fontSize": 13,
+  "vim.easymotion": true,
+  "vim.leader": " ",
+  "vim.enableNeovim": false,
+  "vim.useCtrlKeys": true,
+  "window.zoomLevel": 0,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.historyExplorer.enabled": true,
+  "gitlens.gitExplorer.location": "gitlens",
+  "gitlens.gitExplorer.view": "repository",
+  "gitlens.historyExplorer.location": "explorer",
+  "gitlens.hovers.enabled": false,
+  "gitlens.resultsExplorer.files.layout": "list",
+  "gitlens.explorers.avatars": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.gitExplorer.files.layout": "list",
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  },
+  "typescript.tsserver.log": "verbose",
+  "workbench.activityBar.visible": false,
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": false
+  },
+  "[go]": {
+    "editor.tabSize": 4
+  },
+  "extensions.ignoreRecommendations": true,
+  "search.location": "panel",
+  "window.newWindowDimensions": "maximized",
+  "gitlens.settings.mode": "advanced",
+  "workbench.sideBar.location": "left",
+  "go.enableCodeLens": {
+    "references": false,
+    "runtest": false
+  },
+  "workbench.editor.showTabs": true,
+  "flow.pathToFlow": "./node_modules/.bin/flow",
+  "flowide.pathToFlow": "flow",
+  "gitlens.remotes": [
+    {
+      "domain": "github.cms.gov",
+      "type": "GitHub"
+    }
+  ],
+  "editor.parameterHints.enabled": false,
+  "flow.tryFlowBin": true
 }
