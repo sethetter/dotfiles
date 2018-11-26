@@ -40,11 +40,11 @@ Plug 'vim-scripts/grep.vim'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'Raimondi/delimitMate'
 Plug 'scrooloose/syntastic'
-Plug 'Yggdroot/indentLine'
 Plug 'lifepillar/vim-solarized8'
 Plug 'w0rp/ale'
 Plug 'Shougo/vimproc.vim', {'do': g:make}
 Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-surround'
 
 " go
 Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
@@ -68,6 +68,9 @@ Plug 'mxw/vim-jsx'
 
 " typescript
 Plug 'leafgarland/typescript-vim'
+
+" php
+Plug 'StanAngeloff/php.vim'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -123,6 +126,7 @@ endif
 
 set ruler
 set relativenumber
+set number
 
 let no_buffers_menu=1
 
@@ -194,7 +198,10 @@ set autoread
 
 " Files
 nnoremap <leader>fs :w<CR>
+nnoremap <leader>fX :x<CR>
 nnoremap <leader>ff :NERDTreeFind<CR>
+nnoremap <leader>fr :e<CR>
+nnoremap <leader>fR :e!<CR>
 
 " Commenting
 nnoremap <leader>c :Commentary<CR>
@@ -209,7 +216,8 @@ nnoremap <leader>pf :FZF -m<CR>
 nnoremap <leader>pn :e _NOTES.sethetter/notes.md<CR>
 nnoremap <leader>ps :e _NOTES.sethetter/scratch.md<CR>
 nnoremap <leader>pr :ALEFindReferences<CR>
-nnoremap <leader>Gd :ALEGoToDefinition<CR>
+nmap <leader>Gd :ALEGoToDefinition<CR>
+autocmd BufNewFile,BufRead *.go nmap <leader>Gd :GoDef<CR>
 
 " Search
 nnoremap <leader>sc :let @/=""<CR>
@@ -257,11 +265,21 @@ nnoremap <leader>wj <C-w>j
 nnoremap <leader>wk <C-w>k
 nnoremap <leader>wl <C-w>l
 
+" Quickfix List
+nnoremap <leader>qo :copen<CR>
+nnoremap <leader>qv :vert copen<CR><C-w>=
+nnoremap <leader>qc :cclose<CR>
+nnoremap <leader>qn :cnext<CR>
+nnoremap <leader>qp :cprev<CR>
+
+" Location List
+nnoremap <leader>lo :lopen<CR>
+nnoremap <leader>lv :vert lopen<CR><C-w>=
+nnoremap <leader>lc :lclose<CR>
+nnoremap <leader>ln :lnext<CR>
+nnoremap <leader>lp :lprev<CR>
+
 " Errors
-nnoremap <leader>eo :lopen<CR>
-nnoremap <leader>ec :lclose<CR>
-nnoremap <leader>en :lnext<CR>
-nnoremap <leader>ep :lprev<CR>
 nnoremap <leader>ee :ALEEnableBuffer<CR>
 nnoremap <leader>et :ALEToggleBuffer<CR>
 nnoremap <leader>eE :ALEEnable<CR>
@@ -298,12 +316,13 @@ let g:syntastic_auto_loc_list=1
 let g:syntastic_aggregate_errors = 1
 
 " ale
-" let g:ale_set_loclist = 0
-" let g:ale_set_quickfix = 1
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_enter = 0
 let g:ale_linters = {
   \'javascript.jsx': ['flow-language-server', 'eslint'],
   \'javascript': ['flow-language-server', 'eslint'],
-  \'typescript': ['tsserver', 'tslint']
+  \'typescript': ['tsserver', 'tslint'],
+  \'go': ['gofmt', 'goimports', 'go mod', 'go vet', 'gotype', 'go build', 'gosimple', 'staticcheck', 'golangserver', 'golangci-lint']
   \}
 let g:ale_fixers = {
   \'javascript': ['prettier', 'importjs', 'eslint'],
@@ -328,7 +347,7 @@ let g:go_highlight_space_tab_error = 0
 let g:go_highlight_array_whitespace_error = 0
 let g:go_highlight_trailing_whitespace_error = 0
 let g:go_highlight_extra_types = 1
-autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
+autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=2 shiftwidth=2 softtabstop=2
 
 " haskell
 let g:haskell_conceal_wide = 1
@@ -338,6 +357,9 @@ autocmd Filetype haskell setlocal omnifunc=necoghc#omnifunc
 
 " html
 autocmd Filetype html setlocal ts=4 sw=4 expandtab
+
+" html
+autocmd Filetype php setlocal ts=4 sw=4 expandtab
 
 " javascript
 let g:javascript_enable_domhtmlcss = 1
