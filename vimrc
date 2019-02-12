@@ -4,6 +4,10 @@ if has('vim_starting')
   set nocompatible               " Be iMproved
 endif
 
+if has('python3')
+  silent! python3 1
+endif
+
 let vimplug_exists=expand('~/.vim/autoload/plug.vim')
 
 if !filereadable(vimplug_exists)
@@ -33,6 +37,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-fugitive'
+Plug 'mattn/gist-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
@@ -45,6 +50,7 @@ Plug 'w0rp/ale'
 Plug 'Shougo/vimproc.vim', {'do': g:make}
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-surround'
+Plug 'SirVer/ultisnips'
 
 " go
 Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
@@ -71,6 +77,9 @@ Plug 'leafgarland/typescript-vim'
 
 " php
 Plug 'StanAngeloff/php.vim'
+
+" apiblueprint, apiary
+Plug 'kylef/apiblueprint.vim'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -148,7 +157,7 @@ endif
 
 " vim-airline
 let g:airline_theme = 'solarized'
-let g:airline_solarized_bg='dark'
+let g:airline_solarized_bg='light'
 let g:airline_highlighting_cache=1
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -202,10 +211,16 @@ nnoremap <leader>fX :x<CR>
 nnoremap <leader>ff :NERDTreeFind<CR>
 nnoremap <leader>fr :e<CR>
 nnoremap <leader>fR :e!<CR>
+nnoremap <leader>fb :e .<CR>
 
 " Commenting
 nnoremap <leader>c :Commentary<CR>
 vmap <leader>c :Commentary<CR>
+
+" Snippets
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " Project Navigation
 nnoremap <leader>pt :NERDTreeToggle<CR>
@@ -216,8 +231,15 @@ nnoremap <leader>pf :FZF -m<CR>
 nnoremap <leader>pn :e _NOTES.sethetter/notes.md<CR>
 nnoremap <leader>ps :e _NOTES.sethetter/scratch.md<CR>
 nnoremap <leader>pr :ALEFindReferences<CR>
-nmap <leader>Gd :ALEGoToDefinition<CR>
-autocmd BufNewFile,BufRead *.go nmap <leader>Gd :GoDef<CR>
+
+autocmd BufNewFile,BufRead *.go nmap <leader>pd :GoDecls<CR>
+autocmd BufNewFile,BufRead *.go nmap <leader>gD <Plug>(go-doc-vertical)
+autocmd BufNewFile,BufRead *.go nmap <leader>gi :GoDescribe<CR>
+autocmd BufNewFile,BufRead *.go nmap <leader>gc :GoCallers<CR>
+autocmd BufNewFile,BufRead *.go nmap <leader>gC :GoCallees<CR>
+autocmd BufNewFile,BufRead *.go nmap <leader>ga :GoAlternate<CR>
+autocmd BufNewFile,BufRead *.go nmap <leader>gA :GoAlternate!<CR>
+autocmd BufNewFile,BufRead *.go nmap <leader>gE :GoIfErr<CR>
 
 " Search
 nnoremap <leader>sc :let @/=""<CR>
@@ -240,12 +262,14 @@ vnoremap K :m '<-2<CR>gv=gv
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gd :Gvdiff<CR>
 nnoremap <leader>gh :GitGutterLineHighlightsToggle<CR>
-nnoremap <leader>gp :Gpush<CR>
-nnoremap <leader>gl :Gpull<CR>
+nnoremap <leader>gl :Glog<CR>
 nnoremap <leader>go :Gbrowse<CR>
+nnoremap <leader>gP :Gpush<CR>
+nnoremap <leader>gL :Gpull<CR>
 
 " Buffers
 nnoremap <leader>bd :bp\|bd #<CR>
+"nnoremap <leader>bd :bd<CR>
 nnoremap <leader>bn :bn<CR>
 nnoremap <leader>bp :bp<CR>
 nnoremap <leader>bf :ALEFix<CR>
@@ -374,5 +398,5 @@ augroup END
 " Colors
 set termguicolors
 colorscheme solarized8
-set background=dark
+set background=light
 hi Search cterm=NONE ctermfg=white ctermbg=black
