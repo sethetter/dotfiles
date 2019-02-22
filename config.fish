@@ -10,7 +10,7 @@ function o; xdg-open $argv[1..-1]; end
 function notes; vim ~/notes; end
 function lnote; mkdir -p _NOTES.sethetter; and echo "# $argv[1]" > _NOTES.sethetter/$argv[1].md; and vim _NOTES.sethetter/$argv[1].md; end
 function scratch; vim ~/notes/scratch.md; end
-function doing; vim ~/notes/doing.md; end
+function dlog; vim ~/notes/LOG.md; end
 function journal; note journal journal; end
 function dc; docker-compose $argv[1..-1]; end
 function lg; lazygit; end

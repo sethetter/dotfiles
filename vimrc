@@ -38,6 +38,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-fugitive'
 Plug 'mattn/gist-vim'
+Plug 'mattn/webapi-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
@@ -51,6 +52,10 @@ Plug 'Shougo/vimproc.vim', {'do': g:make}
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-surround'
 Plug 'SirVer/ultisnips'
+
+" Writing
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 
 " go
 Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
@@ -78,9 +83,6 @@ Plug 'leafgarland/typescript-vim'
 " php
 Plug 'StanAngeloff/php.vim'
 
-" apiblueprint, apiary
-Plug 'kylef/apiblueprint.vim'
-
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 else
@@ -100,6 +102,9 @@ syntax on
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8
+
+" Old regex engine, speeds up syntax highlighting
+set re=1
 
 set bomb
 set binary
@@ -228,8 +233,8 @@ nnoremap <leader>pT :e .<CR>
 nnoremap <leader>pF :NERDTreeFind<CR>
 nnoremap <leader>pb :Buffers<CR>
 nnoremap <leader>pf :FZF -m<CR>
-nnoremap <leader>pn :e _NOTES.sethetter/notes.md<CR>
-nnoremap <leader>ps :e _NOTES.sethetter/scratch.md<CR>
+nnoremap <leader>pn :e _sethetter.NOTES/notes.md<CR>
+nnoremap <leader>ps :e _sethetter.NOTES/scratch.md<CR>
 nnoremap <leader>pr :ALEFindReferences<CR>
 
 autocmd BufNewFile,BufRead *.go nmap <leader>pd :GoDecls<CR>
@@ -258,6 +263,11 @@ vmap > >gv
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
+" Writing
+autocmd Filetype markdown nmap <Leader>ff :Goyo<CR>
+autocmd Filetype markdown nmap <Leader>l <Plug>(Limelight)
+autocmd Filetype markdown xmap <Leader>l <Plug>(Limelight)
+
 " Git
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gd :Gvdiff<CR>
@@ -275,7 +285,6 @@ nnoremap <leader>bp :bp<CR>
 nnoremap <leader>bf :ALEFix<CR>
 
 " Notes
-nnoremap <leader>np :e NOTES.sethetter.md<CR>
 nnoremap <leader>ns :e ~/notes/scratch.md<CR>
 nnoremap <leader>nd :e ~/notes/doing.md<CR>
 nnoremap <leader>nl :e ~/notes/log.md<CR>
@@ -346,7 +355,6 @@ let g:ale_linters = {
   \'javascript.jsx': ['flow-language-server', 'eslint'],
   \'javascript': ['flow-language-server', 'eslint'],
   \'typescript': ['tsserver', 'tslint'],
-  \'go': ['gofmt', 'goimports', 'go mod', 'go vet', 'gotype', 'go build', 'gosimple', 'staticcheck', 'golangserver', 'golangci-lint']
   \}
 let g:ale_fixers = {
   \'javascript': ['prettier', 'importjs', 'eslint'],
@@ -382,7 +390,7 @@ autocmd Filetype haskell setlocal omnifunc=necoghc#omnifunc
 " html
 autocmd Filetype html setlocal ts=4 sw=4 expandtab
 
-" html
+" php
 autocmd Filetype php setlocal ts=4 sw=4 expandtab
 
 " javascript
@@ -392,7 +400,7 @@ let g:javascript_plugin_flow = 1
 " markdown
 augroup vimrc-wrapping
   autocmd!
-  autocmd BufRead,BufNewFile *.md call s:setupWrapping()
+  autocmd Filetype markdown call s:setupWrapping()
 augroup END
 
 " Colors
@@ -400,3 +408,7 @@ set termguicolors
 colorscheme solarized8
 set background=light
 hi Search cterm=NONE ctermfg=white ctermbg=black
+
+if filereadable(".vimrc.sethetter")
+  source .vimrc.sethetter
+endif

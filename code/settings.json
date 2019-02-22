@@ -1,6 +1,6 @@
 {
-  "workbench.colorTheme": "Solarized Dark",
-  "editor.fontSize": 13,
+  "workbench.colorTheme": "Solarized Light",
+  "editor.fontSize": 14,
   "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
   "editor.tabSize": 2,
   "editor.cursorStyle": "block",
@@ -9,7 +9,7 @@
   "editor.multiCursorModifier": "alt",
   "editor.renderIndentGuides": true,
   "explorer.autoReveal": false,
-  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontSize": 14,
   "vim.easymotion": true,
   "vim.leader": " ",
   "vim.enableNeovim": false,
