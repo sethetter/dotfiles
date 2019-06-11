@@ -1,7 +1,7 @@
 " Install Plug
 " ----------------------------------------------
 if has('vim_starting')
-  set nocompatible               " Be iMproved
+  set nocompatible
 endif
 
 if has('python3')
@@ -56,9 +56,11 @@ Plug 'SirVer/ultisnips'
 " Writing
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
+Plug 'Scuilion/markdown-drawer'
 
 " go
-Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
+" Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
+Plug 'myitcv/govim'
 
 " haskell
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
@@ -112,11 +114,19 @@ set ttyfast
 set backspace=indent,eol,start
 set hidden
 
+" Mouse support, mostly for govim hover feature
+" set mouse=a
+" set ttymouse=sgr
+
 set tabstop=2
-set softtabstop=0
+set softtabstop=2
 set shiftwidth=2
 set expandtab
 set nowrap
+
+" Make vim more responsive
+set updatetime=500
+set balloondelay=250
 
 " Searching
 set hlsearch
@@ -126,6 +136,7 @@ set smartcase
 
 " Directories for swp files
 set nobackup
+set nowritebackup
 set noswapfile
 
 set fileformats=unix,dos,mac
@@ -233,8 +244,6 @@ nnoremap <leader>pT :e .<CR>
 nnoremap <leader>pF :NERDTreeFind<CR>
 nnoremap <leader>pb :Buffers<CR>
 nnoremap <leader>pf :FZF -m<CR>
-nnoremap <leader>pn :e _sethetter.NOTES/notes.md<CR>
-nnoremap <leader>ps :e _sethetter.NOTES/scratch.md<CR>
 nnoremap <leader>pr :ALEFindReferences<CR>
 
 autocmd BufNewFile,BufRead *.go nmap <leader>pd :GoDecls<CR>
@@ -245,6 +254,7 @@ autocmd BufNewFile,BufRead *.go nmap <leader>gC :GoCallees<CR>
 autocmd BufNewFile,BufRead *.go nmap <leader>ga :GoAlternate<CR>
 autocmd BufNewFile,BufRead *.go nmap <leader>gA :GoAlternate!<CR>
 autocmd BufNewFile,BufRead *.go nmap <leader>gE :GoIfErr<CR>
+autocmd BufNewFile,BufRead *.go nmap <buffer> <Leader>gh : <C-u>echo GOVIMHover()<CR>
 
 " Search
 nnoremap <leader>sc :let @/=""<CR>
@@ -362,23 +372,8 @@ let g:ale_fixers = {
   \}
 
 " go
-let g:go_list_type = "quickfix"
-let g:go_fmt_command = "goimports"
-let g:go_fmt_fail_silently = 1
 let g:syntastic_go_checkers = ['golint', 'govet']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
-let g:go_highlight_types = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_build_constraints = 1
-let g:go_highlight_structs = 1
-let g:go_highlight_generate_tags = 1
-let g:go_highlight_space_tab_error = 0
-let g:go_highlight_array_whitespace_error = 0
-let g:go_highlight_trailing_whitespace_error = 0
-let g:go_highlight_extra_types = 1
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=2 shiftwidth=2 softtabstop=2
 
 " haskell
