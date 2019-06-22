@@ -76,16 +76,16 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.layout = "us";
-  services.xserver.xkbOptions = "eurosign:e,ctrl:nocaps";
+  services.xserver.xkbOptions = "eurosign:e, ctrl:nocaps";
   i18n.consoleUseXkbConfig = true;
 
   # Enable touchpad support.
   services.xserver.libinput.enable = true;
 
-  # Enable the GNOME3 Desktop Environment.
+  # Enable the KDE Plasma 5 Desktop Environment.
   services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.gnome3.enable = true;
-  services.xserver.desktopManager.default = "gnome3";
+  services.xserver.desktopManager.plasma5.enable = true;
+  services.xserver.desktopManager.default = "plasma5";
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.crow = {

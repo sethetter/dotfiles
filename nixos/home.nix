@@ -22,6 +22,8 @@ with builtins;
     enable = true;
   };
 
+  home.keyboard.options = ["ctrl:nocaps"];
+
   home.file = {
     ".emacs.d" = {
       source = pkgs.fetchFromGitHub {
