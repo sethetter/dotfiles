@@ -44,7 +44,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    wget vim tmux firefox git fish
+    wget git
   ];
 
   # Fish Shell
@@ -76,7 +76,7 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.layout = "us";
-  services.xserver.xkbOptions = "eurosign:e, grp:alt_space_toggle, ctrl:nocaps";
+  services.xserver.xkbOptions = "eurosign:e,ctrl:nocaps";
   i18n.consoleUseXkbConfig = true;
 
   # Enable touchpad support.
