@@ -76,6 +76,8 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.layout = "us";
+
+  # Map caps lock to control.
   services.xserver.xkbOptions = "eurosign:e, ctrl:nocaps";
   i18n.consoleUseXkbConfig = true;
 
@@ -83,7 +85,10 @@
   services.xserver.libinput.enable = true;
 
   # Enable the KDE Plasma 5 Desktop Environment.
-  services.xserver.displayManager.sddm.enable = true;
+  services.xserver.displayManager.sddm = {
+    enable = true;
+    enableHidpi = true;
+  };
   services.xserver.desktopManager.plasma5.enable = true;
   services.xserver.desktopManager.default = "plasma5";
 

@@ -20,6 +20,12 @@ function json-fmt
   node -e "console.log(JSON.stringify(JSON.parse(require('fs').readFileSync(process.argv[0]).toString('utf8')), null, 4));"
 end
 
+set -l nix_shell_info (
+  if test "$IN_NIX_SHELL" = "1"
+    echo -n "<nix-shell>"
+  end
+)
+
 function note
   set name "note"
 
@@ -33,23 +39,6 @@ function note
   else
     vim ~/notes/(date +%y%m%d)-$name.md
   end
-end
-
-function tm
-  set rootdir (pwd)
-  if test "$argv[1]"
-    set rootdir $argv[1]
-  end
-  cd $rootdir
-  tmux new-session -A -s (basename $PWD)
-end
-
-# Takes Homework ID as parameter
-function unpackhw
-  set hwdir ~/code/adhoc/homework_answers/submissions/$argv[1]/
-  mkdir $hwdir
-  unzip ~/Downloads/$argv[1] -d $hwdir
-  rm ~/Downloads/$argv[1].zip
 end
 
 function glv
