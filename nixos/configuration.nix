@@ -45,6 +45,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     wget git
+    home-manager.home-manager
   ];
 
   # Fish Shell
@@ -100,6 +101,10 @@
     extraGroups = [
       "wheel" "networkmanager" "disk" "audio" "video" "systemd-journal"
     ];
+  };
+
+  nixpkgs.config.packageOverrides = pkgs: {
+    home-manager = import (fetchTarball https://github.com/rycee/home-manager/archive/master.tar.gz);
   };
 
   system.autoUpgrade.enable = true;

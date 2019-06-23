@@ -1,10 +1,6 @@
-# dotfiles
+# Dotfiles for a nixOS system
 
-Just my personal configuration for some of my tools :)
-
-- bash/fish
-- git
-- spacemacs
-- tmux
-
-There is also a couple scripts to install and set things up for a Fedora machine.
+- NixOS
+- Home Manager
+- Spacemacs
+- Fish + oh-my-fish

@@ -1,3 +1,6 @@
+set -x OMF_PATH = ~/.omf
+source ~/.omf/init.fish
+
 set -g fish_key_bindings fish_vi_key_bindings
 set fish_greeting ""
 

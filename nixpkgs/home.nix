@@ -29,15 +29,15 @@ with builtins;
 
   home.file = {
     # Spacemacs
-    ".emacs.d" = {
-      source = pkgs.fetchFromGitHub {
-        owner = "syl20bnr";
-        repo = "spacemacs";
-        rev = "8c0b8c3";
-        sha256 = "1af73ls0znbpx73ym9cx22yc6q1dvv375l493ccilg2xpjsgam6w";
-      };
-      recursive = true;
-    };
+    # ".emacs.d" = {
+    #   source = pkgs.fetchFromGitHub {
+    #     owner = "syl20bnr";
+    #     repo = "spacemacs";
+    #     rev = "8c0b8c3";
+    #     sha256 = "1af73ls0znbpx73ym9cx22yc6q1dvv375l493ccilg2xpjsgam6w";
+    #   };
+    #   recursive = true;
+    # };
     ".spacemacs".source = ~/dotfiles/spacemacs;
 
     # Fish + omf
@@ -46,7 +46,7 @@ with builtins;
         owner = "oh-my-fish";
         repo = "oh-my-fish";
         rev = "v6";
-        sha256 = "1af73ls0znbpx73ym9cx22yc6q1dvv375l493ccilg2xpjsgam6w";
+        sha256 = "0wcl4vhk8hyhnyvxxlff9lcagqav67xjs4pzax5aibazdki291yb";
       };
       recursive = true;
     };
