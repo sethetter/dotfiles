@@ -24,7 +24,10 @@ with builtins;
 
   home.keyboard.options = ["ctrl:nocaps"];
 
+
   home.file = {
+    ".config/fish/config.fish".source = ~/dotfiles/config.fish;
+
     ".emacs.d" = {
       source = pkgs.fetchFromGitHub {
         owner = "syl20bnr";
@@ -34,18 +37,7 @@ with builtins;
       };
       recursive = true;
     };
-    ".spacemacs".source = ~/dotfiles/nixos/spacemacs;
 
-    ".tmux/plugins/tpm" = {
-      source = pkgs.fetchFromGitHub {
-        owner = "tmux-plugins";
-        repo = "tpm";
-        rev = "26d9ace";
-        sha256 = "108a6giwn60n3y162wdpakpy2k8vs5bj46m4y1wj4p108k7rg1iq";
-      };
-    };
-
-    ".tmux.conf".source = ~/dotfiles/nixos/tmux.conf;
-    ".config/fish/config.fish".source = ~/dotfiles/nixos/config.fish;
+    ".spacemacs".source = ~/dotfiles/spacemacs;
   };
 }
