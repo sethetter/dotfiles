@@ -104,7 +104,7 @@
   };
 
   nixpkgs.config.packageOverrides = pkgs: {
-    home-manager = import (fetchTarball https://github.com/rycee/home-manager/archive/master.tar.gz);
+    home-manager = import (fetchTarball https://github.com/rycee/home-manager/archive/master.tar.gz) {};
   };
 
   system.autoUpgrade.enable = true;
