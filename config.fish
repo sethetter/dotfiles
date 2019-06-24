@@ -6,6 +6,8 @@ function fish_title
   true
 end
 
+set -x EDITOR vi
+
 set -g fish_key_bindings fish_vi_key_bindings
 set fish_greeting ""
 
