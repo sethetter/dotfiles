@@ -25,6 +25,15 @@ function journal; note journal journal; end
 function dc; docker-compose $argv[1..-1]; end
 function lg; lazygit; end
 
+function tm
+  set rootdir (pwd)
+  if test "$argv[1]"
+    set rootdir $argv[1]
+  end
+  cd $rootdir
+  tmux new-session -A -s (basename $PWD)
+end
+
 # Takes a file path and prints a formatted version of that JSON file
 function json-fmt
   node -e "console.log(JSON.stringify(JSON.parse(require('fs').readFileSync(process.argv[0]).toString('utf8')), null, 4));"
