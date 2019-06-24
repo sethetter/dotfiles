@@ -1,5 +1,10 @@
-set -x OMF_PATH = ~/.omf
-source ~/.omf/init.fish
+if test -n "$EMACS"
+  set -x TERM eterm-color
+end
+
+function fish_title
+  true
+end
 
 set -g fish_key_bindings fish_vi_key_bindings
 set fish_greeting ""

@@ -1,6 +1,4 @@
 package foreign-env
 package fzf
 package https://github.com/jhillyerd/plugin-git
-package nvm
-package rvm
 theme default
