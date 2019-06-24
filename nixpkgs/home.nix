@@ -48,6 +48,7 @@ with import <home-manager/modules/lib/dag.nix> { inherit lib; };
     # };
     ".config/fish/config.fish".source = ~/dotfiles/config.fish;
     ".vimrc".source = ~/dotfiles/vimrc;
+    ".tmux".source = ~/dotfiles/tmux;
   };
 
   # home.activation.installAndLinkNonNixManaged = dagEntryAfter [ "writeBoundary" ] ''
