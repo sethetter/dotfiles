@@ -7,6 +7,7 @@ with import <home-manager/modules/lib/dag.nix> { inherit lib; };
 
 {
   home.packages = [
+    # TODO: Need a newer vim version for govim :(
     pkgs.vim
     pkgs.tmux
     pkgs.ripgrep
@@ -52,6 +53,7 @@ with import <home-manager/modules/lib/dag.nix> { inherit lib; };
     ".tmux.conf".source = ~/dotfiles/tmux.conf;
   };
 
+  # TODO: get omf pulled in from here
   # home.activation.installAndLinkNonNixManaged = dagEntryAfter [ "writeBoundary" ] ''
   #   rm -rf $HOME/.config/omf
   #   ln -sf $HOME/dotfiles/omf $HOME/.config/omf
