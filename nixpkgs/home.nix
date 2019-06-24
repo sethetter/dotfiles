@@ -14,6 +14,7 @@ with import <home-manager/modules/lib/dag.nix> { inherit lib; };
     pkgs.jq
     pkgs.fzf
     pkgs.firefox
+		pkgs.docker
   ];
 
   # Let Home Manager install and manage itself.
