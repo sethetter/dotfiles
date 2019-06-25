@@ -35,20 +35,28 @@ with import <home-manager/modules/lib/dag.nix> { inherit lib; };
 
   home.file = {
     # Fish + omf
-    # ".omf" = {
-    #   source = pkgs.fetchFromGitHub {
-    #     owner = "oh-my-fish";
-    #     repo = "oh-my-fish";
-    #     rev = "v6";
-    #     sha256 = "0wcl4vhk8hyhnyvxxlff9lcagqav67xjs4pzax5aibazdki291yb";
-    #   };
-    #   recursive = true;
-    # };
-    # ".config/omf" = {
-    #   source = ~/dotfiles/omf;
-    #   recursive = true;
-    # };
+    ".omf" = {
+      source = pkgs.fetchFromGitHub {
+        owner = "oh-my-fish";
+        repo = "oh-my-fish";
+        rev = "v6";
+        sha256 = "0wcl4vhk8hyhnyvxxlff9lcagqav67xjs4pzax5aibazdki291yb";
+      };
+      recursive = true;
+    };
     ".config/fish/config.fish".source = ~/dotfiles/config.fish;
+    ".config/omf/bundle".source = ~/dotfiles/omf/bundle;
+    ".config/omf/channel".source = ~/dotfiles/omf/channel;
+    ".config/omf/theme".source = ~/dotfiles/omf/theme;
+    ".config/fish/conf.d/omf.fish".source = ''
+      # Path to Oh My Fish install.
+      set -q XDG_DATA_HOME
+        and set -gx OMF_PATH "$XDG_DATA_HOME/omf"
+          or set -gx OMF_PATH "$HOME/.local/share/omf"
+
+          # Load Oh My Fish configuration.
+          source $OMF_PATH/init.fish
+    '';
 
     ".vimrc".source = ~/dotfiles/vimrc;
     ".vimrc.min".source = ~/dotfiles/vimrc.min;
@@ -63,8 +71,9 @@ with import <home-manager/modules/lib/dag.nix> { inherit lib; };
   };
 
   # TODO: get omf pulled in from here
-  # home.activation.installAndLinkNonNixManaged = dagEntryAfter [ "writeBoundary" ] ''
-  #   rm -rf $HOME/.config/omf
-  #   ln -sf $HOME/dotfiles/omf $HOME/.config/omf
-  # '';
+  home.activation.installAndLinkNonNixManaged = dagEntryAfter [ "writeBoundary" ] ''
+    # rm -rf $HOME/.config/omf
+    # ln -sf $HOME/dotfiles/omf $HOME/.config/omf
+    omf update
+  '';
 }
