@@ -27,13 +27,6 @@
   networking.networkmanager.enable = true;
   # networking.wireless.enable = true;
 
-  # Select internationalisation properties.
-  i18n = {
-    consoleFont = "Lat2-Terminus16";
-    consoleKeyMap = "us";
-    defaultLocale = "en_US.UTF-8";
-  };
-
   # Set your time zone.
   time.timeZone = "America/Chicago";
 
@@ -47,10 +40,12 @@
   ];
 
   fonts = {
-    enableGhostscriptFonts = true;
-    fontconfig.enable = true;
-    fontfonfig.defaultFonts.monospace = [ "Fira Code" ];
     enableFontDir = true;
+    enableGhostscriptFonts = true;
+
+    fontconfig.enable = true;
+    fontconfig.defaultFonts.monospace = [ "Fira Code" ];
+
     fonts = [
       pkgs.fira
       pkgs.fira-code
@@ -58,7 +53,6 @@
       pkgs.emojione
       pkgs.noto-fonts
       pkgs.noto-fonts-emoji
-      pkgs.corefonts
       pkgs.powerline-fonts
     ];
   };
