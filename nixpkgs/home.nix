@@ -48,7 +48,7 @@ with import <home-manager/modules/lib/dag.nix> { inherit lib; };
     ".config/omf/bundle".source = ~/dotfiles/omf/bundle;
     ".config/omf/channel".source = ~/dotfiles/omf/channel;
     ".config/omf/theme".source = ~/dotfiles/omf/theme;
-    ".config/fish/conf.d/omf.fish".source = ''
+    ".config/fish/conf.d/omf.fish".text = ''
       # Path to Oh My Fish install.
       set -q XDG_DATA_HOME
         and set -gx OMF_PATH "$XDG_DATA_HOME/omf"
@@ -61,7 +61,7 @@ with import <home-manager/modules/lib/dag.nix> { inherit lib; };
     ".vimrc".source = ~/dotfiles/vimrc;
     ".vimrc.min".source = ~/dotfiles/vimrc.min;
     ".vim/autoload/plug.vim" = {
-      source = pkgs.fetchUrl {
+      source = pkgs.fetchurl {
         url = "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim";
         sha256 = "76bed66a9b83b34f9261b0894c8ae4857d177ceec4f7dc30de21d9905b59d7de";
       };
@@ -71,9 +71,9 @@ with import <home-manager/modules/lib/dag.nix> { inherit lib; };
   };
 
   # TODO: get omf pulled in from here
-  home.activation.installAndLinkNonNixManaged = dagEntryAfter [ "writeBoundary" ] ''
-    # rm -rf $HOME/.config/omf
-    # ln -sf $HOME/dotfiles/omf $HOME/.config/omf
-    omf update
-  '';
+  # home.activation.installAndLinkNonNixManaged = dagEntryAfter [ "writeBoundary" ] ''
+  #   # rm -rf $HOME/.config/omf
+  #   # ln -sf $HOME/dotfiles/omf $HOME/.config/omf
+  #   # omf update
+  # '';
 }
