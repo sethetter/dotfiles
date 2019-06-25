@@ -27,16 +27,12 @@
   networking.networkmanager.enable = true;
   # networking.wireless.enable = true;
 
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
   # Select internationalisation properties.
-  # i18n = {
-  #   consoleFont = "Lat2-Terminus16";
-  #   consoleKeyMap = "us";
-  #   defaultLocale = "en_US.UTF-8";
-  # };
+  i18n = {
+    consoleFont = "Lat2-Terminus16";
+    consoleKeyMap = "us";
+    defaultLocale = "en_US.UTF-8";
+  };
 
   # Set your time zone.
   time.timeZone = "America/Chicago";
@@ -51,6 +47,7 @@
   ];
 
   fonts = {
+    enableGhostscriptFonts = true;
     fontconfig.enable = true;
     fontfonfig.defaultFonts.monospace = [ "Fira Code" ];
     enableFontDir = true;
