@@ -49,8 +49,16 @@ with import <home-manager/modules/lib/dag.nix> { inherit lib; };
     #   recursive = true;
     # };
     ".config/fish/config.fish".source = ~/dotfiles/config.fish;
+
     ".vimrc".source = ~/dotfiles/vimrc;
     ".vimrc.min".source = ~/dotfiles/vimrc.min;
+    ".vim/autoload/plug.vim" = {
+      source = pkgs.fetchUrl {
+        url = "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim";
+        sha256 = "76bed66a9b83b34f9261b0894c8ae4857d177ceec4f7dc30de21d9905b59d7de";
+      };
+    };
+
     ".tmux.conf".source = ~/dotfiles/tmux.conf;
   };
 
