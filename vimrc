@@ -69,6 +69,9 @@ Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
 Plug 'Twinside/vim-hoogle', { 'for': 'haskell' }
 Plug 'mpickering/hlint-refactor-vim', { 'for': 'haskell' }
 
+" nix
+Plug 'LnL7/vim-nix'
+
 " html
 Plug 'hail2u/vim-css3-syntax'
 Plug 'tpope/vim-haml'

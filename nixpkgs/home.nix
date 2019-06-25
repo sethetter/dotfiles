@@ -67,6 +67,29 @@ with import <home-manager/modules/lib/dag.nix> { inherit lib; };
       };
     };
 
+    ".config/konsolerc".text = ''
+      [Desktop Entry]
+      DefaultProfile=Solarized Light.profile
+
+      [Favorite Profiles]
+      Favorites=Solarized Light.profile
+
+      [MainWindow]
+      Height 1000=290
+      Height 1800=935
+      MenuBar=Disabled
+      State=AAAA/wAAAAD9AAAAAAAAAWoAAAEiAAAABAAAAAQAAAAIAAAACPwAAAAA
+      ToolBarsMovable=Disabled
+      Width 1778=362
+      Width 3200=1442
+
+      [KonsoleWindow]
+      ShowMenuBarByDefault=false
+
+      [TabBar]
+      TabBarVisibility=ShowTabBarWhenNeeded
+    '';
+
     ".tmux.conf".source = ~/dotfiles/tmux.conf;
   };
 
