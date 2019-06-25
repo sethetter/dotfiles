@@ -50,6 +50,22 @@
     home-manager.home-manager
   ];
 
+  fonts = {
+    fontconfig.enable = true;
+    fontfonfig.defaultFonts.monospace = [ "Fira Code" ];
+    enableFontDir = true;
+    fonts = [
+      pkgs.fira
+      pkgs.fira-code
+      pkgs.fira-code-symbols
+      pkgs.emojione
+      pkgs.noto-fonts
+      pkgs.noto-fonts-emoji
+      pkgs.corefonts
+      pkgs.powerline-fonts
+    ];
+  };
+
   # Fish Shell
   programs.fish.enable = true;
 
