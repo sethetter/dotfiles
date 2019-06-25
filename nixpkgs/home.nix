@@ -34,6 +34,9 @@ with import <home-manager/modules/lib/dag.nix> { inherit lib; };
   home.keyboard.options = ["ctrl:nocaps"];
 
   home.file = {
+    # git
+    ".gitconfig".source = ~/dotfiles/gitconfig;
+
     # Fish + omf
     ".omf" = {
       source = pkgs.fetchFromGitHub {
