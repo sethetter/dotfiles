@@ -44,7 +44,9 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    wget git
+    wget
+    git
+    xclip
     home-manager.home-manager
   ];
 
@@ -94,7 +96,7 @@
   services.xserver.desktopManager.default = "plasma5";
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.crow = {
+  users.users.sethetter = {
     isNormalUser = true;
     shell = "/run/current-system/sw/bin/fish";
     group = "users";

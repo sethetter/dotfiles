@@ -8,7 +8,7 @@ with import <home-manager/modules/lib/dag.nix> { inherit lib; };
 {
   home.packages = [
     # TODO: Need a newer vim version for govim :(
-    pkgs.vim
+    pkgs.vim_configurable
     pkgs.tmux
     pkgs.ripgrep
     pkgs.jq
