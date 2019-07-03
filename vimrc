@@ -51,7 +51,7 @@ Plug 'w0rp/ale'
 Plug 'Shougo/vimproc.vim', {'do': g:make}
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-surround'
-Plug 'SirVer/ultisnips'
+Plug 'diepm/vim-rest-console'
 
 " Writing
 Plug 'junegunn/goyo.vim'
