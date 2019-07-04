@@ -10,11 +10,18 @@ with import <home-manager/modules/lib/dag.nix> { inherit lib; };
     # TODO: Need a newer vim version for govim :(
     pkgs.vim_configurable
     pkgs.tmux
+    pkgs.direnv
+    pkgs.cabal-install
+    pkgs.cabal2nix
+    pkgs.
     pkgs.ripgrep
     pkgs.jq
     pkgs.fzf
     pkgs.firefox
+    pkgs.slack
 		pkgs.docker
+    pkgs.gnumake
+    pkgs.gcc
   ];
 
   # Let Home Manager install and manage itself.
@@ -25,7 +32,9 @@ with import <home-manager/modules/lib/dag.nix> { inherit lib; };
     enable = true;
     extensions = with pkgs.nur.repos.rycee.firefox-addons; [
       https-everywhere
+      ublock-origin
       # TODO: use rycee/firefox-addon-generator to make these
+      # instapaper
       # lastpass
       # vimium
     ];
