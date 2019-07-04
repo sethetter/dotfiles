@@ -59,15 +59,12 @@ Plug 'junegunn/limelight.vim'
 Plug 'Scuilion/markdown-drawer'
 
 " go
-" Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
-Plug 'myitcv/govim'
+Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
+" Plug 'myitcv/govim'
 
 " haskell
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
-" Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
-" Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
 Plug 'Twinside/vim-hoogle', { 'for': 'haskell' }
-Plug 'mpickering/hlint-refactor-vim', { 'for': 'haskell' }
 
 " nix
 Plug 'LnL7/vim-nix'
@@ -383,7 +380,7 @@ autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=2 shiftwidth=2 soft
 let g:haskell_conceal_wide = 1
 let g:haskell_multiline_strings = 1
 let g:necoghc_enable_detailed_browse = 1
-autocmd Filetype haskell setlocal omnifunc=necoghc#omnifunc
+autocmd Filetype haskell setlocal omnifunc=necoghc#omnifunc ALEToggle
 
 " html
 autocmd Filetype html setlocal ts=4 sw=4 expandtab
