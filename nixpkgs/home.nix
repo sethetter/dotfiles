@@ -109,11 +109,4 @@ with import <home-manager/modules/lib/dag.nix> { inherit lib; };
 
     ".tmux.conf".source = ~/dotfiles/tmux.conf;
   };
-
-  # TODO: get omf pulled in from here
-  # home.activation.installAndLinkNonNixManaged = dagEntryAfter [ "writeBoundary" ] ''
-  #   # rm -rf $HOME/.config/omf
-  #   # ln -sf $HOME/dotfiles/omf $HOME/.config/omf
-  #   # omf update
-  # '';
 }
