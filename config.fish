@@ -6,14 +6,14 @@ function fish_title
   true
 end
 
-set -x EDITOR "vi -u ~/.vimrc.min"
+set -x EDITOR "vim -u ~/.vimrc.min"
 
 set -g fish_key_bindings fish_vi_key_bindings
 set fish_greeting ""
 
 function tmux; env TERM=xterm-256color tmux -2 $argv[1..-1]; end
 function mux; tmuxinator $argv[1..-1]; end
-function vi; vi -u ~/.vimrc.min $argv[1..-1]; end
+function vi; vim -u ~/.vimrc.min $argv[1..-1]; end
 function last-commit; git log --oneline -n 1 | cut -c 1-7; end
 function copy-last-commit; git log --oneline -n 1 | cut -c 1-7 | pbcopy; end
 function o; xdg-open $argv[1..-1]; end
@@ -24,6 +24,7 @@ function dlog; vim ~/notes/LOG.md; end
 function journal; note journal journal; end
 function dc; docker-compose $argv[1..-1]; end
 function lg; lazygit; end
+function nix-ghci; nix-shell -p ghc --run "ghci"; end
 
 function tm
   set rootdir (pwd)

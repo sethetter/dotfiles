@@ -13,15 +13,20 @@ with import <home-manager/modules/lib/dag.nix> { inherit lib; };
     pkgs.direnv
     pkgs.cabal-install
     pkgs.cabal2nix
-    pkgs.
+    pkgs.gimp
     pkgs.ripgrep
     pkgs.jq
     pkgs.fzf
     pkgs.firefox
     pkgs.slack
 		pkgs.docker
+    pkgs.nix-prefetch-scripts
     pkgs.gnumake
     pkgs.gcc
+    pkgs.libreoffice
+    pkgs.awscli
+    pkgs.haskellPackages.pandoc
+    pkgs.haskellPackages.hoogle
   ];
 
   # Let Home Manager install and manage itself.

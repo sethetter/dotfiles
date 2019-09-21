@@ -44,10 +44,12 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-scripts/grep.vim'
 Plug 'bronson/vim-trailing-whitespace'
+Plug 'junegunn/vim-easy-align'
 Plug 'Raimondi/delimitMate'
 Plug 'scrooloose/syntastic'
 Plug 'lifepillar/vim-solarized8'
 Plug 'w0rp/ale'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Shougo/vimproc.vim', {'do': g:make}
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-surround'
@@ -60,7 +62,6 @@ Plug 'Scuilion/markdown-drawer'
 
 " go
 Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
-" Plug 'myitcv/govim'
 
 " haskell
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
@@ -256,6 +257,8 @@ autocmd BufNewFile,BufRead *.go nmap <leader>gA :GoAlternate!<CR>
 autocmd BufNewFile,BufRead *.go nmap <leader>gE :GoIfErr<CR>
 autocmd BufNewFile,BufRead *.go nmap <buffer> <Leader>gh : <C-u>echo GOVIMHover()<CR>
 
+autocmd BufNewFile,BufRead *.hs nmap <leader>hh :Hoogle 
+
 " Search
 nnoremap <leader>sc :let @/=""<CR>
 nnoremap <leader>sp :Rgrep<CR>
@@ -380,7 +383,6 @@ autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=2 shiftwidth=2 soft
 let g:haskell_conceal_wide = 1
 let g:haskell_multiline_strings = 1
 let g:necoghc_enable_detailed_browse = 1
-autocmd Filetype haskell setlocal omnifunc=necoghc#omnifunc ALEToggle
 
 " html
 autocmd Filetype html setlocal ts=4 sw=4 expandtab

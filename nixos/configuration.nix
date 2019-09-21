@@ -3,7 +3,6 @@
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
 { config, pkgs, ... }:
-
 {
   imports =
     [ # Include the results of the hardware scan.
@@ -27,6 +26,10 @@
   networking.networkmanager.enable = true;
   # networking.wireless.enable = true;
 
+  networking.extraHosts = ''
+    192.168.10.10 homestead.local
+  '';
+
   # Set your time zone.
   time.timeZone = "America/Chicago";
 
@@ -36,6 +39,8 @@
     wget
     git
     xclip
+    lsof
+    blueman
     home-manager.home-manager
   ];
 
@@ -71,6 +76,10 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
+  # VirtualBox
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "sethetter" ];
+
   # Yubikey
   services.pcscd.enable = true;
   services.udev.packages = [ pkgs.yubikey-personalization ];
@@ -91,7 +100,21 @@
 
   # Enable sound.
   sound.enable = true;
-  hardware.pulseaudio.enable = true;
+
+  hardware.pulseaudio = {
+    enable = true;
+    # Full version needed for bluetooth support.
+    package = pkgs.pulseaudioFull;
+  };
+
+  # Enable bluetooth.
+  hardware.bluetooth = {
+    enable = true;
+    extraConfig = ''
+      [General]
+      ControllerMode = bredr
+    '';
+  };
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
