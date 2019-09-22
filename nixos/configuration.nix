@@ -35,13 +35,13 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    wget
-    git
-    xclip
-    lsof
-    blueman
-    home-manager.home-manager
+  environment.systemPackages = [
+    pkgs.wget
+    pkgs.git
+    pkgs.xclip
+    pkgs.lsof
+    pkgs.blueman
+    pkgs.home-manager.home-manager
   ];
 
   fonts = {
@@ -156,5 +156,4 @@
   # servers. You should change this only after NixOS release notes say you
   # should.
   system.stateVersion = "19.03"; # Did you read the comment?
-
 }

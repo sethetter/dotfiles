@@ -1,7 +1,0 @@
-* Tasks
-** TODO Get OMF declared in home.nix
-   [2019-06-22 Sat]
-   [[file:~/dotfiles/nixpkgs/home.nix::rev%20=%20"v6";]]
-** TODO Add home-manager to nixos config.
-   [2019-06-22 Sat]
-   [[file:~/dotfiles/nixpkgs/home.nix::rev%20=%20"v6";]]
