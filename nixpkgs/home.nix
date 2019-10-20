@@ -9,10 +9,10 @@ with import <home-manager/modules/lib/dag.nix> { inherit lib; };
   home.packages = [
     # TODO: Need a newer vim version for govim :(
     pkgs.vim_configurable
+    pkgs.vscode
+    pkgs.go
     pkgs.tmux
     pkgs.direnv
-    pkgs.cabal-install
-    pkgs.cabal2nix
     pkgs.gimp
     pkgs.ripgrep
     pkgs.jq
