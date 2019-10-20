@@ -45,7 +45,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'vim-scripts/grep.vim'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'Raimondi/delimitMate'
-Plug 'scrooloose/syntastic'
 Plug 'lifepillar/vim-solarized8'
 Plug 'w0rp/ale'
 Plug 'Shougo/vimproc.vim', {'do': g:make}
@@ -55,19 +54,14 @@ Plug 'aquach/vim-http-client'
 
 " Writing
 Plug 'junegunn/goyo.vim'
-Plug 'junegunn/limelight.vim'
 Plug 'Scuilion/markdown-drawer'
 
 " go
-" Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
-Plug 'myitcv/govim'
+Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
 
 " haskell
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
-Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
-Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
 Plug 'Twinside/vim-hoogle', { 'for': 'haskell' }
-Plug 'mpickering/hlint-refactor-vim', { 'for': 'haskell' }
 
 " html
 Plug 'hail2u/vim-css3-syntax'
@@ -113,10 +107,6 @@ set binary
 set ttyfast
 set backspace=indent,eol,start
 set hidden
-
-" Mouse support, mostly for govim hover feature
-" set mouse=a
-" set ttymouse=sgr
 
 set tabstop=2
 set softtabstop=2
@@ -223,11 +213,9 @@ set autoread
 
 " Files
 nnoremap <leader>fs :w<CR>
-nnoremap <leader>fX :x<CR>
-nnoremap <leader>ff :NERDTreeFind<CR>
 nnoremap <leader>fr :e<CR>
 nnoremap <leader>fR :e!<CR>
-nnoremap <leader>fb :e .<CR>
+nnoremap <leader>fe :e .<CR>
 
 " Commenting
 nnoremap <leader>c :Commentary<CR>
@@ -246,15 +234,11 @@ nnoremap <leader>pb :Buffers<CR>
 nnoremap <leader>pf :FZF -m<CR>
 nnoremap <leader>pr :ALEFindReferences<CR>
 
-autocmd BufNewFile,BufRead *.go nmap <leader>pd :GoDecls<CR>
-autocmd BufNewFile,BufRead *.go nmap <leader>gD <Plug>(go-doc-vertical)
-autocmd BufNewFile,BufRead *.go nmap <leader>gi :GoDescribe<CR>
-autocmd BufNewFile,BufRead *.go nmap <leader>gc :GoCallers<CR>
-autocmd BufNewFile,BufRead *.go nmap <leader>gC :GoCallees<CR>
-autocmd BufNewFile,BufRead *.go nmap <leader>ga :GoAlternate<CR>
-autocmd BufNewFile,BufRead *.go nmap <leader>gA :GoAlternate!<CR>
+" Go
+autocmd BufNewFile,BufRead *.go nmap <leader>ld :GoDecls<CR>
+autocmd BufNewFile,BufRead *.go nmap <leader>dd <Plug>(go-doc-vertical)
+autocmd BufNewFile,BufRead *.go nmap <leader>gi :GoInfo<CR>
 autocmd BufNewFile,BufRead *.go nmap <leader>gE :GoIfErr<CR>
-autocmd BufNewFile,BufRead *.go nmap <buffer> <Leader>gh : <C-u>echo GOVIMHover()<CR>
 
 " Search
 nnoremap <leader>sc :let @/=""<CR>
@@ -268,15 +252,15 @@ map <C-H> 20zh " Scroll 20 characters to the left
 " Vmap for maintain Visual Mode after shifting > and <
 vmap < <gv
 vmap > >gv
+nnoremap < <<
+nnoremap > >>
 
 " Move visual block
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
 " Writing
-autocmd Filetype markdown nmap <Leader>ff :Goyo<CR>
-autocmd Filetype markdown nmap <Leader>l <Plug>(Limelight)
-autocmd Filetype markdown xmap <Leader>l <Plug>(Limelight)
+autocmd Filetype markdown nnoremap <Leader>fo :Goyo<CR>
 
 " Git
 nnoremap <leader>gs :Gstatus<CR>
@@ -288,16 +272,15 @@ nnoremap <leader>gP :Gpush<CR>
 nnoremap <leader>gL :Gpull<CR>
 
 " Buffers
-nnoremap <leader>bd :bp\|bd #<CR>
-"nnoremap <leader>bd :bd<CR>
+" nnoremap <leader>bd :bp\|bd #<CR>
+nnoremap <leader>bd :bd<CR>
 nnoremap <leader>bn :bn<CR>
 nnoremap <leader>bp :bp<CR>
 nnoremap <leader>bf :ALEFix<CR>
 
 " Notes
-nnoremap <leader>ns :e ~/notes/scratch.md<CR>
-nnoremap <leader>nd :e ~/notes/doing.md<CR>
-nnoremap <leader>nl :e ~/notes/log.md<CR>
+nnoremap <leader>ns :e SCRATCH.sethetter.md<CR>
+nnoremap <leader>nn :e NOTES.sethetter.md<CR>
 
 " Windows
 nnoremap <leader>wd :q<CR>
@@ -349,14 +332,6 @@ if executable('rg')
   command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
 endif
 
-" syntastic
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_error_symbol='✗'
-let g:syntastic_warning_symbol='⚠'
-let g:syntastic_style_error_symbol = '✗'
-let g:syntastic_style_warning_symbol = '⚠'
-let g:syntastic_auto_loc_list=1
-let g:syntastic_aggregate_errors = 1
 
 " ale
 let g:ale_lint_on_text_changed = 'never'
@@ -396,6 +371,7 @@ let g:javascript_plugin_flow = 1
 augroup vimrc-wrapping
   autocmd!
   autocmd Filetype markdown call s:setupWrapping()
+  autocmd Filetype markdown setlocal ts=2 sw=2 expandtab spell
 augroup END
 
 " Colors

@@ -1,6 +1,5 @@
 {
   "workbench.colorTheme": "Solarized Light",
-  "editor.fontSize": 14,
   "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
   "editor.tabSize": 2,
   "editor.cursorStyle": "block",
@@ -9,7 +8,6 @@
   "editor.multiCursorModifier": "alt",
   "editor.renderIndentGuides": true,
   "explorer.autoReveal": false,
-  "terminal.integrated.fontSize": 14,
   "vim.easymotion": true,
   "vim.leader": " ",
   "vim.enableNeovim": false,
@@ -64,5 +62,16 @@
     }
   ],
   "editor.parameterHints.enabled": false,
-  "flow.tryFlowBin": true
+  "flow.tryFlowBin": true,
+  "terminal.integrated.rendererType": "canvas",
+  "terminal.integrated.fontSize": 13,
+  "go.formatTool": "goimports",
+  "editor.fontWeight": "400",
+  "terminal.integrated.lineHeight": 0,
+  "go.lintTool": "gometalinter",
+  "terminal.integrated.letterSpacing": -1,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "terminal.external.osxExec": "hyper.app"
 }
