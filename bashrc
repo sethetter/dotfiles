@@ -32,7 +32,7 @@ export TERM='xterm-256color'
 export EDITOR='code -w'
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
+[[ -s "$NVM_DIR/nvm.sh" ]] && \. "$NVM_DIR/nvm.sh" 
 
 # This should always be last
 if [ "`tty`" != "not a tty" ]; then exec fish; fi
