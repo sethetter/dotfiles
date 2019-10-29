@@ -69,7 +69,6 @@
   "editor.fontWeight": "400",
   "terminal.integrated.lineHeight": 0,
   "go.lintTool": "gometalinter",
-  "terminal.integrated.letterSpacing": -1,
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
