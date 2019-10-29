@@ -8,6 +8,7 @@ function copy-last-commit; git log --oneline -n 1 | cut -c 1-7 | pbcopy; end
 function o; xdg-open $argv[1..-1]; end
 function journal; note journal journal; end
 function dc; docker-compose $argv[1..-1]; end
+function tf; terraform $argv[1..-1]; end
 function lg; lazygit; end
 
 function tm
