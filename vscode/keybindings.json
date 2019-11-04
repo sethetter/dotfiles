@@ -1,111 +1,81 @@
 // Place your key bindings in this file to overwrite the defaults
 [
   {
-    "key": "cmd+9",
+    "key": "ctrl+9",
     "command": "workbench.action.terminal.focus"
   },
   {
-    "key": "ctrl+shift+k",
-    "command": "bookmarks.jumpToPrevious",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+cmd+j",
-    "command": "-bookmarks.jumpToPrevious",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+j",
-    "command": "bookmarks.jumpToNext",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+cmd+l",
-    "command": "-bookmarks.jumpToNext",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+b",
-    "command": "bookmarks.toggle",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+cmd+k",
-    "command": "-bookmarks.toggle",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "shift+cmd+j",
+    "key": "shift+ctrl+j",
     "command": "workbench.action.togglePanelPosition"
   },
   {
-    "key": "cmd+k f",
+    "key": "ctrl+k f",
     "command": "-workbench.action.closeFolder"
   },
   {
-    "key": "cmd+k f",
+    "key": "ctrl+k f",
     "command": "workbench.files.action.focusFilesExplorer"
   },
   {
-    "key": "ctrl+cmd+right",
+    "key": "ctrl+shift+right",
     "command": "-workbench.action.terminal.resizePaneRight",
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+cmd+down",
+    "key": "ctrl+shift+down",
     "command": "-workbench.action.terminal.resizePaneDown",
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+cmd+left",
+    "key": "ctrl+shift+left",
     "command": "-workbench.action.terminal.resizePaneLeft",
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+cmd+up",
+    "key": "ctrl+shift+up",
     "command": "-workbench.action.terminal.resizePaneUp",
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+cmd+l",
+    "key": "ctrl+shift+l",
     "command": "workbench.action.moveEditorToNextGroup"
   },
   {
-    "key": "ctrl+cmd+right",
+    "key": "ctrl+shift+right",
     "command": "-workbench.action.moveEditorToNextGroup"
   },
   {
-    "key": "ctrl+cmd+h",
+    "key": "ctrl+shift+h",
     "command": "workbench.action.moveEditorToPreviousGroup"
   },
   {
-    "key": "ctrl+cmd+left",
+    "key": "ctrl+shift+left",
     "command": "-workbench.action.moveEditorToPreviousGroup"
   },
   {
-    "key": "shift+cmd+g",
+    "key": "shift+shift+g",
     "command": "-editor.action.previousMatchFindAction",
     "when": "editorFocus"
   },
   {
-    "key": "cmd+g",
+    "key": "shift+g",
     "command": "-editor.action.nextMatchFindAction",
     "when": "editorFocus"
   },
   {
-    "key": "cmd+9",
+    "key": "shift+9",
     "command": "workbench.action.focusPanel"
   },
   {
-    "key": "ctrl+cmd+j",
+    "key": "ctrl+alt+j",
     "command": "workbench.action.toggleMaximizedPanel"
   },
   {
-    "key": "cmd+k o",
+    "key": "ctrl+k o",
     "command": "outline.focus"
   },
   {
-    "key": "cmd+k g",
+    "key": "ctrl+k g",
     "command": "workbench.view.extension.gitlens"
   },
   {
@@ -115,5 +85,35 @@
   {
     "key": "ctrl+shift+tab",
     "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.closeWindow",
+    "when": "!editorIsOpen && !multipleEditorGroups"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.closeWindow",
+    "when": "!editorIsOpen && !multipleEditorGroups"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-extension.vim_ctrl+w",
+    "when": "editorTextFocus && vim.active && vim.use<C-w> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "-extension.vim_ctrl+j",
+    "when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "-workbench.action.search.toggleQueryDetails",
+    "when": "searchViewletVisible"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-extension.vim_ctrl+b",
+    "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
   }
 ]

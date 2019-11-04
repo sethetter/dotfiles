@@ -1,6 +1,6 @@
 {
   "workbench.colorTheme": "Solarized Light",
-  "editor.fontSize": 14,
+  "editor.fontSize": 13,
   "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
   "editor.tabSize": 2,
   "editor.cursorStyle": "block",
@@ -9,7 +9,7 @@
   "editor.multiCursorModifier": "alt",
   "editor.renderIndentGuides": true,
   "explorer.autoReveal": false,
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 13,
   "vim.easymotion": true,
   "vim.leader": " ",
   "vim.enableNeovim": false,
@@ -64,5 +64,8 @@
     }
   ],
   "editor.parameterHints.enabled": false,
-  "flow.tryFlowBin": true
+  "flow.tryFlowBin": true,
+  "window.menuBarVisibility": "toggle",
+  "go.formatTool": "goimports",
+  "go.useLanguageServer": true
 }
