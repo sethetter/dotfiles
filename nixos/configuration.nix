@@ -40,6 +40,7 @@
     pkgs.git
     pkgs.xclip
     pkgs.lsof
+    pkgs.protonvpn-cli
     pkgs.blueman
     pkgs.home-manager.home-manager
   ];
