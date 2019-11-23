@@ -233,6 +233,7 @@ nnoremap <leader>pF :NERDTreeFind<CR>
 nnoremap <leader>pb :Buffers<CR>
 nnoremap <leader>pf :FZF -m<CR>
 nnoremap <leader>pr :ALEFindReferences<CR>
+nnoremap gd :ALEGoToDefinition<CR>
 
 " Go
 autocmd BufNewFile,BufRead *.go nmap <leader>ld :GoDecls<CR>
@@ -333,23 +334,24 @@ if executable('rg')
 endif
 
 
-" ale
+" ALE
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
 let g:ale_linters = {
   \'javascript.jsx': ['flow-language-server', 'eslint'],
   \'javascript': ['flow-language-server', 'eslint'],
   \'typescript': ['tsserver', 'tslint'],
+  \'rust': ['rls'],
   \}
 let g:ale_fixers = {
   \'javascript': ['prettier', 'importjs', 'eslint'],
   \'typescript': ['tslint'],
+  \'rust': ['rustfmt'],
   \}
 
 " go
-let g:syntastic_go_checkers = ['golint', 'govet']
-let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=2 shiftwidth=2 softtabstop=2
+let g:go_fmt_command = "goimports"
 
 " haskell
 let g:haskell_conceal_wide = 1
