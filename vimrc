@@ -74,6 +74,7 @@ Plug 'jelera/vim-javascript-syntax'
 Plug 'mxw/vim-jsx'
 
 " typescript
+" Plug 'peitalin/vim-jsx-typescript'
 Plug 'leafgarland/typescript-vim'
 
 " php
@@ -98,9 +99,6 @@ syntax on
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8
-
-" Old regex engine, speeds up syntax highlighting
-set re=1
 
 set bomb
 set binary
@@ -133,11 +131,7 @@ set fileformats=unix,dos,mac
 
 set noerrorbells visualbell t_vb=
 
-if exists('$SHELL')
-  set shell=$SHELL
-else
-  set shell=/bin/sh
-endif
+set shell=/bin/sh
 
 set ruler
 set relativenumber
@@ -234,11 +228,13 @@ nnoremap <leader>pb :Buffers<CR>
 nnoremap <leader>pf :FZF -m<CR>
 nnoremap <leader>pr :ALEFindReferences<CR>
 nnoremap gd :ALEGoToDefinition<CR>
+nnoremap <leader>fh :ALEHover<CR>
+nnoremap <leader>pn :e NOTES.sethetter.md<CR>
 
 " Go
-autocmd BufNewFile,BufRead *.go nmap <leader>ld :GoDecls<CR>
+autocmd BufNewFile,BufRead *.go nmap <leader>fd :GoDecls<CR>
 autocmd BufNewFile,BufRead *.go nmap <leader>dd <Plug>(go-doc-vertical)
-autocmd BufNewFile,BufRead *.go nmap <leader>gi :GoInfo<CR>
+autocmd BufNewFile,BufRead *.go nmap <leader>fh :GoInfo<CR>
 autocmd BufNewFile,BufRead *.go nmap <leader>gE :GoIfErr<CR>
 
 " Search
@@ -273,7 +269,6 @@ nnoremap <leader>gP :Gpush<CR>
 nnoremap <leader>gL :Gpull<CR>
 
 " Buffers
-" nnoremap <leader>bd :bp\|bd #<CR>
 nnoremap <leader>bd :bd<CR>
 nnoremap <leader>bn :bn<CR>
 nnoremap <leader>bp :bp<CR>

@@ -48,6 +48,21 @@ function tm
   tmux new-session -A -s (basename $PWD)
 end
 
+function note
+  set name "note"
+
+  if test "$argv[1]"
+    set name $argv[1]
+  end
+
+  if test "$argv[2]"
+    mkdir -p ~/notes/$argv[2]
+    and vim ~/notes/$argv[2]/(date +%y%m%d)-$name.md
+  else
+    vim ~/notes/(date +%y%m%d)-$name.md
+  end
+end
+
 # Takes Homework ID as parameter
 function unpackhw
   set hwdir ~/code/adhoc/homework_answers/submissions/$argv[1]/
@@ -56,4 +71,4 @@ function unpackhw
   rm ~/Downloads/$argv[1].zip
 end
 
-fenv source '$HOME/.nix-profile/etc/profile.d/nix.sh'
+# fenv source '$HOME/.nix-profile/etc/profile.d/nix.sh'
