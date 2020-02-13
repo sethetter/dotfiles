@@ -37,7 +37,9 @@ function o; xdg-open $argv[1..-1]; end
 function journal; note journal journal; end
 function dc; docker-compose $argv[1..-1]; end
 function tf; terraform $argv[1..-1]; end
+
 function lg; lazygit; end
+function gdc; git diff --cached; end
 
 function tm
   set rootdir (pwd)
