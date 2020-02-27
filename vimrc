@@ -69,12 +69,10 @@ Plug 'tpope/vim-haml'
 Plug 'mattn/emmet-vim'
 
 " javascript
-"Plug 'pangloss/vim-javascript'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'mxw/vim-jsx'
 
 " typescript
-" Plug 'peitalin/vim-jsx-typescript'
 Plug 'leafgarland/typescript-vim'
 
 " php

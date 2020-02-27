@@ -44,7 +44,6 @@
     "editor.tabSize": 4
   },
   "extensions.ignoreRecommendations": true,
-  "search.location": "panel",
   "window.newWindowDimensions": "maximized",
   "gitlens.settings.mode": "advanced",
   "workbench.sideBar.location": "left",
@@ -64,7 +63,7 @@
   "editor.parameterHints.enabled": false,
   "flow.tryFlowBin": true,
   "terminal.integrated.rendererType": "canvas",
-  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontSize": 14,
   "go.formatTool": "goimports",
   "editor.fontWeight": "400",
   "terminal.integrated.lineHeight": 0,
@@ -72,5 +71,6 @@
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "terminal.external.osxExec": "hyper.app"
+  "terminal.external.osxExec": "hyper.app",
+  "editor.fontSize": 13
 }
