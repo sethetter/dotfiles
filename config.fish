@@ -24,7 +24,7 @@ set -x PATH $PATH $CABAL_BIN
 
 set -x GPG_TTY (tty)
 set -x TERM xterm-256color
-set -x EDITOR vim
+set -x EDITOR 'vim -u ~/dotfiles/vimrc.min'
 
 set -g fish_key_bindings fish_vi_key_bindings
 set fish_greeting ""
@@ -49,21 +49,6 @@ function tm
   end
   cd $rootdir
   tmux new-session -A -s (basename $PWD)
-end
-
-function note
-  set name "note"
-
-  if test "$argv[1]"
-    set name $argv[1]
-  end
-
-  if test "$argv[2]"
-    mkdir -p ~/notes/$argv[2]
-    and vim ~/notes/$argv[2]/(date +%y%m%d)-$name.md
-  else
-    vim ~/notes/(date +%y%m%d)-$name.md
-  end
 end
 
 # Takes Homework ID as parameter
