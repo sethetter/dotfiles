@@ -31,14 +31,11 @@ set fish_greeting ""
 
 function tmux; env TERM=xterm-256color tmux -2 $argv[1..-1]; end
 function vi; vim -u ~/dotfiles/vimrc.min $argv[1..-1]; end
-function last-commit; git log --oneline -n 1 | cut -c 1-7; end
-function copy-last-commit; git log --oneline -n 1 | cut -c 1-7 | pbcopy; end
-function o; xdg-open $argv[1..-1]; end
-function journal; note journal journal; end
 function dc; docker-compose $argv[1..-1]; end
 function tf; terraform $argv[1..-1]; end
 function md; open -a typora $argv[1..-1]; end
-
+function work; md ~/notes/WORK.md; end
+function comm; md ~/notes/WORK.md; end
 function lg; lazygit; end
 function gdc; git diff --cached; end
 
