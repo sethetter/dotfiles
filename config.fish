@@ -35,7 +35,8 @@ function dc; docker-compose $argv[1..-1]; end
 function tf; terraform $argv[1..-1]; end
 function md; open -a typora $argv[1..-1]; end
 function work; md ~/notes/WORK.md; end
-function comm; md ~/notes/WORK.md; end
+function comm; md ~/notes/COMMUNITY.md; end
+function writing; md ~/code/sethetter/words/_drafts/; end
 function lg; lazygit; end
 function gdc; git diff --cached; end
 
