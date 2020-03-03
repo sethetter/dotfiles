@@ -72,5 +72,6 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "terminal.external.osxExec": "hyper.app",
-  "editor.fontSize": 13
+  "editor.fontSize": 13,
+  "zenMode.fullScreen": false
 }

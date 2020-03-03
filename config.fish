@@ -29,13 +29,15 @@ set -x EDITOR 'vim -u ~/dotfiles/vimrc.min'
 set -g fish_key_bindings fish_vi_key_bindings
 set fish_greeting ""
 
+function work; md ~/notes/WORK.md; end
+function comm; md ~/notes/COMMUNITY.md; end
+function fun; md ~/notes/FUN.md; end
+
 function tmux; env TERM=xterm-256color tmux -2 $argv[1..-1]; end
 function vi; vim -u ~/dotfiles/vimrc.min $argv[1..-1]; end
 function dc; docker-compose $argv[1..-1]; end
 function tf; terraform $argv[1..-1]; end
 function md; open -a typora $argv[1..-1]; end
-function work; md ~/notes/WORK.md; end
-function comm; md ~/notes/COMMUNITY.md; end
 function writing; md ~/code/sethetter/words/_drafts/; end
 function lg; lazygit; end
 function gdc; git diff --cached; end
