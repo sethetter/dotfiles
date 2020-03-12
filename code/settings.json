@@ -71,7 +71,8 @@
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "terminal.external.osxExec": "hyper.app",
+  "terminal.external.osxExec": "iterm.app",
   "editor.fontSize": 13,
-  "zenMode.fullScreen": false
+  "zenMode.fullScreen": false,
+  "workbench.startupEditor": "none"
 }
