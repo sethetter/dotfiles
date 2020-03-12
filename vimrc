@@ -184,14 +184,6 @@ let Grep_Skip_Dirs = '.git node_modules'
 " git
 let g:github_enterprise_urls = ['https://github.cms.gov']
 
-if !exists('*s:setupWrapping')
-  function s:setupWrapping()
-    set wrap
-    set wm=2
-    set textwidth=79
-  endfunction
-endif
-
 " Do syntax highlight syncing from start unless 200 lines
 augroup vimrc-sync-fromstart
   autocmd!
@@ -225,8 +217,8 @@ nnoremap <leader>pF :NERDTreeFind<CR>
 nnoremap <leader>pb :Buffers<CR>
 nnoremap <leader>pf :FZF -m<CR>
 nnoremap <leader>pr :ALEFindReferences<CR>
-nnoremap gd :ALEGoToDefinition<CR>
-nnoremap <leader>fh :ALEHover<CR>
+nmap gd :ALEGoToDefinition<CR>
+nmap <leader>fh :ALEHover<CR>
 nnoremap <leader>pn :e NOTES.sethetter.md<CR>
 
 " Go
@@ -259,12 +251,13 @@ autocmd Filetype markdown nnoremap <Leader>fo :Goyo<CR>
 
 " Git
 nnoremap <leader>gs :Gstatus<CR>
-nnoremap <leader>gd :Gvdiff<CR>
 nnoremap <leader>gh :GitGutterLineHighlightsToggle<CR>
 nnoremap <leader>gl :Glog<CR>
 nnoremap <leader>go :Gbrowse<CR>
 nnoremap <leader>gP :Gpush<CR>
 nnoremap <leader>gL :Gpull<CR>
+" trailing space intentional
+nnoremap <leader>gd :Gvdiff 
 
 " Buffers
 nnoremap <leader>bd :bd<CR>
@@ -335,11 +328,13 @@ let g:ale_linters = {
   \'javascript': ['flow-language-server', 'eslint'],
   \'typescript': ['tsserver', 'tslint'],
   \'rust': ['rls'],
+  \'go': [],
   \}
 let g:ale_fixers = {
   \'javascript': ['prettier', 'importjs', 'eslint'],
   \'typescript': ['tslint'],
   \'rust': ['rustfmt'],
+  \'go': [],
   \}
 
 " go
@@ -365,7 +360,9 @@ let g:javascript_plugin_flow = 1
 " markdown
 augroup vimrc-wrapping
   autocmd!
-  autocmd Filetype markdown call s:setupWrapping()
+  autocmd Filetype markdown setlocal wm=2
+  autocmd Filetype markdown setlocal wrap
+  autocmd Filetype markdown setlocal linebreak
   autocmd Filetype markdown setlocal ts=2 sw=2 expandtab spell
 augroup END
 
