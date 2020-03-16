@@ -247,7 +247,7 @@ vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
 " Writing
-autocmd Filetype markdown nnoremap <Leader>fo :Goyo<CR>
+nnoremap <Leader>fo :Goyo<CR>
 
 " Git
 nnoremap <leader>gs :Gstatus<CR>
@@ -358,13 +358,10 @@ let g:javascript_enable_domhtmlcss = 1
 let g:javascript_plugin_flow = 1
 
 " markdown
-augroup vimrc-wrapping
-  autocmd!
-  autocmd Filetype markdown setlocal wm=2
-  autocmd Filetype markdown setlocal wrap
-  autocmd Filetype markdown setlocal linebreak
-  autocmd Filetype markdown setlocal ts=2 sw=2 expandtab spell
-augroup END
+autocmd Filetype markdown setlocal wm=2
+autocmd Filetype markdown setlocal wrap
+autocmd Filetype markdown setlocal linebreak
+autocmd Filetype markdown setlocal ts=2 sw=2 expandtab spell
 
 " Colors
 set termguicolors

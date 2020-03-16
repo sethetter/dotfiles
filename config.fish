@@ -36,7 +36,7 @@ function tmux; env TERM=xterm-256color tmux -2 $argv[1..-1]; end
 function vi; vim -u ~/dotfiles/vimrc.min $argv[1..-1]; end
 function dc; docker-compose $argv[1..-1]; end
 function tf; terraform $argv[1..-1]; end
-function writing; vim ~/code/sethetter/words/_drafts/; end
+function writing; cd ~/code/sethetter/words/_drafts/ && vim; end
 function lg; lazygit; end
 function gdc; git diff --cached; end
 
@@ -59,15 +59,24 @@ end
 function note
   set name "note"
 
+  if [ $argv[1] = "ls" ]
+    if test "$argv[2]"
+      ls -l ~/notes/$argv[2]
+    else
+      ls -l ~/notes
+    end
+    return
+  end
+
   if test "$argv[1]"
     set name $argv[1]
   end
 
   if test "$argv[2]"
     mkdir -p ~/notes/$argv[2]
-    and vim ~/notes/$argv[2]/(date +%y%m%d)-$name.md
+    and vim ~/notes/$argv[2]/$name.md
   else
-    vim ~/notes/(date +%y%m%d)-$name.md
+    vim ~/notes/$name.md
   end
 end
 
