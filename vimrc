@@ -50,34 +50,26 @@ Plug 'w0rp/ale'
 Plug 'Shougo/vimproc.vim', {'do': g:make}
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-surround'
-Plug 'aquach/vim-http-client'
 
 " Writing
 Plug 'junegunn/goyo.vim'
-Plug 'Scuilion/markdown-drawer'
 
 " go
 Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
-
-" haskell
-Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
-Plug 'Twinside/vim-hoogle', { 'for': 'haskell' }
 
 " html
 Plug 'hail2u/vim-css3-syntax'
 Plug 'tpope/vim-haml'
 Plug 'mattn/emmet-vim'
 
-" javascript
+" javascript / typescript
 Plug 'jelera/vim-javascript-syntax'
-Plug 'mxw/vim-jsx'
-
-" typescript
 Plug 'leafgarland/typescript-vim'
 
 " php
 Plug 'StanAngeloff/php.vim'
 
+" fzf
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 else
