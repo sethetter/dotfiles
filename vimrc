@@ -350,7 +350,7 @@ let g:javascript_enable_domhtmlcss = 1
 let g:javascript_plugin_flow = 1
 
 " markdown
-autocmd Filetype markdown setlocal wm=2 ts=2 sw=2 expandtab spell wrap linebreak
+autocmd Filetype markdown setlocal wm=2 ts=2 sw=2 expandtab wrap linebreak
 
 " Colors
 set termguicolors
