@@ -22,7 +22,7 @@ set -x PATH $PATH $COMPOSER_PATH
 
 set -x GPG_TTY (tty)
 set -x TERM xterm-256color
-set -x EDITOR 'vim -u ~/dotfiles/vimrc.min'
+set -x EDITOR vim
 
 set -g fish_key_bindings fish_vi_key_bindings
 set fish_greeting ""
