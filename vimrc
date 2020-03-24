@@ -190,6 +190,7 @@ set autoread
 " Files
 nnoremap <leader>fn :new<CR>
 nnoremap <leader>fs :w<CR>
+nnoremap <leader>fx :x<CR>
 nnoremap <leader>fr :e<CR>
 nnoremap <leader>fR :e!<CR>
 nnoremap <leader>fe :e .<CR>
@@ -254,6 +255,7 @@ nnoremap <leader>gd :Gvdiff
 
 " Buffers
 nnoremap <leader>bd :bd<CR>
+nnoremap <leader>bD :bd!<CR>
 nnoremap <leader>bn :bn<CR>
 nnoremap <leader>bp :bp<CR>
 nnoremap <leader>bf :ALEFix<CR>
