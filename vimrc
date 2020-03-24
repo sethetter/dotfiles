@@ -182,6 +182,9 @@ augroup vimrc-sync-fromstart
   autocmd BufEnter * :syntax sync maxlines=200
 augroup END
 
+" Default buffers to markdown
+autocmd BufEnter * if &filetype == "" | setlocal ft=markdown | endif
+
 set autoread
 
 " Keybindings
