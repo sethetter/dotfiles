@@ -94,3 +94,7 @@ function unpackhw
   unzip ~/Downloads/$argv[1] -d $hwdir
   rm ~/Downloads/$argv[1].zip
 end
+
+function nvm
+  bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
+end
