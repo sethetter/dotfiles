@@ -33,12 +33,19 @@ function community; vim ~/notes/COMMUNITY.md; end
 function personal; vim ~/notes/PERSONAL.md; end
 
 function tmux; env TERM=xterm-256color tmux -2 $argv[1..-1]; end
+function tma; env tmux a; end
 function vi; vim -u ~/dotfiles/vimrc.min $argv[1..-1]; end
 function dc; docker-compose $argv[1..-1]; end
 function tf; terraform $argv[1..-1]; end
 function writing; cd ~/code/sethetter/words/ && vim; end
 function lg; lazygit; end
 function gdc; git diff --cached; end
+
+function mdp
+  set f (mktemp).html
+  pandoc -t html -o $f $argv[1]
+  open $f
+end
 
 function md
   if ! test -e $argv[1]
