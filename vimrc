@@ -188,6 +188,7 @@ set autoread
 " -------------------------------------------------------------
 
 " Files
+nnoremap <leader>fn :new<CR>
 nnoremap <leader>fs :w<CR>
 nnoremap <leader>fr :e<CR>
 nnoremap <leader>fR :e!<CR>
