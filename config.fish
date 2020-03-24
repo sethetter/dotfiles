@@ -1,3 +1,5 @@
+set -x AWS_REGION us-east-1
+
 set -x GOROOT /usr/local/go
 set -x GOPATH $HOME/code/go
 set -x COMPOSER_PATH $HOME/.composer/vendor/bin
