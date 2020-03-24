@@ -194,6 +194,8 @@ nnoremap <leader>fx :x<CR>
 nnoremap <leader>fr :e<CR>
 nnoremap <leader>fR :e!<CR>
 nnoremap <leader>fe :e .<CR>
+nnoremap <leader>QQ :qa<CR>
+nnoremap <leader>QX :qa!<CR>
 
 " Commenting
 nnoremap <leader>c :Commentary<CR>
