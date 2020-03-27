@@ -49,20 +49,13 @@ function mdp
   open $f
 end
 
-function md
-  if ! test -e $argv[1]
-    touch $argv[1]
-  end
-  open -a typora $argv[1]
-end
-
 function tm
-  set rootdir (pwd)
   if test "$argv[1]"
     set rootdir $argv[1]
+  else
+    set rootdir (pwd)
   end
-  cd $rootdir
-  tmux new-session -A -s (basename $PWD)
+  tmux new-session -d -c $rootdir -s (basename $rootdir)
 end
 
 function note
