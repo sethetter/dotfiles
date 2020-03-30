@@ -201,6 +201,32 @@ nnoremap <leader>fe :e .<CR>
 nnoremap <leader>c :Commentary<CR>
 vmap <leader>c :Commentary<CR>
 
+" Windows / Buffers
+nnoremap <leader>wd :q<CR>
+nnoremap <leader>w/ :vsp<CR>
+nnoremap <leader>w? :sp<CR>
+nnoremap <leader>wh <C-w>h
+nnoremap <leader>wj <C-w>j
+nnoremap <leader>wk <C-w>k
+nnoremap <leader>wl <C-w>l
+nnoremap <leader>bd :bd<CR>
+nnoremap <leader>bn :bn<CR>
+nnoremap <leader>bp :bp<CR>
+
+" Quickfix List
+nnoremap <leader>qo :copen<CR>
+nnoremap <leader>qv :vert copen<CR><C-w>=
+nnoremap <leader>qc :cclose<CR>
+nnoremap <leader>qn :cnext<CR>
+nnoremap <leader>qp :cprev<CR>
+
+" Location List
+nnoremap <leader>lo :lopen<CR>
+nnoremap <leader>lv :vert lopen<CR><C-w>=
+nnoremap <leader>lc :lclose<CR>
+nnoremap <leader>ln :lnext<CR>
+nnoremap <leader>lp :lprev<CR>
+
 " Snippets
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
@@ -242,9 +268,6 @@ nnoremap > >>
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
-" Writing
-nnoremap <Leader>fo :Goyo<CR>
-
 " Git
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gh :GitGutterLineHighlightsToggle<CR>
@@ -255,32 +278,10 @@ nnoremap <leader>gL :Gpull<CR>
 " trailing space intentional
 nnoremap <leader>gd :Gvdiff 
 
-" Notes
+" Notes / Writing
 nnoremap <leader>ns :e SCRATCH.sethetter.md<CR>
 nnoremap <leader>nn :e NOTES.sethetter.md<CR>
-
-" Windows
-nnoremap <leader>wd :q<CR>
-nnoremap <leader>w/ :vsp<CR>
-nnoremap <leader>w? :sp<CR>
-nnoremap <leader>wh <C-w>h
-nnoremap <leader>wj <C-w>j
-nnoremap <leader>wk <C-w>k
-nnoremap <leader>wl <C-w>l
-
-" Quickfix List
-nnoremap <leader>qo :copen<CR>
-nnoremap <leader>qv :vert copen<CR><C-w>=
-nnoremap <leader>qc :cclose<CR>
-nnoremap <leader>qn :cnext<CR>
-nnoremap <leader>qp :cprev<CR>
-
-" Location List
-nnoremap <leader>lo :lopen<CR>
-nnoremap <leader>lv :vert lopen<CR><C-w>=
-nnoremap <leader>lc :lclose<CR>
-nnoremap <leader>ln :lnext<CR>
-nnoremap <leader>lp :lprev<CR>
+nnoremap <Leader>fo :Goyo<CR>
 
 " Errors
 nnoremap <leader>ee :ALEEnableBuffer<CR>
