@@ -49,13 +49,22 @@ function mdp
   open $f
 end
 
+# function tm
+#   if test "$argv[1]"
+#     set rootdir $argv[1]
+#   else
+#     set rootdir (pwd)
+#   end
+#   tmux new-session -d -c $rootdir -s (basename $rootdir)
+# end
+
 function tm
+  set rootdir (pwd)
   if test "$argv[1]"
     set rootdir $argv[1]
-  else
-    set rootdir (pwd)
   end
-  tmux new-session -d -c $rootdir -s (basename $rootdir)
+  cd $rootdir
+  tmux new-session -A -s (basename $PWD)
 end
 
 function note
