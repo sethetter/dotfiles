@@ -203,16 +203,15 @@ nnoremap <leader>c :Commentary<CR>
 vmap <leader>c :Commentary<CR>
 
 " Windows / Buffers
-nnoremap <leader>wd :q<CR>
-nnoremap <leader>w/ :vsp<CR>
-nnoremap <leader>w? :sp<CR>
+" nnoremap <leader>w/ :vsp<CR>
+" nnoremap <leader>w? :sp<CR>
 nnoremap <leader>wh <C-w>h
 nnoremap <leader>wj <C-w>j
 nnoremap <leader>wk <C-w>k
 nnoremap <leader>wl <C-w>l
-nnoremap <leader>bd :bd<CR>
-nnoremap <leader>bn :bn<CR>
-nnoremap <leader>bp :bp<CR>
+" nnoremap <leader>bd :bd<CR>
+" nnoremap <leader>bn :bn<CR>
+" nnoremap <leader>bp :bp<CR>
 
 " Quickfix List
 nnoremap <leader>qo :copen<CR>
