@@ -249,6 +249,13 @@ autocmd BufNewFile,BufRead *.go nmap <leader>dd <Plug>(go-doc-vertical)
 autocmd BufNewFile,BufRead *.go nmap <leader>fh :GoInfo<CR>
 autocmd BufNewFile,BufRead *.go nmap <leader>gE :GoIfErr<CR>
 
+" Go Debugging
+autocmd BufNewFile,BufRead *.go nmap <leader>GDS :GoDebugStart 
+autocmd BufNewFile,BufRead *.go nmap <leader>GDT :GoDebugTest 
+autocmd BufNewFile,BufRead *.go nmap <leader>GDB :GoDebugBreakpoint<CR>
+autocmd BufNewFile,BufRead *.go nmap <leader>GDN :GoDebugNext<CR>
+autocmd BufNewFile,BufRead *.go nmap <leader>GDC :GoDebugContinue<CR>
+
 " Search
 nnoremap <leader>sc :let @/=""<CR>
 nnoremap <leader>sp :Rgrep<CR>
