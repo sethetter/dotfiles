@@ -193,6 +193,7 @@ nnoremap ; :
 
 " Files
 nnoremap <leader>fn :new<CR>
+nnoremap <leader>fN :vnew<CR>
 nnoremap <leader>fr :e<CR>
 nnoremap <leader>fR :e!<CR>
 nnoremap <leader>fe :e .<CR>
