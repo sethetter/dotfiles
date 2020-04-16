@@ -16,3 +16,5 @@ set nowrap
 
 autocmd BufRead,BufNewFile *.md set textwidth=80
 autocmd BufRead,BufNewFile *.md set wrap
+
+nnoremap ; :
