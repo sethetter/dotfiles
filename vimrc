@@ -65,6 +65,7 @@ Plug 'mattn/emmet-vim'
 " javascript / typescript
 Plug 'jelera/vim-javascript-syntax'
 Plug 'leafgarland/typescript-vim'
+Plug 'posva/vim-vue'
 
 " php
 Plug 'StanAngeloff/php.vim'
