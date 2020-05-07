@@ -67,12 +67,13 @@
   "go.formatTool": "goimports",
   "editor.fontWeight": "400",
   "terminal.integrated.lineHeight": 0,
-  "go.lintTool": "gometalinter",
+  "go.lintTool": "golint",
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "terminal.external.osxExec": "iterm.app",
   "editor.fontSize": 13,
   "zenMode.fullScreen": false,
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "go.buildOnSave": "workspace",
 }
