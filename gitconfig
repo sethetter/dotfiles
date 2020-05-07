@@ -1,0 +1,6 @@
+[user]
+	email = mail@sethetter.com
+	name = Seth Etter
+	signingkey = 4FAC34038F619523
+[core]
+	pager = delta --theme='Solarized (light)'
