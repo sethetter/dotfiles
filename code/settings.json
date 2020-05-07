@@ -1,6 +1,6 @@
 {
   "workbench.colorTheme": "Solarized Light",
-  "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.tabSize": 2,
   "editor.cursorStyle": "block",
   "editor.lightbulb.enabled": false,
@@ -72,7 +72,7 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "terminal.external.osxExec": "iterm.app",
-  "editor.fontSize": 13,
+  "editor.fontSize": 14,
   "zenMode.fullScreen": false,
   "workbench.startupEditor": "none"
 }
