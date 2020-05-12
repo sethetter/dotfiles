@@ -1,5 +1,6 @@
 set -x AWS_REGION us-east-1
 
+set -x DENO_PATH /Users/sethetter/.deno
 set -x GOROOT /usr/local/go
 set -x GOPATH $HOME/code/go
 set -x COMPOSER_PATH $HOME/.composer/vendor/bin
@@ -21,6 +22,7 @@ set -x PATH $PATH $PYENV_ROOT/bin
 set -x PATH $PATH $ARCANIST_PATH
 set -x PATH $PATH $HEROKU_PATH
 set -x PATH $PATH $COMPOSER_PATH
+set -x PATH $PATH $DENO_PATH/bin
 
 set -x GPG_TTY (tty)
 set -x TERM xterm-256color
