@@ -1,6 +1,6 @@
 {
   "workbench.colorTheme": "Solarized Light",
-  "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "'Iosevka Term SS14', 'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.tabSize": 2,
   "editor.cursorStyle": "block",
   "editor.lightbulb.enabled": false,
@@ -63,7 +63,7 @@
   "editor.parameterHints.enabled": false,
   "flow.tryFlowBin": true,
   "terminal.integrated.rendererType": "canvas",
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 15,
   "go.formatTool": "goimports",
   "editor.fontWeight": "400",
   "terminal.integrated.lineHeight": 0,
@@ -76,5 +76,5 @@
   "workbench.startupEditor": "none",
   "go.buildOnSave": "workspace",
   "go.useLanguageServer": true,
-  "editor.fontSize": 13,
+  "editor.fontSize": 14,
 }
