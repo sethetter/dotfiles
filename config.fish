@@ -147,3 +147,5 @@ function __handle_rvmrc_stuff --on-variable PWD
     set -e cwd
   end
 end
+
+eval (direnv hook fish)
