@@ -151,7 +151,7 @@ let g:airline_theme = 'solarized'
 let g:airline_solarized_bg='light'
 let g:airline_highlighting_cache=1
 let g:airline#extensions#branch#enabled = 1
-" let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
 let g:airline_skip_empty_sections = 1
 let g:airline_symbols = {}
 
@@ -204,15 +204,15 @@ nnoremap <leader>c :Commentary<CR>
 vmap <leader>c :Commentary<CR>
 
 " Windows / Buffers
-" nnoremap <leader>w/ :vsp<CR>
-" nnoremap <leader>w? :sp<CR>
+nnoremap <leader>w/ :vsp<CR>
+nnoremap <leader>w? :sp<CR>
 " nnoremap <leader>wh <C-w>h
 " nnoremap <leader>wj <C-w>j
 " nnoremap <leader>wk <C-w>k
 " nnoremap <leader>wl <C-w>l
-" nnoremap <leader>bd :bd<CR>
-" nnoremap <leader>bn :bn<CR>
-" nnoremap <leader>bp :bp<CR>
+nnoremap <leader>bd :bd<CR>
+nnoremap <leader>bn :bn<CR>
+nnoremap <leader>bp :bp<CR>
 
 " Quickfix List
 nnoremap <leader>qo :copen<CR>
