@@ -55,7 +55,7 @@ Plug 'tpope/vim-surround'
 Plug 'junegunn/goyo.vim'
 
 " go
-Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
+" Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
 
 " html
 Plug 'hail2u/vim-css3-syntax'
@@ -193,8 +193,9 @@ set autoread
 nnoremap ; :
 
 " Files
-nnoremap <leader>fn :new<CR>
-nnoremap <leader>fN :vnew<CR>
+nnoremap <leader>fs :w<CR>
+nnoremap <leader>fN :new<CR>
+nnoremap <leader>fn :vnew<CR>
 nnoremap <leader>fr :e<CR>
 nnoremap <leader>fR :e!<CR>
 nnoremap <leader>fe :e .<CR>
@@ -204,12 +205,13 @@ nnoremap <leader>c :Commentary<CR>
 vmap <leader>c :Commentary<CR>
 
 " Windows / Buffers
+nnoremap <leader>wd :q<CR>
 nnoremap <leader>w/ :vsp<CR>
 nnoremap <leader>w? :sp<CR>
-" nnoremap <leader>wh <C-w>h
-" nnoremap <leader>wj <C-w>j
-" nnoremap <leader>wk <C-w>k
-" nnoremap <leader>wl <C-w>l
+nnoremap <leader>wh <C-w>h
+nnoremap <leader>wj <C-w>j
+nnoremap <leader>wk <C-w>k
+nnoremap <leader>wl <C-w>l
 nnoremap <leader>bd :bd<CR>
 nnoremap <leader>bn :bn<CR>
 nnoremap <leader>bp :bp<CR>
@@ -245,17 +247,10 @@ nmap <leader>fh :ALEHover<CR>
 nnoremap <leader>pn :e NOTES.sethetter.md<CR>
 
 " Go
-autocmd BufNewFile,BufRead *.go nmap <leader>fd :GoDecls<CR>
-autocmd BufNewFile,BufRead *.go nmap <leader>dd <Plug>(go-doc-vertical)
-autocmd BufNewFile,BufRead *.go nmap <leader>fh :GoInfo<CR>
-autocmd BufNewFile,BufRead *.go nmap <leader>gE :GoIfErr<CR>
-
-" Go Debugging
-autocmd BufNewFile,BufRead *.go nmap <leader>GDS :GoDebugStart 
-autocmd BufNewFile,BufRead *.go nmap <leader>GDT :GoDebugTest 
-autocmd BufNewFile,BufRead *.go nmap <leader>GDB :GoDebugBreakpoint<CR>
-autocmd BufNewFile,BufRead *.go nmap <leader>GDN :GoDebugNext<CR>
-autocmd BufNewFile,BufRead *.go nmap <leader>GDC :GoDebugContinue<CR>
+" autocmd BufNewFile,BufRead *.go nmap <leader>fd :GoDecls<CR>
+" autocmd BufNewFile,BufRead *.go nmap <leader>dd <Plug>(go-doc-vertical)
+" autocmd BufNewFile,BufRead *.go nmap <leader>fh :GoInfo<CR>
+" autocmd BufNewFile,BufRead *.go nmap <leader>gE :GoIfErr<CR>
 
 " Search
 nnoremap <leader>sc :let @/=""<CR>
@@ -327,13 +322,12 @@ let g:ale_linters = {
   \'javascript': ['tsserver', 'eslint'],
   \'typescript': ['tsserver', 'tslint'],
   \'rust': ['rls'],
-  \'go': [],
+  \'go': ['go build', 'gopls', 'staticcheck', 'gofmt'],
   \}
 let g:ale_fixers = {
   \'javascript': ['prettier', 'importjs', 'eslint'],
   \'typescript': ['tslint'],
   \'rust': ['rustfmt'],
-  \'go': [],
   \}
 
 " go
