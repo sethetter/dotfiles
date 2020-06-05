@@ -31,6 +31,8 @@ set -x EDITOR vi
 set -g fish_key_bindings fish_vi_key_bindings
 set fish_greeting ""
 
+bind -M insert \t accept-autosuggestion
+
 function scratch; vim ~/notes/SCRATCH.md; end
 function work; vim ~/notes/WORK.md; end
 function community; vim ~/notes/COMMUNITY.md; end
