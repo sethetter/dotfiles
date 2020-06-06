@@ -42,7 +42,6 @@ Plug 'mattn/webapi-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
-Plug 'vim-scripts/grep.vim'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'Raimondi/delimitMate'
 Plug 'lifepillar/vim-solarized8'
@@ -53,9 +52,6 @@ Plug 'tpope/vim-surround'
 
 " Writing
 Plug 'junegunn/goyo.vim'
-
-" go
-" Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
 
 " html
 Plug 'hail2u/vim-css3-syntax'
@@ -71,12 +67,25 @@ Plug 'posva/vim-vue'
 Plug 'StanAngeloff/php.vim'
 
 " fzf
-if isdirectory('/usr/local/opt/fzf')
-  Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
-else
-  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
-  Plug 'junegunn/fzf.vim'
-endif
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+function! s:list_buffers()
+  redir => list
+  silent ls
+  redir END
+  return split(list, "\n")
+endfunction
+
+function! s:delete_buffers(lines)
+  execute 'bwipeout' join(map(a:lines, {_, line -> split(line)[0]}))
+endfunction
+
+command! BuffersDelete call fzf#run(fzf#wrap({
+  \ 'source': s:list_buffers(),
+  \ 'sink*': { lines -> s:delete_buffers(lines) },
+  \ 'options': '--multi --reverse --bind ctrl-a:select-all+accept'
+\ }))
 
 call plug#end()
 
@@ -168,12 +177,6 @@ let g:NERDTreeDirArrows = 1
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 
-" grep.vim
-" TODO -- ignore gitignored files
-let Grep_Default_Options = '-IR'
-let Grep_Skip_Files = '*.log *.db'
-let Grep_Skip_Dirs = '.git node_modules'
-
 " git
 let g:github_enterprise_urls = ['https://github.cms.gov']
 
@@ -213,12 +216,14 @@ nnoremap <leader>wj <C-w>j
 nnoremap <leader>wk <C-w>k
 nnoremap <leader>wl <C-w>l
 nnoremap <leader>bd :bd<CR>
+nnoremap <leader>bD :BuffersDelete<CR>
 nnoremap <leader>bn :bn<CR>
 nnoremap <leader>bp :bp<CR>
 nnoremap <leader>T :tabnew<CR>
 nnoremap <leader>tn :tabnext<CR>
 nnoremap <leader>tp :tabprevious<CR>
 nnoremap <leader>td :tabclose<CR>
+nnoremap <leader>C :Commands<CR>
 
 " Quickfix List
 nnoremap <leader>qo :copen<CR>
@@ -258,7 +263,7 @@ nnoremap <leader>pn :e NOTES.sethetter.md<CR>
 
 " Search
 nnoremap <leader>sc :let @/=""<CR>
-nnoremap <leader>sp :Rgrep<CR>
+nnoremap <leader>sp :Rg<CR>
 nnoremap <leader>sf "zyiw:exe ":let @/=@z"<CR>
 
 " Movement
@@ -278,7 +283,7 @@ vnoremap K :m '<-2<CR>gv=gv
 " Git
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gh :GitGutterLineHighlightsToggle<CR>
-nnoremap <leader>gl :Glog<CR>
+nnoremap <leader>gl :Commits<CR>
 nnoremap <leader>go :Gbrowse<CR>
 nnoremap <leader>gP :Gpush<CR>
 nnoremap <leader>gL :Gpull<CR>
