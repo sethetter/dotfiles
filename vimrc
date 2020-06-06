@@ -46,7 +46,7 @@ Plug 'vim-scripts/grep.vim'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'Raimondi/delimitMate'
 Plug 'lifepillar/vim-solarized8'
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 Plug 'Shougo/vimproc.vim', {'do': g:make}
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-surround'
@@ -204,7 +204,7 @@ nnoremap <leader>fe :e .<CR>
 nnoremap <leader>c :Commentary<CR>
 vmap <leader>c :Commentary<CR>
 
-" Windows / Buffers
+" Windows / Buffers / Tabs
 nnoremap <leader>wd :q<CR>
 nnoremap <leader>w/ :vsp<CR>
 nnoremap <leader>w? :sp<CR>
@@ -215,6 +215,10 @@ nnoremap <leader>wl <C-w>l
 nnoremap <leader>bd :bd<CR>
 nnoremap <leader>bn :bn<CR>
 nnoremap <leader>bp :bp<CR>
+nnoremap <leader>T :tabnew<CR>
+nnoremap <leader>tn :tabnext<CR>
+nnoremap <leader>tp :tabprevious<CR>
+nnoremap <leader>td :tabclose<CR>
 
 " Quickfix List
 nnoremap <leader>qo :copen<CR>
