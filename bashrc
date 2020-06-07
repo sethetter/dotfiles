@@ -15,6 +15,7 @@ export RVM_BIN=$HOME/.rvm/bin
 export PY2_BIN=$HOME//Library/Python/2.7/bin
 export CARGO_BIN=$HOME/.cargo/bin
 export CABAL_BIN=$HOME/.cabal/bin
+export NVM_DIR=$HOME/.nvm
 
 export PATH=$COMPOSER_PATH:$PATH
 export PATH=$HEROKU_PATH:$PATH

@@ -1,4 +1,6 @@
 package bass
+package foreign-env
 package fzf
 package https://github.com/jhillyerd/plugin-git
+package nvm
 theme default

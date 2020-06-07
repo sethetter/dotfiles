@@ -45,30 +45,20 @@ Plug 'airblade/vim-gitgutter'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'Raimondi/delimitMate'
 Plug 'lifepillar/vim-solarized8'
-Plug 'dense-analysis/ale'
 Plug 'Shougo/vimproc.vim', {'do': g:make}
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-surround'
 
+" LSP
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " Writing
 Plug 'junegunn/goyo.vim'
-
-" html
-Plug 'hail2u/vim-css3-syntax'
-Plug 'tpope/vim-haml'
-Plug 'mattn/emmet-vim'
-
-" javascript / typescript
-Plug 'jelera/vim-javascript-syntax'
-Plug 'leafgarland/typescript-vim'
-Plug 'posva/vim-vue'
-
-" php
-Plug 'StanAngeloff/php.vim'
 
 " fzf
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'fszymanski/fzf-quickfix'
 
 function! s:list_buffers()
   redir => list
@@ -131,7 +121,8 @@ set fileformats=unix,dos,mac
 
 set noerrorbells visualbell t_vb=
 
-set shell=/bin/sh
+" set shell=/bin/sh
+set shell=/usr/local/bin/fish
 
 set ruler
 set relativenumber
@@ -250,16 +241,12 @@ nnoremap <leader>pT :e .<CR>
 nnoremap <leader>pF :NERDTreeFind<CR>
 nnoremap <leader>pb :Buffers<CR>
 nnoremap <leader>pf :FZF -m<CR>
-nnoremap <leader>pr :ALEFindReferences<CR>
-nmap gd :ALEGoToDefinition<CR>
-nmap <leader>fh :ALEHover<CR>
+nnoremap <silent> <leader>pr <Plug>(coc-references)
+nnoremap <silent> <leader>fd :<C-u>CocList outline<cr> " Search doc symbols
+nnoremap <silent> <leader>pd :<C-u>CocList -I symbols<cr> " Search workspace symbols
+nmap <silent> gd <Plug>(coc-definition)
+" nmap <leader>hi :LspHover<CR>
 nnoremap <leader>pn :e NOTES.sethetter.md<CR>
-
-" Go
-" autocmd BufNewFile,BufRead *.go nmap <leader>fd :GoDecls<CR>
-" autocmd BufNewFile,BufRead *.go nmap <leader>dd <Plug>(go-doc-vertical)
-" autocmd BufNewFile,BufRead *.go nmap <leader>fh :GoInfo<CR>
-" autocmd BufNewFile,BufRead *.go nmap <leader>gE :GoIfErr<CR>
 
 " Search
 nnoremap <leader>sc :let @/=""<CR>
@@ -295,12 +282,6 @@ nnoremap <leader>ns :e SCRATCH.sethetter.md<CR>
 nnoremap <leader>nn :e NOTES.sethetter.md<CR>
 nnoremap <Leader>fo :Goyo<CR>
 
-" Errors
-nnoremap <leader>ee :ALEEnableBuffer<CR>
-nnoremap <leader>et :ALEToggleBuffer<CR>
-nnoremap <leader>eE :ALEEnable<CR>
-nnoremap <leader>eT :ALEToggle<CR>
-
 " Copy/Paste/Cut
 if has('unnamedplus')
   set clipboard=unnamed,unnamedplus
@@ -319,30 +300,8 @@ endif
 if executable('rg')
   let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow --glob "!.git/*"'
   set grepprg=rg\ --vimgrep
-  command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
+  command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <!-- <bang> -->0)
 endif
-
-
-" ALE
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_lint_on_insert_leave = 0
-let g:ale_lint_on_enter = 0
-let g:ale_fix_on_save = 1
-let g:ale_go_go111module = 'on'
-" let g:ale_go_staticcheck_lint_package = 1
-let g:ale_linters = {
-  \'javascript.jsx': ['tsserver', 'eslint'],
-  \'javascript': ['tsserver', 'eslint'],
-  \'typescript': ['tsserver', 'tslint'],
-  \'rust': ['rls'],
-  \'go': ['gopls'],
-  \}
-let g:ale_fixers = {
-  \'javascript': ['prettier', 'importjs', 'eslint'],
-  \'typescript': ['tslint'],
-  \'rust': ['rustfmt'],
-  \'go': ['goimports', 'gofmt']
-  \}
 
 " go
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=2 shiftwidth=2 softtabstop=2
