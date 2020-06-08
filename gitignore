@@ -2,7 +2,7 @@
 *.swo
 *~
 .vagrant
-*.sethetter.md
+NOTES.sethetter.md
 TODO.sethetter.md
 _sethetter*
 .#*
