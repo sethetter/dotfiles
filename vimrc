@@ -250,7 +250,7 @@ nnoremap <leader>pn :e NOTES.sethetter.md<CR>
 
 " Search
 nnoremap <leader>sc :let @/=""<CR>
-nnoremap <leader>sp :Rg<CR>
+nnoremap <leader>sp :Rg 
 nnoremap <leader>sf "zyiw:exe ":let @/=@z"<CR>
 
 " Movement
