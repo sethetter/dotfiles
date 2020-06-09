@@ -38,7 +38,11 @@ function personal; vim ~/notes/PERSONAL.md; end
 
 function tmux; env TERM=xterm-256color tmux -2 $argv[1..-1]; end
 function tma; env tmux a; end
-function vi; vim -u ~/dotfiles/vimrc.min $argv[1..-1]; end
+
+# Run `node -v` to ensure node is loaded when we start vim, for CoC.
+function vi; /usr/local/bin/vim -u ~/dotfiles/vimrc.min $argv[1..-1]; end
+function vim; type -q 'node -v'; /usr/local/bin/vim $argv[2..-1]; end
+
 function dc; docker-compose $argv[1..-1]; end
 function tf; terraform $argv[1..-1]; end
 function writing; cd ~/code/sethetter/words/ && vim; end
