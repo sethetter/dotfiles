@@ -74,6 +74,7 @@ function note
     else
       ls -l ~/notes
     end
+
     return
   end
 
