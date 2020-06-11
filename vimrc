@@ -127,6 +127,7 @@ set shell=/usr/local/bin/fish
 set ruler
 set relativenumber
 set number
+set signcolumn=number "combines sign and number columns
 
 let no_buffers_menu=1
 
@@ -245,7 +246,7 @@ nnoremap <silent> <leader>pr <Plug>(coc-references)
 nnoremap <silent> <leader>fd :<C-u>CocList outline<cr> " Search doc symbols
 nnoremap <silent> <leader>pd :<C-u>CocList -I symbols<cr> " Search workspace symbols
 nmap <silent> gd <Plug>(coc-definition)
-" nmap <leader>hi :LspHover<CR>
+nmap <leader>hi :CocAction('doHover')<CR>
 nnoremap <leader>pn :e NOTES.sethetter.md<CR>
 
 " Search
