@@ -65,6 +65,31 @@ function tm
   tmux new-session -A -s (basename $PWD)
 end
 
+function note
+  set name "note"
+
+  if [ $argv[1] = "ls" ]
+    if test "$argv[2]"
+      ls -l ~/notes/$argv[2]
+    else
+      ls -l ~/notes
+    end
+    return
+  end
+
+  if test "$argv[1]"
+    set name $argv[1]
+  end
+
+  if test "$argv[2]"
+    mkdir -p ~/notes/$argv[2]
+    and vim ~/notes/$argv[2]/$name.md
+  else
+    vim ~/notes/$name.md
+  end
+end
+
+
 # Takes Homework ID as parameter
 function unpackhw
   set hwdir ~/code/adhoc/homework_answers/submissions/$argv[1]/
