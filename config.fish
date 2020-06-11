@@ -26,7 +26,7 @@ set -x PATH $PATH $DENO_PATH/bin
 
 set -x GPG_TTY (tty)
 set -x TERM xterm-256color
-set -x EDITOR vi
+set -x EDITOR vim -u ~/dotfiles/vimrc.min
 
 set -g fish_key_bindings fish_vi_key_bindings
 set fish_greeting ""
@@ -40,7 +40,7 @@ function tmux; env TERM=xterm-256color tmux -2 $argv[1..-1]; end
 function tma; env tmux a; end
 
 # Run `node -v` to ensure node is loaded when we start vim, for CoC.
-function vi; /usr/local/bin/vim -u ~/dotfiles/vimrc.min $argv[1..-1]; end
+function vi; vim -u ~/dotfiles/vimrc.min $argv[1..-1]; end
 function vim; type -q 'node -v'; /usr/local/bin/vim $argv[2..-1]; end
 
 function dc; docker-compose $argv[1..-1]; end
