@@ -49,7 +49,7 @@ Plug 'Shougo/vimproc.vim', {'do': g:make}
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-surround'
 
-" LSP
+" LSP / Languages
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Writing
@@ -177,8 +177,6 @@ augroup vimrc-sync-fromstart
   autocmd!
   autocmd BufEnter * :syntax sync maxlines=200
 augroup END
-
-autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
 
 " Default buffers to markdown
 autocmd BufEnter * if &filetype == "" | setlocal ft=markdown | endif
@@ -308,7 +306,9 @@ endif
 
 " go
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=2 shiftwidth=2 softtabstop=2
-let g:go_fmt_command = "goimports"
+autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
+" let g:go_fmt_command = "goimports"
+" let g:go_def_mapping_enabled = 0 " Prevent vim-go from taking over gd mapping
 
 " haskell
 let g:haskell_conceal_wide = 1
@@ -327,7 +327,7 @@ let g:javascript_enable_domhtmlcss = 1
 let g:javascript_plugin_flow = 1
 
 " markdown
-autocmd Filetype markdown setlocal wm=2 ts=2 sw=2 expandtab wrap linebreak
+autocmd Filetype markdown setlocal wm=2 ts=2 sw=2 expandtab nowrap linebreak
 
 " Colors
 set termguicolors
