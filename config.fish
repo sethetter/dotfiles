@@ -42,12 +42,12 @@ function tma; env tmux a; end
 # Run `node -v` to ensure node is loaded when we start vim, for CoC.
 function vim
   node -v
-  /usr/local/bin/vim $argv[2..-1]
+  /usr/local/bin/vim $argv[1..-1]
 end
 function vi
   /usr/local/bin/vim -u ~/dotfiles/vimrc.min $argv[1..-1]
 end
-function v; vi; end
+function v; vi $argv[1..-1]; end
 
 function dc; docker-compose $argv[1..-1]; end
 function tf; terraform $argv[1..-1]; end
