@@ -51,6 +51,7 @@ Plug 'tpope/vim-surround'
 
 " LSP / Languages
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'mattn/vim-goimports'
 
 " Writing
 Plug 'junegunn/goyo.vim'
@@ -306,7 +307,6 @@ endif
 
 " go
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
 " let g:go_fmt_command = "goimports"
 " let g:go_def_mapping_enabled = 0 " Prevent vim-go from taking over gd mapping
 
