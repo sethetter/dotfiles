@@ -209,6 +209,8 @@ nnoremap <leader>wj <C-w>j
 nnoremap <leader>wk <C-w>k
 nnoremap <leader>wl <C-w>l
 nnoremap <leader>bd :bd<CR>
+nnoremap <leader>BX :bufdo bd<CR>
+nnoremap <leader>BXX :bufdo bd!<CR>
 nnoremap <leader>bD :BuffersDelete<CR>
 nnoremap <leader>bn :bn<CR>
 nnoremap <leader>bp :bp<CR>
