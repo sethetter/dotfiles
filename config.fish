@@ -54,8 +54,8 @@ function tf; terraform $argv[1..-1]; end
 function writing; cd ~/code/sethetter/words/ && vim; end
 function md; open -a typora $argv[1..-1]; end
 function lg; lazygit; end
-function gid; git icdiff; end
-function gdc; git icdiff --cached; end
+function gid; git icdiff $argv[1..-1]; end
+function gdc; git icdiff --cached $argv[1..-1]; end
 
 function mdp
   set f (mktemp).html
