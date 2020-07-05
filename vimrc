@@ -52,6 +52,7 @@ Plug 'tpope/vim-surround'
 " LSP / Languages
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mattn/vim-goimports'
+Plug 'mattn/emmet-vim'
 
 " Writing
 Plug 'junegunn/goyo.vim'
@@ -325,14 +326,9 @@ autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=2 shiftwidth=2 soft
 " let g:go_fmt_command = "goimports"
 " let g:go_def_mapping_enabled = 0 " Prevent vim-go from taking over gd mapping
 
-" haskell
-let g:haskell_conceal_wide = 1
-let g:haskell_multiline_strings = 1
-let g:necoghc_enable_detailed_browse = 1
-autocmd Filetype haskell setlocal omnifunc=necoghc#omnifunc
-
 " html
 autocmd Filetype html setlocal ts=4 sw=4 expandtab
+let g:user_emmet_leader_key='<C-x>'
 
 " php
 autocmd Filetype php setlocal ts=4 sw=4 expandtab
