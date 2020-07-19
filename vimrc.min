@@ -20,7 +20,35 @@ autocmd BufRead,BufNewFile *.md set wrap
 let mapleader=' '
 
 nnoremap ; :
+nnoremap <leader>fs :w<CR>
+nnoremap <leader>fN :new<CR>
+nnoremap <leader>fn :vnew<CR>
 nnoremap <Leader>fo :Goyo<CR>
+
+" Windows / Buffers / Tabs
+nnoremap <leader>wd :q<CR>
+nnoremap <leader>w/ :vsp<CR>
+nnoremap <leader>w? :sp<CR>
+nnoremap <leader>wh <C-w>h
+nnoremap <leader>wj <C-w>j
+nnoremap <leader>wk <C-w>k
+nnoremap <leader>wl <C-w>l
+nnoremap <leader>bd :bd<CR>
+nnoremap <leader>BX :bufdo bd<CR>
+nnoremap <leader>bD :BuffersDelete<CR>
+nnoremap <leader>bn :bn<CR>
+nnoremap <leader>bp :bp<CR>
+nnoremap <leader>T :tabnew<CR>
+nnoremap <leader>tn :tabnext<CR>
+nnoremap <leader>tp :tabprevious<CR>
+nnoremap <leader>td :tabclose<CR>
+
+" Project Navigation
+nnoremap <leader>pt :NERDTreeToggle<CR>
+nnoremap <leader>pT :e .<CR>
+nnoremap <leader>pF :NERDTreeFind<CR>
+nnoremap <leader>pb :Buffers<CR>
+
 
 call plug#begin(expand('~/.vim/plugged'))
 Plug 'junegunn/goyo.vim'

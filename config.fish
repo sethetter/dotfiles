@@ -1,28 +1,30 @@
-set -x AWS_REGION us-east-1
+set -gx AWS_REGION us-east-1
 
-set -x DENO_PATH /Users/sethetter/.deno
-set -x GOROOT /usr/local/go
-set -x GOPATH $HOME/code/go
-set -x COMPOSER_PATH $HOME/.composer/vendor/bin
-set -x ARCANIST_PATH $HOME/.arcanist/arcanist/bin
-set -x HEROKU_PATH /usr/local/heroku/bin
-set -x LOCAL_BIN $HOME/.local/bin
-set -x ANDROID_HOME /opt/android-studio
-set -x PYENV_ROOT $HOME/.pyenv
-set -x RVM_BIN $HOME/.rvm/bin
-set -x PY2_BIN $HOME//Library/Python/2.7/bin
-set -x CARGO_BIN $HOME/.cargo/bin
+set -gx DENO_PATH /Users/sethetter/.deno
+set -gx GOROOT /usr/local/go
+set -gx GOPATH $HOME/code/go
+set -gx COMPOSER_PATH $HOME/.composer/vendor/bin
+set -gx ARCANIST_PATH $HOME/.arcanist/arcanist/bin
+set -gx HEROKU_PATH /usr/local/heroku/bin
+set -gx LOCAL_BIN $HOME/.local/bin
+set -gx ANDROID_HOME /opt/android-studio
+set -gx PYENV_ROOT $HOME/.pyenv
+set -gx RVM_BIN $HOME/.rvm/bin
+set -gx PY2_BIN $HOME//Library/Python/2.7/bin
+set -gx CARGO_BIN $HOME/.cargo/bin
+set -gx VOLTA_HOME "$HOME/.volta"
 
-set -x PATH $PATH $LOCAL_BIN
-set -x PATH $PATH $GOPATH/bin
-set -x PATH $PATH $CARGO_BIN
-set -x PATH $PATH $PY2_BIN
-set -x PATH $PATH $RVM_BIN
-set -x PATH $PATH $PYENV_ROOT/bin
-set -x PATH $PATH $ARCANIST_PATH
-set -x PATH $PATH $HEROKU_PATH
-set -x PATH $PATH $COMPOSER_PATH
-set -x PATH $PATH $DENO_PATH/bin
+set -gx PATH $PATH $LOCAL_BIN
+set -gx PATH $PATH $GOPATH/bin
+set -gx PATH $PATH $CARGO_BIN
+set -gx PATH $PATH $PY2_BIN
+set -gx PATH $PATH $RVM_BIN
+set -gx PATH $PATH $PYENV_ROOT/bin
+set -gx PATH $PATH $ARCANIST_PATH
+set -gx PATH $PATH $HEROKU_PATH
+set -gx PATH $PATH $COMPOSER_PATH
+set -gx PATH $PATH $DENO_PATH/bin
+set -gx PATH "$VOLTA_HOME/bin" $PATH
 
 set -x GPG_TTY (tty)
 set -x TERM xterm-256color
@@ -39,9 +41,7 @@ function personal; vim ~/notes/PERSONAL.md; end
 function tmux; env TERM=xterm-256color tmux -2 $argv[1..-1]; end
 function tma; env tmux a; end
 
-# Run `node -v` to ensure node is loaded when we start vim, for CoC.
 function vim
-  node -v
   /usr/local/bin/vim $argv[1..-1]
 end
 function vi
@@ -58,6 +58,7 @@ function gdh; git icdiff $argv[1..-1]; end
 function gdm; git icdiff $argv[1..-1] master; end
 function gdc; git icdiff --cached $argv[1..-1]; end
 function journal; note journal journal; end
+function j; journal; end
 
 function mdp
   set f (mktemp).html
@@ -83,9 +84,9 @@ function note
 
   if test "$argv[2]"
     mkdir -p ~/notes/$argv[2]
-    and vim ~/notes/$argv[2]/(date +%y%m%d)-$name.md
+    and vi -c Goyo ~/notes/$argv[2]/(date +%y%m%d)-$name.md
   else
-    vim ~/notes/(date +%y%m%d)-$name.md
+    vi -c Goyo ~/notes/(date +%y%m%d)-$name.md
   end
 end
 
