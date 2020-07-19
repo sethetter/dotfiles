@@ -17,4 +17,11 @@ set nowrap
 autocmd BufRead,BufNewFile *.md set textwidth=80
 autocmd BufRead,BufNewFile *.md set wrap
 
+let mapleader=' '
+
 nnoremap ; :
+nnoremap <Leader>fo :Goyo<CR>
+
+call plug#begin(expand('~/.vim/plugged'))
+Plug 'junegunn/goyo.vim'
+call plug#end()

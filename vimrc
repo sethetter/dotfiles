@@ -298,7 +298,7 @@ nnoremap <leader>gd :Gvdiff
 " Notes / Writing
 nnoremap <leader>ns :e SCRATCH.sethetter.md<CR>
 nnoremap <leader>nn :e NOTES.sethetter.md<CR>
-nnoremap <Leader>fo :Goyo<CR>
+nnoremap <leader>fo :Goyo<CR>
 
 " Copy/Paste/Cut
 if has('unnamedplus')
