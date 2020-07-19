@@ -57,6 +57,7 @@ function lg; lazygit; end
 function gdh; git icdiff $argv[1..-1]; end
 function gdm; git icdiff $argv[1..-1] master; end
 function gdc; git icdiff --cached $argv[1..-1]; end
+function journal; note journal journal; end
 
 function mdp
   set f (mktemp).html
@@ -76,30 +77,17 @@ end
 function note
   set name "note"
 
-  if [ $argv[1] = "ls" ]
-    if test "$argv[2]"
-      ls -l ~/notes/$argv[2]
-    else
-      ls -l ~/notes
-    end
-
-    return
-  end
-
   if test "$argv[1]"
     set name $argv[1]
-  else
-    set name (date +%Y-%m-%d-%s)
   end
 
   if test "$argv[2]"
     mkdir -p ~/notes/$argv[2]
-    and vim ~/notes/$argv[2]/$name.md
+    and vim ~/notes/$argv[2]/(date +%y%m%d)-$name.md
   else
-    vim ~/notes/$name.md
+    vim ~/notes/(date +%y%m%d)-$name.md
   end
 end
-
 
 # Takes Homework ID as parameter
 function unpackhw
