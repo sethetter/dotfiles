@@ -58,6 +58,7 @@ Plug 'mattn/emmet-vim'
 
 " Writing
 Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 
 " fzf
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -300,6 +301,8 @@ nnoremap <leader>gd :Gvdiff
 nnoremap <leader>ns :e SCRATCH.sethetter.md<CR>
 nnoremap <leader>nn :e NOTES.sethetter.md<CR>
 nnoremap <leader>fo :Goyo<CR>
+nnoremap <leader>fl :Limelight!!<CR>
+nnoremap <leader>fO :Goyo <bar> Goyo<CR> " refresh goyo view after a tmux pane resize
 
 " Copy/Paste/Cut
 if has('unnamedplus')
