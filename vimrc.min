@@ -13,35 +13,5 @@ set expandtab
 set hidden
 set nowrap
 
-" markdown
-autocmd Filetype markdown setlocal wm=2 ts=2 sw=2 expandtab linebreak wrap
-set conceallevel=2
-
-" Colors
-set termguicolors
-hi Search cterm=NONE ctermfg=white ctermbg=black
-
 let mapleader=' '
-
 nnoremap ; :
-nnoremap <leader>fs :w<CR>
-nnoremap <leader>fN :new<CR>
-nnoremap <leader>fn :vnew<CR>
-" nnoremap <Leader>fo :Goyo<CR>
-
-" Windows / Buffers / Tabs
-nnoremap <leader>wd :q<CR>
-nnoremap <leader>w/ :vsp<CR>
-nnoremap <leader>w? :sp<CR>
-nnoremap <leader>wh <C-w>h
-nnoremap <leader>wj <C-w>j
-nnoremap <leader>wk <C-w>k
-nnoremap <leader>wl <C-w>l
-nnoremap <leader>bd :bd<CR>
-nnoremap <leader>BX :bufdo bd<CR>
-nnoremap <leader>bn :bn<CR>
-nnoremap <leader>bp :bp<CR>
-nnoremap <leader>T :tabnew<CR>
-nnoremap <leader>tn :tabnext<CR>
-nnoremap <leader>tp :tabprevious<CR>
-nnoremap <leader>td :tabclose<CR>
