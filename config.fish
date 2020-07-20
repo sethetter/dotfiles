@@ -28,7 +28,7 @@ set -gx PATH "$VOLTA_HOME/bin" $PATH
 
 set -x GPG_TTY (tty)
 set -x TERM xterm-256color
-set -x EDITOR vim -u ~/dotfiles/vimrc.min
+set -x EDITOR vim
 
 set -g fish_key_bindings fish_vi_key_bindings
 set fish_greeting ""
@@ -57,8 +57,6 @@ function lg; lazygit; end
 function gdh; git icdiff $argv[1..-1]; end
 function gdm; git icdiff $argv[1..-1] master; end
 function gdc; git icdiff --cached $argv[1..-1]; end
-function journal; note journal journal; end
-function j; journal; end
 
 function mdp
   set f (mktemp).html
@@ -84,11 +82,16 @@ function note
 
   if test "$argv[2]"
     mkdir -p ~/notes/$argv[2]
-    and vi -c Goyo ~/notes/$argv[2]/(date +%y%m%d)-$name.md
+    and vim -c Goyo ~/notes/$argv[2]/(date +%y%m%d)-$name.md
   else
-    vi -c Goyo ~/notes/(date +%y%m%d)-$name.md
+    mkdir -p ~/notes/uncategorized
+    vim -c Goyo ~/notes/uncategorized/(date +%y%m%d)-$name.md
   end
 end
+
+function notes; cd ~/notes && vim .; end
+function journal; note journal journal; end
+function j; journal; end
 
 # Takes Homework ID as parameter
 function unpackhw

@@ -48,6 +48,8 @@ Plug 'lifepillar/vim-solarized8'
 Plug 'Shougo/vimproc.vim', {'do': g:make}
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-surround'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 
 " LSP / Languages
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -298,7 +300,7 @@ nnoremap <leader>gd :Gvdiff
 " Notes / Writing
 nnoremap <leader>ns :e SCRATCH.sethetter.md<CR>
 nnoremap <leader>nn :e NOTES.sethetter.md<CR>
-nnoremap <leader>fo :Goyo<CR>
+nnoremap <leader>fo :AirlineToggle <bar> Goyo<CR>
 
 " Copy/Paste/Cut
 if has('unnamedplus')
@@ -338,7 +340,9 @@ let g:javascript_enable_domhtmlcss = 1
 let g:javascript_plugin_flow = 1
 
 " markdown
-autocmd Filetype markdown setlocal wm=2 ts=2 sw=2 expandtab nowrap linebreak
+autocmd Filetype markdown setlocal wm=2 ts=2 sw=2 expandtab linebreak wrap
+let g:vim_markdown_folding_disabled = 1
+set conceallevel=2
 
 " Colors
 set termguicolors
