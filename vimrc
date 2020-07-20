@@ -167,7 +167,6 @@ let g:airline#extensions#tabline#tab_min_count = 2     " minimum of 2 tabs neede
 let g:airline#extensions#tabline#show_splits = 0       " disables the buffer name that displays on the right of the tabline
 let g:airline#extensions#tabline#show_tab_nr = 0       " disable tab numbers
 let g:airline#extensions#tabline#show_tab_type = 0     " disables the weird ornage arrow on the tabline
-
 let g:airline_skip_empty_sections = 1
 let g:airline_symbols = {}
 
@@ -300,7 +299,7 @@ nnoremap <leader>gd :Gvdiff
 " Notes / Writing
 nnoremap <leader>ns :e SCRATCH.sethetter.md<CR>
 nnoremap <leader>nn :e NOTES.sethetter.md<CR>
-nnoremap <leader>fo :AirlineToggle <bar> Goyo<CR>
+nnoremap <leader>fo :Goyo<CR>
 
 " Copy/Paste/Cut
 if has('unnamedplus')
