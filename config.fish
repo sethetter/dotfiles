@@ -92,6 +92,8 @@ end
 function notes; cd ~/notes && vim .; end
 function journal; note journal journal; end
 function j; journal; end
+function doing; vim -c Goyo ~/notes/doing.md; end
+function think; vim -c Goyo ~/notes/scratch.md; end
 
 # Takes Homework ID as parameter
 function unpackhw
