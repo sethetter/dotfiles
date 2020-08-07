@@ -154,7 +154,7 @@ endif
 
 " vim-airline
 let g:airline_theme = 'solarized'
-let g:airline_solarized_bg='dark'
+let g:airline_solarized_bg='light'
 let g:airline_highlighting_cache=1
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#tabline#enabled = 1           " enable airline tabline
@@ -349,7 +349,7 @@ set conceallevel=2
 " Colors
 set termguicolors
 colorscheme solarized8
-set background=dark
+set background=light
 hi Search cterm=NONE ctermfg=white ctermbg=black
 
 if filereadable(".vimrc.sethetter")
