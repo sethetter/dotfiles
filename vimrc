@@ -304,6 +304,9 @@ nnoremap <leader>fo :Goyo<CR>
 nnoremap <leader>fl :Limelight!!<CR>
 nnoremap <leader>fO :Goyo <bar> Goyo<CR> " refresh goyo view after a tmux pane resize
 
+" Misc Utilities
+vmap <leader>jq :!jq .<CR>
+
 " Copy/Paste/Cut
 if has('unnamedplus')
   set clipboard=unnamed,unnamedplus
