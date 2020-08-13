@@ -89,6 +89,7 @@ function note
   end
 end
 
+function nn; vim -c 'Goyo | Limelight'; end
 function notes; cd ~/notes && vim .; end
 function journal; note journal journal; end
 function doing; vim -c Limelight ~/notes/doing.md; end
