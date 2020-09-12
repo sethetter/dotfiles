@@ -4,27 +4,25 @@ set -gx DENO_PATH /Users/sethetter/.deno
 set -gx GOROOT /usr/local/go
 set -gx GOPATH $HOME/code/go
 set -gx COMPOSER_PATH $HOME/.composer/vendor/bin
-set -gx ARCANIST_PATH $HOME/.arcanist/arcanist/bin
 set -gx HEROKU_PATH /usr/local/heroku/bin
 set -gx LOCAL_BIN $HOME/.local/bin
 set -gx ANDROID_HOME /opt/android-studio
 set -gx PYENV_ROOT $HOME/.pyenv
-set -gx RVM_BIN $HOME/.rvm/bin
+set -gx RBENV_ROOT $HOME/.rbenv
 set -gx PY2_BIN $HOME//Library/Python/2.7/bin
 set -gx CARGO_BIN $HOME/.cargo/bin
 set -gx VOLTA_HOME "$HOME/.volta"
 
-set -gx PATH $PATH $LOCAL_BIN
-set -gx PATH $PATH $GOPATH/bin
-set -gx PATH $PATH $CARGO_BIN
-set -gx PATH $PATH $PY2_BIN
-set -gx PATH $PATH $RVM_BIN
-set -gx PATH $PATH $PYENV_ROOT/bin
-set -gx PATH $PATH $ARCANIST_PATH
-set -gx PATH $PATH $HEROKU_PATH
-set -gx PATH $PATH $COMPOSER_PATH
-set -gx PATH $PATH $DENO_PATH/bin
-set -gx PATH "$VOLTA_HOME/bin" $PATH
+set -gx PATH $LOCAL_BIN $PATH
+set -gx PATH $DENO_PATH/bin $PATH
+set -gx PATH $COMPOSER_PATH $PATH
+set -gx PATH $HEROKU_PATH $PATH
+set -gx PATH $GOPATH/bin $PATH
+set -gx PATH $PYENV_ROOT/bin $PATH
+set -gx PATH $PY2_BIN $PATH
+set -gx PATH $CARGO_BIN $PATH
+set -gx PATH $RBENV_ROOT/shims $PATH
+set -gx PATH $VOLTA_HOME/bin $PATH
 
 set -x GPG_TTY (tty)
 set -x TERM xterm-256color
@@ -109,3 +107,4 @@ function unpackhw
 end
 
 eval (direnv hook fish)
+set -g fish_user_paths "/usr/local/opt/libarchive/bin" $fish_user_paths
