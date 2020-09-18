@@ -1,6 +1,31 @@
 [user]
-	email = mail@sethetter.com
 	name = Seth Etter
-	signingkey = 4FAC34038F619523
+	email = mail@sethetter.com
+  signingkey = 4FAC34038F619523
 [core]
-	pager = delta --theme='Solarized (light)'
+	excludesfile = ~/.gitignore
+  pager = delta --light --theme='Solarized (light)'
+[interactive]
+  diffFilter = delta --light --theme='Solarized (light)' --color-only
+[delta]
+  features = side-by-side line-numbers decorations
+  whitespace-error-style = 22 reverse
+[merge]
+	cmd = vim -u ~/dotfiles/vimrc.min
+[diff]
+  cmd = vimdiff -u ~/dotfiles/vimrc.min
+[difftool]
+	prompt = false
+[color]
+  ui = auto
+[github]
+	username = sethetter
+	user = sethetter
+[push]
+	default = simple
+[alias]
+	pushf = push --force-with-lease
+[gpg]
+	program = /usr/local/bin/gpg
+[commit]
+	gpgsign = true
