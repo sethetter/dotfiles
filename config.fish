@@ -80,18 +80,18 @@ function note
 
   if test "$argv[2]"
     mkdir -p ~/notes/$argv[2]
-    and vim -c 'Goyo | Limelight' ~/notes/$argv[2]/(date +%y%m%d)-$name.md
+    and vim -c 'Goyo' ~/notes/$argv[2]/(date +%y%m%d)-$name.md
   else
     mkdir -p ~/notes/uncategorized
-    vim -c 'Goyo | Limelight' ~/notes/uncategorized/(date +%y%m%d)-$name.md
+    vim -c 'Goyo' ~/notes/uncategorized/(date +%y%m%d)-$name.md
   end
 end
 
-function nn; vim -c 'Goyo | Limelight'; end
+function nn; vim -c 'Goyo'; end
 function notes; cd ~/notes && vim .; end
 function journal; note journal journal; end
-function doing; vim -c Limelight ~/notes/doing.md; end
-function scratch; vim -c 'Goyo | Limelight' ~/notes/scratch.md; end
+function doing; vim ~/notes/doing.md; end
+function scratch; vim -c 'Goyo' ~/notes/scratch.md; end
 function ns; notes; end
 function n; note; end
 function j; journal; end
