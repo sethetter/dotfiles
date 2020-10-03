@@ -52,6 +52,7 @@ function tf; terraform $argv[1..-1]; end
 function writing; cd ~/code/sethetter/words/ && vim; end
 function md; open -a typora $argv[1..-1]; end
 function lg; lazygit; end
+function ddiff; delta --theme='Solarized (light)'; end
 function gdm; git diff $argv[1..-1] master; end
 function gdc; git diff --cached $argv[1..-1]; end
 

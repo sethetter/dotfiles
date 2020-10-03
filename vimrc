@@ -132,7 +132,7 @@ set shell=/usr/local/bin/fish
 set ruler
 set relativenumber
 set number
-set signcolumn=number "combines sign and number columns
+" set signcolumn=number "combines sign and number columns
 
 let no_buffers_menu=1
 
@@ -246,6 +246,11 @@ nnoremap <leader>lv :vert lopen<CR><C-w>=
 nnoremap <leader>lc :lclose<CR>
 nnoremap <leader>ln :lnext<CR>
 nnoremap <leader>lp :lprev<CR>
+
+" CoC Diagnostics, Errors, Warnings, Etc
+nnoremap <silent> <leader>el :CocDiagnostics<CR>
+nnoremap <silent> <leader>en :call CocAction('diagnosticNext')<CR>
+nnoremap <silent> <leader>ep :call CocAction('diagnosticPrev')<CR>
 
 " Snippets
 let g:UltiSnipsExpandTrigger="<tab>"
