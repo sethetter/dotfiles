@@ -14,16 +14,9 @@
   "vim.useCtrlKeys": true,
   "window.zoomLevel": 0,
   "gitlens.codeLens.enabled": false,
-  "gitlens.historyExplorer.enabled": true,
-  "gitlens.gitExplorer.location": "gitlens",
-  "gitlens.gitExplorer.view": "repository",
-  "gitlens.historyExplorer.location": "explorer",
   "gitlens.hovers.enabled": false,
-  "gitlens.resultsExplorer.files.layout": "list",
-  "gitlens.explorers.avatars": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
-  "gitlens.gitExplorer.files.layout": "list",
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,
@@ -46,15 +39,12 @@
   },
   "extensions.ignoreRecommendations": true,
   "window.newWindowDimensions": "maximized",
-  "gitlens.settings.mode": "advanced",
   "workbench.sideBar.location": "left",
   "go.enableCodeLens": {
     "references": false,
     "runtest": false
   },
   "workbench.editor.showTabs": true,
-  "flow.pathToFlow": "./node_modules/.bin/flow",
-  "flowide.pathToFlow": "flow",
   "gitlens.remotes": [
     {
       "domain": "github.cms.gov",
@@ -62,9 +52,8 @@
     }
   ],
   "editor.parameterHints.enabled": false,
-  "flow.tryFlowBin": true,
   "terminal.integrated.rendererType": "canvas",
-  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontSize": 14,
   "go.formatTool": "goimports",
   "editor.fontWeight": "400",
   "terminal.integrated.lineHeight": 0,
@@ -77,5 +66,5 @@
   "workbench.startupEditor": "none",
   "go.buildOnSave": "workspace",
   "go.useLanguageServer": true,
-  "editor.fontSize": 14,
+  "editor.fontSize": 15,
 }
