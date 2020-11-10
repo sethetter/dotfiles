@@ -66,5 +66,5 @@
   "workbench.startupEditor": "none",
   "go.buildOnSave": "workspace",
   "go.useLanguageServer": true,
-  "editor.fontSize": 15,
+  "editor.fontSize": 14,
 }

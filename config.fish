@@ -55,6 +55,7 @@ function lg; lazygit; end
 function ddiff; delta --theme='Solarized (light)'; end
 function gdm; git diff $argv[1..-1] master; end
 function gdc; git diff --cached $argv[1..-1]; end
+function ccb; git rev-parse --abbrev-ref HEAD | pbcopy; end
 
 function mdp
   set f (mktemp).html

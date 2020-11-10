@@ -8,6 +8,5 @@ _sethetter*
 .#*
 .tern-port
 code/workspaceStorage
-.vscode
 .vim-bookmarks
 .vimrc.sethetter
