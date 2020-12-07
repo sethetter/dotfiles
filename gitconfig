@@ -4,16 +4,18 @@
   signingkey = 4FAC34038F619523
 [core]
 	excludesfile = ~/.gitignore
-  pager = delta --light --theme='Solarized (light)'
+  pager = delta --light
 [interactive]
-  diffFilter = delta --light --theme='Solarized (light)' --color-only
+  diffFilter = delta --light --color-only
 [delta]
   features = side-by-side line-numbers decorations
+  syntax-theme = Solarized (light)
   whitespace-error-style = 22 reverse
 [merge]
 	cmd = vim -u ~/dotfiles/vimrc.min
 [diff]
   cmd = vimdiff -u ~/dotfiles/vimrc.min
+  colorMoved = default
 [difftool]
 	prompt = false
 [color]
