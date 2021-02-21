@@ -15,5 +15,6 @@
     "javascript",
     "javascriptreact",
     "html"
-  ]
+  ],
+  "javascript.suggestionActions.enabled": false,
 }
