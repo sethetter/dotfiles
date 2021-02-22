@@ -69,4 +69,7 @@
   "editor.fontSize": 14,
   "todo-tree.tree.showScanModeButton": false,
   "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }

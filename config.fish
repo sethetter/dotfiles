@@ -109,3 +109,7 @@ end
 
 eval (direnv hook fish)
 set -g fish_user_paths "/usr/local/opt/libarchive/bin" $fish_user_paths
+
+set -gx WASMTIME_HOME "$HOME/.wasmtime"
+
+string match -r ".wasmtime" "$PATH" > /dev/null; or set -gx PATH "$WASMTIME_HOME/bin" $PATH
