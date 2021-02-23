@@ -26,7 +26,7 @@ set -gx PATH $VOLTA_HOME/bin $PATH
 
 set -x GPG_TTY (tty)
 set -x TERM xterm-256color
-set -x EDITOR vim
+set -x EDITOR code -n --wait
 
 set -g fish_key_bindings fish_vi_key_bindings
 set fish_greeting ""
@@ -109,3 +109,7 @@ end
 
 eval (direnv hook fish)
 set -g fish_user_paths "/usr/local/opt/libarchive/bin" $fish_user_paths
+
+set -gx WASMTIME_HOME "$HOME/.wasmtime"
+
+string match -r ".wasmtime" "$PATH" > /dev/null; or set -gx PATH "$WASMTIME_HOME/bin" $PATH
