@@ -196,6 +196,9 @@ augroup END
 " Default buffers to markdown
 autocmd BufEnter * if &filetype == "" | setlocal ft=markdown | endif
 
+" Set deno cache files to typescript
+autocmd BufRead,BufNewFile */deno/deps/** set filetype=typescript
+
 set autoread
 
 " Keybindings

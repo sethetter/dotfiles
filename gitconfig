@@ -1,7 +1,6 @@
 [user]
 	name = Seth Etter
 	email = mail@sethetter.com
-  signingkey = 4FAC34038F619523
 [core]
 	excludesfile = ~/.gitignore
   pager = delta --light
@@ -29,5 +28,3 @@
 	pushf = push --force-with-lease
 [gpg]
 	program = /usr/local/bin/gpg
-[commit]
-	gpgsign = true

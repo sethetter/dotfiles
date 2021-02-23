@@ -12,8 +12,10 @@
     "typescript",
     "typescriptreact",
     "json",
+    "jsonc",
     "javascript",
     "javascriptreact",
     "html"
-  ]
+  ],
+  "javascript.suggestionActions.enabled": false,
 }
