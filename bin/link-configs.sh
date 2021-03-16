@@ -8,10 +8,20 @@
 
 ABSPATH=$(cd "$(dirname "$0")"/..; pwd)
 
-# Link neovim config
+# Link vim config
 #------------------------------------------------------------
-`if [ ! -f ~/.config/nvim ]; then mv ~/.config/nvim ~/.config/_nvim.backup; fi`
-`ln -s ${ABSPATH}/nvim ~/.config/nvim`
+`if [ ! -f ~/.vimrc ]; then mv ~/.vimrc ~/.vimrc.backup; fi`
+`ln -s ${ABSPATH}/vimrc ~/.vimrc`
+
+# Link vifm config
+#------------------------------------------------------------
+`if [ ! -f ~/.vifm/vifmrc ]; then mv ~/.vifm/vifmrc ~/.vifm/vifmrc.backup; fi`
+`ln -s ${ABSPATH}/vifmrc ~/.vifm/vifmrc`
+
+# Link CoC settings
+#------------------------------------------------------------
+`if [ ! -f ~/.vim/coc-settings.json ]; then mv ~/.vim/coc-settings.json ~/.vim/coc-settings.json.backup; fi`
+`ln -s ${ABSPATH}/coc-settings.json ~/.vim/coc-settings.json`
 
 # Link tmux config
 #------------------------------------------------------------
