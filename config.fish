@@ -58,9 +58,9 @@ function gdc; git diff --cached $argv[1..-1]; end
 function ccb; git rev-parse --abbrev-ref HEAD | pbcopy; end
 
 function mdp
-  set f (mktemp).html
-  pandoc -t html -o $f $argv[1]
-  open $f
+  # Requires Markdown Viewer extension
+  # - https://chrome.google.com/webstore/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk?hl=en
+  open -a 'Google Chrome.app' $argv[1]
 end
 
 function tm
