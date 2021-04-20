@@ -343,7 +343,7 @@ autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=2 shiftwidth=2 soft
 " let g:go_def_mapping_enabled = 0 " Prevent vim-go from taking over gd mapping
 
 " html
-autocmd Filetype html setlocal ts=4 sw=4 expandtab
+autocmd Filetype html setlocal ts=2 sw=2 expandtab
 let g:user_emmet_leader_key='<C-x>'
 
 " php
