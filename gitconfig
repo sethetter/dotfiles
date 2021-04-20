@@ -1,6 +1,6 @@
 [user]
 	name = Seth Etter
-	email = mail@sethetter.com
+	email = sethetter@gmail.com
 [core]
 	excludesfile = ~/.gitignore
   pager = delta --light
@@ -28,3 +28,5 @@
 	pushf = push --force-with-lease
 [gpg]
 	program = /usr/local/bin/gpg
+[init]
+	defaultBranch = main
