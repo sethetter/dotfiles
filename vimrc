@@ -300,7 +300,7 @@ vnoremap K :m '<-2<CR>gv=gv
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gh :GitGutterLineHighlightsToggle<CR>
 nnoremap <leader>gl :Commits<CR>
-nnoremap <leader>go :Gbrowse<CR>
+noremap <leader>go :Gbrowse<CR>
 nnoremap <leader>gP :Gpush<CR>
 nnoremap <leader>gL :Gpull<CR>
 " trailing space intentional
