@@ -31,11 +31,6 @@ set -x EDITOR vim
 set -g fish_key_bindings fish_vi_key_bindings
 set fish_greeting ""
 
-function scratch; vim ~/notes/SCRATCH.md; end
-function work; vim ~/notes/WORK.md; end
-function community; vim ~/notes/COMMUNITY.md; end
-function personal; vim ~/notes/PERSONAL.md; end
-
 function tmux; env TERM=xterm-256color tmux -2 $argv[1..-1]; end
 function tma; env tmux a; end
 
@@ -49,7 +44,6 @@ function v; vi $argv[1..-1]; end
 
 function dc; docker-compose $argv[1..-1]; end
 function tf; terraform $argv[1..-1]; end
-function writing; cd ~/code/sethetter/words/ && vim; end
 function md; open -a typora $argv[1..-1]; end
 function lg; lazygit; end
 function ddiff; delta --theme='Solarized (light)'; end
@@ -73,7 +67,13 @@ function tm
 end
 
 function note
+  argparse 'D/nodate' -- $argv
   set name "note"
+  set -l date (printf "%s-" (date +%y%m%d))
+
+  if set -q _flag_nodate
+    set date ""
+  end
 
   if test "$argv[1]"
     set name $argv[1]
@@ -81,22 +81,19 @@ function note
 
   if test "$argv[2]"
     mkdir -p ~/notes/$argv[2]
-    and vim -c 'Goyo' ~/notes/$argv[2]/(date +%y%m%d)-$name.md
+    and touch ~/notes/$argv[2]/$date$name.md
+    and md ~/notes/$argv[2]/$date$name.md
   else
     mkdir -p ~/notes/uncategorized
-    vim -c 'Goyo' ~/notes/uncategorized/(date +%y%m%d)-$name.md
+    and touch ~/notes/uncategorized/$date$name.md
+    and md ~/notes/uncategorized/$date$name.md
   end
 end
 
-function nn; vim -c 'Goyo'; end
-function notes; cd ~/notes && vim .; end
 function journal; note journal journal; end
-function doing; vim ~/notes/doing.md; end
-function scratch; vim -c 'Goyo' ~/notes/scratch.md; end
-function ns; notes; end
+function scratch; md ~/notes/scratch.md; end
 function n; note; end
 function j; journal; end
-function d; doing; end
 function s; scratch; end
 
 # Takes Homework ID as parameter
