@@ -82,16 +82,19 @@ function note
   if test "$argv[2]"
     mkdir -p ~/notes/$argv[2]
     and touch ~/notes/$argv[2]/$date$name.md
-    and vim -c 'Goyo' ~/notes/$argv[2]/$date$name.md
+    # and vim -c 'Goyo' ~/notes/$argv[2]/$date$name.md
+    and touch ~/notes/$argv[2]/$date$name.md && md ~/notes/$argv[2]/$date$name.md
   else
     mkdir -p ~/notes/uncategorized
     and touch ~/notes/uncategorized/$date$name.md
-    and vim -c 'Goyo' ~/notes/uncategorized/$date$name.md
+    # and vim -c 'Goyo' ~/notes/uncategorized/$date$name.md
+    and touch ~/notes/uncategorized/$date$name.md && md ~/notes/uncategorized/$date$name.md
   end
 end
 
 function journal; note journal journal; end
-function scratch; vim -c 'Goyo' ~/notes/scratch.md; end
+# function scratch; vim -c 'Goyo' ~/notes/scratch.md; end
+function scratch; touch ~/notes/scratch.md && md ~/notes/scratch.md; end
 function n; note; end
 function j; journal; end
 function s; scratch; end
