@@ -82,11 +82,11 @@ function note
   if test "$argv[2]"
     mkdir -p ~/notes/$argv[2]
     and touch ~/notes/$argv[2]/$date$name.md
-    and touch ~/notes/$argv[2]/$date$name.md && md ~/notes/$argv[2]/$date$name.md
+    and md ~/notes/$argv[2]/$date$name.md
   else
     mkdir -p ~/notes/uncategorized
     and touch ~/notes/uncategorized/$date$name.md
-    and touch ~/notes/uncategorized/$date$name.md && md ~/notes/uncategorized/$date$name.md
+    and md ~/notes/uncategorized/$date$name.md
   end
 end
 
