@@ -47,7 +47,8 @@ function lg; lazygit; end
 function ddiff; delta --theme='Solarized (light)'; end
 function gdm; git diff $argv[1..-1] master; end
 function gdc; git diff --cached $argv[1..-1]; end
-function ccb; git rev-parse --abbrev-ref HEAD | pbcopy; end
+function ccb; git rev-parse --abbrev-ref HEAD | tr -d '\n' | pbcopy; end
+function shrug; echo "¯\_(ツ)_/¯" | tr -d '\n' | pbcopy; end
 
 function mdp
   # Requires Markdown Viewer extension
