@@ -1,2 +1,8 @@
 set refresh-mode = periodic
 set refresh-interval = 1
+
+set main-view-date = relative
+set tree-view-date = relative
+set stash-view-date = relative
+set refs-view-date = relative
+set blame-view-date = relative
