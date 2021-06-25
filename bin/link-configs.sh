@@ -17,6 +17,7 @@ ln -s "${ABSPATH}/vimrc" ~/.vimrc
 #------------------------------------------------------------
 if [ ! -f ~/.vifm/vifmrc ]; then mv ~/.vifm/vifmrc ~/.vifm/vifmrc.backup; fi
 ln -s "${ABSPATH}/vifmrc" ~/.vifm/vifmrc
+mkdir -p ~/.vifm/colors && cp $ABSPATH/vifm/solarized-light.vifm ~/.vifm/colors/solarized-light
 
 # Link CoC settings
 #------------------------------------------------------------
