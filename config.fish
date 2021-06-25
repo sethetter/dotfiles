@@ -27,6 +27,7 @@ set -gx PATH $VOLTA_HOME/bin $PATH
 set -x GPG_TTY (tty)
 set -x TERM xterm-256color
 set -x EDITOR vim
+set -x BAT_THEME "Solarized (light)"
 
 set -g fish_key_bindings fish_vi_key_bindings
 set fish_greeting ""
