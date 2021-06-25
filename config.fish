@@ -30,6 +30,15 @@ set -x BAT_THEME "Solarized (light)"
 set -g fish_key_bindings fish_vi_key_bindings
 set fish_greeting ""
 
+# Use `bat` if available
+function cat
+  if type -q bat
+    bat $argv[1..-1]
+  else
+    cat $argv[1..-1]
+  end
+end
+
 function tmux; env TERM=xterm-256color tmux -2 $argv[1..-1]; end
 function tma; env tmux a; end
 
