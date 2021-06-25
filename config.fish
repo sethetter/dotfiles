@@ -11,7 +11,6 @@ set -gx PYENV_ROOT $HOME/.pyenv
 set -gx RBENV_ROOT $HOME/.rbenv
 set -gx PY2_BIN $HOME//Library/Python/2.7/bin
 set -gx CARGO_BIN $HOME/.cargo/bin
-set -gx VOLTA_HOME "$HOME/.volta"
 
 set -gx PATH $LOCAL_BIN $PATH
 set -gx PATH $DENO_PATH/bin $PATH
@@ -22,7 +21,6 @@ set -gx PATH $PYENV_ROOT/bin $PATH
 set -gx PATH $PY2_BIN $PATH
 set -gx PATH $CARGO_BIN $PATH
 set -gx PATH $RBENV_ROOT/shims $PATH
-set -gx PATH $VOLTA_HOME/bin $PATH
 
 set -x GPG_TTY (tty)
 set -x TERM xterm-256color
@@ -43,14 +41,15 @@ function vi
 end
 function v; vi $argv[1..-1]; end
 
-function dc; docker-compose $argv[1..-1]; end
+function dc; docker compose $argv[1..-1]; end
 function tf; terraform $argv[1..-1]; end
 function md; open -a typora $argv[1..-1]; end
 function lg; lazygit; end
 function ddiff; delta --theme='Solarized (light)'; end
 function gdm; git diff $argv[1..-1] master; end
 function gdc; git diff --cached $argv[1..-1]; end
-function ccb; git rev-parse --abbrev-ref HEAD | pbcopy; end
+function ccb; git rev-parse --abbrev-ref HEAD | tr -d '\n' | pbcopy; end
+function shrug; echo "¯\_(ツ)_/¯" | tr -d '\n' | pbcopy; end
 
 function mdp
   # Requires Markdown Viewer extension
@@ -111,3 +110,5 @@ set -g fish_user_paths "/usr/local/opt/libarchive/bin" $fish_user_paths
 set -gx WASMTIME_HOME "$HOME/.wasmtime"
 
 string match -r ".wasmtime" "$PATH" > /dev/null; or set -gx PATH "$WASMTIME_HOME/bin" $PATH
+set -gx VOLTA_HOME "$HOME/.volta"
+set -gx PATH "$VOLTA_HOME/bin" $PATH
