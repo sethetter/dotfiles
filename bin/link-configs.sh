@@ -24,6 +24,11 @@ mkdir -p ~/.vifm/colors && cp $ABSPATH/vifm/solarized-light.vifm ~/.vifm/colors/
 if [ ! -f ~/.vim/coc-settings.json ]; then mv ~/.vim/coc-settings.json ~/.vim/coc-settings.json.backup; fi
 ln -s "${ABSPATH}/coc-settings.json" ~/.vim/coc-settings.json
 
+# Link tig config
+#------------------------------------------------------------
+if [ ! -f ~/.tigrc ]; then mv ~/.tigrc ~/._tigrc.backup; fi
+ln -s "${ABSPATH}/tigrc" ~/.tigrc
+
 # Link tmux config
 #------------------------------------------------------------
 if [ ! -f ~/.tmux.conf ]; then mv ~/.tmux.conf ~/._tmux.conf.backup; fi
