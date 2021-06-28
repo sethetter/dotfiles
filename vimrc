@@ -301,8 +301,8 @@ nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gh :GitGutterLineHighlightsToggle<CR>
 nnoremap <leader>gl :Commits<CR>
 noremap <leader>go :Gbrowse<CR>
-nnoremap <leader>gP :Gpush<CR>
-nnoremap <leader>gL :Gpull<CR>
+nnoremap <leader>gP :Git push<CR>
+nnoremap <leader>gL :Git pull<CR>
 " trailing space intentional
 nnoremap <leader>gd :Gvdiff 
 
