@@ -16,5 +16,3 @@ brew install \
   nmap \
   bat \
   ripgrep
-
-go get github.com/asciimoo/wuzz
