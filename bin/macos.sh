@@ -15,8 +15,6 @@ brew install \
   pandoc \
   nmap \
   bat \
-  ripgrep \
-  tig \
-  w3m
+  ripgrep
 
 go get github.com/asciimoo/wuzz
