@@ -27,7 +27,6 @@
     "suppressShowKeyBindingsNotice": true
   },
   "typescript.tsserver.log": "off",
-  "workbench.activityBar.visible": false,
   "[markdown]": {
     "editor.wordWrap": "on",
     "editor.quickSuggestions": false,
@@ -73,5 +72,19 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "redhat.telemetry.enabled": false,
+  "githubPullRequests.defaultMergeMethod": "squash",
+  "github-enterprise.uri": "https://github.cms.gov",
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "eslint.quiet": true
 }

@@ -315,6 +315,8 @@ nnoremap <leader>fO :Goyo <bar> Goyo<CR> " refresh goyo view after a tmux pane r
 
 " Misc Utilities
 vmap <leader>jq :!jq .<CR>
+nmap <leader>nw :set nowrap<CR>
+nmap <leader>ww :set wrap<CR>
 
 " Copy/Paste/Cut
 if has('unnamedplus')
