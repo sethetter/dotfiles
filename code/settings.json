@@ -50,7 +50,6 @@
     }
   ],
   "editor.parameterHints.enabled": false,
-  "terminal.integrated.rendererType": "canvas",
   "terminal.integrated.fontSize": 14,
   "go.formatTool": "goimports",
   "editor.fontWeight": "400",
@@ -65,8 +64,6 @@
   "go.buildOnSave": "workspace",
   "go.useLanguageServer": true,
   "editor.fontSize": 14,
-  "todo-tree.tree.showScanModeButton": false,
-  "editor.formatOnSave": true,
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -86,5 +83,12 @@
     "[x]"
   ],
   "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-  "eslint.quiet": true
+  "eslint.quiet": true,
+  "groovyLint.enable": false,
+  "groovyLint.fix.enable": false,
+  "groovyLint.format.enable": false,
+  "groovyLint.insight.enable": false,
+  "groovyLint.format.useDocumentIndentSize": false,
+  "groovyLint.lint.trigger": "user",
+  "yaml.format.enable": false
 }

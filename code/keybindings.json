@@ -125,7 +125,7 @@
     "command": "workbench.action.terminal.focusPrevious"
   },
   {
-    "key": "ctrl+g r",
+    "key": "ctrl+f r",
     "command": "editor.action.goToReferences",
     "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
   },
@@ -135,7 +135,7 @@
     "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
   },
   {
-    "key": "ctrl+g d",
+    "key": "ctrl+f d",
     "command": "editor.action.revealDefinition",
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
   },
@@ -145,7 +145,29 @@
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
   },
   {
-    "key": "ctrl+g t",
+    "key": "ctrl+f t",
     "command": "editor.action.goToTypeDefinition"
+  },
+  {
+    "key": "ctrl+g o",
+    "command": "git.openFile"
+  },
+  {
+    "key": "ctrl+g r",
+    "command": "workbench.view.extension.github-pull-request"
+  },
+  {
+    "key": "ctrl+g h",
+    "command": "workbench.view.extension.github-pull-requests"
+  },
+  {
+    "key": "ctrl+f e",
+    "command": "editor.action.marker.nextInFiles",
+    "when": "editorFocus"
+  },
+  {
+    "key": "f8",
+    "command": "-editor.action.marker.nextInFiles",
+    "when": "editorFocus"
   }
 ]
