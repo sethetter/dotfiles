@@ -52,3 +52,13 @@ if [ ! -f ~/.gitconfig ]; then mv ~/.gitconfig ~/._gitconfig.backup; fi
 ln -s "${ABSPATH}/gitconfig" ~/.gitconfig
 if [ ! -f ~/.gitignore ]; then mv ~/.gitignore ~/._gitignore.backup; fi
 ln -s "${ABSPATH}/gitignore" ~/.gitignore
+
+# Obsidian Settings
+#------------------------------------------------------------
+obsidian_workspaces=${OBSIDIAN_WORKSPACES-"work,personal"}
+obsidian_home=${OBSIDIAN_HOME-"~/obsidian"}
+for ws in $obsidian_workspaces; do
+  for f in (ls $ABSPATH/obsidian); do
+    ln -s $ABSPATH/obsidian/$f $obsidian_home/$ws/.obsidian/$f
+  done
+done
