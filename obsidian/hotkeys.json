@@ -11,7 +11,8 @@
   "app:toggle-left-sidebar": [
     {
       "modifiers": [
-        "Ctrl"
+        "Ctrl",
+        "Mod"
       ],
       "key": "L"
     }
@@ -28,7 +29,8 @@
   "app:toggle-right-sidebar": [
     {
       "modifiers": [
-        "Ctrl"
+        "Ctrl",
+        "Mod"
       ],
       "key": "R"
     }
@@ -80,6 +82,7 @@
   "workspace:split-horizontal": [
     {
       "modifiers": [
+        "Alt",
         "Ctrl"
       ],
       "key": "S"
@@ -90,7 +93,7 @@
       "modifiers": [
         "Ctrl"
       ],
-      "key": "V"
+      "key": "S"
     }
   ],
   "zk-prefixer": [
@@ -109,6 +112,15 @@
         "Ctrl"
       ],
       "key": "U"
+    }
+  ],
+  "file-explorer:open": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "F"
     }
   ]
 }
