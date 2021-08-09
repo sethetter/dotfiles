@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 
 # Install symlinks for all of my dotfiles.
-# Includes: Bash Profile, Vim, and irssi.
-
-
-# TODO: Add tmux and powerline check/install here.
 
 ABSPATH=$(cd "$(dirname "$0")"/.. || exit; pwd)
 
@@ -56,9 +52,12 @@ ln -s "${ABSPATH}/gitignore" ~/.gitignore
 # Obsidian Settings
 #------------------------------------------------------------
 obsidian_workspaces=${OBSIDIAN_WORKSPACES-"work,personal"}
-obsidian_home=${OBSIDIAN_HOME-"~/obsidian"}
-for ws in $obsidian_workspaces; do
-  for f in (ls $ABSPATH/obsidian); do
+obsidian_home=${OBSIDIAN_HOME-"$HOME/obsidian"}
+for ws in ${obsidian_workspaces//,/ }; do
+  for f in $(ls $ABSPATH/obsidian); do
+    if [ -f $obsidian_home/$ws/.obsidian/$f ]; then
+      mv $obsidian_home/$ws/.obsidian/$f $obsidian_home/$ws/.obsidian/$f.backup
+    fi
     ln -s $ABSPATH/obsidian/$f $obsidian_home/$ws/.obsidian/$f
   done
 done
