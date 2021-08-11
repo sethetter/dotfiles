@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+brew tap homebrew/cask-fonts
 brew install \
   git \
   tmux \
@@ -16,7 +17,8 @@ brew install \
   pandoc \
   nmap \
   bat \
-  ripgrep
+  ripgrep \
+	font-iosevka-nerd-font
 
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
