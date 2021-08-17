@@ -1,10 +1,5 @@
 # dotfiles
 
-Just my personal configuration for some of my tools :)
+Just my personal configuration for some of my tools
 
-- bash/fish
-- git
-- spacemacs
-- tmux
-
-There is also a couple scripts to install and set things up for a Fedora machine.
+Keeping this README up to date with how often I change my setup is probably not feasible `¯\_(ツ)_/¯`

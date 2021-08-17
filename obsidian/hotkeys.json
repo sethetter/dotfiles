@@ -11,8 +11,7 @@
   "app:toggle-left-sidebar": [
     {
       "modifiers": [
-        "Ctrl",
-        "Mod"
+        "Ctrl"
       ],
       "key": "L"
     }
@@ -29,8 +28,7 @@
   "app:toggle-right-sidebar": [
     {
       "modifiers": [
-        "Ctrl",
-        "Mod"
+        "Ctrl"
       ],
       "key": "R"
     }
@@ -82,7 +80,6 @@
   "workspace:split-horizontal": [
     {
       "modifiers": [
-        "Alt",
         "Ctrl"
       ],
       "key": "S"
@@ -93,7 +90,7 @@
       "modifiers": [
         "Ctrl"
       ],
-      "key": "S"
+      "key": "V"
     }
   ],
   "zk-prefixer": [
@@ -106,14 +103,12 @@
     }
   ],
   "file-explorer:new-file-in-new-pane": [],
-  "editor:delete-paragraph": [],
-  "file-explorer:open": [
+  "editor:delete-paragraph": [
     {
       "modifiers": [
-        "Ctrl",
-        "Shift"
+        "Ctrl"
       ],
-      "key": "F"
+      "key": "U"
     }
   ]
 }
