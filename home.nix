@@ -28,9 +28,9 @@
     pkgs.ripgrep
     pkgs.tig
     pkgs.neovim
-    pkgs.fzf
     pkgs.nmap
     pkgs.rnix-lsp
+    pkgs.delta
     # pkgs.vifm
 
     # Non-free, or don't work on MacOS
@@ -46,15 +46,40 @@
 
   programs.zsh = {
     enable = true;
+    enableSyntaxHighlighting = true;
+    enableCompletion = true;
+    enableAutosuggestions = true;
+    initExtraFirst = ''
+      alias tma="tmux a"
+      function tm {
+        rootdir=$(pwd)
+        if [ ! -z "$1" ]; then
+          rootdir=$1
+        fi
+        cd $rootdir
+        echo "rootdir: $${rootdir##*/}"
+        tmux new-session -A -s "$${rootdir##*/}"
+      }
+
+      . /Users/sethetter/.nix-profile/etc/profile.d/nix.sh
+    '';
+    localVariables = {
+      EDITOR = "nvim";
+    };
+
     oh-my-zsh = {
       enable = true;
       theme = "robbyrussell";
       plugins = [
         "git"
-        "fzf"
         "vi-mode"
       ];
     };
+  };
+
+  programs.fzf = {
+    enable = true;
+    enableZshIntegration = true;
   };
 
   home.sessionVariables = {
