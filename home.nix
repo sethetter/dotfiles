@@ -50,7 +50,9 @@
     enableCompletion = true;
     enableAutosuggestions = true;
     initExtraFirst = ''
+      alias gdc="git diff --cached"
       alias tma="tmux a"
+
       function tm {
         rootdir=$(pwd)
         if [ ! -z "$1" ]; then
