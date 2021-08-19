@@ -11,12 +11,15 @@
   syntax-theme = Solarized (light)
   whitespace-error-style = 22 reverse
 [merge]
-	cmd = vim -u ~/dotfiles/vimrc.min
-[diff]
-  cmd = vimdiff -u ~/dotfiles/vimrc.min
-  colorMoved = default
+  tool = vimdiff
+[mergetool]
+  prompt = true
+[mergetool "vimdiff"]
+  cmd = nvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
 [difftool]
-	prompt = false
+  prompt = false
+[diff]
+  tool = vimdiff
 [color]
   ui = auto
 [github]
