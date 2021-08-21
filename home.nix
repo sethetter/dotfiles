@@ -60,16 +60,14 @@ in {
   home.stateVersion = "21.11";
 
   home.packages = [
-    pkgs.tmux
     pkgs.direnv
-    pkgs.bat
     pkgs.fd
     pkgs.git
     pkgs.ripgrep
     pkgs.tig
     pkgs.nmap
     pkgs.rnix-lsp
-    pkgs.delta
+    pkgs.delta # TODO: configure as part of programs.git
     pkgs.wget
     # pkgs.vifm
 
@@ -111,6 +109,18 @@ in {
 
     extraConfig = (builtins.readFile ./nvim/init.vim);
   };
+
+  programs.tmux = {
+    enable = true;
+    extraConfig = (builtins.readFile ./tmux.conf);
+  };
+
+  programs.bat = {
+    enable = true;
+    config = { theme = "Solarized (light)"; };
+  };
+
+  programs.gh.enable = true;
 
   programs.zsh = {
     enable = true;
@@ -161,8 +171,8 @@ in {
   
   home.file = {
     ".tigrc".source = config.lib.file.mkOutOfStoreSymlink ./tigrc;
-    ".tmux.conf".source = config.lib.file.mkOutOfStoreSymlink ./tmux.conf;
 
+    # TODO: Use programs.git config instead
     ".gitconfig".source = config.lib.file.mkOutOfStoreSymlink ./git/gitconfig;
     ".gitignore".source = config.lib.file.mkOutOfStoreSymlink ./git/gitignore;
 
