@@ -121,6 +121,7 @@ in {
   };
 
   programs.gh.enable = true;
+  programs.direnv.enable = true;
 
   programs.zsh = {
     enable = true;
