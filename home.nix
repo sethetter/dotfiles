@@ -40,7 +40,8 @@ let
     };
     meta.homepage = "https://github.com/vijaymarupudi/nvim-fzf";
   };
-in {
+in
+{
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
@@ -83,13 +84,17 @@ in {
     enable = true;
     viAlias = true;
     plugins = with pkgs.vimPlugins; [
-      { plugin = gitsigns-nvim;
-        config = "lua require('gitsigns').setup()"; }
+      {
+        plugin = gitsigns-nvim;
+        config = "lua require('gitsigns').setup()";
+      }
       { plugin = nvim-fzf; }
       { plugin = fzf-lua; }
 
-      { plugin = nvim-comment;
-        config = "lua require('nvim_comment').setup()"; }
+      {
+        plugin = nvim-comment;
+        config = "lua require('nvim_comment').setup()";
+      }
       { plugin = vim-closer; }
       { plugin = nvim-tree-lua; }
 
@@ -156,6 +161,7 @@ in {
       plugins = [
         "git"
         "vi-mode"
+        # TODO: some way to know i'm in a nix shell?
       ];
     };
   };
@@ -169,7 +175,7 @@ in {
     EDITOR = "nvim";
     ZSH_DISABLE_COMPFIX = "true";
   };
-  
+
   home.file = {
     ".tigrc".source = config.lib.file.mkOutOfStoreSymlink ./tigrc;
 
@@ -180,7 +186,7 @@ in {
     # ".vifm/colors/solarized-light".source = config.lib.file.mkOutOfStoreSymlink ./vifm/solarized-light.vifm;
     # ".vifm/vifmrc".source = config.lib.file.mkOutOfStoreSymlink ./vifm/vifmrc;
   };
-  
+
   # TODO: obsidian config
   # TODO: font-iosevka-nerd-font (not available I think, could script download though?)
 }
