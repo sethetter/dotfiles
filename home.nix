@@ -5,7 +5,6 @@ let
     name = "nvim-solarized-lua";
     src = pkgs.fetchgit {
       url = "https://github.com/ishan9299/nvim-solarized-lua";
-      rev = "fa437ae65a6c1239525e4ec7f4cbf4671eaa55ba";
       sha256 = "032gs63g3x62mym6nhznvywsqk1cxsgwx0fv2vyh2c929fb27ji7";
     };
     meta.homepage = "https://github.com/ishan9299/nvim-solarized-lua";
@@ -15,30 +14,10 @@ let
     name = "nvim-comment";
     src = pkgs.fetchgit {
       url = "https://github.com/terrortylor/nvim-comment";
-      rev = "6363118acf86824ed11c2238292b72dc5ef8bdde";
       sha256 = "039fznaldf6lzk0yp51wi7p1j3l5rvhwryvk5s3lrq78lxq2rzn2";
     };
     buildPhase = "# skip the makefile";
     meta.homepage = "https://github.com//terrortylor/nvim-comment";
-  };
-
-  fzf-lua = pkgs.vimUtils.buildVimPlugin {
-    name = "fzf-lua";
-    src = pkgs.fetchgit {
-      url = "https://github.com/ibhagwan/fzf-lua";
-      rev = "82a477420d34e6d8611d6b02ba1edb58c6e4ee2b";
-      sha256 = "12glahin6cv451khcpy7l4415pp2hhky5v2dyy6rbahmmxi2ijpr";
-    };
-    meta.homepage = "https://github.com/ibhagwan/fzf-lua";
-  };
-  nvim-fzf = pkgs.vimUtils.buildVimPlugin {
-    name = "nvim-fzf";
-    src = pkgs.fetchgit {
-      url = "https://github.com/vijaymarupudi/nvim-fzf";
-      rev = "8905eeea65b5b92ce0eff434a016e7e2fb4a615d";
-      sha256 = "0ja7hz55f706zdw5ngcn58fyjfamsg266mzkgawbydgpilvwf1mj";
-    };
-    meta.homepage = "https://github.com/vijaymarupudi/nvim-fzf";
   };
 in
 {
@@ -94,28 +73,20 @@ in
         plugin = gitsigns-nvim;
         config = "lua require('gitsigns').setup()";
       }
-      { plugin = nvim-fzf; }
-      { plugin = fzf-lua; }
-
+      # { plugin = "hrsh7th/nvim-compe"; }
+      { plugin = nvim-treesitter; }
+      { plugin = telescope-nvim; }
       {
         plugin = nvim-comment;
         config = "lua require('nvim_comment').setup()";
       }
       { plugin = vim-closer; }
       { plugin = nvim-tree-lua; }
-
       { plugin = nvim-web-devicons; }
       { plugin = nvim-solarized-lua; }
       { plugin = lualine-nvim; }
-
       { plugin = nvim-lspconfig; }
       { plugin = vim-nix; }
-
-      # Not sure on these yet
-      # { plugin = "hrsh7th/nvim-compe"; }
-      # { plugin = "nvim-telescope/telescope.nvim"; }
-      # { plugin = "mfussenegger/nvim-dap"; }
-      # { plugin = "simrat39/rust-tools.nvim"; }
     ];
 
     extraConfig = (builtins.readFile ./nvim/init.vim);

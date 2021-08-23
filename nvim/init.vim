@@ -93,14 +93,25 @@ set_keymap('n', '<leader>lc', ':lclose<CR>', opts)
 set_keymap('n', '<leader>ln', ':lnext<CR>', opts)
 set_keymap('n', '<leader>lp', ':lprev<CR>', opts)
 
--- Commenting
-set_keymap('', '<leader>c', ':CommentToggle<CR>', opts)
-
 -- Project Navigation
 set_keymap('n', '<leader>pt', ':NvimTreeToggle<CR>', opts)
-set_keymap('n', '<leader>pf', ':lua require("fzf-lua").files()<CR>', opts)
+set_keymap('n', '<leader>pf', ":lua require('telescope.builtin').find_files()<CR>", opts)
+set_keymap('n', '<leader>pb', ":lua require('telescope.builtin').buffers()<CR>", opts)
+set_keymap('n', '<leader>ps', ":lua require('telescope.builtin').live_grep()<CR>", opts)
+
+-- LSP
+set_keymap('n', 'gd', ":lua require('telescope.builtin').lsp_definitions()<CR>", opts)
+set_keymap('n', 'gr', ":lua require('telescope.builtin').lsp_references()<CR>", opts)
+set_keymap('n', '<leader>fo', ":lua require('telescope.builtin').lsp_document_symbols()<CR>", opts)
+set_keymap('n', '<leader>po', ":lua require('telescope.builtin').lsp_dynamic_workspace_symbols()<CR>", opts)
+
+-- Git
+set_keymap('n', '<leader>gs', ":lua require('telescope.builtin').git_status()<CR>", opts)
+set_keymap('n', '<leader>gc', ":lua require('telescope.builtin').git_commits()<CR>", opts)
+
+-- Misc
+set_keymap('', '<leader>c', ':CommentToggle<CR>', opts)
 set_keymap('n', '<leader>sc', ':let @/=""<CR>', opts)
--- TODO: Search buffers
 
 -- Autocomplete
 -- set_keymap("i", "<Tab>", "v:lua.tab_complete()", {expr = true})
@@ -127,8 +138,8 @@ local on_attach = function(client, bufnr)
   -- TODO: Search workspace symbols?
 
   buf_set_keymap('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opts)
-  buf_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
-  buf_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
+  -- buf_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
+  -- buf_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
   buf_set_keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
   buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
   buf_set_keymap('n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
