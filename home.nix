@@ -79,6 +79,12 @@ in
     # pkgs.slack
   ];
 
+  programs.direnv = {
+    enable = true;
+    nix-direnv.enable = true;
+    nix-direnv.enableFlakes = true;
+  };
+
   # TODO: Migrate nvim config to nix in it's own module, call from here
   programs.neovim = {
     enable = true;
@@ -126,7 +132,6 @@ in
   };
 
   programs.gh.enable = true;
-  programs.direnv.enable = true;
 
   programs.zsh = {
     enable = true;
