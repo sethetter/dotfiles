@@ -63,7 +63,7 @@
   "starred:open": [
     {
       "modifiers": [
-        "Ctrl",
+        "Mod",
         "Shift"
       ],
       "key": "S"
@@ -80,7 +80,8 @@
   "workspace:split-horizontal": [
     {
       "modifiers": [
-        "Ctrl"
+        "Ctrl",
+        "Shift"
       ],
       "key": "S"
     }
@@ -88,7 +89,8 @@
   "workspace:split-vertical": [
     {
       "modifiers": [
-        "Ctrl"
+        "Ctrl",
+        "Shift"
       ],
       "key": "V"
     }
