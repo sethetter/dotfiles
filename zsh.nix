@@ -21,6 +21,12 @@
       tmux new-session -A -s "''${rootdir##*/}"
     }
 
+    function mdp() {
+      # Requires Markdown Viewer extension
+      # - https://chrome.google.com/webstore/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk?hl=en
+      open -a '/Applications/Google Chrome.app' $1
+    }
+
     . /Users/sethetter/.nix-profile/etc/profile.d/nix.sh
   '';
   localVariables = {
