@@ -44,9 +44,7 @@
     pkgs.direnv
     pkgs.fd
     pkgs.ripgrep
-    pkgs.tig
     pkgs.nmap
-    pkgs.rnix-lsp
     pkgs.delta # TODO: configure as part of programs.git
     pkgs.wget
     # pkgs.vifm
@@ -59,8 +57,6 @@
   ];
 
   home.file = {
-    ".tigrc".source = config.lib.file.mkOutOfStoreSymlink ./tigrc;
-
     # TODO: Use programs.git config instead
     ".gitconfig".source = config.lib.file.mkOutOfStoreSymlink ./git/gitconfig;
     ".gitignore".source = config.lib.file.mkOutOfStoreSymlink ./git/gitignore;
