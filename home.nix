@@ -15,7 +15,9 @@
   programs.gh.enable = true;
 
   programs.lazygit.enable = true;
-  programs.lazygit.settings.gui.theme.lightTheme = true;
+  programs.lazygit.settings = {
+    gui.theme = { lightTheme = true; };
+  };
 
   programs.direnv = {
     enable = true;
