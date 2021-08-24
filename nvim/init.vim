@@ -79,6 +79,20 @@ set_keymap('n', '<leader>tp', ':tabprevious<CR>', opts)
 set_keymap('n', '<leader>td', ':tabclose<CR>', opts)
 -- set_keymap('n', '<leader>C', ':Commands<CR>', opts)
 
+-- Movement
+set_keymap('', '<C-L>', '20zl', opts) -- Scroll 20 characters to the right
+set_keymap('', '<C-H>', '20zh', opts) -- Scroll 20 characters to the left
+
+-- Vmap for maintain Visual Mode after shifting > and <
+set_keymap('v', '<', '<gv', opts)
+set_keymap('v', '>', '>gv', opts)
+set_keymap('n', '<', '<<', opts)
+set_keymap('n', '>', '>>', opts)
+
+-- Move visual block
+set_keymap('v', 'J', ":m '>+1<CR>gv=gv", opts)
+set_keymap('v', 'K', ":m '<-2<CR>gv=gv", opts)
+
 -- Quickfix List
 set_keymap('n', '<leader>qo', ':copen<CR>', opts)
 set_keymap('n', '<leader>qv', ':vert copen<CR><C-w>=', opts)
