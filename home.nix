@@ -47,6 +47,7 @@
     pkgs.nmap
     pkgs.delta # TODO: configure as part of programs.git
     pkgs.wget
+    pkgs.curl
     # pkgs.vifm
 
     # Non-free, or don't work on MacOS
