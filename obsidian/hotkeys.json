@@ -25,14 +25,7 @@
       "key": "L"
     }
   ],
-  "app:toggle-right-sidebar": [
-    {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": "R"
-    }
-  ],
+  "app:toggle-right-sidebar": [],
   "editor:focus": [
     {
       "modifiers": [
@@ -105,14 +98,7 @@
     }
   ],
   "file-explorer:new-file-in-new-pane": [],
-  "editor:delete-paragraph": [
-    {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": "U"
-    }
-  ],
+  "editor:delete-paragraph": [],
   "file-explorer:open": [
     {
       "modifiers": [
