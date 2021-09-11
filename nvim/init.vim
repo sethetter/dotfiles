@@ -170,7 +170,7 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', '<leader>ff', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
 
-local servers = {'gopls', 'rls', 'tsserver', 'hie', 'rnix', 'graphql'}
+local servers = {'gopls', 'terraformls', 'solargraph', 'rls', 'tsserver', 'hie', 'rnix', 'graphql'}
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,
