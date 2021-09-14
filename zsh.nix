@@ -39,7 +39,7 @@
     plugins = [
       "git"
       "vi-mode"
-      # TODO: some way to know i'm in a nix shell?
+      # TODO: some way to know i'm in a nix shell? Maybe this?
     ];
   };
 }
