@@ -29,7 +29,5 @@
 	default = simple
 [alias]
 	pushf = push --force-with-lease
-[gpg]
-	program = /usr/local/bin/gpg
 [init]
 	defaultBranch = main
