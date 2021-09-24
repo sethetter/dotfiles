@@ -1,5 +1,14 @@
 # dotfiles
 
-Just my personal configuration for some of my tools
+Just my personal configuration for some of my tools, applied with ansible
 
-Keeping this README up to date with how often I change my setup is probably not feasible `¯\_(ツ)_/¯`
+## Pre-reqs
+
+- homebrew
+- ansible
+
+## Installing
+
+```
+$ make apply
+```
