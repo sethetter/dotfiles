@@ -8,7 +8,10 @@
 
   tasks:
     - name: Install homebrew libraries
-      homebrew: name={{ item }} state=present
+      homebrew:
+        name: "{{ item }}"
+        state: latest
+      ignore_errors: true
       with_items:
         - zsh
         - direnv
@@ -23,7 +26,9 @@
         - curl
         - wget
         - fzf
-        # - font-iosevka-nerd-font
+        - awscli
+        - google-cloud-sdk
+        - font-iosevka-nerd-font
 
     - name: Link tmux.conf
       ansible.builtin.file:
@@ -61,6 +66,12 @@
       ansible.builtin.file:
         src: "{{ dotfiles_dir }}/gitignore"
         dest: "{{ home_dir }}/.gitignore"
+        state: link
+
+    - name: Link vimrc
+      ansible.builtin.file:
+        src: "{{ dotfiles_dir }}/vimrc"
+        dest: "{{ home_dir }}/.vimrc"
         state: link
 
     - name: Link vscode/settings.json
