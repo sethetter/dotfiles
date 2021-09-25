@@ -11,12 +11,10 @@ plugins=(git vi-mode fzf direnv)
 ZSH_THEME="robbyrussell"
 source $ZSH/oh-my-zsh.sh
 
-alias gdc="git diff --cached"
 alias tma="tmux a"
 alias dc="docker compose"
-alias hmb="home-manager build"
-alias hms="home-manager switch"
-alias lg="lazygit"
+alias tf="terraform"
+alias gdc="git diff --cached"
 
 function tm {
   rootdir=$(pwd)
