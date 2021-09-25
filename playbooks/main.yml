@@ -9,26 +9,35 @@
   tasks:
     - name: Install homebrew libraries
       homebrew:
-        name: "{{ item }}"
+        name: "{{ item.package }}"
         state: latest
-      ignore_errors: true
+      ignore_errors: "{{ item.ignore_errors }}"
       with_items:
-        - zsh
-        - direnv
-        - vim
-        - tmux
-        - git
-        - gh
-        - gnupg
-        - volta
-        - tfenv
-        - ripgrep
-        - curl
-        - wget
-        - fzf
-        - awscli
-        - google-cloud-sdk
-        - font-iosevka-nerd-font
+        # TODO: Stop ignoring errors
+        - { package: zsh, ignore_errors: false }
+        - { package: visual-studio-code, ignore_errors: true }
+        - { package: direnv, ignore_errors: false }
+        - { package: vim, ignore_errors: false }
+        - { package: tmux, ignore_errors: false }
+        - { package: git, ignore_errors: false }
+        - { package: gh, ignore_errors: false }
+        - { package: gnupg, ignore_errors: false }
+        - { package: volta, ignore_errors: false }
+        - { package: tfenv, ignore_errors: false }
+        - { package: ripgrep, ignore_errors: false }
+        - { package: curl, ignore_errors: false }
+        - { package: wget, ignore_errors: false }
+        - { package: fzf, ignore_errors: false }
+        - { package: awscli, ignore_errors: false }
+        - { package: google-cloud-sdk, ignore_errors: true }
+        - { package: font-iosevka-nerd-font, ignore_errors: true }
+
+    - name: VSCode extensions
+      ansible.builtin.shell: code --install-extension {{ item }} --force
+      with_items:
+        - vscodevim.vim
+        - golang.go
+        - 4ops.terraform
 
     - name: Link tmux.conf
       ansible.builtin.file:
@@ -74,17 +83,16 @@
         dest: "{{ home_dir }}/.vimrc"
         state: link
 
-    - name: Link vscode/settings.json
-      ansible.builtin.file:
-        src: "{{ dotfiles_dir }}/code/settings.json"
-        dest: "{{ vscode_dir }}/settings.json"
-        state: link
+    - name: Get vscode configs
+      ansible.builtin.shell: "ls {{ dotfiles_dir }}/code/"
+      register: vscode_configs
 
-    - name: Link vscode/keybindings.json
+    - name: Link vscode configs
       ansible.builtin.file:
-        src: "{{ dotfiles_dir }}/code/keybindings.json"
-        dest: "{{ vscode_dir }}/keybindings.json"
+        src: "{{ dotfiles_dir }}/code/{{ item }}"
+        dest: "{{ vscode_dir }}/{{ item }}"
         state: link
+      with_items: "{{ vscode_configs.stdout_lines }}"
 
     - name: Get obsidian configs
       ansible.builtin.shell: "ls {{ dotfiles_dir }}/obsidian/"
