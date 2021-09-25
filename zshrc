@@ -6,7 +6,7 @@ export EDITOR=vim
 export VOLTA_HOME=$HOME/.volta
 export PATH=$VOLTA_HOME/bin:$PATH
 
-plugins=(git vi-mode fzf)
+plugins=(git vi-mode fzf direnv)
 
 ZSH_THEME="robbyrussell"
 source $ZSH/oh-my-zsh.sh
