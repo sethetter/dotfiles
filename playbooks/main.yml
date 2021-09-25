@@ -28,6 +28,7 @@
         - { package: curl, ignore_errors: false }
         - { package: wget, ignore_errors: false }
         - { package: fzf, ignore_errors: false }
+        - { package: doctl, ignore_errors: false }
         - { package: awscli, ignore_errors: false }
         - { package: google-cloud-sdk, ignore_errors: true }
         - { package: font-iosevka-nerd-font, ignore_errors: true }
