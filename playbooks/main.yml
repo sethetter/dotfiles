@@ -39,6 +39,14 @@
         - vscodevim.vim
         - golang.go
         - 4ops.terraform
+        - dbaeumervscode-eslint
+        - eamodia.gitlens
+        - esbenp.prettier-vscode
+        - GitHub.vscode-pull-request-github
+        - kenhowardpdx.vscode-gist
+        - redhat.vscode-yaml
+        - rust-lang.rust
+        - yzhang.markdown-all-in-one
 
     - name: Link tmux.conf
       ansible.builtin.file:
