@@ -9,7 +9,7 @@ export PATH=$VOLTA_HOME/bin:$PATH
 plugins=(git vi-mode fzf direnv)
 
 ZSH_THEME="robbyrussell"
-source $ZSH/oh-my-zsh.sh
+source $HOME/.oh-my-zsh/oh-my-zsh.sh
 
 alias tma="tmux a"
 alias dc="docker compose"
