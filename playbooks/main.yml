@@ -50,6 +50,7 @@
         - rust-lang.rust
         - yzhang.markdown-all-in-one
         - ms-kubernetes-tools.vscode-kubernetes-tools
+        - bmewburn.vscode-intelephense-client
 
     - name: Link tmux.conf
       ansible.builtin.file:
