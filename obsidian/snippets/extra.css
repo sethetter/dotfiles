@@ -1,1 +1,7 @@
-.markdown-source-view { font-family: 'Iosevka Nerd Font', monospace; }
+/* Make headings a bit smaller */
+h1, .cm-header-1 { font-size: 24px }
+h2, .cm-header-2 { font-size: 22px }
+h3, .cm-header-3 { font-size: 20px }
+h4, .cm-header-4 { font-size: 18px }
+h5, .cm-header-5 { font-size: 16px }
+h6, .cm-header-6 { font-size: 15px }
