@@ -11,6 +11,8 @@ plugins=(git vi-mode fzf direnv)
 ZSH_THEME="robbyrussell"
 source $HOME/.oh-my-zsh/oh-my-zsh.sh
 
+eval "$(rbenv init - zsh)"
+
 alias tma="tmux a"
 alias dc="docker compose"
 alias tf="terraform"

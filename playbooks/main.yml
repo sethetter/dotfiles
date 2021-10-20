@@ -41,6 +41,7 @@
       with_items:
         - vscodevim.vim
         - golang.go
+        - rebornix.ruby
         - 4ops.terraform
         - dbaeumer.vscode-eslint
         - eamodio.gitlens
