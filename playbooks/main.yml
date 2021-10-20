@@ -23,6 +23,7 @@
         - { package: gh, ignore_errors: false }
         - { package: gnupg, ignore_errors: false }
         - { package: volta, ignore_errors: false }
+        - { package: rbenv, ignore_errors: false }
         - { package: tfenv, ignore_errors: false }
         - { package: ripgrep, ignore_errors: false }
         - { package: curl, ignore_errors: false }
