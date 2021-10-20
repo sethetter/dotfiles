@@ -13,7 +13,7 @@
       "modifiers": [
         "Ctrl"
       ],
-      "key": "L"
+      "key": "H"
     }
   ],
   "editor:focus-right": [
@@ -25,7 +25,14 @@
       "key": "L"
     }
   ],
-  "app:toggle-right-sidebar": [],
+  "app:toggle-right-sidebar": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "L"
+    }
+  ],
   "editor:focus": [
     {
       "modifiers": [
