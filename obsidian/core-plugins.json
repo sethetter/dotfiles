@@ -10,11 +10,13 @@
   "daily-notes",
   "note-composer",
   "command-palette",
+  "slash-command",
   "starred",
   "markdown-importer",
   "zk-prefixer",
   "outline",
   "word-count",
+  "slides",
   "open-with-default-app",
   "file-recovery",
   "sync"
