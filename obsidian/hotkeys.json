@@ -114,5 +114,14 @@
       ],
       "key": "E"
     }
+  ],
+  "daily-notes": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "D"
+    }
   ]
 }
