@@ -3,16 +3,24 @@
   email = sethetter@gmail.com
 [core]
   excludesfile = ~/.gitignore
+  pager = delta --light
+[interactive]
+  diffFilter = delta --light --color-only
+[delta]
+  features = side-by-side line-numbers decorations
+  #features = line-numbers decorations
+  syntax-theme = Solarized (light)
+  whitespace-error-style = 22 reverse
 [merge]
-  tool = vscode
+  tool = vimdiff
 [mergetool]
-  keepBackup = false
-[mergetool "vscode"]
-  cmd = code --wait --new-window $MERGED
+  prompt = true
+[mergetool "vimdiff"]
+  cmd = nvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+[difftool]
+  prompt = false
 [diff]
-  tool = vscode
-[difftool "vscode"]
-  cmd = code --wait --diff --new-window $LOCAL $REMOTE
+  tool = vimdiff
 [color]
   ui = auto
 [github]

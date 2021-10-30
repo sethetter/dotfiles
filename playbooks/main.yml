@@ -20,6 +20,7 @@
         - { package: vim, ignore_errors: false }
         - { package: nvim, ignore_errors: false }
         - { package: bat, ignore_errors: false }
+        - { package: git-delta, ignore_errors: false }
         - { package: tmux, ignore_errors: false }
         - { package: git, ignore_errors: false }
         - { package: gh, ignore_errors: false }
