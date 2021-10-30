@@ -25,6 +25,8 @@
         - { package: git, ignore_errors: false }
         - { package: gh, ignore_errors: false }
         - { package: gnupg, ignore_errors: false }
+        - { package: go, ignore_errors: false }
+        - { package: gopls, ignore_errors: false }
         - { package: volta, ignore_errors: false }
         - { package: rbenv, ignore_errors: false }
         - { package: tfenv, ignore_errors: false }
