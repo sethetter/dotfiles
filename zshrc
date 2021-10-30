@@ -2,7 +2,7 @@
 # being considered insecure by zsh, this disables that check since we trust homebrew
 export ZSH_DISABLE_COMPFIX=true
 export EDITOR=vim
-
+export BAT_THEME="Solarized (light)"
 
 plugins=(git vi-mode fzf direnv)
 

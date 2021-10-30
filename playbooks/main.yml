@@ -18,6 +18,8 @@
         - { package: visual-studio-code, ignore_errors: true }
         - { package: direnv, ignore_errors: false }
         - { package: vim, ignore_errors: false }
+        - { package: nvim, ignore_errors: false }
+        - { package: bat, ignore_errors: false }
         - { package: tmux, ignore_errors: false }
         - { package: git, ignore_errors: false }
         - { package: gh, ignore_errors: false }
@@ -96,6 +98,18 @@
       ansible.builtin.file:
         src: "{{ dotfiles_dir }}/vimrc"
         dest: "{{ home_dir }}/.vimrc"
+        state: link
+
+    - name: Link neovim init.lua
+      ansible.builtin.file:
+        src: "{{ dotfiles_dir }}/nvim/init.lua"
+        dest: "{{ home_dir }}/.config/nvim/init.lua"
+        state: link
+
+    - name: Link neovim lua folder
+      ansible.builtin.file:
+        src: "{{ dotfiles_dir }}/nvim/lua"
+        dest: "{{ home_dir }}/.config/nvim/lua"
         state: link
 
     - name: Get vscode configs
