@@ -103,6 +103,15 @@
         dest: "{{ home_dir }}/.vimrc"
         state: link
 
+    - name: Check for packer.nvim
+      ansible.builtin.shell: "ls {{ home_dir }}/.local/share/nvim/site/pack/packer/start"
+      ignore_errors: true
+      register: packer_check
+
+    - name: Ensure packer.nvim installed
+      ansible.builtin.shell: sh -c "git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim"
+      when: packer_check.stdout.find('packer.nvim') == -1
+
     - name: Link neovim init.lua
       ansible.builtin.file:
         src: "{{ dotfiles_dir }}/nvim/init.lua"
