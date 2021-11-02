@@ -1,4 +1,4 @@
-return require('packer').startup(function()
+return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   use 'vijaymarupudi/nvim-fzf'
@@ -16,7 +16,6 @@ return require('packer').startup(function()
     requires = 'kyazdani42/nvim-web-devicons'
   }
 
-  use 'kyazdani42/nvim-web-devicons'
   use 'ishan9299/nvim-solarized-lua'
   use {
     'hoob3rt/lualine.nvim',
@@ -28,6 +27,7 @@ return require('packer').startup(function()
 
   require('gitsigns').setup()
   require('nvim_comment').setup()
+  require('nvim-tree').setup()
 
   -- LSP, etc
   -- use 'hrsh7th/nvim-compe'
