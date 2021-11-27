@@ -90,5 +90,16 @@
   "groovyLint.insight.enable": false,
   "groovyLint.format.useDocumentIndentSize": false,
   "groovyLint.lint.trigger": "user",
-  "yaml.format.enable": false
+  "yaml.format.enable": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "rust.rustup": {
+    "toolchain": "stable-x86_64-apple-darwin",
+    "nightlyToolchain": "nightly-x86_64-apple-darwin"
+  },
+  "rust.mode": "rls",
+  "rust.rls": {
+    "useRustfmt": true
+  }
 }

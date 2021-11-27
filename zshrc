@@ -5,8 +5,6 @@ export EDITOR=nvim
 export BAT_THEME="Solarized (light)"
 
 plugins=(git vi-mode fzf direnv)
-
-ZSH_THEME="robbyrussell"
 source $HOME/.oh-my-zsh/oh-my-zsh.sh
 
 eval "$(rbenv init - zsh)"
@@ -34,5 +32,11 @@ function mdp() {
 # Google Cloud SDK
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+
+export RUST_BIN="$HOME/.cargo/bin"
+export PATH="$RUST_BIN:$PATH"
+
+eval "$(starship init zsh)"

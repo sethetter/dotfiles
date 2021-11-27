@@ -15,13 +15,16 @@
       with_items:
         # TODO: Stop ignoring errors
         - { package: zsh, ignore_errors: false }
+        - { package: starship, ignore_errors: false }
         - { package: visual-studio-code, ignore_errors: true }
         - { package: direnv, ignore_errors: false }
         - { package: vim, ignore_errors: false }
         - { package: nvim, ignore_errors: false }
+        - { package: slack, ignore_errors: false }
         - { package: bat, ignore_errors: false }
         - { package: git-delta, ignore_errors: false }
         - { package: tmux, ignore_errors: false }
+        - { package: docker, ignore_errors: false }
         - { package: git, ignore_errors: false }
         - { package: gh, ignore_errors: false }
         - { package: gnupg, ignore_errors: false }
