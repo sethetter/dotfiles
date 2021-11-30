@@ -15,7 +15,6 @@
       with_items:
         # TODO: Stop ignoring errors
         - { package: zsh, ignore_errors: false }
-        - { package: starship, ignore_errors: false }
         - { package: visual-studio-code, ignore_errors: true }
         - { package: direnv, ignore_errors: false }
         - { package: vim, ignore_errors: false }

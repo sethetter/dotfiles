@@ -5,6 +5,7 @@ export EDITOR=nvim
 export BAT_THEME="Solarized (light)"
 
 plugins=(git vi-mode fzf direnv)
+ZSH_THEME="robbyrussell"
 source $HOME/.oh-my-zsh/oh-my-zsh.sh
 
 eval "$(rbenv init - zsh)"
@@ -38,5 +39,3 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 
 export RUST_BIN="$HOME/.cargo/bin"
 export PATH="$RUST_BIN:$PATH"
-
-eval "$(starship init zsh)"
