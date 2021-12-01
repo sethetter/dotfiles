@@ -101,5 +101,8 @@
   "rust.mode": "rls",
   "rust.rls": {
     "useRustfmt": true
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust"
   }
 }
