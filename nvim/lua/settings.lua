@@ -26,14 +26,6 @@ vim.cmd('set ignorecase')
 vim.cmd('set smartcase')
 
 -- Colors
-require('lualine').setup({
-  options = {
-    theme = 'solarized_light',
-    section_separators = {'', ''},
-    component_separators = {'', ''}
-  }
-})
-
 vim.cmd('set termguicolors')
 vim.cmd('syntax enable')
 vim.cmd('set background=light')
@@ -42,3 +34,10 @@ vim.cmd('hi Normal guibg=NONE')
 
 -- Filetypes
 vim.cmd('au BufEnter *.graphql :set ft=graphql')
+
+-- Format on save
+local filetypes = {'ts', 'tsx', 'js', 'jsx', 'go', 'rs'}
+for _, ft in ipairs(filetypes) do
+  vim.cmd(string.format('autocmd BufWritePre *.%s lua vim.lsp.buf.formatting_sync(nil, 1000)', ft))
+  vim.cmd(string.format('autocmd BufWritePre *.%s.in lua vim.lsp.buf.formatting_sync(nil, 1000)', ft))
+end

@@ -29,6 +29,14 @@ return require('packer').startup(function(use)
   require('nvim_comment').setup()
   require('nvim-tree').setup()
 
+  require('lualine').setup({
+    options = {
+      theme = 'solarized_light',
+      section_separators = {'', ''},
+      component_separators = {'', ''}
+    }
+  })
+
   -- LSP, etc
   -- use 'hrsh7th/nvim-compe'
   use 'neovim/nvim-lspconfig'

@@ -1,11 +1,10 @@
 # zsh being installed via homebrew leads to some directories used for autocomplete
 # being considered insecure by zsh, this disables that check since we trust homebrew
 export ZSH_DISABLE_COMPFIX=true
-export EDITOR=nvim
+export EDITOR=vim
 export BAT_THEME="Solarized (light)"
 
 plugins=(git vi-mode fzf direnv)
-
 ZSH_THEME="robbyrussell"
 source $HOME/.oh-my-zsh/oh-my-zsh.sh
 
@@ -34,5 +33,9 @@ function mdp() {
 # Google Cloud SDK
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+
+export RUST_BIN="$HOME/.cargo/bin"
+export PATH="$RUST_BIN:$PATH"
