@@ -75,27 +75,6 @@
         dest: "{{ home_dir }}/.vimrc"
         state: link
 
-    - name: check-neovim-packer
-      ansible.builtin.shell: "ls {{ home_dir }}/.local/share/nvim/site/pack/packer/start"
-      ignore_errors: true
-      register: packer_check
-
-    - name: install-neovim-packer
-      ansible.builtin.shell: sh -c "git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim"
-      when: packer_check.stdout.find('packer.nvim') == -1
-
-    - name: link-neovim-init
-      ansible.builtin.file:
-        src: "{{ dotfiles_dir }}/nvim/init.lua"
-        dest: "{{ home_dir }}/.config/nvim/init.lua"
-        state: link
-
-    - name: link-neovim-lua-folder
-      ansible.builtin.file:
-        src: "{{ dotfiles_dir }}/nvim/lua"
-        dest: "{{ home_dir }}/.config/nvim/lua"
-        state: link
-
     - name: get-vscode-configs
       ansible.builtin.shell: "ls {{ dotfiles_dir }}/code/"
       register: vscode_configs
