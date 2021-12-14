@@ -22,10 +22,10 @@ return require('packer').startup(function(use)
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
   use {
-    'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' }
+    'tanvirtin/vgit.nvim', requires = { 'nvim-lua/plenary.nvim' }
   }
 
-  require('gitsigns').setup()
+  require('vgit').setup()
   require('nvim_comment').setup()
   require('nvim-tree').setup()
 
