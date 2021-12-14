@@ -35,6 +35,9 @@ vim.cmd('hi Normal guibg=NONE')
 -- Filetypes
 vim.cmd('au BufEnter *.graphql :set ft=graphql')
 
+vim.o.updatetime = 100
+vim.wo.signcolumn = 'yes'
+
 -- Format on save
 local filetypes = {'ts', 'tsx', 'js', 'jsx', 'go', 'rs'}
 for _, ft in ipairs(filetypes) do
