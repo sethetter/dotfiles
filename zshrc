@@ -14,6 +14,7 @@ alias tma="tmux a"
 alias dc="docker compose"
 alias tf="terraform"
 alias gdc="git diff --cached"
+alias ytop="ytop -c 'default-dark'"
 
 function tm {
   rootdir=$(pwd)
@@ -29,10 +30,6 @@ function mdp() {
   # - https://chrome.google.com/webstore/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk?hl=en
   open -a '/Applications/Google Chrome.app' $1
 }
-
-# Google Cloud SDK
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
