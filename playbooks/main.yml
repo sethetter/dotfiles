@@ -164,3 +164,9 @@
         state: link
       with_items: "{{ obsidian_configs.stdout_lines }}"
       when: obsidian_work_dir.stat.exists
+
+    - name: Link alacritty config
+      ansible.builtin.file:
+        src: "{{ dotfiles_dir }}/obsidian/{{ item }}"
+        dest: "{{ obsidian_dir }}/work/.obsidian/{{ item }}"
+        state: link
