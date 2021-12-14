@@ -13,6 +13,12 @@
         dest: "{{ home_dir }}/Brewfile"
         state: link
 
+    - name: link-iterm
+      ansible.builtin.file:
+        src: "{{ dotfiles_dir }}/iterm.json"
+        dest: "{{ home_dir }}//Library/Application Support/iTerm2/DynamicProfiles/iterm.json"
+        state: link
+
     - name: vscode-extensions
       ansible.builtin.shell: code --install-extension {{ item }} --force
       with_items:
