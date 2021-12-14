@@ -13,9 +13,6 @@
         dest: "{{ home_dir }}/Brewfile"
         state: link
 
-    - name: homebrew-bundle
-      ansible.builtin.shell: brew bundle --cleanup --zap
-
     - name: vscode-extensions
       ansible.builtin.shell: code --install-extension {{ item }} --force
       with_items:
@@ -139,9 +136,3 @@
         state: link
       with_items: "{{ obsidian_configs.stdout_lines }}"
       when: obsidian_work_dir.stat.exists
-
-    - name: link-alacritty
-      ansible.builtin.file:
-        src: "{{ dotfiles_dir }}/obsidian/{{ item }}"
-        dest: "{{ obsidian_dir }}/work/.obsidian/{{ item }}"
-        state: link
