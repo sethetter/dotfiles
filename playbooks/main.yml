@@ -121,3 +121,9 @@
         state: link
       with_items: "{{ obsidian_configs.stdout_lines }}"
       when: obsidian_work_dir.stat.exists
+
+    - name: link-lazygit-config
+      ansible.builtin.file:
+        src: "{{ dotfiles_dir }}/lazygit.yml"
+        dest: "{{ obsidian_dir }}/Library/Application Support/lazygit/config.yml"
+        state: link

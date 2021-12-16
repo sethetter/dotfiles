@@ -15,6 +15,7 @@ alias dc="docker compose"
 alias tf="terraform"
 alias gdc="git diff --cached"
 alias ytop="ytop -c 'default-dark'"
+alias lg="lazygit"
 
 function tm {
   rootdir=$(pwd)
