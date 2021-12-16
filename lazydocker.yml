@@ -1,0 +1,4 @@
+reporting: "off"
+gui:
+  theme:
+    lightTheme: true

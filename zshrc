@@ -16,6 +16,7 @@ alias tf="terraform"
 alias gdc="git diff --cached"
 alias ytop="ytop -c 'default-dark'"
 alias lg="lazygit"
+alias ld="lazydocker"
 
 function tm {
   rootdir=$(pwd)
@@ -30,6 +31,14 @@ function mdp() {
   # Requires Markdown Viewer extension
   # - https://chrome.google.com/webstore/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk?hl=en
   open -a '/Applications/Google Chrome.app' $1
+}
+
+function gbrowse() {
+  branch=$(git branch --show-current)
+  if [ -z "$branch" ]; then
+    branch=$(git rev-parse HEAD)
+  fi
+  gh browse --branch="$branch" $1
 }
 
 export VOLTA_HOME="$HOME/.volta"
