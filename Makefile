@@ -2,5 +2,6 @@
 apply:
 	ansible-playbook playbooks/main.yml -i hosts
 
-homebrew:
+.PHONY: brew
+brew:
 	brew bundle --cleanup --zap
