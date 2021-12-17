@@ -75,6 +75,7 @@ set_keymap('n', '<leader>po', ":lua require('telescope.builtin').lsp_dynamic_wor
 -- Git
 set_keymap('n', '<leader>gs', ":lua require('telescope.builtin').git_status()<CR>", opts)
 set_keymap('n', '<leader>gc', ":lua require('telescope.builtin').git_commits()<CR>", opts)
+set_keymap('n', '<leader>go', ":!gbrowse %<CR>", opts)
 
 -- Misc
 set_keymap('', '<leader>c', ':CommentToggle<CR>', opts)
