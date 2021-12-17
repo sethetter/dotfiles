@@ -35,8 +35,6 @@ function gbrowse() {
   gh browse --branch="$branch" $1
 }
 
-eval "$(rbenv init - zsh)"
-
 export VOLTA_HOME="$HOME/.volta"
 export RUST_BIN="$HOME/.cargo/bin"
 
