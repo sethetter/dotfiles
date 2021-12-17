@@ -125,5 +125,5 @@
     - name: link-lazygit-config
       ansible.builtin.file:
         src: "{{ dotfiles_dir }}/lazygit.yml"
-        dest: "{{ obsidian_dir }}/Library/Application Support/lazygit/config.yml"
+        dest: "{{ home_dir }}/Library/Application Support/lazygit/config.yml"
         state: link
