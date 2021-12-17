@@ -9,6 +9,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 
+brew "1password-cli"
 brew "alacritty"
 brew "ansible"
 brew "python@3.9"
