@@ -54,6 +54,12 @@
         dest: "{{ home_dir }}/.zshrc"
         state: link
 
+    - name: link-zshenv
+      ansible.builtin.file:
+        src: "{{ dotfiles_dir }}/zshenv"
+        dest: "{{ home_dir }}/.zshenv"
+        state: link
+
     - name: check-oh-my-zsh
       ansible.builtin.shell: "ls {{ home_dir }}/.oh-my-zsh"
       ignore_errors: true
