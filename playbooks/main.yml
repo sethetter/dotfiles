@@ -133,3 +133,9 @@
         src: "{{ dotfiles_dir }}/lazygit.yml"
         dest: "{{ home_dir }}/Library/Application Support/lazygit/config.yml"
         state: link
+
+    - name: link-alacritty-config
+      ansible.builtin.file:
+        src: "{{ dotfiles_dir }}/alacritty.yml"
+        dest: "{{ home_dir }}/.alacritty.yml"
+        state: link

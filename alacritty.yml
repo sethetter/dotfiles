@@ -5,17 +5,19 @@ window:
     y: 2
 
 font:
-  size: 16
+  size: 15
   normal:
     family: "Iosevka Nerd Font"
   use_thin_strokes: true
+
+draw_bold_text_with_bright_colors: true
 
 # Colors (Solarized Light)
 colors:
   # Default colors
   primary:
     background: '0xfdf6e3'
-    foreground: '0x586e75'
+    foreground: '0x657b83'
 
   # Normal colors
   normal:
