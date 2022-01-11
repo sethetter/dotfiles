@@ -13,12 +13,6 @@
         dest: "{{ home_dir }}/Brewfile"
         state: link
 
-    - name: link-iterm
-      ansible.builtin.file:
-        src: "{{ dotfiles_dir }}/iterm.json"
-        dest: "{{ home_dir }}//Library/Application Support/iTerm2/DynamicProfiles/iterm.json"
-        state: link
-
     - name: vscode-extensions
       ansible.builtin.shell: code --install-extension {{ item }} --force
       with_items:
@@ -37,11 +31,40 @@
         - ms-kubernetes-tools.vscode-kubernetes-tools
         - bmewburn.vscode-intelephense-client
 
+    - name: check-neovim-packer
+      ansible.builtin.shell: "ls {{ home_dir }}/.local/share/nvim/site/pack/packer/start"
+      ignore_errors: true
+      register: packer_check
+
+    - name: install-neovim-packer
+      ansible.builtin.shell: sh -c "git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim"
+      when: packer_check.stdout.find('packer.nvim') == -1
+
+    - name: create-config-dir
+      ansible.builtin.file:
+        dest: "{{ home_dir }}/.config/nvim"
+        state: directory
+
+    - name: link-neovim-init
+      ansible.builtin.file:
+        src: "{{ dotfiles_dir }}/nvim/init.lua"
+        dest: "{{ home_dir }}/.config/nvim/init.lua"
+        state: link
+        force: true
+
+    - name: link-neovim-lua-folder
+      ansible.builtin.file:
+        src: "{{ dotfiles_dir }}/nvim/lua"
+        dest: "{{ home_dir }}/.config/nvim/lua"
+        state: link
+        force: true
+
     - name: link-tmux-conf
       ansible.builtin.file:
         src: "{{ dotfiles_dir }}/tmux.conf"
         dest: "{{ home_dir }}/.tmux.conf"
         state: link
+        force: true
 
     - name: install-tpm
       ansible.builtin.git:
@@ -133,6 +156,7 @@
         src: "{{ dotfiles_dir }}/lazygit.yml"
         dest: "{{ home_dir }}/Library/Application Support/lazygit/config.yml"
         state: link
+        force: true
 
     - name: link-alacritty-config
       ansible.builtin.file:
