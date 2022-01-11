@@ -50,6 +50,7 @@ brew "zola"
 brew "zsh"
 brew "cjbassi/ytop/ytop"
 
+cask "1password"
 cask "1password-cli"
 cask "alacritty"
 cask "chromium"

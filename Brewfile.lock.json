@@ -11,7 +11,7 @@
         "revision": "209f59cda890de69b74c224982591642c21323d3"
       },
       "hashicorp/tap": {
-        "revision": "73820911ac00c57c99e111ac12a35742ae571f25"
+        "revision": "7c4105207b763681c069fc08f401e02008b1a6b3"
       },
       "heroku/brew": {
         "revision": "67a2d7051e9d989cded7d0776b343022e6c8b03f"
@@ -20,13 +20,13 @@
         "revision": "407dafc7dbdacd1d897cfc79e8c3ab86a859ca71"
       },
       "homebrew/cask": {
-        "revision": "ea961e565e0b9c7e4d4d42b86c1d8f499d1687ee"
+        "revision": "abbd7bcd5a0dec63f9bbac3066d3cb3b4e662e08"
       },
       "homebrew/cask-fonts": {
-        "revision": "914897c24c485605eba2a90a4ba7b85c34f4a9c8"
+        "revision": "79e1524145c42448095a5f4e646b2d0fe67fcb01"
       },
       "homebrew/core": {
-        "revision": "0fd3a4966fb6ec158c0f3f70523fcf302c92a78a"
+        "revision": "1d6ff05bc452a362df456cdfabbbe03888366d47"
       },
       "homebrew/services": {
         "revision": "0d503a251d67f5e93aaf376eb65ec9ed6cb62e9d"
@@ -1684,15 +1684,21 @@
         "options": {
           "full_name": "discord"
         }
+      },
+      "1password": {
+        "version": "7.9.2",
+        "options": {
+          "full_name": "1password"
+        }
       }
     }
   },
   "system": {
     "macos": {
       "monterey": {
-        "HOMEBREW_VERSION": "3.3.9",
-        "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "0fd3a4966fb6ec158c0f3f70523fcf302c92a78a",
+        "HOMEBREW_VERSION": "3.3.10",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
+        "Homebrew/homebrew-core": "1d6ff05bc452a362df456cdfabbbe03888366d47",
         "CLT": "13.2.0.0.1.1638488800",
         "Xcode": "13.1",
         "macOS": "12.1"
