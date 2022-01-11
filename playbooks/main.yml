@@ -135,6 +135,7 @@
         src: "{{ dotfiles_dir }}/obsidian/{{ item }}"
         dest: "{{ obsidian_dir }}/personal/.obsidian/{{ item }}"
         state: link
+        force: true
       with_items: "{{ obsidian_configs.stdout_lines }}"
       when: obsidian_personal_dir.stat.exists
 
@@ -148,6 +149,8 @@
         src: "{{ dotfiles_dir }}/obsidian/{{ item }}"
         dest: "{{ obsidian_dir }}/work/.obsidian/{{ item }}"
         state: link
+        force: true
+      with_items: "{{ obsidian_configs.stdout_lines }}"
       with_items: "{{ obsidian_configs.stdout_lines }}"
       when: obsidian_work_dir.stat.exists
 
@@ -163,3 +166,8 @@
         src: "{{ dotfiles_dir }}/alacritty.yml"
         dest: "{{ home_dir }}/.alacritty.yml"
         state: link
+
+    - name: install-aws-mfa
+      ansible.builtin.pip:
+        executable: pip3
+        name: aws-mfa
