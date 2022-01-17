@@ -101,6 +101,9 @@
       ansible.builtin.shell: sh -c "curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh"
       when: ghcup_check.stdout.find('command not found') != -1
 
+    - name: set-stack-use-system-ghc-true
+      ansible.builtin.shell: sh -c "stack config set system-ghc --global true"
+
     - name: link-gitconfig
       ansible.builtin.file:
         src: "{{ dotfiles_dir }}/gitconfig"
