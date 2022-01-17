@@ -1,6 +1,6 @@
 [user]
   name = Seth Etter
-  email = sethetter@gmail.com
+  email = mail@sethetter.com
 [core]
   excludesfile = ~/.gitignore
   pager = delta --light
