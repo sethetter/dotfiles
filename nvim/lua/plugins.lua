@@ -9,6 +9,8 @@ return require('packer').startup(function(use)
     }
   }
 
+  use 'blackCauldron7/surround.nvim'
+
   use 'terrortylor/nvim-comment'
   use '9mm/vim-closer'
   use {
@@ -24,6 +26,8 @@ return require('packer').startup(function(use)
   use {
     'tanvirtin/vgit.nvim', requires = { 'nvim-lua/plenary.nvim' }
   }
+
+  require("surround").setup({ mappings_style = "sandwich" })
 
   require('vgit').setup()
   require('nvim_comment').setup()
