@@ -26,7 +26,7 @@
         "revision": "5af8b108b1eaa635bc830268510b403593b8719a"
       },
       "homebrew/core": {
-        "revision": "8caf001c75a05ed7c6865718c2a33bc71c1c7a6c"
+        "revision": "aa80fdeb7ba62a691dd5386d9df7f691ed028744"
       },
       "homebrew/services": {
         "revision": "8e5db7ef7870589f3d903bd167a8a31335177f0f"
@@ -1866,6 +1866,12 @@
         "options": {
           "full_name": "insomnia"
         }
+      },
+      "inso": {
+        "version": "2.4.1",
+        "options": {
+          "full_name": "inso"
+        }
       }
     }
   },
@@ -1874,7 +1880,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.3.11",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "8caf001c75a05ed7c6865718c2a33bc71c1c7a6c",
+        "Homebrew/homebrew-core": "aa80fdeb7ba62a691dd5386d9df7f691ed028744",
         "CLT": "13.2.0.0.1.1638488800",
         "Xcode": "13.1",
         "macOS": "12.1"
