@@ -124,6 +124,7 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', '<leader>ff', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
 
+-- Needs `volta install vscode-langservers-extracted` for jsonls
 local servers = {'gopls', 'terraformls', 'solargraph', 'rls', 'tsserver', 'jsonls', 'hls'}
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
