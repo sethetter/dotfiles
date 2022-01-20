@@ -40,3 +40,6 @@ export RUST_BIN="$HOME/.cargo/bin"
 
 export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="$RUST_BIN:$PATH"
+
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"
