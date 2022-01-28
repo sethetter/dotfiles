@@ -12,6 +12,7 @@ return require('packer').startup(function(use)
   use 'blackCauldron7/surround.nvim'
 
   use 'terrortylor/nvim-comment'
+  use 'tpope/vim-surround'
   use '9mm/vim-closer'
   use {
     'kyazdani42/nvim-tree.lua',
