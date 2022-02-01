@@ -32,10 +32,7 @@ return require('packer').startup(function(use)
 
   require('vgit').setup()
   require('nvim_comment').setup()
-  vim.cmd('let g:nvim_tree_quit_on_open =1 ')
-  require('nvim-tree').setup({
-    open_on_setup = true
-  })
+  require('nvim-tree').setup()
 
   require('lualine').setup({
     options = {
