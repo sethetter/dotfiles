@@ -4,4 +4,4 @@ apply:
 
 .PHONY: brew
 brew:
-	arch -arm64 brew bundle --cleanup --zap
+	brew bundle --cleanup --zap
