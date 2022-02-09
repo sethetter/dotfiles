@@ -13,7 +13,7 @@ return require('packer').startup(function(use)
 
   use 'terrortylor/nvim-comment'
   use 'tpope/vim-surround'
-  use '9mm/vim-closer'
+  -- use '9mm/vim-closer'
   use {
     'kyazdani42/nvim-tree.lua',
     requires = 'kyazdani42/nvim-web-devicons'
