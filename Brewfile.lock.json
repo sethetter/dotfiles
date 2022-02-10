@@ -20,13 +20,13 @@
         "revision": "02920cb7b8f41aa17a9f337d8311c9ad553982ad"
       },
       "homebrew/cask": {
-        "revision": "46a5b6cff31b9da1959473f9e5b1d3e424668cde"
+        "revision": "1acf29c4c0c70f8476a40ad6c8b13e3ac94bfb32"
       },
       "homebrew/cask-fonts": {
         "revision": "827048804d7524181f0571c821187131cc9b6f81"
       },
       "homebrew/core": {
-        "revision": "0a76859efbad9df20e9b6003397339fa4553c398"
+        "revision": "0899794b825ce71cfe9869e2428ea0c7b3a1958c"
       },
       "homebrew/services": {
         "revision": "db2a6203fd4ae47ac5c150d03cb515e615b9cbe6"
@@ -1889,7 +1889,7 @@
         }
       },
       "visual-studio-code": {
-        "version": "1.64.1",
+        "version": "1.64.2",
         "options": {
           "full_name": "visual-studio-code"
         }
@@ -1947,6 +1947,12 @@
         "options": {
           "full_name": "inso"
         }
+      },
+      "ngrok": {
+        "version": "2.3.40",
+        "options": {
+          "full_name": "ngrok"
+        }
       }
     }
   },
@@ -1955,7 +1961,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.3.14",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "0a76859efbad9df20e9b6003397339fa4553c398",
+        "Homebrew/homebrew-core": "0899794b825ce71cfe9869e2428ea0c7b3a1958c",
         "CLT": "13.2.0.0.1.1638488800",
         "Xcode": "13.2.1",
         "macOS": "12.1"
