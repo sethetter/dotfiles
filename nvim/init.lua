@@ -28,6 +28,8 @@ require('packer').startup(function(use)
     'tanvirtin/vgit.nvim', requires = { 'nvim-lua/plenary.nvim' }
   }
 
+  use "hashivim/vim-terraform"
+
   require("surround").setup({ mappings_style = "sandwich" })
 
   require('vgit').setup()
