@@ -9,8 +9,6 @@ require('packer').startup(function(use)
     }
   }
 
-  use 'blackCauldron7/surround.nvim'
-
   use 'terrortylor/nvim-comment'
   use 'tpope/vim-surround'
   -- use '9mm/vim-closer'
@@ -29,8 +27,10 @@ require('packer').startup(function(use)
   }
 
   use "hashivim/vim-terraform"
+  use "vim-scripts/groovy.vim"
+  use "martinda/Jenkinsfile-vim-syntax"
 
-  require("surround").setup({ mappings_style = "sandwich" })
+  -- require("surround").setup({ mappings_style = "sandwich" })
 
   require('vgit').setup()
   require('nvim_comment').setup()
@@ -210,7 +210,7 @@ set_keymap('n', '<leader>po', ":lua require('telescope.builtin').lsp_dynamic_wor
 -- Git
 set_keymap('n', '<leader>gs', ":lua require('telescope.builtin').git_status()<CR>", opts)
 set_keymap('n', '<leader>gc', ":lua require('telescope.builtin').git_commits()<CR>", opts)
-set_keymap('n', '<leader>go', ":!gbrowse %<CR>", opts)
+set_keymap('n', '<leader>go', ":exe '!gbrowse ' . fnamemodify(expand(\"%\"), \":~:.\")<CR>", opts)
 
 -- Misc
 set_keymap('', '<leader>c', ':CommentToggle<CR>', opts)
