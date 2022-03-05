@@ -73,6 +73,7 @@ cask "ngrok"
 # cask "keybase" # Can't scan for malware?
 cask "rectangle"
 cask "slack"
+cask "discord"
 cask "spotify"
 cask "visual-studio-code"
 cask "zoom"
