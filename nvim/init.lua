@@ -26,7 +26,11 @@ require('packer').startup(function(use)
   use 'nvim-telescope/telescope.nvim'
 end)
 
--- Settings
+require('vgit').setup()
+require('nvim_comment').setup()
+require('nvim-tree').setup()
+
+-- Core settings
 -------------------------------------------------
 vim.g.mapleader = ' '
 
@@ -49,6 +53,9 @@ vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.wo.wrap = false
 
+vim.o.updatetime = 100
+vim.wo.signcolumn = 'yes'
+
 -- Searching
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
@@ -56,6 +63,7 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- Colors
+-------------------------------------------------
 function set_colors()
   vim.opt.termguicolors = true
   vim.g.syntax = 'enable'
@@ -66,15 +74,6 @@ end
 set_colors()
 vim.cmd('autocmd! User GoyoLeave nested exec "lua set_colors()"')
 
--- Filetypes
-vim.cmd('au BufEnter *.graphql :set ft=graphql')
-
-vim.o.updatetime = 100
-vim.wo.signcolumn = 'yes'
-
-require('vgit').setup()
-require('nvim_comment').setup()
-require('nvim-tree').setup()
 require('lualine').setup({
   options = {
     theme = 'solarized_light',
@@ -83,41 +82,11 @@ require('lualine').setup({
   }
 })
 
--- Autocompletion
--------------------------------------------------
-local cmp = require('cmp')
-cmp.setup({
-  snippet = {
-    expand = function(args)
-      vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
-    end,
-  },
-  mapping = {
-    ['<C-b>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
-    ['<C-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
-    ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
-    ['<C-y>'] = cmp.config.disable,
-    ['<C-e>'] = cmp.mapping({
-      i = cmp.mapping.abort(),
-      c = cmp.mapping.close(),
-    }),
-    ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
-  },
-  sources = cmp.config.sources({
-    { name = 'nvim_lsp' },
-    { name = 'vsnip' },
-    { name = 'buffer' },
-  })
-})
-
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
-
 -- LSP
-
--- Needs `volta install vscode-langservers-extracted` for jsonls
+-------------------------------------------------
 local nvim_lsp = require('lspconfig')
 local servers = {'gopls', 'terraformls', 'solargraph', 'rls', 'tsserver', 'jsonls', 'hls'}
+-- Needs `volta install vscode-langservers-extracted` for jsonls
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,
@@ -126,16 +95,18 @@ for _, lsp in ipairs(servers) do
   }
 end
 
--- Filetype specific options
+-- Filetypes
+-------------------------------------------------
+vim.cmd('autocmd FileType markdown set wrap linebreak nolist')
+vim.cmd('au BufEnter *.graphql :set ft=graphql')
+
 local filetypes = {'ts', 'tsx', 'js', 'jsx', 'go', 'rs'}
 for _, ft in ipairs(filetypes) do
   vim.cmd(string.format('autocmd BufWritePre *.%s lua vim.lsp.buf.formatting_sync(nil, 1000)', ft))
   vim.cmd(string.format('autocmd BufWritePre *.%s.in lua vim.lsp.buf.formatting_sync(nil, 1000)', ft))
 end
 
-vim.cmd('autocmd FileType markdown set wrap linebreak nolist')
-
--- Key binding
+-- Key bindings
 -------------------------------------------------
 local function set_keymap(...) vim.api.nvim_set_keymap(...) end
 local opts = { noremap=true, silent=true }
@@ -163,7 +134,6 @@ set_keymap('n', '<leader>wk', '<C-w>k', opts)
 set_keymap('n', '<leader>wl', '<C-w>l', opts)
 set_keymap('n', '<leader>bd', ':bd<CR>', opts)
 set_keymap('n', '<leader>BX', ':bufdo bd<CR>', opts)
--- set_keymap('n', '<leader>bD', ':BuffersDelete<CR>', opts)
 set_keymap('n', '<leader>bn', ':bn<CR>', opts)
 set_keymap('n', '<leader>bp', ':bp<CR>', opts)
 set_keymap('n', '<leader>T', ':tabnew<CR>', opts)
@@ -239,3 +209,32 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', '<leader>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
   buf_set_keymap('n', '<leader>ff', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
+
+-- Autocompletion
+local cmp = require('cmp')
+cmp.setup({
+  snippet = {
+    expand = function(args)
+      vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
+    end,
+  },
+  mapping = {
+    ['<C-b>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
+    ['<C-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
+    ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
+    ['<C-y>'] = cmp.config.disable,
+    ['<C-e>'] = cmp.mapping({
+      i = cmp.mapping.abort(),
+      c = cmp.mapping.close(),
+    }),
+    ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+  },
+  sources = cmp.config.sources({
+    { name = 'nvim_lsp' },
+    { name = 'vsnip' },
+    { name = 'buffer' },
+  })
+})
+
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
