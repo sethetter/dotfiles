@@ -2,37 +2,18 @@
 -------------------------------------------------
 require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-
-  use {
-    'kyazdani42/nvim-tree.lua',
-    requires = 'kyazdani42/nvim-web-devicons'
-  }
-
+  use 'kyazdani42/nvim-web-devicons'
+  use 'kyazdani42/nvim-tree.lua'
+  use 'nvim-lua/plenary.nvim'
   use 'ishan9299/nvim-solarized-lua'
-  use {
-    'hoob3rt/lualine.nvim',
-    requires = {'kyazdani42/nvim-web-devicons', opt = true}
-  }
-  use {
-    'tanvirtin/vgit.nvim', requires = { 'nvim-lua/plenary.nvim' }
-  }
-
+  use 'hoob3rt/lualine.nvim'
+  use 'tanvirtin/vgit.nvim'
   use 'vijaymarupudi/nvim-fzf'
-  use {
-    'ibhagwan/fzf-lua',
-    requires = {
-      'vijaymarupudi/nvim-fzf',
-      'kyazdani42/nvim-web-devicons'
-    }
-  }
-
+  use 'ibhagwan/fzf-lua'
   use 'terrortylor/nvim-comment'
   use 'tpope/vim-surround'
   use 'junegunn/goyo.vim'
-
-  use "hashivim/vim-terraform"
-
-  -- LSP, etc
+  use 'hashivim/vim-terraform'
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
@@ -41,7 +22,6 @@ require('packer').startup(function(use)
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
-
   use 'nvim-lua/popup.nvim'
   use 'nvim-telescope/telescope.nvim'
 end)
@@ -163,6 +143,7 @@ local opts = { noremap=true, silent=true }
 vim.api.nvim_set_keymap('n', ';', ':', opts)
 
 set_keymap('n', '<Leader>sv', ':source $MYVIMRC<CR>', opts)
+set_keymap('n', '<Leader>pu', ':PackerUpdate<CR>', opts)
 
 -- Files
 set_keymap('n', '<leader>fs', ':w<CR>', opts)
