@@ -1,17 +1,8 @@
+-- Plugins
+-------------------------------------------------
 require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
-  use 'vijaymarupudi/nvim-fzf'
-  use { 'ibhagwan/fzf-lua',
-    requires = {
-      'vijaymarupudi/nvim-fzf',
-      'kyazdani42/nvim-web-devicons'
-    }
-  }
-
-  use 'terrortylor/nvim-comment'
-  use 'tpope/vim-surround'
-  -- use '9mm/vim-closer'
   use {
     'kyazdani42/nvim-tree.lua',
     requires = 'kyazdani42/nvim-web-devicons'
@@ -26,23 +17,20 @@ require('packer').startup(function(use)
     'tanvirtin/vgit.nvim', requires = { 'nvim-lua/plenary.nvim' }
   }
 
-  use "hashivim/vim-terraform"
-  use "vim-scripts/groovy.vim"
-  use "martinda/Jenkinsfile-vim-syntax"
-
-  -- require("surround").setup({ mappings_style = "sandwich" })
-
-  require('vgit').setup()
-  require('nvim_comment').setup()
-  require('nvim-tree').setup()
-
-  require('lualine').setup({
-    options = {
-      theme = 'solarized_light',
-      section_separators = {'', ''},
-      component_separators = {'', ''}
+  use 'vijaymarupudi/nvim-fzf'
+  use {
+    'ibhagwan/fzf-lua',
+    requires = {
+      'vijaymarupudi/nvim-fzf',
+      'kyazdani42/nvim-web-devicons'
     }
-  })
+  }
+
+  use 'terrortylor/nvim-comment'
+  use 'tpope/vim-surround'
+  use 'junegunn/goyo.vim'
+
+  use "hashivim/vim-terraform"
 
   -- LSP, etc
   use 'neovim/nvim-lspconfig'
@@ -59,6 +47,7 @@ require('packer').startup(function(use)
 end)
 
 -- Settings
+-------------------------------------------------
 vim.g.mapleader = ' '
 
 vim.opt.relativenumber = true
@@ -78,7 +67,7 @@ vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
-vim.g.nowrap = true
+vim.wo.wrap = false
 
 -- Searching
 vim.opt.hlsearch = true
@@ -87,11 +76,15 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- Colors
-vim.opt.termguicolors = true
-vim.g.syntax = 'enable'
-vim.opt.background = 'light'
-vim.cmd('colorscheme solarized')
-vim.cmd('hi Normal guibg=NONE')
+function set_colors()
+  vim.opt.termguicolors = true
+  vim.g.syntax = 'enable'
+  vim.opt.background = 'light'
+  vim.cmd('colorscheme solarized')
+  vim.cmd('hi Normal guibg=NONE')
+end
+set_colors()
+vim.cmd('autocmd! User GoyoLeave nested exec "lua set_colors()"')
 
 -- Filetypes
 vim.cmd('au BufEnter *.graphql :set ft=graphql')
@@ -99,11 +92,22 @@ vim.cmd('au BufEnter *.graphql :set ft=graphql')
 vim.o.updatetime = 100
 vim.wo.signcolumn = 'yes'
 
--- nvim-cmp
+require('vgit').setup()
+require('nvim_comment').setup()
+require('nvim-tree').setup()
+require('lualine').setup({
+  options = {
+    theme = 'solarized_light',
+    section_separators = {'', ''},
+    component_separators = {'', ''}
+  }
+})
+
+-- Autocompletion
+-------------------------------------------------
 local cmp = require('cmp')
 cmp.setup({
   snippet = {
-    -- REQUIRED - you must specify a snippet engine
     expand = function(args)
       vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
     end,
@@ -126,19 +130,39 @@ cmp.setup({
   })
 })
 
--- Format on save
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+
+-- LSP
+
+-- Needs `volta install vscode-langservers-extracted` for jsonls
+local nvim_lsp = require('lspconfig')
+local servers = {'gopls', 'terraformls', 'solargraph', 'rls', 'tsserver', 'jsonls', 'hls'}
+for _, lsp in ipairs(servers) do
+  nvim_lsp[lsp].setup {
+    on_attach = on_attach,
+    flags = { debounce_text_changes = 150 },
+    capabilities = capabilities,
+  }
+end
+
+-- Filetype specific options
 local filetypes = {'ts', 'tsx', 'js', 'jsx', 'go', 'rs'}
 for _, ft in ipairs(filetypes) do
   vim.cmd(string.format('autocmd BufWritePre *.%s lua vim.lsp.buf.formatting_sync(nil, 1000)', ft))
   vim.cmd(string.format('autocmd BufWritePre *.%s.in lua vim.lsp.buf.formatting_sync(nil, 1000)', ft))
 end
 
-local nvim_lsp = require('lspconfig')
+vim.cmd('autocmd FileType markdown set wrap linebreak nolist')
 
+-- Key binding
+-------------------------------------------------
 local function set_keymap(...) vim.api.nvim_set_keymap(...) end
 local opts = { noremap=true, silent=true }
 
 vim.api.nvim_set_keymap('n', ';', ':', opts)
+
+set_keymap('n', '<Leader>sv', ':source $MYVIMRC<CR>', opts)
 
 -- Files
 set_keymap('n', '<leader>fs', ':w<CR>', opts)
@@ -201,12 +225,6 @@ set_keymap('n', '<leader>pf', ":lua require('telescope.builtin').find_files()<CR
 set_keymap('n', '<leader>pb', ":lua require('telescope.builtin').buffers()<CR>", opts)
 set_keymap('n', '<leader>ps', ":lua require('telescope.builtin').live_grep()<CR>", opts)
 
--- LSP
-set_keymap('n', 'gd', ":lua require('telescope.builtin').lsp_definitions()<CR>", opts)
-set_keymap('n', 'gr', ":lua require('telescope.builtin').lsp_references()<CR>", opts)
-set_keymap('n', '<leader>fo', ":lua require('telescope.builtin').lsp_document_symbols()<CR>", opts)
-set_keymap('n', '<leader>po', ":lua require('telescope.builtin').lsp_dynamic_workspace_symbols()<CR>", opts)
-
 -- Git
 set_keymap('n', '<leader>gs', ":lua require('telescope.builtin').git_status()<CR>", opts)
 set_keymap('n', '<leader>gc', ":lua require('telescope.builtin').git_commits()<CR>", opts)
@@ -215,40 +233,22 @@ set_keymap('n', '<leader>go', ":exe '!gbrowse ' . fnamemodify(expand(\"%\"), \":
 -- Misc
 set_keymap('', '<leader>c', ':CommentToggle<CR>', opts)
 set_keymap('n', '<leader>sc', ':let @/=""<CR>', opts)
-
--- Autocomplete
--- set_keymap("i", "<Tab>", "v:lua.tab_complete()", {expr = true})
--- set_keymap("s", "<Tab>", "v:lua.tab_complete()", {expr = true})
--- set_keymap("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
--- set_keymap("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
-
---This line is important for auto-import
--- set_keymap("i", "<C-y>", "compe#confirm('<C-y>')", {expr = true})
--- set_keymap("i", "<CR>", "<C-y>", {})
--- set_keymap('i', '<cr>', '<cmd>compe#confirm()', { expr = true })
--- set_keymap('i', '<c-space>', '<cmd>compe#complete()', { expr = true })
+set_keymap('n', '<leader>wf', ':Goyo<CR>', opts)
 
 -- LSP
-
--- Use an on_attach function to only map the following keys
--- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)
   local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
   local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
 
   buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
-  -- TODO: Open file outline/search symbols
-  -- TODO: Search workspace symbols?
-
+  buf_set_keymap('n', 'gd', ":lua require('telescope.builtin').lsp_definitions()<CR>", opts)
+  buf_set_keymap('n', 'gr', ":lua require('telescope.builtin').lsp_references()<CR>", opts)
+  buf_set_keymap('n', '<leader>fo', ":lua require('telescope.builtin').lsp_document_symbols()<CR>", opts)
+  buf_set_keymap('n', '<leader>po', ":lua require('telescope.builtin').lsp_dynamic_workspace_symbols()<CR>", opts)
   buf_set_keymap('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opts)
-  -- buf_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
-  -- buf_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
   buf_set_keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
   buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
   buf_set_keymap('n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
-  -- buf_set_keymap('n', '<leader>wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>', opts)
-  -- buf_set_keymap('n', '<leader>wr', '<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>', opts)
-  -- buf_set_keymap('n', '<leader>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>', opts)
   buf_set_keymap('n', '<leader>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
   buf_set_keymap('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
   buf_set_keymap('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
@@ -257,17 +257,4 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
   buf_set_keymap('n', '<leader>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
   buf_set_keymap('n', '<leader>ff', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
-end
-
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
-
--- Needs `volta install vscode-langservers-extracted` for jsonls
-local servers = {'gopls', 'terraformls', 'solargraph', 'rls', 'tsserver', 'jsonls', 'hls'}
-for _, lsp in ipairs(servers) do
-  nvim_lsp[lsp].setup {
-    on_attach = on_attach,
-    flags = { debounce_text_changes = 150 },
-    capabilities = capabilities,
-  }
 end
