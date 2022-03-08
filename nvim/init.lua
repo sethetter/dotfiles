@@ -180,6 +180,7 @@ set_keymap('n', '<leader>ps', ":lua require('telescope.builtin').live_grep()<CR>
 set_keymap('n', '<leader>gs', ":lua require('telescope.builtin').git_status()<CR>", opts)
 set_keymap('n', '<leader>gc', ":lua require('telescope.builtin').git_commits()<CR>", opts)
 set_keymap('n', '<leader>go', ":exe '!gbrowse ' . fnamemodify(expand(\"%\"), \":~:.\")<CR>", opts)
+set_keymap('n', '<leader>cf', ":exe '!echo \"' . fnamemodify(expand(\"%\"), \":~:.\") . '\" | pbcopy'<CR>", opts)
 
 -- Misc
 set_keymap('', '<leader>c', ':CommentToggle<CR>', opts)
