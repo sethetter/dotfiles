@@ -14,6 +14,7 @@ brew "ansible"
 brew "act", args: ['HEAD']
 brew "python@3.9"
 brew "awscli"
+brew "awsume"
 brew "bat"
 brew "libssh2"
 brew "curl"
