@@ -82,30 +82,6 @@ require('lualine').setup({
   }
 })
 
--- LSP
--------------------------------------------------
-local nvim_lsp = require('lspconfig')
-local servers = {'gopls', 'terraformls', 'solargraph', 'rls', 'tsserver', 'jsonls', 'hls'}
--- Needs `volta install vscode-langservers-extracted` for jsonls
-for _, lsp in ipairs(servers) do
-  nvim_lsp[lsp].setup {
-    on_attach = on_attach,
-    flags = { debounce_text_changes = 150 },
-    capabilities = capabilities,
-  }
-end
-
--- Filetypes
--------------------------------------------------
-vim.cmd('autocmd FileType markdown set wrap linebreak nolist')
-vim.cmd('au BufEnter *.graphql :set ft=graphql')
-
-local filetypes = {'ts', 'tsx', 'js', 'jsx', 'go', 'rs'}
-for _, ft in ipairs(filetypes) do
-  vim.cmd(string.format('autocmd BufWritePre *.%s lua vim.lsp.buf.formatting_sync(nil, 1000)', ft))
-  vim.cmd(string.format('autocmd BufWritePre *.%s.in lua vim.lsp.buf.formatting_sync(nil, 1000)', ft))
-end
-
 -- Key bindings
 -------------------------------------------------
 local function set_keymap(...) vim.api.nvim_set_keymap(...) end
@@ -175,6 +151,8 @@ set_keymap('n', '<leader>pt', ':NvimTreeToggle<CR>', opts)
 set_keymap('n', '<leader>pf', ":lua require('telescope.builtin').find_files()<CR>", opts)
 set_keymap('n', '<leader>pb', ":lua require('telescope.builtin').buffers()<CR>", opts)
 set_keymap('n', '<leader>ps', ":lua require('telescope.builtin').live_grep()<CR>", opts)
+set_keymap('n', 'gd', ":lua require('telescope.builtin').lsp_definitions()<CR>", opts)
+set_keymap('n', 'gr', ":lua require('telescope.builtin').lsp_references()<CR>", opts)
 
 -- Git
 set_keymap('n', '<leader>gs', ":lua require('telescope.builtin').git_status()<CR>", opts)
@@ -209,6 +187,30 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
   buf_set_keymap('n', '<leader>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
   buf_set_keymap('n', '<leader>ff', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
+end
+
+-- LSP
+-------------------------------------------------
+local nvim_lsp = require('lspconfig')
+local servers = {'gopls', 'terraformls', 'solargraph', 'rls', 'tsserver', 'jsonls', 'hls'}
+-- Needs `volta install vscode-langservers-extracted` for jsonls
+for _, lsp in ipairs(servers) do
+  nvim_lsp[lsp].setup {
+    on_attach = on_attach,
+    flags = { debounce_text_changes = 150 },
+    capabilities = capabilities,
+  }
+end
+
+-- Filetypes
+-------------------------------------------------
+vim.cmd('autocmd FileType markdown set wrap linebreak nolist')
+vim.cmd('au BufEnter *.graphql :set ft=graphql')
+
+local filetypes = {'ts', 'tsx', 'js', 'jsx', 'go', 'rs'}
+for _, ft in ipairs(filetypes) do
+  vim.cmd(string.format('autocmd BufWritePre *.%s lua vim.lsp.buf.formatting_sync(nil, 1000)', ft))
+  vim.cmd(string.format('autocmd BufWritePre *.%s.in lua vim.lsp.buf.formatting_sync(nil, 1000)', ft))
 end
 
 -- Autocompletion
