@@ -28,7 +28,11 @@ end)
 
 require('vgit').setup()
 require('nvim_comment').setup()
-require('nvim-tree').setup()
+require('nvim-tree').setup({
+  view = {
+    width = 40
+  }
+})
 
 -- Core settings
 -------------------------------------------------
