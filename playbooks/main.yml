@@ -106,16 +106,16 @@
         dest: "{{ home_dir }}/.vimrc"
         state: link
 
-    - name: get-vscode-configs
-      ansible.builtin.shell: "ls {{ dotfiles_dir }}/code/"
-      register: vscode_configs
-
-    - name: link-vscode-configs
-      ansible.builtin.file:
-        src: "{{ dotfiles_dir }}/code/{{ item }}"
-        dest: "{{ vscode_dir }}/{{ item }}"
-        state: link
-      with_items: "{{ vscode_configs.stdout_lines }}"
+#     - name: get-vscode-configs
+#       ansible.builtin.shell: "ls {{ dotfiles_dir }}/code/"
+#       register: vscode_configs
+# 
+#     - name: link-vscode-configs
+#       ansible.builtin.file:
+#         src: "{{ dotfiles_dir }}/code/{{ item }}"
+#         dest: "{{ vscode_dir }}/{{ item }}"
+#         state: link
+#       with_items: "{{ vscode_configs.stdout_lines }}"
 
     - name: get-obsidian-configs
       ansible.builtin.shell: "ls {{ dotfiles_dir }}/obsidian/"
@@ -161,6 +161,12 @@
       ansible.builtin.file:
         src: "{{ dotfiles_dir }}/alacritty.yml"
         dest: "{{ home_dir }}/.alacritty.yml"
+        state: link
+
+    - name: link-k9s-skin
+      ansible.builtin.file:
+        src: "{{ dotfiles_dir }}/k9s-skin.yml"
+        dest: "{{ home_dir }}/Library/Application Support/k9s/skin.yml"
         state: link
 
     - name: install-aws-mfa
