@@ -19,8 +19,16 @@ function tm {
   if [ ! -z "$1" ]; then
     rootdir=$1
   fi
-  cd $rootdir
-  tmux new-session -A -s "${rootdir##*/}"
+  session_name="${rootdir##*/}"
+  if [ -z "$TMUX" ]; then
+    tmux new -A -s $session_name -c $rootdir
+  else
+    tmux has-session -t $session_name
+    if [ $? != 0 ]; then
+      tmux new -A -c $rootdir -s $session_name -d
+    fi
+    tmux switch -t $session_name
+  fi
 }
 
 function mdp() {
