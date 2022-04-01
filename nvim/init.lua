@@ -8,6 +8,8 @@ require('packer').startup(function(use)
   use 'ishan9299/nvim-solarized-lua'
   use 'hoob3rt/lualine.nvim'
   use 'tanvirtin/vgit.nvim'
+  use 'TimUntersberger/neogit'
+  use 'sindrets/diffview.nvim'
   use 'vijaymarupudi/nvim-fzf'
   use 'ibhagwan/fzf-lua'
   use 'terrortylor/nvim-comment'
@@ -26,7 +28,9 @@ require('packer').startup(function(use)
   use 'nvim-telescope/telescope.nvim'
 end)
 
+require('diffview').setup()
 require('vgit').setup()
+require('neogit').setup()
 require('nvim_comment').setup()
 require('nvim-tree').setup({
   view = {
@@ -159,6 +163,8 @@ set_keymap('n', 'gd', ":lua require('telescope.builtin').lsp_definitions()<CR>",
 set_keymap('n', 'gr', ":lua require('telescope.builtin').lsp_references()<CR>", opts)
 
 -- Git
+set_keymap('n', '<leader>gg', ":Neogit<CR>", opts)
+set_keymap('n', '<leader>gd', ":DiffviewOpen ", opts)
 set_keymap('n', '<leader>gs', ":lua require('telescope.builtin').git_status()<CR>", opts)
 set_keymap('n', '<leader>gc', ":lua require('telescope.builtin').git_commits()<CR>", opts)
 set_keymap('n', '<leader>go', ":exe '!gbrowse ' . fnamemodify(expand(\"%\"), \":~:.\")<CR>", opts)
