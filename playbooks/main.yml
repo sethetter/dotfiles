@@ -79,15 +79,6 @@
       ansible.builtin.shell: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
       when: ohmyzsh_check.stdout.find('oh-my-zsh.sh') == -1
 
-    # TODO: Get GHCup install working better
-    # - name: install-ghcup
-    #   ansible.builtin.shell: sh -c "curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh"
-    #   args:
-    #     creates: ghcup
-
-    # - name: set-stack-use-system-ghc-true
-    #   ansible.builtin.shell: sh -c "stack config set system-ghc --global true"
-
     - name: link-gitconfig
       ansible.builtin.file:
         src: "{{ dotfiles_dir }}/gitconfig"
@@ -167,6 +158,12 @@
       ansible.builtin.file:
         src: "{{ dotfiles_dir }}/k9s-skin.yml"
         dest: "{{ home_dir }}/Library/Application Support/k9s/skin.yml"
+        state: link
+
+    - name: link-vimari-config
+      ansible.builtin.file:
+        src: "{{ dotfiles_dir }}/vimari.json"
+        dest: "{{ home_dir }}//Library/Containers/net.televator.Vimari.SafariExtension/Data/Library/Application Support/userSettings.json"
         state: link
 
     - name: install-aws-mfa
