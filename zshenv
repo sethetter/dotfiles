@@ -17,7 +17,7 @@ alias ld="lazydocker"
 function tm {
   rootdir=$(pwd)
   if [ ! -z "$1" ]; then
-    rootdir=$1
+    rootdir=$(echo "$1" | sed 's:/*$::')
   fi
   session_name="${rootdir##*/}"
   if [ -z "$TMUX" ]; then
