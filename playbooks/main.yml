@@ -165,6 +165,7 @@
         src: "{{ dotfiles_dir }}/vimari.json"
         dest: "{{ home_dir }}//Library/Containers/net.televator.Vimari.SafariExtension/Data/Library/Application Support/userSettings.json"
         state: link
+        force: true
 
     - name: install-aws-mfa
       ansible.builtin.pip:
