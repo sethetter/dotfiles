@@ -9,6 +9,8 @@ require('packer').startup(function(use)
   use 'hoob3rt/lualine.nvim'
   use 'tanvirtin/vgit.nvim'
   use 'TimUntersberger/neogit'
+  use 'mattn/webapi-vim'
+  use 'mattn/vim-gist'
   use 'sindrets/diffview.nvim'
   use 'vijaymarupudi/nvim-fzf'
   use 'ibhagwan/fzf-lua'
