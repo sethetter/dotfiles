@@ -216,7 +216,7 @@ end
 
 -- Filetypes
 -------------------------------------------------
-vim.cmd('autocmd FileType markdown set wrap linebreak nolist spell')
+vim.cmd('autocmd FileType markdown set wrap linebreak nolist')
 vim.cmd('au BufEnter *.graphql :set ft=graphql')
 
 local filetypes = {'ts', 'tsx', 'js', 'jsx', 'go', 'rs'}
