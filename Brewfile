@@ -74,6 +74,7 @@ cask "font-iosevka-nerd-font"
 cask "ngrok"
 # cask "docker" # Not the M1 compatible version, refer to https://docs.docker.com/desktop/mac/apple-silicon/
 # cask "keybase" # Can't scan for malware?
+cask "google-cloud-sdk"
 cask "rectangle"
 cask "slack"
 cask "discord"
