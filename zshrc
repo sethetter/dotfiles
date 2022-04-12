@@ -8,6 +8,3 @@ source $HOME/.oh-my-zsh/oh-my-zsh.sh
 
 # rbenv
 eval "$(rbenv init - zsh)"
-
-# ghcup
-[ -f "/Users/sethetter/.ghcup/env" ] && source "/Users/sethetter/.ghcup/env" # ghcup-env

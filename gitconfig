@@ -32,3 +32,7 @@
   pushf = push --force-with-lease
 [init]
   defaultBranch = main
+[includeIf "gitdir:~/code/adhoc/**"]
+  path = ~/dotfiles/gitconfig-adhoc
+[includeIf "gitdir:~/code/cms/**"]
+  path = ~/code/cms/.gitconfig
