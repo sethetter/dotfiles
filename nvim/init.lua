@@ -18,6 +18,7 @@ require('packer').startup(function(use)
   use 'tpope/vim-surround'
   use 'junegunn/goyo.vim'
   use 'hashivim/vim-terraform'
+  use 'jjo/vim-cue'
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
