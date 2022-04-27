@@ -2028,6 +2028,45 @@
       "cjbassi/ytop/ytop": {
         "version": "0.6.2",
         "bottle": false
+      },
+      "tflint": {
+        "version": "0.35.0",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "arm64_monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/tflint/blobs/sha256:6adbb9521a0edff3c7a0cc4eb8e6796aef138d91efda0dcf8993f06962558868",
+              "sha256": "6adbb9521a0edff3c7a0cc4eb8e6796aef138d91efda0dcf8993f06962558868"
+            },
+            "arm64_big_sur": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/tflint/blobs/sha256:7712be10a5035dc5c9ec66406cfed66b4a34d4ecad8762db8409a36cc7266865",
+              "sha256": "7712be10a5035dc5c9ec66406cfed66b4a34d4ecad8762db8409a36cc7266865"
+            },
+            "monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/tflint/blobs/sha256:11fb9f7a18c876973dfa0108c38ab736ee4b5d189d5859c61f2a2152c4c04647",
+              "sha256": "11fb9f7a18c876973dfa0108c38ab736ee4b5d189d5859c61f2a2152c4c04647"
+            },
+            "big_sur": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/tflint/blobs/sha256:39c9104f8dc3bd5c54289119b74c36b90ffcefcfb7ef0d619a9fe5d462a55a60",
+              "sha256": "39c9104f8dc3bd5c54289119b74c36b90ffcefcfb7ef0d619a9fe5d462a55a60"
+            },
+            "catalina": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/tflint/blobs/sha256:7b6022ba10225581003ea9c9d07121a15812c2cd63072b71de6002cd47deef1f",
+              "sha256": "7b6022ba10225581003ea9c9d07121a15812c2cd63072b71de6002cd47deef1f"
+            },
+            "x86_64_linux": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/tflint/blobs/sha256:132b774e4917a27039a8cdc599d6bef9ad8022dcf6429c3d5a2bdf22a9a6cae2",
+              "sha256": "132b774e4917a27039a8cdc599d6bef9ad8022dcf6429c3d5a2bdf22a9a6cae2"
+            }
+          }
+        }
       }
     },
     "cask": {

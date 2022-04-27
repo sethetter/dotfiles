@@ -205,7 +205,7 @@ end
 -- LSP
 -------------------------------------------------
 local nvim_lsp = require('lspconfig')
-local servers = {'gopls', 'terraformls', 'solargraph', 'rls', 'tsserver', 'jsonls', 'hls'}
+local servers = {'gopls', 'terraformls', 'solargraph', 'rls', 'tsserver', 'jsonls', 'tflint'}
 -- Needs `volta install vscode-langservers-extracted` for jsonls
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
