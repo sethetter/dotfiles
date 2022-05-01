@@ -1,5 +1,5 @@
 {
-  "excludedUrls": "",
+  "excludedUrls": "babytankio.herokuapp.com",
   "linkHintCharacters": "asdfjklqwerzxc",
   "detectByCursorStyle": false,
   "scrollSize": 150,

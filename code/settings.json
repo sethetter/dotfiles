@@ -1,6 +1,6 @@
 {
   "workbench.colorTheme": "Solarized Light",
-  "editor.fontFamily": "'Iosevka Term SS14', 'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "'Iosevka Nerd Font', 'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.tabSize": 2,
   "editor.cursorStyle": "block",
   "editor.lightbulb.enabled": false,

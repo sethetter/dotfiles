@@ -19,6 +19,7 @@ require('packer').startup(function(use)
   use 'junegunn/goyo.vim'
   use 'hashivim/vim-terraform'
   use 'jjo/vim-cue'
+  use 'gpanders/editorconfig.nvim'
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
