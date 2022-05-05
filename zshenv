@@ -47,9 +47,11 @@ function gbrowse() {
 
 export VOLTA_HOME="$HOME/.volta"
 export RUST_BIN="$HOME/.cargo/bin"
+export PYENV_ROOT="$HOME/.pyenv"
 
 export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="$RUST_BIN:$PATH"
+export PATH="$PYENV_ROOT/shims:$PATH"
 
 export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"

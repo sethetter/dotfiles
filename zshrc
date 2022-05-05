@@ -6,5 +6,5 @@ plugins=(git vi-mode fzf direnv)
 ZSH_THEME="robbyrussell"
 source $HOME/.oh-my-zsh/oh-my-zsh.sh
 
-# rbenv
 eval "$(rbenv init - zsh)"
+eval "$(pyenv init -)"
