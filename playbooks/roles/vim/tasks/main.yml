@@ -5,6 +5,12 @@
     version: main
     update: true
 
+- name: create-astronvim-user-dir
+  ansible.builtin.file:
+    state: directory
+    path: "{{ home_dir }}/.config/nvim/lua/user/"
+    recurse: true
+
 - name: link-astronvim-user-config
   ansible.builtin.file:
     src: "{{ dotfiles_dir }}/vim/astronvim/init.lua"
