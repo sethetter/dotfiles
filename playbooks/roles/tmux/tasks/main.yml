@@ -1,6 +1,6 @@
 - name: link-tmux-conf
   ansible.builtin.file:
-    src: "{{ dotfiles_dir }}/tmux.conf"
+    src: "{{ dotfiles_dir }}/misc/tmux.conf"
     dest: "{{ home_dir }}/.tmux.conf"
     state: link
     force: true

@@ -1,12 +1,12 @@
 - name: link-zshrc
   ansible.builtin.file:
-    src: "{{ dotfiles_dir }}/zshrc"
+    src: "{{ dotfiles_dir }}/zsh/zshrc"
     dest: "{{ home_dir }}/.zshrc"
     state: link
 
 - name: link-zshenv
   ansible.builtin.file:
-    src: "{{ dotfiles_dir }}/zshenv"
+    src: "{{ dotfiles_dir }}/zsh/zshenv"
     dest: "{{ home_dir }}/.zshenv"
     state: link
 

@@ -7,13 +7,13 @@
 
 - name: link-astronvim-user-config
   ansible.builtin.file:
-    src: "{{ dotfiles_dir }}/astronvim/init.lua"
+    src: "{{ dotfiles_dir }}/vim/astronvim/init.lua"
     dest: "{{ home_dir }}/.config/nvim/lua/user/init.lua"
     state: link
     force: true
 
 - name: link-vimrc
   ansible.builtin.file:
-    src: "{{ dotfiles_dir }}/vimrc"
+    src: "{{ dotfiles_dir }}/vim/vimrc"
     dest: "{{ home_dir }}/.vimrc"
     state: link

@@ -1,0 +1,21 @@
+- name: link-lazygit-config
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/misc/lazygit.yml"
+    dest: "{{ home_dir }}/Library/Application Support/lazygit/config.yml"
+    state: link
+    force: true
+
+- name: link-lazydocker-config
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/misc/lazydocker.yml"
+    dest: "{{ home_dir }}/Library/Application Support/lazydocker/config.yml"
+    state: link
+    force: true
+
+- name: link-alacritty-config
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/misc/alacritty.yml"
+    dest: "{{ home_dir }}/.alacritty.yml"
+    state: link
+
+# TODO: rectangle?!
