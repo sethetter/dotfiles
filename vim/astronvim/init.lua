@@ -31,7 +31,8 @@ local config = {
     diagnostics_style = { italic = true },
     -- Modify the color table
     colors = {
-      fg = "#abb2bf",
+      fg = "#657b83",
+      bg = "#fdf6e3",
     },
     -- Modify the highlight groups
     highlights = function(highlights)
@@ -194,6 +195,9 @@ local config = {
     vim.keymap.set("n", "<C-s>", ":w!<CR>")
     vim.keymap.set("n", "<leader>w/", ":vsp<CR>")
     vim.keymap.set("n", "<leader>w?", ":sp<CR>")
+    vim.keymap.set("n", "<leader>gg", function()
+      astronvim.toggle_term_cmd("lazygit --use-config-file '~/Library/Application Support/lazygit/config.yml'")
+    end)
 
     -- Set autocommands
     vim.api.nvim_create_augroup("packer_conf", { clear = true })
