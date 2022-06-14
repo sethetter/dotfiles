@@ -3,18 +3,107 @@
 #   args:
 #     # THIS IS A LIE! It's /opt/homebrew/bin/brew on my work machine :shrug:
 #     creates: /usr/local/bin/brew
+# - name: link-brewfile
+#   ansible.builtin.file:
+#     src: "{{ dotfiles_dir }}/Brewfile"
+#     dest: "{{ home_dir }}/Brewfile"
+#     state: link
+#
+# - name: link-brewfile-lock
+#   ansible.builtin.file:
+#     src: "{{ dotfiles_dir }}/Brewfile.lock.json"
+#     dest: "{{ home_dir }}/Brewfile.lock.json"
+#     state: link
 
-- name: link-brewfile
-  ansible.builtin.file:
-    src: "{{ dotfiles_dir }}/Brewfile"
-    dest: "{{ home_dir }}/Brewfile"
-    state: link
+- name: homebrew-taps
+  community.general.homebrew_tap:
+    name:
+      - cjbassi/ytop
+      - github/gh
+      - hashicorp/tap
+      - heroku/brew
+      - superfly/tap
+      - homebrew/bundle
+      - homebrew/cask
+      - homebrew/cask-fonts
+      - homebrew/core
+      - homebrew/services
 
-- name: link-brewfile-lock
-  ansible.builtin.file:
-    src: "{{ dotfiles_dir }}/Brewfile.lock.json"
-    dest: "{{ home_dir }}/Brewfile.lock.json"
-    state: link
+- name: homebrew-packages
+  community.general.homebrew:
+    update_homebrew: true
+    upgrade_all: true
+    name:
+      - ansible
+      - python@3.9
+      - awscli
+      - awsume
+      - bat
+      - libssh2
+      - curl
+      - direnv
+      - fd
+      - tree
+      - fzf
+      - superfly/tap/flyctl
+      - gh
+      - git
+      - git-delta
+      - go
+      - helm
+      - httpie
+      - hugo
+      - jq
+      - lazygit
+      - lazydocker
+      - nmap
+      - openconnect
+      - oath-toolkit
+      - pandoc
+      - postgresql
+      - pyenv
+      - rbenv
+      - ripgrep
+      - rust-analyzer
+      - rustup-init
+      - unar
+      - tfenv
+      - tflint
+      - eksctl
+      - kubectl
+      - kind
+      - kustomize
+      - k9s
+      - stern
+      - tmux
+      - neovim
+      - volta
+      - watch
+      - wget
+      - zola
+      - zsh
+      - cjbassi/ytop/ytop
+
+- name: homebrew-casks
+  community.general.homebrew_cask:
+    upgrade_all: true
+    name:
+      - 1password
+      - 1password-cli
+      - alacritty
+      - chromium
+      - obsidian
+      - font-iosevka-nerd-font
+      - ngrok
+      - google-cloud-sdk
+      - rectangle
+      - slack
+      - discord
+      - spotify
+      - visual-studio-code
+      - zoom
+      # - docker
+      # - keybase
 
 - name: install-aws-mfa
   ansible.builtin.pip:
