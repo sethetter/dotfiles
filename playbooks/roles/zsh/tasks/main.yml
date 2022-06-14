@@ -1,0 +1,20 @@
+- name: link-zshrc
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/zshrc"
+    dest: "{{ home_dir }}/.zshrc"
+    state: link
+
+- name: link-zshenv
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/zshenv"
+    dest: "{{ home_dir }}/.zshenv"
+    state: link
+
+- name: check-oh-my-zsh
+  ansible.builtin.shell: "ls {{ home_dir }}/.oh-my-zsh"
+  ignore_errors: true
+  register: ohmyzsh_check
+
+- name: install-oh-my-zsh
+  ansible.builtin.shell: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  when: ohmyzsh_check.stdout.find('oh-my-zsh.sh') == -1

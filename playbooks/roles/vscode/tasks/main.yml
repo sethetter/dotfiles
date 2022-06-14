@@ -1,0 +1,10 @@
+- name: get-vscode-configs
+  ansible.builtin.shell: "ls {{ dotfiles_dir }}/vscode/"
+  register: vscode_configs
+
+- name: link-vscode-configs
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/vscode/{{ item }}"
+    dest: "{{ home_dir }}/Library/Application Support/Code/User/{{ item }}"
+    state: link
+  with_items: "{{ vscode_configs.stdout_lines }}"

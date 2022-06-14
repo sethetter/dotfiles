@@ -1,0 +1,22 @@
+# - name: install-homebrew
+#   ansible.builtin.shell: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#   args:
+#     # THIS IS A LIE! It's /opt/homebrew/bin/brew on my work machine :shrug:
+#     creates: /usr/local/bin/brew
+
+- name: link-brewfile
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/Brewfile"
+    dest: "{{ home_dir }}/Brewfile"
+    state: link
+
+- name: link-brewfile-lock
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/Brewfile.lock.json"
+    dest: "{{ home_dir }}/Brewfile.lock.json"
+    state: link
+
+- name: install-aws-mfa
+  ansible.builtin.pip:
+    executable: pip3
+    name: aws-mfa

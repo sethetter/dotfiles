@@ -1,0 +1,5 @@
+- name: link-alacritty-config
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/alacritty.yml"
+    dest: "{{ home_dir }}/.alacritty.yml"
+    state: link

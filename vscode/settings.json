@@ -6,7 +6,6 @@
   "editor.lightbulb.enabled": false,
   "editor.lineNumbers": "relative",
   "editor.multiCursorModifier": "alt",
-  "editor.renderIndentGuides": true,
   "explorer.autoReveal": false,
   "vim.easymotion": true,
   "vim.leader": " ",
@@ -29,7 +28,11 @@
   "typescript.tsserver.log": "off",
   "[markdown]": {
     "editor.wordWrap": "on",
-    "editor.quickSuggestions": false,
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
   "[go]": {
@@ -104,5 +107,6 @@
   },
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust"
-  }
+  },
+  "editor.guides.indentation": true
 }

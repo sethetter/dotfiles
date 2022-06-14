@@ -1,0 +1,12 @@
+- name: link-tmux-conf
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/tmux.conf"
+    dest: "{{ home_dir }}/.tmux.conf"
+    state: link
+    force: true
+
+- name: install-tpm
+  ansible.builtin.git:
+    repo: "https://github.com/tmux-plugins/tpm"
+    dest: "{{ home_dir }}/.tmux/plugins/tpm"
+    update: true

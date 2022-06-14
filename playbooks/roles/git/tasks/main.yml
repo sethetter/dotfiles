@@ -1,0 +1,13 @@
+- name: link-gitconfig
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/gitconfig"
+    dest: "{{ home_dir }}/.gitconfig"
+    state: link
+
+# TODO: optionally link work gitconfig based on host name, or something else?
+
+- name: link-gitignore
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/gitignore"
+    dest: "{{ home_dir }}/.gitignore"
+    state: link

@@ -1,0 +1,31 @@
+- name: get-obsidian-configs
+  ansible.builtin.shell: "ls {{ dotfiles_dir }}/obsidian/"
+  register: obsidian_configs
+
+- name: check-obsidian-personal
+  stat:
+    path: "{{ obsidian_dir }}/personal"
+  register: obsidian_personal_dir
+
+- name: link-obsidian-personal
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/obsidian/{{ item }}"
+    dest: "{{ obsidian_dir }}/personal/.obsidian/{{ item }}"
+    state: link
+    force: true
+  with_items: "{{ obsidian_configs.stdout_lines }}"
+  when: obsidian_personal_dir.stat.exists
+
+- name: check-obsidian-work
+  stat:
+    path: "{{ obsidian_dir }}/work"
+  register: obsidian_work_dir
+
+- name: link-obsidian-work
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/obsidian/{{ item }}"
+    dest: "{{ obsidian_dir }}/work/.obsidian/{{ item }}"
+    state: link
+    force: true
+  with_items: "{{ obsidian_configs.stdout_lines }}"
+  when: obsidian_work_dir.stat.exists

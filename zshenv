@@ -13,6 +13,7 @@ alias gdc="git diff --cached"
 alias ytop="ytop -c 'default-dark'"
 alias lg="lazygit"
 alias ld="lazydocker"
+alias packersync="nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'"
 
 function tm {
   rootdir=$(pwd)

@@ -1,0 +1,19 @@
+- name: astronvim-from-github
+  ansible.builtin.git:
+    dest: "{{ home_dir }}/.config/nvim"
+    repo: "git@github.com:AstroNvim/AstroNvim.git"
+    version: main
+    update: true
+
+- name: link-astronvim-user-config
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/astronvim/init.lua"
+    dest: "{{ home_dir }}/.config/nvim/lua/user/init.lua"
+    state: link
+    force: true
+
+- name: link-vimrc
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/vimrc"
+    dest: "{{ home_dir }}/.vimrc"
+    state: link
