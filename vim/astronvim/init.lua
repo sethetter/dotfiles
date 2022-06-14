@@ -99,6 +99,9 @@ local config = {
       end
       return config -- return final config table
     end,
+    notify = function(config)
+      config.background_colour = "#eee"
+    end,
     treesitter = {
       ensure_installed = { "lua" },
     },
@@ -192,6 +195,7 @@ local config = {
   -- good place to configure mappings and vim options
   polish = function()
     -- Set key bindings
+    vim.keymap.set("n", ";", ":")
     vim.keymap.set("n", "<C-s>", ":w!<CR>")
     vim.keymap.set("n", "<leader>w/", ":vsp<CR>")
     vim.keymap.set("n", "<leader>w?", ":sp<CR>")
