@@ -74,22 +74,10 @@ local config = {
 
   -- Configure plugins
   plugins = {
-    -- Add plugins, the packer syntax without the "use"
     init = {
+      -- TODO: add git diff plugins? go back in dotfiles git history for reference
       { "ishan9299/nvim-solarized-lua" },
       { "LnL7/vim-nix" },
-      -- You can disable default plugins as follows:
-      -- ["goolord/alpha-nvim"] = { disable = true },
-
-      -- You can also add new plugins here as well:
-      -- { "andweeb/presence.nvim" },
-      -- {
-      --   "ray-x/lsp_signature.nvim",
-      --   event = "BufRead",
-      --   config = function()
-      --     require("lsp_signature").setup()
-      --   end,
-      -- },
     },
     -- All other entries override the setup() call for default plugins
     ["null-ls"] = function(config)
