@@ -1,14 +1,8 @@
 # dotfiles
 
-Just my personal configuration for some of my tools, applied with ansible
+Config files for my personal dev setup on MacOS.
 
-## Pre-reqs
-
-- homebrew
-- ansible
-
-## Installing
-
-```
-$ make apply
-```
+- Initial setup
+  - Install [homebrew](https://brew.sh)
+  - Run `make setup`
+- Run `make apply` to put everything in place, and anytime there are changes
