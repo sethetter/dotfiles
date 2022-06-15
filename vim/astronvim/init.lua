@@ -20,45 +20,11 @@ local config = {
     opt = {
       relativenumber = true, -- sets vim.opt.relativenumber
       background = "light",
+      termguicolors = true,
+      wrap = false,
     },
     g = {
       mapleader = " ", -- sets vim.g.mapleader
-    },
-  },
-
-  -- Default theme configuration
-  default_theme = {
-    diagnostics_style = { italic = true },
-    -- Modify the color table
-    colors = {
-      fg = "#657b83",
-      bg = "#fdf6e3",
-    },
-    -- Modify the highlight groups
-    highlights = function(highlights)
-      local C = require "default_theme.colors"
-
-      highlights.Normal = { fg = C.fg, bg = C.bg }
-      return highlights
-    end,
-    plugins = { -- enable or disable extra plugin highlighting
-      aerial = true,
-      beacon = false,
-      bufferline = true,
-      dashboard = true,
-      highlighturl = true,
-      hop = false,
-      indent_blankline = true,
-      lightspeed = false,
-      ["neo-tree"] = true,
-      notify = true,
-      ["nvim-tree"] = true,
-      ["nvim-web-devicons"] = true,
-      rainbow = true,
-      symbols_outline = false,
-      telescope = true,
-      vimwiki = false,
-      ["which-key"] = true,
     },
   },
 
@@ -73,6 +39,8 @@ local config = {
     init = {
       { "ishan9299/nvim-solarized-lua" },
       { "LnL7/vim-nix" },
+      { "tpope/vim-surround" },
+      { "junegunn/goyo.vim" },
     },
     -- All other entries override the setup() call for default plugins
     ["null-ls"] = function(config)
@@ -99,9 +67,6 @@ local config = {
       end
       return config -- return final config table
     end,
-    notify = function(config)
-      config.background_colour = "#eee"
-    end,
     treesitter = {
       ensure_installed = { "lua" },
     },
@@ -111,6 +76,9 @@ local config = {
     packer = {
       compile_path = vim.fn.stdpath "config" .. "/lua/packer_compiled.lua",
     },
+    ["neo-tree"] = function(config)
+      config.window.width = 40;
+    end,
   },
 
   -- LuaSnip Options
@@ -196,12 +164,12 @@ local config = {
   polish = function()
     -- Set key bindings
     vim.keymap.set("n", ";", ":")
-    vim.keymap.set("n", "<C-s>", ":w!<CR>")
+
+    vim.keymap.set("n", "<leader>fo", ":Goyo<CR>")
+    vim.keymap.set("n", "<leader>fe", ":Neotree float<CR>")
+
     vim.keymap.set("n", "<leader>w/", ":vsp<CR>")
     vim.keymap.set("n", "<leader>w?", ":sp<CR>")
-    vim.keymap.set("n", "<leader>gg", function()
-      astronvim.toggle_term_cmd("lazygit --use-config-file '~/Library/Application Support/lazygit/config.yml'")
-    end)
 
     -- Set autocommands
     vim.api.nvim_create_augroup("packer_conf", { clear = true })
@@ -212,9 +180,7 @@ local config = {
       command = "source <afile> | PackerSync",
     })
 
-    -- Removes the background color on this solarized theme
-    -- in order to use the default terminal bg color.
-    vim.cmd('hi Normal guibg=NONE')
+    vim.cmd('autocmd FileType markdown set wrap linebreak nolist')
 
     -- Set up custom filetypes
     -- vim.filetype.add {
