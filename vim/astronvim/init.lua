@@ -166,7 +166,9 @@ local config = {
     vim.keymap.set("n", ";", ":")
 
     vim.keymap.set("n", "<leader>fo", ":Goyo<CR>")
-    vim.keymap.set("n", "<leader>fe", ":Neotree float<CR>")
+
+    vim.keymap.set("n", "<leader>t", ":Neotree left toggle<CR>")
+    vim.keymap.set("n", "<leader>e", ":Neotree float toggle<CR>")
 
     vim.keymap.set("n", "<leader>w/", ":vsp<CR>")
     vim.keymap.set("n", "<leader>w?", ":sp<CR>")
