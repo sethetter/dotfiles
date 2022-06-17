@@ -59,6 +59,7 @@
       - tflint
       - eksctl
       - kubectl
+      - tilt
       - kind
       - kustomize
       - k9s
