@@ -41,6 +41,7 @@ local config = {
       { "LnL7/vim-nix" },
       { "tpope/vim-surround" },
       { "junegunn/goyo.vim" },
+      { "hashivim/vim-terraform" },
     },
     -- All other entries override the setup() call for default plugins
     ["null-ls"] = function(config)
