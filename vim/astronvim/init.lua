@@ -186,17 +186,17 @@ local config = {
     vim.cmd('autocmd FileType markdown set wrap linebreak nolist')
 
     -- Set up custom filetypes
-    -- vim.filetype.add {
-    --   extension = {
-    --     foo = "fooscript",
-    --   },
-    --   filename = {
-    --     ["Foofile"] = "fooscript",
-    --   },
-    --   pattern = {
-    --     ["~/%.config/foo/.*"] = "fooscript",
-    --   },
-    -- }
+    vim.filetype.add {
+      -- extension = {
+      --   foo = "fooscript",
+      -- },
+      filename = {
+        ["tiltfile"] = "python",
+      },
+      -- pattern = {
+      --   ["~/%.config/foo/.*"] = "fooscript",
+      -- },
+    }
   end,
 }
 
