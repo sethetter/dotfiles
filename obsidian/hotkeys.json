@@ -59,7 +59,16 @@
       "key": "J"
     }
   ],
-  "starred:star-current-file": [],
+  "starred:star-current-file": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod",
+        "Shift"
+      ],
+      "key": "S"
+    }
+  ],
   "starred:open": [
     {
       "modifiers": [
