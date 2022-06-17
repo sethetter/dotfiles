@@ -174,6 +174,8 @@ local config = {
     vim.keymap.set("n", "<leader>w/", ":vsp<CR>")
     vim.keymap.set("n", "<leader>w?", ":sp<CR>")
 
+    vim.keymap.set("n", "<leader>go", ':exe "!gbrowse " . fnamemodify(expand(\"%\"), \":~:.\")<CR>')
+
     vim.keymap.set("n", "<leader>gg", function()
       astronvim.toggle_term_cmd("lazygit -ucf '/Users/sethetter/Library/Application Support/lazygit/config.yml'")
     end)
