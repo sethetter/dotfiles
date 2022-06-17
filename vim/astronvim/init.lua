@@ -174,6 +174,10 @@ local config = {
     vim.keymap.set("n", "<leader>w/", ":vsp<CR>")
     vim.keymap.set("n", "<leader>w?", ":sp<CR>")
 
+    vim.keymap.set("n", "<leader>gg", function()
+      astronvim.toggle_term_cmd("lazygit -ucf '/Users/sethetter/Library/Application Support/lazygit/config.yml'")
+    end)
+
     -- Set autocommands
     vim.api.nvim_create_augroup("packer_conf", { clear = true })
     vim.api.nvim_create_autocmd("BufWritePost", {
@@ -184,6 +188,9 @@ local config = {
     })
 
     vim.cmd('autocmd FileType markdown set wrap linebreak nolist')
+
+    vim.cmd('autocmd User GoyoEnter :Gitsigns toggle_signs')
+    vim.cmd('autocmd User GoyoLeave :Gitsigns toggle_signs')
 
     -- Set up custom filetypes
     vim.filetype.add {
