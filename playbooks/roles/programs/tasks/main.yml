@@ -42,6 +42,7 @@
       - httpie
       - hugo
       - jq
+      - yq
       - lazygit
       - lazydocker
       - nmap
