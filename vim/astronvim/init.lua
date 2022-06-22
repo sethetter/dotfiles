@@ -73,7 +73,14 @@ local config = {
       ensure_installed = { "lua" },
     },
     ["nvim-lsp-installer"] = {
-      ensure_installed = { "sumneko_lua" },
+      ensure_installed = {
+        "sumneko_lua",
+        "tsserver",
+        "gopls",
+        "terraformls",
+        "tflint",
+        "html"
+      },
     },
     packer = {
       compile_path = vim.fn.stdpath "config" .. "/lua/packer_compiled.lua",
