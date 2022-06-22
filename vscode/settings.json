@@ -108,5 +108,6 @@
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust"
   },
-  "editor.guides.indentation": true
+  "editor.guides.indentation": true,
+  "editor.formatOnSave": true
 }
