@@ -43,6 +43,7 @@ local config = {
       { "junegunn/goyo.vim" },
       { "hashivim/vim-terraform" },
       { "MaxMEllon/vim-jsx-pretty" },
+      { "pantharshit00/vim-prisma" },
     },
     -- All other entries override the setup() call for default plugins
     ["null-ls"] = function(config)
