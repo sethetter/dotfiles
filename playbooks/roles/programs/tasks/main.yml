@@ -54,7 +54,6 @@
       - pyenv
       - rbenv
       - ripgrep
-      - rust-analyzer
       - rustup-init
       - unar
       - tfenv
