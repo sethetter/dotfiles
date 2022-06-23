@@ -1,17 +1,9 @@
 {
-  "editor:focus-left": [
+  "app:toggle-left-sidebar": [
     {
       "modifiers": [
         "Ctrl",
         "Shift"
-      ],
-      "key": "H"
-    }
-  ],
-  "app:toggle-left-sidebar": [
-    {
-      "modifiers": [
-        "Ctrl"
       ],
       "key": "H"
     }
@@ -19,8 +11,7 @@
   "editor:focus-right": [
     {
       "modifiers": [
-        "Ctrl",
-        "Shift"
+        "Ctrl"
       ],
       "key": "L"
     }
@@ -28,7 +19,8 @@
   "app:toggle-right-sidebar": [
     {
       "modifiers": [
-        "Ctrl"
+        "Ctrl",
+        "Shift"
       ],
       "key": "L"
     }
@@ -44,8 +36,7 @@
   "editor:focus-top": [
     {
       "modifiers": [
-        "Ctrl",
-        "Shift"
+        "Ctrl"
       ],
       "key": "K"
     }
@@ -53,8 +44,7 @@
   "editor:focus-bottom": [
     {
       "modifiers": [
-        "Ctrl",
-        "Shift"
+        "Ctrl"
       ],
       "key": "J"
     }
@@ -149,6 +139,14 @@
         "Shift"
       ],
       "key": "N"
+    }
+  ],
+  "editor:focus-left": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "H"
     }
   ]
 }
