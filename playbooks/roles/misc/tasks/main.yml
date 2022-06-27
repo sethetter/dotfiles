@@ -5,6 +5,13 @@
     state: link
     force: true
 
+- name: link-lazygit-nvim-config
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/misc/lazygit-nvim.yml"
+    dest: "{{ home_dir }}/Library/Application Support/lazygit/nvim.yml"
+    state: link
+    force: true
+
 - name: link-lazydocker-config
   ansible.builtin.file:
     src: "{{ dotfiles_dir }}/misc/lazydocker.yml"

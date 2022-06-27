@@ -34,6 +34,7 @@
       - tree
       - ffmpeg
       - fzf
+      - filosottile/musl-cross/musl-cross
       - superfly/tap/flyctl
       - gh
       - git

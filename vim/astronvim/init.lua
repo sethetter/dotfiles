@@ -186,7 +186,7 @@ local config = {
     vim.keymap.set("n", "<leader>go", ':exe "!gbrowse " . fnamemodify(expand(\"%\"), \":~:.\")<CR>')
 
     vim.keymap.set("n", "<leader>gg", function()
-      astronvim.toggle_term_cmd("lazygit -ucf '/Users/sethetter/Library/Application Support/lazygit/config.yml'")
+      astronvim.toggle_term_cmd("lazygit -ucf '/Users/sethetter/Library/Application Support/lazygit/nvim.yml'")
     end)
 
     -- Set autocommands
