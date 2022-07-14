@@ -47,6 +47,7 @@
       - yq
       - lazygit
       - lazydocker
+      - m-cli
       - nmap
       - openconnect
       - oath-toolkit
