@@ -28,6 +28,7 @@
   user = sethetter
 [push]
   default = simple
+  autoSetupRemote = true
 [alias]
   pushf = push --force-with-lease
 [init]
