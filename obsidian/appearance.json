@@ -1,7 +1,7 @@
 {
   "baseFontSize": 13,
   "theme": "moonstone",
-  "cssTheme": "Minimal",
+  "cssTheme": "Sanctum",
   "enabledCssSnippets": [
     "extra"
   ]
