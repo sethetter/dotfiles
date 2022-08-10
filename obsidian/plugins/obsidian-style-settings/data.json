@@ -1,0 +1,8 @@
+{
+  "sanctum@@no-uppercase": true,
+  "sanctum@@heading-1": "1.4rem",
+  "sanctum@@heading-2": "1.3rem",
+  "sanctum@@heading-3": "1.2rem",
+  "sanctum@@heading-4": "1.1rem",
+  "sanctum@@heading-5": "1.0rem"
+}
