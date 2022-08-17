@@ -1,5 +1,5 @@
 .PHONY: default
-default: setup brew ansible
+default: brew ansible
 
 .PHONY: setup
 setup:
