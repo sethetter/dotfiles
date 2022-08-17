@@ -47,6 +47,8 @@ function gbrowse() {
   gh browse --branch="$branch" $1
 }
 
+export HOMEBREW_BUNDLE_FILE="$HOME/dotfiles/Brewfile"
+
 export VOLTA_HOME="$HOME/.volta"
 export RUST_BIN="$HOME/.cargo/bin"
 export PYENV_ROOT="$HOME/.pyenv"

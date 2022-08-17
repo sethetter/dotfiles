@@ -7,4 +7,5 @@
     src: "{{ dotfiles_dir }}/vscode/{{ item }}"
     dest: "{{ home_dir }}/Library/Application Support/Code/User/{{ item }}"
     state: link
+    force: true
   with_items: "{{ vscode_configs.stdout_lines }}"

@@ -24,5 +24,6 @@
     src: "{{ dotfiles_dir }}/misc/alacritty.yml"
     dest: "{{ home_dir }}/.alacritty.yml"
     state: link
+    force: true
 
 # TODO: rectangle?!

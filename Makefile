@@ -1,8 +1,14 @@
+.PHONY: default
+default: setup brew ansible
+
 .PHONY: setup
 setup:
-	homebrew install ansible
-	ansible-galaxy collection install community.general
+	brew install ansible
 
-.PHONY: apply
-apply:
+.PHONY: ansible
+ansible:
 	ansible-playbook playbooks/main.yml -i hosts
+
+.PHONY: brew
+brew:
+	brew bundle --cleanup --zap

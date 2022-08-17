@@ -3,12 +3,14 @@
     src: "{{ dotfiles_dir }}/zsh/zshrc"
     dest: "{{ home_dir }}/.zshrc"
     state: link
+    force: true
 
 - name: link-zshenv
   ansible.builtin.file:
     src: "{{ dotfiles_dir }}/zsh/zshenv"
     dest: "{{ home_dir }}/.zshenv"
     state: link
+    force: true
 
 - name: check-oh-my-zsh
   ansible.builtin.shell: "ls {{ home_dir }}/.oh-my-zsh"
