@@ -33,6 +33,13 @@ function tm {
   fi
 }
 
+function syncsys {
+  cd $HOME/dotfiles
+  git pull --rebase
+  make
+  cd -
+}
+
 function mdp() {
   # Requires Markdown Viewer extension
   # - https://chrome.google.com/webstore/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk?hl=en
