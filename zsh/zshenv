@@ -3,6 +3,7 @@
 export ZSH_DISABLE_COMPFIX=true
 export EDITOR=nvim
 export BAT_THEME="Solarized (light)"
+export DOTFILES_DIR=$HOME/dotfiles
 
 alias tma="tmux a"
 alias dc="docker compose"
@@ -34,7 +35,7 @@ function tm {
 }
 
 function syncsys {
-  cd $HOME/dotfiles
+  cd $DOTFILES_DIR
   git pull --rebase
   make
   cd -
