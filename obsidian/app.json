@@ -1,7 +1,7 @@
 {
   "promptDelete": false,
   "showLineNumber": false,
-  "tabSize": 4,
+  "tabSize": 2,
   "vimMode": true,
   "emacsyKeys": false,
   "alwaysUpdateLinks": true,
@@ -9,5 +9,6 @@
   "defaultViewMode": "source",
   "useTab": false,
   "legacyEditor": false,
-  "livePreview": true
+  "livePreview": true,
+  "showIndentGuide": false
 }
