@@ -16,16 +16,16 @@
   with_items: "{{ obsidian_configs.stdout_lines }}"
   when: obsidian_personal_dir.stat.exists
 
-- name: check-obsidian-work
+- name: check-obsidian-zapier
   stat:
-    path: "{{ obsidian_dir }}/work"
-  register: obsidian_work_dir
+    path: "{{ obsidian_dir }}/zapier"
+  register: obsidian_zapier_dir
 
-- name: link-obsidian-work
+- name: link-obsidian-zapier
   ansible.builtin.file:
     src: "{{ dotfiles_dir }}/obsidian/{{ item }}"
-    dest: "{{ obsidian_dir }}/work/.obsidian/{{ item }}"
+    dest: "{{ obsidian_dir }}/zapier/.obsidian/{{ item }}"
     state: link
     force: true
   with_items: "{{ obsidian_configs.stdout_lines }}"
-  when: obsidian_work_dir.stat.exists
+  when: obsidian_zapier_dir.stat.exists
