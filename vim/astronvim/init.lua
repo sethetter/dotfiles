@@ -77,11 +77,13 @@ local config = {
     },
     ["nvim-lsp-installer"] = {
       ensure_installed = {
+        "stylua",
+        "shfmt",
+        "prettier",
         "sumneko_lua",
-        "tsserver",
+        "typescript-language-server",
         "gopls",
-        "terraformls",
-        "tflint",
+        "goimports",
         "html"
       },
     },
