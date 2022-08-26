@@ -3,6 +3,7 @@
   "theme": "moonstone",
   "cssTheme": "Sanctum",
   "enabledCssSnippets": [
-    "extra"
+    "extra",
+    "sanctum-overrides"
   ]
 }

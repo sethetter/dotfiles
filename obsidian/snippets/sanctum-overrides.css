@@ -1,0 +1,13 @@
+.markdown-source-view.mod-cm6 .cm-hmd-list-indent ~ .cm-list-1 .list-bullet,
+.markdown-source-view.mod-cm6 .cm-list-2 .list-bullet,
+.markdown-source-view.mod-cm6 .cm-list-3 .list-bullet,
+.markdown-source-view.mod-cm6 .cm-list-4 .list-bullet,
+.markdown-source-view.mod-cm6 .cm-list-5 .list-bullet,
+.markdown-source-view.mod-cm6 .cm-list-6 .list-bullet,
+.markdown-source-view.mod-cm6 .cm-list-7 .list-bullet,
+.markdown-source-view.mod-cm6 .cm-list-8 .list-bullet,
+.markdown-source-view.mod-cm6 .cm-list-9 .list-bullet,
+.markdown-source-view.mod-cm6 .cm-list-10 .list-bullet {
+    left: 0;
+    top: 2px;
+}
