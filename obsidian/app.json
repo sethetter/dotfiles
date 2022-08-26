@@ -10,5 +10,9 @@
   "useTab": false,
   "legacyEditor": false,
   "livePreview": true,
-  "showIndentGuide": false
+  "showIndentGuide": false,
+  "attachmentFolderPath": "Files",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Zettelkasten",
+  "fileSortOrder": "alphabetical"
 }
