@@ -20,13 +20,13 @@
         "revision": "9fffe077f1a5a722ed5bd26a87ed622e8cb64e0c"
       },
       "homebrew/cask": {
-        "revision": "25be3200e146bea84096feba22dbc2708b278e31"
+        "revision": "64d84d0899b3c08ec1d2c6ea70382df1e76ee602"
       },
       "homebrew/cask-fonts": {
         "revision": "a8e6cf6d9226d1f0c9d2d0562419d48759e84318"
       },
       "homebrew/core": {
-        "revision": "d5ea602d327021c0d2ec47e44ada1a39698bb5ec"
+        "revision": "099e556fda5cf8229a6192892cb5595116d22874"
       },
       "homebrew/services": {
         "revision": "a8f4e6d6d30386a5fbb70ba271886dcc1f3ca0f7"
@@ -2170,6 +2170,12 @@
         "options": {
           "full_name": "alfred"
         }
+      },
+      "krisp": {
+        "version": "1.39.6",
+        "options": {
+          "full_name": "krisp"
+        }
       }
     }
   },
@@ -2178,9 +2184,9 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.5.10",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "d5ea602d327021c0d2ec47e44ada1a39698bb5ec",
+        "Homebrew/homebrew-core": "099e556fda5cf8229a6192892cb5595116d22874",
         "CLT": "13.4.0.0.1.1651278267",
-        "Xcode": "13.4",
+        "Xcode": "13.4.1",
         "macOS": "12.5.1"
       }
     }
