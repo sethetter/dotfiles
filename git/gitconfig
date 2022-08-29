@@ -37,3 +37,7 @@
   path = ~/dotfiles/gitconfig-adhoc
 [includeIf "gitdir:~/code/cms/**"]
   path = ~/code/cms/.gitconfig
+[branch]
+	autosetuprebase = always
+[pull]
+	rebase = true
