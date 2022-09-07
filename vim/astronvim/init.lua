@@ -183,6 +183,7 @@ local config = {
 
     vim.keymap.set("n", "<leader>t", ":Neotree left toggle<CR>")
     vim.keymap.set("n", "<leader>e", ":Neotree float toggle<CR>")
+    vim.keymap.set("n", "<leader>ft", ":Neotree reveal_file=%<CR>")
 
     vim.keymap.set("n", "<leader>w/", ":vsp<CR>")
     vim.keymap.set("n", "<leader>w?", ":sp<CR>")
