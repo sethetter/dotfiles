@@ -52,7 +52,20 @@ function gbrowse() {
   if [ -z "$branch" ]; then
     branch=$(git rev-parse HEAD)
   fi
-  gh browse --branch="$branch" $1
+
+  origin=$(git remote get-url origin)
+  if [[ "$origin" =~ .*gitlab\.com.* ]]; then
+    # Assume it's on gitlab
+    # gitlab's cli doesn't have a `browse` command, so do this instead
+    baseurl=$origin
+    if [[ "$origin" =~ ^git@gitlab.* ]]; then
+      baseurl=$(echo $origin | sed 's/git@/https:\/\//' | sed 's/\.com:/\.com\//' | sed 's/\.git$//')
+    fi
+    open "$baseurl/-/blob/$branch/$1"
+  else
+    # Assume it's on github
+    gh browse --branch="$branch" $1
+  fi
 }
 
 export HOMEBREW_BUNDLE_FILE="$HOME/dotfiles/Brewfile"
