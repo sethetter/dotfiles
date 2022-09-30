@@ -26,7 +26,7 @@
         "revision": "72236f3eaad4638c0b64953c8b927b7b4c345335"
       },
       "homebrew/core": {
-        "revision": "622ef663c58873be447f9983af66c02002d8d8fc"
+        "revision": "7550311b3d0f02c6b63b499fe19faee44b600a95"
       },
       "homebrew/services": {
         "revision": "954801711b1562739176e83bc0ce0a265abdea98"
@@ -1076,7 +1076,7 @@
         }
       },
       "neovim": {
-        "version": "HEAD-892da76_1",
+        "version": "0.7.2_1",
         "bottle": {
           "rebuild": 1,
           "root_url": "https://ghcr.io/v2/homebrew/core",
@@ -1112,11 +1112,6 @@
               "sha256": "be762f679f83c41fb982d32f067229ca3480f991fdcbc7b15147fdef932312a1"
             }
           }
-        },
-        "options": {
-          "args": [
-            "HEAD"
-          ]
         }
       },
       "nmap": {
@@ -2340,7 +2335,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.6.3",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "622ef663c58873be447f9983af66c02002d8d8fc",
+        "Homebrew/homebrew-core": "7550311b3d0f02c6b63b499fe19faee44b600a95",
         "CLT": "14.0.0.0.1.1661618636",
         "Xcode": "14.0.1",
         "macOS": "12.6"
