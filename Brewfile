@@ -30,7 +30,7 @@ brew "jq"
 brew "lazydocker"
 brew "lazygit"
 brew "m-cli"
-brew "neovim"
+brew "neovim", args: ["HEAD"]
 brew "nmap"
 brew "oath-toolkit"
 brew "openconnect"
