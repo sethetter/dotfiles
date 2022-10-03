@@ -1,7 +1,7 @@
 {
   "promptDelete": false,
   "showLineNumber": false,
-  "tabSize": 2,
+  "tabSize": 4,
   "vimMode": true,
   "emacsyKeys": false,
   "alwaysUpdateLinks": true,
