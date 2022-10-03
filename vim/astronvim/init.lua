@@ -1,3 +1,4 @@
+local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 local config = {
 
 	-- Configure AstroNvim updates
@@ -62,13 +63,13 @@ local config = {
 			-- set up null-ls's on_attach function
 			config.on_attach = function(client)
 				-- NOTE: You can remove this on attach function to disable format on save
-				if client.resolved_capabilities.document_formatting then
-					vim.api.nvim_create_autocmd("BufWritePre", {
-						desc = "Auto format before save",
-						pattern = "<buffer>",
-						callback = vim.lsp.buf.formatting_sync,
-					})
-				end
+				-- if client.server_capabilities.documentFormattingProvider then
+				-- 	vim.api.nvim_create_autocmd("BufWritePre", {
+				-- 		desc = "Auto format before save",
+				-- 		pattern = "<buffer>",
+				-- 		callback = vim.lsp.buf.formatting_sync,
+				-- 	})
+				-- end
 			end
 			return config -- return final config table
 		end,
@@ -140,12 +141,21 @@ local config = {
 		on_attach = function(client, bufnr)
 			-- For lang servers that already have formatting set up with
 			-- null-ls, disable their local formatting.
-			local skip_client_formatting = {
-				["gopls"] = true,
-				["tsserver"] = true,
-			}
-			if skip_client_formatting[client.name] then
-				client.resolved_capabilities.document_formatting = false
+			if client.supports_method("textDocument/formatting") then
+				vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
+				vim.api.nvim_create_autocmd("BufWritePre", {
+					group = augroup,
+					buffer = bufnr,
+					callback = function()
+						vim.lsp.buf.format({
+							filter = function(c)
+								-- apply whatever logic you want (in this example, we'll only use null-ls)
+								return c.name == "null-ls"
+							end,
+							bufnr = bufnr,
+						})
+					end,
+				})
 			end
 		end,
 
