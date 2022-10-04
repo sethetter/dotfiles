@@ -16,13 +16,13 @@ local config = {
 	-- set vim options here (vim.<first_key>.<second_key> =  value)
 	options = {
 		opt = {
-			relativenumber = true, -- sets vim.opt.relativenumber
+			relativenumber = true,
 			background = "light",
 			termguicolors = true,
 			wrap = false,
 		},
 		g = {
-			mapleader = " ", -- sets vim.g.mapleader
+			mapleader = " ",
 		},
 	},
 
@@ -43,34 +43,12 @@ local config = {
 			{ "MaxMEllon/vim-jsx-pretty" },
 			{ "pantharshit00/vim-prisma" },
 		},
-		["nvim-lsp-installer"] = {
-			ensure_installed = {
-				"stylua",
-				"shfmt",
-				"prettier",
-				"sumneko_lua",
-				"typescript-language-server",
-				"gopls",
-				"goimports",
-				"html",
-			},
-		},
 		packer = {
 			compile_path = vim.fn.stdpath("config") .. "/lua/packer_compiled.lua",
 		},
 		["neo-tree"] = function(config)
 			config.window.width = 40
 		end,
-	},
-
-	-- LuaSnip Options
-	luasnip = {
-		-- Add paths for including more VS Code style snippets in luasnip
-		vscode_snippet_paths = {},
-		-- Extend filetypes
-		filetype_extend = {
-			javascript = { "javascriptreact" },
-		},
 	},
 
 	cmp = {
@@ -104,7 +82,6 @@ local config = {
 	},
 
 	-- This function is run last
-	-- good place to configure mappings and vim options
 	polish = function()
 		-- Set autocommands
 		vim.api.nvim_create_augroup("packer_conf", { clear = true })
