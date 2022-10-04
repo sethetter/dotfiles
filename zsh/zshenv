@@ -1,7 +1,7 @@
 # zsh being installed via homebrew leads to some directories used for autocomplete
 # being considered insecure by zsh, this disables that check since we trust homebrew
 export ZSH_DISABLE_COMPFIX=true
-export EDITOR=vim
+export EDITOR=nvim
 export BAT_THEME="Solarized (light)"
 export DOTFILES_DIR=$HOME/dotfiles
 
