@@ -38,6 +38,7 @@ local config = {
 		},
 		g = {
 			mapleader = " ",
+			cmp_enabled = true, -- enable completion at start
 		},
 	},
 
@@ -64,6 +65,31 @@ local config = {
 		["neo-tree"] = function(config)
 			config.window.width = 40
 		end,
+		["null-ls"] = function(config)
+			local null_ls = require("null-ls")
+
+			config.sources = {
+				null_ls.builtins.formatting.stylua,
+				null_ls.builtins.formatting.prettier,
+				null_ls.builtins.formatting.goimports,
+			}
+			return config
+		end,
+		["mason-lspconfig"] = {
+			ensure_installed = {
+				"sumneko_lua",
+				"typescript-language-server",
+				"gopls",
+				"rust-analyzer",
+				"pylsp",
+				"terraformls",
+				"yamlls",
+				"html",
+			},
+		},
+		["mason-tool-installer"] = {
+			ensure_installed = { "prettier", "stylua" },
+		},
 	},
 
 	cmp = {
@@ -83,7 +109,7 @@ local config = {
 	mappings = {
 		n = {
 			[";"] = { ":", desc = "you know" },
-			["<leader>fo"] = { ":Goyo<CR>", desc = "Focus with Goyo" },
+			["<leader>fO"] = { ":Goyo<CR>", desc = "Focus with Goyo" },
 			["<leader>t"] = { ":Neotree left toggle<CR>", desc = "" },
 			["<leader>e"] = { ":Neotree float toggle<CR>", desc = "Show neotree as float" },
 			["<leader>ft"] = { ":Neotree reveal_file=%<CR>", desc = "Reveal file in Neotree" },
