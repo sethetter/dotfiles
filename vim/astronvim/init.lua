@@ -109,6 +109,8 @@ local config = {
 	mappings = {
 		n = {
 			[";"] = { ":", desc = "you know" },
+			["<leader>qc"] = { ":cclose<CR>", desc = "close the quickfix list" },
+			["<leader>qo"] = { ":copen<CR>", desc = "open the quickfix list" },
 			["<leader>fO"] = { ":Goyo<CR>", desc = "Focus with Goyo" },
 			["<leader>t"] = { ":Neotree left toggle<CR>", desc = "" },
 			["<leader>e"] = { ":Neotree float toggle<CR>", desc = "Show neotree as float" },
