@@ -114,7 +114,7 @@ local config = {
 			["<leader>fO"] = { ":Goyo<CR>", desc = "Focus with Goyo" },
 			["<leader>t"] = { ":Neotree left toggle<CR>", desc = "" },
 			["<leader>e"] = { ":Neotree float toggle<CR>", desc = "Show neotree as float" },
-			["<leader>ft"] = { ":Neotree reveal_file=%<CR>", desc = "Reveal file in Neotree" },
+			["<leader>fr"] = { ":Neotree reveal_file=%<CR>", desc = "Reveal file in Neotree" },
 			["<leader>w/"] = { ":vsp<CR>", desc = "Split vertical" },
 			["<leader>w?"] = { ":sp<CR>", desc = "Split horizontal" },
 			["<leader>go"] = {
