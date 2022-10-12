@@ -121,6 +121,12 @@ local config = {
 				':exe "!gbrowse " . fnamemodify(expand("%"), ":~:.")<CR>',
 				desc = "Open in github / gitlab",
 			},
+			["<leader>gg"] = {
+				function()
+					astronvim.toggle_term_cmd("lazygit -ucf '/Users/sethetter/Library/Application Support/lazygit/nvim.yml'")
+				end,
+				desc = "Open lazygit",
+			},
 		},
 	},
 
