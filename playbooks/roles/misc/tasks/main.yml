@@ -26,4 +26,16 @@
     state: link
     force: true
 
+- name: create-direnv-config-directory
+  file:
+    path: "{{ home_dir }}/.config/direnv"
+    state: directory
+
+- name: link-direnv-config
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/misc/direnv.toml"
+    dest: "{{ home_dir }}/.config/direnv/direnv.toml"
+    state: link
+    force: true
+
 # TODO: rectangle?!
