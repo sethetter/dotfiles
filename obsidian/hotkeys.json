@@ -156,5 +156,13 @@
       ],
       "key": "T"
     }
+  ],
+  "editor:toggle-checklist-status": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "Enter"
+    }
   ]
 }

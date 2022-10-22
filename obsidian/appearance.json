@@ -4,5 +4,6 @@
   "cssTheme": "Minimal",
   "enabledCssSnippets": [
     "extra"
-  ]
+  ],
+  "accentColor": ""
 }
