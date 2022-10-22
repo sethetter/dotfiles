@@ -1,10 +1,10 @@
-# - name: astronvim-from-github
-#   ansible.builtin.git:
-#     dest: "{{ home_dir }}/.config/nvim"
-#     repo: "git@github.com:AstroNvim/AstroNvim.git"
-#     version: main
-#     update: true
-#
+- name: astronvim-from-github
+  ansible.builtin.git:
+    dest: "{{ home_dir }}/.config/nvim"
+    repo: "git@github.com:AstroNvim/AstroNvim.git"
+    version: nightly
+    update: true
+
 - name: create-astronvim-user-dir
   ansible.builtin.file:
     state: directory
