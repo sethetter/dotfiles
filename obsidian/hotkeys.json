@@ -68,14 +68,6 @@
       "key": "S"
     }
   ],
-  "editor:insert-wikilink": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "L"
-    }
-  ],
   "workspace:split-horizontal": [
     {
       "modifiers": [
@@ -149,12 +141,21 @@
       "key": "H"
     }
   ],
-  "insert-template": [
+  "insert-template": [],
+  "editor:insert-wikilink": [
     {
       "modifiers": [
         "Mod"
       ],
-      "key": "T"
+      "key": "L"
+    }
+  ],
+  "editor:toggle-checklist-status": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "Enter"
     }
   ],
   "editor:toggle-checklist-status": [
