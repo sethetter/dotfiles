@@ -77,14 +77,14 @@ local config = {
 		end,
 		["mason-lspconfig"] = {
 			ensure_installed = {
-				"sumneko_lua",
-				"typescript-language-server",
-				"gopls",
-				"rust-analyzer",
-				"pylsp",
-				"terraformls",
-				"yamlls",
-				"html",
+				-- "sumneko_lua",
+				-- "typescript-language-server",
+				-- "gopls",
+				-- "rust-analyzer",
+				-- "pylsp",
+				-- "terraformls",
+				-- "yamlls",
+				-- "html",
 			},
 		},
 		["mason-tool-installer"] = {
@@ -123,7 +123,9 @@ local config = {
 			},
 			["<leader>gg"] = {
 				function()
-					astronvim.toggle_term_cmd("lazygit -ucf '/Users/sethetter/Library/Application Support/lazygit/nvim.yml'")
+					astronvim.toggle_term_cmd(
+						"lazygit -ucf '/Users/sethetter/Library/Application Support/lazygit/nvim.yml'"
+					)
 				end,
 				desc = "Open lazygit",
 			},
