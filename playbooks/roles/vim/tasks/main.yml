@@ -2,7 +2,7 @@
   ansible.builtin.git:
     dest: "{{ home_dir }}/.config/nvim"
     repo: "git@github.com:AstroNvim/AstroNvim.git"
-    version: nightly
+    version: main
     update: true
 
 - name: create-astronvim-user-dir
