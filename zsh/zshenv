@@ -71,11 +71,9 @@ function gbrowse() {
 
 export HOMEBREW_BUNDLE_FILE="$HOME/dotfiles/Brewfile"
 
-export VOLTA_HOME="$HOME/.volta"
 export RUST_BIN="$HOME/.cargo/bin"
 export PYENV_ROOT="$HOME/.pyenv"
 
-export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="$RUST_BIN:$PATH"
 export PATH="$PYENV_ROOT/shims:$PATH"
 
@@ -84,6 +82,8 @@ export PATH="$GOPATH/bin:$PATH"
 
 #AWSume alias to source the AWSume script
 alias awsume="source awsume"
+
+eval "$(fnm env --use-on-cd)"
 
 #Auto-Complete function for AWSume
 fpath=(~/.awsume/zsh-autocomplete/ $fpath)
