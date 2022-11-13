@@ -9,7 +9,7 @@
   register: node_check
 
 - name: install-node
-  ansible.builtin.shell: "volta install node@latest"
+  ansible.builtin.shell: "fnm install latest && fnm default latest"
   when: node_check.stderr.find('not available') != -1
 
 - name: check-yarn
@@ -18,5 +18,5 @@
   register: yarn_check
 
 - name: install-yarn
-  ansible.builtin.shell: "volta install yarn@latest"
+  ansible.builtin.shell: "npm i -g yarn"
   when: yarn_check.stderr.find('not available') != -1
