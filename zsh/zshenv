@@ -35,6 +35,29 @@ function tm {
   fi
 }
 
+function rand {
+  count=$1
+  if [ -z "$count" ]; then
+    count=8
+  fi
+  date +%s | shasum | head -c$1
+}
+
+function gittmp {
+  repo_uri=$1
+  if [ -z "$1" ]; then
+    echo "must provide a repo to clone"
+    return 1
+  fi
+
+  newdir=$(mktemp -d)
+  git clone $1 $newdir
+
+  session_name="gittmp-$(rand 4)"
+  tmux new -A -s $session_name -c $newdir -d
+  tmux switch -t $session_name
+}
+
 function syncsys {
   cd $DOTFILES_DIR
   git pull --rebase
