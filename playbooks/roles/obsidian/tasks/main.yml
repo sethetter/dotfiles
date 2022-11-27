@@ -2,16 +2,32 @@
   ansible.builtin.shell: "ls {{ dotfiles_dir }}/obsidian/"
   register: obsidian_configs
 
-- name: check-obsidian-vault
+# personal vault
+- name: check-brain-obsidian-vault
   stat:
       path: "{{ obsidian_dir }}/brain"
-  register: obsidian_vault_dir
+  register: obsidian_personal_vault_dir
 
-- name: link-obsidian-vault
+- name: link-brain-obsidian-vault
   ansible.builtin.file:
       src: "{{ dotfiles_dir }}/obsidian/{{ item }}"
       dest: "{{ obsidian_dir }}/brain/.obsidian/{{ item }}"
       state: link
       force: true
   with_items: "{{ obsidian_configs.stdout_lines }}"
-  when: obsidian_vault_dir.stat.exists
+  when: obsidian_personal_vault_dir.stat.exists
+
+# zapier vault
+- name: check-zapier-obsidian-vault
+  stat:
+      path: "{{ obsidian_dir }}/zapier"
+  register: obsidian_zapier_vault_dir
+
+- name: link-zapier-obsidian-vault
+  ansible.builtin.file:
+      src: "{{ dotfiles_dir }}/obsidian/{{ item }}"
+      dest: "{{ obsidian_dir }}/zapier/.obsidian/{{ item }}"
+      state: link
+      force: true
+  with_items: "{{ obsidian_configs.stdout_lines }}"
+  when: obsidian_zapier_vault_dir.stat.exists
