@@ -83,8 +83,6 @@ export PATH="$GOPATH/bin:$PATH"
 #AWSume alias to source the AWSume script
 alias awsume="source awsume"
 
-eval "$(fnm env --use-on-cd)"
-
 #Auto-Complete function for AWSume
 fpath=(~/.awsume/zsh-autocomplete/ $fpath)
 . "$HOME/.cargo/env"

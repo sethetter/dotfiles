@@ -8,3 +8,4 @@ source $HOME/.oh-my-zsh/oh-my-zsh.sh
 
 eval "$(rbenv init - zsh)"
 eval "$(pyenv init -)"
+eval "$(fnm env --use-on-cd)"
