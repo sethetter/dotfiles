@@ -13,7 +13,7 @@
   "showIndentGuide": false,
   "attachmentFolderPath": "Files",
   "newFileLocation": "folder",
-  "newFileFolderPath": "Zettelkasten",
+  "newFileFolderPath": "Wiki",
   "fileSortOrder": "alphabetical",
   "mobileToolbarCommands": [
     "editor:toggle-checklist-status",
