@@ -117,6 +117,18 @@ local config = {
 			["<leader>fr"] = { ":Neotree reveal_file=%<CR>", desc = "Reveal file in Neotree" },
 			["<leader>w/"] = { ":vsp<CR>", desc = "Split vertical" },
 			["<leader>w?"] = { ":sp<CR>", desc = "Split horizontal" },
+			["<leader>gd"] = {
+				function()
+					vim.ui.input({
+						prompt = "Diff against: ",
+						default = "",
+					}, function(target)
+						require("gitsigns").diffthis(target)
+					end)
+				end,
+				desc = "View git diff",
+			},
+
 			["<leader>go"] = {
 				':exe "!gbrowse " . fnamemodify(expand("%"), ":~:.")<CR>',
 				desc = "Open in github / gitlab",
