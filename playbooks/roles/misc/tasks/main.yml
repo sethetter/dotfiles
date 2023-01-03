@@ -26,6 +26,13 @@
     state: link
     force: true
 
+- name: link-alacritty-config
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/misc/iterm.json"
+    dest: "{{ home_dir }}/Library/Application Support/iTerm2/DynamicProfiles/iterm.json"
+    state: link
+    force: true
+
 - name: create-direnv-config-directory
   file:
     path: "{{ home_dir }}/.config/direnv"
@@ -37,5 +44,4 @@
     dest: "{{ home_dir }}/.config/direnv/direnv.toml"
     state: link
     force: true
-
 # TODO: rectangle?!
