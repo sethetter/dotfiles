@@ -1,1 +1,9 @@
 theme = "solarized_light"
+
+[editor]
+line-number = "relative"
+
+[keys.normal]
+space = { W = ":w", Q = ":q" }
+C-q = ":q"
+C-s = ":w"
