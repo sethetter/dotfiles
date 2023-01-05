@@ -109,5 +109,6 @@
     "editor.defaultFormatter": "rust-lang.rust"
   },
   "editor.guides.indentation": true,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "git.autofetch": true
 }

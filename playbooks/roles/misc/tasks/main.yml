@@ -44,4 +44,12 @@
     dest: "{{ home_dir }}/.config/direnv/direnv.toml"
     state: link
     force: true
+
+- name: link-helix-config
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/helix"
+    dest: "{{ home_dir }}/.config/helix"
+    state: link
+    force: true
+
 # TODO: rectangle?!
