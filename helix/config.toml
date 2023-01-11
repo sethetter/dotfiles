@@ -4,6 +4,7 @@ theme = "solarized_light"
 line-number = "relative"
 
 [keys.normal]
-space = { W = ":w", Q = ":q" }
+space = { W = ":w", c = ":bc", q = ":q" }
 C-q = ":q"
 C-s = ":w"
+
