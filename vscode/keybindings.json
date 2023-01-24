@@ -238,5 +238,13 @@
   {
     "key": "ctrl+cmd+b",
     "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "ctrl+g d",
+    "command": "git.openChange"
+  },
+  {
+    "key": "ctrl+g shift+d",
+    "command": "git.openAllChanges"
   }
 ]
