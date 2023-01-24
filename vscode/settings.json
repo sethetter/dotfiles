@@ -110,5 +110,14 @@
   },
   "editor.guides.indentation": true,
   "editor.formatOnSave": true,
-  "git.autofetch": true
+  "git.autofetch": true,
+  "deno.inlayHints.enumMemberValues.enabled": false,
+  "deno.inlayHints.functionLikeReturnTypes.enabled": false,
+  "deno.inlayHints.parameterNames.enabled": "none",
+  "deno.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
+  "deno.inlayHints.parameterTypes.enabled": false,
+  "deno.inlayHints.propertyDeclarationTypes.enabled": false,
+  "deno.inlayHints.variableTypes.enabled": false,
+  "deno.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
+  "workbench.activityBar.visible": false
 }

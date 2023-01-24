@@ -234,5 +234,9 @@
   {
     "key": "ctrl+shift+v",
     "command": "workbench.action.newGroupRight"
+  },
+  {
+    "key": "ctrl+cmd+b",
+    "command": "workbench.action.toggleAuxiliaryBar"
   }
 ]
