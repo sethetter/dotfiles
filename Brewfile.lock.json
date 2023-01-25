@@ -2455,6 +2455,12 @@
         "options": {
           "full_name": "grammarly"
         }
+      },
+      "grammarly-desktop": {
+        "version": "1.18.1.0",
+        "options": {
+          "full_name": "grammarly-desktop"
+        }
       }
     }
   },
