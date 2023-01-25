@@ -2,10 +2,9 @@
   "app:toggle-left-sidebar": [
     {
       "modifiers": [
-        "Ctrl",
-        "Shift"
+        "Mod"
       ],
-      "key": "H"
+      "key": "B"
     }
   ],
   "editor:focus-right": [
@@ -20,9 +19,9 @@
     {
       "modifiers": [
         "Ctrl",
-        "Shift"
+        "Mod"
       ],
-      "key": "L"
+      "key": "B"
     }
   ],
   "editor:focus": [
@@ -157,5 +156,6 @@
       ],
       "key": "Enter"
     }
-  ]
+  ],
+  "editor:toggle-bold": []
 }
