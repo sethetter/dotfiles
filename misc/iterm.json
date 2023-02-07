@@ -1,7 +1,7 @@
 {
   "Profiles": [
     {
-      "Name": "Default",
+      "Name": "Solarized Light",
       "Custom Directory": "No",
       "Tags": [],
       "Ansi 12 Color": {
@@ -357,7 +357,7 @@
         "Alpha Component": 1,
         "Green Component": 0.35915297269821167
       },
-      "Guid": "1FBEE9E4-C513-4188-8EC2-54BEDAE57817",
+      "Guid": "43a2dc62-0ae6-4976-9ef5-28c66faa488c",
       "Horizontal Spacing": 0.87,
       "Use Non-ASCII Font": false,
       "Ansi 6 Color": {
