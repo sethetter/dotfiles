@@ -18,6 +18,8 @@ alias ld="lazydocker"
 alias packersync="nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'"
 alias cuid="node -r cuid -e 'console.log(require(\"cuid\")());' | tr -d '\n' | pbcopy"
 alias ccb="git branch --no-color --show-current | tr -d '\n' | pbcopy"
+alias python=python3
+alias pip=pip3
 
 function tm {
   rootdir=$(pwd)

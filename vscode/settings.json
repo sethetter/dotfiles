@@ -119,5 +119,16 @@
   "deno.inlayHints.propertyDeclarationTypes.enabled": false,
   "deno.inlayHints.variableTypes.enabled": false,
   "deno.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
-  "workbench.activityBar.visible": false
+  "workbench.activityBar.visible": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "editor.inlineSuggest.enabled": true
 }
