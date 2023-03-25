@@ -6,7 +6,6 @@
   "editor.lightbulb.enabled": false,
   "editor.lineNumbers": "relative",
   "editor.multiCursorModifier": "alt",
-  "explorer.autoReveal": false,
   "vim.easymotion": true,
   "vim.leader": " ",
   "vim.enableNeovim": false,
@@ -130,5 +129,41 @@
     "editor.formatOnType": true
   },
   "git.openRepositoryInParentFolders": "never",
-  "editor.inlineSuggest.enabled": true
+  "workbench.preferredDarkColorTheme": "Solarized Dark",
+  "workbench.iconTheme": "easy-icons",
+  "window.autoDetectColorScheme": true,
+  "yaml.schemas": {
+    "file:///Users/sethetter/.vscode/extensions/atlassian.atlascode-3.0.2/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "atlascode.jira.enabled": true,
+  "atlascode.bitbucket.enabled": false,
+  "atlascode.jira.jqlList": [
+    {
+      "id": "ad64a6d0-1a91-49bf-87ed-23cde9e7be31",
+      "siteId": "bea47b2e-40fa-4407-b7cc-8ec1e16a72a4",
+      "name": "My Active Tickets",
+      "query": "assignee = currentUser() AND status in (\"Up Next\", \"Needs Design\", \"In Progress\", \"Staging\")",
+      "enabled": true,
+      "monitor": true
+    },
+    {
+      "id": "e7d5eb75-8c2b-49ea-8cb3-d5690f7bb363",
+      "enabled": true,
+      "name": "My Tickets",
+      "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+      "siteId": "bea47b2e-40fa-4407-b7cc-8ec1e16a72a4",
+      "monitor": true
+    }
+  ],
+  "atlascode.jira.lastCreateSiteAndProject": {
+    "siteId": "bea47b2e-40fa-4407-b7cc-8ec1e16a72a4",
+    "projectKey": "INTRFCS"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": true,
+    "markdown": false
+  }
 }
