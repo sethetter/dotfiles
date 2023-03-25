@@ -246,5 +246,15 @@
   {
     "key": "ctrl+g shift+d",
     "command": "git.openAllChanges"
+  },
+  {
+    "key": "ctrl+f g",
+    "command": "workbench.action.editor.nextChange",
+    "when": "editorTextFocus && !textCompareEditorActive"
+  },
+  {
+    "key": "alt+f5",
+    "command": "-workbench.action.editor.nextChange",
+    "when": "editorTextFocus && !textCompareEditorActive"
   }
 ]
