@@ -256,5 +256,47 @@
     "key": "alt+f5",
     "command": "-workbench.action.editor.nextChange",
     "when": "editorTextFocus && !textCompareEditorActive"
+  },
+  {
+    "key": "cmd+k l",
+    "command": "currentBranchInfo.focus"
+  },
+  {
+    "key": "cmd+k j",
+    "command": "atlascode.views.jira.customJql.focus"
+  },
+  {
+    "key": "cmd+k cmd+s",
+    "command": "git.stageSelectedRanges",
+    "when": "isInDiffEditor && !operationInProgress"
+  },
+  {
+    "key": "cmd+k alt+cmd+s",
+    "command": "-git.stageSelectedRanges",
+    "when": "isInDiffEditor && !operationInProgress"
+  },
+  {
+    "key": "cmd+k cmd+s",
+    "command": "-workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "ctrl+g n",
+    "command": "editor.action.diffReview.next",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "f7",
+    "command": "-editor.action.diffReview.next",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "ctrl+g p",
+    "command": "editor.action.diffReview.prev",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "shift+f7",
+    "command": "-editor.action.diffReview.prev",
+    "when": "isInDiffEditor"
   }
 ]

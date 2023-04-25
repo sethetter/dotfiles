@@ -157,5 +157,14 @@
       "key": "Enter"
     }
   ],
-  "editor:toggle-bold": []
+  "editor:toggle-bold": [],
+  "file-explorer:move-file": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "M"
+    }
+  ]
 }
