@@ -165,5 +165,9 @@
     "yaml": false,
     "plaintext": true,
     "markdown": false
-  }
+  },
+  "settingsSync.ignoredExtensions": [
+    "GitLab.gitlab-workflow",
+    "Atlassian.atlascode"
+  ]
 }
