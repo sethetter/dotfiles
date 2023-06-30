@@ -298,5 +298,13 @@
     "key": "shift+f7",
     "command": "-editor.action.diffReview.prev",
     "when": "isInDiffEditor"
+  },
+  {
+    "key": "ctrl+shift+cmd+j",
+    "command": "workbench.action.joinAllGroups"
+  },
+  {
+    "key": "cmd+k r",
+    "command": "issuesAndMrs.focus"
   }
 ]

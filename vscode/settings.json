@@ -126,23 +126,40 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[python]": {
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "editor.tabSize": 4
   },
   "git.openRepositoryInParentFolders": "never",
   "workbench.preferredDarkColorTheme": "Solarized Dark",
   "workbench.iconTheme": "easy-icons",
   "window.autoDetectColorScheme": true,
   "yaml.schemas": {
-    "file:///Users/sethetter/.vscode/extensions/atlassian.atlascode-3.0.2/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///Users/sethetter/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
   "atlascode.jira.enabled": true,
   "atlascode.bitbucket.enabled": false,
   "atlascode.jira.jqlList": [
     {
+      "id": "06fd163e-a127-46d1-a0c9-9690bd0f1476",
+      "siteId": "bea47b2e-40fa-4407-b7cc-8ec1e16a72a4",
+      "name": "In Progress",
+      "query": "assignee = currentUser() AND status in (\"In Progress\", \"In Review\")",
+      "enabled": true,
+      "monitor": true
+    },
+    {
       "id": "ad64a6d0-1a91-49bf-87ed-23cde9e7be31",
       "siteId": "bea47b2e-40fa-4407-b7cc-8ec1e16a72a4",
-      "name": "My Active Tickets",
-      "query": "assignee = currentUser() AND status in (\"Up Next\", \"Needs Design\", \"In Progress\", \"Staging\")",
+      "name": "In Staging",
+      "query": "assignee = currentUser() AND status in (\"Staging\")",
+      "enabled": true,
+      "monitor": true
+    },
+    {
+      "id": "ee5dffe0-3bd1-48bf-8be1-472e4f6966b4",
+      "siteId": "bea47b2e-40fa-4407-b7cc-8ec1e16a72a4",
+      "name": "Up Next",
+      "query": "assignee = currentUser() AND status in (\"Up Next\", \"Needs Design\")",
       "enabled": true,
       "monitor": true
     },
@@ -166,8 +183,15 @@
     "plaintext": true,
     "markdown": false
   },
-  "settingsSync.ignoredExtensions": [
-    "GitLab.gitlab-workflow",
-    "Atlassian.atlascode"
-  ]
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.autoReveal": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "gitlens.autolinks": [
+    {
+      "prefix": "INTRFCS-",
+      "url": "https://zapierorg.atlassian.net/browse/INTRFCS-<num>"
+    }
+  ],
+  "typescript.tsserver.maxTsServerMemory": 8072
 }
