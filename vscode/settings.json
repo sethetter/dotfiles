@@ -108,7 +108,6 @@
     "editor.defaultFormatter": "rust-lang.rust"
   },
   "editor.guides.indentation": true,
-  "editor.formatOnSave": true,
   "git.autofetch": true,
   "deno.inlayHints.enumMemberValues.enabled": false,
   "deno.inlayHints.functionLikeReturnTypes.enabled": false,
@@ -193,5 +192,6 @@
       "url": "https://zapierorg.atlassian.net/browse/INTRFCS-<num>"
     }
   ],
-  "typescript.tsserver.maxTsServerMemory": 8072
+  "typescript.tsserver.maxTsServerMemory": 8072,
+  "editor.formatOnSave": true
 }
