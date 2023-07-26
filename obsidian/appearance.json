@@ -6,5 +6,10 @@
   "enabledCssSnippets": [
     "extra"
   ],
-  "baseFontSizeAction": false
+  "baseFontSizeAction": false,
+  "monospaceFontFamily": "Iosevka Nerd Font",
+  "textFontFamily": "Iosevka Nerd Font",
+  "interfaceFontFamily": "Iosevka Nerd Font",
+  "showViewHeader": true,
+  "nativeMenus": true
 }
