@@ -74,7 +74,6 @@
   },
   "redhat.telemetry.enabled": false,
   "githubPullRequests.defaultMergeMethod": "squash",
-  "github-enterprise.uri": "https://github.cms.gov",
   "todo-tree.general.tags": [
     "BUG",
     "HACK",
@@ -117,7 +116,6 @@
   "deno.inlayHints.propertyDeclarationTypes.enabled": false,
   "deno.inlayHints.variableTypes.enabled": false,
   "deno.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
-  "workbench.activityBar.visible": false,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -133,7 +131,7 @@
   "workbench.iconTheme": "easy-icons",
   "window.autoDetectColorScheme": true,
   "yaml.schemas": {
-    "file:///Users/sethetter/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///Users/sethetter/.vscode/extensions/atlassian.atlascode-3.0.4/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
   "atlascode.jira.enabled": true,
   "atlascode.bitbucket.enabled": false,
@@ -193,5 +191,6 @@
     }
   ],
   "typescript.tsserver.maxTsServerMemory": 8072,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "workbench.activityBar.visible": false
 }
