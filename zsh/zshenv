@@ -5,6 +5,7 @@ export EDITOR=vim
 export BAT_THEME="Solarized (light)"
 export DOTFILES_DIR=$HOME/dotfiles
 
+alias c="clear"
 alias tma="tmux a"
 alias dc="docker compose"
 alias tf="terraform"

@@ -7,7 +7,7 @@
     "extra"
   ],
   "baseFontSizeAction": false,
-  "textFontFamily": "Menlo",
-  "interfaceFontFamily": "Menlo",
-  "monospaceFontFamily": "Menlo"
+  "textFontFamily": "Iosevka Nerd Font",
+  "interfaceFontFamily": "Iosevka Nerd Font",
+  "monospaceFontFamily": "Iosevka Nerd Font"
 }

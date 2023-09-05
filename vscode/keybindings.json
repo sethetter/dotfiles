@@ -306,5 +306,9 @@
   {
     "key": "cmd+k r",
     "command": "issuesAndMrs.focus"
+  },
+  {
+    "key": "cmd+k shift+f",
+    "command": "workbench.files.action.showActiveFileInExplorer"
   }
 ]
