@@ -2569,7 +2569,7 @@
         }
       },
       "loom": {
-        "version": "0.170.4",
+        "version": "0.171.3",
         "options": {
           "full_name": "loom"
         }
@@ -2587,7 +2587,7 @@
         }
       },
       "slack": {
-        "version": "4.33.90",
+        "version": "4.34.115",
         "options": {
           "full_name": "slack"
         }
@@ -2617,7 +2617,7 @@
         }
       },
       "zoom": {
-        "version": "5.15.11.22019",
+        "version": "5.15.12.22445",
         "options": {
           "full_name": "zoom"
         }
