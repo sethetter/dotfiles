@@ -14,6 +14,7 @@ vim.opt.background = "light"
 
 -- Opts
 lvim.format_on_save.enabled = true
+vim.opt.relativenumber = true
 
 -- Keybindings
 lvim.keys.normal_mode["<S-h>"] = ":bprev<CR>"
