@@ -16,6 +16,9 @@ vim.opt.background = "light"
 lvim.format_on_save.enabled = true
 vim.opt.relativenumber = true
 
+-- Core plugin changes
+lvim.builtin.nvimtree.setup.view.width = 40
+
 -- Keybindings
 lvim.keys.normal_mode["<S-h>"] = ":bprev<CR>"
 lvim.keys.normal_mode["<S-l>"] = ":bnext<CR>"
