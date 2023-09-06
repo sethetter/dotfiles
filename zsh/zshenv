@@ -107,6 +107,8 @@ export PATH="$PYENV_ROOT/shims:$PATH"
 export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
 
+export PATH="$HOME/.local/bin:$PATH"
+
 #AWSume alias to source the AWSume script
 alias awsume="source awsume"
 
