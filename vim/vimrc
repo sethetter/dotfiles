@@ -12,3 +12,9 @@ set tabstop=2
 set expandtab
 set hidden
 set nowrap
+
+if &filetype == "" || &filetype == "markdown" || &filetype == "text"
+  set wrap
+  set linebreak
+  set nolist
+endif
