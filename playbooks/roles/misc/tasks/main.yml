@@ -1,3 +1,5 @@
+# TODO: rectangle?!
+
 - name: link-lazygit-config
   ansible.builtin.file:
     src: "{{ dotfiles_dir }}/misc/lazygit.yml"
@@ -44,4 +46,10 @@
     dest: "{{ home_dir }}/.config/direnv/direnv.toml"
     state: link
     force: true
-# TODO: rectangle?!
+
+- name: install-git-open-script
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/scripts/git-open.sh"
+    dest: "{{ home_dir }}/.local/bin/git-open"
+    state: link
+    force: true
