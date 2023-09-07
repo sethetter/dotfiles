@@ -34,8 +34,8 @@ lvim.builtin.nvimtree.setup.view.width = 40
 lvim.keys.normal_mode["<S-h>"] = ":bprev<cr>"
 lvim.keys.normal_mode["<S-l>"] = ":bnext<cr>"
 
-lvim.builtin.which_key.mappings["w?"] = { ":sp<cr>", "Split horizontal" }
-lvim.builtin.which_key.mappings["w/"] = { ":vsp<cr>", "Split vertical" }
+lvim.builtin.which_key.mappings["w?"] = { ":sp<cr>", "Split horizontal", mode = { "n" } }
+lvim.builtin.which_key.mappings["w/"] = { ":vsp<cr>", "Split vertical", mode = { "n" } }
 
 lvim.builtin.which_key.mappings["gO"] = { ":GitOpen<cr>", "Open file in github/gitlab", mode = { "n", "v" } }
 lvim.builtin.which_key.mappings["gL"] = { ":GitCopy<cr>", "Open file in github/gitlab", mode = { "n", "v" } }
@@ -55,8 +55,42 @@ lvim.builtin.which_key.mappings["G"] = {
   rd = { "<cmd>lua require('gitlab').delete_reviewer()<cr>", "Remove reviewer" },
   p = { "<cmd>lua require('gitlab').pipeline()<cr>", "View MR pipeline" },
 }
+-- DEBUG
+function DumpTable(table, depth)
+  if (depth > 200) then
+    print("Error: Depth > 200 in dumpTable()")
+    return
+  end
+  for k, v in pairs(table) do
+    if (type(v) == "table") then
+      print(string.rep("  ", depth) .. k .. ":")
+      DumpTable(v, depth + 1)
+    else
+      print(string.rep("  ", depth) .. k .. ": ", v)
+    end
+  end
+end
 
--- Lang specific config
+-- Filetype based settings
+function SetLineWrapForTextFiles(opts)
+  local ft = vim.bo[opts.buf].filetype
+  -- print(DumpTable(opts, 10))
+  -- print(opts.buf, ft)
+  if ft == "" or ft == "markdown" or ft == "text" then
+    -- print("SETTING THE WRAP!")
+    vim.bo[opts.buf].wrap = true
+    vim.bo[opts.buf].linebreak = true
+    vim.bo[opts.buf].list = false
+  end
+end
+
+local myAuGroup = vim.api.nvim_create_augroup("MyGroup", { clear = true })
+lvim.autocommands = {
+  { "FileType", { pattern = { "*" }, group = myAuGroup, callback = SetLineWrapForTextFiles } },
+  { "BufAdd",   { pattern = { "*" }, group = myAuGroup, callback = SetLineWrapForTextFiles } },
+}
+
+-- Formatters
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
   {
@@ -74,7 +108,7 @@ formatters.setup {
 
 -- Calls the git-open command to get the URL for a specific file/line
 -- in the github or gitlab remote repo.
-function Git_url(line1, line2)
+function GitUrl(line1, line2)
   local lines = ""
 
   -- Check if multiple lines are selected
@@ -90,13 +124,13 @@ function Git_url(line1, line2)
   return string.format("git-open %s %s", filename, lines)
 end
 
-function Git_open(line1, line2)
-  local git_open_cmd = Git_url(line1, line2)
+function GitOpen(line1, line2)
+  local git_open_cmd = GitUrl(line1, line2)
   vim.cmd(string.format("!%s | xargs open", git_open_cmd))
 end
 
-function Git_copy(line1, line2)
-  local git_open_cmd = Git_url(line1, line2)
+function GitCopy(line1, line2)
+  local git_open_cmd = GitUrl(line1, line2)
   vim.cmd(string.format("!%s | pbcopy", git_open_cmd))
 end
 
