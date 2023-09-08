@@ -15,17 +15,26 @@ lvim.plugins = {
       enabled = true,
     },
     build = function() require("gitlab.server").build(true) end,
-    config = function() require("gitlab").setup() end,
+    config = function()
+      require("gitlab").setup({
+        discussion_tree = {
+          position = "bottom",
+        },
+      })
+    end,
   },
 }
 
 -- Display
 lvim.colorscheme = "solarized-flat"
 vim.opt.background = "light"
+vim.opt.cmdheight = 2 -- more space in the neovim command line for displaying messages
 
 -- Opts
 lvim.format_on_save.enabled = true
 vim.opt.relativenumber = true
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
 
 -- Core plugin changes
 lvim.builtin.nvimtree.setup.view.width = 40
@@ -38,7 +47,7 @@ lvim.builtin.which_key.mappings["w?"] = { ":sp<cr>", "Split horizontal", mode = 
 lvim.builtin.which_key.mappings["w/"] = { ":vsp<cr>", "Split vertical", mode = { "n" } }
 
 lvim.builtin.which_key.mappings["gO"] = { ":GitOpen<cr>", "Open file in github/gitlab", mode = { "n", "v" } }
-lvim.builtin.which_key.mappings["gL"] = { ":GitCopy<cr>", "Open file in github/gitlab", mode = { "n", "v" } }
+lvim.builtin.which_key.mappings["gL"] = { ":GitCopy<cr>", "Copy link to file in github/gitlab", mode = { "n", "v" } }
 
 lvim.builtin.which_key.mappings["G"] = {
   name = "Gitlab",
@@ -72,22 +81,37 @@ function DumpTable(table, depth)
 end
 
 -- Filetype based settings
-function SetLineWrapForTextFiles(opts)
-  local ft = vim.bo[opts.buf].filetype
-  -- print(DumpTable(opts, 10))
-  -- print(opts.buf, ft)
+function SetLineWrapForTextFiles(ft)
   if ft == "" or ft == "markdown" or ft == "text" then
-    -- print("SETTING THE WRAP!")
-    vim.bo[opts.buf].wrap = true
-    vim.bo[opts.buf].linebreak = true
-    vim.bo[opts.buf].list = false
+    -- print("setting wrap")
+    vim.opt_local.wrap = true
+    vim.opt_local.linebreak = true
+    vim.opt_local.list = false
   end
 end
 
 local myAuGroup = vim.api.nvim_create_augroup("MyGroup", { clear = true })
 lvim.autocommands = {
-  { "FileType", { pattern = { "*" }, group = myAuGroup, callback = SetLineWrapForTextFiles } },
-  { "BufAdd",   { pattern = { "*" }, group = myAuGroup, callback = SetLineWrapForTextFiles } },
+  {
+    "FileType", {
+    pattern = { "*" },
+    group = myAuGroup,
+    callback = function(opts)
+      -- print("---- FileType")
+      -- DumpTable(opts, 20)
+      SetLineWrapForTextFiles(opts.filetype)
+    end
+  }
+  },
+  { "WinEnter", {
+    pattern = { "*" },
+    group = myAuGroup,
+    callback = function(opts)
+      -- print("---- WinEnter")
+      -- DumpTable(opts, 20)
+      SetLineWrapForTextFiles()
+    end
+  } },
 }
 
 -- Formatters
@@ -114,6 +138,8 @@ function GitUrl(line1, line2)
   -- Check if multiple lines are selected
   if line1 ~= line2 then
     lines = line1 .. "-" .. line2
+  else
+    lines = line1
   end
 
   local git_root = vim.fn.systemlist("git rev-parse --show-toplevel")[1]
@@ -134,5 +160,5 @@ function GitCopy(line1, line2)
   vim.cmd(string.format("!%s | pbcopy", git_open_cmd))
 end
 
-vim.cmd [[command! -range GitOpen :lua Git_open(<line1>, <line2>)]]
-vim.cmd [[command! -range GitCopy :lua Git_copy(<line1>, <line2>)]]
+vim.cmd [[command! -range GitOpen :lua GitOpen(<line1>, <line2>)]]
+vim.cmd [[command! -range GitCopy :lua GitCopy(<line1>, <line2>)]]

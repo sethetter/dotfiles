@@ -44,4 +44,4 @@ if [ ! -z "$linerange" ]; then
   final_url="${final_url}#L${linerange}"
 fi
 
-echo $final_url
+echo -n $final_url
