@@ -28,7 +28,6 @@ lvim.plugins = {
 -- Display
 lvim.colorscheme = "solarized-flat"
 vim.opt.background = "light"
-vim.opt.cmdheight = 2 -- more space in the neovim command line for displaying messages
 
 -- Opts
 lvim.format_on_save.enabled = true
@@ -46,9 +45,26 @@ lvim.keys.normal_mode["<S-l>"] = ":bnext<cr>"
 lvim.builtin.which_key.mappings["w?"] = { ":sp<cr>", "Split horizontal", mode = { "n" } }
 lvim.builtin.which_key.mappings["w/"] = { ":vsp<cr>", "Split vertical", mode = { "n" } }
 
-lvim.builtin.which_key.mappings["gO"] = { ":GitOpen<cr>", "Open file in github/gitlab", mode = { "n", "v" } }
-lvim.builtin.which_key.mappings["gL"] = { ":GitCopy<cr>", "Copy link to file in github/gitlab", mode = { "n", "v" } }
+lvim.builtin.which_key.mappings["gO"] = {
+  ":GitOpen<cr>",
+  "Open file in github/gitlab",
+  mode = { "n", "v" },
+  silent = true,
+}
+lvim.builtin.which_key.mappings["gL"] = {
+  ":GitCopy<cr>",
+  "Copy link to file in github/gitlab",
+  mode = { "n", "v" },
+  silent = true,
+}
+lvim.builtin.which_key.mappings["gD"] = {
+  ":lua GitDiff()<cr>",
+  "Diff buffer against provided target",
+  mode = { "n" },
+  silent = true,
+}
 
+-- gitlab.nvim
 lvim.builtin.which_key.mappings["G"] = {
   name = "Gitlab",
   s = { "<cmd>lua require('gitlab').summary()<cr>", "View MR summary" },
@@ -64,29 +80,19 @@ lvim.builtin.which_key.mappings["G"] = {
   rd = { "<cmd>lua require('gitlab').delete_reviewer()<cr>", "Remove reviewer" },
   p = { "<cmd>lua require('gitlab').pipeline()<cr>", "View MR pipeline" },
 }
--- DEBUG
-function DumpTable(table, depth)
-  if (depth > 200) then
-    print("Error: Depth > 200 in dumpTable()")
-    return
-  end
-  for k, v in pairs(table) do
-    if (type(v) == "table") then
-      print(string.rep("  ", depth) .. k .. ":")
-      DumpTable(v, depth + 1)
-    else
-      print(string.rep("  ", depth) .. k .. ": ", v)
-    end
-  end
-end
+
 
 -- Filetype based settings
-function SetLineWrapForTextFiles(ft)
+function SetLineWrapForTextFiles(opts)
+  local ft = vim.bo[opts.buf].filetype
   if ft == "" or ft == "markdown" or ft == "text" then
-    -- print("setting wrap")
-    vim.opt_local.wrap = true
-    vim.opt_local.linebreak = true
-    vim.opt_local.list = false
+    vim.wo.wrap = true
+    vim.wo.linebreak = true
+    vim.wo.list = false
+  else
+    vim.wo.wrap = false
+    vim.wo.linebreak = false
+    vim.wo.list = true
   end
 end
 
@@ -96,21 +102,13 @@ lvim.autocommands = {
     "FileType", {
     pattern = { "*" },
     group = myAuGroup,
-    callback = function(opts)
-      -- print("---- FileType")
-      -- DumpTable(opts, 20)
-      SetLineWrapForTextFiles(opts.filetype)
-    end
+    callback = SetLineWrapForTextFiles
   }
   },
-  { "WinEnter", {
+  { "BufAdd", {
     pattern = { "*" },
     group = myAuGroup,
-    callback = function(opts)
-      -- print("---- WinEnter")
-      -- DumpTable(opts, 20)
-      SetLineWrapForTextFiles()
-    end
+    callback = SetLineWrapForTextFiles
   } },
 }
 
@@ -160,5 +158,30 @@ function GitCopy(line1, line2)
   vim.cmd(string.format("!%s | pbcopy", git_open_cmd))
 end
 
+function GitDiff()
+  local target = vim.fn.input("Diff target: ")
+  require('gitsigns').diffthis(target)
+end
+
 vim.cmd [[command! -range GitOpen :lua GitOpen(<line1>, <line2>)]]
 vim.cmd [[command! -range GitCopy :lua GitCopy(<line1>, <line2>)]]
+
+
+---------------------------
+-- Utilities
+---------------------------
+
+function DumpTable(table, depth)
+  if (depth > 200) then
+    print("Error: Depth > 200 in dumpTable()")
+    return
+  end
+  for k, v in pairs(table) do
+    if (type(v) == "table") then
+      print(string.rep("  ", depth) .. k .. ":")
+      DumpTable(v, depth + 1)
+    else
+      print(string.rep("  ", depth) .. k .. ": ", v)
+    end
+  end
+end
