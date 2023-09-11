@@ -42,8 +42,8 @@ lvim.builtin.nvimtree.setup.view.width = 40
 lvim.keys.normal_mode["<S-h>"] = ":bprev<cr>"
 lvim.keys.normal_mode["<S-l>"] = ":bnext<cr>"
 
-lvim.builtin.which_key.mappings["w?"] = { ":sp<cr>", "Split horizontal", mode = { "n" } }
-lvim.builtin.which_key.mappings["w/"] = { ":vsp<cr>", "Split vertical", mode = { "n" } }
+lvim.builtin.which_key.mappings["v?"] = { ":sp<cr>", "Split horizontal", mode = { "n" } }
+lvim.builtin.which_key.mappings["v/"] = { ":vsp<cr>", "Split vertical", mode = { "n" } }
 
 lvim.builtin.which_key.mappings["gO"] = {
   ":GitOpen<cr>",

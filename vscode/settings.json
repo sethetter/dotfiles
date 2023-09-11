@@ -181,7 +181,6 @@
     "markdown": false
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "explorer.autoReveal": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "gitlens.autolinks": [
