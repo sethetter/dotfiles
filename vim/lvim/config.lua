@@ -7,21 +7,8 @@
 lvim.plugins = {
   { "ishan9299/nvim-solarized-lua" },
   {
-    "harrisoncramer/gitlab.nvim",
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-      "nvim-lua/plenary.nvim",
-      "stevearc/dressing.nvim", -- Recommended but not required. Better UI for pickers.
-      enabled = true,
-    },
-    build = function() require("gitlab.server").build(true) end,
-    config = function()
-      require("gitlab").setup({
-        discussion_tree = {
-          position = "bottom",
-        },
-      })
-    end,
+    "sindrets/diffview.nvim",
+    event = "BufRead"
   },
 }
 
@@ -41,6 +28,11 @@ lvim.builtin.nvimtree.setup.view.width = 40
 -- Keybindings
 lvim.keys.normal_mode["<S-h>"] = ":bprev<cr>"
 lvim.keys.normal_mode["<S-l>"] = ":bnext<cr>"
+
+lvim.builtin.which_key.mappings["tn"] = { ":tabnew<cr>", "New tab", mode = { "n" } }
+lvim.builtin.which_key.mappings["td"] = { ":tabclose<cr>", "Close tab", mode = { "n" } }
+lvim.builtin.which_key.mappings["th"] = { ":tabprev<cr>", "Previous tab", mode = { "n" } }
+lvim.builtin.which_key.mappings["tl"] = { ":tabnext<cr>", "Next tab", mode = { "n" } }
 
 lvim.builtin.which_key.mappings["v?"] = { ":sp<cr>", "Split horizontal", mode = { "n" } }
 lvim.builtin.which_key.mappings["v/"] = { ":vsp<cr>", "Split vertical", mode = { "n" } }
@@ -63,24 +55,18 @@ lvim.builtin.which_key.mappings["gD"] = {
   mode = { "n" },
   silent = true,
 }
-
--- gitlab.nvim
-lvim.builtin.which_key.mappings["G"] = {
-  name = "Gitlab",
-  s = { "<cmd>lua require('gitlab').summary()<cr>", "View MR summary" },
-  A = { "<cmd>lua require('gitlab').approve()<cr>", "Approve MR" },
-  R = { "<cmd>lua require('gitlab').revoke()<cr>", "Revoke MR" },
-  c = { "<cmd>lua require('gitlab').create_comment()<cr>", "Create comment" },
-  n = { "<cmd>lua require('gitlab').create_note()<cr>", "Create note" },
-  d = { "<cmd>lua require('gitlab').toggle_discussions()<cr>", "Toggle discussions" },
-  aa = { "<cmd>lua require('gitlab').add_assignee()<cr>", "Add assignee" },
-  ad = { "<cmd>lua require('gitlab').delete_assignee()<cr>", "Remove assignee" },
-  rr = { "<cmd>lua require('gitlab').review()<cr>", "Review MR" },
-  ra = { "<cmd>lua require('gitlab').add_reviewer()<cr>", "Add reviewer" },
-  rd = { "<cmd>lua require('gitlab').delete_reviewer()<cr>", "Remove reviewer" },
-  p = { "<cmd>lua require('gitlab').pipeline()<cr>", "View MR pipeline" },
+lvim.builtin.which_key.mappings["Gd"] = {
+  ":DiffviewOpen<cr>",
+  "Diff all files against index",
+  mode = { "n" },
+  silent = true,
 }
-
+lvim.builtin.which_key.mappings["GD"] = {
+  ":DiffviewOpen ",
+  "Diff all files against provided target",
+  mode = { "n" },
+  silent = true,
+}
 
 -- Filetype based settings
 function SetLineWrapForTextFiles(opts)
