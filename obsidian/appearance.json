@@ -7,7 +7,9 @@
     "extra"
   ],
   "baseFontSizeAction": false,
+  "monospaceFontFamily": "Iosevka Nerd Font",
   "textFontFamily": "Iosevka Nerd Font",
   "interfaceFontFamily": "Iosevka Nerd Font",
-  "monospaceFontFamily": "Iosevka Nerd Font"
+  "showViewHeader": true,
+  "nativeMenus": true
 }
