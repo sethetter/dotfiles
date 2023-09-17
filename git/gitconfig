@@ -20,7 +20,7 @@
 [difftool]
   prompt = false
 [diff]
-  tool = vimdiff
+	tool = vscode
 [color]
   ui = auto
 [github]
@@ -39,3 +39,5 @@
 	autosetuprebase = always
 [pull]
 	rebase = true
+[difftool "vscode"]
+  cmd = code --diff --wait $LOCAL $REMOTE
