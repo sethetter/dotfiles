@@ -18,8 +18,6 @@
   cmd = vim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
 [difftool]
   prompt = false
-[diff]
-	tool = vscode
 [color]
   ui = auto
 [github]
@@ -38,5 +36,3 @@
 	autosetuprebase = always
 [pull]
 	rebase = true
-[difftool "vscode"]
-  cmd = code --diff --wait $LOCAL $REMOTE
