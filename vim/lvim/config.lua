@@ -5,7 +5,17 @@
 
 -- Plugins
 lvim.plugins = {
-  { "ishan9299/nvim-solarized-lua" },
+  {
+    "ishan9299/nvim-solarized-lua",
+  },
+  {
+    "rickhowe/diffchar.vim",
+  },
+  {
+    "mattn/vim-gist",
+    event = "BufRead",
+    dependencies = "mattn/webapi-vim",
+  },
   {
     "sindrets/diffview.nvim",
     event = "BufRead"
@@ -15,6 +25,7 @@ lvim.plugins = {
 -- Display
 lvim.colorscheme = "solarized-flat"
 vim.opt.background = "light"
+vim.opt.fillchars:append { diff = "╱" }
 
 -- Opts
 lvim.format_on_save.enabled = true
