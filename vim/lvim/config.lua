@@ -109,6 +109,9 @@ lvim.autocommands = {
   } },
 }
 
+-- Manually configured LSPs
+vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "tsserver" })
+
 -- Formatters
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {

@@ -1,0 +1,1 @@
+vim/lvim/ftplugin/typescript.lua
