@@ -1,8 +1,8 @@
 local lsputil = require('lspconfig/util')
 
-local hasImportMap = lsputil.root_pattern("import_map.json")
-local hasDenoJson = lsputil.root_pattern("deno.json")
-local hasDenoJsonc = lsputil.root_pattern("deno.jsonc")
+local hasImportMap = lsputil.root_pattern("import_map.json")()
+local hasDenoJson = lsputil.root_pattern("deno.json")()
+local hasDenoJsonc = lsputil.root_pattern("deno.jsonc")()
 
 local isDeno = hasImportMap or hasDenoJson or hasDenoJsonc
 
