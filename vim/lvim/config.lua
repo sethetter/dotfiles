@@ -33,8 +33,14 @@ vim.opt.relativenumber = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 
+-- Disable netrw so nvimtree will always be used
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- Core plugin changes
-lvim.builtin.nvimtree.setup.view.width = 40
+-- lvim.builtin.nvimtree.setup.view.width = 40
+lvim.builtin.nvimtree.setup.update_cwd = false
+lvim.builtin.nvimtree.setup.view.adaptive_size = true
 
 -- Keybindings
 lvim.keys.normal_mode["<S-h>"] = ":bprev<cr>"
