@@ -24,14 +24,15 @@ lvim.plugins = {
 
 -- Display
 lvim.colorscheme = "solarized-flat"
+vim.opt.fillchars:append { diff = "/" }
 vim.opt.background = "light"
-vim.opt.fillchars:append { diff = "╱" }
 
 -- Opts
 lvim.format_on_save.enabled = true
 vim.opt.relativenumber = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
+vim.opt.clipboard = ""
 
 -- Disable netrw so nvimtree will always be used
 vim.g.loaded_netrw = 1
@@ -41,6 +42,7 @@ vim.g.loaded_netrwPlugin = 1
 -- lvim.builtin.nvimtree.setup.view.width = 40
 lvim.builtin.nvimtree.setup.update_cwd = false
 lvim.builtin.nvimtree.setup.view.adaptive_size = true
+lvim.builtin.nvimtree.setup.actions.use_system_clipboard = false
 
 -- Keybindings
 lvim.keys.normal_mode["<S-h>"] = ":bprev<cr>"
