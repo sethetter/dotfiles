@@ -47,11 +47,11 @@ lvim.builtin.nvimtree.setup.actions.use_system_clipboard = false
 -- Keybindings
 lvim.keys.normal_mode["<S-h>"] = ":bprev<cr>"
 lvim.keys.normal_mode["<S-l>"] = ":bnext<cr>"
+lvim.keys.normal_mode["<C-h>"] = ":tabprev<cr>"
+lvim.keys.normal_mode["<C-l>"] = ":tabnext<cr>"
 
 lvim.builtin.which_key.mappings["tn"] = { ":tabnew<cr>", "New tab", mode = { "n" } }
 lvim.builtin.which_key.mappings["td"] = { ":tabclose<cr>", "Close tab", mode = { "n" } }
-lvim.builtin.which_key.mappings["th"] = { ":tabprev<cr>", "Previous tab", mode = { "n" } }
-lvim.builtin.which_key.mappings["tl"] = { ":tabnext<cr>", "Next tab", mode = { "n" } }
 
 lvim.builtin.which_key.mappings["v?"] = { ":sp<cr>", "Split horizontal", mode = { "n" } }
 lvim.builtin.which_key.mappings["v/"] = { ":vsp<cr>", "Split vertical", mode = { "n" } }
