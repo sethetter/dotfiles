@@ -47,8 +47,8 @@ lvim.builtin.nvimtree.setup.actions.use_system_clipboard = false
 -- Keybindings
 lvim.keys.normal_mode["<S-h>"] = ":bprev<cr>"
 lvim.keys.normal_mode["<S-l>"] = ":bnext<cr>"
-lvim.keys.normal_mode["<C-h>"] = ":tabprev<cr>"
-lvim.keys.normal_mode["<C-l>"] = ":tabnext<cr>"
+lvim.keys.normal_mode["<S-j>"] = ":tabnext<cr>"
+-- S-k shows hover info, can't use here.
 
 lvim.builtin.which_key.mappings["tn"] = { ":tabnew<cr>", "New tab", mode = { "n" } }
 lvim.builtin.which_key.mappings["td"] = { ":tabclose<cr>", "Close tab", mode = { "n" } }
