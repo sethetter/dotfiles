@@ -24,7 +24,7 @@ lvim.plugins = {
 
 -- Display
 lvim.colorscheme = "solarized-flat"
-vim.opt.fillchars:append { diff = "/" }
+vim.opt.fillchars:append { diff = "╱" }
 vim.opt.background = "light"
 
 -- Opts
