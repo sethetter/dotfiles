@@ -50,6 +50,8 @@ lvim.keys.normal_mode["<S-l>"] = ":bnext<cr>"
 lvim.keys.normal_mode["<S-j>"] = ":tabnext<cr>"
 -- S-k shows hover info, can't use here.
 
+lvim.builtin.which_key.mappings["E"] = { ":e .<cr>", "File explorer", mode = { "n" } }
+
 lvim.builtin.which_key.mappings["tn"] = { ":tabnew<cr>", "New tab", mode = { "n" } }
 lvim.builtin.which_key.mappings["td"] = { ":tabclose<cr>", "Close tab", mode = { "n" } }
 
