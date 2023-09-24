@@ -1,18 +1,25 @@
-local lsputil = require('lspconfig/util')
+local function file_exists(filepath)
+  local file_stat = vim.loop.fs_stat(filepath)
+  return file_stat and file_stat.type or false
+end
 
-local hasImportMap = lsputil.root_pattern("import_map.json")()
-local hasDenoJson = lsputil.root_pattern("deno.json")()
-local hasDenoJsonc = lsputil.root_pattern("deno.jsonc")()
+local root = vim.fn.getcwd()
+local deno_files = {"deno.json", "deno.jsonc", "import_map.json"}
 
-local isDeno = hasImportMap or hasDenoJson or hasDenoJsonc
+local is_deno = false
+local import_map = ""
 
-if isDeno then
-  local importMap = "deno.jsonc"
-  if hasDenoJson then importMap = "deno.json" end
-  if hasImportMap then importMap = "import_map.json" end
+for _, file in ipairs(deno_files) do
+  local filepath = root .. '/' .. file
+  if file_exists(filepath) then
+    is_deno = true
+    import_map = filepath
+  end
+end
 
+if is_deno then
   require("lvim.lsp.manager").setup("denols", {
-    settings = { import_map = importMap }
+    settings = { import_map = import_map }
   })
 else
   require("lvim.lsp.manager").setup("tsserver", {})
