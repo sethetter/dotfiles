@@ -47,7 +47,7 @@ lvim.builtin.nvimtree.setup.actions.use_system_clipboard = false
 -- Keybindings
 lvim.keys.normal_mode["<S-h>"] = ":bprev<cr>"
 lvim.keys.normal_mode["<S-l>"] = ":bnext<cr>"
-lvim.keys.normal_mode["<S-j>"] = ":tabnext<cr>"
+lvim.keys.normal_mode["<C-n>"] = ":tabnext<cr>"
 -- S-k shows hover info, can't use here.
 
 lvim.builtin.which_key.mappings["E"] = { ":e .<cr>", "File explorer", mode = { "n" } }
@@ -57,6 +57,15 @@ lvim.builtin.which_key.mappings["td"] = { ":tabclose<cr>", "Close tab", mode = {
 
 lvim.builtin.which_key.mappings["v?"] = { ":sp<cr>", "Split horizontal", mode = { "n" } }
 lvim.builtin.which_key.mappings["v/"] = { ":vsp<cr>", "Split vertical", mode = { "n" } }
+
+
+lvim.builtin.which_key.mappings["ff"] = {
+  function()
+    require("lvim.core.telescope.custom-finders").find_project_files { previewer = false }
+  end,
+  "Find File",
+}
+lvim.builtin.which_key.mappings["fn"] = { ":new<cr>", "New file" }
 
 lvim.builtin.which_key.mappings["gO"] = {
   ":GitOpen<cr>",
