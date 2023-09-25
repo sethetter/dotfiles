@@ -9,6 +9,9 @@ lvim.plugins = {
     "ishan9299/nvim-solarized-lua",
   },
   {
+    "tpope/vim-surround",
+  },
+  {
     "rickhowe/diffchar.vim",
   },
   {
@@ -39,11 +42,28 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 -- Core plugin changes
--- lvim.builtin.nvimtree.setup.view.width = 40
+
 lvim.builtin.nvimtree.setup.update_cwd = false
-lvim.builtin.nvimtree.setup.view.adaptive_size = true
-lvim.builtin.nvimtree.setup.view.float.enable = true
 lvim.builtin.nvimtree.setup.actions.use_system_clipboard = false
+lvim.builtin.nvimtree.setup.view = {
+  float = {
+    enable = true,
+    open_win_config = function()
+      local window_w = vim.opt.columns:get()
+      local window_h = vim.opt.lines:get() - vim.opt.cmdheight:get() - 5
+      local window_w_int = math.floor(window_w)
+      local window_h_int = math.floor(window_h)
+      return {
+        border = 'rounded',
+        relative = 'editor',
+        row = 1,
+        col = 1,
+        width = window_w_int,
+        height = window_h_int,
+      }
+    end
+  },
+}
 
 -- Keybindings
 lvim.keys.normal_mode["<S-h>"] = ":bprev<cr>"
