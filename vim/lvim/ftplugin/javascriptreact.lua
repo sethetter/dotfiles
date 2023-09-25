@@ -1,1 +1,1 @@
-vim/lvim/ftplugin/typescript.lua
+require("user.js-ts-lsp").setup()
