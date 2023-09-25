@@ -42,6 +42,7 @@ vim.g.loaded_netrwPlugin = 1
 -- lvim.builtin.nvimtree.setup.view.width = 40
 lvim.builtin.nvimtree.setup.update_cwd = false
 lvim.builtin.nvimtree.setup.view.adaptive_size = true
+lvim.builtin.nvimtree.setup.view.float.enable = true
 lvim.builtin.nvimtree.setup.actions.use_system_clipboard = false
 
 -- Keybindings
