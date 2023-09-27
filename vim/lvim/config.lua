@@ -69,6 +69,7 @@ lvim.builtin.nvimtree.setup.view = {
 lvim.keys.normal_mode["<S-h>"] = ":bprev<cr>"
 lvim.keys.normal_mode["<S-l>"] = ":bnext<cr>"
 lvim.keys.normal_mode["<C-n>"] = ":tabnext<cr>"
+lvim.keys.normal_mode["<C-p>"] = ":tabprev<cr>"
 -- S-k shows hover info, can't use here.
 
 lvim.builtin.which_key.mappings["E"] = { ":e .<cr>", "File explorer", mode = { "n" } }
