@@ -163,7 +163,6 @@ formatters.setup {
       "typescriptreact",
       "javascript",
       "javascriptreact",
-      "markdown",
       "json",
     },
   }
