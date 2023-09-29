@@ -12,6 +12,9 @@ font:
 
 draw_bold_text_with_bright_colors: true
 
+bell:
+  duration: 0
+
 # Colors (Solarized Light)
 colors:
   # Default colors
