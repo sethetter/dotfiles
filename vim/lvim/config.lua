@@ -3,10 +3,49 @@
 -- Forum: https://www.reddit.com/r/lunarvim/
 -- Discord: https://discord.com/invite/Xb9B4Ny
 
+-- Disabled core lvim plugins
+lvim.builtin.alpha.active = false
+
 -- Plugins
 lvim.plugins = {
   {
     "ishan9299/nvim-solarized-lua",
+  },
+  {
+    "zbirenbaum/copilot-cmp",
+    event = "InsertEnter",
+    dependencies = { "zbirenbaum/copilot.lua" },
+    config = function()
+      vim.defer_fn(function()
+        -- https://github.com/zbirenbaum/copilot.lua/blob/master/README.md#setup-and-configuration
+        require("copilot").setup({
+          suggestion = { enabled = false },
+          panel = { enabled = false },
+        })
+        -- https://github.com/zbirenbaum/copilot-cmp/blob/master/README.md#configuration
+        require("copilot_cmp").setup()
+      end, 100)
+    end,
+  },
+  {
+    "madox2/vim-ai",
+    config = function()
+      vim.g.vim_ai_complete = {
+        engine = 'chat',
+        options = { model = 'gpt-4' },
+      }
+      vim.g.vim_ai_edit = {
+        engine = 'chat',
+        options = { model = 'gpt-4' },
+      }
+      vim.g.vim_ai_chat = {
+        options = { model = 'gpt-4' },
+        ui = {
+          populate_options = 1,
+          scratch_buffer_keep_open = 1,
+        },
+      }
+    end
   },
   {
     "tpope/vim-surround",
@@ -25,6 +64,7 @@ lvim.plugins = {
   },
 }
 
+
 -- Display
 lvim.colorscheme = "solarized-flat"
 vim.opt.fillchars:append { diff = "╱" }
@@ -41,31 +81,15 @@ vim.opt.clipboard = ""
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
--- Core plugin changes
+----------------------------
+-- Core plugins
+----------------------------
 
+-- nvimtree
 lvim.builtin.nvimtree.setup.update_cwd = false
 lvim.builtin.nvimtree.setup.actions.use_system_clipboard = false
 lvim.builtin.nvimtree.setup.view.float.enable = true
 lvim.builtin.nvimtree.setup.view.adaptive_size = true
--- lvim.builtin.nvimtree.setup.view = {
---   float = {
---     enable = true,
---     open_win_config = function()
---       local window_w = vim.opt.columns:get()
---       local window_h = vim.opt.lines:get() - vim.opt.cmdheight:get() - 5
---       local window_w_int = math.floor(window_w)
---       local window_h_int = math.floor(window_h)
---       return {
---         border = 'rounded',
---         relative = 'editor',
---         row = 1,
---         col = 1,
---         width = window_w_int,
---         height = window_h_int,
---       }
---     end
---   },
--- }
 
 -- Keybindings
 lvim.keys.normal_mode["<S-h>"] = ":bprev<cr>"
@@ -82,7 +106,6 @@ lvim.builtin.which_key.mappings["td"] = { ":tabclose<cr>", "Close tab", mode = {
 lvim.builtin.which_key.mappings["v?"] = { ":sp<cr>", "Split horizontal", mode = { "n" } }
 lvim.builtin.which_key.mappings["v/"] = { ":vsp<cr>", "Split vertical", mode = { "n" } }
 
-
 lvim.builtin.which_key.mappings["ff"] = {
   function()
     require("lvim.core.telescope.custom-finders").find_project_files { previewer = false }
@@ -91,6 +114,12 @@ lvim.builtin.which_key.mappings["ff"] = {
 }
 lvim.builtin.which_key.mappings["fn"] = { ":new<cr>", "New file" }
 
+lvim.builtin.which_key.mappings["aa"] = { ":AI ", "AI complete text" }
+lvim.builtin.which_key.mappings["ae"] = { ":AIEdit ", "AI edit text" }
+lvim.builtin.which_key.mappings["ac"] = { ":AIChat ", "AI chat" }
+lvim.builtin.which_key.mappings["ar"] = { ":AIRedo<cr>", "Redo last AI command" }
+
+-- Git stuff!
 lvim.builtin.which_key.mappings["gO"] = {
   ":GitOpen<cr>",
   "Open file in github/gitlab",
