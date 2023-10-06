@@ -3,9 +3,9 @@
   email = sethetter@gmail.com
 [core]
   excludesfile = ~/.gitignore
-  pager = delta --light
+  pager = delta --light --side-by-side
 [interactive]
-  diffFilter = delta --light --color-only
+  diffFilter = delta --side-by-side --light --color-only
 [delta]
   features = line-numbers decorations
   syntax-theme = Solarized (light)
