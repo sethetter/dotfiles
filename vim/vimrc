@@ -2,19 +2,42 @@ if &compatible
   set nocompatible
 endif
 
-filetype plugin indent on
+nnoremap ; :
+
 syntax on
+filetype plugin indent on
+runtime macros/matchit.vim
+
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
+set autoindent
+set expandtab
 
 set relativenumber
 set number
-set shiftwidth=2
-set tabstop=2
-set expandtab
+set ruler
+set showcmd
+
+set showmatch
 set hidden
 set nowrap
 
-if &filetype == "" || &filetype == "markdown" || &filetype == "text"
-  set wrap
-  set linebreak
-  set nolist
-endif
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+set esckeys " allows function keys to be recognized in insert mode
+set ttimeoutlen=20
+set timeoutlen=1000
+
+augroup languages
+  autocmd!
+  autocmd FileType markdown,text set wrap linebreak nolist
+augroup END
+" if &filetype == "" || &filetype == "markdown" || &filetype == "text"
+"   set wrap
+"   set linebreak
+"   set nolist
+" endif
