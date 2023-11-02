@@ -44,7 +44,7 @@
     "references": false,
     "runtest": false
   },
-  "workbench.editor.showTabs": true,
+  "workbench.editor.showTabs": "multiple",
   "gitlens.remotes": [
     {
       "domain": "github.cms.gov",
@@ -191,8 +191,8 @@
   ],
   "typescript.tsserver.maxTsServerMemory": 8072,
   "editor.formatOnSave": true,
-  "workbench.activityBar.visible": false,
   "deno.cacheOnSave": true,
   "telemetry.telemetryLevel": "off",
-  "gitlens.telemetry.enabled": false
+  "gitlens.telemetry.enabled": false,
+  "workbench.activityBar.location": "hidden"
 }
