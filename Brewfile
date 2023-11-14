@@ -1,5 +1,6 @@
 tap "cjbassi/ytop"
 tap "filosottile/musl-cross"
+tap "mike-engel/jwt-cli"
 tap "github/gh"
 tap "hashicorp/tap"
 tap "heroku/brew"
