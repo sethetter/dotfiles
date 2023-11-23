@@ -86,25 +86,46 @@ vim.g.loaded_netrwPlugin = 1
 ----------------------------
 
 -- nvimtree
-lvim.builtin.nvimtree.setup.update_cwd = false
 lvim.builtin.nvimtree.setup.actions.use_system_clipboard = false
-lvim.builtin.nvimtree.setup.view.float.enable = true
 lvim.builtin.nvimtree.setup.view.adaptive_size = true
+lvim.builtin.nvimtree.setup.view.width = { min = 40 }
+lvim.builtin.nvimtree.setup.prefer_startup_root = true
+lvim.builtin.nvimtree.setup.on_attach = function(bufnr)
+  local nvimtree = require('nvim-tree.api')
+  nvimtree.config.mappings.default_on_attach(bufnr)
+  vim.keymap.del('n', '<C-e>', { buffer = bufnr })
+end
+-- lvim.builtin.nvimtree.setup.view.mappings.list_extend = {
+--   { key = "<C-E>", action = "" },
+-- }
+-- lvim.builtin.nvimtree.setup.view.width = 40
+-- TODO: These get ignore because lunarvim sets them based on lvim.builtin.project.active == true
+-- lvim.builtin.nvimtree.setup.update_cwd = false
+-- lvim.builtin.nvimtree.setup.update_focused_file.update_cwd = false
 
 -- Keybindings
+--------------------------------------------------
+
+-- Buffer cycling
 lvim.keys.normal_mode["<S-h>"] = ":bprev<cr>"
 lvim.keys.normal_mode["<S-l>"] = ":bnext<cr>"
+
+-- Tab management
 lvim.keys.normal_mode["<C-n>"] = ":tabnext<cr>"
 lvim.keys.normal_mode["<C-p>"] = ":tabprev<cr>"
--- S-k shows hover info, can't use here.
-
-lvim.builtin.which_key.mappings["E"] = { ":e .<cr>", "File explorer", mode = { "n" } }
-
 lvim.builtin.which_key.mappings["tn"] = { ":tabnew<cr>", "New tab", mode = { "n" } }
 lvim.builtin.which_key.mappings["td"] = { ":tabclose<cr>", "Close tab", mode = { "n" } }
 
+-- Horizontal scrolling
+lvim.keys.normal_mode["<M-h>"] = "3zh"
+lvim.keys.normal_mode["<M-l>"] = "3zl"
+
+-- Splits
 lvim.builtin.which_key.mappings["v?"] = { ":sp<cr>", "Split horizontal", mode = { "n" } }
 lvim.builtin.which_key.mappings["v/"] = { ":vsp<cr>", "Split vertical", mode = { "n" } }
+
+-- New file
+lvim.builtin.which_key.mappings["fn"] = { ":new<cr>", "New file" }
 
 lvim.builtin.which_key.mappings["ff"] = {
   function()
@@ -112,8 +133,8 @@ lvim.builtin.which_key.mappings["ff"] = {
   end,
   "Find File",
 }
-lvim.builtin.which_key.mappings["fn"] = { ":new<cr>", "New file" }
 
+-- AI stuff
 lvim.builtin.which_key.mappings["aa"] = { ":AI ", "AI complete text" }
 lvim.builtin.which_key.mappings["ae"] = { ":AIEdit ", "AI edit text" }
 lvim.builtin.which_key.mappings["ac"] = { ":AIChat ", "AI chat" }
@@ -153,6 +174,7 @@ lvim.builtin.which_key.mappings["GD"] = {
 
 -- Filetype based settings
 function SetLineWrapForTextFiles(opts)
+  -- Wrap lines for markdown and text files, or unset filetypes
   local ft = vim.bo[opts.buf].filetype
   if ft == "" or ft == "markdown" or ft == "text" then
     vim.wo.wrap = true
