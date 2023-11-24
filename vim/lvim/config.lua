@@ -87,10 +87,15 @@ lvim.plugins = {
 }
 
 
+----------------------------
 -- Display
+----------------------------
+
 lvim.colorscheme = "solarized-flat"
-vim.opt.fillchars:append { diff = "╱" }
 vim.opt.background = "light"
+
+---@diagnostic disable-next-line: param-type-mismatch
+vim.opt.fillchars:append { diff = "╱" }
 
 -- Opts
 lvim.format_on_save.enabled = true
@@ -125,8 +130,9 @@ end
 -- lvim.builtin.nvimtree.setup.update_cwd = false
 -- lvim.builtin.nvimtree.setup.update_focused_file.update_cwd = false
 
+----------------------------
 -- Keybindings
---------------------------------------------------
+----------------------------
 
 -- Buffer cycling
 lvim.keys.normal_mode["<S-h>"] = ":bprev<cr>"
@@ -139,24 +145,17 @@ lvim.builtin.which_key.mappings["tn"] = { ":tabnew<cr>", "New tab", mode = { "n"
 lvim.builtin.which_key.mappings["td"] = { ":tabclose<cr>", "Close tab", mode = { "n" } }
 
 -- Horizontal scrolling
-lvim.keys.normal_mode["<M-h>"] = "3zh"
-lvim.keys.normal_mode["<M-l>"] = "3zl"
+-- TODO: these don't work! I'd like C-S-l/h, but something doesn't work quite right with shift on mac
+-- lvim.keys.normal_mode["<M-h>"] = "3zh"
+-- lvim.keys.normal_mode["<M-l>"] = "3zl"
 
--- Splits
 lvim.builtin.which_key.mappings["v?"] = { ":sp<cr>", "Split horizontal", mode = { "n" } }
 lvim.builtin.which_key.mappings["v/"] = { ":vsp<cr>", "Split vertical", mode = { "n" } }
 
--- New file
+lvim.builtin.which_key.mappings["QQ"] = { ":qa<cr>", "Quit all" }
+lvim.builtin.which_key.mappings["QF"] = { ":qa!<cr>", "Quit all (force)" }
 lvim.builtin.which_key.mappings["fn"] = { ":new<cr>", "New file" }
 
-lvim.builtin.which_key.mappings["ff"] = {
-  function()
-    require("lvim.core.telescope.custom-finders").find_project_files { previewer = false }
-  end,
-  "Find File",
-}
-
--- AI stuff
 lvim.builtin.which_key.mappings["aa"] = { ":AI ", "AI complete text" }
 lvim.builtin.which_key.mappings["ae"] = { ":AIEdit ", "AI edit text" }
 lvim.builtin.which_key.mappings["ac"] = { ":AIChat ", "AI chat" }
