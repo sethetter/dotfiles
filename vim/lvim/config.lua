@@ -3,9 +3,6 @@
 -- Forum: https://www.reddit.com/r/lunarvim/
 -- Discord: https://discord.com/invite/Xb9B4Ny
 
--- Disabled core lvim plugins
-lvim.builtin.alpha.active = false
-
 -- Plugins
 lvim.plugins = {
   {
@@ -304,4 +301,3 @@ function DumpTable(table, depth)
     end
   end
 end
-
