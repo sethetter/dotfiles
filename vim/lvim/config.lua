@@ -50,6 +50,28 @@ lvim.plugins = {
   {
     "tpope/vim-surround",
   },
+  -- Ensures LSP functions are utilized when performing filesystem operations
+  -- on your codebase. e.g., updating imports after moving or renaming a file.
+  {
+    "antosha417/nvim-lsp-file-operations",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "kyazdani42/nvim-tree.lua",
+    },
+    config = function()
+      require("lsp-file-operations").setup()
+    end,
+  },
+  {
+    "ThePrimeagen/refactoring.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    config = function()
+      require("refactoring").setup()
+    end,
+  },
   {
     "rickhowe/diffchar.vim",
   },
