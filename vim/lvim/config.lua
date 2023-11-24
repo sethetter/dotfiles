@@ -84,6 +84,12 @@ lvim.plugins = {
     "sindrets/diffview.nvim",
     event = "BufRead"
   },
+  {
+    "simrat39/symbols-outline.nvim",
+    config = function()
+      require('symbols-outline').setup()
+    end
+  }
 }
 
 
@@ -117,15 +123,12 @@ lvim.builtin.nvimtree.setup.actions.use_system_clipboard = false
 lvim.builtin.nvimtree.setup.view.adaptive_size = true
 lvim.builtin.nvimtree.setup.view.width = { min = 40 }
 lvim.builtin.nvimtree.setup.prefer_startup_root = true
+
 lvim.builtin.nvimtree.setup.on_attach = function(bufnr)
   local nvimtree = require('nvim-tree.api')
   nvimtree.config.mappings.default_on_attach(bufnr)
   vim.keymap.del('n', '<C-e>', { buffer = bufnr })
 end
--- lvim.builtin.nvimtree.setup.view.mappings.list_extend = {
---   { key = "<C-E>", action = "" },
--- }
--- lvim.builtin.nvimtree.setup.view.width = 40
 -- TODO: These get ignore because lunarvim sets them based on lvim.builtin.project.active == true
 -- lvim.builtin.nvimtree.setup.update_cwd = false
 -- lvim.builtin.nvimtree.setup.update_focused_file.update_cwd = false
@@ -160,6 +163,8 @@ lvim.builtin.which_key.mappings["aa"] = { ":AI ", "AI complete text" }
 lvim.builtin.which_key.mappings["ae"] = { ":AIEdit ", "AI edit text" }
 lvim.builtin.which_key.mappings["ac"] = { ":AIChat ", "AI chat" }
 lvim.builtin.which_key.mappings["ar"] = { ":AIRedo<cr>", "Redo last AI command" }
+
+lvim.builtin.which_key.mappings["lO"] = { ":SymbolsOutline<cr>", "Toggle symbol outline" }
 
 -- Git stuff!
 lvim.builtin.which_key.mappings["gO"] = {
@@ -299,3 +304,4 @@ function DumpTable(table, depth)
     end
   end
 end
+
