@@ -152,8 +152,8 @@ lvim.builtin.which_key.mappings["td"] = { ":tabclose<cr>", "Close tab", mode = {
 lvim.builtin.which_key.mappings["v?"] = { ":sp<cr>", "Split horizontal", mode = { "n" } }
 lvim.builtin.which_key.mappings["v/"] = { ":vsp<cr>", "Split vertical", mode = { "n" } }
 
-lvim.builtin.which_key.mappings["QQ"] = { ":qa<cr>", "Quit all" }
-lvim.builtin.which_key.mappings["QF"] = { ":qa!<cr>", "Quit all (force)" }
+lvim.builtin.which_key.mappings["Q"] = { ":qa<cr>", "Quit all" }
+lvim.builtin.which_key.mappings["X"] = { ":qa!<cr>", "Quit all (force)" }
 lvim.builtin.which_key.mappings["fn"] = { ":new<cr>", "New file" }
 
 lvim.builtin.which_key.mappings["aa"] = { ":AI ", "AI complete text" }
