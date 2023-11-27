@@ -118,7 +118,7 @@ vim.g.loaded_netrwPlugin = 1
 -- nvimtree
 lvim.builtin.nvimtree.setup.actions.use_system_clipboard = false
 lvim.builtin.nvimtree.setup.view.adaptive_size = true
-lvim.builtin.nvimtree.setup.view.width = { min = 40 }
+lvim.builtin.nvimtree.setup.view.width = { min = 40, max = 50 }
 lvim.builtin.nvimtree.setup.prefer_startup_root = true
 
 lvim.builtin.nvimtree.setup.on_attach = function(bufnr)
