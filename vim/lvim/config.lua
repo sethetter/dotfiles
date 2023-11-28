@@ -6,7 +6,8 @@
 -- Plugins
 lvim.plugins = {
   {
-    "ishan9299/nvim-solarized-lua",
+    -- "ishan9299/nvim-solarized-lua",
+    "overcache/NeoSolarized",
   },
   {
     "zbirenbaum/copilot-cmp",
@@ -97,8 +98,11 @@ lvim.plugins = {
 -- Display
 ----------------------------
 
-lvim.colorscheme = "solarized-flat"
+vim.opt.termguicolors = true
 vim.opt.background = "light"
+-- lvim.colorscheme = "solarized-flat"
+lvim.colorscheme = "NeoSolarized"
+lvim.builtin.lualine.options.theme = 'solarized_light'
 
 ---@diagnostic disable-next-line: param-type-mismatch
 vim.opt.fillchars:append { diff = "╱" }
