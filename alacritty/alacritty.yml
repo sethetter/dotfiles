@@ -1,0 +1,19 @@
+window:
+  decorations: none
+  padding:
+    x: 2
+    y: 2
+
+font:
+  size: 15
+  normal:
+    family: "Iosevka NFP"
+    style: Regular
+
+draw_bold_text_with_bright_colors: true
+
+bell:
+  duration: 0
+
+import:
+  - ~/.config/alacritty/themes/themes/everforest_light.yaml

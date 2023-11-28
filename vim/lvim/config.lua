@@ -6,8 +6,7 @@
 -- Plugins
 lvim.plugins = {
   {
-    -- "ishan9299/nvim-solarized-lua",
-    "overcache/NeoSolarized",
+    "sainnhe/everforest",
   },
   {
     "zbirenbaum/copilot-cmp",
@@ -100,8 +99,7 @@ lvim.plugins = {
 
 vim.opt.termguicolors = true
 vim.opt.background = "light"
--- lvim.colorscheme = "solarized-flat"
-lvim.colorscheme = "NeoSolarized"
+lvim.colorscheme = "everforest"
 lvim.builtin.lualine.options.theme = 'solarized_light'
 
 ---@diagnostic disable-next-line: param-type-mismatch
@@ -161,7 +159,7 @@ lvim.builtin.which_key.mappings["v/"] = { ":vsp<cr>", "Split vertical", mode = {
 
 lvim.builtin.which_key.mappings["Q"] = { ":qa<cr>", "Quit all" }
 lvim.builtin.which_key.mappings["X"] = { ":qa!<cr>", "Quit all (force)" }
-lvim.builtin.which_key.mappings["fn"] = { ":new<cr>", "New file" }
+-- lvim.builtin.which_key.mappings["fn"] = { ":new<cr>", "New file" }
 
 lvim.builtin.which_key.mappings["aa"] = { ":AI ", "AI complete text" }
 lvim.builtin.which_key.mappings["ae"] = { ":AIEdit ", "AI edit text" }

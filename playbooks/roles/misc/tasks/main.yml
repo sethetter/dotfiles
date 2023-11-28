@@ -23,12 +23,18 @@
 
 - name: link-alacritty-config
   ansible.builtin.file:
-    src: "{{ dotfiles_dir }}/misc/alacritty.yml"
-    dest: "{{ home_dir }}/.alacritty.yml"
+    src: "{{ dotfiles_dir }}/alacritty/alacritty.yml"
+    dest: "{{ home_dir }}/.config/alacritty.yml"
     state: link
     force: true
 
-- name: link-alacritty-config
+- name: clone-alacritty-themes
+  ansible.builtin.git:
+    repo: https://github.com/alacritty/alacritty-theme
+    dest: "{{ home_dir }}/.config/alacritty/themes"
+    update: true
+
+- name: link-iterm-config
   ansible.builtin.file:
     src: "{{ dotfiles_dir }}/misc/iterm.json"
     dest: "{{ home_dir }}/Library/Application Support/iTerm2/DynamicProfiles/iterm.json"
