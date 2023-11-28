@@ -86,6 +86,9 @@ lvim.plugins = {
     config = function()
       require('symbols-outline').setup()
     end
+  },
+  {
+    "rhysd/conflict-marker.vim"
   }
 }
 
@@ -164,6 +167,18 @@ lvim.builtin.which_key.mappings["ar"] = { ":AIRedo<cr>", "Redo last AI command" 
 lvim.builtin.which_key.mappings["lO"] = { ":SymbolsOutline<cr>", "Toggle symbol outline" }
 
 -- Git stuff!
+lvim.builtin.which_key.mappings["gh"] = {
+  ":DiffviewFileHistory %<cr>",
+  "View file history",
+  mode = { "n" },
+  silent = true,
+}
+lvim.builtin.which_key.mappings["gH"] = {
+  ":DiffviewFileHistory<cr>",
+  "View repo history",
+  mode = { "n" },
+  silent = true,
+}
 lvim.builtin.which_key.mappings["gO"] = {
   ":GitOpen<cr>",
   "Open file in github/gitlab",
