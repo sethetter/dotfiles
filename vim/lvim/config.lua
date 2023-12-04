@@ -102,6 +102,7 @@ vim.opt.background = "light"
 lvim.colorscheme = "everforest"
 lvim.builtin.lualine.options.theme = 'solarized_light'
 lvim.builtin.lualine.options.section_separators = { left = '🭀', right = '🭦' }
+lvim.builtin.bufferline.options.separator_style = "slope"
 
 ---@diagnostic disable-next-line: param-type-mismatch
 vim.opt.fillchars:append { diff = "╱" }
