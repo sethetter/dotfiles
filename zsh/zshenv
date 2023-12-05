@@ -8,6 +8,7 @@ export DOTFILES_DIR=$HOME/dotfiles
 alias c="clear"
 alias tma="tmux a"
 alias dc="docker compose"
+alias dt="deno task"
 alias tf="terraform"
 alias k="kubectl"
 alias eks="eksctl"
