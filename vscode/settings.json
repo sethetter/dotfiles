@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Solarized Light",
+  "workbench.colorTheme": "Everforest Light",
   "editor.fontFamily": "'Iosevka Nerd Font', 'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.tabSize": 2,
   "editor.cursorStyle": "block",
@@ -131,7 +131,7 @@
   "workbench.iconTheme": "easy-icons",
   "window.autoDetectColorScheme": true,
   "yaml.schemas": {
-    "file:///Users/sethetter/.vscode/extensions/atlassian.atlascode-3.0.6/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///Users/sethetter/.vscode/extensions/atlassian.atlascode-3.0.9/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
   "atlascode.jira.enabled": true,
   "atlascode.bitbucket.enabled": false,
@@ -194,5 +194,6 @@
   "deno.cacheOnSave": true,
   "telemetry.telemetryLevel": "off",
   "gitlens.telemetry.enabled": false,
-  "workbench.activityBar.location": "hidden"
+  "workbench.activityBar.location": "hidden",
+  "everforest.lightSelection": "green"
 }
