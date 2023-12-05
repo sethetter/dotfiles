@@ -211,7 +211,6 @@ lvim.builtin.which_key.mappings["GD"] = {
   ":DiffviewOpen ",
   "Diff all files against provided target",
   mode = { "n" },
-  silent = true,
 }
 
 -- Filetype based settings
