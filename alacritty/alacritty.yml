@@ -1,6 +1,6 @@
 window:
   decorations: none
-  startup_mode: Fullscreen
+  # startup_mode: Fullscreen
   padding:
     x: 2
     y: 2
