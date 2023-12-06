@@ -217,7 +217,7 @@ lvim.builtin.which_key.mappings["GD"] = {
 function SetLineWrapForTextFiles(opts)
   -- Wrap lines for markdown and text files, or unset filetypes
   local ft = vim.bo[opts.buf].filetype
-  if ft == "" or ft == "markdown" or ft == "text" then
+  if ft == "markdown" or ft == "text" then
     vim.wo.wrap = true
     vim.wo.linebreak = true
     vim.wo.list = false
