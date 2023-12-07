@@ -2,8 +2,8 @@ window:
   decorations: none
   # startup_mode: Fullscreen
   padding:
-    x: 2
     y: 2
+    x: 0
 
 font:
   size: 15
