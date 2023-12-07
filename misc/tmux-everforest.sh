@@ -90,7 +90,7 @@ main() {
   # --------=== Statusline
 
   # These variables are the defaults so that the setw and set calls are easier to parse.
-  readonly show_directory="#[fg=$thm_aqua,bg=$thm_bg0,nobold,nounderscore,noitalics]🭦#[fg=$thm_bg0,bg=$thm_aqua,nobold,nounderscore,noitalics]     #[fg=$thm_fg,bg=$thm_bg2] #{b:pane_current_path} #{?client_prefix,#[fg=$thm_red]"
+  readonly show_directory="#[fg=$thm_green,bg=$thm_bg0,nobold,nounderscore,noitalics]🭦#[fg=$thm_bg0,bg=$thm_green,nobold,nounderscore,noitalics]     #[fg=$thm_fg,bg=$thm_bg2] #{b:pane_current_path} #{?client_prefix,#[fg=$thm_red]"
   readonly show_session="#[bg=$thm_green,fg=$thm_bg0] 🤘 #S  #[fg=$thm_green,bg=$thm_bg0]🭀"
   readonly show_window_in_window_status="#[fg=$thm_grey1,bg=$thm_bg0] #W #[fg=$thm_bg0,bg=$thm_blue] #I #[fg=$thm_blue,bg=$thm_bg0]🭀#[fg=$thm_fg,bg=$thm_bg0,nobold,nounderscore,noitalics]"
   readonly show_window_in_window_status_current="#[fg=$thm_fg,bg=$thm_bg0] #W #[fg=$thm_bg0,bg=$thm_orange] #I #[fg=$thm_orange,bg=$thm_bg0]🭀#[fg=$thm_fg,bg=$thm_bg0,nobold,nounderscore,noitalics]"
