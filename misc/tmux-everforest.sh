@@ -68,7 +68,7 @@ main() {
   thm_statusline2="#708089"
   thm_statusline3="#e66868"
 
-  thm_primary_bg=$thm_bg1
+  thm_primary_bg=$thm_bg2
 
   set status "on"
   set status-bg "${thm_primary_bg}"
