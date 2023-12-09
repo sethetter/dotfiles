@@ -68,8 +68,10 @@ main() {
   thm_statusline2="#708089"
   thm_statusline3="#e66868"
 
+  thm_primary_bg=$thm_bg1
+
   set status "on"
-  set status-bg "${thm_bg0}"
+  set status-bg "${thm_primary_bg}"
   set status-justify "left"
   set status-left-length "100"
   set status-right-length "100"
@@ -90,10 +92,10 @@ main() {
   # --------=== Statusline
 
   # These variables are the defaults so that the setw and set calls are easier to parse.
-  readonly show_directory="#[fg=$thm_green,bg=$thm_bg0,nobold,nounderscore,noitalics]🭦#[fg=$thm_bg0,bg=$thm_green,nobold,nounderscore,noitalics]     #[fg=$thm_fg,bg=$thm_bg2] #{b:pane_current_path} #{?client_prefix,#[fg=$thm_red]"
-  readonly show_session="#[bg=$thm_green,fg=$thm_bg0] 🤘 #S  #[fg=$thm_green,bg=$thm_bg0]🭀"
-  readonly show_window_in_window_status="#[fg=$thm_grey1,bg=$thm_bg0] #W #[fg=$thm_bg0,bg=$thm_blue] #I #[fg=$thm_blue,bg=$thm_bg0]🭀#[fg=$thm_fg,bg=$thm_bg0,nobold,nounderscore,noitalics]"
-  readonly show_window_in_window_status_current="#[fg=$thm_fg,bg=$thm_bg0] #W #[fg=$thm_bg0,bg=$thm_orange] #I #[fg=$thm_orange,bg=$thm_bg0]🭀#[fg=$thm_fg,bg=$thm_bg0,nobold,nounderscore,noitalics]"
+  readonly show_directory="#[fg=$thm_green,bg=$thm_primary_bg,nobold,nounderscore,noitalics]🭦#[fg=$thm_bg0,bg=$thm_green,nobold,nounderscore,noitalics]     #[fg=$thm_fg,bg=$thm_bg2] #{b:pane_current_path} #{?client_prefix,#[fg=$thm_red]"
+  readonly show_session="#[bg=$thm_green,fg=$thm_bg0] 🤘 #S  #[fg=$thm_green,bg=$thm_primary_bg]🭀"
+  readonly show_window_in_window_status="#[fg=$thm_grey1,bg=$thm_primary_bg] #W #[fg=$thm_bg0,bg=$thm_blue] #I #[fg=$thm_blue,bg=$thm_primary_bg]🭀#[fg=$thm_fg,bg=$thm_primary_bg,nobold,nounderscore,noitalics]"
+  readonly show_window_in_window_status_current="#[fg=$thm_fg,bg=$thm_primary_bg] #W #[fg=$thm_bg0,bg=$thm_orange] #I #[fg=$thm_orange,bg=$thm_primary_bg]🭀#[fg=$thm_fg,bg=$thm_primary_bg,nobold,nounderscore,noitalics]"
 
   local left_column1=$show_session
   local right_column1=$show_directory
