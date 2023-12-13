@@ -144,6 +144,7 @@ end
 -- Buffer cycling
 lvim.keys.normal_mode["<S-h>"] = ":bprev<cr>"
 lvim.keys.normal_mode["<S-l>"] = ":bnext<cr>"
+lvim.builtin.which_key.mappings["CC"] = { ":bufdo bd<cr>", "Close all buffers", mode = { "n" } }
 
 -- Tab management
 lvim.keys.normal_mode["<C-n>"] = ":tabnext<cr>"
