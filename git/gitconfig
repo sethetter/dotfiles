@@ -5,10 +5,10 @@
   excludesfile = ~/.gitignore
   pager = delta --light --side-by-side
 [interactive]
-  diffFilter = delta --side-by-side --light --color-only
+  diffFilter = delta --light --side-by-side --color-only
 [delta]
   features = line-numbers decorations
-  syntax-theme = Solarized (light)
+  syntax-theme = ansi
   whitespace-error-style = 22 reverse
 [merge]
   tool = vimdiff
