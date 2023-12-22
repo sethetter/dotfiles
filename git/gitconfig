@@ -1,6 +1,7 @@
 [user]
   name = Seth Etter
   email = mail@sethetter.com
+  signingkey = 1F869C924AF2685E
 [core]
   excludesfile = ~/.gitignore
   pager = delta --light --side-by-side
@@ -32,5 +33,9 @@
   autosetuprebase = always
 [pull]
   rebase = true
+[gpg]
+	program = gpg
+[commit]
+  gpgsign = true
 [includeIf "gitdir:~/code/zapier/**"]
   path = ~/code/zapier/gitconfig
