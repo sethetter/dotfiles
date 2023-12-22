@@ -1,7 +1,7 @@
 [user]
   name = Seth Etter
   email = mail@sethetter.com
-  signingkey = /Users/sethetter/.ssh/git_ed25519.pub
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL3jigIrPb+1u0V8pJk4m41hP/WBgAm7gei6Edyr9vca
 [core]
   excludesfile = /Users/sethetter/.gitignore
   pager = delta --light --side-by-side
@@ -23,6 +23,8 @@
   gpgsign = true
 [gpg]
   format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 [color]
   ui = auto
 [github]
