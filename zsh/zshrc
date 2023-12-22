@@ -1,6 +1,9 @@
 # homebrew
 [ -f "/opt/homebrew/bin/brew" ] && eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# gpg
+export GPG_TTY=$(tty)
+
 #oh-my-zsh
 plugins=(git vi-mode fzf direnv)
 ZSH_THEME="robbyrussell"
