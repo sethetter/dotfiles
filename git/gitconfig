@@ -1,6 +1,6 @@
 [user]
   name = Seth Etter
-  email = sethetter@gmail.com
+  email = mail@sethetter.com
 [core]
   excludesfile = ~/.gitignore
   pager = delta --light --side-by-side
@@ -26,13 +26,11 @@
 [push]
   default = simple
   autoSetupRemote = true
-[alias]
-  pushf = push --force-with-lease
 [init]
   defaultBranch = main
+[branch]
+  autosetuprebase = always
+[pull]
+  rebase = true
 [includeIf "gitdir:~/code/zapier/**"]
   path = ~/code/zapier/gitconfig
-[branch]
-	autosetuprebase = always
-[pull]
-	rebase = true
