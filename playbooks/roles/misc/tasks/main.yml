@@ -59,3 +59,21 @@
     dest: "{{ home_dir }}/.local/bin/git-open"
     state: link
     force: true
+
+- name: create-k9s-config-directory
+  file:
+    path: "{{ home_dir }}/.config/k9s/skins"
+    state: directory
+
+- name: download-k9s-skin
+  ansible.builtin.get_url:
+    url: https://raw.githubusercontent.com/derailed/k9s/master/skins/solarized_light.yaml
+    dest: "{{ home_dir }}/Library/Application Support/k9s/skins/"
+    force: true
+
+- name: link-k9s-config
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/misc/k9s.yaml"
+    dest: "{{ home_dir }}/Library/Application Support/k9s/config.yaml"
+    state: link
+    force: true
