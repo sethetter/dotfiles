@@ -195,5 +195,6 @@
   "telemetry.telemetryLevel": "off",
   "gitlens.telemetry.enabled": false,
   "workbench.activityBar.location": "hidden",
-  "everforest.lightSelection": "green"
+  "terminal.integrated.minimumContrastRatio": 1,
+  "everforest.lightContrast": "hard"
 }
