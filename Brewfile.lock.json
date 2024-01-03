@@ -2911,6 +2911,20 @@
             }
           }
         }
+      },
+      "parallel": {
+        "version": "20231222",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "all": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/parallel/blobs/sha256:d7c7649c276c0346f9561e820bb08e2e73ab3b79e0995a4048688dbd581f1d80",
+              "sha256": "d7c7649c276c0346f9561e820bb08e2e73ab3b79e0995a4048688dbd581f1d80"
+            }
+          }
+        }
       }
     },
     "cask": {
