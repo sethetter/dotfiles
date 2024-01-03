@@ -17,20 +17,29 @@ function M.setup()
   local import_map = ""
 
   for _, file in ipairs(deno_files) do
-    local candidates = vim.fn.glob(root .. '/**/' .. file, false, true)
-
-    for _, candidate in ipairs(candidates) do
-      if vim.fn.filereadable(candidate) == 1 then
-        is_deno = true
-        import_map = candidate
-        break
-      end
-    end
-
-    if is_deno then
+    local filepath = root .. '/' .. file
+    if file_exists(filepath) then
+      is_deno = true
+      import_map = filepath
       break
     end
   end
+
+  -- This will look in every folder from the file path to the project root,
+  -- but in larger projects it can make opening a file _very_ slow.
+  --
+  -- local candidates = vim.fn.glob(root .. '/**/' .. file, false, true)
+  -- for _, candidate in ipairs(candidates) do
+  --   if vim.fn.filereadable(candidate) == 1 then
+  --     is_deno = true
+  --     import_map = candidate
+  --     break
+  --   end
+  -- end
+
+  -- if is_deno then
+  --   break
+  -- end
 
   if is_deno then
     require("lvim.lsp.manager").setup("denols", {
