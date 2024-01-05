@@ -67,7 +67,7 @@
 
 - name: download-k9s-skin
   ansible.builtin.get_url:
-    url: https://raw.githubusercontent.com/derailed/k9s/master/skins/solarized_light.yaml
+    url: https://raw.githubusercontent.com/derailed/k9s/master/skins/dracula.yaml
     dest: "{{ home_dir }}/Library/Application Support/k9s/skins/"
     force: true
 
