@@ -98,9 +98,11 @@ lvim.plugins = {
 ----------------------------
 
 vim.opt.termguicolors = true
-vim.opt.background = "light"
 lvim.colorscheme = "everforest"
-lvim.builtin.lualine.options.theme = 'solarized_light'
+-- vim.opt.background = "light"
+-- lvim.builtin.lualine.options.theme = 'solarized_light'
+vim.opt.background = "dark"
+lvim.builtin.lualine.options.theme = 'everforest'
 lvim.builtin.lualine.options.section_separators = { left = '🭀', right = '🭦' }
 lvim.builtin.bufferline.options.separator_style = "slope"
 

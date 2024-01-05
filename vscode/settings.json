@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Everforest Light",
+  "workbench.colorTheme": "Everforest Dark",
   "editor.fontFamily": "'Iosevka Nerd Font', 'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.tabSize": 2,
   "editor.cursorStyle": "block",
@@ -127,7 +127,7 @@
     "editor.tabSize": 4
   },
   "git.openRepositoryInParentFolders": "never",
-  "workbench.preferredDarkColorTheme": "Solarized Dark",
+  "workbench.preferredDarkColorTheme": "Everforest Dark",
   "workbench.iconTheme": "easy-icons",
   "window.autoDetectColorScheme": true,
   "yaml.schemas": {
@@ -196,5 +196,6 @@
   "gitlens.telemetry.enabled": false,
   "workbench.activityBar.location": "hidden",
   "terminal.integrated.minimumContrastRatio": 1,
-  "everforest.lightContrast": "hard"
+  "everforest.lightContrast": "hard",
+  "workbench.preferredLightColorTheme": "Everforest Light"
 }
