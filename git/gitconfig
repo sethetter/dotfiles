@@ -4,9 +4,9 @@
   signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL3jigIrPb+1u0V8pJk4m41hP/WBgAm7gei6Edyr9vca
 [core]
   excludesfile = /Users/sethetter/.gitignore
-  pager = delta --light --side-by-side
+  pager = delta --side-by-side
 [interactive]
-  diffFilter = delta --light --side-by-side --color-only
+  diffFilter = delta --side-by-side --color-only
 [delta]
   features = line-numbers decorations
   syntax-theme = ansi
