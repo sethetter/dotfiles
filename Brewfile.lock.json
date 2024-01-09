@@ -2815,45 +2815,45 @@
         }
       },
       "k9s": {
-        "version": "0.30.8",
+        "version": "0.31.1",
         "bottle": {
           "rebuild": 0,
           "root_url": "https://ghcr.io/v2/homebrew/core",
           "files": {
             "arm64_sonoma": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:5b52ec069ae7b3c1f6674a2d263c17e7eb14ab0834d3ba958a53e80e0ea5c062",
-              "sha256": "5b52ec069ae7b3c1f6674a2d263c17e7eb14ab0834d3ba958a53e80e0ea5c062"
+              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:c8c6db7d5dc9b6cbf8593790d1778d660811fc12cc8c1a0678f987804ba5d387",
+              "sha256": "c8c6db7d5dc9b6cbf8593790d1778d660811fc12cc8c1a0678f987804ba5d387"
             },
             "arm64_ventura": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:2f6d996fd19ae895a31e48f00ca070d4e9ac82cfbb876e5184ac83c788f45fa6",
-              "sha256": "2f6d996fd19ae895a31e48f00ca070d4e9ac82cfbb876e5184ac83c788f45fa6"
+              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:2e8813879115490c159ec173b4c11d8ecf64284b1919c3d17278d75419cb63bf",
+              "sha256": "2e8813879115490c159ec173b4c11d8ecf64284b1919c3d17278d75419cb63bf"
             },
             "arm64_monterey": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:d7dd5dc97f2a61c7dc20bdd032ceede245c23ffb48294a21043e8863f5aac9a4",
-              "sha256": "d7dd5dc97f2a61c7dc20bdd032ceede245c23ffb48294a21043e8863f5aac9a4"
+              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:607db711cd0fb075e5a9665beb215632a6001f9682093ff2c579893ab3bc0400",
+              "sha256": "607db711cd0fb075e5a9665beb215632a6001f9682093ff2c579893ab3bc0400"
             },
             "sonoma": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:5182f4bfe82190004a0298bec7715e5c71ba92c5fb94cef76719c184ae7adebe",
-              "sha256": "5182f4bfe82190004a0298bec7715e5c71ba92c5fb94cef76719c184ae7adebe"
+              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:d5b2673f829641d2919e8eec224d6b0d047ddae5c229827771005d539a4ab6ea",
+              "sha256": "d5b2673f829641d2919e8eec224d6b0d047ddae5c229827771005d539a4ab6ea"
             },
             "ventura": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:984af1214cbac147b78fb9276069bca20fcf018c00cdf73da79578bcde2090ce",
-              "sha256": "984af1214cbac147b78fb9276069bca20fcf018c00cdf73da79578bcde2090ce"
+              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:6c855cf7105dd23bcf221b761ab90737aca69703da2b363be08883a61aed7578",
+              "sha256": "6c855cf7105dd23bcf221b761ab90737aca69703da2b363be08883a61aed7578"
             },
             "monterey": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:bc740d34fc21b4fe3598b627cb731f3f166d52e24b54c8df48d1e76a82d6f1f2",
-              "sha256": "bc740d34fc21b4fe3598b627cb731f3f166d52e24b54c8df48d1e76a82d6f1f2"
+              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:6ec9ea6242d33599099c14559eb051e080511f7dd873d0065f9d69b7f2781c40",
+              "sha256": "6ec9ea6242d33599099c14559eb051e080511f7dd873d0065f9d69b7f2781c40"
             },
             "x86_64_linux": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:3bffa6b02764cd5aca331667235e4720ffb278777c2f7c54d622f4547b47d306",
-              "sha256": "3bffa6b02764cd5aca331667235e4720ffb278777c2f7c54d622f4547b47d306"
+              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:ac0e7996ddca29282e552d75b8b471b7d3f9de1d842a788bc656f3a1cd17e34e",
+              "sha256": "ac0e7996ddca29282e552d75b8b471b7d3f9de1d842a788bc656f3a1cd17e34e"
             }
           }
         }
@@ -2977,7 +2977,7 @@
         }
       },
       "alacritty": {
-        "version": "0.13.0",
+        "version": "0.13.1",
         "options": {
           "full_name": "alacritty"
         }
@@ -3049,7 +3049,7 @@
         }
       },
       "signal": {
-        "version": "6.43.1",
+        "version": "6.43.2",
         "options": {
           "full_name": "signal"
         }
