@@ -1,6 +1,6 @@
 {
-  "accentColor": "#7a8c6e",
-  "baseFontSize": 12,
+  "accentColor": "#8aa1b7",
+  "baseFontSize": 16,
   "theme": "system",
   "cssTheme": "Everforest",
   "enabledCssSnippets": [
@@ -8,8 +8,6 @@
   ],
   "baseFontSizeAction": false,
   "monospaceFontFamily": "Iosevka NFP",
-  "textFontFamily": "Iosevka NFP",
-  "interfaceFontFamily": "Iosevka NFP",
   "showViewHeader": true,
   "nativeMenus": true
 }
