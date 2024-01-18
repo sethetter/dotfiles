@@ -5,7 +5,7 @@
   "vimMode": true,
   "emacsyKeys": false,
   "alwaysUpdateLinks": true,
-  "spellcheck": true,
+  "spellcheck": false,
   "defaultViewMode": "source",
   "useTab": false,
   "legacyEditor": false,
