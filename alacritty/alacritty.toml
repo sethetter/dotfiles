@@ -1,4 +1,4 @@
-import = ["~/.config/alacritty/themes/themes/everforest_dark.toml"]
+import = ["~/.config/alacritty/themes/themes/everforest_light.toml"]
 
 [window]
 decorations = "None"
