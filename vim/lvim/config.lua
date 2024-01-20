@@ -4,6 +4,8 @@
 -- Discord: https://discord.com/invite/Xb9B4Ny
 
 -- Plugins
+lvim.builtin.lir.active = false
+lvim.builtin.nvimtree.active = false
 lvim.plugins = {
   {
     "sainnhe/everforest",
@@ -45,6 +47,25 @@ lvim.plugins = {
     end
   },
   {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons",
+      "MunifTanjim/nui.nvim",
+      "s1n7ax/nvim-window-picker",
+    },
+    config = function()
+      require('neo-tree').setup({
+        window = {
+          position = "current"
+        },
+        filesystem = {
+        }
+      })
+    end
+  },
+  {
     "tpope/vim-surround",
   },
   -- Ensures LSP functions are utilized when performing filesystem operations
@@ -53,7 +74,7 @@ lvim.plugins = {
     "antosha417/nvim-lsp-file-operations",
     dependencies = {
       "nvim-lua/plenary.nvim",
-      "kyazdani42/nvim-tree.lua",
+      "nvim-neo-tree/neo-tree.nvim",
     },
     config = function()
       require("lsp-file-operations").setup()
@@ -82,9 +103,11 @@ lvim.plugins = {
     event = "BufRead"
   },
   {
-    "simrat39/symbols-outline.nvim",
+    "stevearc/aerial.nvim",
     config = function()
-      require('symbols-outline').setup()
+      require('aerial').setup({
+        filter_kind = false,
+      })
     end
   },
   {
@@ -127,27 +150,13 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 ----------------------------
--- Core plugins
-----------------------------
-
--- nvimtree
-lvim.builtin.nvimtree.setup.actions.use_system_clipboard = false
-lvim.builtin.nvimtree.setup.view.adaptive_size = true
-lvim.builtin.nvimtree.setup.view.width = { min = 40, max = 50 }
-lvim.builtin.nvimtree.setup.prefer_startup_root = true
-
-lvim.builtin.nvimtree.setup.on_attach = function(bufnr)
-  local nvimtree = require('nvim-tree.api')
-  nvimtree.config.mappings.default_on_attach(bufnr)
-  vim.keymap.del('n', '<C-e>', { buffer = bufnr })
-end
--- TODO: These get ignore because lunarvim sets them based on lvim.builtin.project.active == true
--- lvim.builtin.nvimtree.setup.update_cwd = false
--- lvim.builtin.nvimtree.setup.update_focused_file.update_cwd = false
-
-----------------------------
 -- Keybindings
 ----------------------------
+
+-- File navigation
+lvim.keys.normal_mode["\\"] = ":Neotree reveal<cr>"
+lvim.builtin.which_key.mappings["e"] = { ":Neotree toggle<cr>", "Toggle Neotree", mode = { "n" } }
+lvim.builtin.which_key.mappings["E"] = { ":Neotree position=current<cr>", "Toggle Neotree", mode = { "n" } }
 
 -- Buffer cycling
 lvim.keys.normal_mode["<S-h>"] = ":bprev<cr>"
@@ -177,7 +186,7 @@ lvim.builtin.which_key.mappings["ae"] = { ":AIEdit ", "AI edit text" }
 lvim.builtin.which_key.mappings["ac"] = { ":AIChat ", "AI chat" }
 lvim.builtin.which_key.mappings["ar"] = { ":AIRedo<cr>", "Redo last AI command" }
 
-lvim.builtin.which_key.mappings["lO"] = { ":SymbolsOutline<cr>", "Toggle symbol outline" }
+lvim.builtin.which_key.mappings["lO"] = { ":AerialToggle<cr>", "Toggle aerial outline" }
 
 -- Git stuff!
 lvim.builtin.which_key.mappings["gh"] = {
