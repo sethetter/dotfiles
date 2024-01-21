@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 function sync_theme() {
+  local tmux='/opt/homebrew/bin/tmux'
+
   local alacritty_config_file=$HOME/.config/alacritty/alacritty.toml
   local alacritty_themes_folder=$HOME/.config/alacritty/themes/themes/
   local alacritty_theme_file=$HOME/.config/alacritty/theme.toml
@@ -15,7 +17,7 @@ function sync_theme() {
         ln -s $alacritty_themes_folder/everforest_dark.toml $alacritty_theme_file
       touch $alacritty_config_file
 
-      tmux source $HOME/.tmux.conf
+      $tmux source $HOME/.tmux.conf
     fi
   else
     if [[ $prev != "light" ]]; then
@@ -25,7 +27,7 @@ function sync_theme() {
         ln -s $alacritty_themes_folder/everforest_light.toml $alacritty_theme_file
       touch $alacritty_config_file
 
-      tmux source $HOME/.tmux.conf
+      $tmux source $HOME/.tmux.conf
     fi
   fi
 }
