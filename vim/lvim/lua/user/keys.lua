@@ -1,7 +1,7 @@
 -- File navigation
-lvim.keys.normal_mode["\\"] = ":Neotree reveal<cr>"
-lvim.builtin.which_key.mappings["e"] = { ":Neotree toggle<cr>", "Toggle Neotree", mode = { "n" } }
-lvim.builtin.which_key.mappings["T"] = { ":Neotree position=left<cr>", "Toggle Neotree", mode = { "n" } }
+lvim.keys.normal_mode["\\"] = ":Neotree position=current reveal<cr>"
+lvim.builtin.which_key.mappings["e"] = { ":Neotree position=current toggle<cr>", "Toggle Neotree in current position", mode = { "n" } }
+lvim.builtin.which_key.mappings["T"] = { ":Neotree position=left toggle<cr>", "Toggle Neotree sidebar", mode = { "n" } }
 
 -- Buffer cycling
 lvim.keys.normal_mode["<S-h>"] = ":bprev<cr>"
