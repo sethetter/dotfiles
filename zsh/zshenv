@@ -1,9 +1,18 @@
 # zsh being installed via homebrew leads to some directories used for autocomplete
 # being considered insecure by zsh, this disables that check since we trust homebrew
 export ZSH_DISABLE_COMPFIX=true
+
+export DOTFILES_DIR=$HOME/dotfiles
+
 export EDITOR=vim
 export BAT_THEME="ansi"
-export DOTFILES_DIR=$HOME/dotfiles
+
+GIT_PAGER_BASE="delta --side-by-side --color-only"
+if [[ $(cat $HOME/.theme | xargs) == "dark" ]]; then
+  export GIT_PAGER="$GIT_PAGER_BASE"
+else
+  export GIT_PAGER="$GIT_PAGER_BASE --light"
+fi
 
 alias c="clear"
 alias tma="tmux a"
