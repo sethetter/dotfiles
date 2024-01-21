@@ -66,6 +66,17 @@ lvim.plugins = {
             leave_dirs_open = true,
           },
         },
+        default_component_configs = {
+          git_status = {
+            symbols = {
+              untracked = "",
+              ignored   = "",
+              unstaged  = "",
+              staged    = "",
+              conflict  = "",
+            }
+          }
+        }
       })
     end
   },
