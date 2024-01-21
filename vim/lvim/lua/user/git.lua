@@ -15,7 +15,7 @@ function GitUrl(line1, line2)
   local filename = string.sub(full_path, string.len(git_root) + 2)
 
   -- Create the shell command
-  return string.format("git-open %s %s", filename, lines)
+  return string.format("git-open '%s' %s", filename, lines)
 end
 
 function GitOpen(line1, line2)
