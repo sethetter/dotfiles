@@ -127,13 +127,36 @@ lvim.plugins = {
 ----------------------------
 -- Display
 ----------------------------
+function SyncTheme()
+  local sys_theme_file = io.open("/Users/sethetter/.theme", "r")
+  if sys_theme_file then
+    local content = sys_theme_file:read "*a":gsub("%s+", "")
+    sys_theme_file:close()
+    if content == "dark" then
+      vim.opt.background = "dark"
+    else
+      vim.opt.background = "light"
+    end
+  end
+end
+
+if _G.sync_theme_timer then
+  _G.sync_theme_timer:stop()
+  _G.sync_theme_timer:close()
+  _G.sync_theme_timer = nil
+end
+
+_G.sync_theme_timer = vim.loop.new_timer()
+sync_theme_timer:start(0, 1000, vim.schedule_wrap(function()
+  SyncTheme()
+end))
 
 vim.opt.termguicolors = true
 lvim.colorscheme = "everforest"
-vim.opt.background = "light"
 lvim.builtin.lualine.options.theme = 'everforest'
 lvim.builtin.lualine.options.section_separators = { left = '🭀', right = '🭦' }
 lvim.builtin.bufferline.options.separator_style = "slope"
+SyncTheme()
 
 ---@diagnostic disable-next-line: param-type-mismatch
 vim.opt.fillchars:append { diff = "╱" }
