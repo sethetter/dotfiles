@@ -60,6 +60,13 @@
     state: link
     force: true
 
+- name: install-sys-theme-script
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/scripts/sys-theme.sh"
+    dest: "{{ home_dir }}/.local/bin/sys-theme"
+    state: link
+    force: true
+
 - name: create-k9s-config-directory
   file:
     path: "{{ home_dir }}/.config/k9s/skins"
