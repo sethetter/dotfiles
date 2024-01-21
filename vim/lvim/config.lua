@@ -61,7 +61,11 @@ lvim.plugins = {
           position = "current"
         },
         filesystem = {
-        }
+          follow_current_file = {
+            enabled = true,
+            leave_dirs_open = true,
+          },
+        },
       })
     end
   },
