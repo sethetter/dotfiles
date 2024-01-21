@@ -81,6 +81,9 @@ lvim.plugins = {
     end
   },
   {
+    "sindrets/diffview.nvim"
+  },
+  {
     "tpope/vim-surround",
   },
   -- Ensures LSP functions are utilized when performing filesystem operations
