@@ -6,6 +6,9 @@ lvim.builtin.lualine.options.theme = 'everforest'
 lvim.builtin.lualine.options.section_separators = { left = '🭀', right = '🭦' }
 lvim.builtin.bufferline.options.separator_style = "slope"
 
+-- Remove neotree background color
+vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "none" })
+
 ---@diagnostic disable-next-line: param-type-mismatch
 vim.opt.fillchars:append { diff = "╱" }
 
@@ -14,16 +17,36 @@ vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.clipboard = ""
 
+function SetTransparent()
+  local transparent = require("transparent")
+  transparent.setup({
+    extra_groups = {
+      "NeoTreeNormal",
+      "NeoTreeNormalNC",
+      "NormalFloat",
+    }
+  })
+  transparent.clear_prefix("NeoTree")
+end
+
 -- Sync with the system theme in the background
 function SyncTheme()
   local sys_theme_file = io.open("/Users/sethetter/.theme", "r")
+  local prev = vim.opt.background
+
   if sys_theme_file then
     local content = sys_theme_file:read "*a":gsub("%s+", "")
     sys_theme_file:close()
     if content == "dark" then
-      vim.opt.background = "dark"
+      if prev ~= "dark" then
+        vim.opt.background = "dark"
+        SetTransparent()
+      end
     else
-      vim.opt.background = "light"
+      if prev ~= "light" then
+        vim.opt.background = "light"
+        SetTransparent()
+      end
     end
   end
 end
@@ -39,6 +62,7 @@ sync_theme_timer:start(0, 1000, vim.schedule_wrap(function()
   SyncTheme()
 end))
 
+SetTransparent()
 SyncTheme()
 
 -- Line wrapping for markdown and text files
