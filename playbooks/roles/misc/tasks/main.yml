@@ -69,7 +69,7 @@
 
 - name: create-k9s-config-directory
   file:
-    path: "{{ home_dir }}/.config/k9s/skins"
+    path: "{{ home_dir }}/Library/Application Support/k9s/skins"
     state: directory
 
 - name: download-k9s-skin
