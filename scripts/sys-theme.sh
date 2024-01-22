@@ -7,6 +7,11 @@ function sync_theme() {
   local alacritty_themes_folder=$HOME/.config/alacritty/themes/themes/
   local alacritty_theme_file=$HOME/.config/alacritty/theme.toml
 
+  # check if $HOME/.theme exists, if not, create it
+  if [[ ! -f $HOME/.theme ]]; then
+    touch $HOME/.theme
+  fi
+
   local prev=$(cat $HOME/.theme)
 
   if [[ $(defaults read -g AppleInterfaceStyle 2> /dev/null) == "Dark" ]]; then
@@ -23,8 +28,10 @@ function sync_theme() {
     if [[ $prev != "light" ]]; then
       echo -e "light" > $HOME/.theme
 
+      touch $alacritty_theme_file
       rm $alacritty_theme_file && \
         ln -s $alacritty_themes_folder/everforest_light.toml $alacritty_theme_file
+
       touch $alacritty_config_file
 
       $tmux source $HOME/.tmux.conf
@@ -32,6 +39,7 @@ function sync_theme() {
   fi
 }
 
+sync_theme
 for i in {1..19}; do
   sync_theme
   sleep 3
