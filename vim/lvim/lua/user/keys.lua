@@ -22,6 +22,8 @@ lvim.builtin.which_key.mappings["td"] = { ":tabclose<cr>", "Close tab", mode = {
 lvim.builtin.which_key.mappings["v?"] = { ":sp<cr>", "Split horizontal", mode = { "n" } }
 lvim.builtin.which_key.mappings["v/"] = { ":vsp<cr>", "Split vertical", mode = { "n" } }
 
+lvim.builtin.which_key.mappings["Z"] = { ":ZenMode<cr>", "Zen mode", mode = { "n" } }
+
 lvim.builtin.which_key.mappings["Q"] = { ":qa<cr>", "Quit all" }
 lvim.builtin.which_key.mappings["X"] = { ":qa!<cr>", "Quit all (force)" }
 
