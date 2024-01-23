@@ -32,7 +32,7 @@ lvim.builtin.which_key.mappings["ae"] = { ":AIEdit ", "AI edit text" }
 lvim.builtin.which_key.mappings["ac"] = { ":AIChat ", "AI chat" }
 lvim.builtin.which_key.mappings["ar"] = { ":AIRedo<cr>", "Redo last AI command" }
 
-lvim.builtin.which_key.mappings["A"] = { ":AerialToggle<cr>", "Toggle aerial outline" }
+lvim.builtin.which_key.mappings["lO"] = { ":Outline<cr>", "Toggle outline sidebar" }
 
 -- Git stuff!
 lvim.builtin.which_key.mappings["gh"] = {
