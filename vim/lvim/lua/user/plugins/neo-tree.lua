@@ -21,6 +21,12 @@ return {
           enabled = true,
           leave_dirs_open = true,
         },
+        window = {
+          mappings = {
+            ["/"] = "noop",
+            ["F"] = "fuzzy_finder",
+          },
+        },
       },
       default_component_configs = {
         git_status = {
