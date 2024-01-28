@@ -1,6 +1,7 @@
 -- Disable some core LunarVim plugins
 lvim.builtin.lir.active = false
 lvim.builtin.nvimtree.active = false
+lvim.builtin.project.active = false
 
 lvim.plugins = {
   { "sainnhe/everforest" },
