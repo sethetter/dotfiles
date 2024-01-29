@@ -1,6 +1,6 @@
 {
   "promptDelete": false,
-  "showLineNumber": false,
+  "showLineNumber": true,
   "tabSize": 4,
   "vimMode": true,
   "emacsyKeys": false,
