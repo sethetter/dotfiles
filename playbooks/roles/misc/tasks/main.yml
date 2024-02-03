@@ -84,3 +84,22 @@
     dest: "{{ home_dir }}/Library/Application Support/k9s/config.yaml"
     state: link
     force: true
+
+- name: create-docker-plugins-dir
+  ansible.builtin.file:
+    path: "{{ home_dir }}/.docker/cli-plugins"
+    state: directory
+
+- name: link-docker-compose-plugin
+  ansible.builtin.file:
+    src: "/opt/homebrew/bin/docker-compose"
+    dest: "{{ home_dir }}/.docker/cli-plugins/docker-compose"
+    state: link
+    force: true
+
+- name: link-docker-buildx-plugin
+  ansible.builtin.file:
+    src: "/opt/homebrew/bin/docker-buildx"
+    dest: "{{ home_dir }}/.docker/cli-plugins/docker-buildx"
+    state: link
+    force: true
