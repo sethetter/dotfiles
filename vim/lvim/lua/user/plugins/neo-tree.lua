@@ -18,8 +18,7 @@ return {
       },
       filesystem = {
         follow_current_file = {
-          enabled = false,
-          leave_dirs_open = true,
+          enabled = true,
         },
         window = {
           mappings = {
