@@ -1,6 +1,10 @@
 return {
   "hedyhli/outline.nvim",
   config = function()
-    require("outline").setup({})
+    require("outline").setup({
+      preview_window = {
+        live = true,
+      },
+    })
   end
 }
