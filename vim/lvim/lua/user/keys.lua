@@ -1,7 +1,8 @@
 -- File navigation
 lvim.keys.normal_mode["\\"] = ":Neotree position=left reveal<cr>"
 lvim.keys.normal_mode["E"] = ":Neotree position=current toggle<cr>"
-lvim.builtin.which_key.mappings["e"] = { ":Neotree position=left toggle<cr>", "Toggle Neotree in current position", mode = { "n" } }
+lvim.builtin.which_key.mappings["e"] = { ":Neotree position=left toggle<cr>", "Toggle Neotree in current position",
+  mode = { "n" } }
 
 -- Buffer cycling
 lvim.keys.normal_mode["<S-h>"] = ":bprev<cr>"
@@ -32,7 +33,7 @@ lvim.builtin.which_key.mappings["ae"] = { ":AIEdit ", "AI edit text" }
 lvim.builtin.which_key.mappings["ac"] = { ":AIChat ", "AI chat" }
 lvim.builtin.which_key.mappings["ar"] = { ":AIRedo<cr>", "Redo last AI command" }
 
-lvim.builtin.which_key.mappings["O"] = { ":Outline<cr>", "Toggle outline sidebar" }
+lvim.builtin.which_key.mappings["o"] = { ":Outline<cr>", "Toggle outline sidebar" }
 
 -- Git stuff!
 lvim.builtin.which_key.mappings["gh"] = {
