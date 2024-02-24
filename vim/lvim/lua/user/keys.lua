@@ -1,8 +1,11 @@
 -- File navigation
 lvim.keys.normal_mode["\\"] = ":Neotree position=left reveal<cr>"
-lvim.keys.normal_mode["E"] = ":Neotree position=current toggle<cr>"
-lvim.builtin.which_key.mappings["e"] = { ":Neotree position=left toggle<cr>", "Toggle Neotree in current position",
-  mode = { "n" } }
+lvim.keys.normal_mode["E"] = ":Neotree position=current reveal<cr>"
+lvim.builtin.which_key.mappings["e"] = {
+  ":Neotree position=left toggle<cr>",
+  "Toggle Neotree in current position",
+  mode = { "n" }
+}
 
 -- Buffer cycling
 lvim.keys.normal_mode["<S-h>"] = ":bprev<cr>"
@@ -14,6 +17,9 @@ lvim.keys.normal_mode["<C-n>"] = ":tabnext<cr>"
 lvim.keys.normal_mode["<C-p>"] = ":tabprev<cr>"
 lvim.builtin.which_key.mappings["tn"] = { ":tabnew<cr>", "New tab", mode = { "n" } }
 lvim.builtin.which_key.mappings["td"] = { ":tabclose<cr>", "Close tab", mode = { "n" } }
+
+-- Theme sync
+lvim.builtin.which_key.mappings["ts"] = { ":lua SyncTheme()<cr>", "Sync system theme", mode = { "n" } }
 
 -- Horizontal scrolling
 -- TODO: these don't work! I'd like C-S-l/h, but something doesn't work quite right with shift on mac
