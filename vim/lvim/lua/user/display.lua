@@ -51,17 +51,6 @@ function SyncTheme()
   end
 end
 
--- if _G.sync_theme_timer then
---   _G.sync_theme_timer:stop()
---   _G.sync_theme_timer:close()
---   _G.sync_theme_timer = nil
--- end
-
--- _G.sync_theme_timer = vim.loop.new_timer()
--- sync_theme_timer:start(0, 1000, vim.schedule_wrap(function()
---   SyncTheme()
--- end))
-
 vim.cmd [[
   autocmd VimEnter * lua SyncTheme()
   autocmd FocusGained * lua SyncTheme()
