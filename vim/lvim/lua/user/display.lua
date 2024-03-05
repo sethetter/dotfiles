@@ -54,7 +54,7 @@ end
 -- TODO: The FocusGained trigger causes lualine to lose all backgrounds, but <leader>ts doesn't. Why?
 vim.cmd [[
   autocmd VimEnter * lua SyncTheme()
-  autocmd FocusGained * lua SyncTheme()
+  " autocmd FocusGained * lua SyncTheme()
 ]]
 
 -- Line wrapping for markdown and text files
