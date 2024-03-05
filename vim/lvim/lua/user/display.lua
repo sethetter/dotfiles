@@ -40,17 +40,18 @@ function SyncTheme()
     if content == "dark" then
       if prev ~= "dark" then
         vim.opt.background = "dark"
-        SetTransparent()
       end
     else
       if prev ~= "light" then
         vim.opt.background = "light"
-        SetTransparent()
       end
     end
   end
+
+  SetTransparent()
 end
 
+-- TODO: The FocusGained trigger causes lualine to lose all backgrounds, but <leader>ts doesn't. Why?
 vim.cmd [[
   autocmd VimEnter * lua SyncTheme()
   autocmd FocusGained * lua SyncTheme()
