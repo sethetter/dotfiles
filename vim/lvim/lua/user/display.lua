@@ -62,8 +62,10 @@ end
 --   SyncTheme()
 -- end))
 
-SetTransparent()
-SyncTheme()
+vim.cmd [[
+  autocmd VimEnter * lua SyncTheme()
+  autocmd FocusGained * lua SyncTheme()
+]]
 
 -- Line wrapping for markdown and text files
 function SetLineWrapForTextFiles(opts)
