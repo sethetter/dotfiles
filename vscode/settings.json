@@ -1,9 +1,9 @@
 {
-  "workbench.colorTheme": "Everforest Dark",
+  "workbench.colorTheme": "Solarized Light",
   "editor.fontFamily": "'Iosevka Nerd Font', 'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.tabSize": 2,
   "editor.cursorStyle": "block",
-  "editor.lightbulb.enabled": false,
+  "editor.lightbulb.enabled": "off",
   "editor.lineNumbers": "relative",
   "editor.multiCursorModifier": "alt",
   "vim.easymotion": true,
@@ -127,11 +127,10 @@
     "editor.tabSize": 4
   },
   "git.openRepositoryInParentFolders": "never",
-  "workbench.preferredDarkColorTheme": "Everforest Dark",
+  "workbench.preferredDarkColorTheme": "Solarized Dark",
   "workbench.iconTheme": "easy-icons",
-  "window.autoDetectColorScheme": true,
   "yaml.schemas": {
-    "file:///Users/sethetter/.vscode/extensions/atlassian.atlascode-3.0.9/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///Users/sethetter/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
   "atlascode.jira.enabled": true,
   "atlascode.bitbucket.enabled": false,
@@ -195,7 +194,11 @@
   "telemetry.telemetryLevel": "off",
   "gitlens.telemetry.enabled": false,
   "workbench.activityBar.location": "hidden",
-  "terminal.integrated.minimumContrastRatio": 1,
-  "everforest.lightContrast": "hard",
-  "workbench.preferredLightColorTheme": "Everforest Light"
+  "workbench.preferredLightColorTheme": "Solarized Light",
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.shellIntegration.enabled": false,
+  "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+  "window.systemColorTheme": "auto",
+  "window.autoDetectColorScheme": true,
+  "window.autoDetectHighContrast": false
 }
