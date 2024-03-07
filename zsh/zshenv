@@ -16,6 +16,7 @@ fi
 
 alias c="clear"
 alias tma="tmux a"
+alias tml="tmux list-sessions"
 alias dc="docker-compose"
 alias dt="deno task"
 alias tf="terraform"
