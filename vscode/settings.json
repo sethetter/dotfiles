@@ -198,7 +198,6 @@
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.shellIntegration.enabled": false,
   "terminal.integrated.shellIntegration.decorationsEnabled": "never",
-  "window.systemColorTheme": "auto",
   "window.autoDetectColorScheme": true,
   "window.autoDetectHighContrast": false
 }
