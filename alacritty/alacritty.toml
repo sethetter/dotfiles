@@ -1,8 +1,8 @@
 import = ["~/.config/alacritty/theme.toml"]
 
 [window]
-decorations = "None"
-padding = { y = 0, x = 0 }
+decorations = "Buttonless"
+padding = { y = 4, x = 4 }
 
 [font]
 size = 15
