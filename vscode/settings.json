@@ -1,5 +1,4 @@
 {
-  "workbench.colorTheme": "Solarized Light",
   "editor.fontFamily": "'Iosevka Nerd Font', 'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.tabSize": 2,
   "editor.cursorStyle": "block",
@@ -199,5 +198,7 @@
   "terminal.integrated.shellIntegration.enabled": false,
   "terminal.integrated.shellIntegration.decorationsEnabled": "never",
   "window.autoDetectColorScheme": true,
-  "window.autoDetectHighContrast": false
+  "window.autoDetectHighContrast": false,
+  "workbench.colorTheme": "Solarized Light",
+  "terminal.integrated.minimumContrastRatio": 1
 }
