@@ -13,7 +13,6 @@ main() {
     tmux set-window-option -gq "$option" "$value"
   }
 
-  # --> Everforest Light Medium
   if [[ $(cat ~/.theme 2> /dev/null) == "light" ]]; then
     set '@colors-solarized' 'light'
   else
