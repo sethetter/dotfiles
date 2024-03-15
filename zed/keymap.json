@@ -1,3 +1,13 @@
-{
-  "ctrl-tab": ""
-}
+[
+  {
+    "bindings": {
+      "ctrl-j": "terminal_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-shift-j": "workspace::ToggleZoom"
+    }
+  }
+]
