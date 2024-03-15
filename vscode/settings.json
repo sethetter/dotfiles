@@ -51,7 +51,7 @@
     }
   ],
   "editor.parameterHints.enabled": false,
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 15,
   "go.formatTool": "goimports",
   "editor.fontWeight": "400",
   "terminal.integrated.lineHeight": 0,
@@ -64,7 +64,7 @@
   "workbench.startupEditor": "none",
   "go.buildOnSave": "workspace",
   "go.useLanguageServer": true,
-  "editor.fontSize": 14,
+  "editor.fontSize": 15,
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -199,5 +199,6 @@
   "terminal.integrated.shellIntegration.decorationsEnabled": "never",
   "window.autoDetectColorScheme": true,
   "window.autoDetectHighContrast": false,
-  "terminal.integrated.minimumContrastRatio": 1
+  "terminal.integrated.minimumContrastRatio": 1,
+  "workbench.colorTheme": "Solarized Light"
 }
