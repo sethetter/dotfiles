@@ -6,7 +6,6 @@ export DOTFILES_DIR=$HOME/dotfiles
 
 export EDITOR=vim
 export BAT_THEME="ansi"
-
 export DELTA_FEATURES="+side-by-side +line-numbers"
 
 alias c="clear"

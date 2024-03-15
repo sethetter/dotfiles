@@ -8,7 +8,6 @@
 [interactive]
   diffFilter = delta --color-only
 [delta]
-  syntax-theme = ansi
   light = true
 [diff]
   colorMoved = default
