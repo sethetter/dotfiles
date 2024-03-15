@@ -1,13 +1,8 @@
 [
   {
     "bindings": {
-      "ctrl-j": "terminal_panel::ToggleFocus"
-    }
-  },
-  {
-    "context": "Terminal",
-    "bindings": {
-      "cmd-shift-j": "workspace::ToggleZoom"
+      "ctrl-j": "terminal_panel::ToggleFocus",
+      "ctrl-shift-j": "workspace::ToggleZoom"
     }
   }
 ]
