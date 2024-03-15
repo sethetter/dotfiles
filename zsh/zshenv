@@ -7,12 +7,7 @@ export DOTFILES_DIR=$HOME/dotfiles
 export EDITOR=vim
 export BAT_THEME="ansi"
 
-GIT_PAGER_BASE="delta --side-by-side --color-only"
-if [[ $(cat $HOME/.theme | xargs) == "dark" ]]; then
-  export GIT_PAGER="$GIT_PAGER_BASE"
-else
-  export GIT_PAGER="$GIT_PAGER_BASE --light"
-fi
+export DELTA_FEATURES="+side-by-side +line-numbers"
 
 alias c="clear"
 alias tma="tmux a"
@@ -123,4 +118,5 @@ alias awsume="source awsume"
 
 #Auto-Complete function for AWSume
 fpath=(~/.awsume/zsh-autocomplete/ $fpath)
+
 . "$HOME/.cargo/env"

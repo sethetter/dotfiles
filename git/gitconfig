@@ -3,19 +3,24 @@
   email = mail@sethetter.com
   signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL3jigIrPb+1u0V8pJk4m41hP/WBgAm7gei6Edyr9vca
 [core]
-  excludesfile = /Users/sethetter/.gitignore
+  excludesFile = /Users/sethetter/.gitignore
+  pager = delta
+[interactive]
+  diffFilter = delta --color-only
 [delta]
-  features = line-numbers decorations
   syntax-theme = ansi
-  whitespace-error-style = 22 reverse
+  light = true
+[diff]
+  colorMoved = default
+[difftool]
+  prompt = false
 [merge]
+  conflictstyle = diff3
   tool = vimdiff
 [mergetool]
   prompt = true
 [mergetool "vimdiff"]
   cmd = vim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
-[difftool]
-  prompt = false
 [commit]
   gpgsign = true
 [gpg]
@@ -27,6 +32,8 @@
 [github]
   username = sethetter
   user = sethetter
+[pull]
+  rebase = true
 [push]
   default = simple
   autoSetupRemote = true
@@ -34,7 +41,5 @@
   defaultBranch = main
 [branch]
   autosetuprebase = always
-[pull]
-  rebase = true
 [includeIf "gitdir:/Users/sethetter/code/zapier/**"]
   path = ~/code/zapier/gitconfig
