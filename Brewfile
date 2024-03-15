@@ -110,5 +110,4 @@ cask "spotify"
 cask "visual-studio-code"
 cask "zed"
 cask "zoom"
-cask "postgres-unofficial"
 mas "tailscale", id: 1475387142

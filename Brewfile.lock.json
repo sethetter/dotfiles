@@ -29,7 +29,7 @@
         "revision": "89ba81ef193cb4d623b0b1385bdefa4460f1e97a"
       },
       "superfly/tap": {
-        "revision": "ff70bab515f9bed3523c2bc80e0a710295abe1a2"
+        "revision": "7c04da0f760825e7b8bd201c0c1bf88c25a72652"
       },
       "int128/kubelogin": {
         "revision": "8fb0523f36db6084253ef227379d4b835ad1492b"
@@ -2451,7 +2451,7 @@
         }
       },
       "superfly/tap/flyctl": {
-        "version": "0.2.19",
+        "version": "0.2.18",
         "bottle": false
       },
       "yubikey-personalization": {
@@ -3502,7 +3502,7 @@
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "15.0.0.0.1.1694021235",
-        "Xcode": "15.1",
+        "Xcode": "15.3",
         "macOS": "14.0"
       }
     }
