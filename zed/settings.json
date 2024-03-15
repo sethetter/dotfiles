@@ -11,6 +11,7 @@
   "theme": "Solarized Light",
   "ui_font_size": 16,
   "ui_font_family": "Iosevka Nerd Font Mono",
+  "relative_line_numbers": true,
   "terminal": {
     "line_height": "standard"
   },
