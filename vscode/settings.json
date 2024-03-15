@@ -199,6 +199,5 @@
   "terminal.integrated.shellIntegration.decorationsEnabled": "never",
   "window.autoDetectColorScheme": true,
   "window.autoDetectHighContrast": false,
-  "workbench.colorTheme": "Solarized Light",
   "terminal.integrated.minimumContrastRatio": 1
 }
