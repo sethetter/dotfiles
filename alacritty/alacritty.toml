@@ -1,4 +1,4 @@
-import = ["~/.config/alacritty/theme.toml"]
+import = ["~/.config/alacritty/themes/themes/solarized_light.toml"]
 
 [window]
 decorations = "Buttonless"
