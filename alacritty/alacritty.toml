@@ -2,10 +2,10 @@ import = ["~/.config/alacritty/theme.toml"]
 
 [window]
 decorations = "Buttonless"
-padding = { y = 4, x = 4 }
+padding = { y = 12, x = 4 }
 
 [font]
-size = 15
+size = 16
 normal = { family = "Iosevka NFP", style = "Regular" }
 
 [bell]
