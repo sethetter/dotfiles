@@ -29,7 +29,7 @@
         "revision": "89ba81ef193cb4d623b0b1385bdefa4460f1e97a"
       },
       "superfly/tap": {
-        "revision": "7c04da0f760825e7b8bd201c0c1bf88c25a72652"
+        "revision": "ff70bab515f9bed3523c2bc80e0a710295abe1a2"
       },
       "int128/kubelogin": {
         "revision": "8fb0523f36db6084253ef227379d4b835ad1492b"
@@ -2451,7 +2451,7 @@
         }
       },
       "superfly/tap/flyctl": {
-        "version": "0.2.18",
+        "version": "0.2.19",
         "bottle": false
       },
       "yubikey-personalization": {
@@ -3076,45 +3076,45 @@
         }
       },
       "docker-compose": {
-        "version": "2.24.7_1",
+        "version": "2.25.0",
         "bottle": {
           "rebuild": 0,
           "root_url": "https://ghcr.io/v2/homebrew/core",
           "files": {
             "arm64_sonoma": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/docker-compose/blobs/sha256:3a85a2af139213b029dfce1f1029e38dbce3d385c1d1017b2f0065544861f40d",
-              "sha256": "3a85a2af139213b029dfce1f1029e38dbce3d385c1d1017b2f0065544861f40d"
+              "url": "https://ghcr.io/v2/homebrew/core/docker-compose/blobs/sha256:9ff10e5c0d3dbcaf290805ecc037983d9b92d99ef90ab8488b1bd421bfdd6e77",
+              "sha256": "9ff10e5c0d3dbcaf290805ecc037983d9b92d99ef90ab8488b1bd421bfdd6e77"
             },
             "arm64_ventura": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/docker-compose/blobs/sha256:0771f0911929250c766d65b6ae0751604801f9ec79c96f4a93a9b44296e2cffe",
-              "sha256": "0771f0911929250c766d65b6ae0751604801f9ec79c96f4a93a9b44296e2cffe"
+              "url": "https://ghcr.io/v2/homebrew/core/docker-compose/blobs/sha256:a74c6110dbb58b14ce19b55ec6d8006563f91cad4b6134a97e755294c7d823f2",
+              "sha256": "a74c6110dbb58b14ce19b55ec6d8006563f91cad4b6134a97e755294c7d823f2"
             },
             "arm64_monterey": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/docker-compose/blobs/sha256:1ccf242677d85e0ed17835b95f3b872d24d468f2057743e8e63322b77d274061",
-              "sha256": "1ccf242677d85e0ed17835b95f3b872d24d468f2057743e8e63322b77d274061"
+              "url": "https://ghcr.io/v2/homebrew/core/docker-compose/blobs/sha256:ae541e06cb8146f8f318e0c37a627896d0e18a70a9e4dabbcfd9107294930108",
+              "sha256": "ae541e06cb8146f8f318e0c37a627896d0e18a70a9e4dabbcfd9107294930108"
             },
             "sonoma": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/docker-compose/blobs/sha256:09d9821998d1f2ff7543295b0626b4972cda268653537fe293c505dd17cf806c",
-              "sha256": "09d9821998d1f2ff7543295b0626b4972cda268653537fe293c505dd17cf806c"
+              "url": "https://ghcr.io/v2/homebrew/core/docker-compose/blobs/sha256:a2a8843eacdbe824b94d5e0fc853dd0486b8ce2a0180665acac82b786b9e6a1b",
+              "sha256": "a2a8843eacdbe824b94d5e0fc853dd0486b8ce2a0180665acac82b786b9e6a1b"
             },
             "ventura": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/docker-compose/blobs/sha256:46fdf44d5b90337d004b71398658c452246fbd534018591f09de4928bbabc878",
-              "sha256": "46fdf44d5b90337d004b71398658c452246fbd534018591f09de4928bbabc878"
+              "url": "https://ghcr.io/v2/homebrew/core/docker-compose/blobs/sha256:eafa98f565814abfede00c74514a1107096fd9be4e37b5b1298ac0504dd9b6f1",
+              "sha256": "eafa98f565814abfede00c74514a1107096fd9be4e37b5b1298ac0504dd9b6f1"
             },
             "monterey": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/docker-compose/blobs/sha256:b65fdffcfc9b876d5cce74b96d4ca4ec7372de1798e6caa1dd6d67dc102a9518",
-              "sha256": "b65fdffcfc9b876d5cce74b96d4ca4ec7372de1798e6caa1dd6d67dc102a9518"
+              "url": "https://ghcr.io/v2/homebrew/core/docker-compose/blobs/sha256:04140046f946a5e09d3730409fc377abe34083a2d9f0ea8b5a5bff4bfaa9664d",
+              "sha256": "04140046f946a5e09d3730409fc377abe34083a2d9f0ea8b5a5bff4bfaa9664d"
             },
             "x86_64_linux": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/docker-compose/blobs/sha256:911d021784e9e48dfe848a6b143e18a79304e993826479f99d21916194d1fbd8",
-              "sha256": "911d021784e9e48dfe848a6b143e18a79304e993826479f99d21916194d1fbd8"
+              "url": "https://ghcr.io/v2/homebrew/core/docker-compose/blobs/sha256:cfa19aec65e83a1e59e1a746ccb7ccec940f77be3306534f3e2df26da7f536e0",
+              "sha256": "cfa19aec65e83a1e59e1a746ccb7ccec940f77be3306534f3e2df26da7f536e0"
             }
           }
         }
@@ -3502,7 +3502,7 @@
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "15.0.0.0.1.1694021235",
-        "Xcode": "15.3",
+        "Xcode": "15.1",
         "macOS": "14.0"
       }
     }
