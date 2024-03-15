@@ -53,19 +53,13 @@
     state: link
     force: true
 
-- name: install-git-open-script
+- name: install-scripts
   ansible.builtin.file:
-    src: "{{ dotfiles_dir }}/scripts/git-open.sh"
-    dest: "{{ home_dir }}/.local/bin/git-open"
+    src: "{{ item }}"
+    dest: "{{ home_dir }}/.local/bin/{{ item | basename | regex_replace('.sh$', '') }}"
     state: link
     force: true
-
-- name: install-sys-theme-script
-  ansible.builtin.file:
-    src: "{{ dotfiles_dir }}/scripts/sys-theme.sh"
-    dest: "{{ home_dir }}/.local/bin/sys-theme"
-    state: link
-    force: true
+  loop: "{{ query('ansible.builtin.fileglob', dotfiles_dir + '/scripts/*.sh', wantlist=True) }}"
 
 - name: create-k9s-config-directory
   file:
