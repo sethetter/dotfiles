@@ -149,14 +149,7 @@
       "key": "L"
     }
   ],
-  "editor:toggle-checklist-status": [
-    {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": "Enter"
-    }
-  ],
+  "editor:toggle-checklist-status": [],
   "editor:toggle-bold": [],
   "file-explorer:move-file": [
     {
