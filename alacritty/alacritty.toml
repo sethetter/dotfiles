@@ -2,7 +2,6 @@ import = ["~/.config/alacritty/themes/themes/solarized_light.toml"]
 
 [window]
 decorations = "Buttonless"
-padding = { y = 12, x = 4 }
 
 [font]
 size = 16
