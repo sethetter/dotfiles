@@ -95,3 +95,15 @@ lvim.builtin.which_key.mappings["GD"] = {
   "Diff all files against provided target",
   mode = { "n" },
 }
+
+-- <esc-j> is an alias for <alt-j>, which swaps a line up or down
+-- If I press `esc` then `j` or `k` to quickly, it swaps lines unintentially.
+-- Since this isn't a feature I use, I'm just disabling it.
+lvim.keys.insert_mode["<A-j>"] = false
+lvim.keys.insert_mode["<A-k>"] = false
+lvim.keys.normal_mode["<A-j>"] = false
+lvim.keys.normal_mode["<A-k>"] = false
+lvim.keys.visual_block_mode["<A-j>"] = false
+lvim.keys.visual_block_mode["<A-k>"] = false
+lvim.keys.visual_block_mode["K"] = false
+lvim.keys.visual_block_mode["J"] = false
