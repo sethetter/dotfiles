@@ -310,5 +310,13 @@
   {
     "key": "cmd+k shift+f",
     "command": "workbench.files.action.showActiveFileInExplorer"
+  },
+  {
+    "key": "ctrl+j l",
+    "command": "workbench.action.positionPanelRight"
+  },
+  {
+    "key": "ctrl+j j",
+    "command": "workbench.action.positionPanelBottom"
   }
 ]
