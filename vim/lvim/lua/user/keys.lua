@@ -38,20 +38,11 @@ lvim.builtin.which_key.mappings["Z"]  = { ":ZenMode<cr>", "Zen mode", mode = { "
 lvim.builtin.which_key.mappings["Q"]  = { ":qa<cr>", "Quit all" }
 lvim.builtin.which_key.mappings["X"]  = { ":qa!<cr>", "Quit all (force)" }
 
--- Copilot
-lvim.builtin.which_key.mappings["C"]  = {
-  ":lua require('copilot.panel').open()<cr>",
-  "Copilot panel open",
-  mode = { "n" },
-}
-
 -- AI
 lvim.builtin.which_key.mappings["aa"] = { ":AI ", "AI complete text" }
 lvim.builtin.which_key.mappings["ae"] = { ":AIEdit ", "AI edit text" }
 lvim.builtin.which_key.mappings["ac"] = { ":AIChat ", "AI chat" }
 lvim.builtin.which_key.mappings["ar"] = { ":AIRedo<cr>", "Redo last AI command" }
-
-
 
 -- Git stuff!
 lvim.builtin.which_key.mappings["gh"] = {
@@ -99,11 +90,11 @@ lvim.builtin.which_key.mappings["GD"] = {
 -- <esc-j> is an alias for <alt-j>, which swaps a line up or down
 -- If I press `esc` then `j` or `k` to quickly, it swaps lines unintentially.
 -- Since this isn't a feature I use, I'm just disabling it.
-lvim.keys.insert_mode["<A-j>"] = false
-lvim.keys.insert_mode["<A-k>"] = false
-lvim.keys.normal_mode["<A-j>"] = false
-lvim.keys.normal_mode["<A-k>"] = false
-lvim.keys.visual_block_mode["<A-j>"] = false
-lvim.keys.visual_block_mode["<A-k>"] = false
-lvim.keys.visual_block_mode["K"] = false
-lvim.keys.visual_block_mode["J"] = false
+lvim.keys.insert_mode["<A-j>"]        = false
+lvim.keys.insert_mode["<A-k>"]        = false
+lvim.keys.normal_mode["<A-j>"]        = false
+lvim.keys.normal_mode["<A-k>"]        = false
+lvim.keys.visual_block_mode["<A-j>"]  = false
+lvim.keys.visual_block_mode["<A-k>"]  = false
+lvim.keys.visual_block_mode["K"]      = false
+lvim.keys.visual_block_mode["J"]      = false
