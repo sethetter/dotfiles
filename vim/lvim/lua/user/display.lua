@@ -1,10 +1,11 @@
-lvim.colorscheme = "solarized8"
-
 vim.opt.termguicolors = true
 
-lvim.builtin.lualine.options.theme = 'solarized_light'
-lvim.builtin.lualine.options.section_separators = { left = '🭀', right = '🭦' }
-lvim.builtin.bufferline.options.separator_style = "slope"
+lvim.colorscheme = "everforest"
+vim.g.everforest_transparent_background = 1
+
+lvim.builtin.lualine.options.theme = 'everforest'
+lvim.builtin.bufferline.options.separator_style = "thin"
+lvim.builtin.bufferline.options.always_show_bufferline = true
 
 -- Remove neotree background color
 vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "none" })
@@ -17,45 +18,6 @@ vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.clipboard = ""
 
-function SetTransparent()
-  local transparent = require("transparent")
-  transparent.setup({
-    extra_groups = {
-      "NeoTreeNormal",
-      "NeoTreeNormalNC",
-      "NormalFloat",
-    }
-  })
-  transparent.clear_prefix("NeoTree")
-end
-
--- Sync with the system theme in the background
-function SyncTheme()
-  local sys_theme_file = io.open("/Users/sethetter/.theme", "r")
-  local prev = vim.opt.background
-
-  if sys_theme_file then
-    local content = sys_theme_file:read "*a":gsub("%s+", "")
-    sys_theme_file:close()
-    if content == "dark" then
-      if prev ~= "dark" then
-        vim.opt.background = "dark"
-      end
-    else
-      if prev ~= "light" then
-        vim.opt.background = "light"
-      end
-    end
-  end
-
-  SetTransparent()
-end
-
--- TODO: The FocusGained trigger causes lualine to lose all backgrounds, but <leader>ts doesn't. Why?
-vim.cmd [[
-  autocmd VimEnter * lua SyncTheme()
-  " autocmd FocusGained * lua SyncTheme()
-]]
 
 -- Line wrapping for markdown and text files
 function SetLineWrapForTextFiles(opts)
