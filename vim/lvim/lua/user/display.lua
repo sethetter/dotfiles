@@ -1,8 +1,8 @@
-lvim.colorscheme = "everforest"
+lvim.colorscheme = "solarized8"
 
 vim.opt.termguicolors = true
 
-lvim.builtin.lualine.options.theme = 'everforest'
+lvim.builtin.lualine.options.theme = 'solarized_light'
 lvim.builtin.lualine.options.section_separators = { left = '🭀', right = '🭦' }
 lvim.builtin.bufferline.options.separator_style = "slope"
 

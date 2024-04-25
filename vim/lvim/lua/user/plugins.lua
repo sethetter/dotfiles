@@ -4,7 +4,7 @@ lvim.builtin.nvimtree.active = false
 lvim.builtin.project.active = false
 
 lvim.plugins = {
-  { "sainnhe/everforest" },
+  require("user.plugins.solarized"),
   { "tpope/vim-surround" },
   { "rhysd/conflict-marker.vim" },
   { "rickhowe/diffchar.vim" },
