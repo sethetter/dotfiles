@@ -224,6 +224,11 @@
     "when": "terminalFocus"
   },
   {
+    "key": "ctrl+g b",
+    "command": "gitlens.toggleFileBlame",
+    "when": "editorTextFocus"
+  },
+  {
     "key": "cmd+\\",
     "command": "-workbench.action.splitEditor"
   },
