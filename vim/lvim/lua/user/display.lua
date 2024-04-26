@@ -1,7 +1,9 @@
 vim.opt.termguicolors = true
 
 lvim.colorscheme = "everforest"
+vim.g.everforest_background = "hard"
 vim.g.everforest_transparent_background = 1
+vim.g.everforest_better_performance = 1
 
 lvim.builtin.lualine.options.theme = 'everforest'
 lvim.builtin.bufferline.options.separator_style = "thin"
