@@ -1,12 +1,10 @@
 vim.opt.termguicolors = true
 
 lvim.colorscheme = "everforest"
-vim.g.everforest_transparent_background = 1
 vim.g.everforest_better_performance = 1
 
 lvim.builtin.lualine.options.theme = 'everforest'
 
-lvim.builtin.bufferline.options.style_preset = "minimal"
 lvim.builtin.bufferline.options.always_show_bufferline = true
 
 -- Remove neotree background color
@@ -19,7 +17,6 @@ vim.opt.relativenumber = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.clipboard = ""
-
 
 -- Line wrapping for markdown and text files
 function SetLineWrapForTextFiles(opts)
