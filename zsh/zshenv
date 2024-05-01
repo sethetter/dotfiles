@@ -114,3 +114,6 @@ alias awsume="source awsume"
 fpath=(~/.awsume/zsh-autocomplete/ $fpath)
 
 . "$HOME/.cargo/env"
+
+
+[ -f "$HOME/code/zapier/personal-utils.sh" ] && source "$HOME/code/zapier/personal-utils.sh"
