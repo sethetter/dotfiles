@@ -4,7 +4,7 @@ import = ["~/.config/alacritty/themes/themes/everforest_light.toml"]
 decorations = "Buttonless"
 
 [font]
-size = 16
+size = 15
 normal = { family = "Iosevka NFP", style = "Regular" }
 
 [bell]
