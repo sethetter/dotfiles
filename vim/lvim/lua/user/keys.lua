@@ -1,3 +1,5 @@
+lvim.keys.normal_mode[";"]            = ":"
+
 -- File navigation
 lvim.keys.normal_mode["\\"]           = ":Neotree position=left reveal<cr>"
 lvim.keys.normal_mode["E"]            = ":Neotree position=current reveal<cr>"
