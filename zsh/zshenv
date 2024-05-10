@@ -9,6 +9,7 @@ export BAT_THEME="ansi"
 export DELTA_FEATURES="+side-by-side +line-numbers"
 
 alias c="clear"
+alias mx="tmuxinator"
 alias tma="tmux a"
 alias tml="tmux list-sessions"
 alias dc="docker-compose"
