@@ -1,3 +1,6 @@
+tap "rcmdnk/file"
+brew "brew-file"
+
 tap "cjbassi/ytop"
 tap "filosottile/musl-cross"
 tap "mike-engel/jwt-cli"
@@ -9,6 +12,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "superfly/tap"
 tap "int128/kubelogin"
+
 brew "ansible"
 brew "awscli"
 brew "aws-vault"
@@ -81,6 +85,7 @@ brew "cjbassi/ytop/ytop"
 brew "filosottile/musl-cross/musl-cross"
 brew "superfly/tap/flyctl"
 brew "yubikey-personalization"
+
 cask "1password"
 cask "1password-cli"
 cask "autodesk-fusion"
@@ -111,4 +116,5 @@ cask "spotify"
 cask "visual-studio-code"
 cask "zed"
 cask "zoom"
+
 mas "tailscale", id: 1475387142
