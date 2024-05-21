@@ -33,9 +33,6 @@ lvim.builtin.which_key.mappings["ts"] = { ":lua SyncTheme()<cr>", "Sync system t
 lvim.builtin.which_key.mappings["v?"] = { ":sp<cr>", "Split horizontal", mode = { "n" } }
 lvim.builtin.which_key.mappings["v/"] = { ":vsp<cr>", "Split vertical", mode = { "n" } }
 
--- Writing mode
-lvim.builtin.which_key.mappings["Z"]  = { ":ZenMode<cr>", "Zen mode", mode = { "n" } }
-
 -- Quit
 lvim.builtin.which_key.mappings["Q"]  = { ":qa<cr>", "Quit all" }
 lvim.builtin.which_key.mappings["X"]  = { ":qa!<cr>", "Quit all (force)" }

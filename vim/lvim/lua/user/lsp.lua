@@ -4,8 +4,8 @@ lvim.format_on_save.enabled = true
 vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "tsserver" })
 
 -- Formatters
-local formatters = require "lvim.lsp.null-ls.formatters"
-formatters.setup {
+local formatters = require("lvim.lsp.null-ls.formatters")
+formatters.setup({
   {
     name = "prettier",
     filetypes = {
@@ -16,7 +16,7 @@ formatters.setup {
       "json",
     },
   }
-}
+})
 
 function TSRemoveUnusedImports()
   vim.lsp.buf.code_action({
