@@ -17,3 +17,15 @@ formatters.setup {
     },
   }
 }
+
+function TSRemoveUnusedImports()
+  vim.lsp.buf.code_action({
+    apply = true,
+    context = {
+      only = { "source.removeUnused.ts" },
+      diagnostics = {},
+    },
+  })
+end
+
+vim.cmd [[command! TSRemoveUnusedImports :lua TSRemoveUnusedImports()]]

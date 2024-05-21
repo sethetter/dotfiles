@@ -89,6 +89,13 @@ lvim.builtin.which_key.mappings["GD"] = {
   mode = { "n" },
 }
 
+-- LSP
+lvim.builtin.which_key.mappings["lR"] = {
+  ":TSRemoveUnusedImports<cr>",
+  "Remove unused imports (TS)",
+  mode = { "n" },
+}
+
 -- <esc-j> is an alias for <alt-j>, which swaps a line up or down
 -- If I press `esc` then `j` or `k` to quickly, it swaps lines unintentially.
 -- Since this isn't a feature I use, I'm just disabling it.
