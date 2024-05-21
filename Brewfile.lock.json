@@ -3332,7 +3332,7 @@
     },
     "cask": {
       "1password": {
-        "version": "8.10.32",
+        "version": "8.10.33",
         "options": {
           "full_name": "1password"
         }
@@ -3344,7 +3344,7 @@
         }
       },
       "arc": {
-        "version": "1.43.0,50018",
+        "version": "1.43.1,50198",
         "options": {
           "full_name": "arc"
         }
@@ -3356,7 +3356,7 @@
         }
       },
       "miniconda": {
-        "version": "py312_24.3.0-0",
+        "version": "py312_24.4.0-0",
         "options": {
           "full_name": "miniconda"
         }
