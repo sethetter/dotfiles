@@ -1,8 +1,8 @@
 - name: lunarvim-from-github
   ansible.builtin.git:
-    dest: "{{ home_dir }}/.config/nvim"
+    dest: "{{ home_dir }}/.local/share/lunarvim/lvim"
     repo: "git@github.com:lunarvim/lunarvim.git"
-    version: 1.3.0
+    version: master
     update: true
 
 - name: link-lunarvim-user-config
