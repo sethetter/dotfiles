@@ -6,6 +6,8 @@ lvim.builtin.project.active = false
 lvim.plugins = {
   { "sainnhe/everforest" },
   { "tpope/vim-surround" },
+  { "rickhowe/diffchar.vim" },
+  { "rhysd/conflict-marker.vim" },
   { "sindrets/diffview.nvim" },
   require("user.plugins.outline"),
   require("user.plugins.nvim-lsp-file-operations"),
