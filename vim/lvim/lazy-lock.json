@@ -11,7 +11,7 @@
   "conflict-marker.vim": { "branch": "master", "commit": "62742b2ffe7a433988759c67b5c5a22eff74a14b" },
   "copilot.vim": { "branch": "release", "commit": "25feddf8e3aa79f0573c8f43ddb13c44c530cfa5" },
   "diffchar.vim": { "branch": "master", "commit": "ccf4c238a71d834ad1e21834f08be274bc0f05a3" },
-  "diffview.nvim": { "branch": "main", "commit": "ad03c42b2899117ff039d84ac24860a77116204b" },
+  "diffview.nvim": { "branch": "main", "commit": "72c6983f422689f310b379a04fd555799b0d7cfc" },
   "everforest": { "branch": "master", "commit": "bb482c354872cccb56f83e843caf3e5d33f89a24" },
   "friendly-snippets": { "branch": "main", "commit": "3e9a3f5a0cfcef1741e352c37bda4e82e5eb846a" },
   "gitsigns.nvim": { "branch": "main", "commit": "805610a9393fa231f2c2b49cb521bfa413fadb3d" },
