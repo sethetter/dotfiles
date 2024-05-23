@@ -16,4 +16,5 @@ lvim.plugins = {
   require("user.plugins.vim-gist"),
   require("user.plugins.copilot"),
   require("user.plugins.vim-ai"),
+  require("user.plugins.zen-mode"),
 }

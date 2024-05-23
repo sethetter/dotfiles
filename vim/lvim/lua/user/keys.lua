@@ -21,8 +21,8 @@ lvim.keys.normal_mode["<C-p>"]        = ":tabprev<cr>"
 lvim.builtin.which_key.mappings["tn"] = { ":tabnew<cr>", "New tab", mode = { "n" } }
 lvim.builtin.which_key.mappings["td"] = { ":tabclose<cr>", "Close tab", mode = { "n" } }
 
--- Theme sync
-lvim.builtin.which_key.mappings["ts"] = { ":lua SyncTheme()<cr>", "Sync system theme", mode = { "n" } }
+-- Writing mode
+lvim.builtin.which_key.mappings["Z"]  = { ":ZenMode<cr>", "Zen mode", mode = { "n" } }
 
 -- Horizontal scrolling
 -- TODO: these don't work! I'd like C-S-l/h, but something doesn't work quite right with shift on mac
