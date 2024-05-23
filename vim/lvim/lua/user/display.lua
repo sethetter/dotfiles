@@ -1,9 +1,9 @@
 vim.opt.termguicolors = true
 
+vim.opt.background = "light"
+
 lvim.colorscheme = "everforest"
--- TODO: With this turned on, bufferline styling is broken
--- when opening lvim directory on a file or directory.
--- vim.g.everforest_better_performance = 1
+vim.g.everforest_better_performance = 1
 
 lvim.builtin.lualine.options.theme = 'everforest'
 
