@@ -9,9 +9,6 @@ lvim.builtin.lualine.options.theme = 'everforest'
 
 lvim.builtin.bufferline.options.always_show_bufferline = true
 
--- Remove neotree background color
-vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "none" })
-
 ---@diagnostic disable-next-line: undefined-field
 vim.opt.fillchars:append { diff = "╱" }
 
