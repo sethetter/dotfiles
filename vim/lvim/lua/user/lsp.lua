@@ -18,6 +18,19 @@ formatters.setup({
   }
 })
 
+local linters = require("lvim.lsp.null-ls.linters")
+linters.setup({
+  {
+    command = "eslint",
+    filetypes = {
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact",
+    },
+  }
+})
+
 function TSRemoveUnusedImports()
   vim.lsp.buf.code_action({
     apply = true,
