@@ -5,17 +5,13 @@ tap "homebrew/services"
 brew "brew-file"
 
 # Applications
-cask "alacritty"
 cask "iterm2"
 cask "1password"
 cask "1password-cli"
 mas "tailscale", id: 1475387142
 cask "raycast"
 cask "rectangle"
-cask "chromium" do
-  version :latest
-  no_quarantine
-end
+cask "alex313031-thorium"
 cask "firefox"
 cask "obsidian"
 cask "todoist"
