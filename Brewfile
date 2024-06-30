@@ -11,7 +11,7 @@ cask "1password-cli"
 mas "tailscale", id: 1475387142
 cask "raycast"
 cask "rectangle"
-cask "alex313031-thorium"
+cask "google-chrome"
 cask "firefox"
 cask "obsidian"
 cask "todoist"

@@ -3688,6 +3688,12 @@
         "options": {
           "full_name": "alex313031-thorium"
         }
+      },
+      "google-chrome": {
+        "version": "126.0.6478.127",
+        "options": {
+          "full_name": "google-chrome"
+        }
       }
     },
     "mas": {
