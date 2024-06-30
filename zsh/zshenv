@@ -23,6 +23,7 @@ alias gfp="git fetch --prune"
 alias lg="lazygit"
 alias ld="lazydocker"
 alias ccb="git branch --no-color --show-current | tr -d '\n' | pbcopy"
+alias ytop="ytop -c default-dark"
 alias python=python3
 alias pip=pip3
 
@@ -115,6 +116,5 @@ alias awsume="source awsume"
 fpath=(~/.awsume/zsh-autocomplete/ $fpath)
 
 . "$HOME/.cargo/env"
-
 
 [ -f "$HOME/code/zapier/personal-utils.sh" ] && source "$HOME/code/zapier/personal-utils.sh"
