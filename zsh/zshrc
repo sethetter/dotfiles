@@ -5,18 +5,6 @@
 export GPG_TTY=$(tty)
 
 #oh-my-zsh
-plugins=(git vi-mode fzf direnv)
+plugins=(git vi-mode fzf direnv asdf)
 ZSH_THEME="robbyrussell"
 source $HOME/.oh-my-zsh/oh-my-zsh.sh
-
-eval "$(rbenv init - zsh)"
-eval "$(pyenv init -)"
-. $(brew --prefix asdf)/libexec/asdf.sh
-
-# pnpm
-export PNPM_HOME="/Users/sethetter/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
