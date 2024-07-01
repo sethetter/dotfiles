@@ -5,6 +5,7 @@ tap "homebrew/services"
 brew "brew-file"
 
 # Applications
+cask "alacritty"
 cask "iterm2"
 cask "1password"
 cask "1password-cli"
