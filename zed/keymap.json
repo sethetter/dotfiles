@@ -1,8 +1,0 @@
-[
-  {
-    "bindings": {
-      "ctrl-j": "terminal_panel::ToggleFocus",
-      "ctrl-shift-j": "workspace::ToggleZoom"
-    }
-  }
-]

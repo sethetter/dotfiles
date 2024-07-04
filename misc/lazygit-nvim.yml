@@ -1,4 +1,0 @@
-# This is the lazygit config used when launched within neovim with <leader>gg
-gui:
-  theme:
-    lightTheme: false
