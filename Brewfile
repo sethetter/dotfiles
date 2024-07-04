@@ -94,10 +94,6 @@ brew "oath-toolkit"
 brew "openconnect"
 
 # TUIs
-brew "tmux"
-brew "tmuxinator"
-tap "cjbassi/ytop"
-brew "cjbassi/ytop/ytop"
 brew "k9s"
 brew "lazydocker"
 brew "lazygit"
@@ -111,10 +107,6 @@ tap "github/gh"
 brew "gh"
 brew "glab"
 brew "mas"
-
-# Fonts
-tap "homebrew/cask-fonts"
-cask "font-iosevka-nerd-font"
 
 # Libs
 brew "yubikey-personalization"

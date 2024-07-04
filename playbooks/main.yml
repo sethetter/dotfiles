@@ -7,7 +7,6 @@
   roles:
     - role: "./roles/programs"
     - role: "./roles/zsh"
-    - role: "./roles/tmux"
     - role: "./roles/git"
     - role: "./roles/vim"
     - role: "./roles/vscode"
