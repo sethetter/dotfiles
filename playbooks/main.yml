@@ -5,7 +5,6 @@
     dotfiles_dir: "{{ home_dir }}/dotfiles"
     obsidian_dir: "{{ home_dir }}/obsidian"
   roles:
-    - role: "./roles/programs"
     - role: "./roles/zsh"
     - role: "./roles/git"
     - role: "./roles/vim"

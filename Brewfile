@@ -6,7 +6,6 @@ brew "brew-file"
 
 # Applications
 cask "alacritty"
-cask "iterm2"
 cask "1password"
 cask "1password-cli"
 mas "tailscale", id: 1475387142
@@ -27,31 +26,16 @@ cask "figma"
 cask "gimp"
 cask "elgato-camera-hub"
 cask "autodesk-fusion"
-
-# Editors
 cask "visual-studio-code"
-cask "zed"
-brew "neovim"
 
 # Programming
+brew "tmux"
+brew "tmuxp"
 brew "asdf"
 brew "ansible"
+brew "deno"
 brew "go"
 brew "openjdk"
-brew "postgresql@14"
-brew "redis"
-brew "mysql"
-brew "pyenv"
-brew "python@3.9"
-brew "poetry"
-brew "pyenv"
-brew "rbenv"
-brew "php"
-brew "rustup-init"
-brew "rust-analyzer"
-brew "deno"
-tap "hashicorp/tap"
-brew "tfenv"
 
 # Containers
 brew "colima"

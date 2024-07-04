@@ -1,4 +1,10 @@
 # TODO: rectangle?!
+- name: link-tmux-config
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/misc/tmux.conf"
+    dest: "{{ home_dir }}/.tmux.conf"
+    state: link
+    force: true
 
 - name: link-lazygit-config
   ansible.builtin.file:
@@ -34,25 +40,6 @@
     dest: "{{ home_dir }}/.config/alacritty/themes"
     update: true
 
-- name: link-iterm-config
-  ansible.builtin.file:
-    src: "{{ dotfiles_dir }}/misc/iterm.json"
-    dest: "{{ home_dir }}/Library/Application Support/iTerm2/DynamicProfiles/iterm.json"
-    state: link
-    force: true
-
-- name: create-direnv-config-directory
-  file:
-    path: "{{ home_dir }}/.config/direnv"
-    state: directory
-
-- name: link-direnv-config
-  ansible.builtin.file:
-    src: "{{ dotfiles_dir }}/misc/direnv.toml"
-    dest: "{{ home_dir }}/.config/direnv/direnv.toml"
-    state: link
-    force: true
-
 - name: install-scripts
   ansible.builtin.file:
     src: "{{ item }}"
@@ -68,7 +55,7 @@
 
 - name: download-k9s-skin
   ansible.builtin.get_url:
-    url: https://raw.githubusercontent.com/derailed/k9s/master/skins/dracula.yaml
+    url: https://raw.githubusercontent.com/derailed/k9s/master/skins/solarized-light.yaml
     dest: "{{ home_dir }}/Library/Application Support/k9s/skins/"
     force: true
 
