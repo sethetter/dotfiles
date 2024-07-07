@@ -6,17 +6,16 @@
     state: link
     force: true
 
+- name: link-vimrc
+  ansible.builtin.file:
+    src: "{{ dotfiles_dir }}/misc/vimrc"
+    dest: "{{ home_dir }}/.vimrc"
+    state: link
+
 - name: link-lazygit-config
   ansible.builtin.file:
     src: "{{ dotfiles_dir }}/misc/lazygit.yml"
     dest: "{{ home_dir }}/Library/Application Support/lazygit/config.yml"
-    state: link
-    force: true
-
-- name: link-lazygit-nvim-config
-  ansible.builtin.file:
-    src: "{{ dotfiles_dir }}/misc/lazygit-nvim.yml"
-    dest: "{{ home_dir }}/Library/Application Support/lazygit/nvim.yml"
     state: link
     force: true
 

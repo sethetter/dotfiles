@@ -1,5 +1,0 @@
-- name: link-vimrc
-  ansible.builtin.file:
-    src: "{{ dotfiles_dir }}/vim/vimrc"
-    dest: "{{ home_dir }}/.vimrc"
-    state: link
