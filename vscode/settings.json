@@ -1,14 +1,44 @@
 {
+  "workbench.colorTheme": "Solarized Light",
+  "workbench.preferredLightColorTheme": "Solarized Light",
+  "workbench.preferredDarkColorTheme": "Solarized Dark",
+  "workbench.iconTheme": "easy-icons",
+  "workbench.activityBar.location": "hidden",
+  "workbench.sideBar.location": "left",
+  "workbench.editor.showTabs": "multiple",
+  "workbench.startupEditor": "terminal",
+
+  "window.newWindowDimensions": "maximized",
+  "window.autoDetectColorScheme": true,
+  "window.autoDetectHighContrast": false,
+
   "editor.fontFamily": "'Iosevka Nerd Font', 'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 15,
   "editor.tabSize": 2,
   "editor.cursorStyle": "block",
   "editor.lightbulb.enabled": "off",
   "editor.lineNumbers": "relative",
   "editor.multiCursorModifier": "alt",
+  "editor.guides.indentation": true,
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.lineHeight": 0,
+  "terminal.integrated.minimumContrastRatio": 1,
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.shellIntegration.enabled": false,
+  "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+
+  "zenMode.fullScreen": false,
+
   "vim.easymotion": true,
   "vim.leader": " ",
   "vim.enableNeovim": false,
   "vim.useCtrlKeys": true,
+
+  "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "never",
   "gitlens.codeLens.enabled": false,
   "gitlens.hovers.enabled": false,
   "gitlens.currentLine.enabled": false,
@@ -23,7 +53,34 @@
     "suppressResultsExplorerNotice": false,
     "suppressShowKeyBindingsNotice": true
   },
+  "githubPullRequests.defaultMergeMethod": "squash",
+
+  // Copilot
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
+
+  // Lang settings
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.tsserver.maxTsServerMemory": 8072,
   "typescript.tsserver.log": "off",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[go]": {
+    "editor.tabSize": 4
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "deno.cacheOnSave": true,
   "[markdown]": {
     "editor.wordWrap": "on",
     "editor.quickSuggestions": {
@@ -33,89 +90,7 @@
     },
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
-  "[go]": {
-    "editor.tabSize": 4
-  },
-  "extensions.ignoreRecommendations": true,
-  "window.newWindowDimensions": "maximized",
-  "workbench.sideBar.location": "left",
-  "go.enableCodeLens": {
-    "references": false,
-    "runtest": false
-  },
-  "workbench.editor.showTabs": "multiple",
-  "gitlens.remotes": [
-    {
-      "domain": "github.cms.gov",
-      "type": "GitHub"
-    }
-  ],
-  "editor.parameterHints.enabled": false,
-  "terminal.integrated.fontSize": 15,
-  "go.formatTool": "goimports",
-  "editor.fontWeight": "400",
-  "terminal.integrated.lineHeight": 0,
-  "go.lintTool": "staticcheck",
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "terminal.external.osxExec": "iterm.app",
-  "zenMode.fullScreen": false,
-  "workbench.startupEditor": "none",
-  "go.buildOnSave": "workspace",
-  "go.useLanguageServer": true,
-  "editor.fontSize": 15,
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "redhat.telemetry.enabled": false,
-  "githubPullRequests.defaultMergeMethod": "squash",
-  "todo-tree.general.tags": [
-    "BUG",
-    "HACK",
-    "FIXME",
-    "TODO",
-    "XXX",
-    "[ ]",
-    "[x]"
-  ],
-  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-  "eslint.quiet": true,
-  "groovyLint.enable": false,
-  "groovyLint.fix.enable": false,
-  "groovyLint.format.enable": false,
-  "groovyLint.insight.enable": false,
-  "groovyLint.format.useDocumentIndentSize": false,
-  "groovyLint.lint.trigger": "user",
-  "yaml.format.enable": false,
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "rust.rustup": {
-    "toolchain": "stable-x86_64-apple-darwin",
-    "nightlyToolchain": "nightly-x86_64-apple-darwin"
-  },
-  "rust.mode": "rls",
-  "rust.rls": {
-    "useRustfmt": true
-  },
-  "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust"
-  },
-  "editor.guides.indentation": true,
-  "git.autofetch": true,
-  "deno.inlayHints.enumMemberValues.enabled": false,
-  "deno.inlayHints.functionLikeReturnTypes.enabled": false,
-  "deno.inlayHints.parameterNames.enabled": "none",
-  "deno.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
-  "deno.inlayHints.parameterTypes.enabled": false,
-  "deno.inlayHints.propertyDeclarationTypes.enabled": false,
-  "deno.inlayHints.variableTypes.enabled": false,
-  "deno.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
-  "[html]": {
+ "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
@@ -125,80 +100,16 @@
     "editor.formatOnType": true,
     "editor.tabSize": 4
   },
-  "git.openRepositoryInParentFolders": "never",
-  "workbench.preferredDarkColorTheme": "Solarized Dark",
-  "workbench.iconTheme": "easy-icons",
   "yaml.schemas": {
     "file:///Users/sethetter/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
-  "atlascode.jira.enabled": true,
-  "atlascode.bitbucket.enabled": false,
-  "atlascode.jira.jqlList": [
-    {
-      "id": "06fd163e-a127-46d1-a0c9-9690bd0f1476",
-      "siteId": "bea47b2e-40fa-4407-b7cc-8ec1e16a72a4",
-      "name": "In Progress",
-      "query": "assignee = currentUser() AND status in (\"In Progress\", \"In Review\")",
-      "enabled": true,
-      "monitor": true
-    },
-    {
-      "id": "ad64a6d0-1a91-49bf-87ed-23cde9e7be31",
-      "siteId": "bea47b2e-40fa-4407-b7cc-8ec1e16a72a4",
-      "name": "In Staging",
-      "query": "assignee = currentUser() AND status in (\"Staging\")",
-      "enabled": true,
-      "monitor": true
-    },
-    {
-      "id": "ee5dffe0-3bd1-48bf-8be1-472e4f6966b4",
-      "siteId": "bea47b2e-40fa-4407-b7cc-8ec1e16a72a4",
-      "name": "Up Next",
-      "query": "assignee = currentUser() AND status in (\"Up Next\", \"Needs Design\")",
-      "enabled": true,
-      "monitor": true
-    },
-    {
-      "id": "e7d5eb75-8c2b-49ea-8cb3-d5690f7bb363",
-      "enabled": true,
-      "name": "My Tickets",
-      "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
-      "siteId": "bea47b2e-40fa-4407-b7cc-8ec1e16a72a4",
-      "monitor": true
-    }
-  ],
-  "atlascode.jira.lastCreateSiteAndProject": {
-    "siteId": "bea47b2e-40fa-4407-b7cc-8ec1e16a72a4",
-    "projectKey": "INTRFCS"
-  },
-  "editor.inlineSuggest.enabled": true,
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": true,
-    "markdown": false
-  },
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "diffEditor.ignoreTrimWhitespace": false,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "gitlens.autolinks": [
-    {
-      "prefix": "INTRFCS-",
-      "url": "https://zapierorg.atlassian.net/browse/INTRFCS-<num>"
-    }
-  ],
-  "typescript.tsserver.maxTsServerMemory": 8072,
-  "editor.formatOnSave": true,
-  "deno.cacheOnSave": true,
+  "eslint.quiet": true,
+
+  // Telemetry
+  "redhat.telemetry.enabled": false,
   "telemetry.telemetryLevel": "off",
   "gitlens.telemetry.enabled": false,
-  "workbench.activityBar.location": "hidden",
-  "workbench.preferredLightColorTheme": "Solarized Light",
-  "terminal.integrated.persistentSessionReviveProcess": "never",
-  "terminal.integrated.shellIntegration.enabled": false,
-  "terminal.integrated.shellIntegration.decorationsEnabled": "never",
-  "window.autoDetectColorScheme": true,
-  "window.autoDetectHighContrast": false,
-  "terminal.integrated.minimumContrastRatio": 1,
-  "workbench.colorTheme": "Solarized Light"
+
+  "atlascode.jira.enabled": true,
+  "atlascode.bitbucket.enabled": false
 }
