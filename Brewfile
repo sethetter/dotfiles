@@ -35,15 +35,10 @@ brew "asdf"
 brew "ansible"
 brew "deno"
 brew "go"
-brew "openjdk"
-
-# Containers
 brew "colima"
 brew "docker"
 brew "docker-compose"
 brew "docker-buildx"
-brew "helm"
-brew "helmfile"
 tap "int128/kubelogin"
 brew "int128/kubelogin/kubelogin"
 
@@ -90,6 +85,7 @@ brew "superfly/tap/flyctl"
 tap "github/gh"
 brew "gh"
 brew "glab"
+brew "tea"
 brew "mas"
 
 # Libs
