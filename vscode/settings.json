@@ -109,6 +109,7 @@
   "redhat.telemetry.enabled": false,
   "telemetry.telemetryLevel": "off",
   "gitlens.telemetry.enabled": false,
+  "aws.telemetry": false,
 
   "atlascode.jira.enabled": true,
   "atlascode.bitbucket.enabled": false
