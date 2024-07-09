@@ -6,7 +6,7 @@
   "workbench.activityBar.location": "hidden",
   "workbench.sideBar.location": "left",
   "workbench.editor.showTabs": "multiple",
-  "workbench.startupEditor": "terminal",
+  "workbench.startupEditor": "none",
 
   "window.newWindowDimensions": "maximized",
   "window.autoDetectColorScheme": true,
