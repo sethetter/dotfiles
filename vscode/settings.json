@@ -12,8 +12,7 @@
   "window.autoDetectColorScheme": true,
   "window.autoDetectHighContrast": false,
 
-  "editor.fontFamily": "'Iosevka Nerd Font', 'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 15,
+  "editor.fontSize": 14,
   "editor.tabSize": 2,
   "editor.cursorStyle": "block",
   "editor.lightbulb.enabled": "off",
@@ -23,7 +22,7 @@
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
 
-  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 0,
   "terminal.integrated.minimumContrastRatio": 1,
   "terminal.integrated.persistentSessionReviveProcess": "never",
