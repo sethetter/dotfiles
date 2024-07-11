@@ -27,6 +27,7 @@ cask "gimp"
 cask "elgato-camera-hub"
 cask "autodesk-fusion"
 cask "visual-studio-code"
+cask "zed"
 
 # Programming
 brew "tmux"

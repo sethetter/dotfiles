@@ -6,8 +6,8 @@ dynamic_padding = true
 padding = { x = 10, y = 8 }
 
 [font]
-size = 15
-normal = { family = "Iosevka NFP", style = "Regular" }
+size = 16
+normal = { family = "ZedMono Nerd Font Mono", style = "Regular" }
 
 [bell]
 duration = 0
