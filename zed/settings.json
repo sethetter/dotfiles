@@ -10,15 +10,17 @@
   "base_keymap": "VSCode",
   "vim_mode": true,
   "ui_font_size": 16,
-  "buffer_font_family": "Menlo",
-  "buffer_font_size": 14,
+  "buffer_line_height": "standard",
+  "buffer_font_family": "BlexMono Nerd Font",
+  "buffer_font_size": 15,
   "theme": {
     "mode": "system",
     "light": "Solarized Light",
     "dark": "Solarized Dark"
   },
   "terminal": {
-    "font_family": "Menlo",
-    "font_size": 14
+    "line_height": "standard",
+    "font_family": "BlexMono Nerd Font",
+    "font_size": 15
   }
 }

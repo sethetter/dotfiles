@@ -4,6 +4,9 @@ tap "homebrew/bundle"
 tap "homebrew/services"
 brew "brew-file"
 
+# Fonts
+brew "font-blex-mono-nerd-font"
+
 # Applications
 cask "alacritty"
 cask "1password"
