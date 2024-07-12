@@ -7,7 +7,7 @@ padding = { x = 10, y = 8 }
 
 [font]
 size = 15
-normal = { family = "BlexMono Nerd Font", style = "Regular" }
+normal = { family = "Input Mono Condensed", style = "Regular" }
 
 [bell]
 duration = 0

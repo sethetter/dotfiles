@@ -5,7 +5,7 @@ tap "homebrew/services"
 brew "brew-file"
 
 # Fonts
-brew "font-blex-mono-nerd-font"
+brew "font-input"
 
 # Applications
 cask "alacritty"
@@ -89,7 +89,6 @@ brew "superfly/tap/flyctl"
 tap "github/gh"
 brew "gh"
 brew "glab"
-brew "tea"
 brew "mas"
 
 # Libs
