@@ -13,6 +13,7 @@
   "buffer_line_height": "standard",
   "buffer_font_family": "BlexMono Nerd Font",
   "buffer_font_size": 15,
+  "relative_line_numbers": true,
   "theme": {
     "mode": "system",
     "light": "Solarized Light",
