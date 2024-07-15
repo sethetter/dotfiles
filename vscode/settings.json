@@ -12,6 +12,7 @@
   "window.autoDetectColorScheme": true,
   "window.autoDetectHighContrast": false,
 
+  "editor.fontFamily": "'Input Mono Condensed', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
   "editor.tabSize": 2,
   "editor.cursorStyle": "block",
