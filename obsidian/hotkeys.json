@@ -24,14 +24,6 @@
       "key": "B"
     }
   ],
-  "editor:focus": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "1"
-    }
-  ],
   "editor:focus-top": [
     {
       "modifiers": [
@@ -167,5 +159,24 @@
       "key": "M"
     }
   ],
-  "obsidian-excalidraw-plugin:insert-link": []
+  "obsidian-excalidraw-plugin:insert-link": [],
+  "editor:fold-less": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod"
+      ],
+      "key": "\\"
+    }
+  ],
+  "editor:fold-more": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod",
+        "Shift"
+      ],
+      "key": "\\"
+    }
+  ]
 }
