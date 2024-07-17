@@ -23,7 +23,7 @@
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
 
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 15,
   "terminal.integrated.lineHeight": 0,
   "terminal.integrated.minimumContrastRatio": 1,
   "terminal.integrated.persistentSessionReviveProcess": "never",
@@ -112,5 +112,6 @@
   "aws.telemetry": false,
 
   "atlascode.jira.enabled": true,
-  "atlascode.bitbucket.enabled": false
+  "atlascode.bitbucket.enabled": false,
+  "editor.lineHeight": 1.4
 }
