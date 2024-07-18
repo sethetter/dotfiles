@@ -14,6 +14,7 @@
 
   "editor.fontFamily": "'Input Mono Condensed', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
+  "editor.lineHeight": 1.3,
   "editor.tabSize": 2,
   "editor.cursorStyle": "block",
   "editor.lightbulb.enabled": "off",
@@ -24,7 +25,6 @@
   "editor.inlineSuggest.enabled": true,
 
   "terminal.integrated.fontSize": 15,
-  "terminal.integrated.lineHeight": 0,
   "terminal.integrated.minimumContrastRatio": 1,
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.shellIntegration.enabled": false,
@@ -100,6 +100,9 @@
     "editor.formatOnType": true,
     "editor.tabSize": 4
   },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "yaml.schemas": {
     "file:///Users/sethetter/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
@@ -112,6 +115,5 @@
   "aws.telemetry": false,
 
   "atlascode.jira.enabled": true,
-  "atlascode.bitbucket.enabled": false,
-  "editor.lineHeight": 1.4
+  "atlascode.bitbucket.enabled": false
 }
