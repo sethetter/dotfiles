@@ -6,7 +6,7 @@ dynamic_padding = true
 padding = { x = 10, y = 8 }
 
 [font]
-size = 15
+size = 14
 normal = { family = "Input Mono Condensed", style = "Regular" }
 
 [bell]

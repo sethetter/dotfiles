@@ -14,7 +14,7 @@
 
   "editor.fontFamily": "'Input Mono Condensed', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
-  "editor.lineHeight": 1.3,
+  "editor.lineHeight": 1.4,
   "editor.tabSize": 2,
   "editor.cursorStyle": "block",
   "editor.lightbulb.enabled": "off",
@@ -24,7 +24,7 @@
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
 
-  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.minimumContrastRatio": 1,
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.shellIntegration.enabled": false,
