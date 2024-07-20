@@ -23,5 +23,12 @@
     "line_height": "standard",
     "font_family": "Input Mono Condensed",
     "font_size": 15
+  },
+  "assistant": {
+    "version": "1",
+    "provider": {
+      "default_model": "claude-3-opus-20240229",
+      "name": "anthropic"
+    }
   }
 }
