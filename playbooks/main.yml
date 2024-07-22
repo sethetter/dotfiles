@@ -3,10 +3,8 @@
   vars:
     home_dir: /Users/sethetter
     dotfiles_dir: "{{ home_dir }}/dotfiles"
-    obsidian_dir: "{{ home_dir }}/obsidian"
   roles:
     - role: "./roles/zsh"
     - role: "./roles/git"
     - role: "./roles/vscode"
-    - role: "./roles/obsidian"
     - role: "./roles/misc"
