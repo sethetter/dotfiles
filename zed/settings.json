@@ -12,7 +12,7 @@
   "ui_font_size": 16,
   "buffer_line_height": "standard",
   "buffer_font_family": "Input Mono Condensed",
-  "buffer_font_size": 15,
+  "buffer_font_size": 14,
   "relative_line_numbers": true,
   "theme": {
     "mode": "system",
@@ -22,7 +22,7 @@
   "terminal": {
     "line_height": "standard",
     "font_family": "Input Mono Condensed",
-    "font_size": 15
+    "font_size": 14
   },
   "assistant": {
     "version": "1",
