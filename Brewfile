@@ -5,10 +5,9 @@ tap "homebrew/services"
 brew "brew-file"
 
 # Fonts
-brew "font-input"
+cask "font-input"
 
 # Applications
-cask "alacritty"
 cask "iterm2"
 cask "1password"
 cask "1password-cli"
