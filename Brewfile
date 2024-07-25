@@ -9,6 +9,7 @@ brew "font-input"
 
 # Applications
 cask "alacritty"
+cask "iterm2"
 cask "1password"
 cask "1password-cli"
 mas "tailscale", id: 1475387142
