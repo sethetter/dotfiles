@@ -26,19 +26,6 @@
     state: link
     force: true
 
-- name: link-alacritty-config
-  ansible.builtin.file:
-    src: "{{ dotfiles_dir }}/alacritty/alacritty.toml"
-    dest: "{{ home_dir }}/.config/alacritty/alacritty.toml"
-    state: link
-    force: true
-
-- name: clone-alacritty-themes
-  ansible.builtin.git:
-    repo: https://github.com/alacritty/alacritty-theme
-    dest: "{{ home_dir }}/.config/alacritty/themes"
-    update: true
-
 - name: install-scripts
   ansible.builtin.file:
     src: "{{ item }}"
