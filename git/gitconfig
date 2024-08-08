@@ -8,7 +8,7 @@
 [interactive]
   diffFilter = delta --color-only
 [delta]
-  light = true
+  #light = true
 [diff]
   colorMoved = default
 [difftool]
@@ -42,3 +42,7 @@
   autosetuprebase = always
 [includeIf "gitdir:/Users/sethetter/code/zapier/**"]
   path = ~/code/zapier/gitconfig
+[credential "https://github.com"]
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !/opt/homebrew/bin/gh auth git-credential
