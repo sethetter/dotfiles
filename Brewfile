@@ -14,6 +14,7 @@ cask "1password-cli"
 mas "tailscale", id: 1475387142
 cask "raycast"
 cask "rectangle"
+# TODO: ignore if hostname == nebula
 cask "google-chrome"
 cask "firefox"
 cask "obsidian"
