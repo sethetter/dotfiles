@@ -46,6 +46,8 @@ brew "docker-compose"
 brew "docker-buildx"
 tap "int128/kubelogin"
 brew "int128/kubelogin/kubelogin"
+tap "hashicorp/tap"
+brew "hashicorp/tap/vault"
 
 # Tools
 brew "zsh"
