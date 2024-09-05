@@ -12,7 +12,7 @@
   "window.autoDetectColorScheme": true,
   "window.autoDetectHighContrast": false,
 
-  "editor.fontFamily": "'Input Mono Condensed', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "'Input Mono Narrow', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
   "editor.lineHeight": 1.4,
   "editor.tabSize": 2,
@@ -90,7 +90,7 @@
     },
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
- "[html]": {
+  "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
@@ -115,5 +115,9 @@
   "aws.telemetry": false,
 
   "atlascode.jira.enabled": true,
-  "atlascode.bitbucket.enabled": false
+  "atlascode.bitbucket.enabled": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "makefile.configureOnOpen": false
 }
