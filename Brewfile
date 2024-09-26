@@ -30,6 +30,7 @@ cask "figma"
 cask "gimp"
 cask "autodesk-fusion"
 cask "visual-studio-code"
+cask "cursor"
 cask "zed"
 
 # Programming

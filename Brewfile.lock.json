@@ -14,25 +14,25 @@
         "revision": "209f59cda890de69b74c224982591642c21323d3"
       },
       "hashicorp/tap": {
-        "revision": "cbe6481cc4036ee92b76bedf7aac6d879601aef3"
+        "revision": "6a4cab80b070d6742b1a1a7425139c15b41c84ba"
       },
       "heroku/brew": {
         "revision": "26afdc76a586ed3ed1a38f41a72133e2ff3a9a05"
       },
       "homebrew/bundle": {
-        "revision": "b82ff8731cffa2725007a2d3907b3c626f954477"
+        "revision": "a882a221ecb33f855f8a0b78adaa525926901a19"
       },
       "homebrew/cask-fonts": {
         "revision": "0ed20f35d21ebc3f4f829689b101078718ad5ce1"
       },
       "homebrew/services": {
-        "revision": "c7f12486d51773c385fd695218d785aa13240a25"
+        "revision": "8589da010d2aeb29f8164d5dde4a28f74a233ce3"
       },
       "superfly/tap": {
         "revision": "7eaeb6dc557b6307f16ea493026737303501200b"
       },
       "int128/kubelogin": {
-        "revision": "d37639192b53e6567e65dd9eb0dbd0eb1a41b87f"
+        "revision": "7a7ca24ffe87cf47ad15c5f1f6a47ff70c5b68bd"
       },
       "rcmdnk/file": {
         "revision": "2d5a169de64255ae040c2190f0684562288cc457"
@@ -92,40 +92,40 @@
         }
       },
       "awscli": {
-        "version": "2.17.58",
+        "version": "2.17.59",
         "bottle": {
           "rebuild": 0,
           "root_url": "https://ghcr.io/v2/homebrew/core",
           "files": {
             "arm64_sequoia": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/awscli/blobs/sha256:d19a202b661d5d2081fec028ed271fdb91d3580e175f0f9895ec66e19af25e0a",
-              "sha256": "d19a202b661d5d2081fec028ed271fdb91d3580e175f0f9895ec66e19af25e0a"
+              "url": "https://ghcr.io/v2/homebrew/core/awscli/blobs/sha256:af530a040b009afb9ccfce85436660cf56d69ef45cffec2a84e765636f37d19f",
+              "sha256": "af530a040b009afb9ccfce85436660cf56d69ef45cffec2a84e765636f37d19f"
             },
             "arm64_sonoma": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/awscli/blobs/sha256:8f52587eeed37903b25f6c8ddace64943bd61c426676db5d69f4f8b257342d2e",
-              "sha256": "8f52587eeed37903b25f6c8ddace64943bd61c426676db5d69f4f8b257342d2e"
+              "url": "https://ghcr.io/v2/homebrew/core/awscli/blobs/sha256:5acd9beebeb4694a76aa27b13c2e76bc096b4bb261c0f93818367199e511d478",
+              "sha256": "5acd9beebeb4694a76aa27b13c2e76bc096b4bb261c0f93818367199e511d478"
             },
             "arm64_ventura": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/awscli/blobs/sha256:da1a6c16d8c88e5bd363897b8a0ea7833188482cbf9bd1d28d902cf6d9cbd435",
-              "sha256": "da1a6c16d8c88e5bd363897b8a0ea7833188482cbf9bd1d28d902cf6d9cbd435"
+              "url": "https://ghcr.io/v2/homebrew/core/awscli/blobs/sha256:4eac3195c88e486874d93baea5e1ab6277c6fdb450fd44c782fa58f4501a573b",
+              "sha256": "4eac3195c88e486874d93baea5e1ab6277c6fdb450fd44c782fa58f4501a573b"
             },
             "sonoma": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/awscli/blobs/sha256:2fbb34c45fc54d987ec49f60f20e085577a02ee328408988bf5f63d6165a70c7",
-              "sha256": "2fbb34c45fc54d987ec49f60f20e085577a02ee328408988bf5f63d6165a70c7"
+              "url": "https://ghcr.io/v2/homebrew/core/awscli/blobs/sha256:de6082c09d321cc1c828093e09ac6767c5cc52a419f9c0339758d0be8e7f0c8a",
+              "sha256": "de6082c09d321cc1c828093e09ac6767c5cc52a419f9c0339758d0be8e7f0c8a"
             },
             "ventura": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/awscli/blobs/sha256:1d6433efa3a957ad185ff6d2b8eb90535ae1d32a2dc08c2775ecb83bfbef8467",
-              "sha256": "1d6433efa3a957ad185ff6d2b8eb90535ae1d32a2dc08c2775ecb83bfbef8467"
+              "url": "https://ghcr.io/v2/homebrew/core/awscli/blobs/sha256:082f00f1daa809265348a134df43d9e2df01fb777c1cfd46ab0294198bac77e6",
+              "sha256": "082f00f1daa809265348a134df43d9e2df01fb777c1cfd46ab0294198bac77e6"
             },
             "x86_64_linux": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/awscli/blobs/sha256:95ec5d228361e13807c33598a412de3b73e4b4e02e7a4273a72702f054a53804",
-              "sha256": "95ec5d228361e13807c33598a412de3b73e4b4e02e7a4273a72702f054a53804"
+              "url": "https://ghcr.io/v2/homebrew/core/awscli/blobs/sha256:c288b5fb99e6f7775fec1cca6d8a46a6e3b19d34a19c4562d3c85b76bd150b22",
+              "sha256": "c288b5fb99e6f7775fec1cca6d8a46a6e3b19d34a19c4562d3c85b76bd150b22"
             }
           }
         }
@@ -3290,7 +3290,7 @@
         }
       },
       "int128/kubelogin/kubelogin": {
-        "version": "v1.30.0",
+        "version": "v1.30.1",
         "bottle": false
       },
       "asdf": {
@@ -3755,7 +3755,7 @@
         }
       },
       "loom": {
-        "version": "0.254.2",
+        "version": "0.254.3",
         "options": {
           "full_name": "loom"
         }
@@ -3785,7 +3785,7 @@
         }
       },
       "signal": {
-        "version": "7.25.0",
+        "version": "7.26.0",
         "options": {
           "full_name": "signal"
         }
@@ -3803,7 +3803,7 @@
         }
       },
       "spotify": {
-        "version": "1.2.45.454",
+        "version": "1.2.47.364",
         "options": {
           "full_name": "spotify"
         }
@@ -3815,7 +3815,7 @@
         }
       },
       "zoom": {
-        "version": "6.2.0.40111",
+        "version": "6.2.2.40571",
         "options": {
           "full_name": "zoom"
         }
@@ -3863,7 +3863,7 @@
         }
       },
       "zed": {
-        "version": "0.153.7",
+        "version": "0.154.2",
         "options": {
           "full_name": "zed"
         }
@@ -3923,6 +3923,12 @@
         "version": "3.6.4",
         "options": {
           "full_name": "audacity"
+        }
+      },
+      "cursor": {
+        "version": "0.41.3,240925fkhcqg263",
+        "options": {
+          "full_name": "cursor"
         }
       }
     },
