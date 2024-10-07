@@ -1,0 +1,7 @@
+[
+  {
+    "bindings": {
+      "cmd-shift-j": "workspace::ToggleZoom"
+    }
+  }
+]

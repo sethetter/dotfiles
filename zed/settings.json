@@ -7,11 +7,16 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "language_models": {
+    "anthropic": {
+      "version": "1"
+    }
+  },
   "base_keymap": "VSCode",
   "vim_mode": true,
   "ui_font_size": 16,
   "buffer_line_height": "standard",
-  "buffer_font_family": "Input Mono Condensed",
+  "buffer_font_family": "Input Mono Narrow",
   "buffer_font_size": 14,
   "relative_line_numbers": true,
   "theme": {
@@ -21,14 +26,15 @@
   },
   "terminal": {
     "line_height": "standard",
-    "font_family": "Input Mono Condensed",
+    "font_family": "Input Mono Narrow",
     "font_size": 14
   },
   "assistant": {
-    "version": "1",
-    "provider": {
-      "default_model": "claude-3-opus-20240229",
-      "name": "anthropic"
-    }
+    "default_model": {
+      "provider": "anthropic",
+      "model": "claude-3-opus-20240229"
+    },
+    "version": "2",
+    "provider": null
   }
 }
