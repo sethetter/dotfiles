@@ -323,5 +323,10 @@
   {
     "key": "ctrl+j j",
     "command": "workbench.action.positionPanelBottom"
+  },
+  {
+    "key": "shift+cmd+/",
+    "command": "workbench.action.chat.openInEditor",
+    "when": "chatIsEnabled"
   }
 ]
