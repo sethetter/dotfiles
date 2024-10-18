@@ -15,6 +15,7 @@ cask "audacity"
 mas "tailscale", id: 1475387142
 cask "raycast"
 cask "rectangle"
+cask "meetingbar"
 cask "firefox"
 cask "obsidian"
 cask "todoist"
