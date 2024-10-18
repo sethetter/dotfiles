@@ -119,5 +119,7 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "makefile.configureOnOpen": false
+  "makefile.configureOnOpen": false,
+  "search.defaultViewMode": "tree",
+  "scm.defaultViewMode": "tree"
 }
