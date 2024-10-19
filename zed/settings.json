@@ -36,5 +36,10 @@
     },
     "version": "2",
     "provider": null
+  },
+  "languages": {
+    "Markdown": {
+      "soft_wrap": "bounded"
+    }
   }
 }
