@@ -1,7 +1,35 @@
 [
   {
     "bindings": {
-      "cmd-shift-j": "workspace::ToggleZoom"
+      "ctrl-[": ["workspace::SendKeystrokes", "escape"],
+      "cmd-ctrl-j": "workspace::ToggleZoom",
+      "cmd-9": "terminal_panel::ToggleFocus",
+      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"]
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "g r": "editor::FindAllReferences",
+      "cmd-k e": "pane::RevealInProjectPanel"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-shift-l": "pane::SplitRight",
+      "ctrl-shift-h": "pane::SplitLeft",
+      "ctrl-shift-j": "pane::SplitDown",
+      "ctrl-shift-k": "pane::SplitUp"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "ctrl-shift-left": "project_panel::CollapseAllEntries"
     }
   }
 ]
