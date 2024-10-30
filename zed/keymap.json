@@ -4,10 +4,13 @@
       "ctrl-[": ["workspace::SendKeystrokes", "escape"],
       "cmd-ctrl-j": "workspace::ToggleZoom",
       "cmd-9": "terminal_panel::ToggleFocus",
+      "cmd-ctrl-b": "workspace::ToggleRightDock",
+      "cmd-shift-o": "outline_panel::ToggleFocus",
       "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
       "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
       "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"]
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "space C C": "workspace::CloseAllItemsAndPanes"
     }
   },
   {
@@ -32,7 +35,7 @@
   {
     "context": "ProjectPanel",
     "bindings": {
-      "ctrl-shift-left": "project_panel::CollapseAllEntries"
+      "cmd-shift-c": "project_panel::CollapseAllEntries"
     }
   }
 ]

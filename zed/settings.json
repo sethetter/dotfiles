@@ -21,7 +21,7 @@
   "relative_line_numbers": true,
   "theme": {
     "mode": "system",
-    "light": "Solarized Light",
+    "light": "Rosé Pine Dawn",
     "dark": "Rosé Pine"
   },
   "terminal": {
@@ -31,8 +31,8 @@
   },
   "assistant": {
     "default_model": {
-      "provider": "anthropic",
-      "model": "claude-3-opus-20240229"
+      "provider": "openai",
+      "model": "gpt-4o"
     },
     "version": "2",
     "provider": null
