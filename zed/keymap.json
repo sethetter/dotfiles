@@ -11,10 +11,13 @@
     }
   },
   {
-    "context": "Editor",
+    "context": "Editor && vim_mode == normal",
     "bindings": {
+      "space w": "workspace::Save",
       "g r": "editor::FindAllReferences",
-      "cmd-k e": "pane::RevealInProjectPanel"
+      "shift-e": "pane::RevealInProjectPanel",
+      "shift-h": "pane::ActivatePrevItem",
+      "shift-l": "pane::ActivateNextItem"
     }
   },
   {
