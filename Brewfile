@@ -6,6 +6,7 @@ brew "brew-file"
 
 # Fonts
 cask "font-input"
+cask "font-hack-nerd-font"
 
 # Applications
 cask "iterm2"
@@ -33,6 +34,7 @@ cask "autodesk-fusion"
 cask "visual-studio-code"
 cask "cursor"
 cask "zed"
+brew "neovim"
 
 # Programming
 brew "tmux"
