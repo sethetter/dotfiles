@@ -29,10 +29,9 @@ wk.add({
   { "<C-l>",      "<C-w>l",                                           desc = "Move focus to right pane" },
   { "H",          ":bp<cr>",                                          desc = "Switch to previous buffer" },
   { "L",          ":bn<cr>",                                          desc = "Switch to next buffer" },
-  { "P",          "<cmd>tabprev<cr>",                                 desc = "Previous tab" },
-  { "N",          "<cmd>tabprev<cr>",                                 desc = "Previous tab" },
+  { "<C-P>",      "<cmd>tabprev<cr>",                                 desc = "Previous tab" },
+  { "<C-N>",      "<cmd>tabnext<cr>",                                 desc = "Next tab" },
 
-  { "<leader>c",  "<cmd>bd<cr>",                                      desc = "Delete Buffer" },
   { "<leader>/",  "<cmd>CommentToggle<cr>",                           desc = "Toggle comment" },
   { "<leader>e",  "<cmd>NvimTreeToggle<cr>",                          desc = "Toggle nvimtree" },
   { "E",          "<cmd>NvimTreeFindFile<cr>",                        desc = "Toggle nvimtree" },
@@ -40,11 +39,13 @@ wk.add({
   { "<leader>v/", "<cmd>vsp<cr>",                                     desc = "Split vertical" },
   { "<leader>v?", "<cmd>sp<cr>",                                      desc = "Split horizontal" },
 
+  { "<leader>d",  "<cmd>bd<cr>",                                      desc = "Close buffer" },
   { "<leader>bn", "<cmd>new<CR>",                                     desc = "New buffer" },
-  { "<leader>bf", "<cmd>lua vim.lsp.buf.format()<CR>",                desc = "Format buffer" },
+  { "<leader>bf", "<cmd>Telescope buffers<cr>",                       desc = "Buffers" },
+  { "<leader>bF", "<cmd>lua vim.lsp.buf.format()<CR>",                desc = "Format buffer" },
 
   { "<leader>f",  "<cmd>Telescope find_files<cr>",                    desc = "Find files" },
-  { "<leader>sp", "<cmd>Telescope lgve_grep<cr>",                     desc = "Live grep" },
+  { "<leader>sp", "<cmd>Telescope live_grep<cr>",                     desc = "Live grep" },
   { "<leader>sh", "<cmd>Telescope help_tags<cr>",                     desc = "Help tags" },
   { "<leader>sc", "<cmd>Telescope commands<cr>",                      desc = "Commands" },
 
@@ -54,6 +55,8 @@ wk.add({
 
   { "[d",         "<cmd>lua vim.lsp.diagnostic.goto_prev()<cr>",      desc = "Previous diagnostic" },
   { "]d",         "<cmd>lua vim.lsp.diagnostic.goto_next()<cr>",      desc = "Next diagnostic" },
+  { "[g",         "<cmd>Gitsigns prev_hunk<cr>",                      desc = "Previous change" },
+  { "]g",         "<cmd>Gitsigns next_hunk<cr>",                      desc = "Next change" },
 
   { "K",          "<cmd>lua vim.lsp.buf.hover()<cr>",                 desc = "Hover" },
 
@@ -73,9 +76,21 @@ wk.add({
   { "<leader>g",  group = "git" },
   { "<leader>gg", "<cmd>LazyGit<cr>",                                 desc = "Lazygit" },
   { "<leader>gs", "<cmd>Telescope git_status<cr>",                    desc = "Git status" },
-  { "<leader>gd", "<cmd>Gitsigns diffthis HEAD<cr>",                  desc = "File diff" },
+  { "<leader>gd", "<cmd>Gitsigns diffthis vertical=true HEAD<cr>",    desc = "File diff" },
   { "<leader>gD", "<cmd>DiffviewOpen<cr>",                            desc = "Git diff" },
-  { "<leader>Gd", ":Gitsigns diffthis ",                              desc = "File diff provided ref" },
+  { "<leader>Gd", ":Gitsigns diffthis vertical=true ",                desc = "File diff provided ref" },
   { "<leader>GD", ":DiffviewOpen ",                                   desc = "Diff provided ref" },
   { "<leader>gh", "<cmd>DiffviewFileHistory<cr>",                     desc = "File history" },
+  {
+    "<leader>gl",
+    '<cmd>lua require("gitlinker").get_buf_range_url("n", {action_callback = require("gitlinker.actions").open_in_browser})<cr>',
+    desc = "Copy git url",
+    mode = "n",
+  },
+  {
+    "<leader>gl",
+    '<cmd>lua require("gitlinker").get_buf_range_url("v", {action_callback = require("gitlinker.actions").open_in_browser})<cr>',
+    desc = "Copy git url",
+    mode = "v",
+  },
 })
