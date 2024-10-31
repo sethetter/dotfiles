@@ -9,6 +9,7 @@ vim.opt.relativenumber = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.clipboard = ""
+vim.opt.wrap = false
 
 -- Reserve a space in the gutter
 vim.opt.signcolumn = 'yes'
