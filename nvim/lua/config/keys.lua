@@ -1,15 +1,15 @@
-local wk = require("which-key")
+local wk       = require("which-key")
 
 local Terminal = require('toggleterm.terminal').Terminal
 
 -- Create a lazygit fullscreen terminal
 local lazygit  = Terminal:new({
   cmd = "lazygit",
-  direction = "float",                                  -- This can use "horizontal" or "vertical" if float doesn't fill
+  direction = "float",                           -- This can use "horizontal" or "vertical" if float doesn't fill
   float_opts = {
-    border = "none",                                    -- or single/double if you prefer
-    width = function() return vim.o.columns end,        -- full width
-    height = function() return vim.o.lines end,         -- full height
+    border = "none",                             -- or single/double if you prefer
+    width = function() return vim.o.columns end, -- full width
+    height = function() return vim.o.lines end,  -- full height
   },
   -- adjust other options as needed
   hidden = true
@@ -29,6 +29,8 @@ wk.add({
   { "<C-l>",      "<C-w>l",                                           desc = "Move focus to right pane" },
   { "H",          ":bp<cr>",                                          desc = "Switch to previous buffer" },
   { "L",          ":bn<cr>",                                          desc = "Switch to next buffer" },
+  { "P",          "<cmd>tabprev<cr>",                                 desc = "Previous tab" },
+  { "N",          "<cmd>tabprev<cr>",                                 desc = "Previous tab" },
 
   { "<leader>c",  "<cmd>bd<cr>",                                      desc = "Delete Buffer" },
   { "<leader>/",  "<cmd>CommentToggle<cr>",                           desc = "Toggle comment" },
