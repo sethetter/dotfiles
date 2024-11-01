@@ -40,6 +40,7 @@ wk.add({
   { "<leader>v?", "<cmd>sp<cr>",                                      desc = "Split horizontal" },
 
   { "<leader>d",  "<cmd>bd<cr>",                                      desc = "Close buffer" },
+  { "<leader>D",  "<cmd>bd!<cr>",                                     desc = "Close buffer (force)" },
   { "<leader>bn", "<cmd>new<CR>",                                     desc = "New buffer" },
   { "<leader>bf", "<cmd>Telescope buffers<cr>",                       desc = "Buffers" },
   { "<leader>bF", "<cmd>lua vim.lsp.buf.format()<CR>",                desc = "Format buffer" },
