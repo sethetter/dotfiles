@@ -58,6 +58,8 @@ wk.add({
   { "<leader>l",  "<cmd>Trouble lsp toggle include_declarations=false<cr>", desc = "Trouble LSP bar" },
   { "<leader>o",  "<cmd>Trouble lsp_document_symbols toggle<cr>",           desc = "Symbols outline" },
 
+  { "<leader>Z",  "<cmd>Goyo<cr>",                                          desc = "Goyo toggle" },
+
   { "<leader>w",  "<cmd>w<cr>",                                             desc = "Save" },
   { "<leader>X",  "<cmd>x<cr>",                                             desc = "Save and close" },
   { "<leader>q",  "<cmd>q<cr>",                                             desc = "Quit" },
