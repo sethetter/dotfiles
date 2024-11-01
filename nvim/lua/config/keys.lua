@@ -26,11 +26,18 @@ wk.add({
   { "<C-j>",      "<C-w>j",                                                 desc = "Move focus to below pane" },
   { "<C-k>",      "<C-w>k",                                                 desc = "Move focus to above pane" },
   { "<C-l>",      "<C-w>l",                                                 desc = "Move focus to right pane" },
-  -- TODO: horizontal scrolling
-  -- { "<A-h>",      "5zh",                                                    desc = "Scroll left" },
-  -- { "<A-l>",      "5zl",                                                    desc = "Scroll right" },
+
+  { "<M-h>",      "5zh",                                                    desc = "Scroll left" },
+  { "<M-l>",      "5zl",                                                    desc = "Scroll right" },
+
   { "H",          ":bp<cr>",                                                desc = "Switch to previous buffer" },
   { "L",          ":bn<cr>",                                                desc = "Switch to next buffer" },
+  { "<leader>d",  "<cmd>bd<cr>",                                            desc = "Close buffer" },
+  { "<leader>D",  "<cmd>bd!<cr>",                                           desc = "Close buffer (force)" },
+  { "<leader>bn", "<cmd>new<CR>",                                           desc = "New buffer" },
+  { "<leader>bf", "<cmd>Telescope buffers<cr>",                             desc = "Buffers" },
+  { "<leader>bF", "<cmd>lua vim.lsp.buf.format()<CR>",                      desc = "Format buffer" },
+
   { "<leader>tp", "<cmd>tabprev<cr>",                                       desc = "Previous tab" },
   { "<leader>tn", "<cmd>tabnext<cr>",                                       desc = "Next tab" },
 
@@ -42,12 +49,6 @@ wk.add({
   { "<leader>h",  "<cmd>noh<cr>",                                           desc = "Clear highlight" },
   { "<leader>v/", "<cmd>vsp<cr>",                                           desc = "Split vertical" },
   { "<leader>v?", "<cmd>sp<cr>",                                            desc = "Split horizontal" },
-
-  { "<leader>d",  "<cmd>bd<cr>",                                            desc = "Close buffer" },
-  { "<leader>D",  "<cmd>bd!<cr>",                                           desc = "Close buffer (force)" },
-  { "<leader>bn", "<cmd>new<CR>",                                           desc = "New buffer" },
-  { "<leader>bf", "<cmd>Telescope buffers<cr>",                             desc = "Buffers" },
-  { "<leader>bF", "<cmd>lua vim.lsp.buf.format()<CR>",                      desc = "Format buffer" },
 
   { "<leader>f",  "<cmd>Telescope find_files<cr>",                          desc = "Find files" },
   { "<leader>sp", "<cmd>Telescope live_grep<cr>",                           desc = "Live grep" },
