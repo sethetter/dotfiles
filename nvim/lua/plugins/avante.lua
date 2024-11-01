@@ -5,6 +5,8 @@ return {
 	version = false, -- set this if you want to always pull the latest change
 	opts = {
 		-- add any opts here
+    provider = "openai",
+    auto_suggestions_provider = "copilot",
 	},
 	-- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
 	build = "make",
@@ -24,8 +26,6 @@ return {
 			opts = {
 				-- recommended settings
 				default = {
-					provider = "openai",
-					auto_suggestions_provider = "copilot",
 					embed_image_as_base64 = false,
 					prompt_for_file_name = false,
 					drag_and_drop = {
