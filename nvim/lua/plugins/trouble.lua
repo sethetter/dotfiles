@@ -6,6 +6,7 @@ return {
     auto_preview = false,
     modes = {
       diagnostics = {
+        focus = true,
         format = "{severity_icon} {message:md} {item.source} {code} {pos}",
       },
       lsp_references = {
@@ -15,6 +16,7 @@ return {
         },
       },
       lsp_document_symbols = {
+        focus = true,
         win = {
           position = "right",
           size = 45,
