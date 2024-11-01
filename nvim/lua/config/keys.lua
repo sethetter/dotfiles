@@ -21,10 +21,9 @@ end
 
 vim.cmd("command! LazyGit lua _LAZYGIT_TOGGLE()")
 
-
 wk.add({
   { "<C-h>",      "<C-w>h",                                           desc = "Move focus to left pane" },
-  { "<C-j>",      "<C-w>j",                                           desc = "Move focus to below pane" },
+  -- { "<C-j>",      "<C-w>j",                                           desc = "Move focus to below pane" },
   { "<C-k>",      "<C-w>k",                                           desc = "Move focus to above pane" },
   { "<C-l>",      "<C-w>l",                                           desc = "Move focus to right pane" },
   { "H",          ":bp<cr>",                                          desc = "Switch to previous buffer" },
@@ -32,15 +31,16 @@ wk.add({
   { "<C-P>",      "<cmd>tabprev<cr>",                                 desc = "Previous tab" },
   { "<C-N>",      "<cmd>tabnext<cr>",                                 desc = "Next tab" },
 
-  { "<leader>/",  "<cmd>CommentToggle<cr>",                           desc = "Toggle comment" },
+  { "<leader>/",  "<cmd>CommentToggle<cr>",                           desc = "Toggle comment",           mode = { "n" } },
+  { "<leader>/",  "<cmd>CommentToggle<cr>",                           desc = "Toggle comment",           mode = { "v" } },
   { "<leader>e",  "<cmd>NvimTreeToggle<cr>",                          desc = "Toggle nvimtree" },
   { "E",          "<cmd>NvimTreeFindFile<cr>",                        desc = "Toggle nvimtree" },
   { "<leader>h",  "<cmd>noh<cr>",                                     desc = "Clear highlight" },
   { "<leader>v/", "<cmd>vsp<cr>",                                     desc = "Split vertical" },
   { "<leader>v?", "<cmd>sp<cr>",                                      desc = "Split horizontal" },
 
-  { "<leader>d",  "<cmd>bd<cr>",                                      desc = "Close buffer" },
-  { "<leader>D",  "<cmd>bd!<cr>",                                     desc = "Close buffer (force)" },
+  { "<leader>c",  "<cmd>bd<cr>",                                      desc = "Close buffer" },
+  { "<leader>C",  "<cmd>bd!<cr>",                                     desc = "Close buffer (force)" },
   { "<leader>bn", "<cmd>new<CR>",                                     desc = "New buffer" },
   { "<leader>bf", "<cmd>Telescope buffers<cr>",                       desc = "Buffers" },
   { "<leader>bF", "<cmd>lua vim.lsp.buf.format()<CR>",                desc = "Format buffer" },
@@ -84,14 +84,17 @@ wk.add({
   { "<leader>gh", "<cmd>DiffviewFileHistory<cr>",                     desc = "File history" },
   {
     "<leader>gl",
-    '<cmd>lua require("gitlinker").get_buf_range_url("n", {action_callback = require("gitlinker.actions").open_in_browser})<cr>',
+    '<cmd>lua require("gitlinker").get_buf_range_url("n", {action_callback = require("gitlinker.actions").copy_to_clipboard})<cr>',
     desc = "Copy git url",
     mode = "n",
+    silent = true,
   },
   {
     "<leader>gl",
-    '<cmd>lua require("gitlinker").get_buf_range_url("v", {action_callback = require("gitlinker.actions").open_in_browser})<cr>',
+    '<cmd>lua require("gitlinker").get_buf_range_url("v", {action_callback = require("gitlinker.actions").copy_to_clipboard})<cr>',
     desc = "Copy git url",
     mode = "v",
+    -- TODO: make this actually silent?!
+    silent = true,
   },
 })

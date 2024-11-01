@@ -1,4 +1,6 @@
 return {
   "ruifm/gitlinker.nvim",
-  opts = {},
+  opts = {
+    mappings = nil,
+  },
 }

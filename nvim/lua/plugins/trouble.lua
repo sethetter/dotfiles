@@ -2,9 +2,9 @@ return {
   "folke/trouble.nvim",
   opts = {
     focus = true,
-    win = {
-      position = "right",
-    },
+    -- win = {
+    --  position = "right",
+    -- },
   },
   cmd = "Trouble",
   keys = {
