@@ -14,8 +14,10 @@
     }
   },
   {
-    "context": "Editor && vim_mode == normal",
+    "context": "Editor && (vim_mode == normal || vim_mode == visual)",
     "bindings": {
+      "space g l": "editor::CopyPermalinkToLine",
+      "space g o": "editor::OpenPermalinkToLine",
       "space w": "workspace::Save",
       "g r": "editor::FindAllReferences",
       "shift-e": "pane::RevealInProjectPanel",
