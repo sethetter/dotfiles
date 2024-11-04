@@ -42,6 +42,7 @@ wk.add({
   { "<leader>tn", "<cmd>tabnext<cr>", desc = "Next tab" },
 
   { "<leader>/", "<cmd>CommentToggle<cr>", desc = "Toggle comment", mode = { "n" } },
+  -- TODO: Fix multi line commenting
   { "<leader>/", "<cmd>CommentToggle<cr>", desc = "Toggle comment", mode = { "v" } },
 
   { "<leader>e", "<cmd>NvimTreeToggle<cr>", desc = "Toggle file tree" },
@@ -64,7 +65,7 @@ wk.add({
   { "<leader>w", "<cmd>w<cr>", desc = "Save" },
   { "<leader>X", "<cmd>x<cr>", desc = "Save and close" },
   { "<leader>q", "<cmd>q<cr>", desc = "Quit" },
-  { "<leader>QQ", "<cmd>qa<cr>", desc = "Quit all" },
+  { "<leader>Q", "<cmd>qa<cr>", desc = "Quit all" },
 
   { "[d", "<cmd>lua vim.lsp.diagnostic.goto_prev()<cr>", desc = "Previous diagnostic" },
   { "]d", "<cmd>lua vim.lsp.diagnostic.goto_next()<cr>", desc = "Next diagnostic" },
