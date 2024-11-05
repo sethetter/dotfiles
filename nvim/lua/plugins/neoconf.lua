@@ -1,6 +1,10 @@
 return {
   "folke/neoconf.nvim",
   config = function()
-    require("neoconf").setup()
+    require("neoconf").setup({
+      import = {
+        vscode = true,
+      },
+    })
   end,
 }

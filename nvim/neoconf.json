@@ -1,3 +1,7 @@
 {
-  "lspconfig": {}
+  "servers": {
+    "denols": {
+      "disable": true
+    }
+  }
 }

@@ -14,7 +14,6 @@ vim.opt.wrap = false
 -- Reserve a space in the gutter
 vim.opt.signcolumn = 'yes'
 
-
 local cmp = require('cmp')
 
 cmp.setup({
@@ -45,4 +44,15 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
       vim.opt_local.linebreak = true
     end
   end,
+})
+
+vim.api.nvim_create_autocmd("BufWritePre", {
+  callback = function()
+    local mode = vim.api.nvim_get_mode().mode
+    local filetype = vim.bo.filetype
+    if vim.bo.modified == true and mode == 'n' then
+      vim.cmd('lua vim.lsp.buf.format()')
+    else
+    end
+  end
 })
