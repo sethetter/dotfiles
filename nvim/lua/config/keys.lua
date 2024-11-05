@@ -91,7 +91,6 @@ wk.add({
   { "<leader>gg", "<cmd>LazyGit<cr>", desc = "Lazygit" },
   { "<leader>gs", "<cmd>Telescope git_status<cr>", desc = "Git status" },
   { "<leader>gd", "<cmd>Gitsigns diffthis vertical=true HEAD<cr>", desc = "File diff" },
-  { "<leader>gD", "<cmd>DiffviewOpen<cr>", desc = "Git diff" },
   { "<leader>Gd", ":Gitsigns diffthis vertical=true ", desc = "File diff provided ref" },
   { "<leader>GD", ":DiffviewOpen ", desc = "Diff provided ref" },
   { "<leader>gh", "<cmd>DiffviewFileHistory<cr>", desc = "File history" },

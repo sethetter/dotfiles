@@ -1,4 +1,6 @@
 return {
   "folke/neoconf.nvim",
-  opts = {},
+  config = function()
+    require("neoconf").setup()
+  end,
 }

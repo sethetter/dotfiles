@@ -22,7 +22,6 @@ return {
           size = 45,
         },
         format = "{kind_icon} {symbol.name}",
-
       },
     },
   },

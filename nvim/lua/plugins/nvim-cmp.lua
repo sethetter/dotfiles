@@ -1,1 +1,4 @@
-return { "hrsh7th/nvim-cmp", opts = {} }
+return {
+  "hrsh7th/nvim-cmp",
+  opts = {},
+}

@@ -1,6 +1,8 @@
 return {
   "neovim/nvim-lspconfig",
   dependencies = {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
     "folke/neoconf.nvim",
   },
   config = function()
@@ -11,21 +13,5 @@ return {
       lspconfig_defaults.capabilities,
       require("cmp_nvim_lsp").default_capabilities()
     )
-
-    lspc.vtsls.setup({})
-    lspc.eslint.setup({})
-    lspc.prismals.setup({})
-
-    lspc.denols.setup({
-      settings = { deno = { enabled = false } },
-    })
-
-    lspc.gitlab_ci_ls.setup({})
-
-    lspc.spectral.setup({})
-
-    lspc.yamlls.setup({})
-
-    lspc.lua_ls.setup({})
   end,
 }
