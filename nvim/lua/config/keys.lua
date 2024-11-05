@@ -38,8 +38,11 @@ wk.add({
   { "<leader>bf", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
   { "<leader>bF", "<cmd>lua vim.lsp.buf.format()<CR>", desc = "Format buffer" },
 
-  { "<leader>tp", "<cmd>tabprev<cr>", desc = "Previous tab" },
-  { "<leader>tn", "<cmd>tabnext<cr>", desc = "Next tab" },
+  { "<M-p>", "<cmd>tabprev<cr>", desc = "Previous tab" },
+  { "<M-n>", "<cmd>tabnext<cr>", desc = "Next tab" },
+  { "<leader>td", "<cmd>tabclose<cr>", desc = "Close Tab" },
+  { "<leader>tn", "<cmd>tabnew<cr>", desc = "Close Tab" },
+
 
   { "<leader>/", "<cmd>CommentToggle<cr>", desc = "Toggle comment", mode = { "n" } },
   -- TODO: Fix multi line commenting
@@ -82,10 +85,6 @@ wk.add({
   { "gi", "<cmd>lua vim.lsp.buf.implementation()<cr>", desc = "Implementation" },
   { "gr", "<cmd>lua vim.lsp.buf.references()<cr>", desc = "References" },
   { "g.", "<cmd>lua vim.lsp.buf.code_action()<cr>", desc = "Code action" },
-
-  { "<leader>t", group = "tab" },
-  { "<leader>td", "<cmd>tabclose<cr>", desc = "Close Tab" },
-  { "<leader>tn", "<cmd>tabnew<cr>", desc = "Close Tab" },
 
   { "<leader>g", group = "git" },
   { "<leader>gg", "<cmd>LazyGit<cr>", desc = "Lazygit" },
