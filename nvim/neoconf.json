@@ -2,8 +2,8 @@
   "neoconf": {
     "plugins": {
       "lspconfig": {
-				"enabled": true
-			}
+        "enabled": true
+      }
     }
   },
   "lspconfig": {}
