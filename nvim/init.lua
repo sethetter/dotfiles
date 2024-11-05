@@ -46,10 +46,12 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
   end,
 })
 
+-- TODO: Turn this into a convenience function that you can
+-- enable or disable on a per-project and per-filetype basis.
 vim.api.nvim_create_autocmd("BufWritePre", {
   callback = function()
     local mode = vim.api.nvim_get_mode().mode
-    local filetype = vim.bo.filetype
+    -- local filetype = vim.bo.filetype
     if vim.bo.modified == true and mode == 'n' then
       vim.cmd('lua vim.lsp.buf.format()')
     else

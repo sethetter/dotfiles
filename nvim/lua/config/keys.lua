@@ -43,6 +43,7 @@ wk.add({
   { "<leader>td", "<cmd>tabclose<cr>",                                      desc = "Close Tab" },
   { "<leader>tn", "<cmd>tabnew<cr>",                                        desc = "Close Tab" },
 
+  { "<leaer>CL",  "<cmd>ConfigLocalEdit<cr>",                               desc = "Edit local nvim config" },
 
   { "<leader>/",  "<cmd>CommentToggle<cr>",                                 desc = "Toggle comment",           mode = { "n" } },
   -- TODO: Fix multi line commenting
