@@ -3,7 +3,7 @@ return {
   config = function()
     require('config-local').setup({
       -- Config file patterns to load (lua supported)
-      config_files = { "_seth/nvim.lua", ".nvim.lua", ".nvimrc", ".exrc" },
+      config_files = { ".seth.nvim.lua", ".nvim.lua", ".nvimrc", ".exrc" },
 
       -- Where the plugin keeps files data
       hashfile = vim.fn.stdpath("data") .. "/config-local",
