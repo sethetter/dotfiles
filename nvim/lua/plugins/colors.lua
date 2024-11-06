@@ -9,7 +9,24 @@ return {
       vim.cmd("colorscheme rose-pine")
     end,
   },
-  { "nvim-treesitter", opts = {} },
+  {
+    "nvim-treesitter",
+    config = function()
+      require("nvim-treesitter.configs").setup({
+        -- Auto install parsers when entering a buffer if missing
+        auto_install = true,
+        ensure_installed = {
+          "lua",
+          "vim",
+          "vimdoc",
+          "query",
+          "markdown",
+          "markdown_inline",
+          "typescript",
+        },
+      })
+    end,
+  },
   {
     "f-person/auto-dark-mode.nvim",
     opts = {
@@ -23,5 +40,5 @@ return {
         vim.cmd("colorscheme rose-pine-dawn")
       end,
     },
-  }
+  },
 }

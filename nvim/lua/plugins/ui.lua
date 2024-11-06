@@ -17,7 +17,7 @@ return {
         hijack_netrw = true,
         disable_netrw = true,
         hijack_directories = {
-          enable = true
+          enable = true,
         },
         view = {
           width = 45,
@@ -55,9 +55,9 @@ return {
     cmd = "Trouble",
   },
   {
-    'nvim-telescope/telescope.nvim',
-    tag = '0.1.8',
-    dependencies = { 'nvim-lua/plenary.nvim' },
+    "nvim-telescope/telescope.nvim",
+    tag = "0.1.8",
+    dependencies = { "nvim-lua/plenary.nvim" },
     opts = {},
   },
   {

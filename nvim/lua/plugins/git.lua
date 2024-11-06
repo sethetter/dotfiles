@@ -13,7 +13,9 @@ return {
       "rose-pine/neovim",
     },
     enabled = true,
-    build = function() require("gitlab.server").build(true) end, -- Builds the Go binary
+    build = function()
+      require("gitlab.server").build(true)
+    end, -- Builds the Go binary
     config = function()
       require("gitlab").setup()
     end,
@@ -31,5 +33,5 @@ return {
         vertical = true,
       },
     },
-  }
+  },
 }
