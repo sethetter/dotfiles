@@ -1,1 +1,0 @@
-return { "prisma/vim-prisma" }

@@ -18,5 +18,13 @@ return {
   {
     "williamboman/mason.nvim",
     opts = {},
-  }
+  },
+  {
+    "folke/lazydev.nvim",
+    ft = "lua", -- only load on lua files
+    opts = {},
+  },
+  {
+    "prisma/vim-prisma",
+  },
 }

@@ -43,7 +43,7 @@ wk.add({
   { "<leader>td", "<cmd>tabclose<cr>",                                      desc = "Close Tab" },
   { "<leader>tn", "<cmd>tabnew<cr>",                                        desc = "Close Tab" },
 
-  { "<leaer>CL",  "<cmd>ConfigLocalEdit<cr>",                               desc = "Edit local nvim config" },
+  { "<leader>CL", "<cmd>ConfigLocalEdit<cr>",                               desc = "Edit local nvim config" },
 
   { "<leader>/",  "<cmd>CommentToggle<cr>",                                 desc = "Toggle comment",           mode = { "n" } },
   -- TODO: Fix multi line commenting
@@ -111,4 +111,6 @@ wk.add({
     -- TODO: make this actually silent
     silent = true,
   },
+
+  { "<leader>PP", "<cmd>Lazy<cr>", desc = "Manage plugins" },
 })

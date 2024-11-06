@@ -1,1 +1,0 @@
-return { "junegunn/goyo.vim" }
