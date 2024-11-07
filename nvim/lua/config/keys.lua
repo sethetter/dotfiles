@@ -55,10 +55,9 @@ wk.add({
     desc = "Toggle comment",
     mode = { "n" },
   },
-  -- TODO: Fix multi line commenting
   {
     "<leader>/",
-    "<cmd>CommentToggle<cr>",
+    ":'<,'>CommentToggle<cr>",
     desc = "Toggle comment",
     mode = { "v" },
   },
