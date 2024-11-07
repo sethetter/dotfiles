@@ -9,7 +9,16 @@ return {
       local lspconfig_defaults = lspc.util.default_config
       lspconfig_defaults.capabilities =
         vim.tbl_deep_extend("force", lspconfig_defaults.capabilities, require("cmp_nvim_lsp").default_capabilities())
+
       lspc.lua_ls.setup({})
+      lspc.vtsls.setup({})
+      lspc.eslint.setup({})
+      lspc.jsonls.setup({})
+      lspc.bashls.setup({})
+      lspc.prismals.setup({})
+      lspc.rust_analyzer.setup({})
+      lspc.spectral.setup({})
+      lspc.yamlls.setup({})
     end,
   },
   {
