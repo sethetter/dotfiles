@@ -36,14 +36,14 @@ wk.add({
 
   { "H", ":bp<cr>", desc = "Switch to previous buffer" },
   { "L", ":bn<cr>", desc = "Switch to next buffer" },
-  { "<leader>d", "<cmd>bd<cr>", desc = "Close buffer" },
-  { "<leader>D", "<cmd>bd!<cr>", desc = "Close buffer (force)" },
+  -- Prevents the pane from being removed when closing a buffer
+  { "<leader>d", "<cmd>bp<bar>sp<bar>bn<bar>bd<cr>", desc = "Close buffer" },
+  { "<leader>D", "<cmd>bp<bar>sp<bar>bn<bar>bd!<cr>", desc = "Close buffer (force)" },
   { "<leader>bn", "<cmd>new<CR>", desc = "New buffer" },
   { "<leader>bf", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
-  { "<leader>bF", "<cmd>lua vim.lsp.buf.format()<CR>", desc = "Format buffer" },
+  { "<leader>bF", "<cmd>Format<CR>", desc = "Format buffer" },
 
-  { "<M-p>", "<cmd>tabprev<cr>", desc = "Previous tab" },
-  { "<M-n>", "<cmd>tabnext<cr>", desc = "Next tab" },
+  { "<C-t>", "<cmd>tabnext<cr>", desc = "Next tab" },
   { "<leader>td", "<cmd>tabclose<cr>", desc = "Close Tab" },
   { "<leader>tn", "<cmd>tabnew<cr>", desc = "Close Tab" },
 
