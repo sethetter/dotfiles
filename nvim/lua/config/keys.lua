@@ -40,14 +40,14 @@ wk.add({
   { "<leader>d", "<cmd>bp<bar>sp<bar>bn<bar>bd<cr>", desc = "Close buffer" },
   { "<leader>D", "<cmd>bp<bar>sp<bar>bn<bar>bd!<cr>", desc = "Close buffer (force)" },
   { "<leader>bn", "<cmd>new<CR>", desc = "New buffer" },
-  { "<leader>bf", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
-  { "<leader>bF", "<cmd>Format<CR>", desc = "Format buffer" },
+  { "<leader>bf", "<cmd>Format<CR>", desc = "Format buffer" },
 
   { "<C-t>", "<cmd>tabnext<cr>", desc = "Next tab" },
   { "<leader>td", "<cmd>tabclose<cr>", desc = "Close Tab" },
   { "<leader>tn", "<cmd>tabnew<cr>", desc = "Close Tab" },
 
   { "<leader>CL", "<cmd>ConfigLocalEdit<cr>", desc = "Edit local nvim config" },
+  { "<leader>n", "<cmd>vsp<cr><C-w>l<cmd>e NOTES.sethetter.md<cr>", desc = "Open personal notes" },
 
   {
     "<leader>/",
@@ -69,11 +69,10 @@ wk.add({
   { "<leader>v?", "<cmd>sp<cr>", desc = "Split horizontal" },
 
   { "<leader>f", "<cmd>Telescope find_files<cr>", desc = "Find files" },
-  { "<leader>sd", "<cmd>Telescope lsp_document_symbols<cr>", desc = "Live grep" },
-  { "<leader>sw", "<cmd>Telescope lsp_workspace_symbols<cr>", desc = "Live grep" },
   { "<leader>sp", "<cmd>Telescope live_grep<cr>", desc = "Live grep" },
   { "<leader>sh", "<cmd>Telescope help_tags<cr>", desc = "Help tags" },
   { "<leader>sc", "<cmd>Telescope commands<cr>", desc = "Commands" },
+  { "<leader>sb", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
 
   { "<leader>m", "<cmd>Trouble diagnostics toggle<cr>", desc = "Trouble diagnostics" },
   { "<leader>l", "<cmd>Trouble lsp toggle include_declarations=false<cr>", desc = "Trouble LSP bar" },
@@ -101,6 +100,7 @@ wk.add({
   { "gi", "<cmd>lua vim.lsp.buf.implementation()<cr>", desc = "Implementation" },
   { "gr", "<cmd>lua vim.lsp.buf.references()<cr>", desc = "References" },
   { "g.", "<cmd>lua vim.lsp.buf.code_action()<cr>", desc = "Code action" },
+  { "<leader>R", "<cmd>lua vim.lsp.buf.rename()<cr>", desc = "Rename symbol" },
 
   { "<leader>g", group = "git" },
   { "<leader>gg", "<cmd>LazyGit<cr>", desc = "Lazygit" },
