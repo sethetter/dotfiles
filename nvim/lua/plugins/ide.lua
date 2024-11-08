@@ -17,6 +17,7 @@ return {
       lspc.bashls.setup({})
       lspc.prismals.setup({})
       lspc.rust_analyzer.setup({})
+      lspc.pylsp.setup({})
       lspc.spectral.setup({})
       lspc.yamlls.setup({})
     end,
