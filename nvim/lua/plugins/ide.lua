@@ -20,6 +20,9 @@ return {
           lua = {
             require("formatter.filetypes.lua").stylua,
           },
+          json = {
+            require("formatter.defaults.prettier"),
+          },
           markdown = {
             require("formatter.defaults.prettier"),
           },
