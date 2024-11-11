@@ -109,7 +109,8 @@ wk.add({
   { "<leader>gd", "<cmd>Gitsigns diffthis vertical=true HEAD<cr>", desc = "File diff" },
   { "<leader>Gd", ":Gitsigns diffthis vertical=true ", desc = "File diff provided ref" },
   { "<leader>GD", ":DiffviewOpen ", desc = "Diff provided ref" },
-  { "<leader>gh", "<cmd>DiffviewFileHistory<cr>", desc = "File history" },
+  { "<leader>gh", "<cmd>DiffviewFileHistory %<cr>", desc = "File history" },
+  { "<leader>gH", "<cmd>DiffviewFileHistory<cr>", desc = "Git history" },
   {
     "<leader>gl",
     '<cmd>lua require("gitlinker").get_buf_range_url("n", {action_callback = require("gitlinker.actions").copy_to_clipboard})<cr>',
