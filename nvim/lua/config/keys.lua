@@ -84,6 +84,7 @@ wk.add({
   { "<leader>X", "<cmd>x<cr>", desc = "Save and close" },
   { "<leader>q", "<cmd>q<cr>", desc = "Quit" },
   { "<leader>Q", "<cmd>qa<cr>", desc = "Quit all" },
+  { "<leader>QQ", "<cmd>qa<cr>", desc = "Quit all" },
 
   { "[d", "<cmd>lua vim.lsp.diagnostic.goto_prev()<cr>", desc = "Previous diagnostic" },
   { "]d", "<cmd>lua vim.lsp.diagnostic.goto_next()<cr>", desc = "Next diagnostic" },
