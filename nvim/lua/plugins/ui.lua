@@ -13,6 +13,7 @@ return {
     config = function()
       vim.g.loaded_netrw = 1
       vim.g.loaded_netrwPlugin = 1
+
       require("nvim-tree").setup({
         hijack_netrw = true,
         disable_netrw = true,
@@ -25,7 +26,24 @@ return {
         view = {
           width = 40,
         },
+        on_attach = function(bufnr)
+          local api = require("nvim-tree.api")
+
+          local function opts(desc)
+            return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
+          end
+
+          -- TODO: disable <C-e>
+          api.config.mappings.default_on_attach(bufnr)
+
+          vim.keymap.set("n", "<CR>", api.node.open.replace_tree_buffer, opts("Open: In Place"))
+        end,
       })
+
+      -- https://github.com/Gelio/ubuntu-dotfiles/pull/1/files
+      -- local winopts = require("nvim-tree.view").View.winopts
+      -- winopts.winfixwidth = false
+      -- winopts.winfixheight = false
     end,
   },
   {

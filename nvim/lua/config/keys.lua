@@ -62,8 +62,24 @@ wk.add({
     mode = { "v" },
   },
 
-  { "<leader>e", "<cmd>NvimTreeToggle<cr>", desc = "Toggle file tree" },
-  { "E", "<cmd>NvimTreeFindFile<cr>", desc = "Reveal file in file tree" },
+  {
+    "<leader>e",
+    function()
+      local nvim_tree = require("nvim-tree.api")
+      nvim_tree.tree.toggle({ current_window = true })
+    end,
+    desc = "Toggle file tree",
+  },
+
+  {
+    "E",
+    function()
+      local nvim_tree = require("nvim-tree.api")
+      nvim_tree.tree.toggle({ current_window = true, find_file = true })
+    end,
+    desc = "Reveal file in file tree",
+  },
+
   { "<leader>h", "<cmd>noh<cr>", desc = "Clear highlight" },
   { "<leader>v/", "<cmd>vsp<cr>", desc = "Split vertical" },
   { "<leader>v?", "<cmd>sp<cr>", desc = "Split horizontal" },
