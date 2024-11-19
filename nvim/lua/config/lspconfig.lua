@@ -6,5 +6,10 @@ LangServers = {
       Lua = { diagnostics = { globals = { LangServers } } },
     },
   },
+  eslint = {
+    settings = {
+      run = "onSave",
+    },
+  },
   denols = false,
 }
