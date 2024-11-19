@@ -19,8 +19,11 @@ return {
         hijack_directories = {
           enable = true,
         },
+        filters = {
+          git_ignored = false,
+        },
         view = {
-          width = 45,
+          width = 40,
         },
       })
     end,
@@ -46,7 +49,7 @@ return {
           focus = true,
           win = {
             position = "right",
-            size = 45,
+            size = 40,
           },
           format = "{kind_icon} {symbol.name}",
         },
