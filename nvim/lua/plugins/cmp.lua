@@ -12,7 +12,9 @@ return {
             vim.snippet.expand(args.body)
           end,
         },
-        mapping = cmp.mapping.preset.insert({}),
+        mapping = cmp.mapping.preset.insert({
+          ["<CR>"] = cmp.mapping.confirm({ select = true }),
+        }),
       })
     end,
   },
