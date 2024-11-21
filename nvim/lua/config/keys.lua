@@ -25,6 +25,21 @@ end
 
 vim.cmd("command! LazyGit lua _LAZYGIT_TOGGLE()")
 
+function _TOGGLE_QF_LIST()
+  local is_open = false
+  for _, win in ipairs(vim.fn.getwininfo()) do
+    if win.quickfix == 1 then
+      is_open = true
+      break
+    end
+  end
+  if is_open then
+    vim.cmd("cclose")
+  else
+    vim.cmd("copen")
+  end
+end
+
 wk.add({
   { "<C-h>", "<C-w>h", desc = "Move focus to left pane" },
   { "<C-j>", "<C-w>j", desc = "Move focus to below pane" },
@@ -35,7 +50,7 @@ wk.add({
   { "<M-l>", "5zl", desc = "Scroll right" },
 
   { "H", ":bp<cr>", desc = "Switch to previous buffer" },
-  { "L", ":bn<cr>", desc = "Switch to next buffer" },
+  { "L", ":bn<cr>", desc = "Switch to next buffer", remap = false }, -- No remap to prevent disabling in netrw
   -- Prevents the pane from being removed when closing a buffer
   { "<leader>d", "<cmd>bp<bar>sp<bar>bn<bar>bd<cr>", desc = "Close buffer" },
   { "<leader>D", "<cmd>bp<bar>sp<bar>bn<bar>bd!<cr>", desc = "Close buffer (force)" },
@@ -62,8 +77,7 @@ wk.add({
     mode = { "v" },
   },
 
-  { "<leader>e", "<cmd>NvimTreeToggle<cr>", desc = "Toggle file tree" },
-  { "E", "<cmd>NvimTreeFindFileToggle<cr>", desc = "Reveal file in file tree" },
+  { "E", "<cmd>e .<cr>", desc = "Toggle netrw" },
 
   { "<leader>h", "<cmd>noh<cr>", desc = "Clear highlight" },
   { "<leader>v/", "<cmd>vsp<cr>", desc = "Split vertical" },
@@ -75,9 +89,20 @@ wk.add({
   { "<leader>sc", "<cmd>Telescope commands<cr>", desc = "Commands" },
   { "<leader>sb", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
 
-  { "<leader>m", "<cmd>Trouble diagnostics toggle<cr>", desc = "Trouble diagnostics" },
-  { "<leader>l", "<cmd>Trouble lsp toggle include_declarations=false<cr>", desc = "Trouble LSP bar" },
-  { "<leader>o", "<cmd>Trouble lsp_document_symbols toggle<cr>", desc = "Symbols outline" },
+  -- TODO: Make this a toggle?
+  { "<leader>co", _TOGGLE_QF_LIST, desc = "Toggle QF list" },
+  { "<leader>cn", "<cmd>cnext<cr>", desc = "Next QF item" },
+  { "<leader>cp", "<cmd>cprev<cr>", desc = "Prev QF item" },
+
+  {
+    "<leader>m",
+    function()
+      vim.diagnostic.setqflist({ open = true, focus = true })
+    end,
+    desc = "Diagnostics in qf list",
+  },
+
+  { "<leader>o", "<cmd>AerialToggle<cr>", desc = "Symbols outline" },
 
   { "<leader>Z", "<cmd>Goyo<cr>", desc = "Goyo toggle" },
 
