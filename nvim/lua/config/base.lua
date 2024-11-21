@@ -23,4 +23,4 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   end,
 })
 
-vim.g.netrw_liststyle = 3
+-- vim.g.netrw_liststyle = 3

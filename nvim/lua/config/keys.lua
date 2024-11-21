@@ -1,5 +1,12 @@
 local wk = require("which-key")
 
+vim.cmd([[
+  augroup netrw_mappings
+    autocmd!
+    autocmd filetype netrw silent! nunmap <buffer> <c-l>
+  augroup END
+]])
+
 local Terminal = require("toggleterm.terminal").Terminal
 
 -- Create a lazygit fullscreen terminal
@@ -40,6 +47,11 @@ function _TOGGLE_QF_LIST()
   end
 end
 
+local function is_netrw()
+  local ft = vim.api.nvim_get_option_value("filetype", { buf = 0 })
+  return ft == "netrw"
+end
+
 wk.add({
   { "<C-h>", "<C-w>h", desc = "Move focus to left pane" },
   { "<C-j>", "<C-w>j", desc = "Move focus to below pane" },
@@ -52,7 +64,17 @@ wk.add({
   { "H", ":bp<cr>", desc = "Switch to previous buffer" },
   { "L", ":bn<cr>", desc = "Switch to next buffer", remap = false }, -- No remap to prevent disabling in netrw
   -- Prevents the pane from being removed when closing a buffer
-  { "<leader>d", "<cmd>bp<bar>sp<bar>bn<bar>bd<cr>", desc = "Close buffer" },
+  {
+    "<leader>d",
+    function()
+      if is_netrw() then
+        vim.cmd("buffer")
+      else
+        vim.cmd("bp | sp | bn | bd")
+      end
+    end,
+    desc = "Close buffer",
+  },
   { "<leader>D", "<cmd>bp<bar>sp<bar>bn<bar>bd!<cr>", desc = "Close buffer (force)" },
   { "<leader>bn", "<cmd>new<CR>", desc = "New buffer" },
   { "<leader>bf", "<cmd>Format<CR>", desc = "Format buffer" },
@@ -77,7 +99,17 @@ wk.add({
     mode = { "v" },
   },
 
-  { "E", "<cmd>e .<cr>", desc = "Toggle netrw" },
+  {
+    "E",
+    function()
+      if is_netrw() then
+        vim.cmd("bd")
+      else
+        vim.cmd("e .")
+      end
+    end,
+    desc = "Toggle netrw",
+  },
 
   { "<leader>h", "<cmd>noh<cr>", desc = "Clear highlight" },
   { "<leader>v/", "<cmd>vsp<cr>", desc = "Split vertical" },
