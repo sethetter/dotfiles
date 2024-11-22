@@ -47,11 +47,6 @@ function _TOGGLE_QF_LIST()
   end
 end
 
-local function is_netrw()
-  local ft = vim.api.nvim_get_option_value("filetype", { buf = 0 })
-  return ft == "netrw"
-end
-
 wk.add({
   { "<C-h>", "<C-w>h", desc = "Move focus to left pane" },
   { "<C-j>", "<C-w>j", desc = "Move focus to below pane" },
@@ -62,20 +57,12 @@ wk.add({
   { "<M-l>", "5zl", desc = "Scroll right" },
 
   { "H", ":bp<cr>", desc = "Switch to previous buffer" },
-  { "L", ":bn<cr>", desc = "Switch to next buffer", remap = false }, -- No remap to prevent disabling in netrw
+  { "L", ":bn<cr>", desc = "Switch to next buffer" },
+
   -- Prevents the pane from being removed when closing a buffer
-  {
-    "<leader>d",
-    function()
-      if is_netrw() then
-        vim.cmd("buffer")
-      else
-        vim.cmd("bp | sp | bn | bd")
-      end
-    end,
-    desc = "Close buffer",
-  },
+  { "<leader>d", "<cmd>bp<bar>sp<bar>bn<bar>bd<cr>", desc = "Close buffer" },
   { "<leader>D", "<cmd>bp<bar>sp<bar>bn<bar>bd!<cr>", desc = "Close buffer (force)" },
+
   { "<leader>bn", "<cmd>new<CR>", desc = "New buffer" },
   { "<leader>bf", "<cmd>Format<CR>", desc = "Format buffer" },
 
@@ -99,17 +86,8 @@ wk.add({
     mode = { "v" },
   },
 
-  {
-    "E",
-    function()
-      if is_netrw() then
-        vim.cmd("bd")
-      else
-        vim.cmd("e .")
-      end
-    end,
-    desc = "Toggle netrw",
-  },
+  { "<leader>e", "<cmd>NvimTreeToggle<cr>", desc = "Toggle file tree" },
+  { "E", "<cmd>NvimTreeFindFileToggle<cr>", desc = "Reveal file in file tree" },
 
   { "<leader>h", "<cmd>noh<cr>", desc = "Clear highlight" },
   { "<leader>v/", "<cmd>vsp<cr>", desc = "Split vertical" },
