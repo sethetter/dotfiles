@@ -1,12 +1,5 @@
 return {
   {
-    "akinsho/bufferline.nvim",
-    version = "*",
-    config = function()
-      require("bufferline").setup({})
-    end,
-  },
-  {
     "nvim-tree/nvim-tree.lua",
     version = "*",
     lazy = false,
