@@ -1,6 +1,6 @@
 local wk = require("which-key")
 
-function qflist_is_open()
+local function qflist_is_open()
   local is_open = false
   for _, win in ipairs(vim.fn.getwininfo()) do
     if win.quickfix == 1 then
@@ -27,6 +27,7 @@ wk.add({
   -- Prevents the pane from being removed when closing a buffer
   { "<leader>d", "<cmd>bp<bar>sp<bar>bn<bar>bd<cr>", desc = "Close buffer" },
   { "<leader>D", "<cmd>bp<bar>sp<bar>bn<bar>bd!<cr>", desc = "Close buffer (force)" },
+  { "<leader>XX", "<cmd>bufdo bd<cr>", desc = "Close all buffers" },
 
   { "<leader>n", "<cmd>new<CR>", desc = "New buffer" },
 
@@ -50,8 +51,8 @@ wk.add({
     mode = { "v" },
   },
 
-  { "<leader>e", "<cmd>NvimTreeToggle<cr>", desc = "Toggle file tree" },
-  { "E", "<cmd>NvimTreeFindFile<cr>", desc = "Reveal file in file tree" },
+  { "<leader>e", "<cmd>NvimTreeFindFileToggle<cr>", desc = "Reveal file in tree" },
+  { "E", "<cmd>NvimTreeToggle<cr>", desc = "Toggle file tree" },
 
   { "<leader>h", "<cmd>noh<cr>", desc = "Clear highlight" },
   { "<leader>v/", "<cmd>vsp<cr>", desc = "Split vertical" },
