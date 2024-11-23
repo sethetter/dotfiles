@@ -75,17 +75,12 @@ return {
           vim.keymap.set("n", "Y", api.fs.copy.relative_path, opts("Copy Relative Path"))
         end,
       })
-
-      -- https://github.com/Gelio/ubuntu-dotfiles/pull/1/files
-      -- local winopts = require("nvim-tree.view").View.winopts
-      -- winopts.winfixwidth = false
-      -- winopts.winfixheight = false
     end,
   },
   {
     "stevearc/aerial.nvim",
     opts = {
-      -- backends = { "treesitter", "lsp", "markdown", "asciidoc", "man" },
+      -- default starts with treesitter, but I like lsp
       backends = { "lsp", "markdown", "asciidoc", "man" },
       filter_kind = false,
       layout = {
