@@ -63,15 +63,14 @@ wk.add({
   { "<leader>d", "<cmd>bp<bar>sp<bar>bn<bar>bd<cr>", desc = "Close buffer" },
   { "<leader>D", "<cmd>bp<bar>sp<bar>bn<bar>bd!<cr>", desc = "Close buffer (force)" },
 
-  { "<leader>bn", "<cmd>new<CR>", desc = "New buffer" },
-  { "<leader>bf", "<cmd>Format<CR>", desc = "Format buffer" },
+  { "<leader>n", "<cmd>new<CR>", desc = "New buffer" },
 
   { "<C-t>", "<cmd>tabnext<cr>", desc = "Next tab" },
   { "<leader>td", "<cmd>tabclose<cr>", desc = "Close Tab" },
   { "<leader>tn", "<cmd>tabnew<cr>", desc = "Close Tab" },
 
   { "<leader>CL", "<cmd>ConfigLocalEdit<cr>", desc = "Edit local nvim config" },
-  { "<leader>n", "<cmd>vsp<cr><C-w>l<cmd>e NOTES.sethetter.md<cr>", desc = "Open personal notes" },
+  { "<leader>N", "<cmd>vsp<cr><C-w>l<cmd>e NOTES.sethetter.md<cr>", desc = "Open personal notes" },
 
   {
     "<leader>/",
@@ -87,17 +86,17 @@ wk.add({
   },
 
   { "<leader>e", "<cmd>NvimTreeToggle<cr>", desc = "Toggle file tree" },
-  { "E", "<cmd>NvimTreeFindFileToggle<cr>", desc = "Reveal file in file tree" },
+  { "E", "<cmd>NvimTreeFindFile<cr>", desc = "Reveal file in file tree" },
 
   { "<leader>h", "<cmd>noh<cr>", desc = "Clear highlight" },
   { "<leader>v/", "<cmd>vsp<cr>", desc = "Split vertical" },
   { "<leader>v?", "<cmd>sp<cr>", desc = "Split horizontal" },
 
   { "<leader>f", "<cmd>Telescope find_files<cr>", desc = "Find files" },
+  { "<leader>b", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
   { "<leader>sp", "<cmd>Telescope live_grep<cr>", desc = "Live grep" },
   { "<leader>sh", "<cmd>Telescope help_tags<cr>", desc = "Help tags" },
   { "<leader>sc", "<cmd>Telescope commands<cr>", desc = "Commands" },
-  { "<leader>sb", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
 
   -- TODO: Make this a toggle?
   { "<leader>co", _TOGGLE_QF_LIST, desc = "Toggle QF list" },
@@ -137,6 +136,7 @@ wk.add({
   { "gr", "<cmd>lua vim.lsp.buf.references()<cr>", desc = "References" },
   { "g.", "<cmd>lua vim.lsp.buf.code_action()<cr>", desc = "Code action" },
   { "<leader>R", "<cmd>lua vim.lsp.buf.rename()<cr>", desc = "Rename symbol" },
+  { "<leader>F", "<cmd>Format<CR>", desc = "Format buffer" },
 
   { "<leader>g", group = "git" },
   { "<leader>gg", "<cmd>LazyGit<cr>", desc = "Lazygit" },
@@ -161,6 +161,10 @@ wk.add({
     -- TODO: make this actually silent
     silent = true,
   },
+
+  { "<leader>ai", "<cmd>AI<cr>", desc = "AI complete" },
+  { "<leader>ae", ":AIEdit ", desc = "AI edit", mode = "v" },
+  { "<leader>ar", "<cmd>AIRedo<cr>", desc = "AI redo last" },
 
   { "<leader>PP", "<cmd>Lazy<cr>", desc = "Manage plugins" },
 })
