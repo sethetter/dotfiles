@@ -24,7 +24,7 @@ return {
           git_ignored = false,
         },
         view = {
-          width = 50,
+          width = 40,
         },
         on_attach = function(bufnr)
           local api = require("nvim-tree.api")

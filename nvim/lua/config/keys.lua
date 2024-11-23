@@ -1,38 +1,6 @@
 local wk = require("which-key")
 
-vim.cmd([[
-  augroup netrw_mappings
-    autocmd!
-    autocmd filetype netrw silent! nunmap <buffer> <c-l>
-  augroup END
-]])
-
-local Terminal = require("toggleterm.terminal").Terminal
-
--- Create a lazygit fullscreen terminal
-local lazygit = Terminal:new({
-  cmd = "lazygit",
-  direction = "float", -- This can use "horizontal" or "vertical" if float doesn't fill
-  float_opts = {
-    border = "none", -- or single/double if you prefer
-    width = function()
-      return vim.o.columns
-    end, -- full width
-    height = function()
-      return vim.o.lines
-    end, -- full height
-  },
-  -- adjust other options as needed
-  hidden = true,
-})
-
-function _LAZYGIT_TOGGLE()
-  lazygit:toggle()
-end
-
-vim.cmd("command! LazyGit lua _LAZYGIT_TOGGLE()")
-
-function _TOGGLE_QF_LIST()
+function qflist_is_open()
   local is_open = false
   for _, win in ipairs(vim.fn.getwininfo()) do
     if win.quickfix == 1 then
@@ -40,12 +8,9 @@ function _TOGGLE_QF_LIST()
       break
     end
   end
-  if is_open then
-    vim.cmd("cclose")
-  else
-    vim.cmd("copen")
-  end
+  return is_open
 end
+function _TOGGLE_QF_LIST() end
 
 wk.add({
   { "<C-h>", "<C-w>h", desc = "Move focus to left pane" },
@@ -99,7 +64,17 @@ wk.add({
   { "<leader>sc", "<cmd>Telescope commands<cr>", desc = "Commands" },
 
   -- TODO: Make this a toggle?
-  { "<leader>co", _TOGGLE_QF_LIST, desc = "Toggle QF list" },
+  {
+    "<leader>co",
+    function()
+      if qflist_is_open() then
+        vim.cmd("cclose")
+      else
+        vim.cmd("copen")
+      end
+    end,
+    desc = "Toggle QF list",
+  },
   { "<leader>cn", "<cmd>cnext<cr>", desc = "Next QF item" },
   { "<leader>cp", "<cmd>cprev<cr>", desc = "Prev QF item" },
 
@@ -162,7 +137,8 @@ wk.add({
     silent = true,
   },
 
-  { "<leader>ai", "<cmd>AI<cr>", desc = "AI complete" },
+  { "<leader>ai", ":AI", desc = "AI complete" },
+  { "<leader>ac", ":AIChat ", desc = "AI chat" },
   { "<leader>ae", ":AIEdit ", desc = "AI edit", mode = "v" },
   { "<leader>ar", "<cmd>AIRedo<cr>", desc = "AI redo last" },
 
