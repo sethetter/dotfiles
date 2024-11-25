@@ -122,6 +122,7 @@ wk.add({
   { "<leader>GD", ":DiffviewOpen ", desc = "Diff provided ref" },
   { "<leader>gh", "<cmd>DiffviewFileHistory %<cr>", desc = "File history" },
   { "<leader>gH", "<cmd>DiffviewFileHistory<cr>", desc = "Git history" },
+  { "<leader>gb", "<cmd>Gitsigns toggle_current_line_blame<cr>", desc = "Git history" },
   {
     "<leader>gl",
     '<cmd>lua require("gitlinker").get_buf_range_url("n", {action_callback = require("gitlinker.actions").copy_to_clipboard})<cr>',
