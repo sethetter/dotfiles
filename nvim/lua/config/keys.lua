@@ -29,7 +29,7 @@ wk.add({
   { "<leader>D", "<cmd>bp<bar>sp<bar>bn<bar>bd!<cr>", desc = "Close buffer (force)" },
   { "<leader>XX", "<cmd>bufdo bd<cr>", desc = "Close all buffers" },
 
-  { "<leader>n", "<cmd>new<CR>", desc = "New buffer" },
+  { "<leader>n", "<cmd>vnew<CR>", desc = "New buffer" },
 
   { "<C-t>", "<cmd>tabnext<cr>", desc = "Next tab" },
   { "<leader>td", "<cmd>tabclose<cr>", desc = "Close Tab" },
