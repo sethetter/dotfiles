@@ -51,8 +51,8 @@ wk.add({
     mode = { "v" },
   },
 
-  { "<leader>e", "<cmd>NvimTreeFindFileToggle<cr>", desc = "Reveal file in tree" },
-  { "E", "<cmd>NvimTreeToggle<cr>", desc = "Toggle file tree" },
+  { "<leader>e", "<cmd>NvimTreeToggle<cr>", desc = "Toggle file tree" },
+  { "E", "<cmd>NvimTreeFindFile<cr>", desc = "Reveal file in tree" },
 
   { "<leader>h", "<cmd>noh<cr>", desc = "Clear highlight" },
   { "<leader>v/", "<cmd>vsp<cr>", desc = "Split vertical" },
