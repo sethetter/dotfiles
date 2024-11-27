@@ -51,6 +51,8 @@ wk.add({
     mode = { "v" },
   },
 
+  -- TODO: Write a function that will focus nvim tree if it isn't focused but is open,
+  -- open it and focus it if it isn't open, and close it if it is focused.
   { "<leader>e", "<cmd>NvimTreeToggle<cr>", desc = "Toggle file tree" },
   { "E", "<cmd>NvimTreeFindFile<cr>", desc = "Reveal file in tree" },
 
