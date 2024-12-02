@@ -1,4 +1,5 @@
 return {
+  { "akinsho/bufferline.nvim", opts = {} },
   {
     "nvim-tree/nvim-tree.lua",
     version = "*",
