@@ -16,7 +16,7 @@ vim.opt.fillchars:append({ diff = "╱" })
 -- Disable wrapping, except for buffers of certain filetype
 vim.opt.wrap = false
 vim.api.nvim_create_autocmd({ "FileType" }, {
-  pattern = { "markdown", "gitlab", "avante", "trouble", "" },
+  pattern = { "markdown", "gitlab", "aichat", "" },
   callback = function()
     vim.opt_local.wrap = true
     vim.opt_local.linebreak = true
