@@ -60,7 +60,11 @@ wk.add({
   { "<leader>v/", "<cmd>vsp<cr>", desc = "Split vertical" },
   { "<leader>v?", "<cmd>sp<cr>", desc = "Split horizontal" },
 
-  { "<leader>f", "<cmd>Telescope find_files<cr>", desc = "Find files" },
+  {
+    "<leader>f",
+    "<cmd>Telescope find_files find_command=rg,--ignore,--hidden,--files,--iglob=!.git<cr>",
+    desc = "Find files",
+  },
   { "<leader>b", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
   { "<leader>sp", "<cmd>Telescope live_grep<cr>", desc = "Live grep" },
   { "<leader>sh", "<cmd>Telescope help_tags<cr>", desc = "Help tags" },
