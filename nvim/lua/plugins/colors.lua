@@ -13,6 +13,8 @@ return {
     "nvim-treesitter/nvim-treesitter",
     config = function()
       require("nvim-treesitter.configs").setup({
+        highlight = { enable = true },
+        indent = { enable = true },
         -- Auto install parsers when entering a buffer if missing
         auto_install = true,
         ensure_installed = {
