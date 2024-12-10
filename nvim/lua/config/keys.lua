@@ -27,7 +27,7 @@ wk.add({
   -- Prevents the pane from being removed when closing a buffer
   { "<leader>d", "<cmd>bp<bar>sp<bar>bn<bar>bd<cr>", desc = "Close buffer" },
   { "<leader>D", "<cmd>bp<bar>sp<bar>bn<bar>bd!<cr>", desc = "Close buffer (force)" },
-  { "<leader>XX", "<cmd>bufdo bd<cr>", desc = "Close all buffers" },
+  { "<leader>BD", "<cmd>bufdo bd<cr>", desc = "Close all buffers" },
 
   { "<leader>n", "<cmd>vnew<CR>", desc = "New buffer" },
 
