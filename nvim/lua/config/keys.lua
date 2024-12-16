@@ -145,10 +145,10 @@ wk.add({
     silent = true,
   },
 
-  { "<leader>ai", ":AI", desc = "AI complete" },
-  { "<leader>ac", ":AIChat ", desc = "AI chat" },
-  { "<leader>ae", ":AIEdit ", desc = "AI edit", mode = "v" },
-  { "<leader>ar", "<cmd>AIRedo<cr>", desc = "AI redo last" },
+  -- { "<leader>ai", ":AI", desc = "AI complete" },
+  -- { "<leader>ac", ":AIChat ", desc = "AI chat" },
+  -- { "<leader>ae", ":AIEdit ", desc = "AI edit", mode = "v" },
+  -- { "<leader>ar", "<cmd>AIRedo<cr>", desc = "AI redo last" },
 
   { "<leader>PP", "<cmd>Lazy<cr>", desc = "Manage plugins" },
 })
