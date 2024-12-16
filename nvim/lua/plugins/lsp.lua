@@ -1,4 +1,5 @@
 return {
+  { "b0o/schemastore.nvim" },
   {
     "neovim/nvim-lspconfig",
     dependencies = {
@@ -65,11 +66,11 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
+        automatic_installation = true,
         ensure_installed = {
           "lua_ls",
           "jsonls",
           "vtsls",
-          "denols",
           "eslint",
           "bashls",
           "rust_analyzer",
@@ -77,7 +78,49 @@ return {
           "yamlls",
         },
       })
+      LangServers.lua_ls = {
+        settings = {
+          Lua = { diagnostics = { globals = { "LangServers" } } },
+        },
+      }
+      LangServers.yamlls = {
+        settings = {
+          yaml = {
+            -- Disable built in schema store stuff in favor of `schemastore` plugin
+            schemaStore = { enable = false, url = "" },
+            schemas = require("schemastore").yaml.schemas(),
 
+            validate = true,
+            completion = true,
+            hover = true,
+          },
+        },
+      }
+      LangServers.jsonls = {
+        settings = {
+          json = {
+            schemas = require("schemastore").json.schemas(),
+            validate = { enable = true },
+          },
+        },
+      }
+      LangServers.eslint = {
+        settings = {
+          run = "onSave",
+        },
+      }
+      LangServers.denols = {
+        root_dir = function(_, bufn)
+          return vim.fs.root(bufn, { "deno.json" })
+        end,
+      }
+      LangServers.vtsls = {
+        root_dir = function(_, bufn)
+          if not vim.fs.root(bufn, { "deno.json" }) then
+            return vim.fs.root(bufn, { "package.json", "tsconfig.json", ".git" })
+          end
+        end,
+      }
       function SetupLspHandlers()
         require("mason-lspconfig").setup_handlers({
           function(server_name)
@@ -94,6 +137,18 @@ return {
       vim.api.nvim_create_autocmd("User", {
         pattern = "ConfigLocalFinished",
         callback = SetupLspHandlers,
+      })
+
+      -- Manually initialize openapi-language-server since it isn't part of mason or lspconfig
+      vim.api.nvim_create_autocmd("FileType", {
+        pattern = "yaml",
+        callback = function()
+          vim.lsp.start({
+            cmd = { "openapi-language-server" },
+            filetypes = { "yaml" },
+            root_dir = vim.fn.getcwd(),
+          })
+        end,
       })
     end,
   },

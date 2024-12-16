@@ -1,7 +1,6 @@
-require("config.base")
+LangServers = {}
 
--- Defines globals used in lazy plugins
-require("config.lspconfig")
+require("config.base")
 
 -- Loads plugins
 require("config.lazy")
