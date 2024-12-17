@@ -1,5 +1,5 @@
 return {
-  { "github/copilot.vim" },
+  -- { "github/copilot.vim" },
   -- { "madox2/vim-ai" },
   {
     "yetone/avante.nvim",
@@ -19,7 +19,7 @@ return {
       --- The below dependencies are optional,
       "hrsh7th/nvim-cmp", -- autocompletion for avante commands and mentions
       "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
-      "zbirenbaum/copilot.lua", -- for providers='copilot'
+      -- "zbirenbaum/copilot.lua", -- for providers='copilot'
       {
         -- support for image pasting
         "HakonHarnes/img-clip.nvim",
