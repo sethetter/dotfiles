@@ -62,7 +62,7 @@ wk.add({
 
   {
     "<leader>f",
-    "<cmd>Telescope find_files find_command=rg,--ignore,--hidden,--files,--iglob=!.git<cr>",
+    "<cmd>Telescope find_files find_command=rg,--ignore,--hidden,--files,--iglob=!.git sort_mru=true<cr>",
     desc = "Find files",
   },
   { "<leader>b", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
@@ -145,10 +145,10 @@ wk.add({
     silent = true,
   },
 
-  -- { "<leader>ai", ":AI", desc = "AI complete" },
-  -- { "<leader>ac", ":AIChat ", desc = "AI chat" },
-  -- { "<leader>ae", ":AIEdit ", desc = "AI edit", mode = "v" },
-  -- { "<leader>ar", "<cmd>AIRedo<cr>", desc = "AI redo last" },
+  { "<leader>ac", "<cmd>CodeCompanionActions<cr>", desc = "CodeCompanion actions", mode = { "n", "v" } },
+  { "<leader>ai", ":CodeCompanion ", desc = "CodeCompanion prompt", mode = { "n", "v" } },
+  { "<leader>at", "<cmd>CodeCompanionChat Toggle<CR>", desc = "CodeCompanion prompt", mode = { "n", "v" } },
+  { "<leader>aa", "<cmd>CodeCompanionChat Add<CR>", desc = "Add to CodeCompanion chat", mode = "v" },
 
   { "<leader>PP", "<cmd>Lazy<cr>", desc = "Manage plugins" },
 })
