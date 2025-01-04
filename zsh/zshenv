@@ -109,6 +109,6 @@ export PATH="$HOME/go/bin:$PATH"
 export PATH="$HOME/.deno/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
-. "$HOME/.cargo/env"
+[ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
 
 [ -f "$HOME/code/zapier/personal-utils.sh" ] && source "$HOME/code/zapier/personal-utils.sh"
