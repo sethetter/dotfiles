@@ -140,16 +140,16 @@ return {
       })
 
       -- Manually initialize openapi-language-server since it isn't part of mason or lspconfig
-      vim.api.nvim_create_autocmd("FileType", {
-        pattern = "yaml",
-        callback = function()
-          vim.lsp.start({
-            cmd = { "openapi-language-server" },
-            filetypes = { "yaml" },
-            root_dir = vim.fn.getcwd(),
-          })
-        end,
-      })
+      -- vim.api.nvim_create_autocmd("FileType", {
+      --   pattern = "yaml",
+      --   callback = function()
+      --     vim.lsp.start({
+      --       cmd = { "openapi-language-server" },
+      --       filetypes = { "yaml" },
+      --       root_dir = vim.fn.getcwd(),
+      --     })
+      --   end,
+      -- })
     end,
   },
   {
