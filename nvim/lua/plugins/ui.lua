@@ -13,6 +13,12 @@ return {
         filtered_items = {
           hide_dotfiles = false,
         },
+        window = {
+          mappings = {
+            -- Disable filtering, I like to search on my own
+            ["/"] = "noop",
+          },
+        },
       },
     },
   },
