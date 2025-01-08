@@ -51,8 +51,7 @@ wk.add({
     mode = { "v" },
   },
 
-  { "<leader>e", "<cmd>Neotree position=current reveal toggle<cr>", desc = "Reveal file in tree" },
-  { "E", "<cmd>Neotree position=current toggle<cr>", desc = "Open file explorer" },
+  { "E", "<cmd>Neotree position=current toggle reveal<cr>", desc = "Open file explorer" },
 
   { "<leader>h", "<cmd>noh<cr>", desc = "Clear highlight" },
   { "<leader>v/", "<cmd>vsp<cr>", desc = "Split vertical" },
