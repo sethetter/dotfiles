@@ -15,8 +15,8 @@ return {
         },
         window = {
           mappings = {
-            -- Disable filtering, I like to search on my own
-            ["/"] = "noop",
+            ["/"] = "noop", -- Disable filtering, I like to search on my own
+            ["H"] = "noop", -- Conflicts with prev buffer
           },
         },
       },
