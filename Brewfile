@@ -78,7 +78,7 @@ brew "oath-toolkit"
 brew "openconnect"
 
 # TUIs
-brew "htop"
+brew "btop"
 brew "k9s"
 brew "lazydocker"
 brew "lazygit"
