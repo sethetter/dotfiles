@@ -7,11 +7,11 @@ k9s:
   noExitOnCtrlC: false
   ui:
     enableMouse: false
-    headless: false
-    logoless: false
+    headless: true
+    logoless: true
     crumbsless: false
     noIcons: false
-    #skin: solarized-light
+    skin: rose-pine
   skipLatestRevCheck: false
   disablePodCounting: false
   shellPod:
