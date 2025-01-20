@@ -3,10 +3,8 @@ return {
     "rose-pine/neovim",
     name = "rose-pine",
     config = function()
-      require("rose-pine").setup({
-        variant = "dawn",
-      })
       vim.api.nvim_set_option_value("background", "light", {})
+      require("rose-pine").setup({})
       vim.cmd("colorscheme rose-pine-dawn")
     end,
   },

@@ -99,8 +99,8 @@ wk.add({
   { "<leader>q", "<cmd>q<cr>", desc = "Quit" },
   { "<leader>Q", "<cmd>qa<cr>", desc = "Quit all" },
 
-  { "[d", "<cmd>lua vim.lsp.diagnostic.goto_prev()<cr>", desc = "Previous diagnostic" },
-  { "]d", "<cmd>lua vim.lsp.diagnostic.goto_next()<cr>", desc = "Next diagnostic" },
+  { "[d", "<cmd>lua vim.diagnostic.goto_prev()<cr>", desc = "Previous diagnostic" },
+  { "]d", "<cmd>lua vim.diagnostic.goto_next()<cr>", desc = "Next diagnostic" },
   { "[g", "<cmd>Gitsigns prev_hunk<cr>", desc = "Previous change" },
   { "]g", "<cmd>Gitsigns next_hunk<cr>", desc = "Next change" },
 
