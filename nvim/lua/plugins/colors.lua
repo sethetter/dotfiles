@@ -33,8 +33,8 @@ return {
     opts = {
       update_interval = 1000,
       set_dark_mode = function()
-        -- vim.api.nvim_set_option_value("background", "dark", {})
-        -- vim.cmd("colorscheme rose-pine-main")
+        vim.api.nvim_set_option_value("background", "dark", {})
+        vim.cmd("colorscheme rose-pine-main")
       end,
       set_light_mode = function()
         vim.api.nvim_set_option_value("background", "light", {})
