@@ -65,6 +65,11 @@ return {
   {
     "williamboman/mason-lspconfig.nvim",
     config = function()
+      local if_not_deno = function(bufn)
+        if not vim.fs.root(bufn, { "deno.json" }) then
+          return vim.fs.root(bufn, { "package.json", "tsconfig.json", ".git" })
+        end
+      end
       require("mason-lspconfig").setup({
         automatic_installation = true,
         ensure_installed = {
@@ -108,6 +113,9 @@ return {
         settings = {
           run = "onSave",
         },
+        root_dir = function(_, bufn)
+          return if_not_deno(bufn)
+        end,
       }
       LangServers.denols = {
         root_dir = function(_, bufn)
@@ -116,9 +124,7 @@ return {
       }
       LangServers.vtsls = {
         root_dir = function(_, bufn)
-          if not vim.fs.root(bufn, { "deno.json" }) then
-            return vim.fs.root(bufn, { "package.json", "tsconfig.json", ".git" })
-          end
+          return if_not_deno(bufn)
         end,
       }
       function SetupLspHandlers()
