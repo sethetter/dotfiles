@@ -1,5 +1,4 @@
-font-family = "Hack Nerd Font Mono"
+font-family = "Fira Nerd Font Mono"
 font-size = 15
-font-thicken = true
 theme = light:rose-pine-dawn,dark:rose-pine-moon
 macos-titlebar-style = "hidden"
