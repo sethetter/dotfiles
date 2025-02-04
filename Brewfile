@@ -9,6 +9,7 @@ cask "font-hack-nerd-font"
 
 # Applications
 cask "iterm2"
+cask "ghostty"
 cask "1password"
 cask "1password-cli"
 cask "audacity"
