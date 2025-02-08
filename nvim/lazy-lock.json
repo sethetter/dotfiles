@@ -1,7 +1,7 @@
 {
   "aerial.nvim": { "branch": "master", "commit": "2aeafd99937602fc40609ffffbdd2f99d77343e9" },
   "auto-dark-mode.nvim": { "branch": "master", "commit": "02ef9553e2a1d6e861bc6955d58ce5883d28a6ad" },
-  "avante.nvim": { "branch": "main", "commit": "faa6728d4b85e0001b7fda5f30115982e957f4bb" },
+  "avante.nvim": { "branch": "main", "commit": "e70b0fa243bb8ac07cfc7892f4722e433aa996cb" },
   "bufferline.nvim": { "branch": "main", "commit": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "99290b3ec1322070bcfb9e846450a46f6efa50f0" },
   "copilot.lua": { "branch": "master", "commit": "886ee73b6d464b2b3e3e6a7ff55ce87feac423a9" },
