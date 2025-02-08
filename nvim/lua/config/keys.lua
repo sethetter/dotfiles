@@ -10,7 +10,13 @@ local function qflist_is_open()
   end
   return is_open
 end
-function _TOGGLE_QF_LIST() end
+local function toggle_qf_list()
+  if qflist_is_open() then
+    vim.cmd("cclose")
+  else
+    vim.cmd("copen")
+  end
+end
 
 wk.add({
   { "<C-h>", "<C-w>h", desc = "Move focus to left pane" },
@@ -31,9 +37,9 @@ wk.add({
 
   { "<leader>n", "<cmd>vnew<CR>", desc = "New buffer" },
 
-  { "<C-t>", "<cmd>tabnext<cr>", desc = "Next tab" },
-  { "<leader>td", "<cmd>tabclose<cr>", desc = "Close Tab" },
-  { "<leader>tn", "<cmd>tabnew<cr>", desc = "Close Tab" },
+  { "<C-t>", "<cmd>tabnext<cr>", desc = "Next tab", group = "tab" },
+  { "<leader>td", "<cmd>tabclose<cr>", desc = "Close Tab", group = "tab" },
+  { "<leader>tn", "<cmd>tabnew<cr>", desc = "New Tab", group = "tab" },
 
   { "<leader>CL", "<cmd>ConfigLocalEdit<cr>", desc = "Edit local nvim config" },
   { "<leader>N", "<cmd>vsp<cr><C-w>l<cmd>e NOTES.sethetter.md<cr>", desc = "Open personal notes" },
@@ -54,8 +60,8 @@ wk.add({
   { "E", "<cmd>Neotree position=current toggle reveal<cr>", desc = "Open file explorer" },
 
   { "<leader>h", "<cmd>noh<cr>", desc = "Clear highlight" },
-  { "<leader>v/", "<cmd>vsp<cr>", desc = "Split vertical" },
-  { "<leader>v?", "<cmd>sp<cr>", desc = "Split horizontal" },
+  { "<leader>v/", "<cmd>vsp<cr>", desc = "Split vertical", group = "split" },
+  { "<leader>v?", "<cmd>sp<cr>", desc = "Split horizontal", group = "split" },
 
   {
     "<leader>f",
@@ -70,14 +76,8 @@ wk.add({
   -- TODO: Make this a toggle?
   {
     "<leader>co",
-    function()
-      if qflist_is_open() then
-        vim.cmd("cclose")
-      else
-        vim.cmd("copen")
-      end
-    end,
-    desc = "Toggle QF list",
+    toggle_qf_list,
+    desc = "Toggle quickfix list",
   },
   { "<leader>cn", "<cmd>cnext<cr>", desc = "Next QF item" },
   { "<leader>cp", "<cmd>cprev<cr>", desc = "Prev QF item" },
@@ -117,15 +117,14 @@ wk.add({
   { "<leader>R", "<cmd>lua vim.lsp.buf.rename()<cr>", desc = "Rename symbol" },
   { "<leader>F", "<cmd>Format<CR>", desc = "Format buffer" },
 
-  { "<leader>g", group = "git" },
-  { "<leader>gg", "<cmd>LazyGit<cr>", desc = "Lazygit" },
-  { "<leader>gs", "<cmd>Telescope git_status<cr>", desc = "Git status" },
-  { "<leader>gd", "<cmd>Gitsigns diffthis vertical=true HEAD<cr>", desc = "File diff" },
-  { "<leader>Gd", ":Gitsigns diffthis vertical=true ", desc = "File diff provided ref" },
-  { "<leader>GD", ":DiffviewOpen ", desc = "Diff provided ref" },
-  { "<leader>gh", "<cmd>DiffviewFileHistory %<cr>", desc = "File history" },
-  { "<leader>gH", "<cmd>DiffviewFileHistory<cr>", desc = "Git history" },
-  { "<leader>gb", "<cmd>Gitsigns toggle_current_line_blame<cr>", desc = "Git history" },
+  { "<leader>gg", "<cmd>LazyGit<cr>", desc = "Lazygit", group = "git" },
+  { "<leader>gs", "<cmd>Telescope git_status<cr>", desc = "Git status", group = "git" },
+  { "<leader>gd", "<cmd>Gitsigns diffthis vertical=true HEAD<cr>", desc = "File diff", group = "git" },
+  { "<leader>Gd", ":Gitsigns diffthis vertical=true ", desc = "File diff provided ref", group = "git" },
+  { "<leader>GD", ":DiffviewOpen ", desc = "Diff provided ref", group = "git" },
+  { "<leader>gh", "<cmd>DiffviewFileHistory %<cr>", desc = "File history", group = "git" },
+  { "<leader>gH", "<cmd>DiffviewFileHistory<cr>", desc = "Git history", group = "git" },
+  { "<leader>gb", "<cmd>Gitsigns toggle_current_line_blame<cr>", desc = "Git history", group = "git" },
   {
     "<leader>gl",
     '<cmd>lua require("gitlinker").get_buf_range_url("n", {action_callback = require("gitlinker.actions").copy_to_clipboard})<cr>',
@@ -142,10 +141,5 @@ wk.add({
     silent = true,
   },
 
-  { "<leader>ac", "<cmd>CodeCompanionActions<cr>", desc = "CodeCompanion actions", mode = { "n", "v" } },
-  { "<leader>ai", ":CodeCompanion ", desc = "CodeCompanion prompt", mode = { "n", "v" } },
-  { "<leader>at", "<cmd>CodeCompanionChat Toggle<CR>", desc = "CodeCompanion prompt", mode = { "n", "v" } },
-  { "<leader>aa", "<cmd>CodeCompanionChat Add<CR>", desc = "Add to CodeCompanion chat", mode = "v" },
-
-  { "<leader>PP", "<cmd>Lazy<cr>", desc = "Manage plugins" },
+  { "<leader>PP", "<cmd>Lazy<cr>", desc = "Manage plugins", group = "plugin" },
 })
