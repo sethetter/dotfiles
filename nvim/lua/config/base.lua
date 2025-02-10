@@ -6,6 +6,9 @@ vim.opt.expandtab = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 
+vim.opt.scrolloff = 0
+vim.opt.smoothscroll = true
+
 vim.opt.clipboard = ""
 
 -- Reserve a space in the gutter

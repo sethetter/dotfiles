@@ -73,14 +73,14 @@ wk.add({
   { "<leader>sh", "<cmd>Telescope help_tags<cr>", desc = "Help tags" },
   { "<leader>sc", "<cmd>Telescope commands<cr>", desc = "Commands" },
 
-  -- TODO: Make this a toggle?
   {
-    "<leader>co",
+    "<leader>cl",
     toggle_qf_list,
     desc = "Toggle quickfix list",
+    group = "quickfix",
   },
-  { "<leader>cn", "<cmd>cnext<cr>", desc = "Next QF item" },
-  { "<leader>cp", "<cmd>cprev<cr>", desc = "Prev QF item" },
+  { "<leader>cn", "<cmd>cnext<cr>", desc = "Next QF item", group = "quickfix" },
+  { "<leader>cp", "<cmd>cprev<cr>", desc = "Prev QF item", group = "quickfix" },
 
   {
     "<leader>m",
@@ -89,6 +89,10 @@ wk.add({
     end,
     desc = "Diagnostics in qf list",
   },
+
+  { "<leader>M", "<cmd>messages<cr>", desc = "Messages" },
+
+  { "<leader>T", ":term ", desc = "Run a terminal command" },
 
   { "<leader>o", "<cmd>AerialToggle<cr>", desc = "Symbols outline" },
 
