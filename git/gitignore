@@ -13,3 +13,4 @@ code/workspaceStorage
 .vim-bookmarks
 .vimrc.sethetter
 REVIEW-*.txt
+**/.aider*
