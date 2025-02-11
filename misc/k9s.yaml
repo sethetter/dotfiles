@@ -11,7 +11,7 @@ k9s:
     logoless: true
     crumbsless: false
     noIcons: false
-    skin: rose-pine
+    skin: rose-pine-dawn
   skipLatestRevCheck: false
   disablePodCounting: false
   shellPod:
