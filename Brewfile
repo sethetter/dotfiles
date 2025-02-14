@@ -28,6 +28,7 @@ cask "loom"
 cask "gimp"
 cask "visual-studio-code"
 cask "cursor"
+cask "chatgpt"
 cask "zed"
 brew "neovim"
 
