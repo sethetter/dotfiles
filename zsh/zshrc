@@ -6,7 +6,7 @@
 export GPG_TTY=$(tty)
 
 #oh-my-zsh
-plugins=(git vi-mode fzf direnv asdf)
+plugins=(git vi-mode fzf direnv mise)
 ZSH_THEME="robbyrussell"
 source $HOME/.oh-my-zsh/oh-my-zsh.sh
 
