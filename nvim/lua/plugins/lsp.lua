@@ -39,8 +39,13 @@ return {
           typescriptreact = {
             require("formatter.defaults.prettier"),
           },
-          golang = {
-            require("formatter.filetypes.go"),
+          go = {
+            function()
+              return {
+                exe = "goimports",
+                stdin = true,
+              }
+            end,
           },
           ["*"] = {
             require("formatter.filetypes.any").remove_trailing_whitespace,
