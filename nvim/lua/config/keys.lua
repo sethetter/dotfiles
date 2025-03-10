@@ -31,8 +31,10 @@ wk.add({
   { "L", ":bn<cr>", desc = "Switch to next buffer" },
 
   -- Prevents the pane from being removed when closing a buffer
-  { "<leader>d", "<cmd>bp<bar>sp<bar>bn<bar>bd<cr>", desc = "Close buffer" },
-  { "<leader>D", "<cmd>bp<bar>sp<bar>bn<bar>bd!<cr>", desc = "Close buffer (force)" },
+  -- { "<leader>d", "<cmd>bp<bar>sp<bar>bn<bar>bd<cr>", desc = "Close buffer" },
+  -- { "<leader>D", "<cmd>bp<bar>sp<bar>bn<bar>bd!<cr>", desc = "Close buffer (force)" },
+  { "<leader>d", "<cmd>bd<cr>", desc = "Close buffer" },
+  { "<leader>D", "<cmd>bd!<cr>", desc = "Close buffer (force)" },
   { "<leader>BD", "<cmd>bufdo bd<cr>", desc = "Close all buffers" },
 
   { "<leader>n", "<cmd>vnew<CR>", desc = "New buffer" },
@@ -57,7 +59,9 @@ wk.add({
     mode = { "v" },
   },
 
-  { "E", "<cmd>Neotree position=current toggle reveal<cr>", desc = "Open file explorer" },
+  -- { "E", "<cmd>Neotree position=current toggle reveal<cr>", desc = "Open file explorer" },
+  { "E", "<cmd>Neotree reveal<cr>", desc = "Open file explorer" },
+  { "<leader>e", "<cmd>Neotree toggle<cr>", desc = "Open file explorer" },
 
   { "<leader>h", "<cmd>noh<cr>", desc = "Clear highlight" },
   { "<leader>v/", "<cmd>vsp<cr>", desc = "Split vertical", group = "split" },
