@@ -6,6 +6,8 @@ vim.opt.expandtab = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 
+vim.opt.laststatus = 3
+
 vim.opt.scrolloff = 0
 vim.opt.smoothscroll = true
 
