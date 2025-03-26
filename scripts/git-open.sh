@@ -32,7 +32,7 @@ fi
 if [[ $platform == "github" ]]; then
   final_url="${repo_url%.git}/blob/$current_commit/${filename}"
   # Format line range for GitHub
-  if [ ! -z "$linerange" ]; then
+  if [ -n "$linerange" ]; then
     linerange="L${linerange%-*}-L${linerange#*-}"
   fi
 elif [[ $platform == "gitlab" ]]; then
@@ -40,7 +40,7 @@ elif [[ $platform == "gitlab" ]]; then
 fi
 
 # Add line range if it exists
-if [ ! -z "$linerange" ]; then
+if [ -n "$linerange" ]; then
   final_url="${final_url}#L${linerange}"
 fi
 
