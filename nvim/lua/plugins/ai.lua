@@ -1,5 +1,5 @@
 return {
-  -- { "github/copilot.vim" },
+  { "github/copilot.vim" },
   {
     "yetone/avante.nvim",
     event = "VeryLazy",
@@ -7,18 +7,17 @@ return {
     version = false, -- Set this to "*" to always pull the latest release version, or set it to false to update to the latest code changes.
     opts = {
       behaviour = {
+        enable_claude_text_editor_tool_mode = true,
         enable_cursor_planning_mode = true,
-        auto_suggestions = true,
+        -- auto_suggestions = true,
       },
-      rag_service = {
-        enabled = true,
-        host_mount = vim.fn.getcwd(),
-      },
+      -- rag_service = {
+      --   enabled = true,
+      --   host_mount = vim.fn.getcwd(),
+      -- },
       provider = "claude", -- Set Copilot as the provider
-      auto_suggestions_provider = "claude",
-      claude = {
-        disabled_tools = { "python" },
-      },
+      -- auto_suggestions_provider = "claude",
+      disabled_tools = { "python" },
       windows = {
         ask = {
           floating = true,
