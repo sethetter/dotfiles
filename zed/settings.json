@@ -7,6 +7,9 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
   "language_models": {
     "anthropic": {
       "version": "1"
@@ -22,7 +25,7 @@
   "theme": {
     "mode": "system",
     "light": "Rosé Pine Dawn",
-    "dark": "Rosé Pine"
+    "dark": "Rosé Pine Moon"
   },
   "terminal": {
     "line_height": "standard",
@@ -32,8 +35,8 @@
   "assistant": {
     "enable_experimental_live_diffs": true,
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-latest"
+      "provider": "anthropic",
+      "model": "claude-3-7-sonnet-latest"
     },
     "version": "2",
     "provider": null

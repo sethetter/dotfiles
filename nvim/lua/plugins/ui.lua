@@ -9,6 +9,8 @@ return {
       "MunifTanjim/nui.nvim",
     },
     opts = {
+      use_libuv_file_watcher = true,
+      follow_current_file = { enabled = true },
       filesystem = {
         filtered_items = {
           hide_dotfiles = false,
@@ -17,10 +19,15 @@ return {
         window = {
           mappings = {
             ["/"] = "noop", -- Disable filtering, I like to search on my own
-            ["F"] = "noop",
+            ["F"] = "fuzzy_finder", -- Remap filtering to F
             ["H"] = "noop", -- Conflicts with prev buffer
           },
         },
+      },
+      sources = {
+        "filesystem",
+        "git_status",
+        "document_symbols",
       },
     },
   },

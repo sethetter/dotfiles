@@ -41,10 +41,11 @@ wk.add({
 
   { "<C-t>", "<cmd>tabnext<cr>", desc = "Next tab", group = "tab" },
   { "<leader>td", "<cmd>tabclose<cr>", desc = "Close Tab", group = "tab" },
-  { "<leader>tn", "<cmd>tabnew<cr>", desc = "New Tab", group = "tab" },
+  { "T", "<cmd>tabnew<cr>", desc = "New Tab", group = "tab" },
 
   { "<leader>CL", "<cmd>ConfigLocalEdit<cr>", desc = "Edit local nvim config" },
-  { "<leader>N", "<cmd>vsp<cr><C-w>l<cmd>e NOTES.sethetter.md<cr>", desc = "Open personal notes" },
+  -- { "<leader>N", "<cmd>vsp<cr><C-w>l<cmd>e NOTES.sethetter.md<cr>", desc = "Open personal notes" },
+  { "<leader>N", "<cmd>e NOTES.sethetter.md<cr>", desc = "Open personal notes" },
 
   {
     "<leader>/",
@@ -60,8 +61,9 @@ wk.add({
   },
 
   -- { "E", "<cmd>Neotree position=current toggle reveal<cr>", desc = "Open file explorer" },
-  { "E", "<cmd>Neotree reveal<cr>", desc = "Open file explorer" },
-  { "<leader>e", "<cmd>Neotree toggle<cr>", desc = "Open file explorer" },
+  { "E", "<cmd>Neotree toggle reveal position=current<cr>", desc = "Open file explorer" },
+  { "<leader>e", "<cmd>Neotree toggle position=current<cr>", desc = "Open file explorer" },
+  -- { "<leader>E", "<cmd>Neotree focus reveal position=current<cr>", desc = "Open file explorer" },
 
   { "<leader>h", "<cmd>noh<cr>", desc = "Clear highlight" },
   { "<leader>v/", "<cmd>vsp<cr>", desc = "Split vertical", group = "split" },

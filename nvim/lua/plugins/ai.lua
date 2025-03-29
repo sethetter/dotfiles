@@ -4,7 +4,7 @@ return {
     "yetone/avante.nvim",
     event = "VeryLazy",
     lazy = false,
-    version = false, -- Set this to "*" to always pull the latest release version, or set it to false to update to the latest code changes.
+    version = "*",
     opts = {
       behaviour = {
         enable_claude_text_editor_tool_mode = true,
@@ -23,6 +23,12 @@ return {
           floating = true,
         },
       },
+      -- rag_service = {
+      --   enabled = true,
+      --   host_mount = vim.fn.getcwd(),
+      -- },
+      provider = "claude",
+      disabled_tools = { "python" },
       mappings = {
         ---@class AvanteConflictMappings
         diff = {
