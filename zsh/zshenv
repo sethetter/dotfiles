@@ -109,6 +109,11 @@ export PATH="$HOME/go/bin:$PATH"
 export PATH="$HOME/.deno/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
+# A mise alias for globally install npm packages, make sure it's always in the path,
+# should show up after the mise-added paths, so local version global installs will
+# take precedence.
+export PATH="$HOME/.local/share/mise/installs/node/globals/bin:$PATH"
+
 [ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
 
 [ -f "$HOME/code/zapier/personal-utils.sh" ] && source "$HOME/code/zapier/personal-utils.sh"
