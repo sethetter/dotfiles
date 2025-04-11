@@ -43,7 +43,7 @@ wk.add({
   { "<leader>td", "<cmd>tabclose<cr>", desc = "Close Tab", group = "tab" },
   { "T", "<cmd>tabnew<cr>", desc = "New Tab", group = "tab" },
 
-  { "<leader>CL", "<cmd>ConfigLocalEdit<cr>", desc = "Edit local nvim config" },
+  { "<leader>LC", "<cmd>ConfigLocalEdit<cr>", desc = "Edit local nvim config" },
   -- { "<leader>N", "<cmd>vsp<cr><C-w>l<cmd>e NOTES.sethetter.md<cr>", desc = "Open personal notes" },
   { "<leader>N", "<cmd>e NOTES.sethetter.md<cr>", desc = "Open personal notes" },
 
