@@ -26,23 +26,7 @@ alias ccb="git branch --no-color --show-current | tr -d '\n' | pbcopy"
 alias ytop="ytop -c default-dark"
 alias python=python3
 alias pip=pip3
-
-function tm {
-  rootdir=$(pwd)
-  if [ ! -z "$1" ]; then
-    rootdir=$(echo "$1" | sed 's:/*$::')
-  fi
-  session_name="${rootdir##*/}"
-  if [ -z "$TMUX" ]; then
-    tmux new -A -s $session_name -c $rootdir
-  else
-    tmux has-session -t $session_name
-    if [ $? != 0 ]; then
-      tmux new -A -c $rootdir -s $session_name -d
-    fi
-    tmux switch -t $session_name
-  fi
-}
+alias tm=$HOME/dotfiles/scripts/tmopen.sh
 
 function rand {
   count=$1
