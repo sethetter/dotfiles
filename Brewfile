@@ -5,7 +5,7 @@ tap "homebrew/services"
 brew "brew-file"
 
 # Fonts
-cask "font-fira-nerd-font-mono"
+cask "font-fira-code-nerd-font"
 
 # Applications
 cask "iterm2"
