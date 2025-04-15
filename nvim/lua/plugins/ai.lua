@@ -9,31 +9,25 @@ return {
     "yetone/avante.nvim",
     event = "VeryLazy",
     lazy = false,
-    version = "*",
+    version = false,
     opts = {
+      provider = "claude",
+      disabled_tools = { "python" },
       behaviour = {
         enable_claude_text_editor_tool_mode = true,
-        enable_cursor_planning_mode = true,
+        -- enable_cursor_planning_mode = true,
         -- auto_suggestions = true,
       },
       -- rag_service = {
       --   enabled = true,
       --   host_mount = vim.fn.getcwd(),
       -- },
-      provider = "claude", -- Set Copilot as the provider
       -- auto_suggestions_provider = "claude",
-      disabled_tools = { "python" },
       windows = {
         ask = {
           floating = true,
         },
       },
-      -- rag_service = {
-      --   enabled = true,
-      --   host_mount = vim.fn.getcwd(),
-      -- },
-      provider = "claude",
-      disabled_tools = { "python" },
       mappings = {
         ---@class AvanteConflictMappings
         diff = {
