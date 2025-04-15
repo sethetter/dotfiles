@@ -6,9 +6,11 @@
 export GPG_TTY=$(tty)
 
 #oh-my-zsh
-plugins=(git vi-mode fzf direnv mise)
+plugins=(git vi-mode fzf direnv asdf)
 ZSH_THEME="robbyrussell"
 source $HOME/.oh-my-zsh/oh-my-zsh.sh
 
 # 1password cli plugins
 [ -f "/Users/sethetter/.config/op/plugins.sh" ] && source /Users/sethetter/.config/op/plugins.sh
+
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"

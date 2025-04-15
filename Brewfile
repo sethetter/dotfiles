@@ -33,7 +33,7 @@ brew "neovim"
 # Programming
 brew "tmux"
 brew "tmuxp"
-brew "mise"
+brew "asdf"
 brew "ansible"
 brew "node"
 brew "oven-sh/bun/bun"
