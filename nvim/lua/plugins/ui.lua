@@ -28,13 +28,14 @@ return {
       filesystem = {
         filtered_items = {
           hide_dotfiles = false,
-          hide_gitignored = false,
+          hide_gitignored = true,
         },
         window = {
           mappings = {
             ["/"] = "noop", -- Disable filtering, I like to search on my own
-            ["F"] = "fuzzy_finder", -- Remap filtering to F
+            ["F"] = "fuzzy_finder",
             ["H"] = "noop", -- Conflicts with prev buffer
+            ["I"] = "toggle_hidden",
           },
         },
       },
