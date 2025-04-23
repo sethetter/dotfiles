@@ -28,6 +28,14 @@ alias python=python3
 alias pip=pip3
 alias tm=$HOME/dotfiles/scripts/tmopen.sh
 
+# if machine name is nebula..
+if [[ $(hostname) == "nebula" ]]; then
+  alias mro="glab mr view -w"
+  alias mktkt=$HOME/dotfiles/scripts/zapier/make-ticket.sh
+  alias mkmr=$HOME/dotfiles/scripts/zapier/make-mr.sh
+  alias mkuser=$HOME/dotfiles/scripts/zapier/make-test-user.sh
+fi
+
 function rand {
   count=$1
   if [ -z "$count" ]; then
