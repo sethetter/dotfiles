@@ -1,6 +1,7 @@
 vim.opt.termguicolors = true
 
 vim.opt.relativenumber = true
+vim.opt.number = true -- shows the current line number instead of 0
 
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 2
