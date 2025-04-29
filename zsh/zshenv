@@ -27,6 +27,7 @@ alias ytop="ytop -c default-dark"
 alias python=python3
 alias pip=pip3
 alias tm=$HOME/dotfiles/scripts/tmopen.sh
+alias aic="aicommits --type conventional"
 
 # if machine name is nebula..
 if [[ $(hostname) == "nebula" ]]; then
