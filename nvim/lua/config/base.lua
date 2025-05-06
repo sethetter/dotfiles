@@ -28,3 +28,9 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
     vim.opt_local.linebreak = true
   end,
 })
+
+-- Set .avsc files to use json filetype
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+  pattern = "*.avsc",
+  command = "set filetype=json",
+})
