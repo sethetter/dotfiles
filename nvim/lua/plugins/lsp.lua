@@ -64,11 +64,12 @@ return {
     end,
   },
   {
-    "williamboman/mason.nvim",
-    opts = {},
-  },
-  {
-    "williamboman/mason-lspconfig.nvim",
+    "mason-org/mason-lspconfig.nvim",
+    dependencies = {
+      "neovim/nvim-lspconfig",
+      "williamboman/mason.nvim",
+      "klen/nvim-config-local",
+    },
     config = function()
       local function not_deno(_, bufn)
         local util = require("lspconfig.util")
@@ -77,7 +78,9 @@ return {
         end
         return util.root_pattern("package.json", "tsconfig.json", ".git")(bufn)
       end
+      require("mason").setup({})
       require("mason-lspconfig").setup({
+        automatic_enable = false,
         automatic_installation = true,
         ensure_installed = {
           "lua_ls",
@@ -129,14 +132,13 @@ return {
         },
       }
       function SetupLspHandlers()
-        require("mason-lspconfig").setup_handlers({
-          function(server_name)
-            if LangServers[server_name] == false then
-              return
-            end
-            require("lspconfig")[server_name].setup(LangServers[server_name] or {})
-          end,
-        })
+        for server_name, _ in pairs(LangServers) do
+          if LangServers[server_name] == false then
+            return
+          end
+          vim.lsp.config(server_name, LangServers[server_name] or {})
+          vim.lsp.enable(server_name)
+        end
       end
 
       -- Call this after loading local configs so the `LangServers` global
