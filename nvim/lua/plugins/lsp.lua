@@ -3,7 +3,7 @@ return {
   {
     "neovim/nvim-lspconfig",
     dependencies = {
-      "williamboman/mason.nvim",
+      "mason-org/mason.nvim",
       "klen/nvim-config-local",
     },
     config = function()
@@ -67,7 +67,7 @@ return {
     "mason-org/mason-lspconfig.nvim",
     dependencies = {
       "neovim/nvim-lspconfig",
-      "williamboman/mason.nvim",
+      "mason-org/mason.nvim",
       "klen/nvim-config-local",
     },
     config = function()
@@ -78,6 +78,7 @@ return {
         end
         return util.root_pattern("package.json", "tsconfig.json", ".git")(bufn)
       end
+
       require("mason").setup({})
       require("mason-lspconfig").setup({
         automatic_enable = false,
@@ -94,14 +95,15 @@ return {
           "denols",
         },
       })
+
       LangServers.lua_ls = {
         settings = {
           Lua = { diagnostics = { globals = { "LangServers" } } },
         },
       }
       LangServers.vtsls = {
-        root_dir = not_deno,
-        single_file_support = false,
+        -- root_dir = not_deno,
+        -- single_file_support = false,
       }
       LangServers.eslint = {
         root_dir = not_deno,
@@ -131,12 +133,13 @@ return {
           },
         },
       }
+
       function SetupLspHandlers()
-        for server_name, _ in pairs(LangServers) do
-          if LangServers[server_name] == false then
+        for server_name, server_config in pairs(LangServers) do
+          if server_config == false then
             return
           end
-          vim.lsp.config(server_name, LangServers[server_name] or {})
+          vim.lsp.config(server_name, server_config or {})
           vim.lsp.enable(server_name)
         end
       end
@@ -161,7 +164,7 @@ return {
     "antosha417/nvim-lsp-file-operations",
     dependencies = {
       "nvim-lua/plenary.nvim",
-      "nvim-tree/nvim-tree.lua",
+      "nvim-neo-tree/neo-tree.nvim",
     },
     config = function()
       require("lsp-file-operations").setup()
