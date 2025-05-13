@@ -93,6 +93,7 @@ brew "lazygit"
 
 # Service Utils
 brew "awscli"
+brew "awscli-local"
 brew "aws-vault"
 tap "superfly/tap"
 brew "flyctl"
