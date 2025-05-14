@@ -71,13 +71,7 @@ return {
       "klen/nvim-config-local",
     },
     config = function()
-      local function not_deno(_, bufn)
-        local util = require("lspconfig.util")
-        if util.root_pattern("deno.json", "deno.jsonc")(bufn) then
-          return nil
-        end
-        return util.root_pattern("package.json", "tsconfig.json", ".git")(bufn)
-      end
+      local util = require("lspconfig.util")
 
       require("mason").setup({})
       require("mason-lspconfig").setup({
@@ -102,15 +96,13 @@ return {
         },
       }
       LangServers.vtsls = {
-        -- root_dir = not_deno,
-        -- single_file_support = false,
+        single_file_support = false,
       }
       LangServers.eslint = {
-        root_dir = not_deno,
         single_file_support = false,
       }
       LangServers.denols = {
-        root_dir = require("lspconfig.util").root_pattern("deno.json", "deno.jsonc"),
+        root_dir = util.root_pattern("deno.json", "deno.jsonc"),
       }
       LangServers.yamlls = {
         settings = {
@@ -139,6 +131,7 @@ return {
           if server_config == false then
             return
           end
+          print("Setting up " .. server_name)
           vim.lsp.config(server_name, server_config or {})
           vim.lsp.enable(server_name)
         end
