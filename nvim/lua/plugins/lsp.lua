@@ -131,7 +131,6 @@ return {
           if server_config == false then
             return
           end
-          print("Setting up " .. server_name)
           vim.lsp.config(server_name, server_config or {})
           vim.lsp.enable(server_name)
         end
