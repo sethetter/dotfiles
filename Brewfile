@@ -83,6 +83,7 @@ brew "imagemagick"
 brew "ffmpeg"
 brew "oath-toolkit"
 brew "openconnect"
+brew "openvpn"
 brew "aicommits"
 
 # TUIs
